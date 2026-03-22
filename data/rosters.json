@@ -8,11 +8,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Cody Bellinger",
-          "position": "2B/SS",
-          "slot": "BE",
+          "name": "Drake Baldwin",
+          "position": "1B",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -20,49 +20,9 @@
         {
           "name": "Freddie Freeman",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Shohei Ohtani",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Aaron Judge",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Geraldo Perdomo",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Drake Baldwin",
-          "position": "1B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -70,9 +30,9 @@
         {
           "name": "Bryson Stott",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -80,9 +40,39 @@
         {
           "name": "Alec Bohm",
           "position": "SS",
-          "slot": "BE",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Geraldo Perdomo",
+          "position": "OF",
+          "slot": "SS",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Cody Bellinger",
+          "position": "2B/SS",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Aaron Judge",
+          "position": "LF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -90,49 +80,9 @@
         {
           "name": "Alec Burleson",
           "position": "2B/SS",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Gleyber Torres",
-          "position": "3B",
-          "slot": "BE",
-          "injStatus": "DAY_TO_DAY",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Daylen Lile",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Nick Pivetta",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Blake Snell",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -140,78 +90,78 @@
         {
           "name": "Sonny Gray",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Chase Burns",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Andres Munoz",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Edwin Diaz",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Fernando Cruz",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Ryan Pepiot",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Nathan Eovaldi",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
-          "name": "Merrill Kelly",
-          "position": "C",
+          "name": "Andres Munoz",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Edwin Diaz",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Fernando Cruz",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Daylen Lile",
+          "position": "LF",
           "slot": "BE",
-          "injStatus": "OUT",
+          "injStatus": "ACTIVE",
           "onBench": true,
           "onIL": false,
           "isPitcher": false,
@@ -238,26 +188,6 @@
           "stats": {}
         },
         {
-          "name": "Shane Bieber",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Wilyer Abreu",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Andrew Vaughn",
           "position": "2B",
           "slot": "BE",
@@ -268,11 +198,81 @@
           "stats": {}
         },
         {
+          "name": "Blake Snell",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Merrill Kelly",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Shane Bieber",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
           "name": "Bryce Miller",
           "position": "C",
-          "slot": "BE",
+          "slot": "IL",
           "injStatus": "OUT",
-          "onBench": true,
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Shohei Ohtani",
+          "position": "CF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Gleyber Torres",
+          "position": "3B",
+          "slot": "UTIL",
+          "injStatus": "DAY_TO_DAY",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Nick Pivetta",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Wilyer Abreu",
+          "position": "LF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -286,61 +286,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Manny Machado",
-          "position": "SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jackson Chourio",
-          "position": "1B/3B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Juan Soto",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jarren Duran",
-          "position": "2B/SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Logan Webb",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Salvador Perez",
           "position": "1B",
-          "slot": "BE",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -348,9 +298,9 @@
         {
           "name": "Christian Walker",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -358,9 +308,19 @@
         {
           "name": "Jose Altuve",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Manny Machado",
+          "position": "SS",
+          "slot": "3B",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -368,39 +328,39 @@
         {
           "name": "Willy Adames",
           "position": "OF",
-          "slot": "BE",
+          "slot": "SS",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Brent Rooker",
-          "position": "CF",
-          "slot": "BE",
+          "name": "Jackson Chourio",
+          "position": "1B/3B",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Trevor Story",
-          "position": "OF",
-          "slot": "BE",
+          "name": "Juan Soto",
+          "position": "LF",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Spencer Torkelson",
-          "position": "2B",
-          "slot": "BE",
+          "name": "Jarren Duran",
+          "position": "2B/SS",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -408,71 +368,71 @@
         {
           "name": "Luis Castillo",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Kris Bubic",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Spencer Strider",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Bryan Abreu",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Hunter Gaddis",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Tyler Rogers",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Shane Baz",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Bryan Abreu",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Tyler Rogers",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Camilo Doval",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
@@ -526,31 +486,71 @@
           "stats": {}
         },
         {
-          "name": "Spencer Schwellenbach",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "SIXTY_DAY_DL",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Camilo Doval",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Cristian Javier",
           "position": "C",
           "slot": "BE",
           "injStatus": "ACTIVE",
           "onBench": true,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Hunter Gaddis",
+          "position": "RF",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Spencer Schwellenbach",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "SIXTY_DAY_DL",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Logan Webb",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Brent Rooker",
+          "position": "CF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Trevor Story",
+          "position": "OF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Spencer Torkelson",
+          "position": "2B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -564,11 +564,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Hunter Brown",
-          "position": "C",
-          "slot": "BE",
+          "name": "Will Smith",
+          "position": "1B",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -576,9 +576,9 @@
         {
           "name": "Pete Alonso",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -586,39 +586,9 @@
         {
           "name": "Ketel Marte",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Nolan McLean",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Trey Yesavage",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Will Smith",
-          "position": "1B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -626,9 +596,9 @@
         {
           "name": "Noelvi Marte",
           "position": "LF",
-          "slot": "BE",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -636,9 +606,9 @@
         {
           "name": "Ezequiel Tovar",
           "position": "OF",
-          "slot": "BE",
+          "slot": "SS",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -646,9 +616,9 @@
         {
           "name": "Brandon Nimmo",
           "position": "2B/SS",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -656,9 +626,9 @@
         {
           "name": "Chandler Simpson",
           "position": "1B/3B",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -666,86 +636,86 @@
         {
           "name": "Bryan Reynolds",
           "position": "LF",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Ian Happ",
-          "position": "2B/SS",
-          "slot": "BE",
+          "name": "Nolan McLean",
+          "position": "C",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Heliot Ramos",
-          "position": "2B/SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Max Clark",
-          "position": "1B/3B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Kevin Gausman",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Matt Svanson",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Garrett Cleavinger",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Trevor Megill",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Brandon Sproat",
           "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Matthew Liberatore",
+          "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Matt Svanson",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Garrett Cleavinger",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Trevor Megill",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Max Clark",
+          "position": "1B/3B",
           "slot": "BE",
           "injStatus": "ACTIVE",
           "onBench": true,
@@ -794,28 +764,8 @@
           "stats": {}
         },
         {
-          "name": "Giancarlo Stanton",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Luis Rengifo",
           "position": "SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Matthew Liberatore",
-          "position": "C",
           "slot": "BE",
           "injStatus": "ACTIVE",
           "onBench": true,
@@ -832,6 +782,56 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Trey Yesavage",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Hunter Brown",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Ian Happ",
+          "position": "2B/SS",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Heliot Ramos",
+          "position": "2B/SS",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Giancarlo Stanton",
+          "position": "CF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     },
@@ -842,61 +842,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Roman Anthony",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Paul Skenes",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Trea Turner",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Yoshinobu Yamamoto",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Julio Rodriguez",
-          "position": "1B/3B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Adley Rutschman",
           "position": "1B",
-          "slot": "BE",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -904,9 +854,9 @@
         {
           "name": "Nolan Schanuel",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -914,9 +864,9 @@
         {
           "name": "Ceddanne Rafaela",
           "position": "1B/3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -924,9 +874,39 @@
         {
           "name": "Jose Caballero",
           "position": "LF",
-          "slot": "BE",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Trea Turner",
+          "position": "OF",
+          "slot": "SS",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Roman Anthony",
+          "position": "LF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Julio Rodriguez",
+          "position": "1B/3B",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -934,111 +914,81 @@
         {
           "name": "Owen Caissie",
           "position": "LF",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Justin Crawford",
-          "position": "1B/3B",
-          "slot": "BE",
+          "name": "Yoshinobu Yamamoto",
+          "position": "C",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "JJ Wetherholt",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Carter Jensen",
-          "position": "1B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Tatsuya Imai",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "George Kirby",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Cade Smith",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Ryan Helsley",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Daniel Palencia",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Gerrit Cole",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Mitch Keller",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Cade Smith",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Ryan Helsley",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Daniel Palencia",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
@@ -1082,16 +1032,6 @@
           "stats": {}
         },
         {
-          "name": "Jared Jones",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "SIXTY_DAY_DL",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Austin Wells",
           "position": "1B",
           "slot": "BE",
@@ -1110,6 +1050,66 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Gerrit Cole",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Jared Jones",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "SIXTY_DAY_DL",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Paul Skenes",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Justin Crawford",
+          "position": "1B/3B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "JJ Wetherholt",
+          "position": "OF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Carter Jensen",
+          "position": "1B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     },
@@ -1120,21 +1120,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Yordan Alvarez",
-          "position": "CF",
-          "slot": "BE",
+          "name": "Shea Langeliers",
+          "position": "1B",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Corbin Carroll",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1142,39 +1132,9 @@
         {
           "name": "Vladimir Guerrero Jr.",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Joe Ryan",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Framber Valdez",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Shea Langeliers",
-          "position": "1B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1182,9 +1142,9 @@
         {
           "name": "Matt McLain",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1192,9 +1152,9 @@
         {
           "name": "Matt Chapman",
           "position": "SS",
-          "slot": "BE",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1202,9 +1162,29 @@
         {
           "name": "Dansby Swanson",
           "position": "OF",
-          "slot": "BE",
+          "slot": "SS",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Yordan Alvarez",
+          "position": "CF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Corbin Carroll",
+          "position": "LF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1212,91 +1192,71 @@
         {
           "name": "Pete Crow-Armstrong",
           "position": "1B/3B",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Daulton Varsho",
-          "position": "1B/3B",
-          "slot": "BE",
+          "name": "Framber Valdez",
+          "position": "C",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Michael Busch",
-          "position": "2B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Francisco Alvarez",
-          "position": "1B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Brandon Woodruff",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "DAY_TO_DAY",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "MacKenzie Gore",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "David Bednar",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Dennis Santana",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Edward Cabrera",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "David Bednar",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Dennis Santana",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
@@ -1334,16 +1294,6 @@
           "position": "C",
           "slot": "BE",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Hunter Greene",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
           "onBench": true,
           "onIL": false,
           "isPitcher": false,
@@ -1388,6 +1338,56 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Hunter Greene",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Joe Ryan",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Daulton Varsho",
+          "position": "1B/3B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Michael Busch",
+          "position": "2B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Francisco Alvarez",
+          "position": "1B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     },
@@ -1398,11 +1398,11 @@
       "isMyTeam": true,
       "players": [
         {
-          "name": "Elly De La Cruz",
-          "position": "OF",
-          "slot": "BE",
+          "name": "Dillon Dingler",
+          "position": "1B",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1410,49 +1410,9 @@
         {
           "name": "Matt Olson",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Wyatt Langford",
-          "position": "2B/SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jesus Luzardo",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Kyle Schwarber",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Dillon Dingler",
-          "position": "1B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1460,9 +1420,9 @@
         {
           "name": "Luis Garcia Jr.",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1470,9 +1430,29 @@
         {
           "name": "Caleb Durbin",
           "position": "SS",
-          "slot": "BE",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Elly De La Cruz",
+          "position": "OF",
+          "slot": "SS",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Wyatt Langford",
+          "position": "2B/SS",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1480,9 +1460,9 @@
         {
           "name": "Kerry Carpenter",
           "position": "LF",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1490,29 +1470,9 @@
         {
           "name": "Kyle Stowers",
           "position": "2B/SS",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Vinnie Pasquantino",
-          "position": "2B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Ivan Herrera",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1520,76 +1480,76 @@
         {
           "name": "Trevor Rogers",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Robbie Ray",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Nick Lodolo",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "DAY_TO_DAY",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Tanner Scott",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Abner Uribe",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Mick Abel",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
-          "name": "Cade Cavalli",
-          "position": "C",
-          "slot": "BE",
+          "name": "Tanner Scott",
+          "position": "RF",
+          "slot": "RP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Abner Uribe",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Luke Weaver",
           "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Cade Cavalli",
+          "position": "C",
           "slot": "BE",
           "injStatus": "ACTIVE",
           "onBench": true,
@@ -1666,6 +1626,46 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Jesus Luzardo",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Kyle Schwarber",
+          "position": "CF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Vinnie Pasquantino",
+          "position": "2B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Ivan Herrera",
+          "position": "CF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     },
@@ -1676,61 +1676,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Francisco Lindor",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "DAY_TO_DAY",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Zach Neto",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Max Fried",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Kyle Tucker",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Bobby Witt Jr.",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Agustin Ramirez",
           "position": "1B",
-          "slot": "BE",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1738,9 +1688,9 @@
         {
           "name": "Paul Goldschmidt",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1748,9 +1698,9 @@
         {
           "name": "Ozzie Albies",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1758,9 +1708,29 @@
         {
           "name": "Isaac Paredes",
           "position": "SS",
-          "slot": "BE",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Bobby Witt Jr.",
+          "position": "OF",
+          "slot": "SS",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Kyle Tucker",
+          "position": "LF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1768,9 +1738,9 @@
         {
           "name": "Andy Pages",
           "position": "1B/3B",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1778,29 +1748,9 @@
         {
           "name": "Randy Arozarena",
           "position": "2B/SS",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jackson Holliday",
-          "position": "3B",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Zack Wheeler",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1808,61 +1758,51 @@
         {
           "name": "Tyler Glasnow",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Andrew Abbott",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Aroldis Chapman",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Josh Hader",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Pete Fairbanks",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Jack Leiter",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Aroldis Chapman",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Pete Fairbanks",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
@@ -1878,16 +1818,6 @@
         {
           "name": "Nolan Arenado",
           "position": "SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Luis Robert Jr.",
-          "position": "1B/3B",
           "slot": "BE",
           "injStatus": "ACTIVE",
           "onBench": true,
@@ -1944,6 +1874,76 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Jackson Holliday",
+          "position": "3B",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Zack Wheeler",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Josh Hader",
+          "position": "RF",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Francisco Lindor",
+          "position": "OF",
+          "slot": "UTIL",
+          "injStatus": "DAY_TO_DAY",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Zach Neto",
+          "position": "OF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Max Fried",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Luis Robert Jr.",
+          "position": "1B/3B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     },
@@ -1954,21 +1954,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Fernando Tatis Jr.",
-          "position": "LF",
-          "slot": "BE",
+          "name": "Ben Rice",
+          "position": "2B",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Austin Riley",
-          "position": "SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1976,19 +1966,9 @@
         {
           "name": "Bryce Harper",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Riley Greene",
-          "position": "2B/SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -1996,19 +1976,19 @@
         {
           "name": "Jazz Chisholm Jr.",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Ben Rice",
-          "position": "2B",
-          "slot": "BE",
+          "name": "Austin Riley",
+          "position": "SS",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2016,11 +1996,111 @@
         {
           "name": "Corey Seager",
           "position": "OF",
-          "slot": "BE",
+          "slot": "SS",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Fernando Tatis Jr.",
+          "position": "LF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Riley Greene",
+          "position": "2B/SS",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Sal Frelick",
+          "position": "LF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Freddy Peralta",
+          "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Michael King",
+          "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Jacob Misiorowski",
+          "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Ranger Suarez",
+          "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Devin Williams",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Raisel Iglesias",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Kenley Jansen",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
@@ -2028,26 +2108,6 @@
           "position": "CF",
           "slot": "BE",
           "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Brice Turang",
-          "position": "3B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Yainer Diaz",
-          "position": "1B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
           "onBench": true,
           "onIL": false,
           "isPitcher": false,
@@ -2064,108 +2124,8 @@
           "stats": {}
         },
         {
-          "name": "Chris Sale",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Freddy Peralta",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Michael King",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jacob Misiorowski",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Devin Williams",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Raisel Iglesias",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Kenley Jansen",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Ranger Suarez",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Xander Bogaerts",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Ryan O'Hearn",
           "position": "2B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Sal Frelick",
-          "position": "LF",
           "slot": "BE",
           "injStatus": "ACTIVE",
           "onBench": true,
@@ -2222,6 +2182,46 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Brice Turang",
+          "position": "3B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Yainer Diaz",
+          "position": "1B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Chris Sale",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Xander Bogaerts",
+          "position": "OF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     },
@@ -2232,61 +2232,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Junior Caminero",
-          "position": "SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Cole Ragans",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Mookie Betts",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Bryan Woo",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Gunnar Henderson",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "William Contreras",
           "position": "1B",
-          "slot": "BE",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2294,9 +2244,39 @@
         {
           "name": "Tyler Soderstrom",
           "position": "2B/SS",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Luke Keaschall",
+          "position": "3B",
+          "slot": "2B",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Junior Caminero",
+          "position": "SS",
+          "slot": "3B",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Mookie Betts",
+          "position": "OF",
+          "slot": "SS",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2304,9 +2284,9 @@
         {
           "name": "George Springer",
           "position": "CF",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2314,9 +2294,9 @@
         {
           "name": "Jakob Marsee",
           "position": "1B/3B",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2324,91 +2304,81 @@
         {
           "name": "Jac Caglianone",
           "position": "LF",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Teoscar Hernandez",
-          "position": "LF",
-          "slot": "BE",
+          "name": "Bryan Woo",
+          "position": "C",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Sal Stewart",
-          "position": "2B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Jacob deGrom",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Eury Perez",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jeff Hoffman",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Griffin Jax",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jeremiah Estrada",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Dylan Cease",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Jeff Hoffman",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Griffin Jax",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Jeremiah Estrada",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
@@ -2472,16 +2442,6 @@
           "stats": {}
         },
         {
-          "name": "Luke Keaschall",
-          "position": "3B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Samuel Basallo",
           "position": "1B",
           "slot": "BE",
@@ -2500,6 +2460,46 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Cole Ragans",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Gunnar Henderson",
+          "position": "OF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Teoscar Hernandez",
+          "position": "LF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Sal Stewart",
+          "position": "2B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     },
@@ -2510,11 +2510,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Garrett Crochet",
-          "position": "C",
-          "slot": "BE",
+          "name": "Gabriel Moreno",
+          "position": "1B",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2522,49 +2522,9 @@
         {
           "name": "Nick Kurtz",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Logan Gilbert",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "James Wood",
-          "position": "2B/SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jackson Merrill",
-          "position": "1B/3B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Gabriel Moreno",
-          "position": "1B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2572,9 +2532,9 @@
         {
           "name": "Nico Hoerner",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2582,9 +2542,9 @@
         {
           "name": "Maikel Garcia",
           "position": "SS",
-          "slot": "BE",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2592,9 +2552,29 @@
         {
           "name": "Jeremy Pena",
           "position": "OF",
-          "slot": "BE",
+          "slot": "SS",
           "injStatus": "DAY_TO_DAY",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "James Wood",
+          "position": "2B/SS",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Jackson Merrill",
+          "position": "1B/3B",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2602,101 +2582,81 @@
         {
           "name": "Michael Harris II",
           "position": "1B/3B",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Josh Naylor",
-          "position": "2B",
-          "slot": "BE",
+          "name": "Logan Gilbert",
+          "position": "C",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Yandy Diaz",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Alex Bregman",
-          "position": "SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Kyle Bradish",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Tanner Bibee",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jhoan Duran",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Robert Suarez",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Robert Garcia",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Gavin Williams",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Jhoan Duran",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Robert Suarez",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Robert Garcia",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
@@ -2778,6 +2738,46 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Garrett Crochet",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Josh Naylor",
+          "position": "2B",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Yandy Diaz",
+          "position": "CF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Alex Bregman",
+          "position": "SS",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     },
@@ -2788,51 +2788,21 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Rafael Devers",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Cam Schlittler",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Tarik Skubal",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Cal Raleigh",
           "position": "1B",
-          "slot": "BE",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "CJ Abrams",
-          "position": "OF",
-          "slot": "BE",
+          "name": "Rafael Devers",
+          "position": "CF",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2840,9 +2810,9 @@
         {
           "name": "Xavier Edwards",
           "position": "3B",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -2850,11 +2820,111 @@
         {
           "name": "Munetaka Murakami",
           "position": "SS",
-          "slot": "BE",
+          "slot": "3B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "CJ Abrams",
+          "position": "OF",
+          "slot": "SS",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Mike Trout",
+          "position": "CF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Trent Grisham",
+          "position": "1B/3B",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Spencer Jones",
+          "position": "1B/3B",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Tarik Skubal",
+          "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Shota Imanaga",
+          "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Carlos Lagrange",
+          "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Emilio Pagan",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Carlos Estevez",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Ryan Walker",
+          "position": "RF",
+          "slot": "RP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
@@ -2868,58 +2938,8 @@
           "stats": {}
         },
         {
-          "name": "Mike Trout",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Jo Adell",
           "position": "1B/3B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Christian Yelich",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Luis Arraez",
-          "position": "2B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Bo Bichette",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Shota Imanaga",
-          "position": "C",
           "slot": "BE",
           "injStatus": "ACTIVE",
           "onBench": true,
@@ -2939,26 +2959,6 @@
         },
         {
           "name": "Mason Miller",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Emilio Pagan",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Carlos Estevez",
           "position": "RF",
           "slot": "BE",
           "injStatus": "ACTIVE",
@@ -3008,26 +3008,6 @@
           "stats": {}
         },
         {
-          "name": "Ryan Walker",
-          "position": "RF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Trent Grisham",
-          "position": "1B/3B",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Alejandro Kirk",
           "position": "1B",
           "slot": "BE",
@@ -3038,21 +3018,41 @@
           "stats": {}
         },
         {
-          "name": "Carlos Lagrange",
+          "name": "Cam Schlittler",
           "position": "C",
-          "slot": "BE",
+          "slot": "P",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Christian Yelich",
+          "position": "CF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
         },
         {
-          "name": "Spencer Jones",
-          "position": "1B/3B",
-          "slot": "BE",
+          "name": "Luis Arraez",
+          "position": "2B",
+          "slot": "UTIL",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Bo Bichette",
+          "position": "OF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -3066,61 +3066,11 @@
       "isMyTeam": false,
       "players": [
         {
-          "name": "Ronald Acuna Jr.",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Cristopher Sanchez",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Kevin McGonigle",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Konnor Griffin",
-          "position": "OF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Jose Ramirez",
-          "position": "SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Hunter Goodman",
           "position": "1B",
-          "slot": "BE",
+          "slot": "C",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -3128,9 +3078,9 @@
         {
           "name": "Jonathan Aranda",
           "position": "2B",
-          "slot": "BE",
+          "slot": "1B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -3138,9 +3088,39 @@
         {
           "name": "Jorge Polanco",
           "position": "CF",
-          "slot": "BE",
+          "slot": "2B",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Jose Ramirez",
+          "position": "SS",
+          "slot": "3B",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Kevin McGonigle",
+          "position": "OF",
+          "slot": "SS",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Ronald Acuna Jr.",
+          "position": "LF",
+          "slot": "OF",
+          "injStatus": "ACTIVE",
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -3148,9 +3128,9 @@
         {
           "name": "Byron Buxton",
           "position": "1B/3B",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -3158,29 +3138,9 @@
         {
           "name": "Oneil Cruz",
           "position": "1B/3B",
-          "slot": "BE",
+          "slot": "OF",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Eugenio Suarez",
-          "position": "SS",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Marcell Ozuna",
-          "position": "CF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
           "isPitcher": false,
           "stats": {}
@@ -3188,48 +3148,28 @@
         {
           "name": "Cade Horton",
           "position": "C",
-          "slot": "BE",
+          "slot": "SP",
           "injStatus": "ACTIVE",
-          "onBench": true,
+          "onBench": false,
           "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Carlos Rodon",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
+          "isPitcher": true,
           "stats": {}
         },
         {
           "name": "Bubba Chandler",
           "position": "C",
+          "slot": "SP",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Konnor Griffin",
+          "position": "OF",
           "slot": "BE",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Corbin Burnes",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "SIXTY_DAY_DL",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Joe Musgrove",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
           "onBench": true,
           "onIL": false,
           "isPitcher": false,
@@ -3266,30 +3206,10 @@
           "stats": {}
         },
         {
-          "name": "Lawrence Butler",
-          "position": "LF",
-          "slot": "BE",
-          "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
           "name": "Justin Verlander",
           "position": "C",
           "slot": "BE",
           "injStatus": "ACTIVE",
-          "onBench": true,
-          "onIL": false,
-          "isPitcher": false,
-          "stats": {}
-        },
-        {
-          "name": "Justin Steele",
-          "position": "C",
-          "slot": "BE",
-          "injStatus": "OUT",
           "onBench": true,
           "onIL": false,
           "isPitcher": false,
@@ -3334,6 +3254,86 @@
           "onIL": false,
           "isPitcher": false,
           "stats": {}
+        },
+        {
+          "name": "Carlos Rodon",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Corbin Burnes",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "SIXTY_DAY_DL",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Joe Musgrove",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Justin Steele",
+          "position": "C",
+          "slot": "IL",
+          "injStatus": "OUT",
+          "onBench": false,
+          "onIL": true,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Cristopher Sanchez",
+          "position": "C",
+          "slot": "P",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": true,
+          "stats": {}
+        },
+        {
+          "name": "Eugenio Suarez",
+          "position": "SS",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Marcell Ozuna",
+          "position": "CF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
+        },
+        {
+          "name": "Lawrence Butler",
+          "position": "LF",
+          "slot": "UTIL",
+          "injStatus": "ACTIVE",
+          "onBench": false,
+          "onIL": false,
+          "isPitcher": false,
+          "stats": {}
         }
       ]
     }
@@ -3343,5 +3343,5 @@
     "actualPct": 10,
     "week": 1
   },
-  "updated": "2026-03-22T21:13:25Z"
+  "updated": "2026-03-22T21:18:19Z"
 }
