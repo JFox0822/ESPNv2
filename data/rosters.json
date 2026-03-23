@@ -480,7 +480,7 @@
           "position": "?",
           "eligible": "",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "OUT",
           "stats": {},
           "tier": ""
         },
@@ -837,27 +837,7 @@
           "tier": ""
         },
         {
-          "name": "Cedric Mullins",
-          "slot": "BE",
-          "position": "?",
-          "eligible": "",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "tier": ""
-        },
-        {
           "name": "Yusei Kikuchi",
-          "slot": "BE",
-          "position": "?",
-          "eligible": "",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "tier": ""
-        },
-        {
-          "name": "Andrew Benintendi",
           "slot": "BE",
           "position": "?",
           "eligible": "",
@@ -898,6 +878,46 @@
         },
         {
           "name": "Seth Hernandez",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Esteury Ruiz",
+          "slot": "IL",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "OUT",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Evan Carter",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Max Scherzer",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Ian Seymour",
           "slot": "BE",
           "position": "?",
           "eligible": "",
@@ -2066,6 +2086,16 @@
         },
         {
           "name": "Zebby Matthews",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Josh Smith",
           "slot": "BE",
           "position": "?",
           "eligible": "",
@@ -3532,5 +3562,5 @@
     "projPct": 0,
     "actualPct": 100
   },
-  "updated": "2026-03-23T12:52:39Z"
+  "updated": "2026-03-23T15:39:48Z"
 }
