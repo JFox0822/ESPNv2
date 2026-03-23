@@ -281,6 +281,46 @@
           "injStatus": "OUT",
           "stats": {},
           "tier": ""
+        },
+        {
+          "name": "Bailey Ober",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Luis Severino",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Michael Wacha",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Brandon Pfaadt",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
         }
       ]
     },
@@ -556,6 +596,26 @@
         },
         {
           "name": "Cristian Javier",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "J.T. Realmuto",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Reynaldo Lopez",
           "slot": "BE",
           "position": "?",
           "eligible": "",
@@ -1127,6 +1187,26 @@
           "injStatus": "ACTIVE",
           "stats": {},
           "tier": ""
+        },
+        {
+          "name": "Noah Cameron",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Ryan McMahon",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
         }
       ]
     },
@@ -1403,6 +1483,26 @@
         {
           "name": "Jordan Lawlar",
           "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Tommy Edman",
+          "slot": "IL",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "OUT",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Will Vest",
+          "slot": "RP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -3327,7 +3427,7 @@
         },
         {
           "name": "Justin Verlander",
-          "slot": "BE",
+          "slot": "SP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -3347,7 +3447,7 @@
         },
         {
           "name": "Will Warren",
-          "slot": "BE",
+          "slot": "SP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -3376,8 +3476,48 @@
           "tier": ""
         },
         {
-          "name": "Didier Fuentes",
+          "name": "Ryne Nelson",
           "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Zach Eflin",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Adrian Morejon",
+          "slot": "RP",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Garrett Whitlock",
+          "slot": "RP",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Grant Taylor",
+          "slot": "RP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -3392,5 +3532,5 @@
     "projPct": 0,
     "actualPct": 100
   },
-  "updated": "2026-03-23T02:39:03Z"
+  "updated": "2026-03-23T12:52:39Z"
 }
