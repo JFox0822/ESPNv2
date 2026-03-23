@@ -78,13 +78,14 @@ def main():
     # ── 1. Team map ─────────────────────────────────────────────────────────────
     team_map = {}
     for t in league.teams:
-        owners = [o.get("displayName", o.get("firstName","")) for o in (t.owners or [])]
+        raw_owners = getattr(t, "owners", []) or []
+        owners = [o.get("displayName", o.get("firstName","?")) if isinstance(o, dict) else str(o) for o in raw_owners]
         team_map[t.team_id] = {
             "id":     t.team_id,
             "name":   t.team_name,
-            "abbrev": t.team_abbrev,
+            "abbrev": getattr(t, "team_abbrev", t.team_name[:3].upper()),
             "owners": owners,
-            "logo":   getattr(t, "logo_url", ""),
+            "logo":   getattr(t, "logo_url", getattr(t, "logo", "")),
         }
 
     # ── 2. Standings ─────────────────────────────────────────────────────────────
@@ -96,8 +97,8 @@ def main():
             "wins":          t.wins,
             "losses":        t.losses,
             "ties":          t.ties,
-            "pointsFor":     round(t.points_for, 1),
-            "pointsAgainst": round(t.points_against, 1),
+            "pointsFor":     round(getattr(t, "points_for", 0) or 0, 1),
+            "pointsAgainst": round(getattr(t, "points_against", 0) or 0, 1),
             "streak":        getattr(t, "streak_length", 0),
             "streakType":    getattr(t, "streak_type", ""),
             "seed":          getattr(t, "playoff_pct", 0),
@@ -154,7 +155,8 @@ def main():
         tm   = team_map[t.team_id]
         s_rec = next((s for s in standings if s["id"] == t.team_id), {})
         stats = {}
-        for k, v in (t.stats or {}).items():
+        raw_stats = getattr(t, "stats", {}) or getattr(t, "valuesByStat", {}) or {}
+        for k, v in raw_stats.items():
             lbl = STAT_MAP.get(str(k))
             if lbl:
                 stats[lbl] = round(v, 3) if isinstance(v, float) else v
@@ -173,10 +175,10 @@ def main():
         tm = team_map[t.team_id]
         players = []
         for p in (t.roster or []):
-            slot_id = getattr(p, "lineupSlot", 16)
+            slot_id = getattr(p, "lineupSlot", getattr(p, "slot_id", 16))
             slot_label = SLOT_MAP.get(slot_id, "BE") if isinstance(slot_id, int) else str(slot_id)
 
-            pos_id = getattr(p, "defaultPositionId", 0) or 0
+            pos_id = getattr(p, "defaultPositionId", getattr(p, "position_id", 0)) or 0
             primary_pos = POS_MAP.get(pos_id, "?")
 
             eligible_ids = getattr(p, "eligibleSlots", []) or []
@@ -260,7 +262,7 @@ def main():
     # ── 7. Meta ──────────────────────────────────────────────────────────────────
     team_list = [{"id": t["id"], "name": t["name"], "abbrev": t["abbrev"]} for t in standings]
     save("meta.json", {
-        "leagueName":    league.settings.name,
+        "leagueName":    getattr(league.settings, "name", "The League"),
         "season":        SEASON,
         "currentWeek":   current_week,
         "scoringPeriod": current_week,
@@ -274,3 +276,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
