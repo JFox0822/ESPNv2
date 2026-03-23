@@ -2,7 +2,69 @@
   "leagueName": "The League",
   "season": 2026,
   "currentWeek": 1,
+  "scoringPeriod": 1,
   "teamCount": 12,
-  "myTeam": "Jacob",
-  "updated": "2026-03-22T22:57:41Z"
+  "teams": [
+    {
+      "id": 1,
+      "name": "Roosevelt Ruff Ryders",
+      "abbrev": "BOYC"
+    },
+    {
+      "id": 2,
+      "name": "Gettysburg Generals",
+      "abbrev": "MION"
+    },
+    {
+      "id": 3,
+      "name": "Buffalo Bison",
+      "abbrev": "BERT"
+    },
+    {
+      "id": 4,
+      "name": "\ud83c\udfc6 Virginia Beach VelociRaptors",
+      "abbrev": "CHRS"
+    },
+    {
+      "id": 5,
+      "name": "Cooperstown Udder Tuggers",
+      "abbrev": "AARN"
+    },
+    {
+      "id": 6,
+      "name": "San Juan Coquis",
+      "abbrev": "JACB"
+    },
+    {
+      "id": 7,
+      "name": "Nagasaki Bombers",
+      "abbrev": "SPNY"
+    },
+    {
+      "id": 8,
+      "name": "Portland Pickles",
+      "abbrev": "CORY"
+    },
+    {
+      "id": 9,
+      "name": "Las Vegas Degenerate",
+      "abbrev": "GREN"
+    },
+    {
+      "id": 10,
+      "name": "Amsterdam Mohawks",
+      "abbrev": "TIM"
+    },
+    {
+      "id": 11,
+      "name": "Santa Clara Sea-Creatures",
+      "abbrev": "LEO"
+    },
+    {
+      "id": 12,
+      "name": "Brevard County Manatees",
+      "abbrev": "TC"
+    }
+  ],
+  "updated": "2026-03-23T02:25:42Z"
 }
