@@ -672,7 +672,7 @@
           "position": "?",
           "eligible": "",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "tier": ""
         },
@@ -1229,7 +1229,7 @@
           "tier": ""
         },
         {
-          "name": "Ryan McMahon",
+          "name": "T.J. Rumfield",
           "slot": "BE",
           "position": "?",
           "eligible": "",
@@ -1316,7 +1316,7 @@
           "position": "?",
           "eligible": "",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "tier": ""
         },
@@ -1708,7 +1708,7 @@
           "position": "?",
           "eligible": "",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "OUT",
           "stats": {},
           "tier": ""
         },
@@ -1905,16 +1905,6 @@
           "tier": ""
         },
         {
-          "name": "Paul Goldschmidt",
-          "slot": "1B",
-          "position": "?",
-          "eligible": "",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "tier": ""
-        },
-        {
           "name": "Ozzie Albies",
           "slot": "2B",
           "position": "?",
@@ -2026,7 +2016,7 @@
         },
         {
           "name": "Jack Leiter",
-          "slot": "SP",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2076,7 +2066,7 @@
         },
         {
           "name": "Roki Sasaki",
-          "slot": "BE",
+          "slot": "SP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2100,7 +2090,7 @@
           "position": "?",
           "eligible": "",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "tier": ""
         },
@@ -2126,7 +2116,7 @@
         },
         {
           "name": "Spencer Horwitz",
-          "slot": "BE",
+          "slot": "1B",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2136,11 +2126,31 @@
         },
         {
           "name": "Jason Adam",
-          "slot": "RP",
+          "slot": "IL",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
           "injStatus": "OUT",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Lucas Erceg",
+          "slot": "RP",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": ""
+        },
+        {
+          "name": "Taj Bradley",
+          "slot": "SP",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
           "stats": {},
           "tier": ""
         }
@@ -3264,7 +3274,7 @@
         },
         {
           "name": "Carlos Lagrange",
-          "slot": "SP",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -3612,5 +3622,5 @@
     "projPct": 0,
     "actualPct": 100
   },
-  "updated": "2026-03-24T15:46:01Z"
+  "updated": "2026-03-25T00:53:58Z"
 }
