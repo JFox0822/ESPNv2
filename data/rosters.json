@@ -2128,7 +2128,7 @@
         },
         {
           "name": "Kyle Stowers",
-          "slot": "OF",
+          "slot": "IL",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2193,7 +2193,7 @@
         },
         {
           "name": "Nick Lodolo",
-          "slot": "SP",
+          "slot": "IL",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2258,7 +2258,7 @@
         },
         {
           "name": "Luke Weaver",
-          "slot": "RP",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2284,7 +2284,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "BE",
+          "slot": "OF",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2350,6 +2350,32 @@
         {
           "name": "Carson Benge",
           "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Tim Hill",
+          "slot": "RP",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Slade Cecconi",
+          "slot": "SP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2521,7 +2547,7 @@
           "position": "?",
           "eligible": "",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "tier": "",
           "acquisitionType": "DRAFT",
@@ -4663,5 +4689,5 @@
     "projPct": 0,
     "actualPct": 100
   },
-  "updated": "2026-03-25T18:03:51Z"
+  "updated": "2026-03-25T19:20:32Z"
 }
