@@ -3941,7 +3941,7 @@
         },
         {
           "name": "Cam Schlittler",
-          "slot": "P",
+          "slot": "SP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -3954,7 +3954,7 @@
         },
         {
           "name": "Tarik Skubal",
-          "slot": "SP",
+          "slot": "P",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -4123,7 +4123,7 @@
         },
         {
           "name": "Mason Miller",
-          "slot": "BE",
+          "slot": "RP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -4149,7 +4149,7 @@
         },
         {
           "name": "Carlos Estevez",
-          "slot": "RP",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -4697,5 +4697,5 @@
       ]
     }
   ],
-  "updated": "2026-03-26T13:40:28Z"
+  "updated": "2026-03-26T13:45:20Z"
 }
