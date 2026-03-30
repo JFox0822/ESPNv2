@@ -350,7 +350,6 @@ def main():
         id_to_name = {t.team_id: t.team_name for t in league.teams}
 
         def api_get(views, extra_params=None):
-            """Call ESPN API reusing espn-api's cookies and headers."""
             import requests as _req
             if isinstance(views, str):
                 views = [views]
@@ -358,31 +357,20 @@ def main():
             if extra_params:
                 for k, v2 in extra_params.items():
                     params_list.append((k, v2))
-
-            # Pull cookies + headers directly from the EspnFantasyRequests object
             cookies = getattr(req, 'cookies', {}) or {}
             headers = dict(getattr(req, 'headers', {}) or {})
-            print(f"    espn_request cookies keys: {list(cookies.keys())}")
-
             base = (f'https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb'
                     f'/seasons/{SEASON}/segments/0/leagues/{LEAGUE_ID}')
-
-            resp = _req.get(base, params=params_list,
-                            cookies=cookies, headers=headers, timeout=20)
-            print(f"    lm-api HTTP {resp.status_code}")
-            if resp.status_code == 200:
-                return resp.json()
-
-            # Fallback: old fantasy.espn.com endpoint
-            base2 = (f'https://fantasy.espn.com/apis/v3/games/flb'
-                     f'/seasons/{SEASON}/segments/0/leagues/{LEAGUE_ID}')
-            resp2 = _req.get(base2, params=params_list,
-                             cookies=cookies, headers=headers, timeout=20)
-            print(f"    fantasy.espn HTTP {resp2.status_code}")
-            if resp2.status_code == 200:
-                return resp2.json()
-
-            raise RuntimeError(f"Both endpoints failed: {resp.status_code}, {resp2.status_code}")
+            resp = _req.get(base, params=params_list, cookies=cookies,
+                            headers=headers, timeout=20)
+            if resp.status_code != 200:
+                base2 = (f'https://fantasy.espn.com/apis/v3/games/flb'
+                         f'/seasons/{SEASON}/segments/0/leagues/{LEAGUE_ID}')
+                resp = _req.get(base2, params=params_list, cookies=cookies,
+                                headers=headers, timeout=20)
+            print(f"    HTTP {resp.status_code}")
+            resp.raise_for_status()
+            return resp.json()
 
         def fmt_v(v, lbl):
             if v is None: return "—"
@@ -394,21 +382,53 @@ def main():
                 return str(int(f)) if f == int(f) else str(round(f,1))
             except: return str(v)
 
-        # Step 1: Get scoreboard (matchup pairings + category win totals)
+        # Step 1: Get scoreboard
         for sp in [1, 2]:
             try:
                 data = api_get(['mScoreboard'], {'scoringPeriodId': sp})
                 if not isinstance(data, dict):
-                    print(f"  sp={sp}: unexpected type {type(data)}")
                     continue
 
                 schedule = data.get('schedule', [])
-                print(f"  sp={sp}: {len(schedule)} schedule entries, "
-                      f"periods={sorted(set(m.get('matchupPeriodId',0) for m in schedule[:30]))}")
+                all_periods = sorted(set(m.get('matchupPeriodId', m.get('matchupPeriod', 0))
+                                         for m in schedule[:30]))
+                print(f"  sp={sp}: {len(schedule)} entries, matchupPeriodIds={all_periods}")
 
+                # Debug: print first entry keys
+                if schedule:
+                    first = schedule[0]
+                    print(f"  First entry keys: {list(first.keys())}")
+                    print(f"  First entry matchupPeriodId={first.get('matchupPeriodId')} "
+                          f"id={first.get('id')} "
+                          f"home.teamId={first.get('home',{}).get('teamId')} "
+                          f"away.teamId={first.get('away',{}).get('teamId')}")
+                    # Check what scoring period data looks like
+                    home_cum = first.get('home',{}).get('cumulativeScore',{})
+                    print(f"  First home cumulativeScore keys: {list(home_cum.keys())}")
+                    print(f"  First home wins={home_cum.get('wins')} losses={home_cum.get('losses')}")
+
+                # Try multiple ways to find current-period matchups
+                # 1. Filter by matchupPeriodId == sp
                 period_matches = [m for m in schedule if m.get('matchupPeriodId') == sp]
-                print(f"  sp={sp}: {len(period_matches)} matchups for this period")
+                # 2. If nothing, try matchupPeriod field
+                if not period_matches:
+                    period_matches = [m for m in schedule if m.get('matchupPeriod') == sp]
+                # 3. If still nothing, the scoringPeriodId param should have filtered already
+                #    so just take all entries that have both home and away teams
+                if not period_matches:
+                    period_matches = [m for m in schedule
+                                      if m.get('home',{}).get('teamId')
+                                      and m.get('away',{}).get('teamId')]
+                    print(f"  Using all {len(period_matches)} entries with home+away teams")
 
+                # Limit to 6 (one per matchup pair in a 12-team league)
+                if len(period_matches) > 6:
+                    # Sort by id descending to get most recent
+                    period_matches = sorted(period_matches,
+                                            key=lambda x: x.get('id',0), reverse=True)[:6]
+                    print(f"  Trimmed to 6 most recent entries")
+
+                print(f"  sp={sp}: {len(period_matches)} matchups to process")
                 if not period_matches:
                     continue
 
