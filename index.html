@@ -576,10 +576,12 @@ async function renderStandings() {
 // ═══ MATCHUPS ═══
 // ── Win Probability Engine ──────────────────────────────────────────────────
 const CAT_VARIANCE = {
-  R:4.5, HR:2.0, RBI:4.0, Kbat:5.0, SB:1.5,
-  AVG:0.018, OPS:0.045,
-  IP:12.0, H:0.08, K:10.0, QS:1.2,
-  ERA:0.8, WHIP:0.12, SVHD:1.2,
+  // Weekly std-dev calibrated to reflect single-day swing potential
+  // (a hot day can flip any category, so variance is deliberately wide)
+  R:12.0, HR:4.5, RBI:12.0, Kbat:14.0, SB:3.0,
+  AVG:0.055, OPS:0.120,
+  IP:15.0, H:0.25, K:14.0, QS:2.0,
+  ERA:2.0, WHIP:0.30, SVHD:2.0,
 };
 const LOWER_CATS_SET = new Set(['ERA','WHIP','H','Kbat']);
 
@@ -610,7 +612,7 @@ function computeWinProb(home, away, eloH, eloA, week, projections) {
   const totalCatWins = home.catWins + away.catWins + (home.catTies||0);
   // Week progress: 0 = start, 1 = end. Cap at 0.75 even if all cats decided
   // because upsets can still happen until the week officially closes.
-  const weekProgress = Math.min(0.75, totalCatWins / N_CATS);
+  const weekProgress = Math.min(0.80, totalCatWins / N_CATS);
 
   // ── 4. Per-category win probability ───────────────────────────────────────
   function catWinProb(cat) {
@@ -628,11 +630,12 @@ function computeWinProb(home, away, eloH, eloA, week, projections) {
         const diff = lower ? (aVal - hVal) : (hVal - aVal);
         // As week progresses, live results get more weight
         // Early week: high uncertainty. Late week: near-deterministic.
-        // Keep at least 40% variance remaining so comebacks stay possible all week
-        const remainingVariance = variance * Math.max(0.40, Math.sqrt(1 - weekProgress * 0.7));
-        // Normal CDF approximation (logistic)
+        // Keep at least 50% variance — even late-week, one big day can flip a cat
+        const remainingVariance = variance * Math.max(0.50, Math.sqrt(1 - weekProgress * 0.5));
         const z = diff / remainingVariance;
-        return 1 / (1 + Math.exp(-1.7 * z));
+        // Softer logistic (1.2 vs 1.7) = flatter curve = more uncertainty
+        // Per-cat probability capped at 0.85/0.15 — no cat is ever certain
+        return Math.max(0.15, Math.min(0.85, 1 / (1 + Math.exp(-1.2 * z))));
       }
     }
 
@@ -725,13 +728,13 @@ async function renderMatchups() {
           const h = home.categories?.[cat]||{};
           const a = away.categories?.[cat]||{};
           if (!h.value && !a.value) return '';
-          const hW=h.result==='WIN', aW=a.result==='WIN';
+          const hW=h.result==='WIN', aW=a.result==='WIN', isTie=h.result==='TIE';
           return `<div class="mu-cat-row">
-            <div class="cv ${hW?'cw':aW?'cl':''}">${h.value??'—'}</div>
-            <div class="cbar"><div class="cbf" style="width:${hW?100:aW?0:50}%;background:${hW?'var(--green)':aW?'var(--red)':'var(--ink3)'}"></div></div>
-            <div class="cn">${catLabel[cat]||cat}</div>
-            <div class="cbar"><div class="cbf" style="width:${aW?100:hW?0:50}%;background:${aW?'var(--green)':hW?'var(--red)':'var(--ink3)'}"></div></div>
-            <div class="cv ${aW?'cw':hW?'cl':''}">${a.value??'—'}</div>
+            <div class="cv ${hW?'cw':aW?'cl':''}" style="${isTie?'color:var(--gold)':''}">${h.value??'—'}</div>
+            <div class="cbar"><div class="cbf" style="width:${isTie?50:hW?100:0}%;background:${isTie?'var(--gold)':hW?'var(--green)':'var(--red)'}"></div></div>
+            <div class="cn" style="${isTie?'color:var(--gold)':''}">${catLabel[cat]||cat}</div>
+            <div class="cbar"><div class="cbf" style="width:${isTie?50:aW?100:0}%;background:${isTie?'var(--gold)':aW?'var(--green)':'var(--red)'}"></div></div>
+            <div class="cv ${aW?'cw':hW?'cl':''}" style="${isTie?'color:var(--gold)':''}">${a.value??'—'}</div>
           </div>`;
         }).filter(Boolean).join('');
         return rows ? hdr + rows : '';
@@ -757,20 +760,27 @@ async function renderMatchups() {
           : hasStats ? `${m.leader} leading`
           : 'Upcoming';
 
-        return `<div class="mu-card ${hasMe?'mine':''}">
+        const hTies = home.catTies || 0;
+        const aTies = away.catTies || 0;
+        const ties  = Math.max(hTies, aTies);
+        const hRecord = hasStats||isFinal ? `${home.catWins}–${home.catLoss}${ties?'–'+ties:''}` : '';
+        const aRecord = hasStats||isFinal ? `${away.catWins}–${away.catLoss}${ties?'–'+ties:''}` : '';
+                return `<div class="mu-card ${hasMe?'mine':''}">
           <div class="mu-hd">
             <span>Week ${wk}</span>
             <span style="color:var(--gold)">${status}</span>
           </div>
-          <div class="mu-body">
-            <div class="mu-row">
-              <span class="mu-name ${isMine(home.team)?'mine':''}" onclick="goToRoster(${home.teamId})">${home.team}</span>
-              <span class="mu-score ${hw?'win':aw?'lose':''}">${hasStats||isFinal?home.catWins:''}</span>
-            </div>
-            <div class="mu-vs">· VS ·</div>
-            <div class="mu-row">
-              <span class="mu-name ${isMine(away.team)?'mine':''}" onclick="goToRoster(${away.teamId})">${away.team}</span>
-              <span class="mu-score ${aw?'win':hw?'lose':''}">${hasStats||isFinal?away.catWins:''}</span>
+          <div style="padding:12px 14px 8px">
+            <div style="margin-bottom:10px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
+                <span class="mu-name ${isMine(home.team)?'mine':''}" onclick="goToRoster(${home.teamId})" style="cursor:pointer">${home.team}</span>
+                <span style="font-family:var(--fd);font-size:28px;font-weight:900;color:${hw?'var(--green)':aw?'var(--red)':'var(--ink2)'}">${hRecord}</span>
+              </div>
+              <div style="font-family:var(--fm);font-size:8px;color:var(--ink3);text-align:center;letter-spacing:.1em;margin-bottom:6px">VS</div>
+              <div style="display:flex;justify-content:space-between;align-items:baseline">
+                <span class="mu-name ${isMine(away.team)?'mine':''}" onclick="goToRoster(${away.teamId})" style="cursor:pointer">${away.team}</span>
+                <span style="font-family:var(--fd);font-size:28px;font-weight:900;color:${aw?'var(--green)':hw?'var(--red)':'var(--ink2)'}">${aRecord}</span>
+              </div>
             </div>
           </div>
           ${!isFinal?`<div style="padding:8px 14px 6px;border-top:1px solid var(--bg3)">
