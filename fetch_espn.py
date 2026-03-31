@@ -465,8 +465,15 @@ def main():
                         cat_losses = int(cum.get('losses', 0) or 0)
 
                         # Per-category stats from scoreByStat
+                        sbs = cum.get('scoreByStat', {})
+                        # Debug: print ALL non-zero stat IDs so we can map them
+                        if sbs:
+                            non_zero = {str(k): round(float(v.get('score',0) or 0), 3)
+                                        for k, v in sbs.items()
+                                        if isinstance(v, dict) and (v.get('score') or 0) != 0}
+                            print(f"      [{tname}] statIds: {non_zero}")
                         stats = {}
-                        for stat_id, info in cum.get('scoreByStat', {}).items():
+                        for stat_id, info in sbs.items():
                             lbl = STAT_KEYS.get(str(stat_id))
                             if lbl:
                                 v = info.get('score', info.get('value'))
