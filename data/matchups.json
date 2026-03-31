@@ -11,12 +11,24 @@
         "catLoss": 2,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "3",
+          "H": {
+            "value": "35",
+            "result": "WIN"
+          },
+          "ERA": {
+            "value": "2.62",
             "result": "WIN"
           },
           "QS": {
             "value": "2",
+            "result": "TIE"
+          },
+          "WHIP": {
+            "value": "1.10",
+            "result": "WIN"
+          },
+          "HR": {
+            "value": "8",
             "result": "TIE"
           },
           "R": {
@@ -27,45 +39,33 @@
             "value": "48.0",
             "result": "WIN"
           },
-          "WHIP": {
-            "value": "1.10",
-            "result": "WIN"
-          },
-          "ERA": {
-            "value": "2.62",
-            "result": "WIN"
-          },
-          "HR": {
-            "value": "8",
-            "result": "TIE"
-          },
           "AVG": {
             "value": "0.254",
             "result": "WIN"
           },
-          "Kbat": {
-            "value": "47",
-            "result": "LOSS"
-          },
-          "SVHD": {
-            "value": "0",
-            "result": "TIE"
-          },
-          "H": {
-            "value": "35",
+          "OPS": {
+            "value": "0.812",
             "result": "WIN"
           },
           "K": {
             "value": "50",
             "result": "LOSS"
           },
-          "OPS": {
-            "value": "0.812",
-            "result": "WIN"
-          },
           "RBI": {
             "value": "28",
             "result": "WIN"
+          },
+          "SB": {
+            "value": "3",
+            "result": "WIN"
+          },
+          "SVHD": {
+            "value": "0",
+            "result": "TIE"
+          },
+          "Kbat": {
+            "value": "47",
+            "result": "LOSS"
           }
         }
       },
@@ -78,12 +78,24 @@
         "catLoss": 10,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "2",
+          "H": {
+            "value": "36",
+            "result": "LOSS"
+          },
+          "ERA": {
+            "value": "5.95",
             "result": "LOSS"
           },
           "QS": {
             "value": "2",
+            "result": "TIE"
+          },
+          "WHIP": {
+            "value": "1.35",
+            "result": "LOSS"
+          },
+          "HR": {
+            "value": "8",
             "result": "TIE"
           },
           "R": {
@@ -94,45 +106,33 @@
             "value": "39.1",
             "result": "LOSS"
           },
-          "WHIP": {
-            "value": "1.35",
-            "result": "LOSS"
-          },
-          "ERA": {
-            "value": "5.95",
-            "result": "LOSS"
-          },
-          "HR": {
-            "value": "8",
-            "result": "TIE"
-          },
           "AVG": {
             "value": "0.226",
             "result": "LOSS"
           },
-          "Kbat": {
-            "value": "46",
-            "result": "WIN"
-          },
-          "SVHD": {
-            "value": "0",
-            "result": "TIE"
-          },
-          "H": {
-            "value": "36",
+          "OPS": {
+            "value": "0.759",
             "result": "LOSS"
           },
           "K": {
             "value": "56",
             "result": "WIN"
           },
-          "OPS": {
-            "value": "0.759",
-            "result": "LOSS"
-          },
           "RBI": {
             "value": "22",
             "result": "LOSS"
+          },
+          "SB": {
+            "value": "2",
+            "result": "LOSS"
+          },
+          "SVHD": {
+            "value": "0",
+            "result": "TIE"
+          },
+          "Kbat": {
+            "value": "46",
+            "result": "WIN"
           }
         }
       },
@@ -149,13 +149,25 @@
         "catLoss": 10,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "0",
+          "H": {
+            "value": "35",
+            "result": "LOSS"
+          },
+          "ERA": {
+            "value": "3.98",
             "result": "LOSS"
           },
           "QS": {
             "value": "1",
             "result": "LOSS"
+          },
+          "WHIP": {
+            "value": "1.26",
+            "result": "LOSS"
+          },
+          "HR": {
+            "value": "8",
+            "result": "WIN"
           },
           "R": {
             "value": "17",
@@ -165,45 +177,33 @@
             "value": "43.0",
             "result": "WIN"
           },
-          "WHIP": {
-            "value": "1.26",
-            "result": "LOSS"
-          },
-          "ERA": {
-            "value": "3.98",
-            "result": "LOSS"
-          },
-          "HR": {
-            "value": "8",
-            "result": "WIN"
-          },
           "AVG": {
             "value": "0.171",
-            "result": "LOSS"
-          },
-          "Kbat": {
-            "value": "60",
-            "result": "LOSS"
-          },
-          "SVHD": {
-            "value": "2",
-            "result": "WIN"
-          },
-          "H": {
-            "value": "35",
-            "result": "LOSS"
-          },
-          "K": {
-            "value": "45",
             "result": "LOSS"
           },
           "OPS": {
             "value": "0.580",
             "result": "LOSS"
           },
+          "K": {
+            "value": "45",
+            "result": "LOSS"
+          },
           "RBI": {
             "value": "23",
             "result": "WIN"
+          },
+          "SB": {
+            "value": "0",
+            "result": "LOSS"
+          },
+          "SVHD": {
+            "value": "2",
+            "result": "WIN"
+          },
+          "Kbat": {
+            "value": "60",
+            "result": "LOSS"
           }
         }
       },
@@ -216,13 +216,25 @@
         "catLoss": 3,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "3",
+          "H": {
+            "value": "28",
+            "result": "WIN"
+          },
+          "ERA": {
+            "value": "2.61",
             "result": "WIN"
           },
           "QS": {
             "value": "2",
             "result": "WIN"
+          },
+          "WHIP": {
+            "value": "1.11",
+            "result": "WIN"
+          },
+          "HR": {
+            "value": "3",
+            "result": "LOSS"
           },
           "R": {
             "value": "21",
@@ -232,45 +244,33 @@
             "value": "41.1",
             "result": "LOSS"
           },
-          "WHIP": {
-            "value": "1.11",
-            "result": "WIN"
-          },
-          "ERA": {
-            "value": "2.61",
-            "result": "WIN"
-          },
-          "HR": {
-            "value": "3",
-            "result": "LOSS"
-          },
           "AVG": {
             "value": "0.228",
-            "result": "WIN"
-          },
-          "Kbat": {
-            "value": "46",
-            "result": "WIN"
-          },
-          "SVHD": {
-            "value": "0",
-            "result": "LOSS"
-          },
-          "H": {
-            "value": "28",
-            "result": "WIN"
-          },
-          "K": {
-            "value": "53",
             "result": "WIN"
           },
           "OPS": {
             "value": "0.625",
             "result": "WIN"
           },
+          "K": {
+            "value": "53",
+            "result": "WIN"
+          },
           "RBI": {
             "value": "22",
             "result": "LOSS"
+          },
+          "SB": {
+            "value": "3",
+            "result": "WIN"
+          },
+          "SVHD": {
+            "value": "0",
+            "result": "LOSS"
+          },
+          "Kbat": {
+            "value": "46",
+            "result": "WIN"
           }
         }
       },
@@ -287,13 +287,25 @@
         "catLoss": 4,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "3",
-            "result": "TIE"
+          "H": {
+            "value": "35",
+            "result": "LOSS"
+          },
+          "ERA": {
+            "value": "5.11",
+            "result": "LOSS"
           },
           "QS": {
             "value": "1",
             "result": "LOSS"
+          },
+          "WHIP": {
+            "value": "1.32",
+            "result": "LOSS"
+          },
+          "HR": {
+            "value": "9",
+            "result": "WIN"
           },
           "R": {
             "value": "27",
@@ -303,44 +315,32 @@
             "value": "37.0",
             "result": "WIN"
           },
-          "WHIP": {
-            "value": "1.32",
-            "result": "LOSS"
-          },
-          "ERA": {
-            "value": "5.11",
-            "result": "LOSS"
-          },
-          "HR": {
-            "value": "9",
-            "result": "WIN"
-          },
           "AVG": {
             "value": "0.275",
-            "result": "WIN"
-          },
-          "Kbat": {
-            "value": "31",
-            "result": "WIN"
-          },
-          "SVHD": {
-            "value": "1",
-            "result": "WIN"
-          },
-          "H": {
-            "value": "35",
-            "result": "LOSS"
-          },
-          "K": {
-            "value": "41",
             "result": "WIN"
           },
           "OPS": {
             "value": "0.851",
             "result": "WIN"
           },
+          "K": {
+            "value": "41",
+            "result": "WIN"
+          },
           "RBI": {
             "value": "28",
+            "result": "WIN"
+          },
+          "SB": {
+            "value": "3",
+            "result": "TIE"
+          },
+          "SVHD": {
+            "value": "1",
+            "result": "WIN"
+          },
+          "Kbat": {
+            "value": "31",
             "result": "WIN"
           }
         }
@@ -354,13 +354,25 @@
         "catLoss": 8,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "3",
-            "result": "TIE"
+          "H": {
+            "value": "30",
+            "result": "WIN"
+          },
+          "ERA": {
+            "value": "4.55",
+            "result": "WIN"
           },
           "QS": {
             "value": "3",
             "result": "WIN"
+          },
+          "WHIP": {
+            "value": "1.26",
+            "result": "WIN"
+          },
+          "HR": {
+            "value": "6",
+            "result": "LOSS"
           },
           "R": {
             "value": "24",
@@ -370,44 +382,32 @@
             "value": "31.2",
             "result": "LOSS"
           },
-          "WHIP": {
-            "value": "1.26",
-            "result": "WIN"
-          },
-          "ERA": {
-            "value": "4.55",
-            "result": "WIN"
-          },
-          "HR": {
-            "value": "6",
-            "result": "LOSS"
-          },
           "AVG": {
             "value": "0.229",
-            "result": "LOSS"
-          },
-          "Kbat": {
-            "value": "48",
-            "result": "LOSS"
-          },
-          "SVHD": {
-            "value": "0",
-            "result": "LOSS"
-          },
-          "H": {
-            "value": "30",
-            "result": "WIN"
-          },
-          "K": {
-            "value": "32",
             "result": "LOSS"
           },
           "OPS": {
             "value": "0.661",
             "result": "LOSS"
           },
+          "K": {
+            "value": "32",
+            "result": "LOSS"
+          },
           "RBI": {
             "value": "23",
+            "result": "LOSS"
+          },
+          "SB": {
+            "value": "3",
+            "result": "TIE"
+          },
+          "SVHD": {
+            "value": "0",
+            "result": "LOSS"
+          },
+          "Kbat": {
+            "value": "48",
             "result": "LOSS"
           }
         }
@@ -425,13 +425,25 @@
         "catLoss": 5,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "6",
+          "H": {
+            "value": "28",
+            "result": "WIN"
+          },
+          "ERA": {
+            "value": "1.40",
             "result": "WIN"
           },
           "QS": {
             "value": "4",
             "result": "WIN"
+          },
+          "WHIP": {
+            "value": "0.98",
+            "result": "WIN"
+          },
+          "HR": {
+            "value": "5",
+            "result": "LOSS"
           },
           "R": {
             "value": "32",
@@ -441,44 +453,32 @@
             "value": "38.2",
             "result": "LOSS"
           },
-          "WHIP": {
-            "value": "0.98",
-            "result": "WIN"
-          },
-          "ERA": {
-            "value": "1.40",
-            "result": "WIN"
-          },
-          "HR": {
-            "value": "5",
-            "result": "LOSS"
-          },
           "AVG": {
             "value": "0.230",
-            "result": "LOSS"
-          },
-          "Kbat": {
-            "value": "42",
-            "result": "WIN"
-          },
-          "SVHD": {
-            "value": "1",
-            "result": "LOSS"
-          },
-          "H": {
-            "value": "28",
-            "result": "WIN"
-          },
-          "K": {
-            "value": "39",
             "result": "LOSS"
           },
           "OPS": {
             "value": "0.711",
             "result": "LOSS"
           },
+          "K": {
+            "value": "39",
+            "result": "LOSS"
+          },
           "RBI": {
             "value": "23",
+            "result": "WIN"
+          },
+          "SB": {
+            "value": "6",
+            "result": "WIN"
+          },
+          "SVHD": {
+            "value": "1",
+            "result": "LOSS"
+          },
+          "Kbat": {
+            "value": "42",
             "result": "WIN"
           }
         }
@@ -492,13 +492,25 @@
         "catLoss": 9,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "5",
+          "H": {
+            "value": "31",
+            "result": "LOSS"
+          },
+          "ERA": {
+            "value": "3.46",
             "result": "LOSS"
           },
           "QS": {
             "value": "2",
             "result": "LOSS"
+          },
+          "WHIP": {
+            "value": "1.30",
+            "result": "LOSS"
+          },
+          "HR": {
+            "value": "8",
+            "result": "WIN"
           },
           "R": {
             "value": "26",
@@ -508,44 +520,32 @@
             "value": "41.2",
             "result": "WIN"
           },
-          "WHIP": {
-            "value": "1.30",
-            "result": "LOSS"
-          },
-          "ERA": {
-            "value": "3.46",
-            "result": "LOSS"
-          },
-          "HR": {
-            "value": "8",
-            "result": "WIN"
-          },
           "AVG": {
             "value": "0.236",
-            "result": "WIN"
-          },
-          "Kbat": {
-            "value": "48",
-            "result": "LOSS"
-          },
-          "SVHD": {
-            "value": "2",
-            "result": "WIN"
-          },
-          "H": {
-            "value": "31",
-            "result": "LOSS"
-          },
-          "K": {
-            "value": "44",
             "result": "WIN"
           },
           "OPS": {
             "value": "0.713",
             "result": "WIN"
           },
+          "K": {
+            "value": "44",
+            "result": "WIN"
+          },
           "RBI": {
             "value": "20",
+            "result": "LOSS"
+          },
+          "SB": {
+            "value": "5",
+            "result": "LOSS"
+          },
+          "SVHD": {
+            "value": "2",
+            "result": "WIN"
+          },
+          "Kbat": {
+            "value": "48",
             "result": "LOSS"
           }
         }
@@ -563,11 +563,23 @@
         "catLoss": 10,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "3",
-            "result": "LOSS"
+          "H": {
+            "value": "40",
+            "result": "WIN"
+          },
+          "ERA": {
+            "value": "3.38",
+            "result": "WIN"
           },
           "QS": {
+            "value": "2",
+            "result": "LOSS"
+          },
+          "WHIP": {
+            "value": "1.22",
+            "result": "LOSS"
+          },
+          "HR": {
             "value": "2",
             "result": "LOSS"
           },
@@ -579,45 +591,33 @@
             "value": "42.2",
             "result": "LOSS"
           },
-          "WHIP": {
-            "value": "1.22",
-            "result": "LOSS"
-          },
-          "ERA": {
-            "value": "3.38",
-            "result": "WIN"
-          },
-          "HR": {
-            "value": "2",
-            "result": "LOSS"
-          },
           "AVG": {
             "value": "0.229",
-            "result": "LOSS"
-          },
-          "Kbat": {
-            "value": "50",
-            "result": "WIN"
-          },
-          "SVHD": {
-            "value": "1",
-            "result": "LOSS"
-          },
-          "H": {
-            "value": "40",
-            "result": "WIN"
-          },
-          "K": {
-            "value": "42",
             "result": "LOSS"
           },
           "OPS": {
             "value": "0.666",
             "result": "LOSS"
           },
+          "K": {
+            "value": "42",
+            "result": "LOSS"
+          },
           "RBI": {
             "value": "18",
             "result": "LOSS"
+          },
+          "SB": {
+            "value": "3",
+            "result": "LOSS"
+          },
+          "SVHD": {
+            "value": "1",
+            "result": "LOSS"
+          },
+          "Kbat": {
+            "value": "50",
+            "result": "WIN"
           }
         }
       },
@@ -630,12 +630,24 @@
         "catLoss": 3,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "5",
-            "result": "WIN"
+          "H": {
+            "value": "41",
+            "result": "LOSS"
+          },
+          "ERA": {
+            "value": "5.01",
+            "result": "LOSS"
           },
           "QS": {
             "value": "4",
+            "result": "WIN"
+          },
+          "WHIP": {
+            "value": "1.17",
+            "result": "WIN"
+          },
+          "HR": {
+            "value": "7",
             "result": "WIN"
           },
           "R": {
@@ -646,45 +658,33 @@
             "value": "50.1",
             "result": "WIN"
           },
-          "WHIP": {
-            "value": "1.17",
-            "result": "WIN"
-          },
-          "ERA": {
-            "value": "5.01",
-            "result": "LOSS"
-          },
-          "HR": {
-            "value": "7",
-            "result": "WIN"
-          },
           "AVG": {
             "value": "0.242",
-            "result": "WIN"
-          },
-          "Kbat": {
-            "value": "59",
-            "result": "LOSS"
-          },
-          "SVHD": {
-            "value": "3",
-            "result": "WIN"
-          },
-          "H": {
-            "value": "41",
-            "result": "LOSS"
-          },
-          "K": {
-            "value": "45",
             "result": "WIN"
           },
           "OPS": {
             "value": "0.754",
             "result": "WIN"
           },
+          "K": {
+            "value": "45",
+            "result": "WIN"
+          },
           "RBI": {
             "value": "23",
             "result": "WIN"
+          },
+          "SB": {
+            "value": "5",
+            "result": "WIN"
+          },
+          "SVHD": {
+            "value": "3",
+            "result": "WIN"
+          },
+          "Kbat": {
+            "value": "59",
+            "result": "LOSS"
           }
         }
       },
@@ -701,13 +701,25 @@
         "catLoss": 6,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "3",
+          "H": {
+            "value": "40",
+            "result": "LOSS"
+          },
+          "ERA": {
+            "value": "5.82",
             "result": "LOSS"
           },
           "QS": {
             "value": "1",
             "result": "LOSS"
+          },
+          "WHIP": {
+            "value": "1.74",
+            "result": "LOSS"
+          },
+          "HR": {
+            "value": "9",
+            "result": "WIN"
           },
           "R": {
             "value": "25",
@@ -717,44 +729,32 @@
             "value": "34.0",
             "result": "WIN"
           },
-          "WHIP": {
-            "value": "1.74",
-            "result": "LOSS"
-          },
-          "ERA": {
-            "value": "5.82",
-            "result": "LOSS"
-          },
-          "HR": {
-            "value": "9",
-            "result": "WIN"
-          },
           "AVG": {
             "value": "0.273",
-            "result": "WIN"
-          },
-          "Kbat": {
-            "value": "49",
-            "result": "WIN"
-          },
-          "SVHD": {
-            "value": "3",
-            "result": "WIN"
-          },
-          "H": {
-            "value": "40",
-            "result": "LOSS"
-          },
-          "K": {
-            "value": "43",
             "result": "WIN"
           },
           "OPS": {
             "value": "0.775",
             "result": "WIN"
           },
+          "K": {
+            "value": "43",
+            "result": "WIN"
+          },
           "RBI": {
             "value": "26",
+            "result": "WIN"
+          },
+          "SB": {
+            "value": "3",
+            "result": "LOSS"
+          },
+          "SVHD": {
+            "value": "3",
+            "result": "WIN"
+          },
+          "Kbat": {
+            "value": "49",
             "result": "WIN"
           }
         }
@@ -768,13 +768,25 @@
         "catLoss": 8,
         "catTies": 0,
         "categories": {
-          "SB": {
-            "value": "6",
+          "H": {
+            "value": "26",
+            "result": "WIN"
+          },
+          "ERA": {
+            "value": "4.31",
             "result": "WIN"
           },
           "QS": {
             "value": "2",
             "result": "WIN"
+          },
+          "WHIP": {
+            "value": "1.18",
+            "result": "WIN"
+          },
+          "HR": {
+            "value": "8",
+            "result": "LOSS"
           },
           "R": {
             "value": "26",
@@ -784,2497 +796,37 @@
             "value": "31.1",
             "result": "LOSS"
           },
-          "WHIP": {
-            "value": "1.18",
-            "result": "WIN"
-          },
-          "ERA": {
-            "value": "4.31",
-            "result": "WIN"
-          },
-          "HR": {
-            "value": "8",
-            "result": "LOSS"
-          },
           "AVG": {
             "value": "0.237",
-            "result": "LOSS"
-          },
-          "Kbat": {
-            "value": "51",
-            "result": "LOSS"
-          },
-          "SVHD": {
-            "value": "0",
-            "result": "LOSS"
-          },
-          "H": {
-            "value": "26",
-            "result": "WIN"
-          },
-          "K": {
-            "value": "33",
             "result": "LOSS"
           },
           "OPS": {
             "value": "0.724",
             "result": "LOSS"
           },
+          "K": {
+            "value": "33",
+            "result": "LOSS"
+          },
           "RBI": {
             "value": "23",
+            "result": "LOSS"
+          },
+          "SB": {
+            "value": "6",
+            "result": "WIN"
+          },
+          "SVHD": {
+            "value": "0",
+            "result": "LOSS"
+          },
+          "Kbat": {
+            "value": "51",
             "result": "LOSS"
           }
         }
       },
       "leader": "Buffalo Bison",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 9,
-        "team": "Las Vegas Degenerate",
-        "abbrev": "GREN",
-        "rbName": "Greene",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 3,
-        "team": "Buffalo Bison",
-        "abbrev": "BERT",
-        "rbName": "Bert",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 12,
-        "team": "Brevard County Manatees",
-        "abbrev": "TC",
-        "rbName": "TC",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 11,
-        "team": "Santa Clara Sea-Creatures",
-        "abbrev": "LEO",
-        "rbName": "Leo",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 7,
-        "team": "Nagasaki Bombers",
-        "abbrev": "SPNY",
-        "rbName": "Sponny",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 2,
-        "team": "Gettysburg Generals",
-        "abbrev": "MION",
-        "rbName": "Mion",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 1,
-        "team": "Roosevelt Ruff Ryders",
-        "abbrev": "BOYC",
-        "rbName": "Boyce",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 10,
-        "team": "Amsterdam Mohawks",
-        "abbrev": "TIM",
-        "rbName": "Tim",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 6,
-        "team": "San Juan Coquis",
-        "abbrev": "JACB",
-        "rbName": "Jacob",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 4,
-        "team": "\ud83c\udfc6 Virginia Beach VelociRaptors",
-        "abbrev": "CHRS",
-        "rbName": "Eriole",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
-      "winner": "UNDECIDED"
-    },
-    {
-      "home": {
-        "teamId": 5,
-        "team": "Cooperstown Udder Tuggers",
-        "abbrev": "AARN",
-        "rbName": "Slater",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "away": {
-        "teamId": 8,
-        "team": "Portland Pickles",
-        "abbrev": "CORY",
-        "rbName": "Schoon",
-        "catWins": 0,
-        "catLoss": 0,
-        "catTies": 0,
-        "categories": {}
-      },
-      "leader": "Tied",
       "winner": "UNDECIDED"
     }
   ],
@@ -3290,12 +842,24 @@
           "catLoss": 2,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "3",
+            "H": {
+              "value": "35",
+              "result": "WIN"
+            },
+            "ERA": {
+              "value": "2.62",
               "result": "WIN"
             },
             "QS": {
               "value": "2",
+              "result": "TIE"
+            },
+            "WHIP": {
+              "value": "1.10",
+              "result": "WIN"
+            },
+            "HR": {
+              "value": "8",
               "result": "TIE"
             },
             "R": {
@@ -3306,45 +870,33 @@
               "value": "48.0",
               "result": "WIN"
             },
-            "WHIP": {
-              "value": "1.10",
-              "result": "WIN"
-            },
-            "ERA": {
-              "value": "2.62",
-              "result": "WIN"
-            },
-            "HR": {
-              "value": "8",
-              "result": "TIE"
-            },
             "AVG": {
               "value": "0.254",
               "result": "WIN"
             },
-            "Kbat": {
-              "value": "47",
-              "result": "LOSS"
-            },
-            "SVHD": {
-              "value": "0",
-              "result": "TIE"
-            },
-            "H": {
-              "value": "35",
+            "OPS": {
+              "value": "0.812",
               "result": "WIN"
             },
             "K": {
               "value": "50",
               "result": "LOSS"
             },
-            "OPS": {
-              "value": "0.812",
-              "result": "WIN"
-            },
             "RBI": {
               "value": "28",
               "result": "WIN"
+            },
+            "SB": {
+              "value": "3",
+              "result": "WIN"
+            },
+            "SVHD": {
+              "value": "0",
+              "result": "TIE"
+            },
+            "Kbat": {
+              "value": "47",
+              "result": "LOSS"
             }
           }
         },
@@ -3357,12 +909,24 @@
           "catLoss": 10,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "2",
+            "H": {
+              "value": "36",
+              "result": "LOSS"
+            },
+            "ERA": {
+              "value": "5.95",
               "result": "LOSS"
             },
             "QS": {
               "value": "2",
+              "result": "TIE"
+            },
+            "WHIP": {
+              "value": "1.35",
+              "result": "LOSS"
+            },
+            "HR": {
+              "value": "8",
               "result": "TIE"
             },
             "R": {
@@ -3373,45 +937,33 @@
               "value": "39.1",
               "result": "LOSS"
             },
-            "WHIP": {
-              "value": "1.35",
-              "result": "LOSS"
-            },
-            "ERA": {
-              "value": "5.95",
-              "result": "LOSS"
-            },
-            "HR": {
-              "value": "8",
-              "result": "TIE"
-            },
             "AVG": {
               "value": "0.226",
               "result": "LOSS"
             },
-            "Kbat": {
-              "value": "46",
-              "result": "WIN"
-            },
-            "SVHD": {
-              "value": "0",
-              "result": "TIE"
-            },
-            "H": {
-              "value": "36",
+            "OPS": {
+              "value": "0.759",
               "result": "LOSS"
             },
             "K": {
               "value": "56",
               "result": "WIN"
             },
-            "OPS": {
-              "value": "0.759",
-              "result": "LOSS"
-            },
             "RBI": {
               "value": "22",
               "result": "LOSS"
+            },
+            "SB": {
+              "value": "2",
+              "result": "LOSS"
+            },
+            "SVHD": {
+              "value": "0",
+              "result": "TIE"
+            },
+            "Kbat": {
+              "value": "46",
+              "result": "WIN"
             }
           }
         },
@@ -3428,13 +980,25 @@
           "catLoss": 10,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "0",
+            "H": {
+              "value": "35",
+              "result": "LOSS"
+            },
+            "ERA": {
+              "value": "3.98",
               "result": "LOSS"
             },
             "QS": {
               "value": "1",
               "result": "LOSS"
+            },
+            "WHIP": {
+              "value": "1.26",
+              "result": "LOSS"
+            },
+            "HR": {
+              "value": "8",
+              "result": "WIN"
             },
             "R": {
               "value": "17",
@@ -3444,45 +1008,33 @@
               "value": "43.0",
               "result": "WIN"
             },
-            "WHIP": {
-              "value": "1.26",
-              "result": "LOSS"
-            },
-            "ERA": {
-              "value": "3.98",
-              "result": "LOSS"
-            },
-            "HR": {
-              "value": "8",
-              "result": "WIN"
-            },
             "AVG": {
               "value": "0.171",
-              "result": "LOSS"
-            },
-            "Kbat": {
-              "value": "60",
-              "result": "LOSS"
-            },
-            "SVHD": {
-              "value": "2",
-              "result": "WIN"
-            },
-            "H": {
-              "value": "35",
-              "result": "LOSS"
-            },
-            "K": {
-              "value": "45",
               "result": "LOSS"
             },
             "OPS": {
               "value": "0.580",
               "result": "LOSS"
             },
+            "K": {
+              "value": "45",
+              "result": "LOSS"
+            },
             "RBI": {
               "value": "23",
               "result": "WIN"
+            },
+            "SB": {
+              "value": "0",
+              "result": "LOSS"
+            },
+            "SVHD": {
+              "value": "2",
+              "result": "WIN"
+            },
+            "Kbat": {
+              "value": "60",
+              "result": "LOSS"
             }
           }
         },
@@ -3495,13 +1047,25 @@
           "catLoss": 3,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "3",
+            "H": {
+              "value": "28",
+              "result": "WIN"
+            },
+            "ERA": {
+              "value": "2.61",
               "result": "WIN"
             },
             "QS": {
               "value": "2",
               "result": "WIN"
+            },
+            "WHIP": {
+              "value": "1.11",
+              "result": "WIN"
+            },
+            "HR": {
+              "value": "3",
+              "result": "LOSS"
             },
             "R": {
               "value": "21",
@@ -3511,45 +1075,33 @@
               "value": "41.1",
               "result": "LOSS"
             },
-            "WHIP": {
-              "value": "1.11",
-              "result": "WIN"
-            },
-            "ERA": {
-              "value": "2.61",
-              "result": "WIN"
-            },
-            "HR": {
-              "value": "3",
-              "result": "LOSS"
-            },
             "AVG": {
               "value": "0.228",
-              "result": "WIN"
-            },
-            "Kbat": {
-              "value": "46",
-              "result": "WIN"
-            },
-            "SVHD": {
-              "value": "0",
-              "result": "LOSS"
-            },
-            "H": {
-              "value": "28",
-              "result": "WIN"
-            },
-            "K": {
-              "value": "53",
               "result": "WIN"
             },
             "OPS": {
               "value": "0.625",
               "result": "WIN"
             },
+            "K": {
+              "value": "53",
+              "result": "WIN"
+            },
             "RBI": {
               "value": "22",
               "result": "LOSS"
+            },
+            "SB": {
+              "value": "3",
+              "result": "WIN"
+            },
+            "SVHD": {
+              "value": "0",
+              "result": "LOSS"
+            },
+            "Kbat": {
+              "value": "46",
+              "result": "WIN"
             }
           }
         },
@@ -3566,13 +1118,25 @@
           "catLoss": 4,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "3",
-              "result": "TIE"
+            "H": {
+              "value": "35",
+              "result": "LOSS"
+            },
+            "ERA": {
+              "value": "5.11",
+              "result": "LOSS"
             },
             "QS": {
               "value": "1",
               "result": "LOSS"
+            },
+            "WHIP": {
+              "value": "1.32",
+              "result": "LOSS"
+            },
+            "HR": {
+              "value": "9",
+              "result": "WIN"
             },
             "R": {
               "value": "27",
@@ -3582,44 +1146,32 @@
               "value": "37.0",
               "result": "WIN"
             },
-            "WHIP": {
-              "value": "1.32",
-              "result": "LOSS"
-            },
-            "ERA": {
-              "value": "5.11",
-              "result": "LOSS"
-            },
-            "HR": {
-              "value": "9",
-              "result": "WIN"
-            },
             "AVG": {
               "value": "0.275",
-              "result": "WIN"
-            },
-            "Kbat": {
-              "value": "31",
-              "result": "WIN"
-            },
-            "SVHD": {
-              "value": "1",
-              "result": "WIN"
-            },
-            "H": {
-              "value": "35",
-              "result": "LOSS"
-            },
-            "K": {
-              "value": "41",
               "result": "WIN"
             },
             "OPS": {
               "value": "0.851",
               "result": "WIN"
             },
+            "K": {
+              "value": "41",
+              "result": "WIN"
+            },
             "RBI": {
               "value": "28",
+              "result": "WIN"
+            },
+            "SB": {
+              "value": "3",
+              "result": "TIE"
+            },
+            "SVHD": {
+              "value": "1",
+              "result": "WIN"
+            },
+            "Kbat": {
+              "value": "31",
               "result": "WIN"
             }
           }
@@ -3633,13 +1185,25 @@
           "catLoss": 8,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "3",
-              "result": "TIE"
+            "H": {
+              "value": "30",
+              "result": "WIN"
+            },
+            "ERA": {
+              "value": "4.55",
+              "result": "WIN"
             },
             "QS": {
               "value": "3",
               "result": "WIN"
+            },
+            "WHIP": {
+              "value": "1.26",
+              "result": "WIN"
+            },
+            "HR": {
+              "value": "6",
+              "result": "LOSS"
             },
             "R": {
               "value": "24",
@@ -3649,44 +1213,32 @@
               "value": "31.2",
               "result": "LOSS"
             },
-            "WHIP": {
-              "value": "1.26",
-              "result": "WIN"
-            },
-            "ERA": {
-              "value": "4.55",
-              "result": "WIN"
-            },
-            "HR": {
-              "value": "6",
-              "result": "LOSS"
-            },
             "AVG": {
               "value": "0.229",
-              "result": "LOSS"
-            },
-            "Kbat": {
-              "value": "48",
-              "result": "LOSS"
-            },
-            "SVHD": {
-              "value": "0",
-              "result": "LOSS"
-            },
-            "H": {
-              "value": "30",
-              "result": "WIN"
-            },
-            "K": {
-              "value": "32",
               "result": "LOSS"
             },
             "OPS": {
               "value": "0.661",
               "result": "LOSS"
             },
+            "K": {
+              "value": "32",
+              "result": "LOSS"
+            },
             "RBI": {
               "value": "23",
+              "result": "LOSS"
+            },
+            "SB": {
+              "value": "3",
+              "result": "TIE"
+            },
+            "SVHD": {
+              "value": "0",
+              "result": "LOSS"
+            },
+            "Kbat": {
+              "value": "48",
               "result": "LOSS"
             }
           }
@@ -3704,13 +1256,25 @@
           "catLoss": 5,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "6",
+            "H": {
+              "value": "28",
+              "result": "WIN"
+            },
+            "ERA": {
+              "value": "1.40",
               "result": "WIN"
             },
             "QS": {
               "value": "4",
               "result": "WIN"
+            },
+            "WHIP": {
+              "value": "0.98",
+              "result": "WIN"
+            },
+            "HR": {
+              "value": "5",
+              "result": "LOSS"
             },
             "R": {
               "value": "32",
@@ -3720,44 +1284,32 @@
               "value": "38.2",
               "result": "LOSS"
             },
-            "WHIP": {
-              "value": "0.98",
-              "result": "WIN"
-            },
-            "ERA": {
-              "value": "1.40",
-              "result": "WIN"
-            },
-            "HR": {
-              "value": "5",
-              "result": "LOSS"
-            },
             "AVG": {
               "value": "0.230",
-              "result": "LOSS"
-            },
-            "Kbat": {
-              "value": "42",
-              "result": "WIN"
-            },
-            "SVHD": {
-              "value": "1",
-              "result": "LOSS"
-            },
-            "H": {
-              "value": "28",
-              "result": "WIN"
-            },
-            "K": {
-              "value": "39",
               "result": "LOSS"
             },
             "OPS": {
               "value": "0.711",
               "result": "LOSS"
             },
+            "K": {
+              "value": "39",
+              "result": "LOSS"
+            },
             "RBI": {
               "value": "23",
+              "result": "WIN"
+            },
+            "SB": {
+              "value": "6",
+              "result": "WIN"
+            },
+            "SVHD": {
+              "value": "1",
+              "result": "LOSS"
+            },
+            "Kbat": {
+              "value": "42",
               "result": "WIN"
             }
           }
@@ -3771,13 +1323,25 @@
           "catLoss": 9,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "5",
+            "H": {
+              "value": "31",
+              "result": "LOSS"
+            },
+            "ERA": {
+              "value": "3.46",
               "result": "LOSS"
             },
             "QS": {
               "value": "2",
               "result": "LOSS"
+            },
+            "WHIP": {
+              "value": "1.30",
+              "result": "LOSS"
+            },
+            "HR": {
+              "value": "8",
+              "result": "WIN"
             },
             "R": {
               "value": "26",
@@ -3787,44 +1351,32 @@
               "value": "41.2",
               "result": "WIN"
             },
-            "WHIP": {
-              "value": "1.30",
-              "result": "LOSS"
-            },
-            "ERA": {
-              "value": "3.46",
-              "result": "LOSS"
-            },
-            "HR": {
-              "value": "8",
-              "result": "WIN"
-            },
             "AVG": {
               "value": "0.236",
-              "result": "WIN"
-            },
-            "Kbat": {
-              "value": "48",
-              "result": "LOSS"
-            },
-            "SVHD": {
-              "value": "2",
-              "result": "WIN"
-            },
-            "H": {
-              "value": "31",
-              "result": "LOSS"
-            },
-            "K": {
-              "value": "44",
               "result": "WIN"
             },
             "OPS": {
               "value": "0.713",
               "result": "WIN"
             },
+            "K": {
+              "value": "44",
+              "result": "WIN"
+            },
             "RBI": {
               "value": "20",
+              "result": "LOSS"
+            },
+            "SB": {
+              "value": "5",
+              "result": "LOSS"
+            },
+            "SVHD": {
+              "value": "2",
+              "result": "WIN"
+            },
+            "Kbat": {
+              "value": "48",
               "result": "LOSS"
             }
           }
@@ -3842,11 +1394,23 @@
           "catLoss": 10,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "3",
-              "result": "LOSS"
+            "H": {
+              "value": "40",
+              "result": "WIN"
+            },
+            "ERA": {
+              "value": "3.38",
+              "result": "WIN"
             },
             "QS": {
+              "value": "2",
+              "result": "LOSS"
+            },
+            "WHIP": {
+              "value": "1.22",
+              "result": "LOSS"
+            },
+            "HR": {
               "value": "2",
               "result": "LOSS"
             },
@@ -3858,45 +1422,33 @@
               "value": "42.2",
               "result": "LOSS"
             },
-            "WHIP": {
-              "value": "1.22",
-              "result": "LOSS"
-            },
-            "ERA": {
-              "value": "3.38",
-              "result": "WIN"
-            },
-            "HR": {
-              "value": "2",
-              "result": "LOSS"
-            },
             "AVG": {
               "value": "0.229",
-              "result": "LOSS"
-            },
-            "Kbat": {
-              "value": "50",
-              "result": "WIN"
-            },
-            "SVHD": {
-              "value": "1",
-              "result": "LOSS"
-            },
-            "H": {
-              "value": "40",
-              "result": "WIN"
-            },
-            "K": {
-              "value": "42",
               "result": "LOSS"
             },
             "OPS": {
               "value": "0.666",
               "result": "LOSS"
             },
+            "K": {
+              "value": "42",
+              "result": "LOSS"
+            },
             "RBI": {
               "value": "18",
               "result": "LOSS"
+            },
+            "SB": {
+              "value": "3",
+              "result": "LOSS"
+            },
+            "SVHD": {
+              "value": "1",
+              "result": "LOSS"
+            },
+            "Kbat": {
+              "value": "50",
+              "result": "WIN"
             }
           }
         },
@@ -3909,12 +1461,24 @@
           "catLoss": 3,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "5",
-              "result": "WIN"
+            "H": {
+              "value": "41",
+              "result": "LOSS"
+            },
+            "ERA": {
+              "value": "5.01",
+              "result": "LOSS"
             },
             "QS": {
               "value": "4",
+              "result": "WIN"
+            },
+            "WHIP": {
+              "value": "1.17",
+              "result": "WIN"
+            },
+            "HR": {
+              "value": "7",
               "result": "WIN"
             },
             "R": {
@@ -3925,45 +1489,33 @@
               "value": "50.1",
               "result": "WIN"
             },
-            "WHIP": {
-              "value": "1.17",
-              "result": "WIN"
-            },
-            "ERA": {
-              "value": "5.01",
-              "result": "LOSS"
-            },
-            "HR": {
-              "value": "7",
-              "result": "WIN"
-            },
             "AVG": {
               "value": "0.242",
-              "result": "WIN"
-            },
-            "Kbat": {
-              "value": "59",
-              "result": "LOSS"
-            },
-            "SVHD": {
-              "value": "3",
-              "result": "WIN"
-            },
-            "H": {
-              "value": "41",
-              "result": "LOSS"
-            },
-            "K": {
-              "value": "45",
               "result": "WIN"
             },
             "OPS": {
               "value": "0.754",
               "result": "WIN"
             },
+            "K": {
+              "value": "45",
+              "result": "WIN"
+            },
             "RBI": {
               "value": "23",
               "result": "WIN"
+            },
+            "SB": {
+              "value": "5",
+              "result": "WIN"
+            },
+            "SVHD": {
+              "value": "3",
+              "result": "WIN"
+            },
+            "Kbat": {
+              "value": "59",
+              "result": "LOSS"
             }
           }
         },
@@ -3980,13 +1532,25 @@
           "catLoss": 6,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "3",
+            "H": {
+              "value": "40",
+              "result": "LOSS"
+            },
+            "ERA": {
+              "value": "5.82",
               "result": "LOSS"
             },
             "QS": {
               "value": "1",
               "result": "LOSS"
+            },
+            "WHIP": {
+              "value": "1.74",
+              "result": "LOSS"
+            },
+            "HR": {
+              "value": "9",
+              "result": "WIN"
             },
             "R": {
               "value": "25",
@@ -3996,44 +1560,32 @@
               "value": "34.0",
               "result": "WIN"
             },
-            "WHIP": {
-              "value": "1.74",
-              "result": "LOSS"
-            },
-            "ERA": {
-              "value": "5.82",
-              "result": "LOSS"
-            },
-            "HR": {
-              "value": "9",
-              "result": "WIN"
-            },
             "AVG": {
               "value": "0.273",
-              "result": "WIN"
-            },
-            "Kbat": {
-              "value": "49",
-              "result": "WIN"
-            },
-            "SVHD": {
-              "value": "3",
-              "result": "WIN"
-            },
-            "H": {
-              "value": "40",
-              "result": "LOSS"
-            },
-            "K": {
-              "value": "43",
               "result": "WIN"
             },
             "OPS": {
               "value": "0.775",
               "result": "WIN"
             },
+            "K": {
+              "value": "43",
+              "result": "WIN"
+            },
             "RBI": {
               "value": "26",
+              "result": "WIN"
+            },
+            "SB": {
+              "value": "3",
+              "result": "LOSS"
+            },
+            "SVHD": {
+              "value": "3",
+              "result": "WIN"
+            },
+            "Kbat": {
+              "value": "49",
               "result": "WIN"
             }
           }
@@ -4047,13 +1599,25 @@
           "catLoss": 8,
           "catTies": 0,
           "categories": {
-            "SB": {
-              "value": "6",
+            "H": {
+              "value": "26",
+              "result": "WIN"
+            },
+            "ERA": {
+              "value": "4.31",
               "result": "WIN"
             },
             "QS": {
               "value": "2",
               "result": "WIN"
+            },
+            "WHIP": {
+              "value": "1.18",
+              "result": "WIN"
+            },
+            "HR": {
+              "value": "8",
+              "result": "LOSS"
             },
             "R": {
               "value": "26",
@@ -4063,51 +1627,41 @@
               "value": "31.1",
               "result": "LOSS"
             },
-            "WHIP": {
-              "value": "1.18",
-              "result": "WIN"
-            },
-            "ERA": {
-              "value": "4.31",
-              "result": "WIN"
-            },
-            "HR": {
-              "value": "8",
-              "result": "LOSS"
-            },
             "AVG": {
               "value": "0.237",
-              "result": "LOSS"
-            },
-            "Kbat": {
-              "value": "51",
-              "result": "LOSS"
-            },
-            "SVHD": {
-              "value": "0",
-              "result": "LOSS"
-            },
-            "H": {
-              "value": "26",
-              "result": "WIN"
-            },
-            "K": {
-              "value": "33",
               "result": "LOSS"
             },
             "OPS": {
               "value": "0.724",
               "result": "LOSS"
             },
+            "K": {
+              "value": "33",
+              "result": "LOSS"
+            },
             "RBI": {
               "value": "23",
+              "result": "LOSS"
+            },
+            "SB": {
+              "value": "6",
+              "result": "WIN"
+            },
+            "SVHD": {
+              "value": "0",
+              "result": "LOSS"
+            },
+            "Kbat": {
+              "value": "51",
               "result": "LOSS"
             }
           }
         },
         "leader": "Buffalo Bison",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "2": [
       {
         "home": {
           "teamId": 9,
@@ -4251,7 +1805,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "3": [
       {
         "home": {
           "teamId": 4,
@@ -4395,7 +1951,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "4": [
       {
         "home": {
           "teamId": 9,
@@ -4539,7 +2097,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "5": [
       {
         "home": {
           "teamId": 2,
@@ -4683,7 +2243,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "6": [
       {
         "home": {
           "teamId": 9,
@@ -4827,7 +2389,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "7": [
       {
         "home": {
           "teamId": 3,
@@ -4971,7 +2535,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "8": [
       {
         "home": {
           "teamId": 9,
@@ -5115,7 +2681,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "9": [
       {
         "home": {
           "teamId": 7,
@@ -5259,7 +2827,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "10": [
       {
         "home": {
           "teamId": 9,
@@ -5403,7 +2973,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "11": [
       {
         "home": {
           "teamId": 6,
@@ -5547,7 +3119,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "12": [
       {
         "home": {
           "teamId": 9,
@@ -5691,7 +3265,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "13": [
       {
         "home": {
           "teamId": 8,
@@ -5835,7 +3411,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "14": [
       {
         "home": {
           "teamId": 9,
@@ -5979,7 +3557,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "15": [
       {
         "home": {
           "teamId": 10,
@@ -6123,7 +3703,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "16": [
       {
         "home": {
           "teamId": 9,
@@ -6267,7 +3849,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "17": [
       {
         "home": {
           "teamId": 11,
@@ -6411,7 +3995,9 @@
         },
         "leader": "Tied",
         "winner": "UNDECIDED"
-      },
+      }
+    ],
+    "18": [
       {
         "home": {
           "teamId": 9,
@@ -6558,5 +4144,5 @@
       }
     ]
   },
-  "updated": "2026-03-31T19:18:28Z"
+  "updated": "2026-03-31T19:33:06Z"
 }
