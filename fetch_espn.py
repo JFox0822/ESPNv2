@@ -334,6 +334,8 @@ def main():
     save("standings.json", {"week": scoring_week, "standings": standings, "updated": updated})
 
     # ── Matchups ─────────────────────────────────────────────────────────────
+    all_weeks_data = {}   # filled during matchup fetch
+    all_id_to_name = {t.team_id: t.team_name for t in league.teams}
     # Strategy: fetch the league schedule using espn-api's authenticated request.
     # The mScoreboard view gives us matchup pairings + category win totals.
     # Per-category stats come from mBoxscore view fetched per matchup.
@@ -415,6 +417,9 @@ def main():
                         continue
                     pid = m.get('matchupPeriodId') or sp
                     by_period.setdefault(pid, []).append(m)
+                # Save for all_weeks build outside this loop
+                all_weeks_data = by_period
+                all_id_to_name = id_to_name
 
                 print(f"  Periods found: {sorted(by_period.keys())}")
 
@@ -550,7 +555,106 @@ def main():
         print(f"  ⚠️  Matchup block failed: {e}")
         traceback.print_exc()
     # allWeeks: current week only for now (future weeks populate as season progresses)
+    # Build all 18 weeks from the schedule data
+    # (all_weeks_data and all_id_to_name set during matchup fetch above)
+    # by_period and parse_side/fmt_v/LOWER_CATS are defined inside the try block above
+    # We captured by_period at the outer scope via all_weeks_data
     all_weeks_out = {str(scoring_week): matchups_out}
+    try:
+        for wk, wk_matches in all_weeks_data.items():
+            if str(wk) == str(scoring_week):
+                continue  # already have current week
+            wk_list = []
+            for m in wk_matches:
+                home_d = m.get('home', {})
+                away_d = m.get('away', {})
+                hid = home_d.get('teamId')
+                aid = away_d.get('teamId')
+                if not hid or not aid:
+                    continue
+                h_name = all_id_to_name.get(hid, f'Team {hid}')
+                a_name = all_id_to_name.get(aid, f'Team {aid}')
+                h_tm = team_map.get(hid, {})
+                a_tm = team_map.get(aid, {})
+
+                # Parse stats from cumulativeScore if available
+                def parse_wk_side(side_d, tm):
+                    tid = side_d.get('teamId')
+                    cum = side_d.get('cumulativeScore', {})
+                    cat_wins   = int(cum.get('wins',   0) or 0)
+                    cat_losses = int(cum.get('losses', 0) or 0)
+                    stats = {}
+                    SKEYS = {
+                        "20":"R","5":"HR","21":"RBI","27":"Kbat","23":"SB",
+                        "2":"AVG","18":"OPS","34":"IP","37":"H","48":"K",
+                        "63":"QS","47":"ERA","41":"WHIP","60":"SVHD",
+                    }
+                    for sid, info in cum.get('scoreByStat', {}).items():
+                        lbl = SKEYS.get(str(sid))
+                        if lbl and isinstance(info, dict):
+                            v = info.get('score', info.get('value'))
+                            if v is not None:
+                                try:
+                                    fv = float(v)
+                                    if lbl == 'IP':
+                                        outs = int(round(fv))
+                                        fv = float(f"{outs//3}.{outs%3}")
+                                    stats[lbl] = fv
+                                except: pass
+                    return {
+                        'teamId': tid,
+                        'team': all_id_to_name.get(tid, f'Team {tid}'),
+                        'abbrev': tm.get('abbrev', ''),
+                        'rbName': tm.get('rbName', ''),
+                        'catWins': cat_wins, 'catLoss': cat_losses, 'catTies': 0,
+                        'categories': {},
+                        'stats': stats,
+                    }
+
+                hs = parse_wk_side(home_d, h_tm)
+                as_ = parse_wk_side(away_d, a_tm)
+
+                # Build per-cat win/loss
+                LOWER = {"ERA","WHIP","H","Kbat"}
+                hc, ac = {}, {}
+                for lbl in set(list(hs['stats']) + list(as_['stats'])):
+                    hv = hs['stats'].get(lbl)
+                    av = as_['stats'].get(lbl)
+                    if hv is None or av is None: continue
+                    lower = lbl in LOWER
+                    def fmtv(v, l):
+                        if v is None: return '—'
+                        try:
+                            f = float(v)
+                            if l in {'AVG','OPS'}: return f'{f:.3f}'
+                            if l in {'ERA','WHIP'}: return f'{f:.2f}'
+                            return str(v)
+                        except: return str(v)
+                    if abs(hv - av) < 0.0001: hr = ar = 'TIE'
+                    elif (hv < av) == lower: hr, ar = 'WIN', 'LOSS'
+                    else: hr, ar = 'LOSS', 'WIN'
+                    hc[lbl] = {'value': fmtv(hv, lbl), 'result': hr}
+                    ac[lbl] = {'value': fmtv(av, lbl), 'result': ar}
+
+                hs['categories'] = hc; del hs['stats']
+                as_['categories'] = ac; del as_['stats']
+                hw = hs['catWins'] > as_['catWins']
+                aw = as_['catWins'] > hs['catWins']
+                winner = m.get('winner', 'UNDECIDED')
+                wk_list.append({
+                    'home': hs, 'away': as_,
+                    'leader': hs['team'] if hw else (as_['team'] if aw else 'Tied'),
+                    'winner': winner,
+                })
+
+            if wk_list:
+                all_weeks_out[str(wk)] = wk_list
+
+        print(f"  ✅  allWeeks: {sorted(int(k) for k in all_weeks_out.keys())} weeks saved")
+    except Exception as e:
+        import traceback
+        print(f"  ⚠️  allWeeks build: {e}")
+        traceback.print_exc()
 
     save("matchups.json", {
         "week":      scoring_week,
