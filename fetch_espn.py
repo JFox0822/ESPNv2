@@ -411,12 +411,18 @@ def main():
 
                 # Group ALL matchups by matchupPeriodId
                 # Determine current week = lowest period with UNDECIDED matchups
+                # matchupPeriodId is None in ESPN's response for this league type.
+                # Derive week from matchup id: 6 matchups/week, IDs are sequential.
+                # id 1-6 = week 1, 7-12 = week 2, etc.
+                MATCHUPS_PER_WEEK = 6
                 by_period = {}
                 for m in schedule:
                     if not m.get('home',{}).get('teamId') or not m.get('away',{}).get('teamId'):
                         continue
-                    pid = m.get('matchupPeriodId') or sp
+                    mid = m.get('id', 1)
+                    pid = ((mid - 1) // MATCHUPS_PER_WEEK) + 1
                     by_period.setdefault(pid, []).append(m)
+                print(f"  by_period weeks: {sorted(by_period.keys())} ({len(by_period)} weeks)")
                 # Save for all_weeks build outside this loop
                 all_weeks_data = by_period
                 all_id_to_name = id_to_name
