@@ -642,8 +642,9 @@ def main():
                     hc[lbl] = {'value': fmtv(hv, lbl), 'result': hr}
                     ac[lbl] = {'value': fmtv(av, lbl), 'result': ar}
 
-                hs['categories'] = hc; del hs['stats']
-                as_['categories'] = ac; del as_['stats']
+                ties_count = sum(1 for v in hc.values() if v['result'] == 'TIE')
+                hs['categories'] = hc; hs['catTies'] = ties_count; del hs['stats']
+                as_['categories'] = ac; as_['catTies'] = ties_count; del as_['stats']
                 hw = hs['catWins'] > as_['catWins']
                 aw = as_['catWins'] > hs['catWins']
                 winner = m.get('winner', 'UNDECIDED')
@@ -662,11 +663,80 @@ def main():
         print(f"  ⚠️  allWeeks build: {e}")
         traceback.print_exc()
 
+    # ── Team projections for win probability ────────────────────────────────
+    team_projections = {}
+    try:
+        proj_params = [('view', 'mRoster'), ('view', 'mSettings'),
+                       ('scoringPeriodId', scoring_week)]
+        cookies = getattr(req, 'cookies', {}) or {}
+        headers = dict(getattr(req, 'headers', {}) or {})
+        import requests as _req2
+        base = (f'https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb'
+                f'/seasons/{SEASON}/segments/0/leagues/{LEAGUE_ID}')
+        resp = _req2.get(base, params=proj_params, cookies=cookies,
+                         headers=headers, timeout=20)
+        print(f"  Projections HTTP {resp.status_code}")
+        if resp.status_code == 200:
+            proj_data = resp.json()
+            # ESPN returns team rosters with player projected stats
+            PROJ_STAT_KEYS = {
+                "20":"R","5":"HR","21":"RBI","27":"Kbat","23":"SB",
+                "2":"AVG","18":"OPS","34":"IP","37":"H","48":"K",
+                "63":"QS","47":"ERA","41":"WHIP","60":"SVHD",
+            }
+            for team_entry in proj_data.get('teams', []):
+                tid = team_entry.get('id')
+                if not tid: continue
+                tm = team_map.get(tid, {})
+                proj_stats = {
+                    "R":0,"HR":0,"RBI":0,"Kbat":0,"SB":0,
+                    "AVG":0,"OPS":0,"IP":0,"H":0,"K":0,
+                    "QS":0,"ERA":0,"WHIP":0,"SVHD":0,
+                }
+                ab_total = 0  # for AVG
+                ip_total = 0  # for ERA/WHIP
+                er_total = 0
+                walks_hits = 0
+                hits_bat = 0
+
+                roster = team_entry.get('roster', {}).get('entries', [])
+                for entry in roster:
+                    slot = entry.get('lineupSlotId', 16)
+                    if slot in (16, 17, 18, 19, 20):  # bench/IL/NA
+                        continue
+                    player_pool = entry.get('playerPoolEntry', {})
+                    # Get projected stats - ESPN uses appliedStatTotal for projections
+                    player_stats = player_pool.get('player', {}).get('stats', [])
+                    for stat_entry in player_stats:
+                        # statSplitTypeId=5 is current week projections
+                        if stat_entry.get('statSplitTypeId') == 5:
+                            sbs = stat_entry.get('stats', {})
+                            for sid, val in sbs.items():
+                                lbl = PROJ_STAT_KEYS.get(str(sid))
+                                if lbl and val:
+                                    try:
+                                        v = float(val)
+                                        if lbl in ('AVG','OPS','ERA','WHIP'):
+                                            pass  # handle rate stats specially
+                                        else:
+                                            proj_stats[lbl] = proj_stats.get(lbl, 0) + v
+                                    except: pass
+
+                team_projections[str(tid)] = {
+                    'name': tm.get('name',''),
+                    'rbName': tm.get('rbName',''),
+                    'stats': proj_stats,
+                }
+            print(f"  Projections: {len(team_projections)} teams")
+    except Exception as e:
+        print(f"  ⚠️  Projections failed: {e}")
+
     save("matchups.json", {
-        "week":      scoring_week,
-        "matchups":  matchups_out,
-        "allWeeks":  all_weeks_out,
-        "updated":   updated,
+        "week":        scoring_week,
+        "matchups":    matchups_out,
+        "allWeeks":    all_weeks_out,
+        "projections": team_projections,
+        "updated":     updated,
     })
 
     # ── Team stats (season totals) ──────────────────────────────────────────────
