@@ -16,8 +16,8 @@ SEASON    = 2026
 # ESPN stat ID → label
 STAT_MAP = {
     "20": "R", "21": "RBI", "5": "HR", "23": "SB", "27": "Kbat",
-    "2": "AVG", "17": "OPS", "34": "IP", "41": "H", "48": "K",
-    "63": "QS", "47": "ERA", "53": "WHIP", "57": "SV", "83": "HLD",
+    "2": "AVG", "18": "OPS", "34": "IP", "37": "H", "48": "K",
+    "63": "QS", "47": "ERA", "41": "WHIP", "60": "SVHD",
 }
 
 # Categories scored in this league (hitting / pitching)
@@ -343,8 +343,8 @@ def main():
 
         STAT_KEYS = {
             "20":"R","21":"RBI","5":"HR","23":"SB","27":"Kbat",
-            "2":"AVG","17":"OPS","34":"IP","41":"H","48":"K",
-            "63":"QS","47":"ERA","53":"WHIP","57":"SV","83":"HLD",
+            "2":"AVG","18":"OPS","34":"IP","37":"H","48":"K",
+            "63":"QS","47":"ERA","41":"WHIP","60":"SVHD",
         }
         LOWER_CATS = {"ERA","WHIP","H","Kbat"}
         id_to_name = {t.team_id: t.team_name for t in league.teams}
