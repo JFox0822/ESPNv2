@@ -234,9 +234,9 @@ def resolve_cat_results(home_raw, away_raw):
 def extract_svhd(sbs_any, tname):
     """
     Extract SVHD from scoreByStat dict (keys normalized to str).
-    ESPN returns stat 60 (combined SV+HLD) for some teams and 0 or absent for others,
-    while stat 57 (SV only) may hold the real value.
-    Strategy: grab both, use max(60, 57) — they should agree when both are present.
+    stat83 is the authoritative combined SV+HLD value.
+    stat60 and stat57 are unreliable (sometimes 0, sometimes partial).
+    Strategy: use stat83 as primary, fall back to max(60, 57) if 83 absent.
     """
     def get_score(sid):
         info = sbs_any.get(sid)
@@ -249,10 +249,11 @@ def extract_svhd(sbs_any, tname):
                     pass
         return 0.0
 
+    svhd83 = get_score('83')
     svhd60 = get_score('60')
     svhd57 = get_score('57')
-    result = max(svhd60, svhd57)
-    print(f"    SVHD: stat60={svhd60} stat57={svhd57} → using {result} for {tname}")
+    result = svhd83 if svhd83 > 0 else max(svhd60, svhd57)
+    print(f"    SVHD: stat83={svhd83} stat60={svhd60} stat57={svhd57} → using {result} for {tname}")
     return result
 
 def main():
