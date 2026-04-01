@@ -506,7 +506,7 @@ def main():
                         if 'SVHD' not in stats:
                             sv = stats.pop('SV', 0) or 0
                             hld = stats.pop('HLD', 0) or 0
-                            if sv or hld: stats['SVHD'] = sv + hld
+                            if sv: stats['SVHD'] = sv  # use SV only; 83 is not additive
                         stats.pop('SV', None); stats.pop('HLD', None)
                      # Convert IP from total outs → innings.partial
                         if 'IP' in stats:
@@ -599,7 +599,7 @@ def main():
                     SKEYS = {
                         "20":"R","5":"HR","21":"RBI","27":"Kbat","23":"SB",
                         "2":"AVG","18":"OPS","34":"IP","37":"H","48":"K",
-                        "63":"QS","47":"ERA","41":"WHIP","60":"SVHD",
+                        "63":"QS","47":"ERA","41":"WHIP","60":"SVHD","57":"SV","83":"HLD",
                     }
                     for sid, info in cum.get('scoreByStat', {}).items():
                         lbl = SKEYS.get(str(sid))
@@ -613,7 +613,12 @@ def main():
                                         fv = float(f"{outs//3}.{outs%3}")
                                     stats[lbl] = fv
                                 except: pass
-                    return {
+                    # SV fallback → SVHD (stat 83 is not additive)
+                if 'SVHD' not in stats:
+                    sv = stats.pop('SV', 0) or 0
+                    if sv: stats['SVHD'] = sv
+                stats.pop('SV', None); stats.pop('HLD', None)
+                return {
                         'teamId': tid,
                         'team': all_id_to_name.get(tid, f'Team {tid}'),
                         'abbrev': tm.get('abbrev', ''),
