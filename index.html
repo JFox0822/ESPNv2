@@ -576,12 +576,14 @@ async function renderStandings() {
 // ═══ MATCHUPS ═══
 // ── Win Probability Engine ──────────────────────────────────────────────────
 const CAT_VARIANCE = {
-  // Weekly std-dev calibrated to reflect single-day swing potential
-  // (a hot day can flip any category, so variance is deliberately wide)
-  R:12.0, HR:4.5, RBI:12.0, Kbat:14.0, SB:3.0,
-  AVG:0.055, OPS:0.120,
-  IP:15.0, H:0.25, K:14.0, QS:2.0,
-  ERA:2.0, WHIP:0.30, SVHD:2.0,
+  // Calibrated from owner-reported "safe leads" on final day of week.
+  // safe_lead = 1.45 × variance × 0.75 → variance = safe_lead / 1.089
+  // Hitting
+  R:9.2,  HR:4.6,  RBI:9.2, Kbat:9.2, SB:2.8,
+  AVG:0.046, OPS:0.073,
+  // Pitching (IP/K higher due to variable starts rule 7-10 per week)
+  IP:11.0, H:9.2, K:16.5, QS:2.8,
+  ERA:0.92, WHIP:0.23, SVHD:2.8,
 };
 const LOWER_CATS_SET = new Set(['ERA','WHIP','H','Kbat']);
 
