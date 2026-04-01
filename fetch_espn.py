@@ -231,6 +231,30 @@ def resolve_cat_results(home_raw, away_raw):
         away_cats[lbl] = {"value": afmt, "result": a_res}
     return home_cats, away_cats
 
+def extract_svhd(sbs_any, tname):
+    """
+    Extract SVHD from scoreByStat dict (keys normalized to str).
+    ESPN returns stat 60 (combined SV+HLD) for some teams and 0 or absent for others,
+    while stat 57 (SV only) may hold the real value.
+    Strategy: grab both, use max(60, 57) — they should agree when both are present.
+    """
+    def get_score(sid):
+        info = sbs_any.get(sid)
+        if isinstance(info, dict):
+            v = info.get('score', info.get('value'))
+            if v is not None:
+                try:
+                    return float(v)
+                except (TypeError, ValueError):
+                    pass
+        return 0.0
+
+    svhd60 = get_score('60')
+    svhd57 = get_score('57')
+    result = max(svhd60, svhd57)
+    print(f"    SVHD: stat60={svhd60} stat57={svhd57} → using {result} for {tname}")
+    return result
+
 def main():
     try:
         from espn_api.baseball import League
@@ -483,50 +507,43 @@ def main():
                                         for k, v in sbs.items()
                                         if isinstance(v, dict) and (v.get('score') or 0) != 0}
                             print(f"      [{tname}] statIds: {non_zero}")
+
+                        # Normalize all sbs keys to str
+                        sbs_any = {str(k): v for k, v in sbs.items()}
+
                         stats = {}
-                        # Direct SVHD extraction - try all key formats
-                        # ESPN may return stat IDs as int or str keys
-                        sbs_any = {}
-                        for k, v in sbs.items():
-                            sbs_any[str(k)] = v  # normalize all keys to str
-                        for svhd_id in ['60', '57']:
-                            svhd_info = sbs_any.get(svhd_id)
-                            if isinstance(svhd_info, dict):
-                                v = svhd_info.get('score', svhd_info.get('value'))
-                                if v is not None:
-                                    try:
-                                        stats['SVHD'] = float(v)
-                                        print(f"    SVHD({svhd_id})={v} for {tname}")
-                                        break
-                                    except: pass
-                        if 'SVHD' not in stats:
-                            print(f"    NO SVHD for {tname} - sbs keys: {sorted(sbs_any.keys())}")
+
+                        # FIX: grab stat 60 and stat 57 independently, use max.
+                        # ESPN returns stat 60 = 0 for some teams even when stat 57 > 0.
+                        stats['SVHD'] = extract_svhd(sbs_any, tname)
 
                         for stat_id, info in sbs_any.items():
-                            lbl = STAT_KEYS.get(stat_id)  # sbs_any already has str keys
-                            if lbl and lbl not in ('SV', 'HLD', 'SVHD'):  # handled above
-                                v = info.get('score', info.get('value'))
-                                if v is not None:
-                                    try: stats[lbl] = float(v)
-                                    except: pass
-
-                        # Also try box_side if available
-                        if box_side and not stats:
-                            for stat_id, info in box_side.get('cumulativeScore', {}).get('scoreByStat', {}).items():
-                                lbl = STAT_KEYS.get(str(stat_id))
-                                if lbl:
+                            lbl = STAT_KEYS.get(stat_id)
+                            if lbl and lbl not in ('SV', 'HLD', 'SVHD'):
+                                if isinstance(info, dict):
                                     v = info.get('score', info.get('value'))
                                     if v is not None:
                                         try: stats[lbl] = float(v)
                                         except: pass
 
-                        stats.pop('SV', None); stats.pop('HLD', None)
-                     # Convert IP from total outs → innings.partial
+                        # Also try box_side if stats still empty
+                        if len(stats) <= 1 and box_side:  # <= 1 because SVHD already set
+                            for stat_id, info in box_side.get('cumulativeScore', {}).get('scoreByStat', {}).items():
+                                lbl = STAT_KEYS.get(str(stat_id))
+                                if lbl and lbl not in ('SV', 'HLD', 'SVHD'):
+                                    v = info.get('score', info.get('value'))
+                                    if v is not None:
+                                        try: stats[lbl] = float(v)
+                                        except: pass
+
+                        stats.pop('SV', None)
+                        stats.pop('HLD', None)
+
+                        # Convert IP from total outs → innings.partial
                         if 'IP' in stats:
                             outs = int(round(stats['IP']))
                             stats['IP'] = float(f"{outs // 3}.{outs % 3}")
 
-                        stats.pop('SV', None); stats.pop('HLD', None)
                         return {
                             'teamId': tid, 'team': tname,
                             'abbrev': tm.get('abbrev',''), 'rbName': tm.get('rbName',''),
@@ -580,11 +597,9 @@ def main():
         import traceback
         print(f"  ⚠️  Matchup block failed: {e}")
         traceback.print_exc()
-    # allWeeks: current week only for now (future weeks populate as season progresses)
+
     # Build all 18 weeks from the schedule data
     # (all_weeks_data and all_id_to_name set during matchup fetch above)
-    # by_period and parse_side/fmt_v/LOWER_CATS are defined inside the try block above
-    # We captured by_period at the outer scope via all_weeks_data
     all_weeks_out = {str(scoring_week): matchups_out}
     try:
         for wk, wk_matches in all_weeks_data.items():
@@ -598,12 +613,11 @@ def main():
                 aid = away_d.get('teamId')
                 if not hid or not aid:
                     continue
-                h_name = all_id_to_name.get(hid, f'Team {hid}')
-                a_name = all_id_to_name.get(aid, f'Team {aid}')
                 h_tm = team_map.get(hid, {})
                 a_tm = team_map.get(aid, {})
 
-                # Parse stats from cumulativeScore if available
+                # FIX: parse_wk_side return statement was previously mis-indented
+                # outside the function body, causing UnboundLocalError on 'tid'.
                 def parse_wk_side(side_d, tm):
                     tid = side_d.get('teamId')
                     cum = side_d.get('cumulativeScore', {})
@@ -616,17 +630,15 @@ def main():
                         "63":"QS","47":"ERA","41":"WHIP","60":"SVHD","57":"SV","83":"HLD",
                     }
                     raw_sbs = cum.get('scoreByStat', {})
-                    # Direct SVHD: stat 60 first, then 57 (SV only)
-                    for svhd_id in ['60', '57']:
-                        si = raw_sbs.get(svhd_id) or raw_sbs.get(int(svhd_id))
-                        if isinstance(si, dict):
-                            v = si.get('score', si.get('value'))
-                            if v is not None:
-                                try: stats['SVHD'] = float(v); break
-                                except: pass
-                    for sid, info in raw_sbs.items():
-                        lbl = SKEYS.get(str(sid))
-                        if lbl and lbl not in ('SV','HLD','SVHD') and isinstance(info, dict):
+                    sbs_norm = {str(k): v for k, v in raw_sbs.items()}
+
+                    # SVHD: use same max(60, 57) strategy as current-week parse_side
+                    tname_local = all_id_to_name.get(tid, f'Team {tid}')
+                    stats['SVHD'] = extract_svhd(sbs_norm, tname_local)
+
+                    for sid, info in sbs_norm.items():
+                        lbl = SKEYS.get(sid)
+                        if lbl and lbl not in ('SV', 'HLD', 'SVHD') and isinstance(info, dict):
                             v = info.get('score', info.get('value'))
                             if v is not None:
                                 try:
@@ -636,8 +648,9 @@ def main():
                                         fv = float(f"{outs//3}.{outs%3}")
                                     stats[lbl] = fv
                                 except: pass
-                    stats.pop('SV', None); stats.pop('HLD', None)
-                return {
+                    stats.pop('SV', None)
+                    stats.pop('HLD', None)
+                    return {                          # ← correctly inside function
                         'teamId': tid,
                         'team': all_id_to_name.get(tid, f'Team {tid}'),
                         'abbrev': tm.get('abbrev', ''),
