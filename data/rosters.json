@@ -717,7 +717,7 @@
         },
         {
           "name": "Seth Lugo",
-          "slot": "SP",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -1354,7 +1354,7 @@
         },
         {
           "name": "Jose Caballero",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -1393,7 +1393,7 @@
         },
         {
           "name": "JJ Wetherholt",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -1419,7 +1419,7 @@
         },
         {
           "name": "Tatsuya Imai",
-          "slot": "BE",
+          "slot": "SP",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -1535,19 +1535,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Brenton Doyle",
-          "slot": "BE",
-          "position": "?",
-          "eligible": "",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Jared Jones",
           "slot": "IL",
           "position": "?",
@@ -1640,7 +1627,20 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "SP",
+          "slot": "BE",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Reid Detmers",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2303,7 +2303,7 @@
         },
         {
           "name": "Ramon Laureano",
-          "slot": "OF",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2316,7 +2316,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "BE",
+          "slot": "OF",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2472,7 +2472,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2524,7 +2524,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "BE",
+          "slot": "SS",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -2771,7 +2771,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -3694,7 +3694,7 @@
         },
         {
           "name": "Jackson Merrill",
-          "slot": "OF",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -3954,7 +3954,7 @@
         },
         {
           "name": "Adolis Garcia",
-          "slot": "BE",
+          "slot": "OF",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -4123,7 +4123,7 @@
         },
         {
           "name": "Christian Yelich",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -4136,7 +4136,7 @@
         },
         {
           "name": "Luis Arraez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "?",
           "eligible": "",
           "isPitcher": false,
@@ -4734,19 +4734,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Jordan Lawlar",
-          "slot": "BE",
-          "position": "?",
-          "eligible": "",
-          "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
-          "stats": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Carson Benge",
           "slot": "UTIL",
           "position": "?",
@@ -4784,9 +4771,22 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Justin Verlander",
+          "slot": "SP",
+          "position": "?",
+          "eligible": "",
+          "isPitcher": false,
+          "injStatus": "FIFTEEN_DAY_DL",
+          "stats": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-04-04T11:55:34Z"
+  "updated": "2026-04-04T17:59:55Z"
 }
