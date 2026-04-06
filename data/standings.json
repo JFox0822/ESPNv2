@@ -15,8 +15,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "WIN",
+      "catWins": 9,
+      "catLosses": 4,
+      "catTies": 1,
+      "allPlayPct": 0.9091,
       "rank": 1
     },
     {
@@ -33,8 +37,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "WIN",
+      "catWins": 9,
+      "catLosses": 5,
+      "catTies": 0,
+      "allPlayPct": 0.2727,
       "rank": 2
     },
     {
@@ -51,8 +59,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "WIN",
+      "catWins": 8,
+      "catLosses": 5,
+      "catTies": 1,
+      "allPlayPct": 0.5909,
       "rank": 3
     },
     {
@@ -69,8 +81,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "WIN",
+      "catWins": 11,
+      "catLosses": 3,
+      "catTies": 0,
+      "allPlayPct": 0.9545,
       "rank": 4
     },
     {
@@ -87,8 +103,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "WIN",
+      "catWins": 9,
+      "catLosses": 4,
+      "catTies": 1,
+      "allPlayPct": 0.7727,
       "rank": 5
     },
     {
@@ -105,8 +125,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "WIN",
+      "catWins": 9,
+      "catLosses": 4,
+      "catTies": 1,
+      "allPlayPct": 0.8182,
       "rank": 6
     },
     {
@@ -123,8 +147,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "LOSS",
+      "catWins": 4,
+      "catLosses": 9,
+      "catTies": 1,
+      "allPlayPct": 0.4091,
       "rank": 7
     },
     {
@@ -141,8 +169,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "LOSS",
+      "catWins": 4,
+      "catLosses": 9,
+      "catTies": 1,
+      "allPlayPct": 0.0,
       "rank": 8
     },
     {
@@ -159,8 +191,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "LOSS",
+      "catWins": 4,
+      "catLosses": 9,
+      "catTies": 1,
+      "allPlayPct": 0.5,
       "rank": 9
     },
     {
@@ -177,8 +213,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "LOSS",
+      "catWins": 5,
+      "catLosses": 8,
+      "catTies": 1,
+      "allPlayPct": 0.3636,
       "rank": 10
     },
     {
@@ -195,8 +235,12 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "LOSS",
+      "catWins": 3,
+      "catLosses": 11,
+      "catTies": 0,
+      "allPlayPct": 0.3182,
       "rank": 11
     },
     {
@@ -214,10 +258,14 @@
       "ties": 0,
       "pointsFor": 0,
       "pointsAgainst": 0,
-      "streak": 0,
-      "streakType": "",
+      "streak": 1,
+      "streakType": "LOSS",
+      "catWins": 5,
+      "catLosses": 9,
+      "catTies": 0,
+      "allPlayPct": 0.0909,
       "rank": 12
     }
   ],
-  "updated": "2026-04-06T12:57:54Z"
+  "updated": "2026-04-06T18:55:11Z"
 }
