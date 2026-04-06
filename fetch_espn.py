@@ -11,7 +11,7 @@ import sys
 from collections import defaultdict
 from datetime import datetime, timezone
 
-LEAGUE_ID = int(os.environ.get("ESPN_LEAGUE_ID", "163020"))
+LEAGUE_ID = int(os.environ.get("ESPN_LEAGUE_ID") or "163020")
 ESPN_S2   = os.environ.get("ESPN_S2", "")
 ESPN_SWID = os.environ.get("ESPN_SWID", "")
 SEASON    = 2026
@@ -906,6 +906,8 @@ def main():
                     'season': SEASON, 'week': wk,
                     'home': m['home']['team'],
                     'away': m['away']['team'],
+                    'homeRB': m['home'].get('rbName', ''),
+                    'awayRB': m['away'].get('rbName', ''),
                     'homeCatW': hw, 'awayCatW': aw,
                     'winner': winner,
                 })
