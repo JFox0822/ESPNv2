@@ -1908,7 +1908,7 @@ function renderHOF(){
 // ═══ DRAFT + KEEPERS ═══
 async function renderDraft() {
   try {
-    const data = await load('draft.json');
+    const data = await load('draft_manual.json');
     const picks = data.picks || [];
     if (!picks.length) { document.getElementById('ros-draft-c').innerHTML = '<div class="state">Draft data not yet available. Will populate after league drafts.</div>'; return; }
     const teams = [...new Set(picks.map(p=>p.team))].sort();
@@ -1961,7 +1961,7 @@ async function renderKeepers() {
     // We build a lookup: lastName → round, using our corrected draft.json.
     let draftRoundLookup = {}; // lastName (lowercase) → corrected round
     try {
-      const draftPicks = (await load('draft.json')).picks || [];
+      const draftPicks = (await load('draft_manual.json')).picks || [];
       draftPicks.forEach(p => {
         if (p.keeper) return; // pre-draft keepers are never keeper-eligible
         const lastName = p.player.split(' ').pop().toLowerCase();
@@ -1995,7 +1995,7 @@ async function renderKeepers() {
     // ── Path B: cross-reference draft.json picks ──
     if (!Object.keys(keeperMap).length) {
       let picks = [];
-      try { picks = (await load('draft.json')).picks || []; } catch(_) {}
+      try { picks = (await load('draft_manual.json')).picks || []; } catch(_) {}
 
       if (picks.length) {
         // Build lookup: "team::player" → round
