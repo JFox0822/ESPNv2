@@ -937,9 +937,10 @@ async function renderTeamStats() {
   const el = document.getElementById('ts-c');
   try {
     // ── Load matchups (cumulative allWeeks) + team metadata ──────────────────
-    const [mdata, tsdata] = await Promise.all([
+    const [mdata, tsdata, sdata] = await Promise.all([
       load('matchups.json'),
       load('team_stats.json').catch(() => ({teams: [], season: 2026})),
+      load('standings.json').catch(() => ({standings: []})),
     ]);
     const season = mdata.week ? 2026 : (tsdata.season || 2026);
     const allWeeks = mdata.allWeeks || {};
@@ -1034,6 +1035,19 @@ async function renderTeamStats() {
         }
       };
     });
+
+    // ── Sort teams by current standings rank ────────────────────────────────
+    const standingsOrder = (sdata.standings || []);
+    if (standingsOrder.length) {
+      // Build a rank map: espn team name -> rank
+      const rankMap = {};
+      standingsOrder.forEach((s, i) => { rankMap[s.name || s.team || ''] = s.rank ?? (i + 1); });
+      teams.sort((a, b) => {
+        const ra = rankMap[a.name] ?? 999;
+        const rb2 = rankMap[b.name] ?? 999;
+        return ra - rb2;
+      });
+    }
 
     // Cache for resume statcast view (keep same shape as before)
     _liveTeamStats = { teams: teams.map(t => ({...t, wins:0, losses:0})), season };
