@@ -1956,15 +1956,39 @@ async function renderKeepers() {
 
     const keeperMap = {}; // teamName -> [{name, source}]
 
+    // ── Always load draft.json to get corrected round numbers ──────────────
+    // ESPN's draftRound field is unreliable (traded picks get wrong rounds).
+    // We build a lookup: lastName → round, using our corrected draft.json.
+    let draftRoundLookup = {}; // lastName (lowercase) → corrected round
+    try {
+      const draftPicks = (await load('draft.json')).picks || [];
+      draftPicks.forEach(p => {
+        if (p.keeper) return; // pre-draft keepers are never keeper-eligible
+        const lastName = p.player.split(' ').pop().toLowerCase();
+        // Store the pick; if same last name appears, keep lower round (safer)
+        if (!draftRoundLookup[lastName] || p.round < draftRoundLookup[lastName]) {
+          draftRoundLookup[lastName] = p.round;
+        }
+      });
+    } catch(_) {}
+
+    // Helper: get corrected round for a player (by last name fallback)
+    function correctedRound(playerName) {
+      const lastName = playerName.split(' ').pop().toLowerCase();
+      return draftRoundLookup[lastName] ?? null;
+    }
+
     // ── Path A: new rosters.json format has keeperEligible on each player ──
     const hasNewFormat = 'keeperEligible' in (teams[0]?.players?.[0] || {});
     if (hasNewFormat) {
       teams.forEach(t => {
         const elig = (t.players||[]).filter(p => p.keeperEligible);
-        if (elig.length) keeperMap[t.name] = elig.map(p => ({
-          name: p.name,
-          source: p.draftRound >= 13 ? `Rd ${p.draftRound} pick` : 'FA/Waiver add',
-        }));
+        if (elig.length) keeperMap[t.name] = elig.map(p => {
+          // Use draft.json round if available, fall back to ESPN's draftRound
+          const rd = correctedRound(p.name) ?? p.draftRound;
+          const source = (rd != null && rd >= 13) ? `Rd ${rd} pick` : 'FA/Waiver add';
+          return { name: p.name, source };
+        });
       });
     }
 
