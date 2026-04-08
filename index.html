@@ -1956,71 +1956,50 @@ async function renderKeepers() {
 
     const keeperMap = {}; // teamName -> [{name, source}]
 
-    // ── Always load draft.json to get corrected round numbers ──────────────
-    // ESPN's draftRound field is unreliable (traded picks get wrong rounds).
-    // We build a lookup: lastName → round, using our corrected draft.json.
-    let draftRoundLookup = {}; // lastName (lowercase) → corrected round
+    // ── Use draft_manual.json as sole source of truth for keeper eligibility ─
+    // ESPN's keeperEligible flag & draftRound are unreliable with traded picks.
+    // We bypass them entirely and determine eligibility from our corrected data.
+    let draftLookup = {}; // lastName.toLowerCase() → {round, isPreKeeper}
+    let hasDraftData = false;
     try {
       const draftPicks = (await load('draft_manual.json')).picks || [];
-      draftPicks.forEach(p => {
-        if (p.keeper) return; // pre-draft keepers are never keeper-eligible
-        const lastName = p.player.split(' ').pop().toLowerCase();
-        // Store the pick; if same last name appears, keep lower round (safer)
-        if (!draftRoundLookup[lastName] || p.round < draftRoundLookup[lastName]) {
-          draftRoundLookup[lastName] = p.round;
-        }
-      });
-    } catch(_) {}
-
-    // Helper: get corrected round for a player (by last name fallback)
-    function correctedRound(playerName) {
-      const lastName = playerName.split(' ').pop().toLowerCase();
-      return draftRoundLookup[lastName] ?? null;
-    }
-
-    // ── Path A: new rosters.json format has keeperEligible on each player ──
-    const hasNewFormat = 'keeperEligible' in (teams[0]?.players?.[0] || {});
-    if (hasNewFormat) {
-      teams.forEach(t => {
-        const elig = (t.players||[]).filter(p => p.keeperEligible);
-        if (elig.length) keeperMap[t.name] = elig.map(p => {
-          // Use draft.json round if available, fall back to ESPN's draftRound
-          const rd = correctedRound(p.name) ?? p.draftRound;
-          const source = (rd != null && rd >= 13) ? `Rd ${rd} pick` : 'FA/Waiver add';
-          return { name: p.name, source };
-        });
-      });
-    }
-
-    // ── Path B: cross-reference draft.json picks ──
-    if (!Object.keys(keeperMap).length) {
-      let picks = [];
-      try { picks = (await load('draft_manual.json')).picks || []; } catch(_) {}
-
-      if (picks.length) {
-        // Build lookup: "team::player" → round
-        const byTeamPlayer = {};
-        picks.forEach(p => { byTeamPlayer[`${p.team}::${p.player}`] = p.round; });
-
-        teams.forEach(t => {
-          const elig = [];
-          (t.players||[]).forEach(p => {
-            // Match player name to draft pick (try exact, then last name)
-            const exact = byTeamPlayer[`${t.name}::${p.name}`];
-            if (exact !== undefined) {
-              if (exact >= 13) elig.push({name: p.name, source: `Rd ${exact} pick`});
-              // rounds 1-12 = NOT eligible, skip
-            } else {
-              // Not in draft = FA/Waiver pickup = eligible
-              elig.push({name: p.name, source: 'FA/Waiver add'});
-            }
-          });
-          if (elig.length) keeperMap[t.name] = elig;
+      if (draftPicks.length) {
+        hasDraftData = true;
+        draftPicks.forEach(p => {
+          const lastName = p.player.split(' ').pop().toLowerCase();
+          const entry = { round: p.round, isPreKeeper: !!p.keeper };
+          // Only overwrite with a higher round (prefer later pick if same last name)
+          if (!draftLookup[lastName] || (!p.keeper && p.round > (draftLookup[lastName].round || 0))) {
+            draftLookup[lastName] = entry;
+          }
         });
       }
+    } catch(_) {}
+
+    if (hasDraftData) {
+      // Determine eligibility purely from draft_manual.json by last-name match
+      teams.forEach(t => {
+        const players = (t.players || []).filter(p => p.name && p.slot !== 'NA');
+        const elig = [];
+        players.forEach(p => {
+          const lastName = p.name.split(' ').pop().toLowerCase();
+          const entry = draftLookup[lastName];
+          if (!entry) {
+            // Not in draft at all = FA/Waiver pickup = eligible
+            elig.push({ name: p.name, source: 'FA/Waiver add' });
+          } else if (entry.isPreKeeper) {
+            // Was a pre-draft keeper this year — not eligible to keep again
+            // (don't add to eligible list)
+          } else if (typeof entry.round === 'number' && entry.round >= 13) {
+            elig.push({ name: p.name, source: `Rd ${entry.round} pick` });
+          }
+          // rounds 1-12 = not eligible, skip
+        });
+        if (elig.length) keeperMap[t.name] = elig;
+      });
     }
 
-    // ── Path C: no draft data yet — show all rostered players as pre-draft ──
+    // ── Fallback: no draft data yet — show all rostered players as TBD ──────
     if (!Object.keys(keeperMap).length) {
       teams.forEach(t => {
         const players = (t.players||[]).filter(p => p.name && p.slot !== 'NA');
