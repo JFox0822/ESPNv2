@@ -1958,42 +1958,56 @@ async function renderKeepers() {
 
     // ── Use draft_manual.json as sole source of truth for keeper eligibility ─
     // ESPN's keeperEligible flag & draftRound are unreliable with traded picks.
-    // We bypass them entirely and determine eligibility from our corrected data.
-    let draftLookup = {}; // lastName.toLowerCase() → {round, isPreKeeper}
+    // We auto-detect ESPN→draft team mapping by last-name overlap, then do
+    // per-team lookups so same last names on different teams don't collide.
     let hasDraftData = false;
+    let draftByTeam = {}; // draftTeamName → { lastName → {round, isPreKeeper} }
+
     try {
       const draftPicks = (await load('draft_manual.json')).picks || [];
       if (draftPicks.length) {
         hasDraftData = true;
         draftPicks.forEach(p => {
+          if (!draftByTeam[p.team]) draftByTeam[p.team] = {};
           const lastName = p.player.split(' ').pop().toLowerCase();
-          const entry = { round: p.round, isPreKeeper: !!p.keeper };
-          // Only overwrite with a higher round (prefer later pick if same last name)
-          if (!draftLookup[lastName] || (!p.keeper && p.round > (draftLookup[lastName].round || 0))) {
-            draftLookup[lastName] = entry;
-          }
+          draftByTeam[p.team][lastName] = { round: p.round, isPreKeeper: !!p.keeper };
         });
       }
     } catch(_) {}
 
     if (hasDraftData) {
-      // Determine eligibility purely from draft_manual.json by last-name match
+      // Auto-map each ESPN roster team to its draft team by counting last-name overlaps
+      const teamMapping = {}; // espnTeamName → draftTeamName
+      teams.forEach(rosterTeam => {
+        const rosterLastNames = new Set(
+          (rosterTeam.players || []).map(p => p.name.split(' ').pop().toLowerCase())
+        );
+        let bestDraftTeam = null, bestCount = -1;
+        Object.entries(draftByTeam).forEach(([draftTeam, picks]) => {
+          const overlap = Object.keys(picks).filter(ln => rosterLastNames.has(ln)).length;
+          if (overlap > bestCount) { bestCount = overlap; bestDraftTeam = draftTeam; }
+        });
+        if (bestDraftTeam) teamMapping[rosterTeam.name] = bestDraftTeam;
+      });
+
+      // Now determine eligibility per team using the correct team's draft picks
       teams.forEach(t => {
+        const draftTeamName = teamMapping[t.name];
+        const teamPicks = draftTeamName ? (draftByTeam[draftTeamName] || {}) : {};
         const players = (t.players || []).filter(p => p.name && p.slot !== 'NA');
         const elig = [];
         players.forEach(p => {
           const lastName = p.name.split(' ').pop().toLowerCase();
-          const entry = draftLookup[lastName];
+          const entry = teamPicks[lastName];
           if (!entry) {
-            // Not in draft at all = FA/Waiver pickup = eligible
+            // Not in this team's draft picks = FA/Waiver pickup = eligible
             elig.push({ name: p.name, source: 'FA/Waiver add' });
           } else if (entry.isPreKeeper) {
-            // Was a pre-draft keeper this year — not eligible to keep again
-            // (don't add to eligible list)
+            // Pre-draft keeper this year — cannot keep again, omit
           } else if (typeof entry.round === 'number' && entry.round >= 13) {
             elig.push({ name: p.name, source: `Rd ${entry.round} pick` });
           }
-          // rounds 1-12 = not eligible, skip
+          // rounds 1–12 = not keeper eligible, omit
         });
         if (elig.length) keeperMap[t.name] = elig;
       });
