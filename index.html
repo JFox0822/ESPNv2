@@ -1945,8 +1945,12 @@ async function renderDraft() {
   }
 }
 
-function draftLastName(fullName) {
-  return (fullName || '').replace(/\s+(jr\.?|sr\.?|ii+|iv)$/i, '').split(' ').pop().toLowerCase();
+function draftKey(fullName) {
+  const cleaned = (fullName || '').replace(/\s+(jr\.?|sr\.?|ii+|iv)$/i, '').trim();
+  const parts = cleaned.split(' ');
+  const last = parts.pop().toLowerCase();
+  const first = parts[0] ? parts[0][0].toLowerCase() : '';
+  return first ? `${first}_${last}` : last;
 }
 
 async function renderKeepers() {
@@ -1973,7 +1977,7 @@ async function renderKeepers() {
         hasDraftData = true;
         draftPicks.forEach(p => {
           if (!draftByTeam[p.team]) draftByTeam[p.team] = {};
-          const lastName = draftLastName(p.player);
+          const lastName = draftKey(p.player);
           draftByTeam[p.team][lastName] = { round: p.round, isPreKeeper: !!p.keeper };
         });
       }
@@ -1984,7 +1988,7 @@ async function renderKeepers() {
       const teamMapping = {}; // espnTeamName → draftTeamName
       teams.forEach(rosterTeam => {
         const rosterLastNames = new Set(
-          (rosterTeam.players || []).map(p => draftLastName(p.name))
+          (rosterTeam.players || []).map(p => draftKey(p.name))
         );
         let bestDraftTeam = null, bestCount = -1;
         Object.entries(draftByTeam).forEach(([draftTeam, picks]) => {
@@ -2001,7 +2005,7 @@ async function renderKeepers() {
         const players = (t.players || []).filter(p => p.name && p.slot !== 'NA');
         const elig = [];
         players.forEach(p => {
-          const lastName = draftLastName(p.name);
+          const lastName = draftKey(p.name);
           const entry = teamPicks[lastName];
           if (!entry) {
             // Not in this team's draft picks = FA/Waiver pickup = eligible
