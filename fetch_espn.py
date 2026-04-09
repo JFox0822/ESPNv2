@@ -815,8 +815,9 @@ def main():
 
     save("standings.json", {"week": scoring_week, "standings": standings, "updated": updated})
 
-    # ── Projections ───────────────────────────────────────────────────────────
+    # ── Projections + Individual Player Season Stats ─────────────────────────
     team_projections = {}
+    player_season_stats = {}   # fullName → {R, HR, RBI, ...} actual season stats
     try:
         proj_params = [('view', 'mRoster'), ('view', 'mSettings'),
                        ('scoringPeriodId', scoring_week)]
@@ -835,6 +836,8 @@ def main():
                 "2":"AVG","18":"OPS","34":"IP","37":"H","48":"K",
                 "63":"QS","47":"ERA","41":"WHIP","60":"SVHD",
             }
+            RATE_STATS = {"AVG","OPS","ERA","WHIP"}
+
             for team_entry in proj_data.get('teams', []):
                 tid = team_entry.get('id')
                 if not tid: continue
@@ -847,11 +850,38 @@ def main():
                 roster = team_entry.get('roster', {}).get('entries', [])
                 for entry in roster:
                     slot = entry.get('lineupSlotId', 16)
+                    ppool = entry.get('playerPoolEntry', {})
+                    pname = (ppool.get('player') or {}).get('fullName', '')
+                    all_player_stats = (ppool.get('player') or {}).get('stats', [])
+
+                    # ── Extract actual season stats per player (statSplitTypeId=0) ──
+                    if pname and pname not in player_season_stats:
+                        for stat_entry in all_player_stats:
+                            if stat_entry.get('statSplitTypeId') == 0:
+                                sbs = stat_entry.get('stats', {})
+                                pstats = {}
+                                for sid, val in sbs.items():
+                                    lbl = PROJ_STAT_KEYS.get(str(sid))
+                                    if lbl is None or val is None:
+                                        continue
+                                    try:
+                                        v = float(val)
+                                        if lbl == 'IP':
+                                            outs = int(round(v))
+                                            pstats['IP'] = float(f"{outs//3}.{outs%3}")
+                                        elif lbl in RATE_STATS:
+                                            pstats[lbl] = round(v, 3)
+                                        else:
+                                            pstats[lbl] = int(round(v))
+                                    except: pass
+                                if any(v != 0 for v in pstats.values()):
+                                    player_season_stats[pname] = pstats
+                                break
+
+                    # ── Projected team stats (active slots only) ──
                     if slot in (16, 17, 18, 19, 20):
                         continue
-                    player_pool = entry.get('playerPoolEntry', {})
-                    player_stats = player_pool.get('player', {}).get('stats', [])
-                    for stat_entry in player_stats:
+                    for stat_entry in all_player_stats:
                         if stat_entry.get('statSplitTypeId') == 5:
                             sbs = stat_entry.get('stats', {})
                             for sid, val in sbs.items():
@@ -868,6 +898,7 @@ def main():
                     'stats': proj_stats,
                 }
             print(f"  Projections: {len(team_projections)} teams")
+            print(f"  Player season stats: {len(player_season_stats)} players")
     except Exception as e:
         print(f"  ⚠️  Projections failed: {e}")
 
@@ -939,6 +970,18 @@ def main():
     save("team_stats.json", {"season": SEASON, "teams": team_stats, "updated": updated})
 
     # ── Rosters ───────────────────────────────────────────────────────────────
+    # Build draft round lookup from league.draft (p.draftRound is unreliable from roster endpoint)
+    draft_round_by_name = {}
+    try:
+        for pick in (league.draft or []):
+            pname = getattr(pick, "playerName", None) or getattr(pick, "player_name", "")
+            round_num = getattr(pick, "round_num", 0) or 0
+            if pname and round_num:
+                draft_round_by_name[pname] = round_num
+        print(f"  ✅  Draft lookup built: {len(draft_round_by_name)} players")
+    except Exception as e:
+        print(f"  ⚠️  Draft lookup failed: {e}")
+
     rosters_out = []
     for t in league.teams:
         tm = team_map[t.team_id]
@@ -946,27 +989,31 @@ def main():
         for p in (t.roster or []):
             slot_id     = getattr(p, "lineupSlot", getattr(p, "slot_id", 16))
             slot_label  = SLOT_MAP.get(slot_id, "BE") if isinstance(slot_id, int) else str(slot_id)
-            pos_id      = getattr(p, "defaultPositionId", getattr(p, "position_id", 0)) or 0
-            primary_pos = POS_MAP.get(pos_id, "?")
+            # p.position is a string ("OF", "SP", etc.) in espn-api — don't use defaultPositionId
+            primary_pos = (getattr(p, "position", None) or "?").strip() or "?"
             eligible_ids = getattr(p, "eligibleSlots", []) or []
             eligible_str = "/".join(list(dict.fromkeys(
                 SLOT_MAP.get(s,"") for s in eligible_ids
                 if SLOT_MAP.get(s,"") not in ("BE","IL","IL10","IL60","NA","")
             )))[:20]
-            is_pitcher  = pos_id in (9, 10, 11, 13)
+            if not eligible_str:
+                eligible_str = primary_pos  # fallback to primary position
+            is_pitcher  = primary_pos in ("SP", "RP", "P")
             inj_status  = getattr(p, "injuryStatus", "ACTIVE") or "ACTIVE"
             acq_type    = (getattr(p, "acquisitionType", "") or "").upper()
-            draft_round = getattr(p, "draftRound", 0) or 0
+            pname_str   = getattr(p, "name", "Unknown")
+            # Use league.draft lookup; fall back to p.draftRound only if not in draft dict
+            draft_round = draft_round_by_name.get(pname_str, getattr(p, "draftRound", 0) or 0)
             is_keeper   = (draft_round >= 13) or (draft_round == 0 and
                            any(x in acq_type for x in ["FREE","WAIVER","FA"]))
             players.append({
-                "name":            getattr(p, "name", "Unknown"),
+                "name":            pname_str,
                 "slot":            slot_label,
                 "position":        primary_pos,
                 "eligible":        eligible_str,
                 "isPitcher":       is_pitcher,
                 "injStatus":       inj_status,
-                "stats":           {},
+                "stats":           player_season_stats.get(pname_str, {}),
                 "tier":            "",
                 "acquisitionType": acq_type,
                 "draftRound":      draft_round,
