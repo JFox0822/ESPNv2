@@ -2495,7 +2495,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.259,
             "HR": 31,
@@ -6691,7 +6691,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.265,
             "HR": 26,
@@ -7152,5 +7152,5 @@
       ]
     }
   ],
-  "updated": "2026-04-09T18:54:46Z"
+  "updated": "2026-04-09T20:36:55Z"
 }
