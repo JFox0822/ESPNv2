@@ -854,10 +854,10 @@ def main():
                     pname = (ppool.get('player') or {}).get('fullName', '')
                     all_player_stats = (ppool.get('player') or {}).get('stats', [])
 
-                    # ── Extract actual season stats per player (statSplitTypeId=0) ──
+                    # ── Extract actual 2026 YTD stats per player (statSplitTypeId=0, seasonId=SEASON) ──
                     if pname and pname not in player_season_stats:
                         for stat_entry in all_player_stats:
-                            if stat_entry.get('statSplitTypeId') == 0:
+                            if stat_entry.get('statSplitTypeId') == 0 and stat_entry.get('seasonId') == SEASON:
                                 sbs = stat_entry.get('stats', {})
                                 pstats = {}
                                 for sid, val in sbs.items():
