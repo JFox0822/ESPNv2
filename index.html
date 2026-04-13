@@ -45,16 +45,50 @@ button{cursor:pointer;border:none;background:none;font-family:var(--fb)}
 .status-upd{font-family:var(--fm);font-size:9px;color:var(--ink3);letter-spacing:.06em}
 
 /* ── NAV ── */
-.nav-strip{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:32px;flex-wrap:wrap}
-.nav-lbl{font-family:var(--fm);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3);white-space:nowrap}
-.nav-sel-wrap{position:relative;flex:1;max-width:440px;min-width:260px}
-.nav-sel-wrap::after{content:"▾";position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--green);pointer-events:none;font-size:14px}
-.nav-sel{width:100%;appearance:none;background:var(--bg2);color:var(--ink);border:1px solid var(--green);border-radius:8px;padding:10px 38px 10px 14px;font-family:var(--fd);font-size:18px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;outline:none;transition:box-shadow .2s}
-.nav-sel:focus{box-shadow:0 0 0 3px var(--glow)}
-.nav-sel option{background:var(--bg1);color:var(--ink);font-size:14px}
-.nav-arrows{display:flex;gap:4px}
-.nav-arr{width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--bg2);border:1px solid var(--border2);border-radius:6px;color:var(--ink2);font-size:16px;transition:all .15s}
-.nav-arr:hover{background:var(--bg3);border-color:var(--green);color:var(--green)}
+.main-tabs{display:flex;gap:2px;padding:12px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.main-tabs::-webkit-scrollbar{display:none}
+.main-tab{font-family:var(--fd);font-size:17px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);background:transparent;border:none;border-radius:6px;padding:10px 22px;cursor:pointer;white-space:nowrap;transition:all .15s}
+.main-tab:hover{color:var(--ink);background:var(--bg2)}
+.main-tab.active{color:var(--bg);background:var(--green)}
+.page-tabs{display:flex;gap:4px;padding:20px 0 16px;margin-bottom:24px;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.page-tab{font-family:var(--fm);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);background:var(--bg1);border:1px solid var(--border);border-radius:4px;padding:7px 14px;cursor:pointer;transition:all .15s}
+.page-tab:hover{color:var(--ink);border-color:var(--border2)}
+.page-tab.active{color:var(--bg);background:var(--green);border-color:var(--green);font-weight:600}
+.page{display:none}.page.active{display:block;animation:fadeup .2s ease}
+/* ── RULEBOOK ── */
+.rb-section{margin-bottom:32px}
+.rb-section-title{font-family:var(--fd);font-size:clamp(18px,2.5vw,24px);font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.rb-rule{background:var(--bg1);border:1px solid var(--border);border-radius:6px;padding:14px 18px;margin-bottom:8px;font-size:13px;color:var(--ink2);line-height:1.8}
+.rb-rule b{color:var(--ink)}.rb-rule .rb-warn{color:var(--gold)}.rb-rule .rb-note{color:var(--purple)}
+.rb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-bottom:16px}
+.rb-franchise{background:var(--bg1);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+.rb-franchise.champ{border-color:var(--gold)}
+.rb-f-name{font-family:var(--fd);font-size:16px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.rb-f-owner{font-family:var(--fm);font-size:9px;color:var(--ink3);letter-spacing:.1em}
+.rb-f-titles{font-family:var(--fm);font-size:9px;color:var(--gold);margin-top:3px}
+.rb-f-year{font-family:var(--fm);font-size:8px;color:var(--ink3);margin-top:2px}
+.rb-payout{background:var(--bg1);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:16px}
+.rb-po-hd{background:var(--bg3);padding:8px 16px;font-family:var(--fm);font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--border)}
+.rb-po-row{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid var(--border)}
+.rb-po-row:last-child{border-bottom:none}
+.rb-po-lbl{font-family:var(--fd);font-size:16px;font-weight:700;letter-spacing:.03em;text-transform:uppercase}
+.rb-po-val{font-family:var(--fd);font-size:22px;font-weight:900;color:var(--green)}
+.rb-winners{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.rb-win-era{background:var(--bg1);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.rb-win-era-hd{padding:8px 14px;font-family:var(--fm);font-size:8px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--border)}
+.rb-win-era-hd.yahoo{color:#9977ff;background:rgba(153,119,255,.08)}
+.rb-win-era-hd.espn{color:#e03f2f;background:rgba(224,63,47,.08)}
+.rb-win-row{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid var(--border);font-size:13px}
+.rb-win-row:last-child{border-bottom:none}
+.rb-win-yr{font-family:var(--fm);font-size:9px;color:var(--ink3);min-width:28px}
+.rb-win-name{font-family:var(--fd);font-size:15px;font-weight:700;letter-spacing:.03em}
+.rb-hero{background:linear-gradient(135deg,rgba(240,180,41,.08),rgba(16,243,123,.05));border:1px solid var(--gold);border-radius:8px;padding:20px 24px;margin-bottom:28px;text-align:center}
+.rb-hero-lbl{font-family:var(--fm);font-size:8px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.rb-hero-champ{font-family:var(--fd);font-size:clamp(28px,4vw,44px);font-weight:900;color:var(--gold);letter-spacing:.04em;text-transform:uppercase}
+.rb-hero-year{font-family:var(--fm);font-size:11px;color:var(--ink3);margin-top:4px}
+.rb-note-box{background:rgba(153,119,255,.07);border:1px solid rgba(153,119,255,.2);border-radius:6px;padding:12px 16px;margin-bottom:10px;font-family:var(--fm);font-size:10px;color:var(--purple);line-height:1.7}
+.rb-warn-box{background:rgba(240,180,41,.07);border:1px solid rgba(240,180,41,.2);border-radius:6px;padding:12px 16px;margin-bottom:10px;font-family:var(--fm);font-size:10px;color:var(--gold);line-height:1.7}
+@media(max-width:600px){.rb-winners{grid-template-columns:1fr}}
 
 /* ── PANEL/SUB ── */
 .panel{display:none}.panel.active{display:block;animation:fadeup .2s ease}
@@ -341,105 +375,300 @@ tbody tr.cut{border-top:2px dashed var(--border2)!important}
       <div class="status-upd" id="hdr-updated">—</div>
     </div>
   </div>
-  <div class="nav-strip">
-    <span class="nav-lbl">Navigate</span>
-    <div class="nav-sel-wrap">
-      <select class="nav-sel" id="main-nav">
-        <option value="standings">01 / Standings</option>
-        <option value="matchups">02 / Matchups</option>
-        <option value="power">03 / Power Rankings</option>
-        <option value="stats">04 / Team Stats</option>
-        <option value="rosters">05 / Rosters</option>
-        <option value="history">06 / History</option>
-        <option value="analytics">07 / Analytics</option>
-        <option value="records">08 / Records &amp; Kings</option>
-        <option value="legacy">09 / Legacy Rankings</option>
-        <option value="resumes">10 / Team Resumes</option>
-        <option value="champs">11 / Championships</option>
-        <option value="hof">12 / Hall of Fame</option>
-        <option value="koh">13 / In Season Awards</option>
-      </select>
-    </div>
-    <div class="nav-arrows">
-      <button class="nav-arr" id="nav-prev">&#8249;</button>
-      <button class="nav-arr" id="nav-next">&#8250;</button>
-    </div>
-  </div>
+  <nav class="main-tabs" id="main-nav">
+    <button class="main-tab active" data-page="season">Season</button>
+    <button class="main-tab" data-page="teams">Teams</button>
+    <button class="main-tab" data-page="vault">Vault</button>
+    <button class="main-tab" data-page="legacy-pg">Legacy</button>
+    <button class="main-tab" data-page="rulebook">Rulebook</button>
+  </nav>
 </header>
 
-<!-- PANELS -->
-<div id="panel-standings" class="panel active"><div id="std-c"><div class="state">Loading…</div></div></div>
-<div id="panel-matchups"  class="panel"><div id="mu-c"><div class="state">Loading…</div></div></div>
-<div id="panel-power"     class="panel"><div id="pr-c"><div class="state">Loading…</div></div></div>
-<div id="panel-stats"     class="panel"><div id="ts-c"><div class="state">Loading…</div></div></div>
-<div id="panel-rosters" class="panel">
-  <div class="sub-nav">
-    <button class="sub-btn active" data-sub="ros-main">Rosters</button>
-    <button class="sub-btn" data-sub="ros-draft">2026 Draft</button>
-    <button class="sub-btn" data-sub="ros-keepers">Keeper Eligible</button>
-  </div>
-  <div id="ros-main" class="sub-panel active"><div id="ros-c"><div class="state">Loading…</div></div></div>
-  <div id="ros-draft" class="sub-panel"><div id="ros-draft-c"><div class="state">Loading…</div></div></div>
-  <div id="ros-keepers" class="sub-panel"><div id="ros-keep-c"><div class="state">Loading…</div></div></div>
-</div>
+<!-- PANELS — 5-PAGE STRUCTURE -->
 
-<div id="panel-history" class="panel">
-  <div class="sub-nav">
-    <button class="sub-btn active" data-sub="hs-st">Season Standings</button>
-    <button class="sub-btn" data-sub="hs-h2h">All-Time H2H</button>
-    <button class="sub-btn" data-sub="hs-mu">Weekly Results</button>
-    <button class="sub-btn" data-sub="hs-poff">Playoffs</button>
+<!-- ══ PAGE 1: SEASON ══ -->
+<div id="page-season" class="page active">
+  <div class="page-tabs">
+    <button class="page-tab active" data-panel="standings">Standings</button>
+    <button class="page-tab" data-panel="matchups">Matchups</button>
+    <button class="page-tab" data-panel="koh">In-Season Awards</button>
   </div>
-  <div id="hs-st"  class="sub-panel active"></div>
-  <div id="hs-h2h" class="sub-panel"></div>
-  <div id="hs-mu"  class="sub-panel"></div>
-  <div id="hs-poff" class="sub-panel"></div>
-</div>
-
-<div id="panel-analytics" class="panel">
-  <div class="sub-nav">
-    <button class="sub-btn active" data-sub="an-elo">ELO Ratings</button>
-    <button class="sub-btn" data-sub="an-luck">Luck Index</button>
-    <button class="sub-btn" data-sub="an-sos">Strength of Schedule</button>
-    <button class="sub-btn" data-sub="an-cat">Category W-L</button>
-  </div>
-  <div id="an-elo"  class="sub-panel active"></div>
-  <div id="an-luck" class="sub-panel"></div>
-  <div id="an-sos"  class="sub-panel"></div>
-  <div id="an-cat"  class="sub-panel"></div>
-</div>
-
-<div id="panel-records" class="panel">
-  <div class="sub-nav">
-    <button class="sub-btn active" data-sub="rec-ck">Category Kings</button>
-    <button class="sub-btn" data-sub="rec-best">Best Weeks Ever</button>
-    <button class="sub-btn" data-sub="rec-lg">League Records</button>
-  </div>
-  <div id="rec-ck"   class="sub-panel active"></div>
-  <div id="rec-best" class="sub-panel"></div>
-  <div id="rec-lg"   class="sub-panel"></div>
-</div>
-
-<div id="panel-legacy"  class="panel"><div id="leg-c"></div></div>
-<div id="panel-resumes" class="panel">
-  <div id="res-selector" style="margin-bottom:24px">
-    <div class="sh"><span class="sh-title">Team Resumes</span><div class="sh-line"></div></div>
-    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
-      <label style="font-family:var(--fm);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)">Select Owner</label>
-      <select class="dropdown" id="res-sel"><option value="">— Choose an owner —</option></select>
+  <div id="panel-standings" class="panel active"><div id="std-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-matchups"  class="panel"><div id="mu-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-koh" class="panel">
+    <div class="sub-nav">
+      <button class="sub-btn active" data-sub="koh-koh">King of the Hill</button>
+      <button class="sub-btn" data-sub="koh-ck26">Category King 2026</button>
     </div>
+    <div id="koh-koh" class="sub-panel active"><div id="koh-c"><div class="state">Loading…</div></div></div>
+    <div id="koh-ck26" class="sub-panel"><div id="ck26-c"><div class="state">Loading…</div></div></div>
   </div>
-  <div id="res-detail"><div class="state" style="padding:30px 0">Select an owner above to view their full franchise resume.</div></div>
 </div>
-<div id="panel-champs" class="panel"><div id="champ-c"></div></div>
-<div id="panel-hof"    class="panel"><div id="hof-c"></div></div>
-<div id="panel-koh" class="panel">
-  <div class="sub-nav">
-    <button class="sub-btn active" data-sub="koh-koh">King of the Hill</button>
-    <button class="sub-btn" data-sub="koh-ck26">Category King 2026</button>
+
+<!-- ══ PAGE 2: TEAMS ══ -->
+<div id="page-teams" class="page">
+  <div class="page-tabs">
+    <button class="page-tab active" data-panel="power">Power Rankings</button>
+    <button class="page-tab" data-panel="stats">Team Stats</button>
+    <button class="page-tab" data-panel="rosters">Rosters</button>
   </div>
-  <div id="koh-koh" class="sub-panel active"><div id="koh-c"><div class="state">Loading…</div></div></div>
-  <div id="koh-ck26" class="sub-panel"><div id="ck26-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-power" class="panel active"><div id="pr-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-stats" class="panel"><div id="ts-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-rosters" class="panel">
+    <div class="sub-nav">
+      <button class="sub-btn active" data-sub="ros-main">Rosters</button>
+      <button class="sub-btn" data-sub="ros-draft">2026 Draft</button>
+      <button class="sub-btn" data-sub="ros-keepers">Keeper Eligible</button>
+    </div>
+    <div id="ros-main" class="sub-panel active"><div id="ros-c"><div class="state">Loading…</div></div></div>
+    <div id="ros-draft" class="sub-panel"><div id="ros-draft-c"><div class="state">Loading…</div></div></div>
+    <div id="ros-keepers" class="sub-panel"><div id="ros-keep-c"><div class="state">Loading…</div></div></div>
+  </div>
+</div>
+
+<!-- ══ PAGE 3: VAULT ══ -->
+<div id="page-vault" class="page">
+  <div class="page-tabs">
+    <button class="page-tab active" data-panel="history">History</button>
+    <button class="page-tab" data-panel="analytics">Analytics</button>
+    <button class="page-tab" data-panel="records">Records &amp; Kings</button>
+    <button class="page-tab" data-panel="hof">Hall of Fame</button>
+    <button class="page-tab" data-panel="champs">Championships</button>
+  </div>
+  <div id="panel-history" class="panel active">
+    <div class="sub-nav">
+      <button class="sub-btn active" data-sub="hs-st">Season Standings</button>
+      <button class="sub-btn" data-sub="hs-h2h">All-Time H2H</button>
+      <button class="sub-btn" data-sub="hs-mu">Weekly Results</button>
+      <button class="sub-btn" data-sub="hs-poff">Playoffs</button>
+    </div>
+    <div id="hs-st"  class="sub-panel active"></div>
+    <div id="hs-h2h" class="sub-panel"></div>
+    <div id="hs-mu"  class="sub-panel"></div>
+    <div id="hs-poff" class="sub-panel"></div>
+  </div>
+  <div id="panel-analytics" class="panel">
+    <div class="sub-nav">
+      <button class="sub-btn active" data-sub="an-elo">ELO Ratings</button>
+      <button class="sub-btn" data-sub="an-luck">Luck Index</button>
+      <button class="sub-btn" data-sub="an-sos">Strength of Schedule</button>
+      <button class="sub-btn" data-sub="an-cat">Category W-L</button>
+    </div>
+    <div id="an-elo"  class="sub-panel active"></div>
+    <div id="an-luck" class="sub-panel"></div>
+    <div id="an-sos"  class="sub-panel"></div>
+    <div id="an-cat"  class="sub-panel"></div>
+  </div>
+  <div id="panel-records" class="panel">
+    <div class="sub-nav">
+      <button class="sub-btn active" data-sub="rec-ck">Category Kings</button>
+      <button class="sub-btn" data-sub="rec-best">Best Weeks Ever</button>
+      <button class="sub-btn" data-sub="rec-lg">League Records</button>
+    </div>
+    <div id="rec-ck"   class="sub-panel active"></div>
+    <div id="rec-best" class="sub-panel"></div>
+    <div id="rec-lg"   class="sub-panel"></div>
+  </div>
+  <div id="panel-hof"    class="panel"><div id="hof-c"></div></div>
+  <div id="panel-champs" class="panel"><div id="champ-c"></div></div>
+</div>
+
+<!-- ══ PAGE 4: LEGACY ══ -->
+<div id="page-legacy-pg" class="page">
+  <div class="page-tabs">
+    <button class="page-tab active" data-panel="legacy">Legacy Rankings</button>
+    <button class="page-tab" data-panel="resumes">Team Resumes</button>
+  </div>
+  <div id="panel-legacy" class="panel active"><div id="leg-c"></div></div>
+  <div id="panel-resumes" class="panel">
+    <div id="res-selector" style="margin-bottom:24px">
+      <div class="sh"><span class="sh-title">Team Resumes</span><div class="sh-line"></div></div>
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <label style="font-family:var(--fm);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)">Select Owner</label>
+        <select class="dropdown" id="res-sel"><option value="">— Choose an owner —</option></select>
+      </div>
+    </div>
+    <div id="res-detail"><div class="state" style="padding:30px 0">Select an owner above to view their full franchise resume.</div></div>
+  </div>
+</div>
+
+<!-- ══ PAGE 5: RULEBOOK ══ -->
+<div id="page-rulebook" class="page">
+  <div style="max-width:860px">
+
+    <div class="rb-hero">
+      <div class="rb-hero-lbl">2025 League Champion</div>
+      <div class="rb-hero-champ">Chris Eriole</div>
+      <div class="rb-hero-year">Virginia Beach Velociraptors · 2025</div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">League Info</div>
+      <div class="rb-rule">
+        <b>The League</b> · Est. 2009 · 12 Franchises<br>
+        <b>Commissioner:</b> Corey Boyce &nbsp;·&nbsp; <b>First Lady:</b> Carl Mion &nbsp;·&nbsp; <b>Historian:</b> Chris Kearney<br>
+        <b>Platform:</b> Yahoo (2009–2012) → ESPN (2013–present)<br>
+        <span class="rb-warn">Version 26.1 — Min ABs lowered to 225 for Cat King. Tie-breaker verbiage for Cat King updated.</span>
+      </div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">Champions (2009–2025)</div>
+      <div class="rb-winners">
+        <div class="rb-win-era">
+          <div class="rb-win-era-hd yahoo">🟣 Yahoo Era (2009–2012)</div>
+          <div class="rb-win-row"><span class="rb-win-yr">2009</span><span class="rb-win-name">Corey Boyce</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2010</span><span class="rb-win-name">Don Myers †</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2011</span><span class="rb-win-name">Tom O'Brien †</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2012</span><span class="rb-win-name">Carl Mion</span></div>
+        </div>
+        <div class="rb-win-era">
+          <div class="rb-win-era-hd espn">🔴 ESPN Era (2013–2025)</div>
+          <div class="rb-win-row"><span class="rb-win-yr">2013</span><span class="rb-win-name">Carl Mion</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2014</span><span class="rb-win-name">Nick Ferraro †</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2015</span><span class="rb-win-name">Matt Greene</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2016</span><span class="rb-win-name">Corey Boyce</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2017</span><span class="rb-win-name">Matt Greene</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2018</span><span class="rb-win-name">Tom &amp; Chris</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2019</span><span class="rb-win-name">Jason Sponable</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2020</span><span class="rb-win-name">Boyce <span style="font-family:var(--fm);font-size:9px;color:var(--ink3)">(Covid Rotisserie)</span></span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2021</span><span class="rb-win-name">Tom &amp; Chris</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2022</span><span class="rb-win-name">Nick Poleto R.I.P.</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2023</span><span class="rb-win-name">Tom &amp; Chris</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2024</span><span class="rb-win-name">Jason Sponable</span></div>
+          <div class="rb-win-row"><span class="rb-win-yr">2025</span><span class="rb-win-name">Chris Eriole</span></div>
+        </div>
+      </div>
+      <div class="rb-rule" style="font-size:11px;color:var(--ink3)">† Retired Champions: Don Myers (2010) · Tom O'Brien (2011) · Nick Ferraro (2014) · Nick Poleto (2022, R.I.P.)</div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">12 Franchises</div>
+      <div class="rb-grid">
+        <div class="rb-franchise champ"><div class="rb-f-name">Virginia Beach Velociraptors</div><div class="rb-f-owner">Chris Eriole</div><div class="rb-f-year">Est. 2021</div><div class="rb-f-titles">🏆 2025</div></div>
+        <div class="rb-franchise champ"><div class="rb-f-name">Nagasaki Bombers</div><div class="rb-f-owner">Jason Sponable</div><div class="rb-f-year">Est. 2013</div><div class="rb-f-titles">🏆 2019 · 2024</div></div>
+        <div class="rb-franchise champ"><div class="rb-f-name">Brevard County Manatees</div><div class="rb-f-owner">Tom &amp; Chris</div><div class="rb-f-year">Est. 2013</div><div class="rb-f-titles">🏆 2018 · 2021 · 2023</div></div>
+        <div class="rb-franchise champ"><div class="rb-f-name">Las Vegas Degenerates</div><div class="rb-f-owner">Matt Greene</div><div class="rb-f-year">Est. 2013</div><div class="rb-f-titles">🏆 2015 · 2017</div></div>
+        <div class="rb-franchise champ"><div class="rb-f-name">Roosevelt Ruff Ryders</div><div class="rb-f-owner">Corey Boyce</div><div class="rb-f-year">Est. 2009</div><div class="rb-f-titles">🏆 2009 · 2016</div></div>
+        <div class="rb-franchise champ"><div class="rb-f-name">Gettysburg Generals</div><div class="rb-f-owner">Carl Mion</div><div class="rb-f-year">Est. 2009</div><div class="rb-f-titles">🏆 2012 · 2013</div></div>
+        <div class="rb-franchise"><div class="rb-f-name">Buffalo Bison</div><div class="rb-f-owner">Jason Hebert</div><div class="rb-f-year">Est. 2009</div></div>
+        <div class="rb-franchise"><div class="rb-f-name">Amsterdam Mohawks</div><div class="rb-f-owner">Tim Durso</div><div class="rb-f-year">Est. 2013</div></div>
+        <div class="rb-franchise"><div class="rb-f-name">Portland Pickles</div><div class="rb-f-owner">Cory Schoonmaker</div><div class="rb-f-year">Est. 2015</div></div>
+        <div class="rb-franchise"><div class="rb-f-name">Cooperstown Udder Tuggers</div><div class="rb-f-owner">Aaron Slater</div><div class="rb-f-year">Est. 2022</div></div>
+        <div class="rb-franchise"><div class="rb-f-name">San Juan Coquis</div><div class="rb-f-owner">Jacob Fox</div><div class="rb-f-year">Est. 2023</div></div>
+        <div class="rb-franchise"><div class="rb-f-name">Santa Clara Sea Creatures</div><div class="rb-f-owner">Mike "Leo" Bruns</div><div class="rb-f-year">Est. 2025</div></div>
+      </div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">💵 Finances ($4,200 Total)</div>
+      <div class="rb-payout">
+        <div class="rb-po-hd">Entry</div>
+        <div class="rb-po-row"><span class="rb-po-lbl">League Fee (per team)</span><span class="rb-po-val">$350</span></div>
+      </div>
+      <div class="rb-payout">
+        <div class="rb-po-hd">Regular Season Prizes</div>
+        <div class="rb-po-row"><span class="rb-po-lbl">Regular Season Winner</span><span class="rb-po-val">$350</span></div>
+      </div>
+      <div class="rb-payout">
+        <div class="rb-po-hd">Playoffs ($3,300)</div>
+        <div class="rb-po-row"><span class="rb-po-lbl">🥇 Champion</span><span class="rb-po-val">$1,800</span></div>
+        <div class="rb-po-row"><span class="rb-po-lbl">🥈 Runner-Up</span><span class="rb-po-val">$1,000</span></div>
+        <div class="rb-po-row"><span class="rb-po-lbl">🥉 3rd Place</span><span class="rb-po-val">$500</span></div>
+      </div>
+      <div class="rb-payout">
+        <div class="rb-po-hd">In-Season Events ($550)</div>
+        <div class="rb-po-row"><span class="rb-po-lbl">👑 Category King (×14 cats)</span><span class="rb-po-val">$25 ea</span></div>
+        <div class="rb-po-row"><span class="rb-po-lbl">🏔️ KOH (×2 events)</span><span class="rb-po-val">$100 ea</span></div>
+      </div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">👑 In-Season Events</div>
+      <div class="rb-rule"><b>Category King — $25 per category (14 cats = $350 total)</b><br>
+        At season's end, the single best weekly performance in each category wins $25.<br>
+        <b>To qualify:</b> Minimum 225 at-bats OR did not intentionally bench hitters · Minimum 7 SP starts.<br>
+        <b>Tie-breaker:</b> Team's second-best qualified performance in that category (on-going if also tied).<br>
+        <span class="rb-note">Only standard 7-day matchups qualify.</span>
+      </div>
+      <div class="rb-rule"><b>King of the Hill (KOH) — $100 · Runs twice per season</b><br>
+        Starting Week 1: The team with the lowest total category wins that week is eliminated. Ties for lowest eliminate ALL tied teams.<br>
+        KOH 2 starts immediately after KOH 1 ends. KOH 2 eliminates 2 teams in early weeks to align with season end.<br>
+        <b>Tie-breakers:</b> Categories lost that matchup → Previous week categories won → 2-of-3 coin flip.
+      </div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">🔵 Roster</div>
+      <div class="rb-rule"><b>6 Keepers · 27-Man Roster (4 IL slots)</b><br>
+        <b>Positions:</b> C / 1B / 2B / SS / 3B / OF×3 / UTL×3 / SP×4 / P / RP×3 / Bench×8<br>
+        Healthy players may remain in IL slots indefinitely — but roster is <b>locked</b> while a healthy player occupies an IL slot.<br>
+        Rosters lock after a team finishes their last playoff matchup.
+      </div>
+      <div class="rb-rule"><b>Lineup</b> — Set daily. Players lock at scheduled game time.<br>
+        RP-eligible only pitchers starting a game → placed in P slot.<br>
+        SP-eligible only pitchers coming in as relief → treated as RP.<br>
+        <b>No more than 3 RP in lineup at once.</b>
+      </div>
+      <div class="rb-rule"><b>Transactions</b> — Once the first MLB game of the day starts, all pickups/drops/trades process the next day.</div>
+      <div class="rb-rule"><b>Waivers</b> — Reverse draft order to start the season. Teams move to last after a claim. Dropped players go to waivers for 1 day, then free agency.</div>
+      <div class="rb-rule"><b>Trades</b> — Announce in chat with ⚠️ Trade Alert ⚠️. Commissioner has veto rights. Trades process automatically after both teams accept, on the following day if MLB has started.<br>
+        <b>Trade Deadline:</b> Sunday 10pm with 4 matchups remaining in regular season.<br>
+        Future picks cannot be traded. Picks after Round 12 cannot be traded. Off-season player trades require a minimum 4th-round pick. Max 2 picks traded for 1 pick. Restricted for teams at max pickups.
+      </div>
+      <div class="rb-warn-box">⚠️ <b>6th Keeper (NEW 2027)</b> — Player must: (1) Be drafted Round 13+ or undrafted, (2) Appeared in an MLB game, (3) Be on YOUR roster before playoffs and remain there. If no qualified player, acquire via trade (min 8th-round pick) or forfeit the spot. 6th keeper is optional — you receive an extra draft pick if you opt out. Criteria resets every year.</div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">🔴 Scoring &amp; Schedule</div>
+      <div class="rb-rule"><b>Format:</b> Head-to-Head Most Categories · Matchup runs Monday–Sunday<br>
+        <b>Scoring Categories (7×7):</b><br>
+        Batting: R / RBI / HR / SB / K / AVG / OPS<br>
+        Pitching: K / QS / IP / H / SVHD / ERA / WHIP
+      </div>
+      <div class="rb-rule"><b>Regular Season:</b> 18–19 matchups (based on MLB schedule)<br>
+        Standard 7-day: 10 max SP starts · 7 min SP starts · 6 max pickups<br>
+        Extended 10-day (Week 1 &amp; All-Star break): 14 max SP / 10 min SP / 7 max pickups<br>
+        <span class="rb-warn">Failure to PURPOSELY miss minimum SP starts forfeits ALL pitching categories except SV/HLD.</span><br>
+        Ties are allowed.
+      </div>
+      <div class="rb-rule"><b>Playoffs:</b> 8 teams qualify. Seeds 1–4 pick opponents (1-seed picks first, first round only). All matchups are 2 weeks. Reseeding after Round 1.<br>
+        20 max SP · 14 min SP · 7 max pickups<br>
+        <b>Playoff seeding tie-breakers:</b> Total W/L/T% → H2H record → 2-of-3 coin flip<br>
+        <b>Matchup tie-breakers:</b> 5 categories (3 picked by better seed) → 2-of-3 coin flip<br>
+        Round 1 losers play loser's bracket (picks 5–8). 4 non-playoff teams play 💩 tourney (picks 1–4).
+      </div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">🟡 Draft</div>
+      <div class="rb-rule">Live offline draft ~1 week before season. All picks announced in GroupMe Draft chat in real time; loaded into ESPN afterwards.<br>
+        <b>Draft Order:</b> Non-playoff teams play tourney (winner = 1st overall, 2nd–4th = picks 2–4). First-round playoff losers get picks 5–8. Champion = 12th pick, Runner-up = 11th, 3rd = 10th, 4th = 9th.<br>
+        <b>21 picks per team.</b> No exceptions. Teams exit after their 21 picks; their spot is skipped. Max 5 additional picks within the first 10 rounds.
+      </div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">🟢 Off-Season</div>
+      <div class="rb-rule">Rosters/Transactions locked until Feb 1. No free agents can be added.<br>
+        Keepers due 1 week before draft. Keeper trades require min 4th-round pick (6th keeper excluded).<br>
+        6th keeper trades require min 8th-round pick.<br>
+        Injured keepers (post-deadline) may be replaced from your existing roster — no trading for replacements.<br>
+        After draft, adds are unlimited until first MLB game.
+      </div>
+    </div>
+
+    <div class="rb-section">
+      <div class="rb-section-title">📘 Commissioner's Notes</div>
+      <div class="rb-rule">
+        $350 buy-in required by playoffs start or roster locks.<br>
+        Owners must declare relocations prior to that year's draft. Mid-season relocations are prohibited.<br>
+        Stashing SP pickups solely to block other teams is prohibited.<br>
+        <span class="rb-warn">The commissioner can make up the rules whenever he wants.</span>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 </div><!-- /shell -->
@@ -510,27 +739,67 @@ function populateTeamPicker(espnTeams) {
 }
 
 function refreshAllMineClasses() {
-  // Re-render current panel
-  const cur = PANELS[document.getElementById('main-nav').selectedIndex];
-  showPanel(cur);
+  const activePanel = document.querySelector('.page.active .panel.active');
+  if(activePanel) { const id=activePanel.id.replace('panel-',''); showPanel(id); }
 }
 
 // ═══ NAVIGATION ═══
-const PANELS = ['standings','matchups','power','stats','rosters','history','analytics','records','legacy','resumes','champs','hof','koh'];
-const mainNav = document.getElementById('main-nav');
+// ═══ NAVIGATION — 5-PAGE STRUCTURE ═══
+const PAGE_MAP = {
+  'standings':'season','matchups':'season','koh':'season',
+  'power':'teams','stats':'teams','rosters':'teams',
+  'history':'vault','analytics':'vault','records':'vault','hof':'vault','champs':'vault',
+  'legacy':'legacy-pg','resumes':'legacy-pg',
+  'rulebook':'rulebook'
+};
 
-function showPanel(id) {
-  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-  const el = document.getElementById('panel-'+id);
-  if (el) el.classList.add('active');
-  const idx = PANELS.indexOf(id);
-  if (idx >= 0 && mainNav.selectedIndex !== idx) mainNav.selectedIndex = idx;
+function showPanel(panelId) {
+  const pageId = PAGE_MAP[panelId] || panelId;
+  // Activate correct main page
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const pageEl = document.getElementById('page-'+pageId);
+  if(pageEl) pageEl.classList.add('active');
+  // Activate correct main tab
+  document.querySelectorAll('.main-tab').forEach(t=>t.classList.remove('active'));
+  const mainTab = document.querySelector(`.main-tab[data-page="${pageId}"]`);
+  if(mainTab) mainTab.classList.add('active');
+  // Activate correct panel within page
+  if(pageEl) {
+    pageEl.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    const panelEl = document.getElementById('panel-'+panelId);
+    if(panelEl) panelEl.classList.add('active');
+    // Activate correct page-tab
+    pageEl.querySelectorAll('.page-tab').forEach(t=>t.classList.remove('active'));
+    const pageTab = pageEl.querySelector(`.page-tab[data-panel="${panelId}"]`);
+    if(pageTab) pageTab.classList.add('active');
+  }
 }
 
-mainNav.addEventListener('change', () => showPanel(PANELS[mainNav.selectedIndex]));
-document.getElementById('nav-prev').addEventListener('click', () => { mainNav.selectedIndex = Math.max(0, mainNav.selectedIndex-1); showPanel(PANELS[mainNav.selectedIndex]); });
-document.getElementById('nav-next').addEventListener('click', () => { mainNav.selectedIndex = Math.min(PANELS.length-1, mainNav.selectedIndex+1); showPanel(PANELS[mainNav.selectedIndex]); });
+// Main tab clicks
+document.querySelectorAll('.main-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const pageId = tab.dataset.page;
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+    const pageEl = document.getElementById('page-'+pageId);
+    if(pageEl) pageEl.classList.add('active');
+    document.querySelectorAll('.main-tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+  });
+});
 
+// Page-tab clicks (secondary nav within each page)
+document.querySelectorAll('.page-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const pageEl = tab.closest('.page');
+    pageEl.querySelectorAll('.page-tab').forEach(t=>t.classList.remove('active'));
+    pageEl.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    tab.classList.add('active');
+    const panelEl = document.getElementById('panel-'+tab.dataset.panel);
+    if(panelEl) panelEl.classList.add('active');
+  });
+});
+
+// Sub-btn clicks (tertiary nav within panels)
 document.querySelectorAll('.sub-btn').forEach(b => {
   b.addEventListener('click', () => {
     const p = b.closest('.panel');
@@ -555,7 +824,7 @@ function fmtDate(iso) {
   return new Date(iso).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'});
 }
 function pName(n) { return (n||'').split(',').reverse().join(' ').trim() || n; }
-function goToRoster(id) { showPanel('rosters'); mainNav.selectedIndex=PANELS.indexOf('rosters'); setTimeout(()=>{activeRosterId=id;if(ROSTERS)drawRosters();},60); }
+function goToRoster(id) { showPanel('rosters'); setTimeout(()=>{activeRosterId=id;if(ROSTERS)drawRosters();},60); }
 
 // ═══ STANDINGS ═══
 async function renderStandings() {
@@ -1655,7 +1924,7 @@ function renderLegacy(){
 }
 
 function openResume(key){
-  showPanel('resumes');mainNav.selectedIndex=PANELS.indexOf('resumes');
+  showPanel('resumes');
   const sel=document.getElementById('res-sel');if(sel){sel.value=key;buildAndShowResume(key);}
 }
 
