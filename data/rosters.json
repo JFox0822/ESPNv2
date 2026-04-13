@@ -1802,7 +1802,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1886,7 +1886,7 @@
         },
         {
           "name": "Adley Rutschman",
-          "slot": "C",
+          "slot": "IL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2033,7 +2033,7 @@
         },
         {
           "name": "Tatsuya Imai",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2054,7 +2054,7 @@
         },
         {
           "name": "George Kirby",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2172,7 +2172,7 @@
         },
         {
           "name": "Chad Patrick",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2307,19 +2307,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Lourdes Gurriel Jr.",
-          "slot": "IL",
-          "position": "LF",
-          "eligible": "LF",
-          "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
-          "stats": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Michael McGreevy",
           "slot": "BE",
           "position": "SP",
@@ -2347,10 +2334,23 @@
         },
         {
           "name": "Noah Schultz",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Carson Kelly",
+          "slot": "C",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "tier": "",
@@ -2415,7 +2415,7 @@
         },
         {
           "name": "Vladimir Guerrero Jr.",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2498,29 +2498,8 @@
           "keeperEligible": false
         },
         {
-          "name": "Matt McLain",
-          "slot": "2B",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.217,
-            "HR": 0,
-            "OPS": 0.595,
-            "R": 6,
-            "RBI": 3,
-            "SB": 3,
-            "Kbat": 16
-          },
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 7,
-          "keeperEligible": false
-        },
-        {
           "name": "Matt Chapman",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2541,7 +2520,7 @@
         },
         {
           "name": "Dansby Swanson",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2583,7 +2562,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "BE",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2604,7 +2583,7 @@
         },
         {
           "name": "Francisco Alvarez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2709,7 +2688,7 @@
         },
         {
           "name": "Mike Burrows",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2837,7 +2816,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "SS",
+          "slot": "3B",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2850,7 +2829,7 @@
         },
         {
           "name": "Simeon Woods Richardson",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2884,7 +2863,7 @@
         },
         {
           "name": "Garrett Mitchell",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2897,7 +2876,7 @@
         },
         {
           "name": "Gleyber Torres",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2948,6 +2927,19 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 11,
+          "keeperEligible": false
+        },
+        {
+          "name": "Joey Cantillo",
+          "slot": "BE",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -5883,7 +5875,7 @@
       "players": [
         {
           "name": "Rafael Devers",
-          "slot": "1B",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6072,7 +6064,7 @@
         },
         {
           "name": "Christian Yelich",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6392,7 +6384,7 @@
         },
         {
           "name": "Liam Hicks",
-          "slot": "BE",
+          "slot": "1B",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6405,7 +6397,7 @@
         },
         {
           "name": "Hyeseong Kim",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7041,5 +7033,5 @@
       ]
     }
   ],
-  "updated": "2026-04-13T07:27:25Z"
+  "updated": "2026-04-13T11:57:24Z"
 }
