@@ -98,6 +98,13 @@ button{cursor:pointer;border:none;background:none;font-family:var(--fb)}
 .sub-btn:hover{color:var(--ink);border-color:var(--border2)}
 .sub-btn.active{color:var(--bg);background:var(--green);border-color:var(--green);font-weight:600}
 .sub-panel{display:none}.sub-panel.active{display:block;animation:fadeup .15s ease}
+/* ── SORTABLE TABLES ── */
+th.sortable{cursor:pointer;user-select:none;position:relative;padding-right:20px!important}
+th.sortable::after{content:'⇅';position:absolute;right:5px;top:50%;transform:translateY(-50%);font-size:9px;color:var(--ink3);opacity:.6}
+th.sort-asc::after{content:'↑';opacity:1;color:var(--green)}
+th.sort-desc::after{content:'↓';opacity:1;color:var(--green)}
+/* ── CAT KING TIE ── */
+.ck-tie{font-family:var(--fm);font-size:8px;letter-spacing:.08em;background:rgba(153,119,255,.12);color:var(--purple);border:1px solid rgba(153,119,255,.25);border-radius:3px;padding:1px 6px;margin-left:4px}
 
 /* ── SECTION HEADER ── */
 .sh{display:flex;align-items:baseline;gap:14px;margin-bottom:20px}
@@ -1457,6 +1464,7 @@ async function renderTeamStats() {
         AVG &amp; OPS = weekly average · ERA &amp; WHIP = IP-weighted · IP shown as inn.thirds · K (Batting) = lower is better
       </div>
       ${ptGrid}`;
+    setTimeout(()=>{document.querySelectorAll('#ts-c table').forEach(t=>makeSortable(t));},0);
   } catch(e) {
     el.innerHTML = `<div class="state err">⚠ ${e.message}</div>`;
   }
@@ -1490,6 +1498,7 @@ function drawRosters() {
     <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px"><label style="font-family:var(--fm);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)">Owner</label><select class="dropdown" id="ros-sel">${opts}</select></div>
     ${sec('Active Roster',active)}${sec('Bench',bench)}${sec('Injured List',il)}`;
   document.getElementById('ros-sel').addEventListener('change',e=>{activeRosterId=parseInt(e.target.value);drawRosters();});
+  setTimeout(()=>{document.querySelectorAll('#ros-c table, #ros-main table').forEach(t=>makeSortable(t));},60);
 }
 async function renderRosters(){try{ROSTERS=await load('rosters.json');drawRosters();}catch(e){document.getElementById('ros-c').innerHTML=`<div class="state err">⚠ ${e.message}</div>`;}}
 
@@ -1560,6 +1569,7 @@ function renderRBStandings() {
     const opts=seasons.map(s=>`<option value="${s}" ${parseInt(s)===cur?'selected':''}>${s}</option>`).join('');
     document.getElementById('hs-st').innerHTML=`<div class="hist-ctrl"><label>Season</label><select class="hsel" id="hss">${opts}</select></div><div class="tw"><table><thead><tr><th class="c">#</th><th>Owner</th><th class="r">W–L</th><th class="r">PCT</th><th class="c">Result</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     document.getElementById('hss').addEventListener('change',e=>{cur=parseInt(e.target.value);draw();});
+    setTimeout(()=>makeSortable(document.querySelector('#hs-st table')),0);
   }
   draw();
 }
@@ -1798,6 +1808,7 @@ function renderSOS(){
     const opts=seasons.map(s=>`<option value="${s}" ${s===curSOS?'selected':''}>${s}</option>`).join('');
     document.getElementById('an-sos').innerHTML=`${sh('All-Time SOS','Avg opponent win% across all seasons')}<div class="tw" style="margin-bottom:24px"><table><thead><tr><th>Owner</th><th class="r">Avg Opp PCT</th><th class="r">Seasons</th></tr></thead><tbody>${sosRows}</tbody></table></div>${sh('By Season','')}<div class="hist-ctrl"><label>Season</label><select class="hsel" id="sos-sel">${opts}</select></div><div class="tw"><table><thead><tr><th>Owner</th><th class="r">Avg Opp PCT</th></tr></thead><tbody>${sRows}</tbody></table></div>`;
     document.getElementById('sos-sel').addEventListener('change',e=>{curSOS=parseInt(e.target.value);drawSOS();});
+    setTimeout(()=>{document.querySelectorAll('#an-sos table').forEach(t=>makeSortable(t));},0);
   }
   drawSOS();
 }
@@ -1812,6 +1823,7 @@ function renderCatDom(){
   }).sort((a,b)=>b.tw-a.tw);
   const hdr=['Owner',...cats,'Total W'].map((c,i)=>`<th ${i?'class="c"':''}>${c}</th>`).join('');
   document.getElementById('an-cat').innerHTML=`${sh('All-Time Category Win-Loss','')}<div style="font-family:var(--fm);font-size:8px;color:var(--ink3);margin-bottom:12px"><span style="color:var(--green)">≥55%</span> = strength · <span style="color:var(--red)">≤45%</span> = weakness</div><div class="tw"><table><thead><tr>${hdr}</tr></thead><tbody>${rows.map(x=>x.html).join('')}</tbody></table></div>`;
+  setTimeout(()=>makeSortable(document.querySelector('#an-cat table')),0);
 }
 
 // ═══ RECORDS ═══
@@ -1831,7 +1843,7 @@ function renderCatKings(){
     const ckCards=catOrder.map(cat=>{
       const info=cats[cat];if(!info)return'';const isOpen=openCat===cat;
       const lb=(info.leaderboard||[]).slice(0,5);
-      return`<div class="ck-cat"><div class="ck-hd" onclick="window._tCat('${cat}')"><span class="ck-cat-lbl">${catLabels[cat]||cat}</span><span class="ck-king">👑 ${info.king}</span><span class="ck-val">${typeof info.kingVal==='number'&&info.kingVal<10?info.kingVal.toFixed(3):info.kingVal}</span><span class="ck-wk">${info.kingWeek}</span><span style="color:var(--ink3);font-family:var(--fm);font-size:10px">${isOpen?'▲':'▼'}</span></div>${isOpen&&lb.length?`<div class="ck-body"><div>${lb.map((e,i)=>{const maxV=lb[0].val,bw=info.direction==='low'?(lb[lb.length-1].val/Math.max(e.val,.001)*100):(e.val/Math.max(maxV,.001)*100),col=i===0?'var(--gold)':i===1?'#94a3b8':'#cd7f32';return`<div class="ck-lb-row"><div class="ck-pos" style="color:${col}">#${e.rank}</div><div class="ck-team" style="color:${i===0?col:'var(--ink2)'}">${e.team}</div><div class="ck-bar"><div class="ck-fill" style="width:${bw.toFixed(0)}%;background:${col}"></div></div><div class="ck-v" style="color:${i===0?col:'var(--ink2)'}">${typeof e.val==='number'&&e.val<10?e.val.toFixed(3):e.val}</div></div>`;}).join('')}</div></div>`:''}</div>`;
+      return`<div class="ck-cat"><div class="ck-hd" onclick="window._tCat('${cat}')"><span class="ck-cat-lbl">${catLabels[cat]||cat}</span><span class="ck-king">👑 ${info.king}${info.tiebreak?'<span class="ck-tie">TIE</span>':''}</span><span class="ck-val">${typeof info.kingVal==='number'&&info.kingVal<10?info.kingVal.toFixed(3):info.kingVal}</span><span class="ck-wk">${info.kingWeek}</span><span style="color:var(--ink3);font-family:var(--fm);font-size:10px">${isOpen?'▲':'▼'}</span></div>${isOpen&&lb.length?`<div class="ck-body"><div>${lb.map((e,i)=>{const maxV=lb[0].val,bw=info.direction==='low'?(lb[lb.length-1].val/Math.max(e.val,.001)*100):(e.val/Math.max(maxV,.001)*100),col=i===0?'var(--gold)':i===1?'#94a3b8':'#cd7f32';return`<div class="ck-lb-row"><div class="ck-pos" style="color:${col}">#${e.rank}</div><div class="ck-team" style="color:${i===0?col:'var(--ink2)'}">${e.team}</div><div class="ck-bar"><div class="ck-fill" style="width:${bw.toFixed(0)}%;background:${col}"></div></div><div class="ck-v" style="color:${i===0?col:'var(--ink2)'}">${typeof e.val==='number'&&e.val<10?e.val.toFixed(3):e.val}</div></div>`;}).join('')}</div></div>`:''}</div>`;
     }).join('');
     document.getElementById('rec-ck').innerHTML=`${sh('2025 Category Kings','$25/category · $350 prize pool')}${ckCards}<div style="margin-top:24px">${sh('Winnings Board','')}<div style="background:var(--bg1);border:1px solid var(--border);border-radius:8px;padding:16px 20px">${wRows}</div><div style="font-family:var(--fm);font-size:9px;color:var(--ink3);margin-top:10px">Claimed: ${ranked.reduce((s,r)=>s+r[1]/25,0).toFixed(0)}/14 cats · Unclaimed: $${350-ranked.reduce((s,r)=>s+r[1],0)}</div></div>`;
   }
@@ -2565,19 +2577,70 @@ async function renderCatKing2026() {
     const CAT_ORDER = ['R','HR','RBI','SB','AVG','OPS','K','QS','IP','SVHD','ERA','WHIP','Kbat','H'];
     const CAT_LABELS = {R:'Runs',HR:'Home Runs',RBI:'RBI',SB:'Stolen Bases',AVG:'Batting AVG',OPS:'OPS',K:'Strikeouts (P)',QS:'Quality Starts',IP:'Innings Pitched',SVHD:'Saves+Holds',ERA:'ERA',WHIP:'WHIP',Kbat:'Batter Ks',H:'Hits Allowed'};
 
-    // Build king per category
+    // Build king per category with sequential tiebreaker
+    // Tiebreaker: if tied on best week, compare 2nd best, then 3rd best, etc.
     let openCat = null;
     const kingData = {};
     for (const cat of CAT_ORDER) {
       const entries = catBest[cat];
       if (!entries || !entries.length) continue;
-      const sorted = [...entries].sort((a, b) => LOWER.has(cat) ? a.val - b.val : b.val - a.val);
+      const isLow = LOWER.has(cat);
+
+      // Group entries by team, each team gets a sorted list of their weekly values
+      const byTeam = {};
+      for (const e of entries) {
+        if (!byTeam[e.rb]) byTeam[e.rb] = [];
+        byTeam[e.rb].push({val: e.val, week: e.week});
+      }
+      for (const rb of Object.keys(byTeam)) {
+        byTeam[rb].sort((a, b) => isLow ? a.val - b.val : b.val - a.val);
+      }
+
+      // Sort teams using sequential week-by-week tiebreaker
+      const teams = Object.keys(byTeam);
+      teams.sort((a, b) => {
+        const ea = byTeam[a], eb = byTeam[b];
+        const rounds = Math.max(ea.length, eb.length);
+        for (let i = 0; i < rounds; i++) {
+          const va = ea[i]?.val ?? (isLow ? Infinity : -Infinity);
+          const vb = eb[i]?.val ?? (isLow ? Infinity : -Infinity);
+          if (va !== vb) return isLow ? va - vb : vb - va;
+        }
+        return 0;
+      });
+
+      const winner = teams[0];
+      const winnerBest = byTeam[winner][0];
+
+      // Check if a true tie persists after all tiebreaker rounds
+      const isTied = teams.length > 1 && (() => {
+        const ea = byTeam[teams[0]], eb = byTeam[teams[1]];
+        const rounds = Math.max(ea.length, eb.length);
+        for (let i = 0; i < rounds; i++) {
+          const va = ea[i]?.val ?? (isLow ? Infinity : -Infinity);
+          const vb = eb[i]?.val ?? (isLow ? Infinity : -Infinity);
+          if (va !== vb) return false;
+        }
+        return true;
+      })();
+
+      // Build leaderboard: per-team best week, ranked by tiebreaker order
+      const leaderboard = teams.slice(0, 10).map((rb, i) => ({
+        rank: i + 1,
+        rb,
+        val: byTeam[rb][0].val,
+        week: byTeam[rb][0].week,
+        // Include their subsequent best weeks for display
+        allWeeks: byTeam[rb].slice(0, 3)
+      }));
+
       kingData[cat] = {
-        king: sorted[0].rb,
-        kingVal: sorted[0].val,
-        kingWeek: `2026W${sorted[0].week}`,
-        direction: LOWER.has(cat) ? 'low' : 'high',
-        leaderboard: sorted.slice(0, 10).map((e, i) => ({rank: i+1, rb: e.rb, val: e.val, week: e.week}))
+        king: winner,
+        kingVal: winnerBest.val,
+        kingWeek: `2026W${winnerBest.week}`,
+        direction: isLow ? 'low' : 'high',
+        tiebreak: isTied,
+        leaderboard
       };
     }
 
@@ -2610,10 +2673,11 @@ async function renderCatKing2026() {
         const isOpen = openCat === cat;
         const lb = info.leaderboard.slice(0, 5);
         const fmtVal = v => typeof v === 'number' && v < 10 ? v.toFixed(3) : String(v);
+        const tieBadge = info.tiebreak ? '<span class="ck-tie">TRUE TIE</span>' : '';
         return `<div class="ck-cat">
           <div class="ck-hd" onclick="window._tCat26('${cat}')">
             <span class="ck-cat-lbl">${CAT_LABELS[cat]||cat}</span>
-            <span class="ck-king">👑 ${info.king}</span>
+            <span class="ck-king">👑 ${info.king}${tieBadge}</span>
             <span class="ck-val">${fmtVal(info.kingVal)}</span>
             <span class="ck-wk">${info.kingWeek}</span>
             <span style="color:var(--ink3);font-family:var(--fm);font-size:10px">${isOpen?'▲':'▼'}</span>
@@ -2624,11 +2688,15 @@ async function renderCatKing2026() {
               ? (lb[lb.length-1].val/Math.max(e.val,0.001)*100)
               : (e.val/Math.max(maxV,0.001)*100);
             const col = i===0?'var(--gold)':i===1?'#94a3b8':'#cd7f32';
+            // Show secondary weeks used for tiebreaking if they exist
+            const secWeeks = (e.allWeeks||[]).slice(1).map(w =>
+              `<span style="font-size:8px;color:var(--ink3)"> · Wk ${w.week}: ${fmtVal(w.val)}</span>`
+            ).join('');
             return `<div class="ck-lb-row">
               <div class="ck-pos" style="color:${col}">#${e.rank}</div>
               <div class="ck-team" style="color:${i===0?col:'var(--ink2)'}">${e.rb}</div>
               <div class="ck-bar"><div class="ck-fill" style="width:${bw.toFixed(0)}%;background:${col}"></div></div>
-              <div class="ck-v" style="color:${i===0?col:'var(--ink2)'}">Wk ${e.week}: ${fmtVal(e.val)}</div>
+              <div class="ck-v" style="color:${i===0?col:'var(--ink2)'}">Wk ${e.week}: ${fmtVal(e.val)}${secWeeks}</div>
             </div>`;
           }).join('')}</div></div>` : ''}
         </div>`;
@@ -2759,6 +2827,36 @@ async function patch2026IntoRB() {
   }
 
   console.log(`✅ RB patched with ${matchups.length} completed 2026 matchups`);
+}
+
+
+// ═══ SORTABLE TABLES ═══
+function makeSortable(table) {
+  if (!table) return;
+  const headers = table.querySelectorAll('thead th');
+  let sortCol = -1, sortDir = 1;
+  headers.forEach((th, ci) => {
+    th.classList.add('sortable');
+    th.addEventListener('click', () => {
+      if (sortCol === ci) { sortDir = -sortDir; }
+      else { sortCol = ci; sortDir = 1; }
+      headers.forEach(h => h.classList.remove('sort-asc','sort-desc'));
+      th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
+      const tbody = table.querySelector('tbody');
+      if (!tbody) return;
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      rows.sort((a, b) => {
+        const ta = a.cells[ci]?.innerText?.trim() || '';
+        const tb = b.cells[ci]?.innerText?.trim() || '';
+        // Try numeric first
+        const na = parseFloat(ta.replace(/[^0-9.\-]/g,''));
+        const nb = parseFloat(tb.replace(/[^0-9.\-]/g,''));
+        if (!isNaN(na) && !isNaN(nb)) return (na - nb) * sortDir;
+        return ta.localeCompare(tb) * sortDir;
+      });
+      rows.forEach(r => tbody.appendChild(r));
+    });
+  });
 }
 
 // ═══ BOOT ═══
