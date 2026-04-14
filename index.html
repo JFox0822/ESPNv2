@@ -104,36 +104,6 @@ th.sortable::after{content:'⇅';position:absolute;right:5px;top:50%;transform:t
 th.sort-asc::after{content:'↑';opacity:1;color:var(--green)}
 th.sort-desc::after{content:'↓';opacity:1;color:var(--green)}
 /* ── CAT KING TIE ── */
-/* ── SAVANT PLAYER MODAL ── */
-#sv-modal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.6);align-items:center;justify-content:center}
-#sv-modal.open{display:flex}
-#sv-modal-box{background:var(--bg1);border:1px solid var(--border);border-radius:12px;width:min(760px,96vw);max-height:90vh;overflow-y:auto;padding:24px;position:relative}
-#sv-modal-close{position:absolute;top:14px;right:16px;background:none;border:none;color:var(--ink3);font-size:20px;cursor:pointer;line-height:1}
-.sv-header{display:flex;align-items:center;gap:14px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid var(--border)}
-.sv-avatar{width:52px;height:52px;border-radius:50%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:18px;font-weight:800;color:var(--ink3);flex-shrink:0}
-.sv-pname{font-family:var(--fd);font-size:20px;font-weight:800;color:var(--ink1)}
-.sv-pmeta{font-family:var(--fm);font-size:11px;color:var(--ink3);margin-top:3px;letter-spacing:.04em}
-.sv-stat-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
-.sv-chip{font-family:var(--fm);font-size:10px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 8px;color:var(--ink2)}
-.sv-section{font-family:var(--fm);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:12px;margin-top:18px}
-.sv-gauges{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:10px;margin-bottom:4px}
-.sv-gauge{display:flex;flex-direction:column;align-items:center;gap:6px;cursor:default}
-.sv-circle{width:68px;height:68px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.sv-pct{font-family:var(--fd);font-size:21px;font-weight:800;line-height:1}
-.sv-plbl{font-family:var(--fm);font-size:8px;letter-spacing:.06em;text-transform:uppercase;opacity:.8}
-.sv-mname{font-family:var(--fm);font-size:10px;color:var(--ink2);text-align:center;line-height:1.3}
-.sv-mval{font-family:var(--fd);font-size:11px;color:var(--ink3);text-align:center}
-.sv-no-data{text-align:center;padding:28px;font-family:var(--fm);font-size:11px;color:var(--ink3)}
-.sv-legend{display:flex;gap:12px;justify-content:center;margin-top:12px;flex-wrap:wrap}
-.sv-leg-item{display:flex;align-items:center;gap:4px;font-family:var(--fm);font-size:9px;color:var(--ink3)}
-.sv-leg-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.sv-savant-link{display:block;text-align:center;margin-top:16px;font-family:var(--fm);font-size:10px;color:var(--blue);text-decoration:none}
-.sv-tabs{display:flex;gap:4px;margin-bottom:16px}
-.sv-tab{font-family:var(--fm);font-size:10px;padding:4px 12px;border-radius:4px;border:1px solid var(--border);background:none;color:var(--ink3);cursor:pointer}
-.sv-tab.active{background:var(--bg3);color:var(--ink1);border-color:var(--ink3)}
-/* Make player names clickable in roster */
-.sv-plink{cursor:pointer;text-decoration:underline;text-decoration-style:dotted;text-decoration-color:var(--ink3)}
-.sv-plink:hover{color:var(--blue)}
 .ck-tie{font-family:var(--fm);font-size:8px;letter-spacing:.08em;background:rgba(153,119,255,.12);color:var(--purple);border:1px solid rgba(153,119,255,.25);border-radius:3px;padding:1px 6px;margin-left:4px}
 
 /* ── SECTION HEADER ── */
@@ -1068,9 +1038,9 @@ async function renderMatchups() {
           const hW=h.result==='WIN', aW=a.result==='WIN', isTie=h.result==='TIE';
           return `<div class="mu-cat-row">
             <div class="cv ${hW?'cw':aW?'cl':''}" style="${isTie?'color:var(--gold)':''}">${h.value??'—'}</div>
-            <div class="cbar"><div class="cbf" style="width:${isTie?50:hW?100:0}%;background:${isTie?'var(--gold)':hW?'var(--green)':'var(--red)'}"></div></div>
+            <div class="cbar"><div class="cbf" style="width:${isTie?50:hW?100:0}%;background:${isTie?'var(--gold)':hW?'rgba(211,47,47,0.80)':'rgba(44,90,185,0.65)'}"></div></div>
             <div class="cn" style="${isTie?'color:var(--gold)':''}">${catLabel[cat]||cat}</div>
-            <div class="cbar"><div class="cbf" style="width:${isTie?50:aW?100:0}%;background:${isTie?'var(--gold)':aW?'var(--green)':'var(--red)'}"></div></div>
+            <div class="cbar"><div class="cbf" style="width:${isTie?50:aW?100:0}%;background:${isTie?'var(--gold)':aW?'rgba(211,47,47,0.80)':'rgba(44,90,185,0.65)'}"></div></div>
             <div class="cv ${aW?'cw':hW?'cl':''}" style="${isTie?'color:var(--gold)':''}">${a.value??'—'}</div>
           </div>`;
         }).filter(Boolean).join('');
@@ -1380,7 +1350,7 @@ async function renderTeamStats() {
       return r;
     }
     const hr = ranks(HIT, HIT_LB), pr = ranks(PIT, PIT_LB);
-    function rCol(r) { return r<=3?'var(--green)':r>=teams.length-2?'var(--red)':'var(--ink2)'; }
+    function rCol(r) { const pct = r ? Math.round((teams.length - r) / Math.max(teams.length-1,1) * 100) : 50; const c = svColor(pct); return c.fg; }
 
     // Sort state: keyed by tbody id → {col, dir}
     if (!window._tsSortState) window._tsSortState = {};
@@ -1434,7 +1404,7 @@ async function renderTeamStats() {
           const v = t.stats[cat];
           const r = rnks[`${i}_${cat}`];
           const disp = v !== null && v !== undefined ? v : '—';
-          return `<td class="r" style="color:${r ? rCol(r) : 'var(--ink2)'}">${disp}</td>`;
+          const _c=r?svColor(Math.round((teams.length-r)/Math.max(teams.length-1,1)*100)):{bg:'transparent',fg:'var(--ink2)'};return `<td class="r" style="background:${_c.bg};color:${_c.fg};border-radius:4px;padding:6px 10px;font-weight:600">${disp}</td>`;
         }).join('');
         return `<tr class="${mine?'mine':''}" ${dAttrs}>
           <td class="rk">${i+1}</td>
@@ -1476,8 +1446,7 @@ async function renderTeamStats() {
       const mine = isMine(t.name);
       const cells = ALL_CATS_PT.map(cat => {
         const p = t.pts[cat] || 0;
-        const col = p >= teams.length-2 ? 'var(--green)' : p <= 2 ? 'var(--red)' : 'var(--ink3)';
-        return `<td class="r" style="color:${col};font-family:var(--fm);font-size:10px">${p}</td>`;
+        const _pct=teams.length>1?Math.round((p-1)/(teams.length-1)*100):50;const _pc=svColor(_pct);const _bg=p>0?_pc.bg:'transparent';return `<td class="r" style="background:${_bg};color:${p>0?_pc.fg:'var(--ink3)'};font-family:var(--fm);font-size:10px;border-radius:3px;font-weight:${p>=teams.length-2||p<=2?'700':'400'}">${p||'—'}</td>`;
       }).join('');
       const pct = t.total / maxPossible;
       const totalCol = pct>=0.60?'var(--green)':pct<=0.40?'var(--red)':'var(--ink)';
@@ -1811,7 +1780,7 @@ async function renderLuck(){
   const luck=[...RB.luckAllTime||[]].filter(x=>!x.team.includes('defunct')).sort((a,b)=>b.luckDelta-a.luckDelta);
   const maxD=Math.max(...luck.map(x=>Math.abs(x.luckDelta)));
   const rows=luck.map(x=>{
-    const d=x.luckDelta,col=d>0.03?'var(--green)':d<-0.03?'var(--red)':'var(--ink2)',label=d>0.05?'Very Lucky':d>0.02?'Lucky':d<-0.05?'Very Unlucky':d<-0.02?'Unlucky':'Neutral';
+    const d=x.luckDelta,col=d>0.05?'rgba(211,47,47,0.9)':d>0.02?'rgba(226,105,55,0.9)':d<-0.05?'rgba(44,90,185,0.9)':d<-0.02?'rgba(70,120,200,0.8)':'var(--ink2)',label=d>0.05?'Very Lucky':d>0.02?'Lucky':d<-0.05?'Very Unlucky':d<-0.02?'Unlucky':'Neutral';
     const bw=Math.abs(d/maxD*48), mine=isMineExact(x.team);
     return`<div class="luck-row ${mine?'mine':''}"><div class="luck-name" style="color:${col}">${x.team}</div><div class="luck-delta" style="color:${col}">${d>0?'+':''}${(d*100).toFixed(1)}%</div><div class="luck-track"><div class="luck-mid"></div><div class="luck-fill" style="left:${d>0?50:50-bw}%;width:${bw}%;background:${col}"></div></div><div class="luck-label" style="color:${col}">${label}</div></div>`;
   }).join('');
@@ -1848,11 +1817,11 @@ function renderCatDom(){
   const teams=Object.keys(RB.categoryWLT||{}).filter(t=>!t.includes('defunct'));
   const rows=teams.map(team=>{
     const cw=RB.categoryWLT[team],tw=cats.reduce((s,c)=>s+(cw[c]?.w||0),0),mine=isMineExact(team);
-    const cells=cats.map(cat=>{const r=cw[cat];if(!r)return`<td class="c dt">—</td>`;const pct=r.n?((r.w/r.n)*100).toFixed(0):0,col=pct>=55?'var(--green)':pct<=45?'var(--red)':'var(--ink2)';return`<td class="c"><span style="color:${col};font-family:var(--fm);font-size:10px;font-weight:600">${r.w}–${r.l}</span></td>`;}).join('');
+    const cells=cats.map(cat=>{const r=cw[cat];if(!r)return`<td class="c dt">—</td>`;const pct=r.n?Math.round((r.w/r.n)*100):0;const _cc=svColor(pct);return`<td class="c" style="background:${_cc.bg};border-radius:3px"><span style="color:${_cc.fg};font-family:var(--fm);font-size:10px;font-weight:600">${r.w}–${r.l}</span></td>`;}).join('');
     return{team,tw,html:`<tr class="${mine?'mine':''}"><td class="${mine?'wt':''} bt">${team}</td>${cells}<td class="r" style="font-family:var(--fm);font-weight:700;color:var(--green)">${tw}</td></tr>`};
   }).sort((a,b)=>b.tw-a.tw);
   const hdr=['Owner',...cats,'Total W'].map((c,i)=>`<th ${i?'class="c"':''}>${c}</th>`).join('');
-  document.getElementById('an-cat').innerHTML=`${sh('All-Time Category Win-Loss','')}<div style="font-family:var(--fm);font-size:8px;color:var(--ink3);margin-bottom:12px"><span style="color:var(--green)">≥55%</span> = strength · <span style="color:var(--red)">≤45%</span> = weakness</div><div class="tw"><table><thead><tr>${hdr}</tr></thead><tbody>${rows.map(x=>x.html).join('')}</tbody></table></div>`;
+  document.getElementById('an-cat').innerHTML=`${sh('All-Time Category Win-Loss','')}<div style="font-family:var(--fm);font-size:8px;color:var(--ink3);margin-bottom:12px"><span style="background:rgba(211,47,47,0.76);color:#fff;padding:1px 6px;border-radius:3px;font-size:8px">red</span> = strength &nbsp; <span style="background:rgba(44,90,185,0.62);color:#b8d0f0;padding:1px 6px;border-radius:3px;font-size:8px">blue</span> = weakness &nbsp; <span style="background:rgba(90,110,140,0.18);color:var(--ink2);padding:1px 6px;border-radius:3px;font-size:8px">gray</span> = average</div><div class="tw"><table><thead><tr>${hdr}</tr></thead><tbody>${rows.map(x=>x.html).join('')}</tbody></table></div>`;
   setTimeout(()=>makeSortable(document.querySelector('#an-cat table')),0);
 }
 
@@ -2890,134 +2859,18 @@ function makeSortable(table) {
 }
 
 
-// ═══ SAVANT PLAYER MODAL ═══
-let _svData = null;
-
-async function _loadSvData() {
-  if (_svData) return _svData;
-  try { _svData = await load('savant_percentiles.json'); } catch(e) { _svData = {players:{}}; }
-  return _svData;
+// ── Savant-style percentile color (0=worst/blue, 100=elite/red) ──
+function svColor(pct) {
+  const p = Math.max(0, Math.min(100, pct||0));
+  if (p >= 90) return {bg:'rgba(176,24,24,0.82)',    fg:'#ffcece'};
+  if (p >= 80) return {bg:'rgba(211,47,47,0.76)',    fg:'#fff'};
+  if (p >= 67) return {bg:'rgba(226,105,55,0.68)',   fg:'#fff'};
+  if (p >= 55) return {bg:'rgba(218,155,40,0.60)',   fg:'#fff'};
+  if (p >= 45) return {bg:'rgba(90,110,140,0.18)',   fg:'var(--ink2)'};
+  if (p >= 33) return {bg:'rgba(70,120,200,0.42)',   fg:'#c8daf5'};
+  if (p >= 20) return {bg:'rgba(44,90,185,0.62)',    fg:'#b8d0f0'};
+  return              {bg:'rgba(22,55,140,0.75)',    fg:'#a4c0e8'};
 }
-
-function _normName(n) {
-  if (!n) return '';
-  // basic normalization matching Python: lowercase, strip common suffixes
-  return n.toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/\b(jr|sr|ii|iii|iv)\.?\b/gi, '')
-    .replace(/\s+/g, ' ').trim();
-}
-
-function _pctColor(p) {
-  if (p >= 90) return {bg:'#8b1a1a', fg:'#ffc4c4'};
-  if (p >= 80) return {bg:'#c33b3b', fg:'#ffe0e0'};
-  if (p >= 70) return {bg:'#d45c5c', fg:'#fff'};
-  if (p >= 60) return {bg:'#e08888', fg:'#3a1010'};
-  if (p >= 45) return {bg:'var(--bg3)', fg:'var(--ink1)'};
-  if (p >= 35) return {bg:'#6a8fc4', fg:'#fff'};
-  if (p >= 20) return {bg:'#4a7ec7', fg:'#fff'};
-  return {bg:'#2a5aa0', fg:'#c4d8f4'};
-}
-
-const SV_BATTER_METRICS = [
-  {key:'xBA',        label:'xBA'},
-  {key:'xSLG',       label:'xSLG'},
-  {key:'xwOBA',      label:'xwOBA'},
-  {key:'Barrel%',    label:'Barrel %'},
-  {key:'HardHit%',   label:'Hard Hit %'},
-  {key:'ExitVelo',   label:'Exit Velo'},
-  {key:'LaunchAngle',label:'Launch Angle'},
-  {key:'SprintSpeed',label:'Sprint Speed'},
-  {key:'K%',         label:'K %', invert:true},
-  {key:'BB%',        label:'BB %'},
-  {key:'Chase%',     label:'Chase %', invert:true},
-  {key:'Whiff%',     label:'Whiff %', invert:true},
-];
-
-const SV_PITCHER_METRICS = [
-  {key:'xBA_vs',     label:'xBA vs'},
-  {key:'xERA',       label:'xERA'},
-  {key:'K%',         label:'K %'},
-  {key:'BB%',        label:'BB %', invert:true},
-  {key:'Barrel%_vs', label:'Barrel % vs'},
-  {key:'HardHit%_vs',label:'Hard Hit % vs'},
-  {key:'ExitVelo_vs',label:'Exit Velo vs'},
-  {key:'FBVelo',     label:'FB Velo'},
-  {key:'SpinRate',   label:'Spin Rate'},
-  {key:'Chase%',     label:'Chase %'},
-  {key:'Whiff%',     label:'Whiff %'},
-];
-
-async function openPlayerModal(player) {
-  const svAll = await _loadSvData();
-  const players = svAll.players || svAll;  // handle both wrapper formats
-  const key = _normName(player.name);
-  const sv = players[key] || {};
-  const mlbamId = sv.mlbamId || '';
-  const isPitcher = player.isPitcher;
-  const metrics = isPitcher ? SV_PITCHER_METRICS : SV_BATTER_METRICS;
-
-  // Build stat chips from ESPN fantasy stats
-  const stats = player.stats || {};
-  const chipDefs = isPitcher
-    ? [['ERA','ERA'],['WHIP','WHIP'],['IP','IP'],['K','K'],['QS','QS'],['SVHD','SV+HLD']]
-    : [['AVG','AVG'],['OPS','OPS'],['HR','HR'],['RBI','RBI'],['R','R'],['SB','SB']];
-  const chips = chipDefs.filter(([k])=>stats[k]!==undefined && stats[k]!==null)
-    .map(([k,lbl])=>`<span class="sv-chip">${lbl}: ${stats[k]}</span>`).join('');
-
-  // Build gauge circles
-  const hasSavant = Object.keys(sv).filter(k=>!['type','fullName','mlbamId'].includes(k)).length > 0;
-  const gaugesHtml = hasSavant ? `
-    <div class="sv-section">Statcast Percentile Rankings</div>
-    <div class="sv-gauges">
-      ${metrics.map(m => {
-        const pct = sv[m.key];
-        if (pct === undefined) return '';
-        // For "invert" metrics (K%, Chase%, Whiff% for batters), high% = bad, so flip display
-        const displayPct = (m.invert) ? pct : pct;
-        const c = _pctColor(pct);
-        return \`<div class="sv-gauge">
-          <div class="sv-circle" style="background:\${c.bg}">
-            <span class="sv-pct" style="color:\${c.fg}">\${pct}</span>
-            <span class="sv-plbl" style="color:\${c.fg}">pctile</span>
-          </div>
-          <div class="sv-mname">\${m.label}\${m.invert?'<span title="Lower is better" style="color:var(--ink3)"> ↓</span>':''}</div>
-        </div>\`;
-      }).filter(Boolean).join('')}
-    </div>
-    <div class="sv-legend">
-      <span class="sv-leg-item"><span class="sv-leg-dot" style="background:#c33b3b"></span>80–100th (elite)</span>
-      <span class="sv-leg-item"><span class="sv-leg-dot" style="background:#e08888"></span>60–79th (above avg)</span>
-      <span class="sv-leg-item"><span class="sv-leg-dot" style="background:var(--bg3);border:1px solid var(--border)"></span>45–59th (avg)</span>
-      <span class="sv-leg-item"><span class="sv-leg-dot" style="background:#4a7ec7"></span>Below avg</span>
-    </div>
-    ${mlbamId ? \`<a class="sv-savant-link" href="https://baseballsavant.mlb.com/savant-player/\${mlbamId}?stats=statcast-r-\${isPitcher?'pitching':'hitting'}-mlb" target="_blank">View full Statcast profile on Baseball Savant ↗</a>\` : ''}
-  ` : `<div class="sv-no-data">No Statcast percentile data available.<br><span style="font-size:10px">Player may not have enough plate appearances yet.</span></div>`;
-
-  const initials = (player.name||'?').split(' ').map(w=>w[0]||'').slice(0,2).join('').toUpperCase();
-
-  document.getElementById('sv-modal-inner').innerHTML = \`
-    <div class="sv-header">
-      <div class="sv-avatar">\${initials}</div>
-      <div>
-        <div class="sv-pname">\${pName(player.name)}</div>
-        <div class="sv-pmeta">\${player.position} · \${player.slot} · \${player.injStatus && player.injStatus!=='ACTIVE'?'<span style="color:var(--red)">'+player.injStatus+'</span>':'Active'}</div>
-        <div class="sv-stat-chips">\${chips || '<span style="color:var(--ink3);font-size:10px;font-family:var(--fm)">No fantasy stats yet</span>'}</div>
-      </div>
-    </div>
-    \${gaugesHtml}
-  \`;
-
-  document.getElementById('sv-modal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeSvModal() {
-  document.getElementById('sv-modal').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSvModal(); });
 
 // ═══ BOOT ═══
 (async()=>{
