@@ -473,12 +473,24 @@ def main():
                 return str(int(f)) if f == int(f) else str(round(f,1))
             except: return str(v)
 
-        # Try current live scoring period first, then fallback to earlier periods
+        # Probe ESPN to get the actual current DAILY scoring period.
+        # ESPN baseball uses daily periods (day 13 of season ≠ Week 3).
+        # The response always includes 'scoringPeriodId' at top level.
+        _live_period = matchup_period  # fallback
+        try:
+            _probe = api_get(['mScoreboard'])
+            _live_period = int(_probe.get('scoringPeriodId', matchup_period))
+            print(f"  📅  Live daily scoring period from ESPN: {_live_period}")
+        except Exception as _pe:
+            print(f"  ⚠️  Period probe failed ({_pe}), using matchup_period={matchup_period}")
+
+        # Try live period, then one before it, then matchup_period as last resort
         _periods_to_try = list(dict.fromkeys([
+            _live_period,
+            _live_period - 1 if _live_period > 1 else _live_period,
             matchup_period,
-            matchup_period - 1 if matchup_period > 1 else 1,
-            1, 2
         ]))
+
         for sp in _periods_to_try:
             try:
                 data = api_get(['mScoreboard'], {'scoringPeriodId': sp})
@@ -534,7 +546,7 @@ def main():
                 # FIX: fetch mBoxscore for the CURRENT FANTASY WEEK, not the ESPN period
                 cat_data = {}
                 try:
-                    box_data = api_get(['mBoxscore'], {'scoringPeriodId': sp})  # sp = current live ESPN daily period
+                    box_data = api_get(['mBoxscore'], {'scoringPeriodId': sp})  # sp = live daily ESPN period
                     if isinstance(box_data, dict):
                         for m in box_data.get('schedule', []):
                             mid = m.get('id')
