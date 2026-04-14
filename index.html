@@ -357,6 +357,33 @@ tbody tr.cut{border-top:2px dashed var(--border2)!important}
   .leg-card{grid-template-columns:1fr auto}.leg-rk{display:none}
   .elo-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+/* ── TRAJECTORY CHART ── */
+.tj-btn{display:inline-flex;align-items:center;gap:5px;border-radius:4px;padding:4px 11px;font-family:var(--fm);font-size:9px;font-weight:600;letter-spacing:.08em;cursor:pointer;transition:all .15s;border:1px solid transparent}
+.tj-btn.off{opacity:.3;filter:grayscale(60%)}
+.tj-btn:hover{opacity:.85}
+
+/* ── 2026 STATS TAB ── */
+.pct-bar-wrap{background:var(--bg1);border:1px solid var(--border);border-radius:8px;padding:16px 20px}
+.pct-bar-row{display:grid;grid-template-columns:60px 1fr 44px 60px;align-items:center;gap:10px;padding:5px 0;border-bottom:1px solid var(--border)}
+.pct-bar-row:last-child{border-bottom:none}
+.pct-bar-track{height:20px;background:var(--bg3);border-radius:3px;overflow:hidden;position:relative}
+.pct-bar-fill{position:absolute;left:0;top:0;height:100%;border-radius:3px;transition:width .5s ease}
+.pct-circle{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:15px;font-weight:900;border:2px solid;flex-shrink:0}
+.week-bests-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:12px}
+.wb-card{background:var(--bg1);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.wb-card-hd{background:var(--bg3);padding:7px 14px;font-family:var(--fm);font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--border)}
+.wb-card-body{padding:12px 14px}
+.wb-cat-lbl{font-family:var(--fm);font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-bottom:2px}
+.wb-val{font-family:var(--fd);font-size:36px;font-weight:900;line-height:1;color:var(--gold)}
+.wb-week{font-family:var(--fm);font-size:9px;color:var(--ink3);margin-top:3px}
+.wb-overall{background:linear-gradient(135deg,rgba(240,180,41,.08),rgba(16,243,123,.05));border:1px solid var(--gold);border-radius:8px;padding:16px 20px;margin-bottom:16px}
+.wb-stats-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.wb-stat-chip{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:5px 10px;text-align:center;min-width:60px}
+.wb-stat-chip .v{font-family:var(--fd);font-size:17px;font-weight:700;line-height:1}
+.wb-stat-chip .k{font-family:var(--fm);font-size:7px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:2px}
+/* ── PR RANK DELTA ── */
+.pr-delta{display:inline-flex;align-items:center;gap:2px;font-family:var(--fm);font-size:10px;font-weight:700;margin-left:4px;vertical-align:middle}
 </style>
 </head>
 <body>
@@ -417,10 +444,12 @@ tbody tr.cut{border-top:2px dashed var(--border2)!important}
   <div class="page-tabs">
     <button class="page-tab active" data-panel="power">Power Rankings</button>
     <button class="page-tab" data-panel="stats">Team Stats</button>
+    <button class="page-tab" data-panel="teamstats2026">2026 Stats</button>
     <button class="page-tab" data-panel="rosters">Rosters</button>
   </div>
   <div id="panel-power" class="panel active"><div id="pr-c"><div class="state">Loading…</div></div></div>
   <div id="panel-stats" class="panel"><div id="ts-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-teamstats2026" class="panel"><div id="ts26-c"><div class="state">Loading…</div></div></div>
   <div id="panel-rosters" class="panel">
     <div class="sub-nav">
       <button class="sub-btn active" data-sub="ros-main">Rosters</button>
@@ -874,7 +903,9 @@ async function renderStandings() {
         <thead><tr><th class="c">#</th><th>Owner</th><th class="r">W–L</th><th class="r">PCT</th><th class="r">GB</th><th class="r">PF</th><th class="r">PA</th><th class="r">AP%</th><th class="c">Streak</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
-      <div style="margin-top:10px;font-family:var(--fm);font-size:8px;color:var(--ink3)">── = playoff cutline (top 6)</div>`;
+      <div style="margin-top:10px;font-family:var(--fm);font-size:8px;color:var(--ink3)">── = playoff cutline (top 6)</div>
+      ${buildTrajectoryChart()}`;
+    setTimeout(initTrajChart, 0);
   } catch(e) { document.getElementById('std-c').innerHTML=`<div class="state err">⚠ ${e.message}</div>`; }
 }
 
@@ -1149,7 +1180,6 @@ async function renderMatchups() {
 async function renderPowerRankings() {
   try {
     const {rankings,week,projBlend} = await load('power_rankings.json');
-    // #10: compute blend — heavy projections early, shifts to actuals over time
   const weekNum = parseInt(week)||1;
   const projPct = Math.max(0, Math.round(Math.max(0, 12-weekNum)/12*100));
   const actualPct = 100-projPct;
@@ -1159,18 +1189,30 @@ async function renderPowerRankings() {
     const cards = rankings.map(p => {
       const cr = p.catRanks||{};
       const ce = Object.entries(cr);
-      const PR_CAT_LABEL = {SVHD:'SV/HD',Kbat:'K(bat)',Kpitch:'K(pit)'};
+      const PR_CAT_LABEL = {SVHD:'SV/HD',SVHD:'SV/HD',Kbat:'K(bat)',Kpitch:'K(pit)'};
       const prCL = c => PR_CAT_LABEL[c] || c;
+      // Ensure SVHD always shows by adding it if missing but we have live stats
+      if (!cr.SVHD && _liveTeamStats && _liveTeamStats.teams) {
+        const allSVHD = _liveTeamStats.teams.map((t,i)=>({i,v:t.stats?.SVHD??0}));
+        allSVHD.sort((a,b)=>b.v-a.v);
+        const idx = allSVHD.findIndex(x=>_liveTeamStats.teams[x.i].rbName===p.rbName||_liveTeamStats.teams[x.i].name===p.name);
+        if (idx!==-1) cr.SVHD = idx+1;
+      }
       const strengths = ce.filter(([,r])=>r<=3).map(([c,r])=>`<span class="pr-cat cat-str">${prCL(c)} #${r}</span>`).join('');
       const mids = ce.filter(([,r])=>r>3&&r<n-2).map(([c,r])=>`<span class="pr-cat cat-mid">${prCL(c)} #${r}</span>`).join('');
       const weaks = ce.filter(([,r])=>r>=n-2).map(([c,r])=>`<span class="pr-cat cat-wk">${prCL(c)} #${r}</span>`).join('');
       const catSec = (strengths||weaks||mids)?`<div class="pr-cats">${strengths}${mids}${weaks}</div>`:`<div style="font-family:var(--fm);font-size:9px;color:var(--ink3);margin-top:8px">Category ranks active after Opening Day (Mar 27)</div>`;
       const mine = isMine(p.name);
       const col = p.composite>=70?'var(--green)':p.composite>=50?'var(--blue)':'var(--red)';
-      const d=p.rankDelta||0, delta=d>0?`<div style="color:var(--green);font-family:var(--fm);font-size:9px">▲${d}</div>`:d<0?`<div style="color:var(--red);font-family:var(--fm);font-size:9px">▼${Math.abs(d)}</div>`:'';
+      const d=p.rankDelta||0;
+      const deltaHTML = d>0
+        ? `<span class="pr-delta" style="color:var(--green)">▲${d}</span>`
+        : d<0
+        ? `<span class="pr-delta" style="color:var(--red)">▼${Math.abs(d)}</span>`
+        : `<span class="pr-delta" style="color:var(--ink3)">—</span>`;
       return `<div class="pr-card ${mine?'mine':''}">
         <div class="pr-inner">
-          <div class="pr-rank">${p.pwRank||p.overallRank}${delta}</div>
+          <div class="pr-rank" style="display:flex;flex-direction:column;align-items:center;line-height:1">${p.pwRank||p.overallRank}${deltaHTML}</div>
           <div>
             <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
               <span class="pr-name tl" onclick="goToRoster(${p.id})">${p.name}</span>
@@ -1193,7 +1235,7 @@ async function renderPowerRankings() {
         <span style="font-family:var(--fm);font-size:9px"><span style="color:var(--purple)">${pb.projPct||0}% Proj</span> · <span style="color:var(--blue)">${pb.actualPct||100}% Actual</span></span>
       </div>
       <div class="pr-list">${cards}</div>
-      <div style="margin-top:12px;font-family:var(--fm);font-size:8px;color:var(--ink3)"><span style="color:var(--green)">Green</span> = top-3 category · <span style="color:var(--red)">Red</span> = bottom-3 category</div>`;
+      <div style="margin-top:12px;font-family:var(--fm);font-size:8px;color:var(--ink3)"><span style="color:var(--green)">Green</span> = top-3 category · <span style="color:var(--red)">Red</span> = bottom-3 · <span style="color:var(--green)">▲</span><span style="color:var(--red)">▼</span> = rank change vs last week</div>`;
   } catch(e) { document.getElementById('pr-c').innerHTML=`<div class="state err">⚠ ${e.message}</div>`; }
 }
 
@@ -2830,6 +2872,478 @@ async function patch2026IntoRB() {
 }
 
 
+// ═══ TRAJECTORY CHART ═══
+const TRAJ_COLORS = {
+  TC:'#4e9af1',Sponny:'#f0b429',Boyce:'#10f37b',Greene:'#ff8833',
+  Mion:'#9977ff',Bert:'#00ddb4',Eriole:'#ff4d6a',Slater:'#f5c842',
+  Tim:'#6b7a99',Schoon:'#8899bb',Jacob:'#c678dd',Leo:'#56b6c2',
+};
+
+function buildTrajectoryChart() {
+  const byTeam = {};
+  (RB.franchiseTrajectories||[]).forEach(d => {
+    if (!byTeam[d.team]) byTeam[d.team] = [];
+    byTeam[d.team].push({s: d.season, p: d.rolling3PCT});
+  });
+
+  const activeTeams = Object.keys(TRAJ_COLORS).filter(t => byTeam[t]);
+  if (!activeTeams.length) return '';
+
+  const allSeasons = [...new Set((RB.franchiseTrajectories||[]).map(d=>d.season))].sort((a,b)=>a-b);
+  const W=920, H=310, PT={t:16,r:20,b:28,l:44};
+  const cw=W-PT.l-PT.r, ch=H-PT.t-PT.b;
+  const minP=0.15, maxP=0.85;
+  const minS=allSeasons[0], maxS=allSeasons[allSeasons.length-1];
+
+  const sx = s => PT.l + (s-minS)/(maxS-minS||1)*cw;
+  const sy = p => PT.t + (1-(p-minP)/(maxP-minP))*ch;
+
+  // Grid lines + labels
+  let grid = '';
+  [0.2,0.35,0.5,0.65,0.8].forEach(p => {
+    const y = sy(p);
+    const col = p===0.5 ? 'var(--border2)' : 'var(--border)';
+    grid += `<line x1="${PT.l}" y1="${y.toFixed(1)}" x2="${W-PT.r}" y2="${y.toFixed(1)}" stroke="${col}" stroke-width="1"/>`;
+    grid += `<text x="${PT.l-5}" y="${(y+4).toFixed(1)}" text-anchor="end" fill="var(--ink3)" font-size="9" font-family="DM Mono,monospace">${(p*100).toFixed(0)}%</text>`;
+  });
+  allSeasons.forEach(s => {
+    const x = sx(s);
+    grid += `<line x1="${x.toFixed(1)}" y1="${PT.t}" x2="${x.toFixed(1)}" y2="${H-PT.b}" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="2,4"/>`;
+    grid += `<text x="${x.toFixed(1)}" y="${H-6}" text-anchor="middle" fill="var(--ink3)" font-size="9" font-family="DM Mono,monospace">${s}</text>`;
+  });
+
+  // Draw lines + dots
+  let lines = '', dots = '';
+  activeTeams.forEach(team => {
+    const pts = [...byTeam[team]].sort((a,b)=>a.s-b.s);
+    if (pts.length < 2) return;
+    const col = TRAJ_COLORS[team];
+    let d = `M ${sx(pts[0].s).toFixed(1)} ${sy(pts[0].p).toFixed(1)}`;
+    for (let i=1; i<pts.length; i++) {
+      const px = pts[i-1], cx2 = pts[i];
+      const cpx = ((sx(px.s)+sx(cx2.s))/2).toFixed(1);
+      d += ` C ${cpx} ${sy(px.p).toFixed(1)},${cpx} ${sy(cx2.p).toFixed(1)},${sx(cx2.s).toFixed(1)} ${sy(cx2.p).toFixed(1)}`;
+    }
+    lines += `<path class="tj-line" data-team="${team}" d="${d}" fill="none" stroke="${col}" stroke-width="2.5" stroke-linecap="round"/>`;
+    // End label
+    const last = pts[pts.length-1];
+    lines += `<text class="tj-label" data-team="${team}" x="${(sx(last.s)+5).toFixed(1)}" y="${(sy(last.p)+4).toFixed(1)}" fill="${col}" font-size="9" font-family="DM Mono,monospace" font-weight="600">${team}</text>`;
+    pts.forEach(pt => {
+      dots += `<circle class="tj-dot" data-team="${team}" data-season="${pt.s}" data-pct="${pt.p.toFixed(3)}" cx="${sx(pt.s).toFixed(1)}" cy="${sy(pt.p).toFixed(1)}" r="3.5" fill="${col}" stroke="var(--bg)" stroke-width="1.5"/>`;
+    });
+  });
+
+  // Toggle buttons
+  const btns = activeTeams.map(t => {
+    const col = TRAJ_COLORS[t];
+    return `<button class="tj-btn" data-team="${t}" style="color:${col};border-color:${col}44;background:${col}18" onclick="window.tjToggle(this)">${t}</button>`;
+  }).join('');
+
+  return `
+  <div style="margin-top:36px">
+    <div class="sh"><span class="sh-title">Franchise Trajectories</span><span class="sh-sub">Rolling 3-Year Win PCT</span><div class="sh-line"></div></div>
+    <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px">${btns}</div>
+    <div style="background:var(--bg1);border:1px solid var(--border);border-radius:8px;overflow:hidden;position:relative" id="tj-wrap">
+      <svg id="tj-svg" viewBox="0 0 ${W} ${H}" width="100%" style="display:block;overflow:visible">
+        ${grid}${lines}${dots}
+        <line id="tj-vline" x1="0" y1="${PT.t}" x2="0" y2="${H-PT.b}" stroke="var(--ink3)" stroke-width="1" stroke-dasharray="3,3" opacity="0.6" style="display:none" pointer-events="none"/>
+      </svg>
+      <div id="tj-tip" style="display:none;position:absolute;top:10px;pointer-events:none;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:10px 14px;font-family:var(--fm);font-size:10px;z-index:10;min-width:150px;box-shadow:0 4px 16px rgba(0,0,0,.3)"></div>
+    </div>
+  </div>`;
+}
+
+function initTrajChart() {
+  const svg = document.getElementById('tj-svg');
+  const tip = document.getElementById('tj-tip');
+  const vline = document.getElementById('tj-vline');
+  if (!svg || !tip) return;
+
+  // Track hidden teams
+  const hidden = new Set();
+
+  window.tjToggle = function(btn) {
+    const team = btn.dataset.team;
+    if (hidden.has(team)) {
+      hidden.delete(team);
+      btn.classList.remove('off');
+    } else {
+      hidden.add(team);
+      btn.classList.add('off');
+    }
+    // Show/hide SVG elements for this team
+    svg.querySelectorAll(`[data-team="${team}"]`).forEach(el => {
+      el.style.opacity = hidden.has(team) ? '0' : '1';
+      el.style.transition = 'opacity .2s';
+    });
+  };
+
+  // Collect all dot positions for hover snapping
+  function getSeasonDots() {
+    const map = {};
+    svg.querySelectorAll('.tj-dot').forEach(d => {
+      const s = parseInt(d.dataset.season);
+      if (!map[s]) map[s] = [];
+      map[s].push({team:d.dataset.team, pct:parseFloat(d.dataset.pct), cx:parseFloat(d.getAttribute('cx'))});
+    });
+    return map;
+  }
+
+  svg.addEventListener('mousemove', e => {
+    const rect = svg.getBoundingClientRect();
+    const vb = svg.viewBox.baseVal;
+    const scaleX = vb.width / rect.width;
+    const mouseX = (e.clientX - rect.left) * scaleX;
+
+    const seasonDots = getSeasonDots();
+    const seasons = Object.keys(seasonDots).map(Number).sort((a,b)=>a-b);
+    if (!seasons.length) return;
+
+    // Find nearest season by x distance
+    let nearest = seasons[0], minDist = Infinity;
+    seasons.forEach(s => {
+      const cx = seasonDots[s][0].cx;
+      const dist = Math.abs(cx - mouseX);
+      if (dist < minDist) { minDist = dist; nearest = s; }
+    });
+    if (minDist > 40) { tip.style.display='none'; vline.style.display='none'; return; }
+
+    const pts = seasonDots[nearest];
+    const cx = pts[0].cx;
+    const cxPx = cx / vb.width * rect.width;
+
+    // Vertical line
+    vline.style.display='';
+    vline.setAttribute('x1', cx); vline.setAttribute('x2', cx);
+
+    // Tooltip entries – only visible teams, sorted by PCT desc
+    const entries = pts
+      .filter(pt => !hidden.has(pt.team))
+      .sort((a,b) => b.pct - a.pct);
+
+    if (!entries.length) { tip.style.display='none'; return; }
+
+    const rows = entries.map(e =>
+      `<div style="display:flex;justify-content:space-between;gap:14px;padding:1px 0">
+         <span style="color:${TRAJ_COLORS[e.team]||'var(--ink)'};font-weight:600">${e.team}</span>
+         <span style="color:var(--ink2)">${(e.pct*100).toFixed(1)}%</span>
+       </div>`
+    ).join('');
+
+    tip.innerHTML = `<div style="color:var(--gold);font-family:var(--fd);font-size:14px;font-weight:900;margin-bottom:7px">${nearest}</div>${rows}`;
+    tip.style.display='';
+
+    // Flip tooltip if too far right
+    const tipW = tip.offsetWidth || 170;
+    const wrapW = svg.parentElement.offsetWidth;
+    if (cxPx + tipW + 20 > wrapW) {
+      tip.style.right = (wrapW - cxPx + 12) + 'px';
+      tip.style.left = 'auto';
+    } else {
+      tip.style.left = (cxPx + 12) + 'px';
+      tip.style.right = 'auto';
+    }
+  });
+
+  svg.addEventListener('mouseleave', () => {
+    tip.style.display='none';
+    vline.style.display='none';
+  });
+}
+
+// ═══ 2026 STATS TAB ═══
+async function renderTeamStats2026() {
+  const el = document.getElementById('ts26-c');
+  if (!el) return;
+
+  try {
+    const mdata = await load('matchups.json');
+    const allWeeks = mdata.allWeeks || {};
+
+    // Extended weeks to exclude (same as Category King exclusions)
+    const excludedWeeks = new Set(RB.categoryKing?.excludedWeeks || [1, 16]);
+
+    // Get all available RB team names for dropdown
+    const rbTeams = [...new Set(
+      (RB.legacyRankings?.rankings || [])
+        .map(r => r.team)
+        .concat(Object.keys(TRAJ_COLORS))
+    )].filter(Boolean).sort();
+
+    // Try to pre-select user's team
+    const defaultTeam = MY_TEAM || rbTeams[0] || '';
+
+    // Build team selector
+    const selOpts = rbTeams.map(t =>
+      `<option value="${t}" ${t===defaultTeam?'selected':''}>${t}</option>`
+    ).join('');
+
+    // Render function for selected team
+    function renderFor(teamKey) {
+      const teamEl = document.getElementById('ts26-team-content');
+      if (!teamEl) return;
+
+      if (!teamKey) {
+        teamEl.innerHTML = '<div class="state">Select a team above.</div>';
+        return;
+      }
+
+      teamEl.innerHTML = '<div class="state">Loading…</div>';
+
+      // ── Gather all weekly stats for this team from allWeeks ──
+      const CATS = ['R','HR','RBI','SB','Kbat','AVG','OPS','IP','H','K','QS','ERA','WHIP','SVHD'];
+      const LOWER = new Set(['ERA','WHIP','H','Kbat']);
+      const CAT_LABELS = {R:'R',HR:'HR',RBI:'RBI',SB:'SB',Kbat:'K (bat)',AVG:'AVG',OPS:'OPS',
+        IP:'IP',H:'H (all)',K:'K (pit)',QS:'QS',ERA:'ERA',WHIP:'WHIP',SVHD:'SV/HD'};
+
+      // Collect this team's weekly stats, excluding extended weeks
+      const weekData = []; // {week, cats:{R:v, HR:v, ...}, ip_dec}
+      const sortedWks = Object.keys(allWeeks).map(Number).sort((a,b)=>a-b);
+
+      for (const wk of sortedWks) {
+        if (excludedWeeks.has(wk)) continue;
+        const matchupList = allWeeks[String(wk)] || [];
+        // Skip undecided weeks
+        if (matchupList.some(m => m.winner === 'UNDECIDED')) continue;
+
+        for (const m of matchupList) {
+          for (const side of ['home','away']) {
+            const s = m[side];
+            const rb = s.rbName || toRB(s.team || '') || s.team || '';
+            if (rb !== teamKey) continue;
+
+            const cats = {};
+            let ip_dec = 0;
+            const ipRaw = s.categories?.IP?.value;
+            if (ipRaw && ipRaw !== '—') {
+              const ipf = parseFloat(ipRaw);
+              if (!isNaN(ipf)) {
+                const inn = Math.floor(ipf);
+                const thirds = Math.round((ipf-inn)*10);
+                ip_dec = inn + thirds/3;
+              }
+            }
+            for (const [cat, info] of Object.entries(s.categories || {})) {
+              const v = parseFloat(info.value);
+              if (!isNaN(v) && info.value !== '—') cats[cat] = v;
+            }
+            weekData.push({week: wk, cats, ip_dec});
+          }
+        }
+      }
+
+      if (!weekData.length) {
+        teamEl.innerHTML = '<div class="state">No completed standard weeks yet for this team.</div>';
+        return;
+      }
+
+      // ── Per-category best week ──
+      const catBests = {}; // cat -> {val, week}
+      CATS.forEach(cat => {
+        let best = null;
+        weekData.forEach(wd => {
+          const v = wd.cats[cat];
+          if (v == null) return;
+          if (!best) { best = {val:v, week:wd.week}; return; }
+          const isBetter = LOWER.has(cat) ? v < best.val : v > best.val;
+          if (isBetter) best = {val:v, week:wd.week};
+        });
+        if (best) catBests[cat] = best;
+      });
+
+      // ── Best overall week (composite z-score vs season averages) ──
+      // Compute season averages + std per cat from all weeks in data
+      const catVals = {};
+      CATS.forEach(cat => catVals[cat] = []);
+      weekData.forEach(wd => {
+        CATS.forEach(cat => { if (wd.cats[cat] != null) catVals[cat].push(wd.cats[cat]); });
+      });
+
+      // Use league-wide averages from allWeeks for the same non-extended weeks
+      const leagueWeekVals = {};
+      CATS.forEach(cat => leagueWeekVals[cat] = []);
+      for (const wk of sortedWks) {
+        if (excludedWeeks.has(wk)) continue;
+        const matchupList = allWeeks[String(wk)] || [];
+        if (matchupList.some(m=>m.winner==='UNDECIDED')) continue;
+        for (const m of matchupList) {
+          for (const side of ['home','away']) {
+            const s = m[side];
+            CATS.forEach(cat => {
+              const v = parseFloat(s.categories?.[cat]?.value);
+              if (!isNaN(v)) leagueWeekVals[cat].push(v);
+            });
+          }
+        }
+      }
+
+      function mean(arr) { return arr.length ? arr.reduce((a,b)=>a+b,0)/arr.length : 0; }
+      function stddev(arr) {
+        const m = mean(arr);
+        return arr.length > 1 ? Math.sqrt(arr.reduce((s,v)=>s+(v-m)**2,0)/(arr.length-1)) : 1;
+      }
+
+      const catMeans = {}, catStds = {};
+      CATS.forEach(cat => {
+        catMeans[cat] = mean(leagueWeekVals[cat]);
+        catStds[cat] = Math.max(stddev(leagueWeekVals[cat]), 0.001);
+      });
+
+      // Score each week
+      const scoredWeeks = weekData.map(wd => {
+        let z = 0, count = 0;
+        CATS.forEach(cat => {
+          const v = wd.cats[cat];
+          if (v == null) return;
+          const raw = (v - catMeans[cat]) / catStds[cat];
+          z += LOWER.has(cat) ? -raw : raw;
+          count++;
+        });
+        return {week: wd.week, score: count ? z/count : 0, cats: wd.cats};
+      });
+      scoredWeeks.sort((a,b) => b.score - a.score);
+      const bestOverall = scoredWeeks[0];
+
+      // ── 2026 Percentile bars ──
+      // Get percentile data for this team
+      const teamPd = RB.percentileData?.[teamKey] || {};
+      const pdData = teamPd['2026'] || [];
+
+      // If no 2026 percentile data yet, compute live from allWeeks vs all teams
+      let percentileRows = [];
+      if (pdData.length >= 3) {
+        percentileRows = pdData;
+      } else {
+        // Compute live percentiles from allWeeks
+        const teamAvgs = {}, leagueTeamVals = {};
+        CATS.forEach(cat => { teamAvgs[cat] = []; leagueTeamVals[cat] = {}; });
+
+        for (const wk of sortedWks) {
+          if (excludedWeeks.has(wk)) continue;
+          const ml = allWeeks[String(wk)] || [];
+          if (ml.some(m=>m.winner==='UNDECIDED')) continue;
+          for (const m of ml) {
+            for (const side of ['home','away']) {
+              const s = m[side];
+              const rb = s.rbName || toRB(s.team||'')||s.team||'';
+              if (!rb) continue;
+              CATS.forEach(cat => {
+                const v = parseFloat(s.categories?.[cat]?.value);
+                if (!isNaN(v)) {
+                  if (!leagueTeamVals[cat][rb]) leagueTeamVals[cat][rb] = [];
+                  leagueTeamVals[cat][rb].push(v);
+                  if (rb === teamKey) teamAvgs[cat].push(v);
+                }
+              });
+            }
+          }
+        }
+
+        CATS.forEach(cat => {
+          const myAvg = mean(teamAvgs[cat]);
+          if (!teamAvgs[cat].length) return;
+          // Compute avg per team and rank
+          const teamAverages = Object.entries(leagueTeamVals[cat])
+            .map(([t,vals])=>({t, avg: mean(vals)}))
+            .sort((a,b) => LOWER.has(cat) ? a.avg - b.avg : b.avg - a.avg);
+          const rank = teamAverages.findIndex(x=>x.t===teamKey);
+          const n = teamAverages.length;
+          const pct = n > 1 ? Math.round((1 - rank/(n-1)) * 100) : 50;
+          percentileRows.push({cat, avg: myAvg, percentile: pct});
+        });
+      }
+
+      // ── Render percentile bars ──
+      function tierOf(p) { return p>=90?'elite':p>=70?'great':p>=40?'avg':p>=20?'below':'poor'; }
+      const tierGrad = {
+        elite:'linear-gradient(90deg,#c0392b,#e74c3c)',
+        great:'linear-gradient(90deg,#d35400,#e67e22)',
+        avg:'linear-gradient(90deg,#4a5568,#718096)',
+        below:'linear-gradient(90deg,#2c5282,#3182ce)',
+        poor:'linear-gradient(90deg,#1a365d,#2a4365)',
+      };
+      const tierColor = {elite:'#e74c3c',great:'#e67e22',avg:'#a0aec0',below:'#4299e1',poor:'#4a5568'};
+      const tierBg = {elite:'rgba(231,76,60,.12)',great:'rgba(230,126,34,.1)',avg:'rgba(113,128,150,.08)',below:'rgba(49,130,206,.08)',poor:'rgba(42,67,101,.12)'};
+
+      const pctBarRows = percentileRows.map(({cat,avg,percentile}) => {
+        const tier = tierOf(percentile);
+        const raw = avg==null ? '' : avg < 1 ? avg.toFixed(3) : avg%1===0 ? avg.toFixed(0) : avg.toFixed(1);
+        return `<div class="pct-bar-row">
+          <div style="font-family:var(--fm);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);text-align:right">${CAT_LABELS[cat]||cat}</div>
+          <div class="pct-bar-track"><div class="pct-bar-fill" style="width:${percentile}%;background:${tierGrad[tier]}"></div></div>
+          <div class="pct-circle" style="border-color:${tierColor[tier]};background:${tierBg[tier]};color:${tierColor[tier]}">${percentile}</div>
+          <div style="font-family:var(--fm);font-size:9px;color:var(--ink3);text-align:right">${raw}</div>
+        </div>`;
+      }).join('');
+
+      const legend = [['elite','#e74c3c','Elite (90+)'],['great','#e67e22','Great (70–89)'],['avg','#a0aec0','Avg (40–69)'],['below','#4299e1','Below (20–39)'],['poor','#4a5568','Poor (<20)']].map(([,c,l])=>`<div style="display:flex;align-items:center;gap:4px"><div style="width:8px;height:8px;border-radius:50%;background:${c}"></div><span style="font-family:var(--fm);font-size:8px;color:var(--ink3)">${l}</span></div>`).join('');
+
+      // ── Best overall week card ──
+      const boCats = CATS.filter(c=>bestOverall.cats[c]!=null).map(c=>{
+        const v = bestOverall.cats[c];
+        const fmt = v < 1 ? v.toFixed(3) : v%1===0 ? v.toFixed(0) : v.toFixed(1);
+        return `<div class="wb-stat-chip"><div class="v">${fmt}</div><div class="k">${CAT_LABELS[c]||c}</div></div>`;
+      }).join('');
+
+      const boCard = bestOverall ? `
+        <div class="wb-overall">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px">
+            <div style="font-family:var(--fm);font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3)">Best Overall Week</div>
+            <div style="font-family:var(--fm);font-size:9px;background:rgba(240,180,41,.15);color:var(--gold);border:1px solid rgba(240,180,41,.3);border-radius:3px;padding:2px 8px">2026 W${bestOverall.week}</div>
+            <div style="font-family:var(--fm);font-size:9px;color:var(--ink3)">z-score: ${bestOverall.score.toFixed(2)}</div>
+          </div>
+          <div class="wb-stats-grid">${boCats}</div>
+        </div>` : '';
+
+      // ── Per-category best cards ──
+      const catCards = CATS.map(cat => {
+        const b = catBests[cat];
+        if (!b) return '';
+        const fmt = b.val < 1 ? b.val.toFixed(3) : b.val%1===0 ? b.val.toFixed(0) : b.val.toFixed(1);
+        return `<div class="wb-card">
+          <div class="wb-card-hd">${CAT_LABELS[cat]||cat} — ${LOWER.has(cat)?'Lowest':'Highest'} Single Week</div>
+          <div class="wb-card-body">
+            <div class="wb-cat-lbl">${CAT_LABELS[cat]||cat}</div>
+            <div class="wb-val">${fmt}</div>
+            <div class="wb-week">2026 Week ${b.week}</div>
+          </div>
+        </div>`;
+      }).filter(Boolean).join('');
+
+      const mineClass = isMine(teamKey) ? 'var(--green)' : 'var(--ink2)';
+
+      teamEl.innerHTML = `
+        <div style="margin-bottom:24px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap;justify-content:space-between">
+            <div style="font-family:var(--fm);font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3)">2026 Category Percentiles — ranked vs current league · lower is better for K(bat), H, ERA, WHIP</div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">${legend}</div>
+          </div>
+          <div class="pct-bar-wrap">${pctBarRows || '<div style="color:var(--ink3);font-family:var(--fm);font-size:10px">No 2026 percentile data yet — check back after Week 1 closes.</div>'}</div>
+        </div>
+        ${boCard}
+        <div style="margin-bottom:10px">
+          <div class="sh"><span class="sh-title">Category Bests</span><span class="sh-sub">Best single week per category · 2026 · excludes extended matchups (Wks ${[...excludedWeeks].join(', ')})</span><div class="sh-line"></div></div>
+        </div>
+        <div class="week-bests-grid">${catCards || '<div class="state">No completed standard weeks yet.</div>'}</div>`;
+    }
+
+    // Initial render
+    el.innerHTML = `
+      <div class="sh"><span class="sh-title">2026 Team Stats</span><span class="sh-sub">Season Percentiles &amp; Weekly Bests</span><div class="sh-line"></div></div>
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;flex-wrap:wrap">
+        <label style="font-family:var(--fm);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)">Team</label>
+        <select class="dropdown" id="ts26-sel" style="min-width:200px">${selOpts}</select>
+      </div>
+      <div id="ts26-team-content"></div>`;
+
+    document.getElementById('ts26-sel').addEventListener('change', e => renderFor(e.target.value));
+    renderFor(defaultTeam);
+
+  } catch(e) {
+    el.innerHTML = `<div class="state err">⚠ ${e.message}</div>`;
+  }
+}
+
 // ═══ SORTABLE TABLES ═══
 function makeSortable(table) {
   if (!table) return;
@@ -2875,7 +3389,7 @@ function makeSortable(table) {
     else populateTeamPicker(null);
   } catch(_){ populateTeamPicker(null); }
 
-  await Promise.all([renderStandings(),renderMatchups(),renderPowerRankings(),renderTeamStats(),renderRosters(),renderDraft(),renderKeepers()]);
+  await Promise.all([renderStandings(),renderMatchups(),renderPowerRankings(),renderTeamStats(),renderTeamStats2026(),renderRosters(),renderDraft(),renderKeepers()]);
   loadHistory();
 })();
 </script>
