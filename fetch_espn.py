@@ -358,6 +358,27 @@ def main():
                      getattr(league, 'current_matchup_period', current_week))
     print(f"  📅  currentMatchupPeriod: {matchup_period}")
 
+    # Probe ESPN for the true current DAILY scoring period (e.g. ~14 mid-April, not fantasy week 3)
+    # Used for all API calls that need current-day stats
+    live_period = matchup_period
+    try:
+        import requests as _rprobe
+        _cookies = {}; _headers = {}
+        try:
+            _rprobe_req = league.espn_request
+            _cookies = getattr(_rprobe_req, 'cookies', {}) or {}
+            _headers = dict(getattr(_rprobe_req, 'headers', {}) or {})
+        except: pass
+        _pbase = (f'https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb'
+                  f'/seasons/{SEASON}/segments/0/leagues/{LEAGUE_ID}')
+        _pr = _rprobe.get(_pbase, params=[('view','mScoreboard')],
+                          cookies=_cookies, headers=_headers, timeout=15)
+        if _pr.status_code == 200:
+            live_period = int(_pr.json().get('scoringPeriodId', matchup_period))
+        print(f"  📅  Live daily scoring period: {live_period}")
+    except Exception as _pe:
+        print(f"  ⚠️  Live period probe failed: {_pe} — using {matchup_period}")
+
     def has_scores(boxes):
         return any(
             (getattr(b, 'home_wins', 0) or 0) + (getattr(b, 'away_wins', 0) or 0) > 0
@@ -478,14 +499,8 @@ def main():
 
         # Probe ESPN for the actual current DAILY scoring period.
         # ESPN baseball uses daily periods (~day 14 mid-April), not weekly (3).
-        _live_period = matchup_period
-        try:
-            _probe = api_get(['mScoreboard'])
-            _live_period = int(_probe.get('scoringPeriodId', matchup_period))
-            print(f"  📅  Live daily scoring period from ESPN: {_live_period}")
-        except Exception as _pe:
-            print(f"  ⚠️  Period probe failed ({_pe}), using matchup_period={matchup_period}")
-
+        # live_period already probed above; use it directly
+        _live_period = live_period
         _periods_to_try = list(dict.fromkeys([_live_period, matchup_period]))
         for sp in _periods_to_try:
             try:
@@ -845,8 +860,9 @@ def main():
     team_projections = {}
     player_season_stats = {}   # fullName → {R, HR, RBI, ...} actual season stats
     try:
+        # Use live_period (actual ESPN daily period) so we get YTD stats, not just through day 3
         proj_params = [('view', 'mRoster'), ('view', 'mSettings'),
-                       ('scoringPeriodId', scoring_week)]
+                       ('scoringPeriodId', live_period)]
         cookies = getattr(req, 'cookies', {}) or {}
         headers = dict(getattr(req, 'headers', {}) or {})
         import requests as _req2
@@ -906,7 +922,7 @@ def main():
                                 if stat_entry.get('statSplitTypeId') == _split and stat_entry.get('seasonId') == SEASON:
                                     pstats = _parse_sbs(stat_entry.get('stats', {}))
                                     if any(v != 0 for v in pstats.values()):
-                                        player_season_stats[pname] = pstats
+                                        player_season_stats[pname.strip()] = pstats
                                     break
                             if pname in player_season_stats:
                                 break
@@ -1046,7 +1062,7 @@ def main():
                 "eligible":        eligible_str,
                 "isPitcher":       is_pitcher,
                 "injStatus":       inj_status,
-                "stats":           player_season_stats.get(pname_str, {}),
+                "stats":           player_season_stats.get((pname_str or "").strip(), {}),
                 "tier":            "",
                 "acquisitionType": acq_type,
                 "draftRound":      draft_round,
