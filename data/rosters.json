@@ -667,9 +667,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.204,
+            "AVG": 0.2,
             "HR": 1,
-            "OPS": 0.63,
+            "OPS": 0.618,
             "R": 10,
             "RBI": 10,
             "SB": 2,
@@ -1374,13 +1374,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.367,
+            "AVG": 0.361,
             "HR": 3,
-            "OPS": 1.033,
+            "OPS": 1.017,
             "R": 10,
             "RBI": 9,
             "SB": 1,
-            "Kbat": 12
+            "Kbat": 13
           },
           "tier": "",
           "acquisitionType": "DRAFT",
@@ -1790,7 +1790,7 @@
             "AVG": 0.211,
             "HR": 1,
             "OPS": 0.652,
-            "R": 8,
+            "R": 9,
             "RBI": 3,
             "SB": 1,
             "Kbat": 18
@@ -4229,13 +4229,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.169,
+            "AVG": 0.167,
             "HR": 0,
-            "OPS": 0.476,
+            "OPS": 0.469,
             "R": 3,
             "RBI": 3,
             "SB": 6,
-            "Kbat": 18
+            "Kbat": 19
           },
           "tier": "",
           "acquisitionType": "DRAFT",
@@ -4250,9 +4250,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.356,
+            "AVG": 0.37,
             "HR": 4,
-            "OPS": 1.264,
+            "OPS": 1.278,
             "R": 15,
             "RBI": 12,
             "SB": 1,
@@ -4885,9 +4885,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.154,
+            "AVG": 0.152,
             "HR": 0,
-            "OPS": 0.494,
+            "OPS": 0.487,
             "R": 12,
             "RBI": 3,
             "SB": 7,
@@ -7041,5 +7041,5 @@
       ]
     }
   ],
-  "updated": "2026-04-14T01:39:20Z"
+  "updated": "2026-04-14T01:44:14Z"
 }
