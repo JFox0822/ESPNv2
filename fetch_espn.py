@@ -1031,6 +1031,22 @@ def main():
     except Exception as e:
         print(f"  ⚠️  Draft lookup failed: {e}")
 
+    # ── Baseball Savant percentile data ─────────────────────────────────────────
+    savant_data = {}
+    try:
+        savant_data = fetch_savant_percentiles(SEASON)
+        save("savant_percentiles.json", {"season": SEASON, "players": savant_data, "updated": updated})
+    except Exception as e:
+        print(f"  ⚠️  Savant percentiles failed: {e}")
+
+    import unicodedata as _ud, re as _re
+    def _norm_name(name):
+        if not name: return ""
+        n = _ud.normalize("NFD", name)
+        n = "".join(c for c in n if _ud.category(c) != "Mn")
+        n = _re.sub(r"\b(jr|sr|ii|iii|iv)\.?\b", "", n, flags=_re.IGNORECASE)
+        return _re.sub(r"\s+", " ", n).strip().lower()
+
     rosters_out = []
     for t in league.teams:
         tm = team_map[t.team_id]
@@ -1055,6 +1071,8 @@ def main():
             draft_round = draft_round_by_name.get(pname_str, getattr(p, "draftRound", 0) or 0)
             is_keeper   = (draft_round >= 13) or (draft_round == 0 and
                            any(x in acq_type for x in ["FREE","WAIVER","FA"]))
+            _sv_key = _norm_name(pname_str)
+            _sv = savant_data.get(_sv_key, {})
             players.append({
                 "name":            pname_str,
                 "slot":            slot_label,
@@ -1063,6 +1081,7 @@ def main():
                 "isPitcher":       is_pitcher,
                 "injStatus":       inj_status,
                 "stats":           player_season_stats.get((pname_str or "").strip(), {}),
+                "savant":          {k: v for k, v in _sv.items() if k not in ("type","fullName")},
                 "tier":            "",
                 "acquisitionType": acq_type,
                 "draftRound":      draft_round,
@@ -1115,6 +1134,115 @@ def main():
                         "keeperEligible": keeper_by_name, "updated": updated})
 
     print(f"\n🏆  Done! Week {scoring_week}.")
+
+
+
+# ── Baseball Savant Percentile Rankings ───────────────────────────────────────
+def fetch_savant_percentiles(year=SEASON):
+    """
+    Fetch Baseball Savant percentile leaderboards for batters + pitchers.
+    Returns dict keyed by normalized player name → {metric: percentile, ...}
+    """
+    import requests as _req
+    import unicodedata, re
+
+    def normalize(name):
+        """Lowercase, strip accents, remove suffixes, collapse spaces."""
+        if not name:
+            return ""
+        n = unicodedata.normalize("NFD", name)
+        n = "".join(c for c in n if unicodedata.category(c) != "Mn")
+        n = re.sub(r"\b(jr|sr|ii|iii|iv)\.?\b", "", n, flags=re.IGNORECASE)
+        return re.sub(r"\s+", " ", n).strip().lower()
+
+    BATTER_METRICS = {
+        "xba": "xBA", "xslg": "xSLG", "xwoba": "xwOBA", "xobp": "xOBP",
+        "exit_velocity_avg": "ExitVelo", "launch_angle_avg": "LaunchAngle",
+        "barrel_batted_rate": "Barrel%", "hard_hit_rate": "HardHit%",
+        "sprint_speed": "SprintSpeed", "k_percent": "K%", "bb_percent": "BB%",
+        "whiff_percent": "Whiff%", "chase_rate": "Chase%",
+    }
+    PITCHER_METRICS = {
+        "xba": "xBA_vs", "xera": "xERA", "xslg": "xSLG_vs",
+        "exit_velocity_avg": "ExitVelo_vs", "barrel_batted_rate": "Barrel%_vs",
+        "hard_hit_rate": "HardHit%_vs", "k_percent": "K%", "bb_percent": "BB%",
+        "whiff_percent": "Whiff%", "chase_rate": "Chase%",
+        "fastball_avg_speed": "FBVelo", "spin_rate_formatted": "SpinRate",
+        "n_fastball_formatted": "FB%",
+    }
+
+    result = {}   # normalized_name → {"type": "batter"|"pitcher", metrics...}
+    mlbam_to_name = {}  # mlbam_id → canonical ESPN-style name
+
+    for player_type, metric_map in [("batter", BATTER_METRICS), ("pitcher", PITCHER_METRICS)]:
+        url = (f"https://baseballsavant.mlb.com/leaderboard/percentile-rankings"
+               f"?type={player_type}&year={year}&team=&pos=&min=q&csv=true")
+        try:
+            resp = _req.get(url, timeout=20,
+                            headers={"User-Agent": "Mozilla/5.0 (compatible; fantasy-dashboard/1.0)"})
+            print(f"  Savant {player_type} HTTP {resp.status_code}")
+            if resp.status_code != 200:
+                continue
+
+            # Parse CSV manually (no pandas dependency)
+            lines = resp.text.strip().split("\n")
+            if len(lines) < 2:
+                continue
+            headers = [h.strip().strip('"').lower() for h in lines[0].split(",")]
+
+            # Find column indices
+            name_col  = next((i for i, h in enumerate(headers) if h in ("last_name, first_name", "player_name")), None)
+            fname_col = next((i for i, h in enumerate(headers) if h in ("first_name",)), None)
+            lname_col = next((i for i, h in enumerate(headers) if h in ("last_name",)), None)
+            id_col    = next((i for i, h in enumerate(headers) if h in ("player_id", "mlbam_id", "id")), None)
+            pct_col   = {metric: i for i, h in enumerate(headers) for metric in [k for k in metric_map if k == h]}
+
+            count = 0
+            for line in lines[1:]:
+                cols = line.split(",")
+                if len(cols) < 3:
+                    continue
+
+                # Build player name
+                full_name = ""
+                if name_col is not None and "," in (cols[name_col] if name_col < len(cols) else ""):
+                    parts = cols[name_col].strip().strip('"').split(",")
+                    full_name = f"{parts[1].strip()} {parts[0].strip()}" if len(parts) >= 2 else parts[0].strip()
+                elif fname_col is not None and lname_col is not None:
+                    fn = cols[fname_col].strip().strip('"') if fname_col < len(cols) else ""
+                    ln = cols[lname_col].strip().strip('"') if lname_col < len(cols) else ""
+                    full_name = f"{fn} {ln}".strip()
+
+                if not full_name:
+                    continue
+
+                # MLB ID for linking
+                mlbam_id = cols[id_col].strip() if id_col is not None and id_col < len(cols) else ""
+
+                norm_key = normalize(full_name)
+                if norm_key not in result:
+                    result[norm_key] = {"type": player_type, "fullName": full_name, "mlbamId": mlbam_id}
+                    if mlbam_id:
+                        mlbam_to_name[mlbam_id] = full_name
+
+                # Extract percentile columns
+                for metric_key, metric_label in metric_map.items():
+                    col_idx = next((i for i, h in enumerate(headers) if h == metric_key), None)
+                    if col_idx is not None and col_idx < len(cols):
+                        try:
+                            val = float(cols[col_idx].strip())
+                            result[norm_key][metric_label] = int(round(val))
+                        except (ValueError, TypeError):
+                            pass
+
+                count += 1
+
+            print(f"  Savant {player_type}: {count} players parsed")
+
+        except Exception as e:
+            print(f"  ⚠️  Savant {player_type} fetch failed: {e}")
+
+    return result
 
 
 def fetch_draft_and_keepers(league, team_map):
