@@ -74,14 +74,17 @@ def extract_svhd(sbs_any, tname):
     """stat83 = authoritative SV+HLD. Fall back to max(60, 57)."""
     def get_score(sid):
         info = sbs_any.get(sid)
+        if info is None:
+            return 0.0
+        # ESPN returns plain number for live matchups, dict for completed
         if isinstance(info, dict):
             v = info.get('score', info.get('value'))
-            if v is not None:
-                try:
-                    return float(v)
-                except (TypeError, ValueError):
-                    pass
-        return 0.0
+        else:
+            v = info  # live: plain numeric value
+        try:
+            return float(v) if v is not None else 0.0
+        except (TypeError, ValueError):
+            return 0.0
     svhd83 = get_score('83')
     svhd60 = get_score('60')
     svhd57 = get_score('57')
@@ -473,10 +476,9 @@ def main():
                 return str(int(f)) if f == int(f) else str(round(f,1))
             except: return str(v)
 
-        # Probe ESPN to get the actual current DAILY scoring period.
-        # ESPN baseball uses daily periods (day 13 of season ≠ Week 3).
-        # The response always includes 'scoringPeriodId' at top level.
-        _live_period = matchup_period  # fallback
+        # Probe ESPN for the actual current DAILY scoring period.
+        # ESPN baseball uses daily periods (~day 14 mid-April), not weekly (3).
+        _live_period = matchup_period
         try:
             _probe = api_get(['mScoreboard'])
             _live_period = int(_probe.get('scoringPeriodId', matchup_period))
@@ -484,13 +486,7 @@ def main():
         except Exception as _pe:
             print(f"  ⚠️  Period probe failed ({_pe}), using matchup_period={matchup_period}")
 
-        # Try live period, then one before it, then matchup_period as last resort
-        _periods_to_try = list(dict.fromkeys([
-            _live_period,
-            _live_period - 1 if _live_period > 1 else _live_period,
-            matchup_period,
-        ]))
-
+        _periods_to_try = list(dict.fromkeys([_live_period, matchup_period]))
         for sp in _periods_to_try:
             try:
                 data = api_get(['mScoreboard'], {'scoringPeriodId': sp})
@@ -546,7 +542,7 @@ def main():
                 # FIX: fetch mBoxscore for the CURRENT FANTASY WEEK, not the ESPN period
                 cat_data = {}
                 try:
-                    box_data = api_get(['mBoxscore'], {'scoringPeriodId': sp})  # sp = live daily ESPN period
+                    box_data = api_get(['mBoxscore'], {'scoringPeriodId': sp})
                     if isinstance(box_data, dict):
                         for m in box_data.get('schedule', []):
                             mid = m.get('id')
@@ -577,9 +573,12 @@ def main():
 
                         sbs = cum.get('scoreByStat', {})
                         if sbs:
-                            non_zero = {str(k): round(float(v.get('score',0) or 0), 3)
+                            def _sbs_val(v):
+                            if isinstance(v, dict): return v.get('score', v.get('value', 0)) or 0
+                            return v or 0
+                        non_zero = {str(k): round(float(_sbs_val(v)), 3)
                                         for k, v in sbs.items()
-                                        if isinstance(v, dict) and (v.get('score') or 0) != 0}
+                                        if _sbs_val(v) != 0}
                             print(f"      [{tname}] statIds: {non_zero}")
 
                         sbs_any = {str(k): v for k, v in sbs.items()}
@@ -589,17 +588,23 @@ def main():
                         for stat_id, info in sbs_any.items():
                             lbl = STAT_KEYS.get(stat_id)
                             if lbl and lbl not in ('SV', 'HLD', 'SVHD'):
+                                # Live matchups: plain number. Completed: dict with 'score' key
                                 if isinstance(info, dict):
                                     v = info.get('score', info.get('value'))
-                                    if v is not None:
-                                        try: stats[lbl] = float(v)
-                                        except: pass
+                                else:
+                                    v = info  # plain numeric for live
+                                if v is not None:
+                                    try: stats[lbl] = float(v)
+                                    except: pass
 
                         if len(stats) <= 1 and box_side:
                             for stat_id, info in box_side.get('cumulativeScore', {}).get('scoreByStat', {}).items():
                                 lbl = STAT_KEYS.get(str(stat_id))
                                 if lbl and lbl not in ('SV', 'HLD', 'SVHD'):
-                                    v = info.get('score', info.get('value'))
+                                    if isinstance(info, dict):
+                                        v = info.get('score', info.get('value'))
+                                    else:
+                                        v = info  # plain numeric for live
                                     if v is not None:
                                         try: stats[lbl] = float(v)
                                         except: pass
@@ -698,8 +703,11 @@ def main():
                     stats['SVHD'] = extract_svhd(sbs_norm, tname_local)
                     for sid, info in sbs_norm.items():
                         lbl = SKEYS.get(sid)
-                        if lbl and lbl not in ('SV', 'HLD', 'SVHD') and isinstance(info, dict):
-                            v = info.get('score', info.get('value'))
+                        if lbl and lbl not in ('SV', 'HLD', 'SVHD'):
+                            if isinstance(info, dict):
+                                v = info.get('score', info.get('value'))
+                            else:
+                                v = info  # plain numeric for live
                             if v is not None:
                                 try:
                                     fv = float(v)
