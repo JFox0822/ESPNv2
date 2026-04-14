@@ -880,28 +880,35 @@ def main():
                     pname = (ppool.get('player') or {}).get('fullName', '')
                     all_player_stats = (ppool.get('player') or {}).get('stats', [])
 
-                    # ── Extract actual 2026 YTD stats per player (statSplitTypeId=0, seasonId=SEASON) ──
+                    # ── Extract actual 2026 YTD stats per player ──
+                    # Try statSplitTypeId=0 (full season) first, fall back to 1 (last 7 days)
                     if pname and pname not in player_season_stats:
-                        for stat_entry in all_player_stats:
-                            if stat_entry.get('statSplitTypeId') == 0 and stat_entry.get('seasonId') == SEASON:
-                                sbs = stat_entry.get('stats', {})
-                                pstats = {}
-                                for sid, val in sbs.items():
-                                    lbl = PROJ_STAT_KEYS.get(str(sid))
-                                    if lbl is None or val is None:
-                                        continue
-                                    try:
-                                        v = float(val)
-                                        if lbl == 'IP':
-                                            outs = int(round(v))
-                                            pstats['IP'] = float(f"{outs//3}.{outs%3}")
-                                        elif lbl in RATE_STATS:
-                                            pstats[lbl] = round(v, 3)
-                                        else:
-                                            pstats[lbl] = int(round(v))
-                                    except: pass
-                                if any(v != 0 for v in pstats.values()):
-                                    player_season_stats[pname] = pstats
+                        def _parse_sbs(sbs):
+                            pstats = {}
+                            for sid, val in sbs.items():
+                                lbl = PROJ_STAT_KEYS.get(str(sid))
+                                if lbl is None or val is None:
+                                    continue
+                                try:
+                                    v = float(val)
+                                    if lbl == 'IP':
+                                        outs = int(round(v))
+                                        pstats['IP'] = float(f"{outs//3}.{outs%3}")
+                                    elif lbl in RATE_STATS:
+                                        pstats[lbl] = round(v, 3)
+                                    else:
+                                        pstats[lbl] = int(round(v))
+                                except: pass
+                            return pstats
+                        # Prefer full-season (0), then last-7 (1) as fallback for recently active players
+                        for _split in [0, 1]:
+                            for stat_entry in all_player_stats:
+                                if stat_entry.get('statSplitTypeId') == _split and stat_entry.get('seasonId') == SEASON:
+                                    pstats = _parse_sbs(stat_entry.get('stats', {}))
+                                    if any(v != 0 for v in pstats.values()):
+                                        player_season_stats[pname] = pstats
+                                    break
+                            if pname in player_season_stats:
                                 break
 
                     # ── Projected team stats (active slots only) ──
