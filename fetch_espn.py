@@ -473,7 +473,13 @@ def main():
                 return str(int(f)) if f == int(f) else str(round(f,1))
             except: return str(v)
 
-        for sp in [1, 2]:
+        # Try current live scoring period first, then fallback to earlier periods
+        _periods_to_try = list(dict.fromkeys([
+            matchup_period,
+            matchup_period - 1 if matchup_period > 1 else 1,
+            1, 2
+        ]))
+        for sp in _periods_to_try:
             try:
                 data = api_get(['mScoreboard'], {'scoringPeriodId': sp})
                 if not isinstance(data, dict):
@@ -528,7 +534,7 @@ def main():
                 # FIX: fetch mBoxscore for the CURRENT FANTASY WEEK, not the ESPN period
                 cat_data = {}
                 try:
-                    box_data = api_get(['mBoxscore'], {'scoringPeriodId': current_sp})
+                    box_data = api_get(['mBoxscore'], {'scoringPeriodId': sp})  # sp = current live ESPN daily period
                     if isinstance(box_data, dict):
                         for m in box_data.get('schedule', []):
                             mid = m.get('id')
