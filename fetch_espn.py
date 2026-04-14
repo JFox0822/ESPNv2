@@ -573,10 +573,10 @@ def main():
 
                         sbs = cum.get('scoreByStat', {})
                         if sbs:
-                            def _sbs_val(v):
-                            if isinstance(v, dict): return v.get('score', v.get('value', 0)) or 0
-                            return v or 0
-                        non_zero = {str(k): round(float(_sbs_val(v)), 3)
+                            def _sbs_val(val):
+                                if isinstance(val, dict): return val.get('score', val.get('value', 0)) or 0
+                                return val or 0
+                            non_zero = {str(k): round(float(_sbs_val(v)), 3)
                                         for k, v in sbs.items()
                                         if _sbs_val(v) != 0}
                             print(f"      [{tname}] statIds: {non_zero}")
