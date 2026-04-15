@@ -425,11 +425,13 @@ tbody tr.cut{border-top:2px dashed var(--border2)!important}
   <div class="page-tabs">
     <button class="page-tab active" data-panel="standings">Standings</button>
     <button class="page-tab" data-panel="matchups">Matchups</button>
+    <button class="page-tab" data-panel="elo2026">ELO Ratings</button>
     <button class="page-tab" data-panel="luck2026">2026 Luck Index</button>
     <button class="page-tab" data-panel="koh">In-Season Awards</button>
   </div>
   <div id="panel-standings" class="panel active"><div id="std-c"><div class="state">Loading…</div></div></div>
   <div id="panel-matchups"  class="panel"><div id="mu-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-elo2026"   class="panel"><div id="elo26-c"><div class="state">Loading…</div></div></div>
   <div id="panel-luck2026" class="panel"><div id="luck26-c"><div class="state">Loading…</div></div></div>
   <div id="panel-koh" class="panel">
     <div class="sub-nav">
@@ -487,13 +489,12 @@ tbody tr.cut{border-top:2px dashed var(--border2)!important}
   </div>
   <div id="panel-analytics" class="panel">
     <div class="sub-nav">
-      <button class="sub-btn active" data-sub="an-elo">ELO Ratings</button>
-      <button class="sub-btn" data-sub="an-luck">Luck Index</button>
+      <button class="sub-btn active" data-sub="an-luck">Luck Index</button>
       <button class="sub-btn" data-sub="an-sos">Strength of Schedule</button>
       <button class="sub-btn" data-sub="an-cat">Category W-L</button>
     </div>
-    <div id="an-elo"  class="sub-panel active"></div>
-    <div id="an-luck" class="sub-panel"></div>
+    <div id="an-elo"  class="sub-panel" style="display:none"></div>
+    <div id="an-luck" class="sub-panel active"></div>
     <div id="an-sos"  class="sub-panel"></div>
     <div id="an-cat"  class="sub-panel"></div>
   </div>
@@ -1698,27 +1699,122 @@ function renderHMu(mu) {
 }
 
 // ═══ ANALYTICS ═══
-function renderAnalytics(){renderELO();renderLuck();renderSOS();renderCatDom();}
+function renderAnalytics(){renderLuck();renderSOS();renderCatDom();}
 
-function renderELO(){
-  const elo=Object.entries(RB.currentElo||{}).sort((a,b)=>b[1]-a[1]);
-  const max=elo[0]?.[1]||1600,min=elo[elo.length-1]?.[1]||1300;
-  const cards=elo.map(([team,rating])=>{
-    const pct=((rating-min)/(max-min)*100).toFixed(0);
-    const col=rating>=1560?'var(--green)':rating>=1490?'var(--blue)':rating>=1430?'var(--ink2)':'var(--red)';
-    const lk=RB.luckAllTime?.find(x=>x.team===team);
-    const mine=isMineExact(team);
-    return`<div class="elo-card ${mine?'mine':''}"><div class="elo-name ${mine?'wt':''}">${team}</div><div class="elo-val" style="color:${col}">${rating.toFixed(0)}</div><div class="elo-sub">All-Play: ${lk?`${(lk.allPlayPCT*100).toFixed(1)}%`:'—'}</div><div class="elo-bar"><div class="elo-fill" style="width:${pct}%;background:${col}"></div></div></div>`;
-  }).join('');
-  const active=['TC','Sponny','Greene','Boyce','Mion','Jacob','Bert','Slater','Tim','Schoon','Eriole','Leo'];
-  const hist=RB.elo||[];
-  const peakRows=active.map(team=>{
-    const te=hist.filter(x=>x.team===team);if(!te.length)return'';
-    const peak=te.reduce((a,b)=>a.elo>b.elo?a:b);
-    const cur=RB.currentElo?.[team]||0, col=cur>=1500?'var(--green)':cur>=1440?'var(--ink2)':'var(--red)', chg=cur-peak.elo, mine=isMineExact(team);
-    return`<tr class="${mine?'mine':''}"><td class="${mine?'wt':''} bt">${team}</td><td class="r" style="color:${col};font-family:var(--fm)">${cur.toFixed(0)}</td><td class="r dt" style="font-family:var(--fm)">${peak.elo.toFixed(0)} (${peak.season})</td><td class="r" style="color:${chg>=0?'var(--green)':'var(--red)'};font-family:var(--fm)">${chg>0?'+':''}${chg.toFixed(0)}</td></tr>`;
-  }).filter(Boolean).join('');
-  document.getElementById('an-elo').innerHTML=`${sh('ELO Power Ratings','Regressed 33% each offseason · 2013–2025')}<div class="elo-grid">${cards}</div>${sh('Career Peak vs Current','')} <div class="tw"><table><thead><tr><th>Owner</th><th class="r">Current</th><th class="r">Peak (Year)</th><th class="r">Δ Since Peak</th></tr></thead><tbody>${peakRows}</tbody></table></div>`;
+// ── Live 2026 ELO (Season tab) ─────────────────────────────────────────────
+async function renderELO2026() {
+  const el = document.getElementById('elo26-c');
+  if (!el) return;
+  el.innerHTML = '<div class="state">Computing 2026 ELO ratings…</div>';
+
+  try {
+    // Step 1: regress 2025 final ELO 33% toward 1500 for 2026 starting values
+    const K = 32;
+    const currentElos = {};
+    const ACTIVE = ['TC','Sponny','Greene','Boyce','Mion','Jacob','Bert','Slater','Tim','Schoon','Eriole','Leo'];
+    ACTIVE.forEach(t => {
+      const base = RB.currentElo?.[t] || 1500;
+      currentElos[t] = base + (1500 - base) * 0.33;
+    });
+
+    // Step 2: apply each completed 2026 matchup chronologically
+    let weeksProcessed = 0;
+    try {
+      const hdata = await load('history_matchups.json');
+      const mu26 = (hdata.matchups || [])
+        .filter(m => m.season === 2026 && m.winner !== 'UNDECIDED')
+        .sort((a, b) => (a.week||0) - (b.week||0));
+
+      weeksProcessed = new Set(mu26.map(m => m.week)).size;
+
+      for (const m of mu26) {
+        const home = m.homeRB || toRB(m.home) || m.home;
+        const away = m.awayRB || toRB(m.away) || m.away;
+        if (!home || !away) continue;
+        if (!(home in currentElos)) currentElos[home] = 1500;
+        if (!(away in currentElos)) currentElos[away] = 1500;
+
+        const eloH = currentElos[home];
+        const eloA = currentElos[away];
+        const expH  = 1 / (1 + Math.pow(10, (eloA - eloH) / 400));
+        const hw = m.homeCatW || 0, aw = m.awayCatW || 0;
+        const scoreH = hw > aw ? 1 : hw < aw ? 0 : 0.5;
+
+        currentElos[home] = eloH + K * (scoreH - expH);
+        currentElos[away]  = eloA + K * ((1 - scoreH) - (1 - expH));
+      }
+    } catch(_) {}
+
+    // Build sorted leaderboard
+    const sorted = ACTIVE
+      .filter(t => t in currentElos)
+      .map(t => ({ team: t, elo: currentElos[t] }))
+      .sort((a, b) => b.elo - a.elo);
+
+    const min = sorted[sorted.length - 1]?.elo || 1400;
+    const max = sorted[0]?.elo || 1600;
+
+    const cards = sorted.map((x, i) => {
+      const { team, elo } = x;
+      const pct = ((elo - min) / (max - min + 1) * 100).toFixed(0);
+      const col = elo >= 1560 ? 'var(--green)' : elo >= 1510 ? 'var(--blue)' : elo >= 1460 ? 'var(--ink2)' : 'var(--red)';
+      const tier = elo >= 1560 ? 'Elite' : elo >= 1510 ? 'Strong' : elo >= 1460 ? 'Average' : 'Struggling';
+      const start = currentElos[team] !== undefined ? (RB.currentElo?.[team] || 1500) + (1500 - (RB.currentElo?.[team] || 1500)) * 0.33 : 1500;
+      const delta = elo - start;
+      const mine = isMineExact(team);
+      return `<div class="elo-card ${mine?'mine':''}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <div>
+            <div style="font-family:var(--fm);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:2px">#${i+1}</div>
+            <div class="elo-name ${mine?'wt':''}">${team}</div>
+          </div>
+          <div style="text-align:right">
+            <div class="elo-val" style="color:${col}">${elo.toFixed(0)}</div>
+            <div style="font-family:var(--fm);font-size:9px;color:${delta>=0?'var(--green)':'var(--red)'}">${delta>=0?'+':''}${delta.toFixed(0)} from start</div>
+          </div>
+        </div>
+        <div class="elo-sub" style="margin-top:4px">${tier} · 2026 Start: ${start.toFixed(0)}</div>
+        <div class="elo-bar"><div class="elo-fill" style="width:${pct}%;background:${col}"></div></div>
+      </div>`;
+    }).join('');
+
+    // Peak comparison table: 2026 current vs all-time peak
+    const hist = RB.elo || [];
+    const peakRows = sorted.map(({ team, elo }) => {
+      const te = hist.filter(x => x.team === team);
+      if (!te.length) return '';
+      const peak = te.reduce((a, b) => a.elo > b.elo ? a : b);
+      const delta = elo - peak.elo;
+      const mine = isMineExact(team);
+      const col = elo >= 1510 ? 'var(--green)' : elo >= 1460 ? 'var(--ink2)' : 'var(--red)';
+      return `<tr class="${mine?'mine':''}">
+        <td class="${mine?'wt':''} bt">${team}</td>
+        <td class="r" style="color:${col};font-family:var(--fm)">${elo.toFixed(0)}</td>
+        <td class="r dt" style="font-family:var(--fm)">${peak.elo.toFixed(0)} (${peak.season})</td>
+        <td class="r" style="color:${delta>=0?'var(--green)':'var(--red)'};font-family:var(--fm)">${delta>0?'+':''}${delta.toFixed(0)}</td>
+      </tr>`;
+    }).filter(Boolean).join('');
+
+    const weekNote = weeksProcessed > 0
+      ? `Updated through Week ${weeksProcessed} · K=32 · 33% regression applied from 2025 final ratings`
+      : `Pre-season — no 2026 matchups processed yet · showing regressed 2025 starting values`;
+
+    el.innerHTML = `
+      ${sh('2026 ELO Ratings', weekNote)}
+      <div style="font-family:var(--fm);font-size:8px;color:var(--ink3);margin-bottom:20px;line-height:1.8">
+        Each win vs a higher-rated team earns more points. Each loss to a weaker team costs more.
+        Above 1560 = Elite · Above 1510 = Strong · Below 1460 = Struggling.
+      </div>
+      <div class="elo-grid">${cards}</div>
+      <div style="margin-top:28px">${sh('2026 Current vs All-Time Peak', '')}</div>
+      <div class="tw"><table>
+        <thead><tr><th>Owner</th><th class="r">2026 ELO</th><th class="r">All-Time Peak</th><th class="r">Δ vs Peak</th></tr></thead>
+        <tbody>${peakRows}</tbody>
+      </table></div>`;
+
+  } catch(e) {
+    el.innerHTML = `<div class="state err">⚠ ${e.message}</div>`;
+  }
 }
 
 async function renderLuck(){
@@ -2262,15 +2358,14 @@ function renderHOF(){
     const rows = filtered.map(p=>{
       const mine=isMineExact(p.team);
       const rankCol=p.allTimeRank===1?'var(--gold)':p.allTimeRank===2?'#94a3b8':p.allTimeRank===3?'#cd7f32':'var(--ink3)';
-      // Stat chips for hitting/pitching
       const isHitter = (p.IP||0)===0 && (p.Kpitch||0)===0;
       let statsHtml='';
       if(isHitter){
         const hs=[['R',p.R],['HR',p.HR],['RBI',p.RBI],['SB',p.SB],['K',p.K],['AVG',p.AVG],['OPS',p.OPS]];
-        statsHtml=hs.filter(([,v])=>v&&v!==0).map(([k,v])=>`<span style="font-family:var(--fm);font-size:8px;color:var(--ink3);padding:1px 6px;background:var(--bg2);border-radius:3px">${k}: <b style="color:${v>0?'var(--green)':'var(--red)'}">+${v>0?v.toFixed(1):v.toFixed(1)}</b></span>`).join(' ');
+        statsHtml=hs.filter(([,v])=>v&&v!==0).map(([k,v])=>`<span style="font-family:var(--fm);font-size:8px;color:var(--ink3);padding:1px 6px;background:var(--bg2);border-radius:3px">${k}: <b style="color:${v>0?'var(--green)':'var(--red)'}">${v>0?'+':''}${v.toFixed(1)}</b></span>`).join(' ');
       } else {
         const ps=[['IP',p.IP],['H',p.H],['K',p.Kpitch],['QS',p.QS],['ERA',p.ERA],['WHIP',p.WHIP],['SV/HD',p.SVHD]];
-        statsHtml=ps.filter(([,v])=>v&&v!==0).map(([k,v])=>`<span style="font-family:var(--fm);font-size:8px;color:var(--ink3);padding:1px 6px;background:var(--bg2);border-radius:3px">${k}: <b style="color:${v>0?'var(--green)':'var(--red)'}">+${v>0?v.toFixed(1):v.toFixed(1)}</b></span>`).join(' ');
+        statsHtml=ps.filter(([,v])=>v&&v!==0).map(([k,v])=>`<span style="font-family:var(--fm);font-size:8px;color:var(--ink3);padding:1px 6px;background:var(--bg2);border-radius:3px">${k}: <b style="color:${v>0?'var(--green)':'var(--red)'}">${v>0?'+':''}${v.toFixed(1)}</b></span>`).join(' ');
       }
       return`<tr>
         <td class="rk" style="color:${rankCol};font-size:16px">${p.allTimeRank}</td>
@@ -2301,21 +2396,104 @@ function renderHOF(){
     document.getElementById('hof-tm').addEventListener('change',e=>{filtTeam=e.target.value;draw();});
   }
 
+  // ── Franchise HOF view ──────────────────────────────────────────────────────
+  function buildFranchiseView(teamKey) {
+    const fEl = document.getElementById('hof-franchise-body');
+    if (!fEl) return;
+    if (!teamKey) {
+      fEl.innerHTML = '<div style="font-family:var(--fm);font-size:10px;color:var(--ink3);padding:12px 0">Select a team above to view their Hall of Fame players.</div>';
+      return;
+    }
+    const players = allRanked.filter(p => p.team === teamKey).sort((a,b) => a.allTimeRank - b.allTimeRank);
+    const acumen = summary.find(t => t.team === teamKey);
+    const mine = isMineExact(teamKey);
+    const borderCol = mine ? 'var(--green)' : 'var(--blue)';
+
+    if (!players.length) {
+      fEl.innerHTML = '<div style="font-family:var(--fm);font-size:10px;color:var(--ink3);padding:12px 0">No player-season data found for this team.</div>';
+      return;
+    }
+
+    // Summary header banner
+    const banner = acumen ? `
+      <div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px">
+        ${[
+          ['All-Star Seasons', acumen.allStar],
+          ['MVP Seasons', acumen.mvp],
+          ['#1 Overall', acumen.num1||0],
+          ['HOF Players', players.length],
+          ['Best Score', acumen.bestScore?.toFixed(2)||'—'],
+        ].map(([lbl,val])=>`
+          <div style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:10px 16px;text-align:center;min-width:80px">
+            <div style="font-family:var(--fd);font-size:22px;font-weight:900;color:${mine?'var(--green)':'var(--gold)'}">${val}</div>
+            <div style="font-family:var(--fm);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:2px">${lbl}</div>
+          </div>`).join('')}
+      </div>` : '';
+
+    // Player cards
+    const cards = players.map((p, i) => {
+      const isHitter = (p.IP||0)===0 && (p.Kpitch||0)===0;
+      const statPairs = isHitter
+        ? [['R',p.R],['HR',p.HR],['RBI',p.RBI],['SB',p.SB],['AVG',p.AVG],['OPS',p.OPS]]
+        : [['IP',p.IP],['K(pit)',p.Kpitch],['QS',p.QS],['ERA',p.ERA],['WHIP',p.WHIP],['SV/HD',p.SVHD]];
+
+      const chips = statPairs.filter(([,v])=>v&&v!==0).map(([k,v])=>`
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:5px 9px;text-align:center">
+          <div style="font-family:var(--fm);font-size:8px;color:var(--ink3)">${k}</div>
+          <div style="font-family:var(--fd);font-size:14px;font-weight:700;color:${v>0?'var(--green)':'var(--red)'}">${v>0?'+':''}${Math.abs(v)<1?v.toFixed(3):v.toFixed(1)}</div>
+        </div>`).join('');
+
+      const rankCol = p.allTimeRank===1?'var(--gold)':p.allTimeRank===2?'#94a3b8':p.allTimeRank===3?'#cd7f32':'var(--ink2)';
+      const medal = p.allTimeRank===1?'🥇':p.allTimeRank===2?'🥈':p.allTimeRank===3?'🥉':'';
+
+      return `
+        <div style="background:var(--bg1);border:1px solid ${i===0?borderCol:'var(--border)'};border-radius:8px;padding:14px 18px;margin-bottom:10px">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap">
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="font-family:var(--fd);font-size:28px;font-weight:900;color:${rankCol};line-height:1">#${p.allTimeRank}${medal?` ${medal}`:''}</div>
+              <div>
+                <div style="font-family:var(--fd);font-size:18px;font-weight:800">${p.player}</div>
+                <div style="font-family:var(--fm);font-size:9px;color:var(--ink3);margin-top:2px">${p.year} · ${isHitter?'Hitter':'Pitcher'}</div>
+              </div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-family:var(--fd);font-size:28px;font-weight:900;color:var(--gold)">${p.score.toFixed(2)}</div>
+              <div style="font-family:var(--fm);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)">Rating</div>
+            </div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">${chips}</div>
+        </div>`;
+    }).join('');
+
+    fEl.innerHTML = banner + cards;
+  }
+
+  // ── Build full DOM ─────────────────────────────────────────────────────────
+  const defaultFranchise = MY_TEAM && teams.includes(MY_TEAM) ? MY_TEAM : teams[0] || '';
+  const franchiseOpts = teams.map(t=>`<option value="${t}" ${t===defaultFranchise?'selected':''}>${t}</option>`).join('');
   const sumRows=summary.map(t=>{const mine=isMineExact(t.team);return`<tr class="${mine?'mine':''}"><td class="${mine?'wt':''} bt">${t.team}</td><td class="r dt">${t.allStar}</td><td class="r dt">${t.mvp}</td><td class="r dt">${t.num1||0}</td><td class="r dt" style="font-size:11px">${t.bestSeason||'—'}</td><td class="r" style="font-family:var(--fd);font-size:16px;color:var(--gold)">${t.bestScore.toFixed(2)}</td></tr>`;}).join('');
 
   document.getElementById('hof-c').innerHTML=`
-    ${sh('Player Rater Hall of Fame','All-time top single-season scores · positive values = above-average contribution')}
+    ${sh('Franchise HOF','Select a team to see their all-time player-season Hall of Fame')}
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap">
+      <label style="font-family:var(--fm);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)">Franchise</label>
+      <select class="dropdown" id="hof-franchise-sel" style="min-width:180px;font-size:11px;padding:5px 12px">${franchiseOpts}</select>
+    </div>
+    <div id="hof-franchise-body"></div>
+
+    <div style="margin-top:40px">${sh('Player Rater Leaderboard','All-time top single-season scores · positive values = above-average contribution')}</div>
     <div id="hof-players"><div class="state">Loading…</div></div>
+
     <div style="margin-top:32px">${sh('Team Acumen','All-star &amp; MVP seasons per franchise')}</div>
     <div class="tw"><table>
       <thead><tr><th>Owner</th><th class="r">All-Stars</th><th class="r">MVPs</th><th class="r">#1 Overall</th><th class="r">Best Season</th><th class="r">Best Score</th></tr></thead>
       <tbody>${sumRows}</tbody>
     </table></div>`;
 
+  document.getElementById('hof-franchise-sel').addEventListener('change', e => buildFranchiseView(e.target.value));
+  buildFranchiseView(defaultFranchise);
   draw();
 }
-
-
 
 // ═══ DRAFT + KEEPERS ═══
 async function renderDraft() {
@@ -3707,7 +3885,7 @@ function makeSortable(table) {
     else populateTeamPicker(null);
   } catch(_){ populateTeamPicker(null); }
 
-  await Promise.all([renderStandings(),renderMatchups(),renderLuck2026(),renderPowerRankings(),renderTeamStats(),renderTeamStats2026(),renderRosters(),renderDraft(),renderKeepers()]);
+  await Promise.all([renderStandings(),renderMatchups(),renderELO2026(),renderLuck2026(),renderPowerRankings(),renderTeamStats(),renderTeamStats2026(),renderRosters(),renderDraft(),renderKeepers()]);
   loadHistory();
 })();
 </script>
