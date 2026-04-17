@@ -915,7 +915,7 @@
         },
         {
           "name": "Kris Bubic",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1126,28 +1126,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Royce Lewis",
-          "slot": "BE",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
-          "stats": {
-            "AVG": 0.222,
-            "HR": 2,
-            "OPS": 0.822,
-            "R": 6,
-            "RBI": 8,
-            "SB": 2,
-            "Kbat": 12
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 24,
-          "keeperEligible": true
-        },
-        {
           "name": "Spencer Schwellenbach",
           "slot": "IL",
           "position": "SP",
@@ -1270,6 +1248,20 @@
           "eligible": "RF",
           "isPitcher": false,
           "injStatus": "SUSPENSION",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Nick Martinez",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -7157,7 +7149,7 @@
         },
         {
           "name": "Lawrence Butler",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7339,7 +7331,7 @@
         },
         {
           "name": "Willson Contreras",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7442,5 +7434,5 @@
       ]
     }
   ],
-  "updated": "2026-04-17T14:44:15Z"
+  "updated": "2026-04-17T17:37:17Z"
 }
