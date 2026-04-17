@@ -871,7 +871,7 @@
         },
         {
           "name": "Spencer Torkelson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1221,7 +1221,7 @@
         },
         {
           "name": "Josh Bell",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -1509,13 +1509,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.212,
+            "AVG": 0.206,
             "HR": 4,
-            "OPS": 0.761,
+            "OPS": 0.749,
             "R": 8,
             "RBI": 8,
             "SB": 0,
-            "Kbat": 26
+            "Kbat": 27
           },
           "savant": {},
           "tier": "",
@@ -2208,7 +2208,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 5.0,
             "H": 3,
@@ -2651,10 +2651,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.2,
+            "AVG": 0.21,
             "HR": 4,
-            "OPS": 0.763,
-            "R": 17,
+            "OPS": 0.778,
+            "R": 19,
             "RBI": 11,
             "SB": 1,
             "Kbat": 19
@@ -2673,13 +2673,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.236,
+            "AVG": 0.227,
             "HR": 1,
-            "OPS": 0.582,
+            "OPS": 0.559,
             "R": 12,
             "RBI": 5,
             "SB": 4,
-            "Kbat": 23
+            "Kbat": 24
           },
           "savant": {},
           "tier": "",
@@ -2695,13 +2695,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.148,
+            "AVG": 0.156,
             "HR": 0,
-            "OPS": 0.434,
-            "R": 7,
+            "OPS": 0.454,
+            "R": 8,
             "RBI": 3,
             "SB": 0,
-            "Kbat": 14
+            "Kbat": 15
           },
           "savant": {},
           "tier": "",
@@ -2717,10 +2717,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.271,
+            "AVG": 0.28,
             "HR": 4,
-            "OPS": 0.928,
-            "R": 7,
+            "OPS": 0.94,
+            "R": 8,
             "RBI": 4,
             "SB": 0,
             "Kbat": 11
@@ -2805,11 +2805,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 16.2,
-            "H": 10,
-            "WHIP": 1.14,
-            "ERA": 1.62,
-            "K": 13,
+            "IP": 22.2,
+            "H": 18,
+            "WHIP": 1.279,
+            "ERA": 2.382,
+            "K": 17,
             "SVHD": 0,
             "QS": 1
           },
@@ -3713,9 +3713,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.184,
+            "AVG": 0.19,
             "HR": 1,
-            "OPS": 0.577,
+            "OPS": 0.593,
             "R": 11,
             "RBI": 1,
             "SB": 2,
@@ -4025,7 +4025,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -4063,13 +4063,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.194,
+            "AVG": 0.2,
             "HR": 1,
-            "OPS": 0.525,
-            "R": 2,
-            "RBI": 7,
+            "OPS": 0.545,
+            "R": 3,
+            "RBI": 8,
             "SB": 0,
-            "Kbat": 15
+            "Kbat": 16
           },
           "savant": {},
           "tier": "",
@@ -4107,9 +4107,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.241,
+            "AVG": 0.23,
             "HR": 2,
-            "OPS": 0.716,
+            "OPS": 0.684,
             "R": 9,
             "RBI": 7,
             "SB": 2,
@@ -4514,13 +4514,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.261,
+            "AVG": 0.269,
             "HR": 0,
-            "OPS": 0.654,
-            "R": 3,
-            "RBI": 1,
+            "OPS": 0.656,
+            "R": 4,
+            "RBI": 2,
             "SB": 0,
-            "Kbat": 7
+            "Kbat": 8
           },
           "savant": {},
           "tier": "",
@@ -5708,11 +5708,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.324,
-            "HR": 2,
-            "OPS": 0.917,
-            "R": 12,
-            "RBI": 18,
+            "AVG": 0.347,
+            "HR": 3,
+            "OPS": 0.985,
+            "R": 13,
+            "RBI": 20,
             "SB": 6,
             "Kbat": 9
           },
@@ -5818,13 +5818,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.244,
             "HR": 2,
-            "OPS": 0.659,
-            "R": 4,
+            "OPS": 0.652,
+            "R": 5,
             "RBI": 9,
             "SB": 1,
-            "Kbat": 14
+            "Kbat": 15
           },
           "savant": {},
           "tier": "",
@@ -6189,7 +6189,7 @@
       "players": [
         {
           "name": "Rafael Devers",
-          "slot": "BE",
+          "slot": "1B",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6255,7 +6255,7 @@
         },
         {
           "name": "Cal Raleigh",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6415,13 +6415,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.228,
+            "AVG": 0.232,
             "HR": 1,
-            "OPS": 0.574,
+            "OPS": 0.578,
             "R": 7,
             "RBI": 9,
             "SB": 0,
-            "Kbat": 21
+            "Kbat": 22
           },
           "savant": {},
           "tier": "",
@@ -6497,7 +6497,7 @@
         },
         {
           "name": "Emilio Pagan",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6591,11 +6591,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 14.0,
-            "H": 17,
-            "WHIP": 1.714,
-            "ERA": 7.071,
-            "K": 19,
+            "IP": 17.1,
+            "H": 23,
+            "WHIP": 1.904,
+            "ERA": 8.827,
+            "K": 22,
             "SVHD": 0,
             "QS": 1
           },
@@ -6651,7 +6651,7 @@
         },
         {
           "name": "Trent Grisham",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6715,7 +6715,7 @@
         },
         {
           "name": "Hyeseong Kim",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6729,7 +6729,7 @@
         },
         {
           "name": "Brandon Marsh",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6743,7 +6743,7 @@
         },
         {
           "name": "Jeremiah Jackson",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6771,7 +6771,7 @@
         },
         {
           "name": "Jakob Junis",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7315,9 +7315,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.151,
+            "AVG": 0.161,
             "HR": 1,
-            "OPS": 0.464,
+            "OPS": 0.474,
             "R": 5,
             "RBI": 3,
             "SB": 5,
@@ -7335,7 +7335,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.298,
             "HR": 3,
@@ -7434,5 +7434,5 @@
       ]
     }
   ],
-  "updated": "2026-04-17T17:37:17Z"
+  "updated": "2026-04-17T20:09:58Z"
 }
