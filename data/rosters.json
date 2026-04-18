@@ -1256,13 +1256,21 @@
           "keeperEligible": false
         },
         {
-          "name": "Nick Martinez",
+          "name": "Luis Severino",
           "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {},
+          "stats": {
+            "IP": 19.1,
+            "H": 17,
+            "WHIP": 1.707,
+            "ERA": 5.586,
+            "K": 24,
+            "SVHD": 0,
+            "QS": 0
+          },
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -3142,7 +3150,7 @@
         },
         {
           "name": "Wyatt Langford",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3434,7 +3442,7 @@
         },
         {
           "name": "Ramon Laureano",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3977,7 +3985,7 @@
         },
         {
           "name": "Andrew Abbott",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4035,7 +4043,7 @@
         },
         {
           "name": "Jack Leiter",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4261,7 +4269,7 @@
         },
         {
           "name": "Taj Bradley",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4283,7 +4291,7 @@
         },
         {
           "name": "Luis Gil",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5746,7 +5754,7 @@
         },
         {
           "name": "Michael Harris II",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5966,7 +5974,7 @@
         },
         {
           "name": "Jacob Wilson",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5988,7 +5996,7 @@
         },
         {
           "name": "Brendan Donovan",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6010,7 +6018,7 @@
         },
         {
           "name": "Ernie Clement",
-          "slot": "SS",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6153,21 +6161,13 @@
           "keeperEligible": false
         },
         {
-          "name": "J.T. Realmuto",
-          "slot": "BE",
-          "position": "C",
-          "eligible": "C",
-          "isPitcher": false,
+          "name": "Erick Fedde",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.292,
-            "HR": 1,
-            "OPS": 0.778,
-            "R": 5,
-            "RBI": 4,
-            "SB": 0,
-            "Kbat": 11
-          },
+          "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -6431,7 +6431,7 @@
         },
         {
           "name": "Shota Imanaga",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6563,7 +6563,7 @@
         },
         {
           "name": "Zac Gallen",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6953,7 +6953,7 @@
         },
         {
           "name": "Jorge Polanco",
-          "slot": "BE",
+          "slot": "2B",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7411,7 +7411,7 @@
         },
         {
           "name": "Matt McLain",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7434,5 +7434,5 @@
       ]
     }
   ],
-  "updated": "2026-04-18T11:10:18Z"
+  "updated": "2026-04-18T14:25:55Z"
 }
