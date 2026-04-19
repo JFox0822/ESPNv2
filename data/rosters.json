@@ -3150,7 +3150,7 @@
         },
         {
           "name": "Wyatt Langford",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3282,11 +3282,11 @@
         },
         {
           "name": "Kyle Stowers",
-          "slot": "IL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3464,7 +3464,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3570,7 +3570,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3621,20 +3621,6 @@
           "eligible": "SP",
           "isPitcher": true,
           "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Steven Matz",
-          "slot": "SP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -7410,5 +7396,5 @@
       ]
     }
   ],
-  "updated": "2026-04-19T13:14:43Z"
+  "updated": "2026-04-19T14:47:55Z"
 }
