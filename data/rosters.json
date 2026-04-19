@@ -871,7 +871,7 @@
         },
         {
           "name": "Spencer Torkelson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1061,7 +1061,7 @@
         },
         {
           "name": "Brandon Lowe",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1083,7 +1083,7 @@
         },
         {
           "name": "Otto Lopez",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1423,7 +1423,7 @@
         },
         {
           "name": "Ezequiel Tovar",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1741,7 +1741,7 @@
         },
         {
           "name": "Andres Gimenez",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1838,6 +1838,20 @@
           "eligible": "SP",
           "isPitcher": true,
           "injStatus": "FIFTEEN_DAY_DL",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Carson Kelly",
+          "slot": "UTIL",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -7388,5 +7402,5 @@
       ]
     }
   ],
-  "updated": "2026-04-19T15:42:31Z"
+  "updated": "2026-04-19T16:50:30Z"
 }
