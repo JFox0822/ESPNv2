@@ -3302,7 +3302,7 @@
         },
         {
           "name": "Vinnie Pasquantino",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3470,7 +3470,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3492,7 +3492,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5962,7 +5962,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.304,
             "HR": 3,
@@ -7388,5 +7388,5 @@
       ]
     }
   ],
-  "updated": "2026-04-20T19:15:48Z"
+  "updated": "2026-04-20T20:55:44Z"
 }
