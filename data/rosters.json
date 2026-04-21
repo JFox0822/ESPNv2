@@ -1972,7 +1972,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.294,
             "HR": 0,
@@ -4668,7 +4668,7 @@
         },
         {
           "name": "Raisel Iglesias",
-          "slot": "BE",
+          "slot": "IL",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4921,6 +4921,28 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Griffin Jax",
+          "slot": "BE",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 7.2,
+            "H": 9,
+            "WHIP": 1.957,
+            "ERA": 7.043,
+            "K": 7,
+            "SVHD": 2,
+            "QS": 0
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 16,
+          "keeperEligible": true
         }
       ]
     },
@@ -7386,5 +7408,5 @@
       ]
     }
   ],
-  "updated": "2026-04-21T16:14:16Z"
+  "updated": "2026-04-21T18:02:37Z"
 }
