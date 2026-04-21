@@ -2439,28 +2439,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Mick Abel",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {
-            "IP": 20.1,
-            "H": 22,
-            "WHIP": 1.574,
-            "ERA": 3.984,
-            "K": 23,
-            "SVHD": 0,
-            "QS": 2
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 18,
-          "keeperEligible": true
-        },
-        {
           "name": "Jose Caballero",
           "slot": "UTIL",
           "position": "RF",
@@ -2480,6 +2458,20 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 9,
+          "keeperEligible": false
+        },
+        {
+          "name": "Dalton Rushing",
+          "slot": "BE",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -6165,7 +6157,7 @@
         },
         {
           "name": "Cam Schlittler",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6385,7 +6377,7 @@
         },
         {
           "name": "Shota Imanaga",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6819,7 +6811,7 @@
         },
         {
           "name": "Konnor Griffin",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6885,7 +6877,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7263,7 +7255,7 @@
         },
         {
           "name": "Willson Contreras",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7380,5 +7372,5 @@
       ]
     }
   ],
-  "updated": "2026-04-21T10:22:28Z"
+  "updated": "2026-04-21T12:02:34Z"
 }
