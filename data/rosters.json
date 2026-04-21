@@ -1320,7 +1320,7 @@
         },
         {
           "name": "Ketel Marte",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1429,7 +1429,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1473,7 +1473,7 @@
         },
         {
           "name": "Bryan Reynolds",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1831,7 +1831,7 @@
         },
         {
           "name": "Carson Kelly",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2511,7 +2511,7 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2665,7 +2665,7 @@
         },
         {
           "name": "Pete Crow-Armstrong",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3132,7 +3132,7 @@
         },
         {
           "name": "Wyatt Langford",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3242,7 +3242,7 @@
         },
         {
           "name": "Kerry Carpenter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3286,7 +3286,7 @@
         },
         {
           "name": "Vinnie Pasquantino",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3432,7 +3432,7 @@
         },
         {
           "name": "Ramon Laureano",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3454,7 +3454,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3476,7 +3476,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3520,7 +3520,7 @@
         },
         {
           "name": "Colt Keith",
-          "slot": "2B",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -3542,7 +3542,7 @@
         },
         {
           "name": "Randy Vasquez",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3656,7 +3656,7 @@
         },
         {
           "name": "Luis Arraez",
-          "slot": "BE",
+          "slot": "2B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -4672,7 +4672,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 8.2,
             "H": 5,
@@ -5267,7 +5267,7 @@
         },
         {
           "name": "Dylan Cease",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5377,7 +5377,7 @@
         },
         {
           "name": "Jose Fernandez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5455,7 +5455,7 @@
         },
         {
           "name": "Spencer Arrighetti",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5469,7 +5469,7 @@
         },
         {
           "name": "Luke Raley",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5483,7 +5483,7 @@
         },
         {
           "name": "Louis Varland",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5508,6 +5508,28 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Fernando Cruz",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 7.1,
+            "H": 4,
+            "WHIP": 1.5,
+            "ERA": 2.455,
+            "K": 10,
+            "SVHD": 3,
+            "QS": 0
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 18,
+          "keeperEligible": true
         }
       ]
     },
@@ -7312,28 +7334,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Ryne Nelson",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 20.2,
-            "H": 21,
-            "WHIP": 1.452,
-            "ERA": 6.968,
-            "K": 20,
-            "SVHD": 0,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Matt McLain",
           "slot": "2B",
           "position": "2B",
@@ -7368,9 +7368,23 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Payton Tolle",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-04-21T12:02:34Z"
+  "updated": "2026-04-21T14:49:46Z"
 }
