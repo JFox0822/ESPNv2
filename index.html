@@ -1222,23 +1222,23 @@ async function renderPowerRankings() {
       return svhdRankMap[rb] || Math.ceil(n / 2); // fallback to median
     };
 
-    const composites = rankings.map(p => p.composite || 0);
-    const maxC = Math.max(...composites);
-    const minC = Math.min(...composites);
-    const compRange = maxC - minC || 1;
-    const powerScore = p => {
-      if (allSame) return null;
-      return Math.round(50 + ((p.composite - minC) / compRange) * 50);
-    };
-    // Override #1 to always be exactly 100
-    const sorted = [...rankings].sort((a,b)=>(b.composite||0)-(a.composite||0));
+
+    // Build Power Score: always show 0-100 based on rank position
+    // Pre-season: use pwRank/overallRank. In-season: scale from composite.
     const scoreMap = {};
-    sorted.forEach((p, i) => {
-      if (allSame) { scoreMap[p.name] = null; return; }
-      // Linear scale: #1 = 100, last = 50 minimum (unless large spread)
-      const raw = Math.round(100 - (i / (n - 1 || 1)) * 50);
-      scoreMap[p.name] = Math.max(0, Math.min(100, raw));
-    });
+    if (allSame) {
+      // Pre-season — rank by pwRank or overallRank (1 = best)
+      const byRank = [...rankings].sort((a,b) => (a.pwRank||a.overallRank||99) - (b.pwRank||b.overallRank||99));
+      byRank.forEach((p, i) => {
+        scoreMap[p.name] = Math.round(100 - (i / (n - 1 || 1)) * 50);
+      });
+    } else {
+      const sorted = [...rankings].sort((a,b) => (b.composite||0) - (a.composite||0));
+      sorted.forEach((p, i) => {
+        scoreMap[p.name] = Math.max(0, Math.min(100, Math.round(100 - (i / (n - 1 || 1)) * 50)));
+      });
+    }
+
 
     const cards = rankings.map(p => {
       const cr = p.catRanks||{};
@@ -1262,18 +1262,19 @@ async function renderPowerRankings() {
         : d<0
         ? `<span class="pr-delta" style="color:var(--red)">▼${Math.abs(d)}</span>`
         : `<span class="pr-delta" style="color:var(--ink3)">—</span>`;
-      const ps = scoreMap[p.name];
+      const ps = scoreMap[p.name] ?? 50;
       const psCol = ps>=80?'var(--green)':ps>=60?'var(--blue)':ps>=40?'var(--ink2)':'var(--red)';
-      const psBar = ps!=null ? `
+      const psLabel = allSame ? 'Power Score (by rank)' : 'Power Score';
+      const psBar = `
         <div style="margin-top:8px">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:3px">
-            <span style="font-family:var(--fm);font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)">Power Score</span>
+            <span style="font-family:var(--fm);font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)">${psLabel}</span>
             <span style="font-family:var(--fd);font-size:13px;font-weight:900;color:${psCol}">${ps}</span>
           </div>
           <div style="background:var(--bg3);border-radius:3px;height:4px;overflow:hidden">
             <div style="width:${ps}%;height:100%;background:${psCol};border-radius:3px;transition:width .4s ease"></div>
           </div>
-        </div>` : '';
+        </div>`;
       return `<div class="pr-card ${mine?'mine':''}">
         <div class="pr-inner">
           <div class="pr-rank" style="display:flex;flex-direction:column;align-items:center;line-height:1">${p.pwRank||p.overallRank}${deltaHTML}</div>
