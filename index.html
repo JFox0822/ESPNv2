@@ -1371,16 +1371,7 @@ async function renderPowerRankings() {
         </div>`;
       }
 
-      const psBar = `
-        <div style="margin-top:10px;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:8px 12px">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
-            <span style="font-family:var(--fm);font-size:7px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)">Power Score</span>
-            <span style="font-family:var(--fd);font-size:22px;font-weight:900;line-height:1;color:${psCol}">${ps}</span>
-          </div>
-          <div style="background:var(--bg3);border-radius:4px;height:6px;overflow:hidden">
-            <div style="width:${ps}%;height:100%;background:linear-gradient(90deg,${psCol}88,${psCol});border-radius:4px;transition:width .5s ease"></div>
-          </div>
-        </div>`;
+
 
       return `<div class="pr-card ${mine?'mine':''}">
         <div class="pr-inner">
@@ -1392,7 +1383,6 @@ async function renderPowerRankings() {
             </div>
             ${catSec}
             ${qlHTML}
-            ${psBar}
           </div>
           <div class="pr-right">
             <div class="comp-num" style="color:${col}">${ps}</div>
