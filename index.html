@@ -1223,19 +1223,26 @@ async function renderPowerRankings() {
     };
 
 
-    // Build Power Score: always show 0-100 based on rank position
-    // Pre-season: use pwRank/overallRank. In-season: scale from composite.
+    // Build Power Score: reflects actual gaps between teams, not just rank position
+    // In-season: scale actual composite values so top=100, bottom=30 (gaps preserved proportionally)
+    // Pre-season: use rank with equal spacing across 40–100
     const scoreMap = {};
-    if (allSame) {
-      // Pre-season — rank by pwRank or overallRank (1 = best)
+    if (allSame || rankings.every(p => !p.composite)) {
+      // Pre-season — equal spacing: rank 1=100, rank n=40
       const byRank = [...rankings].sort((a,b) => (a.pwRank||a.overallRank||99) - (b.pwRank||b.overallRank||99));
       byRank.forEach((p, i) => {
-        scoreMap[p.name] = Math.round(100 - (i / (n - 1 || 1)) * 50);
+        scoreMap[p.name] = Math.round(100 - (i / (n - 1 || 1)) * 60);
       });
     } else {
-      const sorted = [...rankings].sort((a,b) => (b.composite||0) - (a.composite||0));
-      sorted.forEach((p, i) => {
-        scoreMap[p.name] = Math.max(0, Math.min(100, Math.round(100 - (i / (n - 1 || 1)) * 50)));
+      // In-season: scale actual composites proportionally
+      // Top team = 100, bottom team = 30, gaps between teams reflect real stat differences
+      const composites = rankings.map(p => p.composite || 0);
+      const maxC = Math.max(...composites);
+      const minC = Math.min(...composites);
+      const range = maxC - minC || 0.001;
+      rankings.forEach(p => {
+        const pct = (p.composite - minC) / range; // 0.0 (last) to 1.0 (first)
+        scoreMap[p.name] = Math.round(30 + pct * 70); // 30–100
       });
     }
 
@@ -1262,17 +1269,17 @@ async function renderPowerRankings() {
         : d<0
         ? `<span class="pr-delta" style="color:var(--red)">▼${Math.abs(d)}</span>`
         : `<span class="pr-delta" style="color:var(--ink3)">—</span>`;
-      const ps = scoreMap[p.name] ?? 50;
-      const psCol = ps>=80?'var(--green)':ps>=60?'var(--blue)':ps>=40?'var(--ink2)':'var(--red)';
-      const psLabel = allSame ? 'Power Score (by rank)' : 'Power Score';
+      const ps = scoreMap[p.name] ?? 55;
+      const psCol = ps>=85?'var(--green)':ps>=70?'#4eade8':ps>=55?'var(--ink2)':'var(--red)';
+      const psLabel = allSame ? 'Power Score · pre-season' : 'Power Score';
       const psBar = `
-        <div style="margin-top:8px">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:3px">
-            <span style="font-family:var(--fm);font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)">${psLabel}</span>
-            <span style="font-family:var(--fd);font-size:13px;font-weight:900;color:${psCol}">${ps}</span>
+        <div style="margin-top:10px;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:8px 12px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+            <span style="font-family:var(--fm);font-size:7px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)">${psLabel}</span>
+            <span style="font-family:var(--fd);font-size:22px;font-weight:900;line-height:1;color:${psCol}">${ps}<span style="font-size:10px;font-weight:400;color:var(--ink3);margin-left:2px">/100</span></span>
           </div>
-          <div style="background:var(--bg3);border-radius:3px;height:4px;overflow:hidden">
-            <div style="width:${ps}%;height:100%;background:${psCol};border-radius:3px;transition:width .4s ease"></div>
+          <div style="background:var(--bg3);border-radius:4px;height:6px;overflow:hidden">
+            <div style="width:${ps}%;height:100%;background:linear-gradient(90deg,${psCol}88,${psCol});border-radius:4px;transition:width .5s ease"></div>
           </div>
         </div>`;
       return `<div class="pr-card ${mine?'mine':''}">
@@ -1301,7 +1308,7 @@ async function renderPowerRankings() {
         <span style="font-family:var(--fm);font-size:9px"><span style="color:var(--purple)">${pb.projPct||0}% Proj</span> · <span style="color:var(--blue)">${pb.actualPct||100}% Actual</span></span>
       </div>
       <div class="pr-list">${cards}</div>
-      <div style="margin-top:12px;font-family:var(--fm);font-size:8px;color:var(--ink3)">Power Score (0–100): #1 = 100, scaled linearly · <span style="color:var(--green)">Green cat</span> = top-3 · <span style="color:var(--red)">Red cat</span> = bottom-3 · <span style="color:var(--green)">▲</span><span style="color:var(--red)">▼</span> = rank change vs last week</div>`;
+      <div style="margin-top:12px;font-family:var(--fm);font-size:8px;color:var(--ink3)">Power Score: top team = 100, bottom team = 30 · gaps between scores reflect actual stat spread · pre-season uses projected rank · <span style="color:var(--green)">Green cat</span> = top-3 · <span style="color:var(--red)">Red cat</span> = bottom-3</div>`;
   } catch(e) { document.getElementById('pr-c').innerHTML=`<div class="state err">⚠ ${e.message}</div>`; }
 }
 
