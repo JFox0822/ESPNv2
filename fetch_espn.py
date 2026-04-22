@@ -916,15 +916,18 @@ def main():
                                         pstats[lbl] = int(round(v))
                                 except: pass
                             return pstats
-                        # Prefer full-season (0), then last-7 (1) as fallback for recently active players
-                        for _split in [0, 1]:
+                        # Prefer full-season (0), then 15d/30d/7d for FA/waiver additions
+                        # Note: ESPN sometimes returns seasonId as string "2026" vs int 2026
+                        # for waiver pickups — use str() comparison to handle both
+                        for _split in [0, 2, 3, 1]:
                             for stat_entry in all_player_stats:
-                                if stat_entry.get('statSplitTypeId') == _split and stat_entry.get('seasonId') == SEASON:
+                                if (stat_entry.get('statSplitTypeId') == _split and
+                                        str(stat_entry.get('seasonId', '')) == str(SEASON)):
                                     pstats = _parse_sbs(stat_entry.get('stats', {}))
                                     if any(v != 0 for v in pstats.values()):
                                         player_season_stats[pname.strip()] = pstats
-                                    break
-                            if pname in player_season_stats:
+                                        break  # only break inner loop if we got real data
+                            if pname.strip() in player_season_stats:
                                 break
 
                     # ── Projected team stats (active slots only) ──
