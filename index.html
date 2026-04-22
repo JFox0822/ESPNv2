@@ -425,12 +425,14 @@ tbody tr.cut{border-top:2px dashed var(--border2)!important}
   <div class="page-tabs">
     <button class="page-tab active" data-panel="standings">Standings</button>
     <button class="page-tab" data-panel="matchups">Matchups</button>
+    <button class="page-tab" data-panel="power">Power Rankings</button>
     <button class="page-tab" data-panel="elo2026">ELO Ratings</button>
     <button class="page-tab" data-panel="luck2026">2026 Luck Index</button>
     <button class="page-tab" data-panel="koh">In-Season Awards</button>
   </div>
   <div id="panel-standings" class="panel active"><div id="std-c"><div class="state">Loading…</div></div></div>
   <div id="panel-matchups"  class="panel"><div id="mu-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-power"     class="panel"><div id="pr-c"><div class="state">Loading…</div></div></div>
   <div id="panel-elo2026"   class="panel"><div id="elo26-c"><div class="state">Loading…</div></div></div>
   <div id="panel-luck2026" class="panel"><div id="luck26-c"><div class="state">Loading…</div></div></div>
   <div id="panel-koh" class="panel">
@@ -446,13 +448,11 @@ tbody tr.cut{border-top:2px dashed var(--border2)!important}
 <!-- ══ PAGE 2: TEAMS ══ -->
 <div id="page-teams" class="page">
   <div class="page-tabs">
-    <button class="page-tab active" data-panel="power">Power Rankings</button>
-    <button class="page-tab" data-panel="stats">Team Stats</button>
+    <button class="page-tab active" data-panel="stats">Team Stats</button>
     <button class="page-tab" data-panel="teamstats2026">2026 Stats</button>
     <button class="page-tab" data-panel="rosters">Rosters</button>
   </div>
-  <div id="panel-power" class="panel active"><div id="pr-c"><div class="state">Loading…</div></div></div>
-  <div id="panel-stats" class="panel"><div id="ts-c"><div class="state">Loading…</div></div></div>
+  <div id="panel-stats" class="panel active"><div id="ts-c"><div class="state">Loading…</div></div></div>
   <div id="panel-teamstats2026" class="panel"><div id="ts26-c"><div class="state">Loading…</div></div></div>
   <div id="panel-rosters" class="panel">
     <div class="sub-nav">
@@ -1184,46 +1184,106 @@ async function renderMatchups() {
 // ═══ POWER RANKINGS ═══
 async function renderPowerRankings() {
   try {
-    const {rankings,week,projBlend} = await load('power_rankings.json');
+    const [{rankings,week,projBlend}, mdata] = await Promise.all([
+      load('power_rankings.json'),
+      load('matchups.json').catch(()=>({allWeeks:{}}))
+    ]);
   const weekNum = parseInt(week)||1;
   const projPct = Math.max(0, Math.round(Math.max(0, 12-weekNum)/12*100));
   const actualPct = 100-projPct;
   const pb = projBlend||{projPct, actualPct};
     const allSame = rankings.length>1 && rankings.every(p=>p.composite===rankings[0].composite);
     const n = rankings.length;
+
+    // ── Build SVHD cumulative totals from allWeeks for every team ──────────────
+    // (so we can rank teams by SVHD even if power_rankings.json omits it)
+    const svhdTotals = {}; // rbName -> cumulative SVHD
+    for (const matchupList of Object.values(mdata.allWeeks || {})) {
+      if (!matchupList || matchupList.some(m => m.winner === 'UNDECIDED')) continue;
+      for (const m of matchupList) {
+        for (const side of ['home','away']) {
+          const s = m[side];
+          const rb = s.rbName || toRB(s.team||s.name||'') || s.team || '';
+          if (!rb) continue;
+          const v = parseFloat(s.categories?.SVHD?.value ?? s.categories?.SVHD ?? 0);
+          if (!isNaN(v)) svhdTotals[rb] = (svhdTotals[rb] || 0) + v;
+        }
+      }
+    }
+    // Build SVHD rank map (1 = most SVHD)
+    const svhdRanked = Object.entries(svhdTotals)
+      .sort((a,b) => b[1] - a[1])
+      .map(([rb], i) => [rb, i + 1]);
+    const svhdRankMap = Object.fromEntries(svhdRanked);
+
+    // Helper: find SVHD rank for a rankings entry
+    const getSVHDRank = p => {
+      const rb = p.rbName || toRB(p.name||'') || p.name || '';
+      return svhdRankMap[rb] || Math.ceil(n / 2); // fallback to median
+    };
+
+    const composites = rankings.map(p => p.composite || 0);
+    const maxC = Math.max(...composites);
+    const minC = Math.min(...composites);
+    const compRange = maxC - minC || 1;
+    const powerScore = p => {
+      if (allSame) return null;
+      return Math.round(50 + ((p.composite - minC) / compRange) * 50);
+    };
+    // Override #1 to always be exactly 100
+    const sorted = [...rankings].sort((a,b)=>(b.composite||0)-(a.composite||0));
+    const scoreMap = {};
+    sorted.forEach((p, i) => {
+      if (allSame) { scoreMap[p.name] = null; return; }
+      // Linear scale: #1 = 100, last = 50 minimum (unless large spread)
+      const raw = Math.round(100 - (i / (n - 1 || 1)) * 50);
+      scoreMap[p.name] = Math.max(0, Math.min(100, raw));
+    });
+
     const cards = rankings.map(p => {
       const cr = p.catRanks||{};
-      const ce = Object.entries(cr);
-      const PR_CAT_LABEL = {SVHD:'SV/HD',SVHD:'SV/HD',Kbat:'K(bat)',Kpitch:'K(pit)'};
+      const PR_CAT_LABEL = {SVHD:'SV/HD',Kbat:'K(bat)',Kpitch:'K(pit)'};
       const prCL = c => PR_CAT_LABEL[c] || c;
-      // Ensure SVHD always shows by adding it if missing but we have live stats
-      if (!cr.SVHD && _liveTeamStats && _liveTeamStats.teams) {
-        const allSVHD = _liveTeamStats.teams.map((t,i)=>({i,v:t.stats?.SVHD??0}));
-        allSVHD.sort((a,b)=>b.v-a.v);
-        const idx = allSVHD.findIndex(x=>_liveTeamStats.teams[x.i].rbName===p.rbName||_liveTeamStats.teams[x.i].name===p.name);
-        if (idx!==-1) cr.SVHD = idx+1;
+      // Inject SVHD rank if power_rankings.json didn't include it
+      if (!cr.SVHD) {
+        const rank = getSVHDRank(p);
+        if (rank) cr.SVHD = rank;
       }
+      const ce = Object.entries(cr);
       const strengths = ce.filter(([,r])=>r<=3).map(([c,r])=>`<span class="pr-cat cat-str">${prCL(c)} #${r}</span>`).join('');
       const mids = ce.filter(([,r])=>r>3&&r<n-2).map(([c,r])=>`<span class="pr-cat cat-mid">${prCL(c)} #${r}</span>`).join('');
       const weaks = ce.filter(([,r])=>r>=n-2).map(([c,r])=>`<span class="pr-cat cat-wk">${prCL(c)} #${r}</span>`).join('');
       const catSec = (strengths||weaks||mids)?`<div class="pr-cats">${strengths}${mids}${weaks}</div>`:`<div style="font-family:var(--fm);font-size:9px;color:var(--ink3);margin-top:8px">Category ranks active after Opening Day (Mar 27)</div>`;
       const mine = isMine(p.name);
       const col = p.composite>=70?'var(--green)':p.composite>=50?'var(--blue)':'var(--red)';
-      const d=p.rankDelta||0;
+      const d = p.rankDelta||0;
       const deltaHTML = d>0
         ? `<span class="pr-delta" style="color:var(--green)">▲${d}</span>`
         : d<0
         ? `<span class="pr-delta" style="color:var(--red)">▼${Math.abs(d)}</span>`
         : `<span class="pr-delta" style="color:var(--ink3)">—</span>`;
+      const ps = scoreMap[p.name];
+      const psCol = ps>=80?'var(--green)':ps>=60?'var(--blue)':ps>=40?'var(--ink2)':'var(--red)';
+      const psBar = ps!=null ? `
+        <div style="margin-top:8px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:3px">
+            <span style="font-family:var(--fm);font-size:7px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)">Power Score</span>
+            <span style="font-family:var(--fd);font-size:13px;font-weight:900;color:${psCol}">${ps}</span>
+          </div>
+          <div style="background:var(--bg3);border-radius:3px;height:4px;overflow:hidden">
+            <div style="width:${ps}%;height:100%;background:${psCol};border-radius:3px;transition:width .4s ease"></div>
+          </div>
+        </div>` : '';
       return `<div class="pr-card ${mine?'mine':''}">
         <div class="pr-inner">
           <div class="pr-rank" style="display:flex;flex-direction:column;align-items:center;line-height:1">${p.pwRank||p.overallRank}${deltaHTML}</div>
-          <div>
+          <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
               <span class="pr-name tl" onclick="goToRoster(${p.id})">${p.name}</span>
               <span class="pr-meta">#${p.overallRank} standings · ${p.overallW}–${p.overallL}</span>
             </div>
             ${catSec}
+            ${psBar}
           </div>
           <div class="pr-right">
             ${allSame?`<div style="font-family:var(--fm);font-size:9px;color:var(--ink3)">PRE-SEASON</div>`:`<div class="comp-num" style="color:${col}">${(p.composite||0).toFixed(1)}</div><div class="comp-lbl">All-Play%</div>`}
@@ -1240,7 +1300,7 @@ async function renderPowerRankings() {
         <span style="font-family:var(--fm);font-size:9px"><span style="color:var(--purple)">${pb.projPct||0}% Proj</span> · <span style="color:var(--blue)">${pb.actualPct||100}% Actual</span></span>
       </div>
       <div class="pr-list">${cards}</div>
-      <div style="margin-top:12px;font-family:var(--fm);font-size:8px;color:var(--ink3)"><span style="color:var(--green)">Green</span> = top-3 category · <span style="color:var(--red)">Red</span> = bottom-3 · <span style="color:var(--green)">▲</span><span style="color:var(--red)">▼</span> = rank change vs last week</div>`;
+      <div style="margin-top:12px;font-family:var(--fm);font-size:8px;color:var(--ink3)">Power Score (0–100): #1 = 100, scaled linearly · <span style="color:var(--green)">Green cat</span> = top-3 · <span style="color:var(--red)">Red cat</span> = bottom-3 · <span style="color:var(--green)">▲</span><span style="color:var(--red)">▼</span> = rank change vs last week</div>`;
   } catch(e) { document.getElementById('pr-c').innerHTML=`<div class="state err">⚠ ${e.message}</div>`; }
 }
 
@@ -1872,8 +1932,8 @@ function renderRecords(){renderCatKings();renderBestWeeks();renderLeagueRecords(
 
 function renderCatKings(){
   const ck=RB.categoryKing;const cats=ck.categories||{};
-  const catOrder=['R','HR','RBI','SB','AVG','OPS','Kpitch','QS','IP','SVHD','ERA','WHIP','Kbat','H'];
-  const catLabels={R:'Runs',HR:'Home Runs',RBI:'RBI',SB:'Stolen Bases',AVG:'Batting AVG',OPS:'OPS',Kpitch:'Strikeouts (P)',QS:'Quality Starts',IP:'Innings Pitched',SVHD:'Saves+Holds',ERA:'ERA',WHIP:'WHIP',Kbat:'Batter Ks',H:'Hits Allowed'};
+  const catOrder=['R','HR','RBI','Kbat','SB','AVG','OPS','IP','H','Kpitch','QS','ERA','WHIP','SVHD'];
+  const catLabels={R:'Runs',HR:'Home Runs',RBI:'RBI',Kbat:'K (Hitting)',SB:'Stolen Bases',AVG:'Batting AVG',OPS:'OPS',IP:'Innings Pitched',H:'Hits Allowed',Kpitch:'Strikeouts (P)',QS:'Quality Starts',ERA:'ERA',WHIP:'WHIP',SVHD:'Saves+Holds'};
   const winnings=ck.winnings||{};let openCat=null;
   function drawCK(){
     const ranked=Object.entries(winnings).sort((a,b)=>b[1]-a[1]),maxW=ranked[0]?.[1]||1;
@@ -2803,8 +2863,8 @@ async function renderCatKing2026() {
       return;
     }
 
-    const CAT_ORDER = ['R','HR','RBI','SB','AVG','OPS','K','QS','IP','SVHD','ERA','WHIP','Kbat','H'];
-    const CAT_LABELS = {R:'Runs',HR:'Home Runs',RBI:'RBI',SB:'Stolen Bases',AVG:'Batting AVG',OPS:'OPS',K:'Strikeouts (P)',QS:'Quality Starts',IP:'Innings Pitched',SVHD:'Saves+Holds',ERA:'ERA',WHIP:'WHIP',Kbat:'Batter Ks',H:'Hits Allowed'};
+    const CAT_ORDER = ['R','HR','RBI','Kbat','SB','AVG','OPS','IP','H','K','QS','ERA','WHIP','SVHD'];
+    const CAT_LABELS = {R:'Runs',HR:'Home Runs',RBI:'RBI',Kbat:'K (Hitting)',SB:'Stolen Bases',AVG:'Batting AVG',OPS:'OPS',IP:'Innings Pitched',H:'Hits Allowed',K:'Strikeouts (P)',QS:'Quality Starts',ERA:'ERA',WHIP:'WHIP',SVHD:'Saves+Holds'};
 
     // Build king per category with sequential tiebreaker
     // Tiebreaker: if tied on best week, compare 2nd best, then 3rd best, etc.
