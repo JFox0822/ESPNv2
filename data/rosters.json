@@ -907,7 +907,7 @@
         },
         {
           "name": "Kris Bubic",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1031,7 +1031,7 @@
         },
         {
           "name": "Matthew Boyd",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1968,7 +1968,7 @@
         },
         {
           "name": "Adley Rutschman",
-          "slot": "IL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2210,7 +2210,7 @@
         },
         {
           "name": "Daniel Palencia",
-          "slot": "RP",
+          "slot": "IL",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7408,5 +7408,5 @@
       ]
     }
   ],
-  "updated": "2026-04-22T10:23:11Z"
+  "updated": "2026-04-22T12:02:10Z"
 }
