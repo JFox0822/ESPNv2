@@ -1,8 +1,8 @@
-name: Hourly ESPN Data Refresh
+name: ESPN Data Refresh
 
 on:
   schedule:
-    - cron: '0 * * * *'   # Every hour
+    - cron: '0,30 * * * *'   # Every 30 minutes
   workflow_dispatch:
 
 permissions:
