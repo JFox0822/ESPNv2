@@ -1223,26 +1223,46 @@ async function renderPowerRankings() {
     };
 
 
-    // Build Power Score: reflects actual gaps between teams, not just rank position
-    // In-season: scale actual composite values so top=100, bottom=30 (gaps preserved proportionally)
-    // Pre-season: use rank with equal spacing across 40–100
+    // Build Power Score from catRanks (most accurate — reflects actual category performance)
+    // Lower rank number = better. Invert so #1 = n points, #n = 1 point, average, scale 40–100.
+    // Falls back to composite or W-L spread only if catRanks are unavailable.
     const scoreMap = {};
-    if (allSame || rankings.every(p => !p.composite)) {
-      // Pre-season — equal spacing: rank 1=100, rank n=40
-      const byRank = [...rankings].sort((a,b) => (a.pwRank||a.overallRank||99) - (b.pwRank||b.overallRank||99));
-      byRank.forEach((p, i) => {
-        scoreMap[p.name] = Math.round(100 - (i / (n - 1 || 1)) * 60);
+    const hasCatRanks = rankings.some(p => Object.keys(p.catRanks||{}).length > 0);
+    if (hasCatRanks) {
+      const catScores = {};
+      rankings.forEach(p => {
+        const cr = {...(p.catRanks||{})};
+        const rb = p.rbName || toRB(p.name||'') || p.name || '';
+        if (!cr.SVHD && svhdRankMap[rb]) cr.SVHD = svhdRankMap[rb];
+        const vals = Object.values(cr);
+        if (!vals.length) { catScores[p.name] = n / 2; return; }
+        // invert: rank 1 = n pts, rank n = 1 pt
+        catScores[p.name] = vals.reduce((s, r) => s + (n + 1 - r), 0) / vals.length;
       });
-    } else {
-      // In-season: scale actual composites proportionally
-      // Top team = 100, bottom team = 30, gaps between teams reflect real stat differences
+      const allVals = Object.values(catScores);
+      const maxV = Math.max(...allVals), minV = Math.min(...allVals);
+      const rangeV = maxV - minV || 0.001;
+      rankings.forEach(p => {
+        scoreMap[p.name] = Math.round(40 + ((catScores[p.name] - minV) / rangeV) * 60);
+      });
+    } else if (!allSame && rankings.some(p => p.composite)) {
+      // In-season composite fallback
       const composites = rankings.map(p => p.composite || 0);
-      const maxC = Math.max(...composites);
-      const minC = Math.min(...composites);
+      const maxC = Math.max(...composites), minC = Math.min(...composites);
       const range = maxC - minC || 0.001;
       rankings.forEach(p => {
-        const pct = (p.composite - minC) / range; // 0.0 (last) to 1.0 (first)
-        scoreMap[p.name] = Math.round(30 + pct * 70); // 30–100
+        scoreMap[p.name] = Math.round(30 + ((p.composite - minC) / range) * 70);
+      });
+    } else {
+      // True pre-season: use W-L differential with noise from record spread to avoid equal-step pattern
+      const byRank = [...rankings].sort((a,b) => (a.pwRank||a.overallRank||99) - (b.pwRank||b.overallRank||99));
+      const wlDiffs = byRank.map(p => (p.overallW||0) - (p.overallL||0));
+      const maxD = Math.max(...wlDiffs), minD = Math.min(...wlDiffs);
+      const dRange = maxD - minD || 0.001;
+      byRank.forEach((p, i) => {
+        const baseScore = 100 - (i / (n - 1 || 1)) * 60;
+        const wlBonus = ((wlDiffs[i] - minD) / dRange - 0.5) * 6; // ±3 pts from W-L spread
+        scoreMap[p.name] = Math.round(Math.max(30, Math.min(100, baseScore + wlBonus)));
       });
     }
 
@@ -1276,7 +1296,7 @@ async function renderPowerRankings() {
         <div style="margin-top:10px;background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:8px 12px">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
             <span style="font-family:var(--fm);font-size:7px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)">${psLabel}</span>
-            <span style="font-family:var(--fd);font-size:22px;font-weight:900;line-height:1;color:${psCol}">${ps}<span style="font-size:10px;font-weight:400;color:var(--ink3);margin-left:2px">/100</span></span>
+            <span style="font-family:var(--fd);font-size:22px;font-weight:900;line-height:1;color:${psCol}">${ps}</span>
           </div>
           <div style="background:var(--bg3);border-radius:4px;height:6px;overflow:hidden">
             <div style="width:${ps}%;height:100%;background:linear-gradient(90deg,${psCol}88,${psCol});border-radius:4px;transition:width .5s ease"></div>
