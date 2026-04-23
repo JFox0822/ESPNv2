@@ -718,10 +718,10 @@
             "IP": 30.0,
             "H": 31,
             "WHIP": 1.4,
-            "ERA": 5.4,
+            "ERA": 5.1,
             "K": 27,
             "SVHD": 0,
-            "QS": 2
+            "QS": 3
           },
           "savant": {},
           "tier": "",
@@ -2635,9 +2635,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.284,
+            "AVG": 0.295,
             "HR": 1,
-            "OPS": 0.712,
+            "OPS": 0.733,
             "R": 13,
             "RBI": 12,
             "SB": 0,
@@ -3322,9 +3322,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.218,
+            "AVG": 0.23,
             "HR": 3,
-            "OPS": 0.735,
+            "OPS": 0.767,
             "R": 10,
             "RBI": 12,
             "SB": 0,
@@ -7430,5 +7430,5 @@
       ]
     }
   ],
-  "updated": "2026-04-23T04:43:38Z"
+  "updated": "2026-04-23T06:55:30Z"
 }
