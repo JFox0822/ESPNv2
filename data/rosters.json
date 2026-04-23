@@ -7357,7 +7357,7 @@
         },
         {
           "name": "Matt McLain",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7392,21 +7392,21 @@
           "keeperEligible": false
         },
         {
-          "name": "Didier Fuentes",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
+          "name": "Ildemaro Vargas",
+          "slot": "2B",
+          "position": "2B",
+          "eligible": "2B",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 27,
-          "keeperEligible": true
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-04-23T10:06:07Z"
+  "updated": "2026-04-23T11:36:39Z"
 }
