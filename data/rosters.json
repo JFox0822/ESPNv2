@@ -3691,7 +3691,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "BE",
+          "slot": "IL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3925,7 +3925,7 @@
         },
         {
           "name": "Zack Wheeler",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4019,7 +4019,7 @@
         },
         {
           "name": "Jack Leiter",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4245,7 +4245,7 @@
         },
         {
           "name": "Taj Bradley",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7444,5 +7444,5 @@
       ]
     }
   ],
-  "updated": "2026-04-24T17:48:29Z"
+  "updated": "2026-04-24T18:37:00Z"
 }
