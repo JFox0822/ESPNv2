@@ -1844,7 +1844,7 @@
       "players": [
         {
           "name": "Roman Anthony",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1954,7 +1954,7 @@
         },
         {
           "name": "Adley Rutschman",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2086,7 +2086,7 @@
         },
         {
           "name": "Carter Jensen",
-          "slot": "C",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2412,7 +2412,7 @@
         },
         {
           "name": "Jose Caballero",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7023,7 +7023,7 @@
         },
         {
           "name": "Eugenio Suarez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7313,7 +7313,7 @@
         },
         {
           "name": "Carson Benge",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7452,5 +7452,5 @@
       ]
     }
   ],
-  "updated": "2026-04-25T12:39:38Z"
+  "updated": "2026-04-25T13:57:52Z"
 }
