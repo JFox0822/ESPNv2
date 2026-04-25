@@ -2812,20 +2812,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Tommy Edman",
-          "slot": "OF",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Jordan Westburg",
           "slot": "IL",
           "position": "3B",
@@ -3074,6 +3060,20 @@
           "acquisitionType": "ADD",
           "draftRound": 18,
           "keeperEligible": true
+        },
+        {
+          "name": "Rhett Lowder",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -7460,5 +7460,5 @@
       ]
     }
   ],
-  "updated": "2026-04-25T10:34:51Z"
+  "updated": "2026-04-25T11:31:57Z"
 }
