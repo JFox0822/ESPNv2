@@ -444,9 +444,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.292,
+            "AVG": 0.296,
             "HR": 4,
-            "OPS": 0.836,
+            "OPS": 0.839,
             "R": 13,
             "RBI": 12,
             "SB": 0,
@@ -693,9 +693,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.195,
+            "AVG": 0.193,
             "HR": 1,
-            "OPS": 0.551,
+            "OPS": 0.545,
             "R": 12,
             "RBI": 11,
             "SB": 4,
@@ -847,13 +847,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.198,
+            "AVG": 0.196,
             "HR": 2,
-            "OPS": 0.539,
+            "OPS": 0.534,
             "R": 9,
             "RBI": 17,
             "SB": 2,
-            "Kbat": 36
+            "Kbat": 37
           },
           "savant": {},
           "tier": "",
@@ -1312,13 +1312,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.212,
+            "AVG": 0.208,
             "HR": 3,
-            "OPS": 0.685,
+            "OPS": 0.673,
             "R": 13,
             "RBI": 10,
             "SB": 1,
-            "Kbat": 30
+            "Kbat": 31
           },
           "savant": {},
           "tier": "",
@@ -1328,7 +1328,7 @@
         },
         {
           "name": "Ketel Marte",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1733,7 +1733,7 @@
         },
         {
           "name": "Edouard Julien",
-          "slot": "2B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1960,9 +1960,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.341,
+            "AVG": 0.333,
             "HR": 3,
-            "OPS": 1.09,
+            "OPS": 1.067,
             "R": 6,
             "RBI": 11,
             "SB": 0,
@@ -2004,11 +2004,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.241,
+            "AVG": 0.25,
             "HR": 1,
-            "OPS": 0.635,
+            "OPS": 0.658,
             "R": 10,
-            "RBI": 8,
+            "RBI": 9,
             "SB": 0,
             "Kbat": 18
           },
@@ -2505,7 +2505,7 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2527,7 +2527,7 @@
         },
         {
           "name": "Vladimir Guerrero Jr.",
-          "slot": "BE",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2615,7 +2615,7 @@
         },
         {
           "name": "Matt Chapman",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2681,7 +2681,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2841,7 +2841,7 @@
           "stats": {
             "AVG": 0.308,
             "HR": 1,
-            "OPS": 0.878,
+            "OPS": 0.882,
             "R": 14,
             "RBI": 11,
             "SB": 1,
@@ -3019,7 +3019,7 @@
         },
         {
           "name": "Miguel Vargas",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3214,7 +3214,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3236,7 +3236,7 @@
         },
         {
           "name": "Kerry Carpenter",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3258,7 +3258,7 @@
         },
         {
           "name": "Kyle Stowers",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3331,9 +3331,9 @@
           "injStatus": "ACTIVE",
           "stats": {
             "IP": 30.1,
-            "H": 32,
-            "WHIP": 1.352,
-            "ERA": 4.154,
+            "H": 34,
+            "WHIP": 1.451,
+            "ERA": 4.747,
             "K": 27,
             "SVHD": 0,
             "QS": 3
@@ -3514,7 +3514,7 @@
         },
         {
           "name": "Colt Keith",
-          "slot": "BE",
+          "slot": "2B",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -5061,13 +5061,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.205,
+            "AVG": 0.204,
             "HR": 8,
-            "OPS": 0.753,
+            "OPS": 0.747,
             "R": 18,
             "RBI": 16,
             "SB": 4,
-            "Kbat": 38
+            "Kbat": 39
           },
           "savant": {},
           "tier": "",
@@ -5582,11 +5582,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 25.0,
-            "H": 30,
-            "WHIP": 1.56,
-            "ERA": 7.56,
-            "K": 31,
+            "IP": 28.0,
+            "H": 31,
+            "WHIP": 1.464,
+            "ERA": 6.75,
+            "K": 35,
             "SVHD": 0,
             "QS": 2
           },
@@ -7329,9 +7329,9 @@
           "stats": {
             "AVG": 0.236,
             "HR": 4,
-            "OPS": 0.752,
+            "OPS": 0.754,
             "R": 10,
-            "RBI": 12,
+            "RBI": 13,
             "SB": 0,
             "Kbat": 32
           },
@@ -7452,5 +7452,5 @@
       ]
     }
   ],
-  "updated": "2026-04-25T16:30:53Z"
+  "updated": "2026-04-25T17:30:47Z"
 }
