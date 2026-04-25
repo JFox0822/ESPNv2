@@ -3280,7 +3280,7 @@
         },
         {
           "name": "Vinnie Pasquantino",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3324,7 +3324,7 @@
         },
         {
           "name": "Trevor Rogers",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3346,7 +3346,7 @@
         },
         {
           "name": "Robbie Ray",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3426,7 +3426,7 @@
         },
         {
           "name": "Ramon Laureano",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3470,7 +3470,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3514,7 +3514,7 @@
         },
         {
           "name": "Colt Keith",
-          "slot": "3B",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -3614,7 +3614,7 @@
         },
         {
           "name": "Maikel Garcia",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3636,7 +3636,7 @@
         },
         {
           "name": "Luis Arraez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3658,7 +3658,7 @@
         },
         {
           "name": "Chase Dollander",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5752,7 +5752,7 @@
         },
         {
           "name": "Michael Harris II",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6016,7 +6016,7 @@
         },
         {
           "name": "Ernie Clement",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6146,7 +6146,7 @@
         },
         {
           "name": "Jordan Walker",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6160,7 +6160,7 @@
         },
         {
           "name": "Masyn Winn",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7023,7 +7023,7 @@
         },
         {
           "name": "Eugenio Suarez",
-          "slot": "BE",
+          "slot": "IL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7045,7 +7045,7 @@
         },
         {
           "name": "Marcell Ozuna",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7113,20 +7113,6 @@
           "tier": "",
           "acquisitionType": "DRAFT",
           "draftRound": 16,
-          "keeperEligible": true
-        },
-        {
-          "name": "Joe Musgrove",
-          "slot": "IL",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 17,
           "keeperEligible": true
         },
         {
@@ -7448,9 +7434,23 @@
           "acquisitionType": "ADD",
           "draftRound": 19,
           "keeperEligible": true
+        },
+        {
+          "name": "Gavin Sheets",
+          "slot": "UTIL",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-04-25T14:39:31Z"
+  "updated": "2026-04-25T15:32:06Z"
 }
