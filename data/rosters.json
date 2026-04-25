@@ -2813,7 +2813,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "IL",
+          "slot": "OF",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2841,7 +2841,7 @@
         },
         {
           "name": "Grant Holmes",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2912,20 +2912,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Garrett Mitchell",
-          "slot": "BE",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Gleyber Torres",
           "slot": "2B",
           "position": "2B",
@@ -2963,7 +2949,7 @@
         },
         {
           "name": "Joey Cantillo",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3066,6 +3052,28 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Mick Abel",
+          "slot": "IL",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "FIFTEEN_DAY_DL",
+          "stats": {
+            "IP": 20.1,
+            "H": 22,
+            "WHIP": 1.574,
+            "ERA": 3.984,
+            "K": 23,
+            "SVHD": 0,
+            "QS": 2
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 18,
+          "keeperEligible": true
         }
       ]
     },
@@ -7452,5 +7460,5 @@
       ]
     }
   ],
-  "updated": "2026-04-25T09:42:20Z"
+  "updated": "2026-04-25T10:34:51Z"
 }
