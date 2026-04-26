@@ -1828,7 +1828,7 @@
       "players": [
         {
           "name": "Roman Anthony",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1938,7 +1938,7 @@
         },
         {
           "name": "Adley Rutschman",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2004,7 +2004,7 @@
         },
         {
           "name": "Owen Caissie",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2048,7 +2048,7 @@
         },
         {
           "name": "JJ Wetherholt",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2396,7 +2396,7 @@
         },
         {
           "name": "Jose Caballero",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7436,5 +7436,5 @@
       ]
     }
   ],
-  "updated": "2026-04-26T11:32:40Z"
+  "updated": "2026-04-26T12:41:48Z"
 }
