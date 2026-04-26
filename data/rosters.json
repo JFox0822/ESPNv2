@@ -833,7 +833,7 @@
         },
         {
           "name": "Trevor Story",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1067,7 +1067,7 @@
         },
         {
           "name": "Otto Lopez",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1191,7 +1191,7 @@
         },
         {
           "name": "Josh Bell",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -5748,7 +5748,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.208,
             "HR": 3,
@@ -6339,7 +6339,7 @@
         },
         {
           "name": "Mike Trout",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6493,7 +6493,7 @@
         },
         {
           "name": "Emilio Pagan",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6625,7 +6625,7 @@
         },
         {
           "name": "Ryan Walker",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6767,7 +6767,7 @@
         },
         {
           "name": "Troy Johnston",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6949,7 +6949,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7109,7 +7109,7 @@
         },
         {
           "name": "Lawrence Butler",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7422,5 +7422,5 @@
       ]
     }
   ],
-  "updated": "2026-04-26T16:31:39Z"
+  "updated": "2026-04-26T17:31:04Z"
 }
