@@ -1814,7 +1814,7 @@
       "players": [
         {
           "name": "Roman Anthony",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1924,7 +1924,7 @@
         },
         {
           "name": "Adley Rutschman",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1990,7 +1990,7 @@
         },
         {
           "name": "Owen Caissie",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2012,7 +2012,7 @@
         },
         {
           "name": "Justin Crawford",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2403,20 +2403,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Dalton Rushing",
-          "slot": "BE",
-          "position": "C",
-          "eligible": "C",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Trevor Megill",
           "slot": "RP",
           "position": "RP",
@@ -2436,6 +2422,28 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 18,
+          "keeperEligible": true
+        },
+        {
+          "name": "Dustin May",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 24.2,
+            "H": 33,
+            "WHIP": 1.541,
+            "ERA": 5.838,
+            "K": 20,
+            "SVHD": 0,
+            "QS": 2
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 20,
           "keeperEligible": true
         }
       ]
@@ -3358,7 +3366,7 @@
         },
         {
           "name": "Abner Uribe",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3603,12 +3611,12 @@
           "keeperEligible": false
         },
         {
-          "name": "J.T. Ginn",
+          "name": "Carlos Cortes",
           "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3617,11 +3625,11 @@
           "keeperEligible": false
         },
         {
-          "name": "Carlos Cortes",
-          "slot": "BE",
-          "position": "RF",
-          "eligible": "RF",
-          "isPitcher": false,
+          "name": "Bryan Baker",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -5445,7 +5453,7 @@
         },
         {
           "name": "Louis Varland",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5487,7 +5495,7 @@
         },
         {
           "name": "Juan Morillo",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6241,7 +6249,7 @@
         },
         {
           "name": "CJ Abrams",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6373,7 +6381,7 @@
         },
         {
           "name": "Bo Bichette",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6615,7 +6623,7 @@
         },
         {
           "name": "Trent Grisham",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6679,7 +6687,7 @@
         },
         {
           "name": "Hyeseong Kim",
-          "slot": "BE",
+          "slot": "SS",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7398,5 +7406,5 @@
       ]
     }
   ],
-  "updated": "2026-04-27T11:21:23Z"
+  "updated": "2026-04-27T12:58:42Z"
 }
