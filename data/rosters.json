@@ -759,7 +759,7 @@
         },
         {
           "name": "Jose Altuve",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1161,7 +1161,7 @@
         },
         {
           "name": "Victor Scott II",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1527,7 +1527,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.256,
             "HR": 3,
@@ -3380,7 +3380,7 @@
         },
         {
           "name": "Ramon Laureano",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3424,7 +3424,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -4051,7 +4051,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.224,
             "HR": 2,
@@ -6032,7 +6032,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "BEREAVEMENT",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 29.2,
             "H": 21,
@@ -6561,7 +6561,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 20.0,
             "H": 26,
@@ -7406,5 +7406,5 @@
       ]
     }
   ],
-  "updated": "2026-04-28T18:59:43Z"
+  "updated": "2026-04-28T20:18:47Z"
 }
