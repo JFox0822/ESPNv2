@@ -110,7 +110,7 @@
         },
         {
           "name": "Geraldo Perdomo",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -558,7 +558,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "BE",
+          "slot": "SS",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1663,7 +1663,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.287,
             "HR": 3,
@@ -5544,7 +5544,7 @@
         },
         {
           "name": "Nick Kurtz",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5720,7 +5720,7 @@
         },
         {
           "name": "Josh Naylor",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -6381,7 +6381,7 @@
         },
         {
           "name": "Bo Bichette",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6557,7 +6557,7 @@
         },
         {
           "name": "Kodai Senga",
-          "slot": "SP",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6623,7 +6623,7 @@
         },
         {
           "name": "Trent Grisham",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6747,6 +6747,20 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Nick Martinez",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -6951,7 +6965,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.259,
             "HR": 8,
@@ -7406,5 +7420,5 @@
       ]
     }
   ],
-  "updated": "2026-04-28T20:18:47Z"
+  "updated": "2026-04-28T21:35:09Z"
 }
