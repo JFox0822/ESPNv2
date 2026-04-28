@@ -1345,7 +1345,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -5566,7 +5566,7 @@
         },
         {
           "name": "Logan Gilbert",
-          "slot": "P",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6028,7 +6028,7 @@
         },
         {
           "name": "Braxton Ashcraft",
-          "slot": "BE",
+          "slot": "P",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7406,5 +7406,5 @@
       ]
     }
   ],
-  "updated": "2026-04-28T17:08:50Z"
+  "updated": "2026-04-28T18:59:43Z"
 }
