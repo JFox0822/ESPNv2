@@ -2108,7 +2108,7 @@
         },
         {
           "name": "George Kirby",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2232,7 +2232,7 @@
         },
         {
           "name": "Chad Patrick",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2434,7 +2434,7 @@
         },
         {
           "name": "Elmer Rodriguez",
-          "slot": "P",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4055,7 +4055,7 @@
         },
         {
           "name": "Luis Robert Jr.",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4077,7 +4077,7 @@
         },
         {
           "name": "Jasson Dominguez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -7428,5 +7428,5 @@
       ]
     }
   ],
-  "updated": "2026-04-29T09:57:26Z"
+  "updated": "2026-04-29T11:26:19Z"
 }
