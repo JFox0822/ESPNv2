@@ -1752,20 +1752,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Enyel De Los Santos",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Quinn Priester",
           "slot": "IL",
           "position": "SP",
@@ -1798,6 +1784,20 @@
           "slot": "3B",
           "position": "3B",
           "eligible": "3B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Dalton Rushing",
+          "slot": "BE",
+          "position": "C",
+          "eligible": "C",
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -7428,5 +7428,5 @@
       ]
     }
   ],
-  "updated": "2026-04-29T07:38:39Z"
+  "updated": "2026-04-29T09:57:26Z"
 }
