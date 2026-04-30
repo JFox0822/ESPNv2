@@ -59,7 +59,7 @@
         },
         {
           "name": "Shohei Ohtani",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -336,7 +336,7 @@
         },
         {
           "name": "Nathan Eovaldi",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -394,7 +394,7 @@
         },
         {
           "name": "Wilyer Abreu",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -516,7 +516,7 @@
         },
         {
           "name": "Jeffrey Springs",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -530,7 +530,7 @@
         },
         {
           "name": "Dominic Smith",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -558,7 +558,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -6199,7 +6199,7 @@
         },
         {
           "name": "Cam Schlittler",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6773,7 +6773,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "RP",
+          "slot": "P",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7436,5 +7436,5 @@
       ]
     }
   ],
-  "updated": "2026-04-30T11:55:51Z"
+  "updated": "2026-04-30T13:23:37Z"
 }
