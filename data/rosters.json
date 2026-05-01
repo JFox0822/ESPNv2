@@ -2689,7 +2689,7 @@
         },
         {
           "name": "Brandon Woodruff",
-          "slot": "SP",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2790,20 +2790,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Jordan Westburg",
-          "slot": "IL",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "SIXTY_DAY_DL",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Taylor Ward",
           "slot": "OF",
           "position": "LF",
@@ -2883,7 +2869,7 @@
         },
         {
           "name": "Joey Cantillo",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7428,5 +7414,5 @@
       ]
     }
   ],
-  "updated": "2026-05-01T08:01:35Z"
+  "updated": "2026-05-01T10:00:21Z"
 }
