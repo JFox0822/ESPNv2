@@ -116,13 +116,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.239,
-            "HR": 1,
-            "OPS": 0.727,
-            "R": 11,
-            "RBI": 6,
+            "AVG": 0.245,
+            "HR": 2,
+            "OPS": 0.764,
+            "R": 12,
+            "RBI": 9,
             "SB": 6,
-            "Kbat": 14
+            "Kbat": 15
           },
           "savant": {},
           "tier": "",
@@ -1296,9 +1296,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.233,
+            "AVG": 0.231,
             "HR": 5,
-            "OPS": 0.682,
+            "OPS": 0.676,
             "R": 17,
             "RBI": 11,
             "SB": 0,
@@ -1479,9 +1479,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.228,
+            "AVG": 0.226,
             "HR": 7,
-            "OPS": 0.814,
+            "OPS": 0.807,
             "R": 21,
             "RBI": 14,
             "SB": 1,
@@ -2497,13 +2497,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.287,
+            "AVG": 0.282,
             "HR": 4,
-            "OPS": 0.941,
+            "OPS": 0.924,
             "R": 20,
             "RBI": 18,
             "SB": 4,
-            "Kbat": 33
+            "Kbat": 35
           },
           "savant": {},
           "tier": "",
@@ -2629,9 +2629,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.22,
+            "AVG": 0.216,
             "HR": 6,
-            "OPS": 0.787,
+            "OPS": 0.773,
             "R": 24,
             "RBI": 24,
             "SB": 2,
@@ -2651,9 +2651,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.246,
+            "AVG": 0.242,
             "HR": 3,
-            "OPS": 0.674,
+            "OPS": 0.664,
             "R": 20,
             "RBI": 13,
             "SB": 6,
@@ -2673,13 +2673,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.198,
+            "AVG": 0.203,
             "HR": 2,
-            "OPS": 0.583,
+            "OPS": 0.598,
             "R": 14,
             "RBI": 13,
             "SB": 0,
-            "Kbat": 30
+            "Kbat": 31
           },
           "savant": {},
           "tier": "",
@@ -4061,13 +4061,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.28,
+            "AVG": 0.275,
             "HR": 5,
-            "OPS": 0.768,
+            "OPS": 0.753,
             "R": 15,
             "RBI": 17,
             "SB": 0,
-            "Kbat": 20
+            "Kbat": 22
           },
           "savant": {},
           "tier": "",
@@ -4498,9 +4498,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.319,
+            "AVG": 0.314,
             "HR": 5,
-            "OPS": 0.978,
+            "OPS": 0.965,
             "R": 14,
             "RBI": 9,
             "SB": 0,
@@ -5764,9 +5764,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
+            "AVG": 0.258,
             "HR": 3,
-            "OPS": 0.727,
+            "OPS": 0.722,
             "R": 11,
             "RBI": 12,
             "SB": 1,
@@ -6353,7 +6353,7 @@
         },
         {
           "name": "Jo Adell",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6717,7 +6717,7 @@
         },
         {
           "name": "Jeremiah Jackson",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7428,5 +7428,5 @@
       ]
     }
   ],
-  "updated": "2026-05-01T20:01:56Z"
+  "updated": "2026-05-01T21:11:39Z"
 }
