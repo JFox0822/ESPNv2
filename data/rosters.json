@@ -2184,7 +2184,7 @@
         },
         {
           "name": "Ryan Helsley",
-          "slot": "RP",
+          "slot": "IL",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2206,7 +2206,7 @@
         },
         {
           "name": "Daniel Palencia",
-          "slot": "IL",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2335,28 +2335,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Noah Cameron",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 31.2,
-            "H": 40,
-            "WHIP": 1.611,
-            "ERA": 5.4,
-            "K": 28,
-            "SVHD": 0,
-            "QS": 1
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "TJ Rumfield",
           "slot": "3B",
           "position": "3B",
@@ -2477,6 +2455,28 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Dustin May",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 30.2,
+            "H": 40,
+            "WHIP": 1.533,
+            "ERA": 5.283,
+            "K": 22,
+            "SVHD": 0,
+            "QS": 3
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 20,
+          "keeperEligible": true
         }
       ]
     },
@@ -2691,7 +2691,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2907,7 +2907,7 @@
         },
         {
           "name": "Moises Ballesteros",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7452,5 +7452,5 @@
       ]
     }
   ],
-  "updated": "2026-05-03T11:12:15Z"
+  "updated": "2026-05-03T12:02:27Z"
 }
