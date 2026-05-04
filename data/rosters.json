@@ -402,11 +402,11 @@
         },
         {
           "name": "Andrew Vaughn",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.25,
             "HR": 0,
@@ -516,7 +516,7 @@
         },
         {
           "name": "Dominic Smith",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -643,11 +643,11 @@
         },
         {
           "name": "Jackson Chourio",
-          "slot": "IL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -1133,7 +1133,7 @@
         },
         {
           "name": "Victor Scott II",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1152,28 +1152,6 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
-        },
-        {
-          "name": "Josh Bell",
-          "slot": "BE",
-          "position": "DH",
-          "eligible": "DH",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.218,
-            "HR": 3,
-            "OPS": 0.64,
-            "R": 21,
-            "RBI": 17,
-            "SB": 0,
-            "Kbat": 25
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 19,
-          "keeperEligible": true
         },
         {
           "name": "Jorge Soler",
@@ -3374,7 +3352,7 @@
         },
         {
           "name": "Ramon Laureano",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3396,7 +3374,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7392,5 +7370,5 @@
       ]
     }
   ],
-  "updated": "2026-05-04T19:24:26Z"
+  "updated": "2026-05-04T20:44:50Z"
 }
