@@ -2012,7 +2012,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.207,
             "HR": 2,
@@ -6245,7 +6245,7 @@
         },
         {
           "name": "CJ Abrams",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6661,7 +6661,7 @@
         },
         {
           "name": "Hyeseong Kim",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7408,5 +7408,5 @@
       ]
     }
   ],
-  "updated": "2026-05-04T14:35:36Z"
+  "updated": "2026-05-04T16:25:43Z"
 }
