@@ -2485,7 +2485,7 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2529,7 +2529,7 @@
         },
         {
           "name": "Joe Ryan",
-          "slot": "P",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2551,7 +2551,7 @@
         },
         {
           "name": "Framber Valdez",
-          "slot": "SP",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2639,7 +2639,7 @@
         },
         {
           "name": "Pete Crow-Armstrong",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2749,7 +2749,7 @@
         },
         {
           "name": "Edward Cabrera",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2877,7 +2877,7 @@
         },
         {
           "name": "Moises Ballesteros",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -2927,7 +2927,7 @@
         },
         {
           "name": "Justin Wrobleski",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2991,7 +2991,7 @@
         },
         {
           "name": "Rhett Lowder",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3005,7 +3005,7 @@
         },
         {
           "name": "JR Ritchie",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7408,5 +7408,5 @@
       ]
     }
   ],
-  "updated": "2026-05-04T08:04:28Z"
+  "updated": "2026-05-04T10:29:31Z"
 }
