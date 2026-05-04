@@ -1276,7 +1276,7 @@
         },
         {
           "name": "Ketel Marte",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1371,7 +1371,7 @@
         },
         {
           "name": "Ezequiel Tovar",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1393,7 +1393,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1437,7 +1437,7 @@
         },
         {
           "name": "Bryan Reynolds",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1459,7 +1459,7 @@
         },
         {
           "name": "Ian Happ",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1596,28 +1596,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Evan Carter",
-          "slot": "BE",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.17,
-            "HR": 3,
-            "OPS": 0.588,
-            "R": 11,
-            "RBI": 9,
-            "SB": 5,
-            "Kbat": 28
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Landen Roupp",
           "slot": "SP",
           "position": "SP",
@@ -1647,7 +1625,7 @@
         },
         {
           "name": "Andres Gimenez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1691,7 +1669,7 @@
         },
         {
           "name": "Edouard Julien",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1747,7 +1725,7 @@
         },
         {
           "name": "Cole Young",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1809,6 +1787,20 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jacob Latz",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -7408,5 +7400,5 @@
       ]
     }
   ],
-  "updated": "2026-05-04T16:25:43Z"
+  "updated": "2026-05-04T17:57:28Z"
 }
