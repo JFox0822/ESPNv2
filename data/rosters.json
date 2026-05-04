@@ -1437,7 +1437,7 @@
         },
         {
           "name": "Bryan Reynolds",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1760,28 +1760,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Jacob Lopez",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 30.0,
-            "H": 35,
-            "WHIP": 1.9,
-            "ERA": 6.6,
-            "K": 23,
-            "SVHD": 1,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 24,
-          "keeperEligible": true
-        },
-        {
           "name": "Brayan Rocchio",
           "slot": "SS",
           "position": "SS",
@@ -1801,6 +1779,20 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Drew Romo",
+          "slot": "UTIL",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -5700,11 +5692,11 @@
         },
         {
           "name": "Yandy Diaz",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.333,
             "HR": 5,
@@ -5854,7 +5846,7 @@
         },
         {
           "name": "Steven Kwan",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -6193,11 +6185,11 @@
         },
         {
           "name": "Tarik Skubal",
-          "slot": "SP",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 43.1,
             "H": 35,
@@ -6667,7 +6659,7 @@
         },
         {
           "name": "Jeremiah Jackson",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6681,7 +6673,7 @@
         },
         {
           "name": "Anthony Volpe",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6695,7 +6687,7 @@
         },
         {
           "name": "Troy Johnston",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7400,5 +7392,5 @@
       ]
     }
   ],
-  "updated": "2026-05-04T17:57:28Z"
+  "updated": "2026-05-04T19:24:26Z"
 }
