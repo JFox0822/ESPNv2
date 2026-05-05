@@ -1339,7 +1339,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.3,
             "HR": 4,
@@ -3136,7 +3136,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.234,
             "HR": 1,
@@ -3154,7 +3154,7 @@
         },
         {
           "name": "Kerry Carpenter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3344,7 +3344,7 @@
         },
         {
           "name": "Ramon Laureano",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4580,7 +4580,7 @@
         },
         {
           "name": "Devin Williams",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4858,7 +4858,7 @@
         },
         {
           "name": "Matt Strahm",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5043,7 +5043,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.212,
             "HR": 2,
@@ -6163,7 +6163,7 @@
         },
         {
           "name": "Cal Raleigh",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6643,7 +6643,7 @@
         },
         {
           "name": "Troy Johnston",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6941,7 +6941,7 @@
         },
         {
           "name": "Marcell Ozuna",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7330,9 +7330,23 @@
           "acquisitionType": "TRADE",
           "draftRound": 1,
           "keeperEligible": false
+        },
+        {
+          "name": "JJ Bleday",
+          "slot": "UTIL",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-05-05T19:14:36Z"
+  "updated": "2026-05-05T20:37:56Z"
 }
