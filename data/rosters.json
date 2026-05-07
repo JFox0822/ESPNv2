@@ -21,11 +21,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.285,
+            "AVG": 0.29,
             "HR": 5,
-            "OPS": 0.888,
+            "OPS": 0.911,
             "R": 22,
-            "RBI": 26,
+            "RBI": 27,
             "SB": 4,
             "Kbat": 20
           },
@@ -94,9 +94,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.273,
+            "AVG": 0.271,
             "HR": 15,
-            "OPS": 1.066,
+            "OPS": 1.059,
             "R": 34,
             "RBI": 28,
             "SB": 5,
@@ -1341,9 +1341,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.293,
+            "AVG": 0.291,
             "HR": 4,
-            "OPS": 0.826,
+            "OPS": 0.82,
             "R": 17,
             "RBI": 12,
             "SB": 1,
@@ -2216,9 +2216,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.218,
+            "AVG": 0.217,
             "HR": 6,
-            "OPS": 0.634,
+            "OPS": 0.629,
             "R": 14,
             "RBI": 21,
             "SB": 0,
@@ -2657,11 +2657,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 34.2,
-            "H": 29,
-            "WHIP": 1.356,
-            "ERA": 4.673,
-            "K": 45,
+            "IP": 35.2,
+            "H": 31,
+            "WHIP": 1.374,
+            "ERA": 4.794,
+            "K": 47,
             "SVHD": 0,
             "QS": 1
           },
@@ -4021,7 +4021,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.2,
             "HR": 1,
@@ -4350,13 +4350,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.209,
+            "AVG": 0.208,
             "HR": 4,
-            "OPS": 0.636,
+            "OPS": 0.631,
             "R": 17,
             "RBI": 13,
             "SB": 11,
-            "Kbat": 39
+            "Kbat": 40
           },
           "savant": {},
           "tier": "",
@@ -4396,7 +4396,7 @@
           "stats": {
             "AVG": 0.214,
             "HR": 7,
-            "OPS": 0.734,
+            "OPS": 0.738,
             "R": 21,
             "RBI": 19,
             "SB": 1,
@@ -4820,7 +4820,7 @@
         },
         {
           "name": "Alex Vesia",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4842,7 +4842,7 @@
         },
         {
           "name": "Matt Strahm",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6865,9 +6865,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.245,
+            "AVG": 0.243,
             "HR": 11,
-            "OPS": 0.826,
+            "OPS": 0.82,
             "R": 26,
             "RBI": 17,
             "SB": 2,
@@ -7332,5 +7332,5 @@
       ]
     }
   ],
-  "updated": "2026-05-07T15:09:21Z"
+  "updated": "2026-05-07T17:13:43Z"
 }
