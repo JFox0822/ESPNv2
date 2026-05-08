@@ -3929,7 +3929,7 @@
         },
         {
           "name": "Marcus Semien",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4039,7 +4039,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6960,28 +6960,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Lawrence Butler",
-          "slot": "BE",
-          "position": "RF",
-          "eligible": "RF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.179,
-            "HR": 3,
-            "OPS": 0.573,
-            "R": 13,
-            "RBI": 12,
-            "SB": 4,
-            "Kbat": 31
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 21,
-          "keeperEligible": true
-        },
-        {
           "name": "Will Warren",
           "slot": "SP",
           "position": "SP",
@@ -7292,9 +7270,23 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Christian Scott",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-05-08T15:05:00Z"
+  "updated": "2026-05-08T16:48:19Z"
 }
