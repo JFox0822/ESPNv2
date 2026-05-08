@@ -220,7 +220,7 @@
         },
         {
           "name": "Blake Snell",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -300,7 +300,7 @@
         },
         {
           "name": "Edwin Diaz",
-          "slot": "BE",
+          "slot": "IL",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4348,7 +4348,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.343,
             "HR": 12,
@@ -7288,5 +7288,5 @@
       ]
     }
   ],
-  "updated": "2026-05-08T20:45:36Z"
+  "updated": "2026-05-08T21:49:58Z"
 }
