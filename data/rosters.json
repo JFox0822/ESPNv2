@@ -885,7 +885,7 @@
         },
         {
           "name": "Luis Castillo",
-          "slot": "P",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -947,28 +947,6 @@
           "tier": "",
           "acquisitionType": "DRAFT",
           "draftRound": 15,
-          "keeperEligible": true
-        },
-        {
-          "name": "Bryan Abreu",
-          "slot": "BE",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 12.1,
-            "H": 13,
-            "WHIP": 2.351,
-            "ERA": 9.486,
-            "K": 20,
-            "SVHD": 2,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 16,
           "keeperEligible": true
         },
         {
@@ -1119,7 +1097,7 @@
         },
         {
           "name": "JoJo Romero",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -1141,7 +1119,7 @@
         },
         {
           "name": "Victor Scott II",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1163,7 +1141,7 @@
         },
         {
           "name": "Jorge Soler",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1177,7 +1155,7 @@
         },
         {
           "name": "Keider Montero",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1194,6 +1172,34 @@
           "slot": "RP",
           "position": "RP",
           "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Ty Madden",
+          "slot": "P",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Aaron Civale",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -1262,7 +1268,7 @@
         },
         {
           "name": "Nolan McLean",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1291,7 +1297,7 @@
         },
         {
           "name": "Trey Yesavage",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1631,7 +1637,7 @@
         },
         {
           "name": "Sean Burke",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1673,7 +1679,7 @@
         },
         {
           "name": "Clay Holmes",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4153,7 +4159,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 47.0,
             "H": 39,
@@ -6853,7 +6859,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7275,7 +7281,7 @@
         },
         {
           "name": "JJ Bleday",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7318,5 +7324,5 @@
       ]
     }
   ],
-  "updated": "2026-05-09T16:40:59Z"
+  "updated": "2026-05-09T17:40:59Z"
 }
