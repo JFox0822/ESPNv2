@@ -182,9 +182,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.247,
+            "AVG": 0.25,
             "HR": 3,
-            "OPS": 0.69,
+            "OPS": 0.7,
             "R": 24,
             "RBI": 15,
             "SB": 2,
@@ -1053,11 +1053,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.353,
+            "AVG": 0.348,
             "HR": 4,
-            "OPS": 0.907,
+            "OPS": 0.896,
             "R": 27,
-            "RBI": 16,
+            "RBI": 17,
             "SB": 5,
             "Kbat": 29
           },
@@ -3164,9 +3164,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.239,
+            "AVG": 0.232,
             "HR": 1,
-            "OPS": 0.663,
+            "OPS": 0.645,
             "R": 10,
             "RBI": 3,
             "SB": 0,
@@ -3877,7 +3877,7 @@
         },
         {
           "name": "Andrew Abbott",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3935,7 +3935,7 @@
         },
         {
           "name": "Jack Leiter",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5534,9 +5534,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.248,
+            "AVG": 0.247,
             "HR": 11,
-            "OPS": 0.934,
+            "OPS": 0.928,
             "R": 35,
             "RBI": 28,
             "SB": 7,
@@ -5550,7 +5550,7 @@
         },
         {
           "name": "Jackson Merrill",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5572,7 +5572,7 @@
         },
         {
           "name": "Nico Hoerner",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6181,9 +6181,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.293,
+            "AVG": 0.291,
             "HR": 9,
-            "OPS": 0.934,
+            "OPS": 0.928,
             "R": 23,
             "RBI": 36,
             "SB": 7,
@@ -6203,10 +6203,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.322,
+            "AVG": 0.327,
             "HR": 4,
-            "OPS": 0.89,
-            "R": 26,
+            "OPS": 0.897,
+            "R": 27,
             "RBI": 14,
             "SB": 4,
             "Kbat": 17
@@ -6357,10 +6357,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 52.2,
-            "H": 49,
-            "WHIP": 1.272,
-            "ERA": 3.93,
+            "IP": 55.2,
+            "H": 51,
+            "WHIP": 1.257,
+            "ERA": 3.88,
             "K": 37,
             "SVHD": 0,
             "QS": 5
@@ -6527,7 +6527,7 @@
         },
         {
           "name": "Trent Grisham",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6613,7 +6613,7 @@
         },
         {
           "name": "Jeremiah Jackson",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7207,11 +7207,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 35.1,
-            "H": 42,
+            "IP": 38.1,
+            "H": 46,
             "WHIP": 1.67,
-            "ERA": 4.075,
-            "K": 40,
+            "ERA": 4.226,
+            "K": 43,
             "SVHD": 0,
             "QS": 2
           },
@@ -7237,7 +7237,7 @@
         },
         {
           "name": "Sam Antonacci",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7251,7 +7251,7 @@
         },
         {
           "name": "Ketel Marte",
-          "slot": "2B",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7316,5 +7316,5 @@
       ]
     }
   ],
-  "updated": "2026-05-10T16:28:57Z"
+  "updated": "2026-05-10T17:28:32Z"
 }
