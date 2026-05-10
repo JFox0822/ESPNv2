@@ -805,7 +805,7 @@
         },
         {
           "name": "Willy Adames",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -849,7 +849,7 @@
         },
         {
           "name": "Trevor Story",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2396,7 +2396,7 @@
         },
         {
           "name": "Dustin May",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6939,7 +6939,7 @@
         },
         {
           "name": "Marcell Ozuna",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6961,11 +6961,11 @@
         },
         {
           "name": "Carlos Rodon",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -7011,7 +7011,7 @@
         },
         {
           "name": "Will Warren",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7066,28 +7066,6 @@
             "WHIP": 1.306,
             "ERA": 5.661,
             "K": 26,
-            "SVHD": 7,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Garrett Whitlock",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 15.1,
-            "H": 13,
-            "WHIP": 1.239,
-            "ERA": 3.522,
-            "K": 19,
             "SVHD": 7,
             "QS": 0
           },
@@ -7320,9 +7298,23 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "David Peterson",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-05-10T12:54:32Z"
+  "updated": "2026-05-10T14:16:29Z"
 }
