@@ -3333,28 +3333,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Ramon Laureano",
-          "slot": "BE",
-          "position": "LF",
-          "eligible": "LF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.221,
-            "HR": 5,
-            "OPS": 0.699,
-            "R": 17,
-            "RBI": 19,
-            "SB": 4,
-            "Kbat": 45
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 21,
-          "keeperEligible": true
-        },
-        {
           "name": "Chase DeLauter",
           "slot": "OF",
           "position": "RF",
@@ -3472,7 +3450,7 @@
         },
         {
           "name": "Parker Messick",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3578,6 +3556,28 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Noah Cameron",
+          "slot": "P",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 31.2,
+            "H": 40,
+            "WHIP": 1.611,
+            "ERA": 5.4,
+            "K": 28,
+            "SVHD": 0,
+            "QS": 1
+          },
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -4306,7 +4306,7 @@
         },
         {
           "name": "Bryce Harper",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -4416,7 +4416,7 @@
         },
         {
           "name": "Seiya Suzuki",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -4570,7 +4570,7 @@
         },
         {
           "name": "Devin Williams",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4680,7 +4680,7 @@
         },
         {
           "name": "Ryan O'Hearn",
-          "slot": "OF",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -4724,7 +4724,7 @@
         },
         {
           "name": "Colson Montgomery",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4848,7 +4848,7 @@
         },
         {
           "name": "Matt Strahm",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6961,7 +6961,7 @@
         },
         {
           "name": "Carlos Rodon",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7294,20 +7294,6 @@
           "keeperEligible": false
         },
         {
-          "name": "JJ Bleday",
-          "slot": "UTIL",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Carson Benge",
           "slot": "BE",
           "position": "CF",
@@ -7338,5 +7324,5 @@
       ]
     }
   ],
-  "updated": "2026-05-10T11:41:46Z"
+  "updated": "2026-05-10T12:54:32Z"
 }
