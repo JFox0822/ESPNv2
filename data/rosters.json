@@ -1617,7 +1617,7 @@
         },
         {
           "name": "Oswald Peraza",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -1779,7 +1779,7 @@
         },
         {
           "name": "Ryan McMahon",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -1986,7 +1986,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.198,
             "HR": 2,
@@ -5051,7 +5051,7 @@
         },
         {
           "name": "Jac Caglianone",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5249,7 +5249,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5399,7 +5399,7 @@
         },
         {
           "name": "Brandon Marsh",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5413,7 +5413,7 @@
         },
         {
           "name": "Bryson Stott",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5534,9 +5534,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.248,
             "HR": 11,
-            "OPS": 0.921,
+            "OPS": 0.934,
             "R": 35,
             "RBI": 28,
             "SB": 7,
@@ -6181,13 +6181,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.295,
+            "AVG": 0.293,
             "HR": 9,
-            "OPS": 0.941,
+            "OPS": 0.934,
             "R": 23,
             "RBI": 36,
             "SB": 7,
-            "Kbat": 29
+            "Kbat": 30
           },
           "savant": {},
           "tier": "",
@@ -6203,9 +6203,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.324,
+            "AVG": 0.322,
             "HR": 4,
-            "OPS": 0.896,
+            "OPS": 0.89,
             "R": 26,
             "RBI": 14,
             "SB": 4,
@@ -6357,11 +6357,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 51.2,
-            "H": 48,
-            "WHIP": 1.277,
-            "ERA": 4.006,
-            "K": 36,
+            "IP": 52.2,
+            "H": 49,
+            "WHIP": 1.272,
+            "ERA": 3.93,
+            "K": 37,
             "SVHD": 0,
             "QS": 5
           },
@@ -7207,10 +7207,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 34.2,
+            "IP": 35.1,
             "H": 42,
-            "WHIP": 1.702,
-            "ERA": 4.154,
+            "WHIP": 1.67,
+            "ERA": 4.075,
             "K": 40,
             "SVHD": 0,
             "QS": 2
@@ -7316,5 +7316,5 @@
       ]
     }
   ],
-  "updated": "2026-05-10T15:29:11Z"
+  "updated": "2026-05-10T16:28:57Z"
 }
