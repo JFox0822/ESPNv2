@@ -5582,7 +5582,7 @@
         },
         {
           "name": "Jackson Merrill",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5846,7 +5846,7 @@
         },
         {
           "name": "Steven Kwan",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -7332,11 +7332,11 @@
           "keeperEligible": false
         },
         {
-          "name": "David Peterson",
+          "name": "Henry Bolte",
           "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-05-11T16:13:51Z"
+  "updated": "2026-05-11T18:14:11Z"
 }
