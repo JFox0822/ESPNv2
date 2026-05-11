@@ -495,20 +495,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Angel Martinez",
-          "slot": "2B",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Jeffrey Springs",
           "slot": "SP",
           "position": "SP",
@@ -606,6 +592,20 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Nick Gonzales",
+          "slot": "2B",
+          "position": "2B",
+          "eligible": "2B",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -2356,7 +2356,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.252,
             "HR": 4,
@@ -2525,7 +2525,7 @@
         },
         {
           "name": "Framber Valdez",
-          "slot": "P",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2817,7 +2817,7 @@
         },
         {
           "name": "Riley O'Brien",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2978,10 +2978,10 @@
           "keeperEligible": false
         },
         {
-          "name": "Kyle Leahy",
-          "slot": "SP",
-          "position": "RP",
-          "eligible": "RP",
+          "name": "Connor Prielipp",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -2992,8 +2992,8 @@
           "keeperEligible": false
         },
         {
-          "name": "Connor Prielipp",
-          "slot": "BE",
+          "name": "Alek Manoah",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-05-11T18:14:11Z"
+  "updated": "2026-05-11T20:11:25Z"
 }
