@@ -877,13 +877,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.212,
+            "AVG": 0.211,
             "HR": 6,
-            "OPS": 0.742,
+            "OPS": 0.737,
             "R": 14,
             "RBI": 15,
             "SB": 0,
-            "Kbat": 49
+            "Kbat": 50
           },
           "savant": {},
           "tier": "",
@@ -3120,9 +3120,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.226,
+            "AVG": 0.232,
             "HR": 6,
-            "OPS": 0.722,
+            "OPS": 0.739,
             "R": 13,
             "RBI": 26,
             "SB": 0,
@@ -3406,13 +3406,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.306,
+            "AVG": 0.304,
             "HR": 0,
-            "OPS": 0.717,
+            "OPS": 0.711,
             "R": 17,
             "RBI": 6,
             "SB": 1,
-            "Kbat": 23
+            "Kbat": 24
           },
           "savant": {},
           "tier": "",
@@ -4336,7 +4336,7 @@
           "stats": {
             "AVG": 0.317,
             "HR": 4,
-            "OPS": 0.904,
+            "OPS": 0.907,
             "R": 26,
             "RBI": 20,
             "SB": 1,
@@ -4620,11 +4620,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 8.1,
+            "IP": 9.1,
             "H": 8,
-            "WHIP": 1.56,
-            "ERA": 5.4,
-            "K": 10,
+            "WHIP": 1.393,
+            "ERA": 4.821,
+            "K": 12,
             "SVHD": 0,
             "QS": 0
           },
@@ -5057,9 +5057,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.248,
+            "AVG": 0.246,
             "HR": 4,
-            "OPS": 0.742,
+            "OPS": 0.737,
             "R": 17,
             "RBI": 8,
             "SB": 0,
@@ -7324,5 +7324,5 @@
       ]
     }
   ],
-  "updated": "2026-05-11T02:06:00Z"
+  "updated": "2026-05-11T06:11:16Z"
 }
