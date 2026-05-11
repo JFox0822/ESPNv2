@@ -334,7 +334,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "IP": 47.2,
             "H": 46,
@@ -1105,7 +1105,7 @@
         },
         {
           "name": "JoJo Romero",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3196,7 +3196,7 @@
         },
         {
           "name": "Vinnie Pasquantino",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3625,11 +3625,11 @@
           "keeperEligible": false
         },
         {
-          "name": "Trevor McDonald",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
+          "name": "Jose Fernandez",
+          "slot": "UTIL",
+          "position": "SS",
+          "eligible": "SS",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-05-11T20:11:25Z"
+  "updated": "2026-05-11T21:46:59Z"
 }
