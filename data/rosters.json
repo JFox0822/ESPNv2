@@ -330,7 +330,7 @@
         },
         {
           "name": "Nathan Eovaldi",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -482,7 +482,7 @@
         },
         {
           "name": "Bryce Elder",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -783,7 +783,7 @@
         },
         {
           "name": "Jose Altuve",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1047,7 +1047,7 @@
         },
         {
           "name": "Otto Lopez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1127,7 +1127,7 @@
         },
         {
           "name": "Victor Scott II",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1149,7 +1149,7 @@
         },
         {
           "name": "Jorge Soler",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2092,7 +2092,7 @@
         },
         {
           "name": "George Kirby",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2569,7 +2569,7 @@
         },
         {
           "name": "Matt Chapman",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2901,7 +2901,7 @@
         },
         {
           "name": "Miguel Vargas",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2950,20 +2950,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Casey Schmitt",
-          "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Chase Meidroth",
           "slot": "2B",
           "position": "SS",
@@ -2996,6 +2982,20 @@
           "slot": "SP",
           "position": "RP",
           "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Connor Prielipp",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -3086,7 +3086,7 @@
         },
         {
           "name": "Jesus Luzardo",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3394,7 +3394,7 @@
         },
         {
           "name": "Michael Soroka",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3460,7 +3460,7 @@
         },
         {
           "name": "Kyle Harrison",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3626,7 +3626,7 @@
         },
         {
           "name": "Trevor McDonald",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4099,7 +4099,7 @@
         },
         {
           "name": "Roki Sasaki",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4127,9 +4127,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.271,
+            "AVG": 0.263,
             "HR": 2,
-            "OPS": 0.714,
+            "OPS": 0.694,
             "R": 15,
             "RBI": 12,
             "SB": 0,
@@ -4289,7 +4289,7 @@
         },
         {
           "name": "Chase Dollander",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5045,9 +5045,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.28,
+            "AVG": 0.278,
             "HR": 3,
-            "OPS": 0.755,
+            "OPS": 0.75,
             "R": 21,
             "RBI": 23,
             "SB": 0,
@@ -5133,13 +5133,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.233,
+            "AVG": 0.231,
             "HR": 4,
-            "OPS": 0.673,
+            "OPS": 0.667,
             "R": 17,
             "RBI": 17,
             "SB": 1,
-            "Kbat": 39
+            "Kbat": 40
           },
           "savant": {},
           "tier": "",
@@ -5590,7 +5590,7 @@
           "stats": {
             "AVG": 0.235,
             "HR": 4,
-            "OPS": 0.677,
+            "OPS": 0.68,
             "R": 22,
             "RBI": 18,
             "SB": 7,
@@ -7356,5 +7356,5 @@
       ]
     }
   ],
-  "updated": "2026-05-11T10:04:28Z"
+  "updated": "2026-05-11T13:21:38Z"
 }
