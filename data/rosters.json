@@ -1916,7 +1916,7 @@
         },
         {
           "name": "Adley Rutschman",
-          "slot": "UTIL",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2048,7 +2048,7 @@
         },
         {
           "name": "Carter Jensen",
-          "slot": "C",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -4127,9 +4127,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.263,
+            "AVG": 0.271,
             "HR": 2,
-            "OPS": 0.694,
+            "OPS": 0.714,
             "R": 15,
             "RBI": 12,
             "SB": 0,
@@ -5045,9 +5045,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.28,
             "HR": 3,
-            "OPS": 0.75,
+            "OPS": 0.755,
             "R": 21,
             "RBI": 23,
             "SB": 0,
@@ -5133,13 +5133,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.231,
+            "AVG": 0.233,
             "HR": 4,
-            "OPS": 0.667,
+            "OPS": 0.673,
             "R": 17,
             "RBI": 17,
             "SB": 1,
-            "Kbat": 40
+            "Kbat": 39
           },
           "savant": {},
           "tier": "",
@@ -5590,7 +5590,7 @@
           "stats": {
             "AVG": 0.235,
             "HR": 4,
-            "OPS": 0.68,
+            "OPS": 0.677,
             "R": 22,
             "RBI": 18,
             "SB": 7,
@@ -5955,28 +5955,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Adolis Garcia",
-          "slot": "BE",
-          "position": "RF",
-          "eligible": "RF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.24,
-            "HR": 4,
-            "OPS": 0.683,
-            "R": 15,
-            "RBI": 13,
-            "SB": 1,
-            "Kbat": 41
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 26,
-          "keeperEligible": true
-        },
-        {
           "name": "Braxton Ashcraft",
           "slot": "P",
           "position": "RP",
@@ -6096,6 +6074,20 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Mauricio Dubon",
+          "slot": "BE",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -7356,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-05-11T13:21:38Z"
+  "updated": "2026-05-11T16:13:51Z"
 }
