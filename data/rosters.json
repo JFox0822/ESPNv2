@@ -3240,7 +3240,7 @@
         },
         {
           "name": "Trevor Rogers",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3622,20 +3622,6 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 7,
-          "keeperEligible": false
-        },
-        {
-          "name": "Jose Fernandez",
-          "slot": "BE",
-          "position": "SS",
-          "eligible": "SS",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -6199,7 +6185,7 @@
         },
         {
           "name": "CJ Abrams",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6313,7 +6299,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.314,
             "HR": 1,
@@ -6623,7 +6609,7 @@
         },
         {
           "name": "Hyeseong Kim",
-          "slot": "SS",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7356,5 +7342,5 @@
       ]
     }
   ],
-  "updated": "2026-05-12T17:55:21Z"
+  "updated": "2026-05-12T19:27:42Z"
 }
