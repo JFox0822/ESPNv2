@@ -2569,7 +2569,7 @@
         },
         {
           "name": "Matt Chapman",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2901,7 +2901,7 @@
         },
         {
           "name": "Miguel Vargas",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3244,7 +3244,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 30.1,
             "H": 34,
@@ -4127,13 +4127,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.271,
+            "AVG": 0.268,
             "HR": 2,
-            "OPS": 0.714,
-            "R": 15,
+            "OPS": 0.692,
+            "R": 17,
             "RBI": 12,
             "SB": 0,
-            "Kbat": 18
+            "Kbat": 21
           },
           "savant": {},
           "tier": "",
@@ -5045,13 +5045,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.28,
+            "AVG": 0.287,
             "HR": 3,
-            "OPS": 0.755,
+            "OPS": 0.759,
             "R": 21,
-            "RBI": 23,
+            "RBI": 26,
             "SB": 0,
-            "Kbat": 16
+            "Kbat": 18
           },
           "savant": {},
           "tier": "",
@@ -5133,13 +5133,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.233,
+            "AVG": 0.248,
             "HR": 4,
-            "OPS": 0.673,
-            "R": 17,
+            "OPS": 0.709,
+            "R": 18,
             "RBI": 17,
             "SB": 1,
-            "Kbat": 39
+            "Kbat": 42
           },
           "savant": {},
           "tier": "",
@@ -5588,13 +5588,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.228,
             "HR": 4,
-            "OPS": 0.677,
+            "OPS": 0.665,
             "R": 22,
             "RBI": 18,
-            "SB": 7,
-            "Kbat": 35
+            "SB": 8,
+            "Kbat": 40
           },
           "savant": {},
           "tier": "",
@@ -6199,7 +6199,7 @@
         },
         {
           "name": "CJ Abrams",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6485,7 +6485,7 @@
         },
         {
           "name": "Zac Gallen",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6637,7 +6637,7 @@
         },
         {
           "name": "Jeremiah Jackson",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6651,7 +6651,7 @@
         },
         {
           "name": "Nick Martinez",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7268,20 +7268,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Sam Antonacci",
-          "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Ketel Marte",
           "slot": "2B",
           "position": "2B",
@@ -7344,9 +7330,31 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Garrett Whitlock",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 15.1,
+            "H": 13,
+            "WHIP": 1.239,
+            "ERA": 3.522,
+            "K": 19,
+            "SVHD": 7,
+            "QS": 0
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-05-12T15:56:54Z"
+  "updated": "2026-05-12T17:55:21Z"
 }
