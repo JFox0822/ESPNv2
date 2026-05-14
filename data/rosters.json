@@ -857,7 +857,7 @@
         },
         {
           "name": "Trevor Story",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1157,7 +1157,7 @@
         },
         {
           "name": "Jorge Soler",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2944,20 +2944,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Bryce Eldridge",
-          "slot": "BE",
-          "position": "DH",
-          "eligible": "DH",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Chase Meidroth",
           "slot": "UTIL",
           "position": "SS",
@@ -3012,6 +2998,20 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Spencer Steer",
+          "slot": "BE",
+          "position": "1B",
+          "eligible": "1B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 20,
+          "keeperEligible": true
         }
       ]
     },
@@ -7342,5 +7342,5 @@
       ]
     }
   ],
-  "updated": "2026-05-14T09:12:17Z"
+  "updated": "2026-05-14T11:24:30Z"
 }
