@@ -827,13 +827,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.192,
+            "AVG": 0.19,
             "HR": 5,
-            "OPS": 0.651,
+            "OPS": 0.644,
             "R": 9,
             "RBI": 18,
             "SB": 2,
-            "Kbat": 35
+            "Kbat": 36
           },
           "savant": {},
           "tier": "",
@@ -1850,9 +1850,9 @@
           "isPitcher": false,
           "injStatus": "DAY_TO_DAY",
           "stats": {
-            "AVG": 0.234,
+            "AVG": 0.233,
             "HR": 4,
-            "OPS": 0.632,
+            "OPS": 0.628,
             "R": 24,
             "RBI": 13,
             "SB": 5,
@@ -2563,7 +2563,7 @@
         },
         {
           "name": "Matt Chapman",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3108,13 +3108,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.226,
+            "AVG": 0.225,
             "HR": 17,
-            "OPS": 0.963,
+            "OPS": 0.958,
             "R": 29,
             "RBI": 28,
             "SB": 1,
-            "Kbat": 60
+            "Kbat": 61
           },
           "savant": {},
           "tier": "",
@@ -4324,9 +4324,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.266,
+            "AVG": 0.265,
             "HR": 10,
-            "OPS": 0.892,
+            "OPS": 0.887,
             "R": 25,
             "RBI": 24,
             "SB": 2,
@@ -4654,11 +4654,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 39.0,
+            "IP": 40.0,
             "H": 27,
-            "WHIP": 0.949,
-            "ERA": 2.769,
-            "K": 32,
+            "WHIP": 0.925,
+            "ERA": 2.7,
+            "K": 33,
             "SVHD": 0,
             "QS": 3
           },
@@ -7320,5 +7320,5 @@
       ]
     }
   ],
-  "updated": "2026-05-14T22:00:41Z"
+  "updated": "2026-05-14T23:14:47Z"
 }
