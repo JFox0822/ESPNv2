@@ -1990,7 +1990,7 @@
         },
         {
           "name": "Owen Caissie",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2202,7 +2202,7 @@
         },
         {
           "name": "Mitch Keller",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2246,7 +2246,7 @@
         },
         {
           "name": "Jake Burger",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2332,7 +2332,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2346,7 +2346,7 @@
         },
         {
           "name": "Noah Schultz",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2467,7 +2467,7 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2853,7 +2853,7 @@
         },
         {
           "name": "Moises Ballesteros",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -2895,7 +2895,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2945,7 +2945,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3001,7 +3001,7 @@
         },
         {
           "name": "Spencer Steer",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3691,7 +3691,7 @@
         },
         {
           "name": "Max Fried",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3881,7 +3881,7 @@
         },
         {
           "name": "Zack Wheeler",
-          "slot": "SP",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3983,7 +3983,7 @@
         },
         {
           "name": "Jack Leiter",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7342,5 +7342,5 @@
       ]
     }
   ],
-  "updated": "2026-05-14T11:24:30Z"
+  "updated": "2026-05-14T13:11:41Z"
 }
