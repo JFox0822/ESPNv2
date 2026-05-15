@@ -37,7 +37,7 @@
         },
         {
           "name": "Freddie Freeman",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -410,7 +410,7 @@
         },
         {
           "name": "Andrew Vaughn",
-          "slot": "BE",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1357,7 +1357,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1731,7 +1731,7 @@
         },
         {
           "name": "Nathan Church",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1850,9 +1850,9 @@
           "isPitcher": false,
           "injStatus": "DAY_TO_DAY",
           "stats": {
-            "AVG": 0.233,
+            "AVG": 0.232,
             "HR": 4,
-            "OPS": 0.625,
+            "OPS": 0.622,
             "R": 25,
             "RBI": 13,
             "SB": 5,
@@ -3100,9 +3100,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.226,
+            "AVG": 0.23,
             "HR": 18,
-            "OPS": 0.965,
+            "OPS": 0.971,
             "R": 30,
             "RBI": 30,
             "SB": 1,
@@ -5904,10 +5904,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 48.2,
-            "H": 37,
-            "WHIP": 1.048,
-            "ERA": 2.774,
+            "IP": 49.0,
+            "H": 38,
+            "WHIP": 1.061,
+            "ERA": 2.755,
             "K": 51,
             "SVHD": 0,
             "QS": 5
@@ -7334,5 +7334,5 @@
       ]
     }
   ],
-  "updated": "2026-05-15T21:31:52Z"
+  "updated": "2026-05-15T22:43:58Z"
 }
