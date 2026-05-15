@@ -224,7 +224,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "IP": 3.0,
             "H": 6,
@@ -777,7 +777,7 @@
         },
         {
           "name": "Jose Altuve",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1121,7 +1121,7 @@
         },
         {
           "name": "Victor Scott II",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3673,7 +3673,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 61.2,
             "H": 43,
@@ -4243,7 +4243,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -6463,7 +6463,7 @@
         },
         {
           "name": "Zac Gallen",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6529,7 +6529,7 @@
         },
         {
           "name": "Trent Grisham",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6601,7 +6601,7 @@
         },
         {
           "name": "Hyeseong Kim",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6657,7 +6657,7 @@
         },
         {
           "name": "Tyler Mahle",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7334,5 +7334,5 @@
       ]
     }
   ],
-  "updated": "2026-05-15T20:01:02Z"
+  "updated": "2026-05-15T21:31:52Z"
 }
