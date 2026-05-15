@@ -220,7 +220,7 @@
         },
         {
           "name": "Blake Snell",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -432,7 +432,7 @@
         },
         {
           "name": "Bryce Miller",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -568,7 +568,7 @@
         },
         {
           "name": "Nick Gonzales",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -596,7 +596,7 @@
         },
         {
           "name": "Sam Antonacci",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6853,7 +6853,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7211,7 +7211,7 @@
         },
         {
           "name": "Carson Benge",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7334,5 +7334,5 @@
       ]
     }
   ],
-  "updated": "2026-05-15T18:16:34Z"
+  "updated": "2026-05-15T20:01:02Z"
 }
