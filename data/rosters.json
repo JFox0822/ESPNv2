@@ -2562,28 +2562,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Matt Chapman",
-          "slot": "BE",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.224,
-            "HR": 1,
-            "OPS": 0.606,
-            "R": 16,
-            "RBI": 14,
-            "SB": 0,
-            "Kbat": 44
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 8,
-          "keeperEligible": false
-        },
-        {
           "name": "Dansby Swanson",
           "slot": "BE",
           "position": "SS",
@@ -2998,6 +2976,20 @@
           "acquisitionType": "ADD",
           "draftRound": 20,
           "keeperEligible": true
+        },
+        {
+          "name": "Gage Workman",
+          "slot": "BE",
+          "position": "3B",
+          "eligible": "3B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -4057,7 +4049,7 @@
         },
         {
           "name": "Jasson Dominguez",
-          "slot": "BE",
+          "slot": "IL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4123,7 +4115,7 @@
         },
         {
           "name": "Grayson Rodriguez",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4582,7 +4574,7 @@
         },
         {
           "name": "Jacob Misiorowski",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4824,7 +4816,7 @@
         },
         {
           "name": "Aaron Nola",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7342,5 +7334,5 @@
       ]
     }
   ],
-  "updated": "2026-05-15T10:12:08Z"
+  "updated": "2026-05-15T12:15:43Z"
 }
