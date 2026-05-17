@@ -176,7 +176,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -410,7 +410,7 @@
         },
         {
           "name": "Andrew Vaughn",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1063,10 +1063,10 @@
           "stats": {
             "AVG": 0.341,
             "HR": 4,
-            "OPS": 0.866,
+            "OPS": 0.869,
             "R": 27,
             "RBI": 20,
-            "SB": 5,
+            "SB": 6,
             "Kbat": 32
           },
           "savant": {},
@@ -1399,9 +1399,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.304,
+            "AVG": 0.302,
             "HR": 0,
-            "OPS": 0.692,
+            "OPS": 0.688,
             "R": 24,
             "RBI": 12,
             "SB": 14,
@@ -1473,7 +1473,7 @@
         },
         {
           "name": "Kevin Gausman",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3180,9 +3180,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.205,
+            "AVG": 0.202,
             "HR": 1,
-            "OPS": 0.584,
+            "OPS": 0.578,
             "R": 11,
             "RBI": 3,
             "SB": 1,
@@ -3616,7 +3616,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3793,7 +3793,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3997,7 +3997,7 @@
         },
         {
           "name": "Marcus Semien",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4592,7 +4592,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 51.0,
             "H": 29,
@@ -4943,11 +4943,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.253,
-            "HR": 11,
-            "OPS": 0.804,
-            "R": 27,
-            "RBI": 21,
+            "AVG": 0.257,
+            "HR": 12,
+            "OPS": 0.828,
+            "R": 28,
+            "RBI": 22,
             "SB": 0,
             "Kbat": 31
           },
@@ -5069,7 +5069,7 @@
         },
         {
           "name": "Tyler Soderstrom",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5185,11 +5185,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 47.1,
-            "H": 41,
-            "WHIP": 1.373,
-            "ERA": 4.944,
-            "K": 53,
+            "IP": 49.0,
+            "H": 42,
+            "WHIP": 1.367,
+            "ERA": 4.959,
+            "K": 54,
             "SVHD": 0,
             "QS": 3
           },
@@ -5251,10 +5251,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 42.2,
-            "H": 31,
-            "WHIP": 0.891,
-            "ERA": 3.164,
+            "IP": 44.2,
+            "H": 32,
+            "WHIP": 0.873,
+            "ERA": 3.022,
             "K": 43,
             "SVHD": 0,
             "QS": 4
@@ -5289,7 +5289,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5453,7 +5453,7 @@
         },
         {
           "name": "Matt McLain",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5706,9 +5706,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.294,
+            "AVG": 0.293,
             "HR": 6,
-            "OPS": 0.815,
+            "OPS": 0.81,
             "R": 21,
             "RBI": 26,
             "SB": 1,
@@ -6257,9 +6257,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.315,
+            "AVG": 0.314,
             "HR": 4,
-            "OPS": 0.874,
+            "OPS": 0.87,
             "R": 32,
             "RBI": 15,
             "SB": 4,
@@ -6889,13 +6889,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.277,
+            "AVG": 0.276,
             "HR": 8,
-            "OPS": 0.855,
+            "OPS": 0.85,
             "R": 24,
             "RBI": 34,
             "SB": 0,
-            "Kbat": 45
+            "Kbat": 46
           },
           "savant": {},
           "tier": "",
@@ -7161,7 +7161,7 @@
         },
         {
           "name": "Ryan Weathers",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7219,7 +7219,7 @@
         },
         {
           "name": "Cade Cavalli",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7386,5 +7386,5 @@
       ]
     }
   ],
-  "updated": "2026-05-17T15:34:30Z"
+  "updated": "2026-05-17T16:44:43Z"
 }
