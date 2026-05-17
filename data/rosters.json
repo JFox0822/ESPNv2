@@ -5289,7 +5289,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5369,7 +5369,7 @@
         },
         {
           "name": "Louis Varland",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5383,7 +5383,7 @@
         },
         {
           "name": "Josh Jung",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5411,7 +5411,7 @@
         },
         {
           "name": "Brandon Marsh",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5439,7 +5439,7 @@
         },
         {
           "name": "Jake Bauers",
-          "slot": "BE",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5474,26 +5474,40 @@
           "keeperEligible": false
         },
         {
-          "name": "Garrett Cleavinger",
+          "name": "Brad Keller",
           "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 8.0,
-            "H": 8,
-            "WHIP": 1.625,
-            "ERA": 4.5,
-            "K": 12,
-            "SVHD": 7,
+            "IP": 18.2,
+            "H": 17,
+            "WHIP": 1.232,
+            "ERA": 3.857,
+            "K": 23,
+            "SVHD": 4,
             "QS": 0
           },
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 17,
-          "keeperEligible": true
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jose Ferrer",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -5928,7 +5942,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6100,7 +6114,7 @@
         },
         {
           "name": "JJ Bleday",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7372,5 +7386,5 @@
       ]
     }
   ],
-  "updated": "2026-05-17T12:55:56Z"
+  "updated": "2026-05-17T14:22:48Z"
 }
