@@ -1481,7 +1481,7 @@
         },
         {
           "name": "Kevin Gausman",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1817,7 +1817,7 @@
         },
         {
           "name": "J.T. Ginn",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2607,7 +2607,7 @@
         },
         {
           "name": "Dansby Swanson",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2947,7 +2947,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3666,7 +3666,7 @@
         },
         {
           "name": "Ben Brown",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3913,7 +3913,7 @@
         },
         {
           "name": "Jackson Holliday",
-          "slot": "BE",
+          "slot": "IL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4094,28 +4094,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Luis Robert Jr.",
-          "slot": "IL",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
-          "stats": {
-            "AVG": 0.224,
-            "HR": 2,
-            "OPS": 0.656,
-            "R": 10,
-            "RBI": 8,
-            "SB": 2,
-            "Kbat": 17
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 22,
-          "keeperEligible": true
-        },
-        {
           "name": "Jasson Dominguez",
           "slot": "IL",
           "position": "LF",
@@ -4205,7 +4183,7 @@
         },
         {
           "name": "Spencer Horwitz",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -4341,6 +4319,20 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Gavin Sheets",
+          "slot": "1B",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -5696,7 +5688,7 @@
         },
         {
           "name": "Jeremy Pena",
-          "slot": "IL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6130,20 +6122,6 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Mauricio Dubon",
-          "slot": "SS",
-          "position": "LF",
-          "eligible": "LF",
-          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -7494,5 +7472,5 @@
       ]
     }
   ],
-  "updated": "2026-05-18T16:00:07Z"
+  "updated": "2026-05-18T18:03:25Z"
 }
