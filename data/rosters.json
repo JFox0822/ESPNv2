@@ -1423,7 +1423,7 @@
         },
         {
           "name": "Bryan Reynolds",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1633,7 +1633,7 @@
         },
         {
           "name": "Oswald Peraza",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3166,7 +3166,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.23,
             "HR": 20,
@@ -3802,28 +3802,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Agustin Ramirez",
-          "slot": "C",
-          "position": "C",
-          "eligible": "C",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.23,
-            "HR": 2,
-            "OPS": 0.663,
-            "R": 14,
-            "RBI": 14,
-            "SB": 3,
-            "Kbat": 28
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 6,
-          "keeperEligible": false
-        },
-        {
           "name": "Ozzie Albies",
           "slot": "2B",
           "position": "2B",
@@ -4340,6 +4318,20 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Dalton Rushing",
+          "slot": "C",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -4488,7 +4480,7 @@
         },
         {
           "name": "Corey Seager",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4818,7 +4810,7 @@
         },
         {
           "name": "Colson Montgomery",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5692,7 +5684,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.256,
             "HR": 0,
@@ -7472,5 +7464,5 @@
       ]
     }
   ],
-  "updated": "2026-05-18T20:09:26Z"
+  "updated": "2026-05-18T21:43:18Z"
 }
