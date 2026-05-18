@@ -140,7 +140,7 @@
           "stats": {
             "AVG": 0.301,
             "HR": 13,
-            "OPS": 0.928,
+            "OPS": 0.931,
             "R": 39,
             "RBI": 38,
             "SB": 1,
@@ -803,7 +803,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.245,
             "HR": 4,
@@ -1960,13 +1960,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.268,
+            "AVG": 0.265,
             "HR": 6,
-            "OPS": 0.823,
+            "OPS": 0.816,
             "R": 14,
             "RBI": 24,
             "SB": 0,
-            "Kbat": 20
+            "Kbat": 21
           },
           "savant": {},
           "tier": "",
@@ -2781,13 +2781,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.262,
+            "AVG": 0.261,
             "HR": 1,
-            "OPS": 0.785,
+            "OPS": 0.781,
             "R": 29,
             "RBI": 13,
             "SB": 1,
-            "Kbat": 40
+            "Kbat": 41
           },
           "savant": {},
           "tier": "",
@@ -3082,7 +3082,7 @@
           "stats": {
             "AVG": 0.302,
             "HR": 11,
-            "OPS": 0.903,
+            "OPS": 0.906,
             "R": 35,
             "RBI": 31,
             "SB": 9,
@@ -3300,10 +3300,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 34.1,
-            "H": 40,
-            "WHIP": 1.544,
-            "ERA": 5.767,
+            "IP": 34.2,
+            "H": 41,
+            "WHIP": 1.558,
+            "ERA": 5.712,
             "K": 30,
             "SVHD": 0,
             "QS": 3
@@ -3470,7 +3470,7 @@
         },
         {
           "name": "Colt Keith",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -3616,7 +3616,7 @@
         },
         {
           "name": "Carlos Cortes",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3809,9 +3809,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.275,
+            "AVG": 0.273,
             "HR": 8,
-            "OPS": 0.779,
+            "OPS": 0.775,
             "R": 31,
             "RBI": 25,
             "SB": 0,
@@ -4484,7 +4484,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.179,
             "HR": 7,
@@ -4860,11 +4860,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 37.2,
+            "IP": 38.2,
             "H": 48,
-            "WHIP": 1.593,
-            "ERA": 6.212,
-            "K": 34,
+            "WHIP": 1.578,
+            "ERA": 6.052,
+            "K": 35,
             "SVHD": 0,
             "QS": 0
           },
@@ -5077,9 +5077,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.214,
+            "AVG": 0.213,
             "HR": 10,
-            "OPS": 0.692,
+            "OPS": 0.689,
             "R": 24,
             "RBI": 24,
             "SB": 6,
@@ -5505,13 +5505,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.213,
+            "AVG": 0.212,
             "HR": 5,
-            "OPS": 0.681,
+            "OPS": 0.677,
             "R": 19,
             "RBI": 19,
             "SB": 6,
-            "Kbat": 42
+            "Kbat": 43
           },
           "savant": {},
           "tier": "",
@@ -5752,9 +5752,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.295,
+            "AVG": 0.299,
             "HR": 7,
-            "OPS": 0.833,
+            "OPS": 0.846,
             "R": 22,
             "RBI": 27,
             "SB": 1,
@@ -6553,11 +6553,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 39.2,
+            "IP": 40.2,
             "H": 24,
-            "WHIP": 0.983,
-            "ERA": 2.269,
-            "K": 41,
+            "WHIP": 0.959,
+            "ERA": 2.213,
+            "K": 43,
             "SVHD": 0,
             "QS": 1
           },
@@ -6839,7 +6839,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.252,
             "HR": 2,
@@ -6951,9 +6951,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.269,
             "HR": 8,
-            "OPS": 0.835,
+            "OPS": 0.831,
             "R": 24,
             "RBI": 34,
             "SB": 0,
@@ -7119,10 +7119,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 47.2,
+            "IP": 48.0,
             "H": 38,
-            "WHIP": 1.154,
-            "ERA": 3.21,
+            "WHIP": 1.167,
+            "ERA": 3.188,
             "K": 54,
             "SVHD": 0,
             "QS": 1
@@ -7331,9 +7331,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.248,
             "HR": 3,
-            "OPS": 0.649,
+            "OPS": 0.657,
             "R": 20,
             "RBI": 14,
             "SB": 8,
@@ -7464,5 +7464,5 @@
       ]
     }
   ],
-  "updated": "2026-05-18T21:43:18Z"
+  "updated": "2026-05-18T22:48:48Z"
 }
