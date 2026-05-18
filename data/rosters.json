@@ -1866,7 +1866,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1910,7 +1910,7 @@
         },
         {
           "name": "Yoshinobu Yamamoto",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2108,7 +2108,7 @@
         },
         {
           "name": "Tatsuya Imai",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2130,7 +2130,7 @@
         },
         {
           "name": "George Kirby",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2376,7 +2376,7 @@
         },
         {
           "name": "Noah Schultz",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2695,7 +2695,7 @@
         },
         {
           "name": "MacKenzie Gore",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2855,7 +2855,7 @@
         },
         {
           "name": "Joey Cantillo",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2961,7 +2961,7 @@
         },
         {
           "name": "Connor Prielipp",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2989,7 +2989,7 @@
         },
         {
           "name": "Walbert Urena",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6004,7 +6004,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6190,7 +6190,7 @@
         },
         {
           "name": "Bryson Stott",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6467,7 +6467,7 @@
         },
         {
           "name": "Shota Imanaga",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6599,7 +6599,7 @@
         },
         {
           "name": "Zac Gallen",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6751,7 +6751,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7494,5 +7494,5 @@
       ]
     }
   ],
-  "updated": "2026-05-18T08:39:51Z"
+  "updated": "2026-05-18T12:20:44Z"
 }
