@@ -432,7 +432,7 @@
         },
         {
           "name": "Bryce Miller",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -540,7 +540,7 @@
         },
         {
           "name": "Luis Severino",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1077,12 +1077,12 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.337,
+            "AVG": 0.344,
             "HR": 4,
-            "OPS": 0.859,
-            "R": 28,
+            "OPS": 0.874,
+            "R": 30,
             "RBI": 21,
-            "SB": 7,
+            "SB": 8,
             "Kbat": 33
           },
           "savant": {},
@@ -1387,7 +1387,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1431,7 +1431,7 @@
         },
         {
           "name": "Bryan Reynolds",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1553,13 +1553,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.214,
+            "AVG": 0.207,
             "HR": 2,
-            "OPS": 0.714,
-            "R": 7,
-            "RBI": 4,
+            "OPS": 0.709,
+            "R": 8,
+            "RBI": 5,
             "SB": 7,
-            "Kbat": 8
+            "Kbat": 9
           },
           "savant": {},
           "tier": "",
@@ -2002,7 +2002,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.284,
             "HR": 4,
@@ -2497,7 +2497,7 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2651,7 +2651,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2975,7 +2975,7 @@
         },
         {
           "name": "A.J. Ewing",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3102,11 +3102,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.277,
+            "AVG": 0.28,
             "HR": 14,
-            "OPS": 0.944,
+            "OPS": 0.95,
             "R": 36,
-            "RBI": 38,
+            "RBI": 39,
             "SB": 1,
             "Kbat": 51
           },
@@ -3234,13 +3234,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.215,
+            "AVG": 0.221,
             "HR": 1,
-            "OPS": 0.614,
+            "OPS": 0.633,
             "R": 13,
-            "RBI": 4,
+            "RBI": 6,
             "SB": 1,
-            "Kbat": 27
+            "Kbat": 28
           },
           "savant": {},
           "tier": "",
@@ -3809,7 +3809,7 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.274,
+            "AVG": 0.273,
             "HR": 8,
             "OPS": 0.771,
             "R": 31,
@@ -3891,7 +3891,7 @@
         },
         {
           "name": "Jackson Holliday",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4117,7 +4117,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4362,13 +4362,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.214,
+            "AVG": 0.212,
             "HR": 7,
-            "OPS": 0.654,
+            "OPS": 0.647,
             "R": 24,
             "RBI": 28,
             "SB": 3,
-            "Kbat": 53
+            "Kbat": 54
           },
           "savant": {},
           "tier": "",
@@ -5694,11 +5694,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.292,
-            "HR": 8,
-            "OPS": 0.802,
-            "R": 18,
-            "RBI": 25,
+            "AVG": 0.295,
+            "HR": 9,
+            "OPS": 0.823,
+            "R": 19,
+            "RBI": 26,
             "SB": 3,
             "Kbat": 32
           },
@@ -5956,7 +5956,7 @@
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.283,
             "HR": 3,
@@ -6312,12 +6312,12 @@
           "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.322,
-            "HR": 5,
-            "OPS": 0.892,
-            "R": 35,
-            "RBI": 18,
+            "HR": 6,
+            "OPS": 0.905,
+            "R": 36,
+            "RBI": 19,
             "SB": 6,
-            "Kbat": 22
+            "Kbat": 23
           },
           "savant": {},
           "tier": "",
@@ -6613,7 +6613,7 @@
         },
         {
           "name": "Trent Grisham",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6649,7 +6649,7 @@
         },
         {
           "name": "Spencer Jones",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6693,7 +6693,7 @@
         },
         {
           "name": "Jeremiah Jackson",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6771,7 +6771,7 @@
         },
         {
           "name": "Luke Raley",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6841,10 +6841,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.252,
+            "AVG": 0.256,
             "HR": 2,
-            "OPS": 0.744,
-            "R": 18,
+            "OPS": 0.755,
+            "R": 19,
             "RBI": 9,
             "SB": 7,
             "Kbat": 31
@@ -7442,5 +7442,5 @@
       ]
     }
   ],
-  "updated": "2026-05-19T20:24:03Z"
+  "updated": "2026-05-19T21:51:46Z"
 }
