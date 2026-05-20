@@ -3184,7 +3184,7 @@
         },
         {
           "name": "Dillon Dingler",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -3469,28 +3469,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Colt Keith",
-          "slot": "BE",
-          "position": "DH",
-          "eligible": "DH",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.291,
-            "HR": 0,
-            "OPS": 0.682,
-            "R": 18,
-            "RBI": 6,
-            "SB": 1,
-            "Kbat": 32
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Randy Vasquez",
           "slot": "SP",
           "position": "SP",
@@ -3536,7 +3514,7 @@
         },
         {
           "name": "Parker Messick",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3616,7 +3594,7 @@
         },
         {
           "name": "Carlos Cortes",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3669,6 +3647,34 @@
           "slot": "BE",
           "position": "SP",
           "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Troy Melton",
+          "slot": "IL",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "SIXTY_DAY_DL",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Steven Matz",
+          "slot": "SP",
+          "position": "RP",
+          "eligible": "RP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -6857,7 +6863,7 @@
       "players": [
         {
           "name": "Ronald Acuna Jr.",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7011,7 +7017,7 @@
         },
         {
           "name": "Oneil Cruz",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7472,5 +7478,5 @@
       ]
     }
   ],
-  "updated": "2026-05-20T13:30:36Z"
+  "updated": "2026-05-20T16:44:44Z"
 }
