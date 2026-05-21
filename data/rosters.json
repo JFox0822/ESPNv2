@@ -719,7 +719,7 @@
         },
         {
           "name": "Jarren Duran",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -785,7 +785,7 @@
         },
         {
           "name": "Christian Walker",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -829,7 +829,7 @@
         },
         {
           "name": "Willy Adames",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -895,7 +895,7 @@
         },
         {
           "name": "Spencer Torkelson",
-          "slot": "BE",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1151,7 +1151,7 @@
         },
         {
           "name": "Victor Scott II",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1247,6 +1247,20 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Nasim Nunez",
+          "slot": "SS",
+          "position": "SS",
+          "eligible": "SS",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -1387,7 +1401,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1453,7 +1467,7 @@
         },
         {
           "name": "Ian Happ",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1547,7 +1561,7 @@
         },
         {
           "name": "Esteury Ruiz",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1597,7 +1611,7 @@
         },
         {
           "name": "Andres Gimenez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1619,7 +1633,7 @@
         },
         {
           "name": "Oswald Peraza",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -1753,7 +1767,7 @@
         },
         {
           "name": "Ezequiel Duran",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1817,7 +1831,7 @@
         },
         {
           "name": "Henry Bolte",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2340,7 +2354,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2412,7 +2426,7 @@
         },
         {
           "name": "Dustin May",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6879,7 +6893,7 @@
       "players": [
         {
           "name": "Ronald Acuna Jr.",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7011,7 +7025,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7303,7 +7317,7 @@
         },
         {
           "name": "Cade Cavalli",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7494,5 +7508,5 @@
       ]
     }
   ],
-  "updated": "2026-05-21T11:43:17Z"
+  "updated": "2026-05-21T14:39:32Z"
 }
