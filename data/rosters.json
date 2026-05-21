@@ -242,7 +242,7 @@
         },
         {
           "name": "Sonny Gray",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -540,7 +540,7 @@
         },
         {
           "name": "Luis Severino",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1055,11 +1055,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.25,
-            "HR": 12,
-            "OPS": 0.884,
-            "R": 27,
-            "RBI": 31,
+            "AVG": 0.254,
+            "HR": 13,
+            "OPS": 0.907,
+            "R": 28,
+            "RBI": 32,
             "SB": 0,
             "Kbat": 44
           },
@@ -1451,13 +1451,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.251,
+            "AVG": 0.25,
             "HR": 4,
-            "OPS": 0.769,
+            "OPS": 0.765,
             "R": 30,
             "RBI": 30,
             "SB": 3,
-            "Kbat": 47
+            "Kbat": 48
           },
           "savant": {},
           "tier": "",
@@ -2062,13 +2062,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.244,
+            "AVG": 0.243,
             "HR": 9,
-            "OPS": 0.786,
+            "OPS": 0.782,
             "R": 35,
             "RBI": 24,
             "SB": 6,
-            "Kbat": 38
+            "Kbat": 39
           },
           "savant": {},
           "tier": "",
@@ -2339,20 +2339,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Charlie Condon",
-          "slot": "BE",
-          "position": "1B",
-          "eligible": "1B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Michael McGreevy",
           "slot": "BE",
           "position": "SP",
@@ -2403,28 +2389,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Trevor Megill",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 17.0,
-            "H": 14,
-            "WHIP": 1.176,
-            "ERA": 5.294,
-            "K": 22,
-            "SVHD": 6,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 18,
-          "keeperEligible": true
-        },
-        {
           "name": "Dustin May",
           "slot": "SP",
           "position": "SP",
@@ -2472,6 +2436,34 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 11,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jesus Made",
+          "slot": "BE",
+          "position": "SS",
+          "eligible": "SS",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Grant Taylor",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -3190,9 +3182,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.234,
+            "AVG": 0.239,
             "HR": 8,
-            "OPS": 0.756,
+            "OPS": 0.769,
             "R": 18,
             "RBI": 28,
             "SB": 0,
@@ -3410,13 +3402,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.274,
+            "AVG": 0.272,
             "HR": 7,
-            "OPS": 0.831,
+            "OPS": 0.826,
             "R": 19,
             "RBI": 30,
             "SB": 2,
-            "Kbat": 21
+            "Kbat": 22
           },
           "savant": {},
           "tier": "",
@@ -4181,9 +4173,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.276,
+            "AVG": 0.274,
             "HR": 4,
-            "OPS": 0.814,
+            "OPS": 0.809,
             "R": 16,
             "RBI": 21,
             "SB": 1,
@@ -4442,13 +4434,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.333,
+            "AVG": 0.331,
             "HR": 4,
-            "OPS": 0.916,
+            "OPS": 0.911,
             "R": 29,
             "RBI": 24,
             "SB": 1,
-            "Kbat": 56
+            "Kbat": 57
           },
           "savant": {},
           "tier": "",
@@ -6060,11 +6052,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 55.1,
+            "IP": 55.2,
             "H": 44,
-            "WHIP": 1.048,
-            "ERA": 3.09,
-            "K": 56,
+            "WHIP": 1.042,
+            "ERA": 3.072,
+            "K": 57,
             "SVHD": 0,
             "QS": 5
           },
@@ -6517,7 +6509,7 @@
         },
         {
           "name": "Sandy Alcantara",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6793,7 +6785,7 @@
         },
         {
           "name": "Tyler Mahle",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6921,9 +6913,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.285,
+            "AVG": 0.289,
             "HR": 2,
-            "OPS": 0.801,
+            "OPS": 0.807,
             "R": 29,
             "RBI": 16,
             "SB": 7,
@@ -6965,9 +6957,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.234,
             "HR": 8,
-            "OPS": 0.785,
+            "OPS": 0.781,
             "R": 30,
             "RBI": 23,
             "SB": 20,
@@ -7053,13 +7045,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.259,
+            "AVG": 0.258,
             "HR": 10,
-            "OPS": 0.784,
+            "OPS": 0.78,
             "R": 35,
             "RBI": 33,
             "SB": 16,
-            "Kbat": 75
+            "Kbat": 76
           },
           "savant": {},
           "tier": "",
@@ -7463,7 +7455,7 @@
         },
         {
           "name": "Kevin Gausman",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7508,5 +7500,5 @@
       ]
     }
   ],
-  "updated": "2026-05-21T14:39:32Z"
+  "updated": "2026-05-21T17:26:19Z"
 }
