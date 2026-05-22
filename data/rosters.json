@@ -1423,7 +1423,7 @@
         },
         {
           "name": "Chandler Simpson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1633,7 +1633,7 @@
         },
         {
           "name": "Oswald Peraza",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6885,7 +6885,7 @@
       "players": [
         {
           "name": "Ronald Acuna Jr.",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7039,7 +7039,7 @@
         },
         {
           "name": "Oneil Cruz",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7500,5 +7500,5 @@
       ]
     }
   ],
-  "updated": "2026-05-22T15:28:20Z"
+  "updated": "2026-05-22T17:22:01Z"
 }
