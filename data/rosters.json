@@ -2643,7 +2643,7 @@
         },
         {
           "name": "Pete Crow-Armstrong",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2789,7 +2789,7 @@
         },
         {
           "name": "Taylor Ward",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3003,7 +3003,7 @@
         },
         {
           "name": "Spencer Steer",
-          "slot": "BE",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3017,7 +3017,7 @@
         },
         {
           "name": "Jakob Marsee",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5363,7 +5363,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5485,7 +5485,7 @@
         },
         {
           "name": "Brandon Marsh",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5513,7 +5513,7 @@
         },
         {
           "name": "Jake Bauers",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-05-23T14:40:17Z"
+  "updated": "2026-05-23T15:54:27Z"
 }
