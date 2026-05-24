@@ -1916,7 +1916,7 @@
         },
         {
           "name": "Yoshinobu Yamamoto",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2224,7 +2224,7 @@
         },
         {
           "name": "Mitch Keller",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2268,7 +2268,7 @@
         },
         {
           "name": "Jake Burger",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2368,7 +2368,7 @@
         },
         {
           "name": "Jose Caballero",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6807,7 +6807,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7097,7 +7097,7 @@
         },
         {
           "name": "Eugenio Suarez",
-          "slot": "IL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7322,28 +7322,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Jeff Hoffman",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 23.0,
-            "H": 29,
-            "WHIP": 1.609,
-            "ERA": 5.087,
-            "K": 40,
-            "SVHD": 6,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 15,
-          "keeperEligible": true
-        },
-        {
           "name": "Cade Cavalli",
           "slot": "BE",
           "position": "SP",
@@ -7536,5 +7514,5 @@
       ]
     }
   ],
-  "updated": "2026-05-24T11:46:21Z"
+  "updated": "2026-05-24T12:59:20Z"
 }
