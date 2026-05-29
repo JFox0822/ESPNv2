@@ -659,13 +659,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.169,
+            "AVG": 0.168,
             "HR": 9,
-            "OPS": 0.603,
+            "OPS": 0.6,
             "R": 27,
             "RBI": 27,
             "SB": 1,
-            "Kbat": 51
+            "Kbat": 52
           },
           "savant": {},
           "tier": "",
@@ -745,7 +745,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 48.0,
             "H": 52,
@@ -1035,8 +1035,8 @@
           "stats": {
             "AVG": 0.265,
             "HR": 14,
-            "OPS": 0.904,
-            "R": 33,
+            "OPS": 0.907,
+            "R": 34,
             "RBI": 36,
             "SB": 0,
             "Kbat": 53
@@ -1445,8 +1445,8 @@
           "stats": {
             "AVG": 0.272,
             "HR": 5,
-            "OPS": 0.817,
-            "R": 34,
+            "OPS": 0.819,
+            "R": 35,
             "RBI": 35,
             "SB": 4,
             "Kbat": 53
@@ -1737,11 +1737,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 52.1,
+            "IP": 53.1,
             "H": 44,
-            "WHIP": 1.299,
-            "ERA": 3.783,
-            "K": 48,
+            "WHIP": 1.294,
+            "ERA": 3.712,
+            "K": 49,
             "SVHD": 0,
             "QS": 4
           },
@@ -2295,7 +2295,15 @@
           "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {},
+          "stats": {
+            "IP": 1.0,
+            "H": 1,
+            "WHIP": 1.0,
+            "ERA": 9.0,
+            "K": 1,
+            "SVHD": 0,
+            "QS": 0
+          },
           "savant": {},
           "tier": "",
           "acquisitionType": "DRAFT",
@@ -3102,13 +3110,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.279,
+            "AVG": 0.278,
             "HR": 12,
-            "OPS": 0.855,
+            "OPS": 0.851,
             "R": 38,
             "RBI": 37,
             "SB": 9,
-            "Kbat": 72
+            "Kbat": 73
           },
           "savant": {},
           "tier": "",
@@ -3124,9 +3132,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.262,
+            "AVG": 0.266,
             "HR": 15,
-            "OPS": 0.89,
+            "OPS": 0.895,
             "R": 40,
             "RBI": 44,
             "SB": 1,
@@ -3829,9 +3837,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.276,
+            "AVG": 0.275,
             "HR": 9,
-            "OPS": 0.772,
+            "OPS": 0.769,
             "R": 37,
             "RBI": 29,
             "SB": 0,
@@ -4145,11 +4153,11 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.268,
             "HR": 3,
@@ -4195,9 +4203,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.283,
+            "AVG": 0.281,
             "HR": 6,
-            "OPS": 0.841,
+            "OPS": 0.837,
             "R": 21,
             "RBI": 25,
             "SB": 1,
@@ -4239,10 +4247,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 52.0,
-            "H": 42,
-            "WHIP": 1.173,
-            "ERA": 2.769,
+            "IP": 52.2,
+            "H": 43,
+            "WHIP": 1.215,
+            "ERA": 3.076,
             "K": 59,
             "SVHD": 0,
             "QS": 5
@@ -4291,7 +4299,7 @@
         },
         {
           "name": "Gavin Sheets",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4382,10 +4390,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
+            "AVG": 0.264,
             "HR": 0,
-            "OPS": 0.639,
-            "R": 19,
+            "OPS": 0.645,
+            "R": 20,
             "RBI": 16,
             "SB": 14,
             "Kbat": 51
@@ -4406,7 +4414,7 @@
           "stats": {
             "AVG": 0.216,
             "HR": 8,
-            "OPS": 0.664,
+            "OPS": 0.667,
             "R": 28,
             "RBI": 31,
             "SB": 3,
@@ -4780,9 +4788,9 @@
           "stats": {
             "AVG": 0.245,
             "HR": 7,
-            "OPS": 0.681,
+            "OPS": 0.68,
             "R": 22,
-            "RBI": 24,
+            "RBI": 25,
             "SB": 9,
             "Kbat": 37
           },
@@ -5251,9 +5259,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.256,
+            "AVG": 0.255,
             "HR": 12,
-            "OPS": 0.826,
+            "OPS": 0.822,
             "R": 34,
             "RBI": 35,
             "SB": 10,
@@ -5289,7 +5297,7 @@
         },
         {
           "name": "Eury Perez",
-          "slot": "BE",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5443,7 +5451,7 @@
         },
         {
           "name": "Heliot Ramos",
-          "slot": "IL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5525,7 +5533,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -5736,7 +5744,7 @@
           "stats": {
             "AVG": 0.2,
             "HR": 4,
-            "OPS": 0.589,
+            "OPS": 0.592,
             "R": 24,
             "RBI": 19,
             "SB": 10,
@@ -5800,9 +5808,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.301,
+            "AVG": 0.299,
             "HR": 13,
-            "OPS": 0.86,
+            "OPS": 0.856,
             "R": 27,
             "RBI": 33,
             "SB": 3,
@@ -6128,7 +6136,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -6947,11 +6955,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.237,
-            "HR": 3,
-            "OPS": 0.72,
-            "R": 23,
-            "RBI": 16,
+            "AVG": 0.242,
+            "HR": 4,
+            "OPS": 0.746,
+            "R": 24,
+            "RBI": 17,
             "SB": 10,
             "Kbat": 42
           },
@@ -7079,13 +7087,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
+            "AVG": 0.259,
             "HR": 17,
-            "OPS": 0.898,
+            "OPS": 0.893,
             "R": 38,
             "RBI": 27,
             "SB": 4,
-            "Kbat": 57
+            "Kbat": 58
           },
           "savant": {},
           "tier": "",
@@ -7101,11 +7109,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.257,
+            "AVG": 0.256,
             "HR": 11,
-            "OPS": 0.769,
+            "OPS": 0.766,
             "R": 38,
-            "RBI": 35,
+            "RBI": 36,
             "SB": 17,
             "Kbat": 88
           },
@@ -7439,7 +7447,7 @@
           "stats": {
             "AVG": 0.276,
             "HR": 15,
-            "OPS": 0.967,
+            "OPS": 0.969,
             "R": 50,
             "RBI": 37,
             "SB": 10,
@@ -7556,5 +7564,5 @@
       ]
     }
   ],
-  "updated": "2026-05-29T21:43:55Z"
+  "updated": "2026-05-29T23:03:24Z"
 }
