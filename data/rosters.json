@@ -2643,7 +2643,7 @@
         },
         {
           "name": "Pete Crow-Armstrong",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2833,7 +2833,7 @@
         },
         {
           "name": "Riley O'Brien",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2925,7 +2925,7 @@
         },
         {
           "name": "A.J. Ewing",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3039,7 +3039,7 @@
         },
         {
           "name": "Curtis Mead",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3053,7 +3053,7 @@
         },
         {
           "name": "Taylor Clarke",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7532,5 +7532,5 @@
       ]
     }
   ],
-  "updated": "2026-05-31T09:41:49Z"
+  "updated": "2026-05-31T11:27:03Z"
 }
