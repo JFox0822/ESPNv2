@@ -5409,7 +5409,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.276,
             "HR": 9,
@@ -7159,7 +7159,7 @@
         },
         {
           "name": "Will Warren",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7532,5 +7532,5 @@
       ]
     }
   ],
-  "updated": "2026-05-31T12:55:34Z"
+  "updated": "2026-05-31T14:25:48Z"
 }
