@@ -1908,7 +1908,7 @@
         },
         {
           "name": "Yoshinobu Yamamoto",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2106,7 +2106,7 @@
         },
         {
           "name": "George Kirby",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2216,7 +2216,7 @@
         },
         {
           "name": "Mitch Keller",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2731,7 +2731,7 @@
         },
         {
           "name": "David Bednar",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3300,7 +3300,7 @@
         },
         {
           "name": "Robbie Ray",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3322,7 +3322,7 @@
         },
         {
           "name": "Nick Lodolo",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3344,7 +3344,7 @@
         },
         {
           "name": "Tanner Scott",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3366,7 +3366,7 @@
         },
         {
           "name": "Abner Uribe",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3432,7 +3432,7 @@
         },
         {
           "name": "Michael Soroka",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3454,7 +3454,7 @@
         },
         {
           "name": "Randy Vasquez",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5712,7 +5712,7 @@
         },
         {
           "name": "Jackson Merrill",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5866,7 +5866,7 @@
         },
         {
           "name": "Kyle Bradish",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5888,7 +5888,7 @@
         },
         {
           "name": "Tanner Bibee",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6086,7 +6086,7 @@
         },
         {
           "name": "Braxton Ashcraft",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6208,7 +6208,7 @@
         },
         {
           "name": "JJ Bleday",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7532,5 +7532,5 @@
       ]
     }
   ],
-  "updated": "2026-05-31T11:27:03Z"
+  "updated": "2026-05-31T12:55:34Z"
 }
