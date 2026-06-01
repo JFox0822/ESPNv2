@@ -3096,11 +3096,11 @@
       "players": [
         {
           "name": "Elly De La Cruz",
-          "slot": "SS",
+          "slot": "IL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.28,
             "HR": 12,
@@ -3676,6 +3676,20 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Edwin Arroyo",
+          "slot": "SS",
+          "position": "SS",
+          "eligible": "SS",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -6166,7 +6180,7 @@
         },
         {
           "name": "Eduardo Rodriguez",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7532,5 +7546,5 @@
       ]
     }
   ],
-  "updated": "2026-06-01T15:38:21Z"
+  "updated": "2026-06-01T20:09:07Z"
 }
