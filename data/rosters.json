@@ -88,11 +88,11 @@
         },
         {
           "name": "Aaron Judge",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.248,
             "HR": 17,
@@ -388,7 +388,7 @@
         },
         {
           "name": "Wilyer Abreu",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -476,7 +476,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -719,7 +719,7 @@
         },
         {
           "name": "Jarren Duran",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -983,7 +983,7 @@
         },
         {
           "name": "Shane Baz",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1027,7 +1027,7 @@
         },
         {
           "name": "Brandon Lowe",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1129,7 +1129,7 @@
         },
         {
           "name": "Victor Scott II",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1221,7 +1221,7 @@
         },
         {
           "name": "Nasim Nunez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1235,7 +1235,7 @@
         },
         {
           "name": "Adrian Houser",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1427,7 +1427,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.284,
             "HR": 0,
@@ -2016,7 +2016,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.275,
             "HR": 5,
@@ -2747,7 +2747,7 @@
         },
         {
           "name": "David Bednar",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2940,20 +2940,6 @@
           "keeperEligible": false
         },
         {
-          "name": "A.J. Ewing",
-          "slot": "BE",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Walbert Urena",
           "slot": "SP",
           "position": "SP",
@@ -3019,7 +3005,7 @@
         },
         {
           "name": "Kai-Wei Teng",
-          "slot": "RP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3047,7 +3033,7 @@
         },
         {
           "name": "Taylor Clarke",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3080,6 +3066,20 @@
           "acquisitionType": "ADD",
           "draftRound": 25,
           "keeperEligible": true
+        },
+        {
+          "name": "Ryan Gusto",
+          "slot": "RP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -3228,7 +3228,7 @@
         },
         {
           "name": "Kerry Carpenter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3594,7 +3594,7 @@
         },
         {
           "name": "Carlos Cortes",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -4025,7 +4025,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -4908,7 +4908,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "PATERNITY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 56.2,
             "H": 64,
@@ -4974,7 +4974,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -5974,7 +5974,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "BEREAVEMENT",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.207,
             "HR": 1,
@@ -7267,7 +7267,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.286,
             "HR": 11,
@@ -7532,5 +7532,5 @@
       ]
     }
   ],
-  "updated": "2026-06-02T17:59:07Z"
+  "updated": "2026-06-02T20:50:27Z"
 }
