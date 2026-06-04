@@ -1328,7 +1328,7 @@
         },
         {
           "name": "Nolan McLean",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1401,7 +1401,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1725,7 +1725,7 @@
         },
         {
           "name": "Ezequiel Duran",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1761,7 +1761,7 @@
         },
         {
           "name": "J.T. Ginn",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1789,7 +1789,7 @@
         },
         {
           "name": "Henry Bolte",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1803,7 +1803,7 @@
         },
         {
           "name": "Pedro Ramirez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2334,7 +2334,7 @@
         },
         {
           "name": "TJ Rumfield",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2378,7 +2378,7 @@
         },
         {
           "name": "Jose Caballero",
-          "slot": "BE",
+          "slot": "3B",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3382,7 +3382,7 @@
         },
         {
           "name": "Abner Uribe",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3608,7 +3608,7 @@
         },
         {
           "name": "Bryan Baker",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7540,5 +7540,5 @@
       ]
     }
   ],
-  "updated": "2026-06-04T09:07:45Z"
+  "updated": "2026-06-04T12:24:51Z"
 }
