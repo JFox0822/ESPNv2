@@ -2789,7 +2789,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 54.0,
             "H": 53,
@@ -4536,7 +4536,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.179,
             "HR": 7,
@@ -5600,33 +5600,25 @@
           "keeperEligible": false
         },
         {
-          "name": "Brayan Bello",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 61.0,
-            "H": 78,
-            "WHIP": 1.672,
-            "ERA": 6.344,
-            "K": 44,
-            "SVHD": 0,
-            "QS": 1
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 22,
-          "keeperEligible": true
-        },
-        {
           "name": "Kaelen Culpepper",
           "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Christian Scott",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -7542,5 +7534,5 @@
       ]
     }
   ],
-  "updated": "2026-06-05T13:47:11Z"
+  "updated": "2026-06-05T16:24:53Z"
 }
