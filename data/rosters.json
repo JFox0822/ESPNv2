@@ -2543,7 +2543,7 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2565,7 +2565,7 @@
         },
         {
           "name": "Vladimir Guerrero Jr.",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2653,7 +2653,7 @@
         },
         {
           "name": "Dansby Swanson",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2675,7 +2675,7 @@
         },
         {
           "name": "Pete Crow-Armstrong",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2697,7 +2697,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2785,7 +2785,7 @@
         },
         {
           "name": "Edward Cabrera",
-          "slot": "IL",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2821,7 +2821,7 @@
         },
         {
           "name": "Taylor Ward",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2878,22 +2878,8 @@
           "keeperEligible": false
         },
         {
-          "name": "Joey Cantillo",
-          "slot": "BE",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Justin Wrobleski",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2943,7 +2929,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2985,7 +2971,7 @@
         },
         {
           "name": "Merrill Kelly",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3007,7 +2993,7 @@
         },
         {
           "name": "Kai-Wei Teng",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3035,7 +3021,7 @@
         },
         {
           "name": "Taylor Clarke",
-          "slot": "RP",
+          "slot": "IL",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3071,7 +3057,7 @@
         },
         {
           "name": "Oswald Peraza",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3089,6 +3075,20 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Tyler Phillips",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -6663,7 +6663,7 @@
         },
         {
           "name": "Zac Gallen",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6801,7 +6801,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7534,5 +7534,5 @@
       ]
     }
   ],
-  "updated": "2026-06-05T16:24:53Z"
+  "updated": "2026-06-05T18:19:29Z"
 }
