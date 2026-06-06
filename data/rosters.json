@@ -2094,7 +2094,7 @@
         },
         {
           "name": "Carter Jensen",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2350,7 +2350,7 @@
         },
         {
           "name": "TJ Rumfield",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2587,7 +2587,7 @@
         },
         {
           "name": "Joe Ryan",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2785,7 +2785,7 @@
         },
         {
           "name": "Edward Cabrera",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7512,5 +7512,5 @@
       ]
     }
   ],
-  "updated": "2026-06-06T11:16:33Z"
+  "updated": "2026-06-06T12:48:41Z"
 }
