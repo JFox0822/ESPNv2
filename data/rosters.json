@@ -476,7 +476,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -604,7 +604,7 @@
         },
         {
           "name": "Isiah Kiner-Falefa",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1401,7 +1401,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1423,7 +1423,7 @@
         },
         {
           "name": "Chandler Simpson",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1521,28 +1521,6 @@
           "tier": "",
           "acquisitionType": "DRAFT",
           "draftRound": 24,
-          "keeperEligible": true
-        },
-        {
-          "name": "Matthew Liberatore",
-          "slot": "P",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 66.1,
-            "H": 74,
-            "WHIP": 1.508,
-            "ERA": 4.477,
-            "K": 61,
-            "SVHD": 0,
-            "QS": 3
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 26,
           "keeperEligible": true
         },
         {
@@ -1683,7 +1661,7 @@
         },
         {
           "name": "Ildemaro Vargas",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1831,7 +1809,7 @@
         },
         {
           "name": "Noelvi Marte",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1849,6 +1827,20 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 7,
+          "keeperEligible": false
+        },
+        {
+          "name": "Braydon Fisher",
+          "slot": "P",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -2068,7 +2060,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.249,
             "HR": 9,
@@ -5355,7 +5347,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.272,
             "HR": 9,
@@ -6523,7 +6515,7 @@
         },
         {
           "name": "Sandy Alcantara",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6713,7 +6705,7 @@
         },
         {
           "name": "Spencer Jones",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6799,7 +6791,7 @@
         },
         {
           "name": "Luke Raley",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6835,7 +6827,7 @@
         },
         {
           "name": "Lucas Giolito",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7067,7 +7059,7 @@
         },
         {
           "name": "Eugenio Suarez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7337,7 +7329,7 @@
         },
         {
           "name": "Carson Benge",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7496,5 +7488,5 @@
       ]
     }
   ],
-  "updated": "2026-06-07T14:25:19Z"
+  "updated": "2026-06-07T15:49:18Z"
 }
