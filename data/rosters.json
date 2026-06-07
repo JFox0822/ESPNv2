@@ -767,7 +767,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.204,
             "HR": 9,
@@ -917,7 +917,7 @@
         },
         {
           "name": "Kris Bubic",
-          "slot": "BE",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1031,7 +1031,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.249,
             "HR": 15,
@@ -1134,20 +1134,6 @@
           "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Aaron Civale",
-          "slot": "IL",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3009,7 +2995,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "BEREAVEMENT",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -7271,7 +7257,7 @@
         },
         {
           "name": "Payton Tolle",
-          "slot": "SP",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7395,7 +7381,7 @@
         },
         {
           "name": "Kevin Gausman",
-          "slot": "P",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7488,5 +7474,5 @@
       ]
     }
   ],
-  "updated": "2026-06-07T15:49:18Z"
+  "updated": "2026-06-07T17:04:27Z"
 }
