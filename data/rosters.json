@@ -1387,7 +1387,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1409,7 +1409,7 @@
         },
         {
           "name": "Chandler Simpson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1453,7 +1453,7 @@
         },
         {
           "name": "Ian Happ",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1795,7 +1795,7 @@
         },
         {
           "name": "Noelvi Marte",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2342,7 +2342,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2442,7 +2442,7 @@
         },
         {
           "name": "Gage Jump",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3434,7 +3434,7 @@
         },
         {
           "name": "Kyle Harrison",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3572,7 +3572,7 @@
         },
         {
           "name": "Ben Brown",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5868,7 +5868,7 @@
         },
         {
           "name": "Gavin Williams",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7468,5 +7468,5 @@
       ]
     }
   ],
-  "updated": "2026-06-08T16:46:34Z"
+  "updated": "2026-06-08T19:14:33Z"
 }
