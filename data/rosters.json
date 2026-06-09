@@ -2513,7 +2513,7 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2791,7 +2791,7 @@
         },
         {
           "name": "Taylor Ward",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2841,7 +2841,7 @@
         },
         {
           "name": "Justin Wrobleski",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2855,7 +2855,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2869,7 +2869,7 @@
         },
         {
           "name": "Miguel Vargas",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2905,7 +2905,7 @@
         },
         {
           "name": "Walbert Urena",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2919,7 +2919,7 @@
         },
         {
           "name": "Spencer Steer",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2933,7 +2933,7 @@
         },
         {
           "name": "Merrill Kelly",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2955,7 +2955,7 @@
         },
         {
           "name": "Kai-Wei Teng",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3005,7 +3005,7 @@
         },
         {
           "name": "Oswald Peraza",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5626,7 +5626,7 @@
         },
         {
           "name": "Jackson Merrill",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5758,7 +5758,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7449,7 +7449,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "IP": 23.0,
             "H": 19,
@@ -7468,5 +7468,5 @@
       ]
     }
   ],
-  "updated": "2026-06-09T13:22:37Z"
+  "updated": "2026-06-09T16:15:16Z"
 }
