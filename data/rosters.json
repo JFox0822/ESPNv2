@@ -1340,7 +1340,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.276,
             "HR": 0,
@@ -1470,7 +1470,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -2881,20 +2881,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Kai-Wei Teng",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Curtis Mead",
           "slot": "3B",
           "position": "1B",
@@ -3036,6 +3022,20 @@
           "acquisitionType": "TRADE",
           "draftRound": 2,
           "keeperEligible": false
+        },
+        {
+          "name": "Mick Abel",
+          "slot": "IL",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "FIFTEEN_DAY_DL",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 18,
+          "keeperEligible": true
         }
       ]
     },
@@ -3206,7 +3206,7 @@
         },
         {
           "name": "Kyle Stowers",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3316,7 +3316,7 @@
         },
         {
           "name": "Tanner Scott",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3337,30 +3337,8 @@
           "keeperEligible": true
         },
         {
-          "name": "Abner Uribe",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 23.2,
-            "H": 19,
-            "WHIP": 1.225,
-            "ERA": 3.803,
-            "K": 25,
-            "SVHD": 7,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 17,
-          "keeperEligible": true
-        },
-        {
           "name": "Chase DeLauter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3542,7 +3520,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3628,6 +3606,20 @@
         },
         {
           "name": "Braden Montgomery",
+          "slot": "UTIL",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Luis Lara",
           "slot": "BE",
           "position": "CF",
           "eligible": "CF",
@@ -5207,7 +5199,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 62.0,
             "H": 49,
@@ -5680,7 +5672,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.306,
             "HR": 13,
@@ -6949,7 +6941,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -6971,11 +6963,11 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.257,
             "HR": 18,
@@ -7183,7 +7175,7 @@
         },
         {
           "name": "Willson Contreras",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7311,7 +7303,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 19.2,
             "H": 16,
@@ -7438,5 +7430,5 @@
       ]
     }
   ],
-  "updated": "2026-06-09T18:27:15Z"
+  "updated": "2026-06-09T20:24:52Z"
 }
