@@ -2563,28 +2563,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Dansby Swanson",
-          "slot": "BE",
-          "position": "SS",
-          "eligible": "SS",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.178,
-            "HR": 7,
-            "OPS": 0.602,
-            "R": 37,
-            "RBI": 28,
-            "SB": 6,
-            "Kbat": 61
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 9,
-          "keeperEligible": false
-        },
-        {
           "name": "Pete Crow-Armstrong",
           "slot": "OF",
           "position": "CF",
@@ -3118,7 +3096,7 @@
         },
         {
           "name": "Jesus Luzardo",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3206,7 +3184,7 @@
         },
         {
           "name": "Kyle Stowers",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3294,7 +3272,7 @@
         },
         {
           "name": "Nick Lodolo",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3520,7 +3498,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7480,5 +7458,5 @@
       ]
     }
   ],
-  "updated": "2026-06-12T13:57:23Z"
+  "updated": "2026-06-12T16:41:28Z"
 }
