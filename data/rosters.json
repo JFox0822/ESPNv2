@@ -4696,7 +4696,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "PATERNITY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.231,
             "HR": 8,
@@ -5857,28 +5857,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Steven Kwan",
-          "slot": "BE",
-          "position": "LF",
-          "eligible": "LF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.213,
-            "HR": 1,
-            "OPS": 0.586,
-            "R": 30,
-            "RBI": 12,
-            "SB": 3,
-            "Kbat": 26
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 20,
-          "keeperEligible": true
-        },
-        {
           "name": "Jacob Wilson",
           "slot": "IL",
           "position": "SS",
@@ -6159,6 +6137,28 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Luke Keaschall",
+          "slot": "BE",
+          "position": "2B",
+          "eligible": "2B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.247,
+            "HR": 1,
+            "OPS": 0.636,
+            "R": 28,
+            "RBI": 21,
+            "SB": 10,
+            "Kbat": 39
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 25,
+          "keeperEligible": true
         }
       ]
     },
@@ -7458,5 +7458,5 @@
       ]
     }
   ],
-  "updated": "2026-06-12T16:41:28Z"
+  "updated": "2026-06-12T18:57:51Z"
 }
