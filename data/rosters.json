@@ -589,28 +589,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Sean Burke",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 69.2,
-            "H": 59,
-            "WHIP": 1.177,
-            "ERA": 3.876,
-            "K": 67,
-            "SVHD": 0,
-            "QS": 3
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Bryson Stott",
           "slot": "BE",
           "position": "2B",
@@ -637,6 +615,20 @@
           "slot": "RP",
           "position": "RP",
           "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Kumar Rocker",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -947,7 +939,7 @@
         },
         {
           "name": "Spencer Strider",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1079,7 +1071,7 @@
         },
         {
           "name": "Seth Lugo",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1939,7 +1931,7 @@
         },
         {
           "name": "Nolan Schanuel",
-          "slot": "IL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2202,20 +2194,6 @@
           "keeperEligible": true
         },
         {
-          "name": "George Lombard Jr.",
-          "slot": "BE",
-          "position": "SS",
-          "eligible": "SS",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 27,
-          "keeperEligible": true
-        },
-        {
           "name": "TJ Rumfield",
           "slot": "3B",
           "position": "3B",
@@ -2438,6 +2416,28 @@
           "acquisitionType": "TRADE",
           "draftRound": 5,
           "keeperEligible": false
+        },
+        {
+          "name": "Erik Sabrowski",
+          "slot": "IL",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "FIFTEEN_DAY_DL",
+          "stats": {
+            "IP": 21.0,
+            "H": 7,
+            "WHIP": 0.952,
+            "ERA": 1.714,
+            "K": 39,
+            "SVHD": 17,
+            "QS": 0
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -2564,7 +2564,7 @@
         },
         {
           "name": "Dansby Swanson",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2796,7 +2796,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3669,7 +3669,7 @@
         },
         {
           "name": "Zach Neto",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3977,7 +3977,7 @@
         },
         {
           "name": "Jack Leiter",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3999,7 +3999,7 @@
         },
         {
           "name": "Marcus Semien",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4219,7 +4219,7 @@
         },
         {
           "name": "Zebby Matthews",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7480,5 +7480,5 @@
       ]
     }
   ],
-  "updated": "2026-06-12T10:45:28Z"
+  "updated": "2026-06-12T13:57:23Z"
 }
