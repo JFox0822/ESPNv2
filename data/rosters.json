@@ -807,7 +807,7 @@
         },
         {
           "name": "Jose Altuve",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -939,7 +939,7 @@
         },
         {
           "name": "Spencer Strider",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1171,7 +1171,7 @@
         },
         {
           "name": "Nasim Nunez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1243,7 +1243,7 @@
         },
         {
           "name": "Joey Cantillo",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -1314,7 +1314,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1516,7 +1516,7 @@
         },
         {
           "name": "Ildemaro Vargas",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1544,7 +1544,7 @@
         },
         {
           "name": "Ezequiel Duran",
-          "slot": "2B",
+          "slot": "3B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1608,7 +1608,7 @@
         },
         {
           "name": "Henry Bolte",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1636,7 +1636,7 @@
         },
         {
           "name": "George Springer",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -1694,7 +1694,7 @@
         },
         {
           "name": "Zack Gelof",
-          "slot": "3B",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1744,7 +1744,7 @@
         },
         {
           "name": "Brandon Valenzuela",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1758,7 +1758,7 @@
         },
         {
           "name": "Jonah Heim",
-          "slot": "C",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2746,7 +2746,7 @@
         },
         {
           "name": "Jordan Lawlar",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2995,7 +2995,7 @@
         },
         {
           "name": "Wade Meckler",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3747,7 +3747,7 @@
         },
         {
           "name": "Ozzie Albies",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3835,7 +3835,7 @@
         },
         {
           "name": "Jackson Holliday",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4033,7 +4033,7 @@
         },
         {
           "name": "Jasson Dominguez",
-          "slot": "IL",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4179,20 +4179,6 @@
             "SVHD": 0,
             "QS": 5
           },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Gavin Sheets",
-          "slot": "BE",
-          "position": "LF",
-          "eligible": "LF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -5245,7 +5231,7 @@
         },
         {
           "name": "Samuel Basallo",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5608,7 +5594,7 @@
         },
         {
           "name": "Nico Hoerner",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6132,7 +6118,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6211,7 +6197,7 @@
         },
         {
           "name": "Tarik Skubal",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6409,7 +6395,7 @@
         },
         {
           "name": "Sandy Alcantara",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7422,5 +7408,5 @@
       ]
     }
   ],
-  "updated": "2026-06-13T16:07:37Z"
+  "updated": "2026-06-13T17:50:15Z"
 }
