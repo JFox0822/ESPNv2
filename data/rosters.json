@@ -160,9 +160,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.29,
+            "AVG": 0.287,
             "HR": 12,
-            "OPS": 0.851,
+            "OPS": 0.844,
             "R": 37,
             "RBI": 50,
             "SB": 2,
@@ -2209,7 +2209,7 @@
         },
         {
           "name": "TJ Rumfield",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2253,7 +2253,7 @@
         },
         {
           "name": "Jose Caballero",
-          "slot": "BE",
+          "slot": "3B",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2397,7 +2397,7 @@
         },
         {
           "name": "Spencer Steer",
-          "slot": "BE",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2411,11 +2411,11 @@
         },
         {
           "name": "Vladimir Guerrero Jr.",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.28,
             "HR": 3,
@@ -2856,7 +2856,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 65.2,
             "H": 69,
@@ -3088,7 +3088,7 @@
         },
         {
           "name": "Kerry Carpenter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3110,7 +3110,7 @@
         },
         {
           "name": "Kyle Stowers",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3160,11 +3160,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.265,
-            "HR": 7,
-            "OPS": 0.803,
-            "R": 44,
-            "RBI": 28,
+            "AVG": 0.268,
+            "HR": 8,
+            "OPS": 0.821,
+            "R": 45,
+            "RBI": 30,
             "SB": 3,
             "Kbat": 50
           },
@@ -3813,11 +3813,11 @@
         },
         {
           "name": "Randy Arozarena",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.291,
             "HR": 7,
@@ -3989,7 +3989,7 @@
         },
         {
           "name": "Marcus Semien",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4033,7 +4033,7 @@
         },
         {
           "name": "Jasson Dominguez",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5407,9 +5407,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.198,
+            "AVG": 0.205,
             "HR": 5,
-            "OPS": 0.634,
+            "OPS": 0.652,
             "R": 14,
             "RBI": 16,
             "SB": 3,
@@ -5980,9 +5980,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.3,
+            "AVG": 0.298,
             "HR": 17,
-            "OPS": 0.913,
+            "OPS": 0.907,
             "R": 45,
             "RBI": 55,
             "SB": 10,
@@ -6124,9 +6124,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.242,
             "HR": 1,
-            "OPS": 0.631,
+            "OPS": 0.628,
             "R": 29,
             "RBI": 21,
             "SB": 10,
@@ -6201,7 +6201,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 43.1,
             "H": 35,
@@ -6909,13 +6909,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.266,
+            "AVG": 0.264,
             "HR": 21,
-            "OPS": 0.913,
+            "OPS": 0.91,
             "R": 46,
             "RBI": 33,
             "SB": 6,
-            "Kbat": 68
+            "Kbat": 69
           },
           "savant": {},
           "tier": "",
@@ -7408,5 +7408,5 @@
       ]
     }
   ],
-  "updated": "2026-06-13T17:50:15Z"
+  "updated": "2026-06-13T19:07:10Z"
 }
