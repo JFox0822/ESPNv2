@@ -943,7 +943,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 39.0,
             "H": 33,
@@ -3336,7 +3336,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3602,7 +3602,7 @@
         },
         {
           "name": "Jac Caglianone",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7422,5 +7422,5 @@
       ]
     }
   ],
-  "updated": "2026-06-13T12:19:42Z"
+  "updated": "2026-06-13T14:34:11Z"
 }
