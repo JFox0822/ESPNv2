@@ -336,11 +336,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 80.1,
-            "H": 75,
-            "WHIP": 1.183,
-            "ERA": 4.257,
-            "K": 77,
+            "IP": 82.1,
+            "H": 77,
+            "WHIP": 1.19,
+            "ERA": 4.372,
+            "K": 79,
             "SVHD": 0,
             "QS": 6
           },
@@ -394,9 +394,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.28,
+            "AVG": 0.279,
             "HR": 8,
-            "OPS": 0.774,
+            "OPS": 0.771,
             "R": 31,
             "RBI": 33,
             "SB": 4,
@@ -725,9 +725,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.21,
+            "AVG": 0.209,
             "HR": 11,
-            "OPS": 0.657,
+            "OPS": 0.655,
             "R": 34,
             "RBI": 36,
             "SB": 11,
@@ -1215,8 +1215,8 @@
           "stats": {
             "AVG": 0.197,
             "HR": 3,
-            "OPS": 0.573,
-            "R": 20,
+            "OPS": 0.576,
+            "R": 21,
             "RBI": 26,
             "SB": 5,
             "Kbat": 31
@@ -1320,9 +1320,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.254,
+            "AVG": 0.252,
             "HR": 7,
-            "OPS": 0.729,
+            "OPS": 0.723,
             "R": 28,
             "RBI": 23,
             "SB": 2,
@@ -1973,13 +1973,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.291,
+            "AVG": 0.289,
             "HR": 7,
-            "OPS": 0.804,
+            "OPS": 0.8,
             "R": 29,
             "RBI": 32,
             "SB": 7,
-            "Kbat": 52
+            "Kbat": 53
           },
           "savant": {},
           "tier": "",
@@ -2171,13 +2171,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.248,
+            "AVG": 0.25,
             "HR": 12,
-            "OPS": 0.747,
+            "OPS": 0.752,
             "R": 32,
             "RBI": 42,
             "SB": 1,
-            "Kbat": 71
+            "Kbat": 72
           },
           "savant": {},
           "tier": "",
@@ -3094,11 +3094,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.241,
-            "HR": 2,
-            "OPS": 0.655,
-            "R": 13,
-            "RBI": 7,
+            "AVG": 0.246,
+            "HR": 3,
+            "OPS": 0.687,
+            "R": 14,
+            "RBI": 8,
             "SB": 3,
             "Kbat": 27
           },
@@ -5295,7 +5295,7 @@
         },
         {
           "name": "Josh Jung",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6351,7 +6351,7 @@
           "stats": {
             "AVG": 0.254,
             "HR": 10,
-            "OPS": 0.698,
+            "OPS": 0.695,
             "R": 34,
             "RBI": 40,
             "SB": 3,
@@ -7055,11 +7055,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 71.0,
-            "H": 60,
-            "WHIP": 1.225,
-            "ERA": 3.296,
-            "K": 69,
+            "IP": 73.2,
+            "H": 67,
+            "WHIP": 1.276,
+            "ERA": 3.665,
+            "K": 72,
             "SVHD": 0,
             "QS": 5
           },
@@ -7099,11 +7099,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.296,
-            "HR": 14,
-            "OPS": 0.931,
-            "R": 32,
-            "RBI": 41,
+            "AVG": 0.299,
+            "HR": 15,
+            "OPS": 0.948,
+            "R": 33,
+            "RBI": 42,
             "SB": 1,
             "Kbat": 68
           },
@@ -7436,5 +7436,5 @@
       ]
     }
   ],
-  "updated": "2026-06-14T22:58:48Z"
+  "updated": "2026-06-15T00:08:51Z"
 }
