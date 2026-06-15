@@ -136,7 +136,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.303,
             "HR": 13,
@@ -3392,7 +3392,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -4139,7 +4139,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 25.2,
             "H": 32,
@@ -4466,7 +4466,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "SEVEN_DAY_DL",
           "stats": {
             "AVG": 0.186,
             "HR": 9,
@@ -4488,7 +4488,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.255,
             "HR": 10,
@@ -5384,20 +5384,6 @@
           "eligible": "SS",
           "isPitcher": false,
           "injStatus": "DAY_TO_DAY",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Christian Scott",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -6427,7 +6413,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "BEREAVEMENT",
           "stats": {
             "IP": 30.0,
             "H": 12,
@@ -7458,5 +7444,5 @@
       ]
     }
   ],
-  "updated": "2026-06-15T20:25:11Z"
+  "updated": "2026-06-15T22:32:34Z"
 }
