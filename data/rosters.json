@@ -2652,7 +2652,7 @@
         },
         {
           "name": "MacKenzie Gore",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3783,7 +3783,7 @@
         },
         {
           "name": "Ozzie Albies",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3805,7 +3805,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4025,7 +4025,7 @@
         },
         {
           "name": "Marcus Semien",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5397,7 +5397,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "OUT",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -6471,7 +6471,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {
             "IP": 0.1,
             "H": 4,
@@ -6489,7 +6489,7 @@
         },
         {
           "name": "Shane McClanahan",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6511,7 +6511,7 @@
         },
         {
           "name": "Zac Gallen",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6635,7 +6635,7 @@
         },
         {
           "name": "Nick Martinez",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6707,7 +6707,7 @@
         },
         {
           "name": "Lucas Giolito",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7458,5 +7458,5 @@
       ]
     }
   ],
-  "updated": "2026-06-15T16:55:52Z"
+  "updated": "2026-06-15T20:25:11Z"
 }
