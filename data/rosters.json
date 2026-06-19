@@ -5674,7 +5674,7 @@
         },
         {
           "name": "Michael Harris II",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5740,7 +5740,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5916,11 +5916,11 @@
         },
         {
           "name": "Ernie Clement",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.294,
             "HR": 7,
@@ -6090,7 +6090,7 @@
         },
         {
           "name": "JJ Bleday",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7466,5 +7466,5 @@
       ]
     }
   ],
-  "updated": "2026-06-19T16:27:29Z"
+  "updated": "2026-06-19T18:15:00Z"
 }
