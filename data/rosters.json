@@ -1913,7 +1913,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.249,
             "HR": 13,
@@ -3396,7 +3396,7 @@
         },
         {
           "name": "Braden Montgomery",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3474,7 +3474,7 @@
         },
         {
           "name": "Dominic Canzone",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3654,7 +3654,7 @@
         },
         {
           "name": "Christian Moore",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7466,5 +7466,5 @@
       ]
     }
   ],
-  "updated": "2026-06-19T21:40:46Z"
+  "updated": "2026-06-19T22:43:09Z"
 }
