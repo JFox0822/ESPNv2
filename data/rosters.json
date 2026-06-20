@@ -1843,7 +1843,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1887,7 +1887,7 @@
         },
         {
           "name": "Yoshinobu Yamamoto",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2311,7 +2311,7 @@
         },
         {
           "name": "Gage Jump",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2347,7 +2347,7 @@
         },
         {
           "name": "Trey Yesavage",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2718,7 +2718,7 @@
         },
         {
           "name": "Taylor Ward",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2737,20 +2737,6 @@
           "acquisitionType": "ADD",
           "draftRound": 8,
           "keeperEligible": false
-        },
-        {
-          "name": "Jordan Lawlar",
-          "slot": "UTIL",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 27,
-          "keeperEligible": true
         },
         {
           "name": "Riley O'Brien",
@@ -2818,7 +2804,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3074,6 +3060,20 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Willi Castro",
+          "slot": "UTIL",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 24,
+          "keeperEligible": true
         }
       ]
     },
@@ -3396,7 +3396,7 @@
         },
         {
           "name": "Braden Montgomery",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3532,7 +3532,7 @@
         },
         {
           "name": "Carter Jensen",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -3568,7 +3568,7 @@
         },
         {
           "name": "Jac Caglianone",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3604,7 +3604,7 @@
         },
         {
           "name": "A.J. Ewing",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5674,7 +5674,7 @@
         },
         {
           "name": "Michael Harris II",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6018,7 +6018,7 @@
         },
         {
           "name": "Jordan Walker",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6285,7 +6285,7 @@
         },
         {
           "name": "Xavier Edwards",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6729,7 +6729,7 @@
         },
         {
           "name": "Casey Schmitt",
-          "slot": "OF",
+          "slot": "3B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6779,7 +6779,7 @@
         },
         {
           "name": "Brooks Lee",
-          "slot": "3B",
+          "slot": "2B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7466,5 +7466,5 @@
       ]
     }
   ],
-  "updated": "2026-06-20T12:13:22Z"
+  "updated": "2026-06-20T14:37:37Z"
 }
