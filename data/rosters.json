@@ -939,7 +939,7 @@
         },
         {
           "name": "Spencer Strider",
-          "slot": "BE",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1004,28 +1004,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Matthew Boyd",
-          "slot": "IL",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {
-            "IP": 24.0,
-            "H": 25,
-            "WHIP": 1.292,
-            "ERA": 6.0,
-            "K": 31,
-            "SVHD": 0,
-            "QS": 1
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 20,
-          "keeperEligible": true
-        },
-        {
           "name": "Brandon Lowe",
           "slot": "2B",
           "position": "2B",
@@ -1071,7 +1049,7 @@
         },
         {
           "name": "Seth Lugo",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1214,22 +1192,8 @@
           "keeperEligible": false
         },
         {
-          "name": "Connor Prielipp",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Joey Cantillo",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -1257,6 +1221,34 @@
         },
         {
           "name": "Michael Lorenzen",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Kai-Wei Teng",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "David Peterson",
           "slot": "SP",
           "position": "SP",
           "eligible": "SP",
@@ -1466,7 +1458,7 @@
         },
         {
           "name": "Davis Martin",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1594,7 +1586,7 @@
         },
         {
           "name": "J.T. Ginn",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3883,7 +3875,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.2,
             "HR": 4,
@@ -7466,5 +7458,5 @@
       ]
     }
   ],
-  "updated": "2026-06-21T12:23:07Z"
+  "updated": "2026-06-21T14:37:56Z"
 }
