@@ -3058,7 +3058,7 @@
       "players": [
         {
           "name": "Elly De La Cruz",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3102,7 +3102,7 @@
         },
         {
           "name": "Kerry Carpenter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3124,7 +3124,7 @@
         },
         {
           "name": "Vinnie Pasquantino",
-          "slot": "BE",
+          "slot": "IL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3234,11 +3234,11 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "IL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.28,
             "HR": 12,
@@ -3256,7 +3256,7 @@
         },
         {
           "name": "Michael Soroka",
-          "slot": "SP",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3463,20 +3463,6 @@
           "keeperEligible": true
         },
         {
-          "name": "River Ryan",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Dylan Crews",
           "slot": "UTIL",
           "position": "RF",
@@ -3621,13 +3607,43 @@
           "keeperEligible": false
         },
         {
-          "name": "Christian Moore",
-          "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
+          "name": "Eric Lauer",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {},
+          "stats": {
+            "IP": 58.2,
+            "H": 56,
+            "WHIP": 1.312,
+            "ERA": 5.369,
+            "K": 40,
+            "SVHD": 0,
+            "QS": 2
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Tony Santillan",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 30.0,
+            "H": 29,
+            "WHIP": 1.4,
+            "ERA": 5.1,
+            "K": 28,
+            "SVHD": 11,
+            "QS": 0
+          },
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -6361,7 +6377,7 @@
         },
         {
           "name": "Shota Imanaga",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6609,7 +6625,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7408,5 +7424,5 @@
       ]
     }
   ],
-  "updated": "2026-06-22T19:53:33Z"
+  "updated": "2026-06-22T21:54:45Z"
 }
