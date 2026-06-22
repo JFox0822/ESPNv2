@@ -582,10 +582,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.236,
+            "AVG": 0.239,
             "HR": 6,
-            "OPS": 0.685,
-            "R": 24,
+            "OPS": 0.691,
+            "R": 25,
             "RBI": 36,
             "SB": 14,
             "Kbat": 43
@@ -703,9 +703,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.301,
+            "AVG": 0.3,
             "HR": 17,
-            "OPS": 0.976,
+            "OPS": 0.971,
             "R": 36,
             "RBI": 38,
             "SB": 6,
@@ -1863,10 +1863,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.226,
+            "AVG": 0.228,
             "HR": 7,
-            "OPS": 0.613,
-            "R": 46,
+            "OPS": 0.62,
+            "R": 48,
             "RBI": 22,
             "SB": 15,
             "Kbat": 72
@@ -2951,13 +2951,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.251,
+            "AVG": 0.25,
             "HR": 8,
-            "OPS": 0.667,
+            "OPS": 0.664,
             "R": 39,
             "RBI": 42,
             "SB": 1,
-            "Kbat": 56
+            "Kbat": 57
           },
           "savant": {},
           "tier": "",
@@ -3745,9 +3745,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.234,
             "HR": 6,
-            "OPS": 0.707,
+            "OPS": 0.705,
             "R": 44,
             "RBI": 40,
             "SB": 6,
@@ -3899,11 +3899,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 62.2,
-            "H": 38,
-            "WHIP": 0.846,
-            "ERA": 2.011,
-            "K": 62,
+            "IP": 64.2,
+            "H": 40,
+            "WHIP": 0.851,
+            "ERA": 1.948,
+            "K": 64,
             "SVHD": 0,
             "QS": 8
           },
@@ -4003,15 +4003,15 @@
         },
         {
           "name": "Marcus Semien",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.222,
+            "AVG": 0.221,
             "HR": 9,
-            "OPS": 0.635,
+            "OPS": 0.633,
             "R": 29,
             "RBI": 29,
             "SB": 6,
@@ -4370,13 +4370,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.259,
+            "AVG": 0.26,
             "HR": 16,
-            "OPS": 0.873,
+            "OPS": 0.877,
             "R": 50,
             "RBI": 43,
             "SB": 5,
-            "Kbat": 59
+            "Kbat": 60
           },
           "savant": {},
           "tier": "",
@@ -7169,13 +7169,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.257,
+            "AVG": 0.256,
             "HR": 8,
-            "OPS": 0.709,
+            "OPS": 0.707,
             "R": 40,
             "RBI": 28,
             "SB": 11,
-            "Kbat": 64
+            "Kbat": 65
           },
           "savant": {},
           "tier": "",
@@ -7403,11 +7403,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.254,
-            "HR": 28,
-            "OPS": 0.963,
-            "R": 49,
-            "RBI": 49,
+            "AVG": 0.257,
+            "HR": 29,
+            "OPS": 0.979,
+            "R": 51,
+            "RBI": 52,
             "SB": 1,
             "Kbat": 112
           },
@@ -7456,5 +7456,5 @@
       ]
     }
   ],
-  "updated": "2026-06-21T22:59:42Z"
+  "updated": "2026-06-22T00:13:41Z"
 }
