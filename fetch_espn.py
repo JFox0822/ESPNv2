@@ -460,6 +460,7 @@ def main():
             "20":"R","21":"RBI","5":"HR","23":"SB","27":"Kbat",
             "2":"AVG","18":"OPS","34":"IP","37":"H","48":"K",
             "63":"QS","47":"ERA","41":"WHIP","60":"SVHD","57":"SV","83":"HLD",
+            "33":"GS",
         }
         LOWER_CATS = {"ERA","WHIP","H","Kbat"}
         id_to_name = {t.team_id: t.team_name for t in league.teams}
@@ -496,75 +497,6 @@ def main():
                 if lbl == "IP": return f"{f:.1f}"
                 return str(int(f)) if f == int(f) else str(round(f,1))
             except: return str(v)
-
-        # ── SP Starts (GS) per team per matchup period ─────────────────────
-        # GS (Games Started) = ESPN stat ID 33, lives in per-player roster data,
-        # NOT in team-level cumulativeScore.scoreByStat.
-        # Cat King pitching eligibility requires 7–10 starts in a week.
-        BENCH_IL_SLOTS = {16, 17, 18, 19, 20}  # BE, IL, IL10, IL15/60, NA
-
-        def _count_gs_from_side(side_data):
-            """Count total GS from a matchup side's roster entries."""
-            if not side_data:
-                return None
-            roster = (side_data.get('rosterForMatchupPeriod') or
-                      side_data.get('rosterForCurrentScoringPeriod') or
-                      {}).get('entries', [])
-            if not roster:
-                return None
-            gs_total = 0
-            for entry in roster:
-                slot = entry.get('lineupSlotId', 16)
-                if slot in BENCH_IL_SLOTS:
-                    continue
-                ppool = entry.get('playerPoolEntry', {})
-                player = ppool.get('player') or {}
-                # Sum GS across all actual-stats entries for this player,
-                # deduplicated by scoringPeriodId to avoid double-counting
-                seen_periods = set()
-                for stat_entry in player.get('stats', []):
-                    if stat_entry.get('statSplitTypeId') != 5:
-                        continue
-                    sp_id = stat_entry.get('scoringPeriodId', 0)
-                    if sp_id in seen_periods:
-                        continue
-                    seen_periods.add(sp_id)
-                    gs_val = (stat_entry.get('stats') or {}).get('33')
-                    if gs_val:
-                        try:
-                            gs_total += int(round(float(gs_val)))
-                        except:
-                            pass
-            return gs_total
-
-        _starts_cache = {}  # matchupPeriodId -> {teamId: gs_count}
-
-        def fetch_starts_for_period(period_id):
-            """Fetch GS per team for a matchup period via mBoxscore API."""
-            if period_id in _starts_cache:
-                return _starts_cache[period_id]
-            starts_by_team = {}
-            try:
-                # Use matchupPeriodId (NOT scoringPeriodId which is daily)
-                bdata = api_get(['mBoxscore'], {'matchupPeriodId': period_id})
-                if isinstance(bdata, dict):
-                    for sm in bdata.get('schedule', []):
-                        if sm.get('matchupPeriodId') != period_id:
-                            continue
-                        for side_key in ('home', 'away'):
-                            side = sm.get(side_key)
-                            if not side:
-                                continue
-                            tid = side.get('teamId')
-                            if not tid:
-                                continue
-                            gs = _count_gs_from_side(side)
-                            if gs is not None:
-                                starts_by_team[tid] = gs
-            except Exception as e:
-                print(f"  ⚠️  fetch_starts_for_period({period_id}) failed: {e}")
-            _starts_cache[period_id] = starts_by_team
-            return starts_by_team
 
         # Probe ESPN for the actual current DAILY scoring period.
         # ESPN baseball uses daily periods (~day 14 mid-April), not weekly (3).
@@ -700,8 +632,9 @@ def main():
                             outs = int(round(stats['IP']))
                             stats['IP'] = float(f"{outs // 3}.{outs % 3}")
 
-                        # Count SP starts from box_side roster data
-                        starts = _count_gs_from_side(box_side)
+                        # Extract GS (Games Started) for Cat King starts qualification
+                        gs_raw = stats.pop('GS', None)
+                        starts = int(round(gs_raw)) if gs_raw is not None else None
 
                         return {
                             'teamId': tid, 'team': tname,
@@ -784,6 +717,7 @@ def main():
                         "20":"R","5":"HR","21":"RBI","27":"Kbat","23":"SB",
                         "2":"AVG","18":"OPS","34":"IP","37":"H","48":"K",
                         "63":"QS","47":"ERA","41":"WHIP","60":"SVHD","57":"SV","83":"HLD",
+                        "33":"GS",
                     }
                     raw_sbs = cum.get('scoreByStat', {})
                     sbs_norm = {str(k): v for k, v in raw_sbs.items()}
@@ -806,9 +740,9 @@ def main():
                                 except: pass
                     stats.pop('SV', None)
                     stats.pop('HLD', None)
-                    # Fetch GS for this matchup period (cached per period)
-                    starts_map = fetch_starts_for_period(wk)
-                    starts = starts_map.get(tid) if starts_map else None
+                    # Extract GS for Cat King starts qualification
+                    gs_raw = stats.pop('GS', None)
+                    starts = int(round(gs_raw)) if gs_raw is not None else None
                     return {
                         'teamId': tid,
                         'team': all_id_to_name.get(tid, f'Team {tid}'),
@@ -861,6 +795,17 @@ def main():
                 all_weeks_out[str(wk)] = wk_list
 
         print(f"  ✅  allWeeks: {sorted(int(k) for k in all_weeks_out.keys())} weeks saved")
+        # GS diagnostic: show starts values for one week to verify stat 33 is in scoreByStat
+        for wk_str in sorted(all_weeks_out.keys(), key=int):
+            wk_data = all_weeks_out[wk_str]
+            if wk_data and wk_data[0].get('winner') != 'UNDECIDED':
+                gs_vals = []
+                for m in wk_data:
+                    for side_key in ('home', 'away'):
+                        s = m[side_key]
+                        gs_vals.append(f"{s.get('rbName','?')}={s.get('starts')}")
+                print(f"  📊 GS check (wk{wk_str}): {', '.join(gs_vals)}")
+                break
     except Exception as e:
         import traceback
         print(f"  ⚠️  allWeeks build: {e}")
