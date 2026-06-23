@@ -1676,7 +1676,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3278,7 +3278,7 @@
         },
         {
           "name": "Maikel Garcia",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3314,7 +3314,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3494,7 +3494,7 @@
         },
         {
           "name": "Blaze Alexander",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3558,7 +3558,7 @@
         },
         {
           "name": "Cole Young",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7455,5 +7455,5 @@
       ]
     }
   ],
-  "updated": "2026-06-23T19:22:29Z"
+  "updated": "2026-06-23T19:34:44Z"
 }
