@@ -497,6 +497,52 @@ def main():
                 return str(int(f)) if f == int(f) else str(round(f,1))
             except: return str(v)
 
+        # ── SP Starts per team per matchup period ──────────────────────────────
+        # GS (Games Started) is a per-player stat (statId 33), not exposed in the
+        # team-level cumulativeScore.scoreByStat. We pull it from each team's
+        # roster-for-period via mBoxscore and sum GS across all pitchers.
+        # Cat King eligibility for pitching cats requires 7–10 starts in a week.
+        _starts_cache = {}  # matchupPeriodId -> {teamId: starts_int}
+
+        def fetch_starts_for_period(period_id):
+            if period_id in _starts_cache:
+                return _starts_cache[period_id]
+            starts_by_team = {}
+            try:
+                bdata = api_get(['mBoxscore'], {'scoringPeriodId': period_id})
+                if isinstance(bdata, dict):
+                    for sm in bdata.get('schedule', []):
+                        mp = sm.get('matchupPeriodId')
+                        if mp != period_id:
+                            continue
+                        for side_key in ('home', 'away'):
+                            side = sm.get(side_key)
+                            if not side:
+                                continue
+                            tid = side.get('teamId')
+                            if not tid:
+                                continue
+                            roster = (side.get('rosterForCurrentScoringPeriod') or {}).get('entries', [])
+                            gs_total = 0
+                            for entry in roster:
+                                slot = entry.get('lineupSlotId', 16)
+                                if slot in (16, 17, 18, 19, 20):  # BE/IL/IL10/IL60/NA — not active
+                                    continue
+                                ppool = entry.get('playerPoolEntry', {})
+                                player = ppool.get('player') or {}
+                                for stat_entry in player.get('stats', []):
+                                    if (stat_entry.get('statSplitTypeId') == 5
+                                            and stat_entry.get('scoringPeriodId') == period_id):
+                                        gs_val = (stat_entry.get('stats') or {}).get('33')
+                                        if gs_val:
+                                            try: gs_total += int(round(float(gs_val)))
+                                            except: pass
+                            starts_by_team[tid] = gs_total
+            except Exception as e:
+                print(f"  ⚠️  fetch_starts_for_period({period_id}) failed: {e}")
+            _starts_cache[period_id] = starts_by_team
+            return starts_by_team
+
         # Probe ESPN for the actual current DAILY scoring period.
         # ESPN baseball uses daily periods (~day 14 mid-April), not weekly (3).
         # live_period already probed above; use it directly
@@ -631,10 +677,14 @@ def main():
                             outs = int(round(stats['IP']))
                             stats['IP'] = float(f"{outs // 3}.{outs % 3}")
 
+                        starts_map = fetch_starts_for_period(current_sp)
+                        starts = starts_map.get(tid, 0)
+
                         return {
                             'teamId': tid, 'team': tname,
                             'abbrev': tm.get('abbrev',''), 'rbName': tm.get('rbName',''),
                             'catWins': cat_wins, 'catLoss': cat_losses, 'catTies': 0,
+                            'starts': starts,
                             'stats': stats,
                         }
 
@@ -733,12 +783,15 @@ def main():
                                 except: pass
                     stats.pop('SV', None)
                     stats.pop('HLD', None)
+                    starts_map = fetch_starts_for_period(wk)
+                    starts = starts_map.get(tid, 0)
                     return {
                         'teamId': tid,
                         'team': all_id_to_name.get(tid, f'Team {tid}'),
                         'abbrev': tm.get('abbrev', ''),
                         'rbName': tm.get('rbName', ''),
                         'catWins': cat_wins, 'catLoss': cat_losses, 'catTies': 0,
+                        'starts': starts,
                         'categories': {},
                         'stats': stats,
                     }
