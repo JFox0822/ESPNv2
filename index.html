@@ -2726,66 +2726,44 @@ async function renderKeepers() {
       return;
     }
 
-    const keeperMap = {}; // teamName -> [{name, source}]
+    const keeperMap = {};
 
-    // ── Use draft_manual.json as sole source of truth for keeper eligibility ─
-    // ESPN's keeperEligible flag & draftRound are unreliable with traded picks.
-    // We auto-detect ESPN→draft team mapping by last-name overlap, then do
-    // per-team lookups so same last names on different teams don't collide.
     let hasDraftData = false;
-    let draftByTeam = {}; // draftTeamName → { lastName → {round, isPreKeeper} }
+    const leaguePicks = {};
 
     try {
       const draftPicks = (await load('draft_manual.json')).picks || [];
       if (draftPicks.length) {
         hasDraftData = true;
         draftPicks.forEach(p => {
-          if (!draftByTeam[p.team]) draftByTeam[p.team] = {};
-          const lastName = draftKey(p.player);
-          draftByTeam[p.team][lastName] = { round: p.round, isPreKeeper: !!p.keeper };
+          const key = draftKey(p.player);
+          const existing = leaguePicks[key];
+          if (!existing || (typeof p.round === 'number' && typeof existing.round === 'number' && p.round < existing.round)) {
+            leaguePicks[key] = { round: p.round, isPreKeeper: !!p.keeper };
+          }
         });
       }
     } catch(_) {}
 
     if (hasDraftData) {
-      // Auto-map each ESPN roster team to its draft team by counting last-name overlaps
-      const teamMapping = {}; // espnTeamName → draftTeamName
-      teams.forEach(rosterTeam => {
-        const rosterLastNames = new Set(
-          (rosterTeam.players || []).map(p => draftKey(p.name))
-        );
-        let bestDraftTeam = null, bestCount = -1;
-        Object.entries(draftByTeam).forEach(([draftTeam, picks]) => {
-          const overlap = Object.keys(picks).filter(ln => rosterLastNames.has(ln)).length;
-          if (overlap > bestCount) { bestCount = overlap; bestDraftTeam = draftTeam; }
-        });
-        if (bestDraftTeam) teamMapping[rosterTeam.name] = bestDraftTeam;
-      });
-
-      // Now determine eligibility per team using the correct team's draft picks
       teams.forEach(t => {
-        const draftTeamName = teamMapping[t.name];
-        const teamPicks = draftTeamName ? (draftByTeam[draftTeamName] || {}) : {};
         const players = (t.players || []).filter(p => p.name && p.slot !== 'NA');
         const elig = [];
         players.forEach(p => {
-          const lastName = draftKey(p.name);
-          const entry = teamPicks[lastName];
+          const key = draftKey(p.name);
+          const entry = leaguePicks[key];
           if (!entry) {
-            // Not in this team's draft picks = FA/Waiver pickup = eligible
             elig.push({ name: p.name, source: 'FA/Waiver add' });
           } else if (entry.isPreKeeper) {
-            // Pre-draft keeper this year — cannot keep again, omit
+            // Was kept this season = cannot be kept again
           } else if (typeof entry.round === 'number' && entry.round >= 13) {
             elig.push({ name: p.name, source: `Rd ${entry.round} pick` });
           }
-          // rounds 1–12 = not keeper eligible, omit
         });
         if (elig.length) keeperMap[t.name] = elig;
       });
     }
 
-    // ── Fallback: no draft data yet — show all rostered players as TBD ──────
     if (!Object.keys(keeperMap).length) {
       teams.forEach(t => {
         const players = (t.players||[]).filter(p => p.name && p.slot !== 'NA');
@@ -2825,12 +2803,12 @@ async function renderKeepers() {
         </div>`;
       }).join('');
 
-    el.innerHTML = `${sh('Keeper Eligible Players','Round 13+ draft picks · FA/Waiver pickups · Refreshes with every roster update')}
+    el.innerHTML = `${sh('Keeper Eligible Players','Round 13+ draft picks · FA/Waiver pickups · Round is permanent — follows player through trades and drops')}
       ${isPreDraft ? `<div class="info-box" style="background:rgba(240,180,41,.08);border-color:rgba(240,180,41,.2);color:var(--gold);margin-bottom:16px">
-        ⚑ Draft data not yet available — showing all rostered players. Source column will update to show Rd 13+ or FA/Waiver once draft.json is populated.
+        Draft data not yet available — showing all rostered players.
       </div>` : `<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:var(--fm);font-size:9px;color:var(--ink3);margin-bottom:16px">
-        <div><span style="color:var(--green)">■</span> Rd 13+ draft pick</div>
-        <div><span style="color:var(--blue)">■</span> FA/Waiver add</div>
+        <div><span style="color:var(--green)">■</span> Rd 13+ pick (permanent — follows player through trades and drops)</div>
+        <div><span style="color:var(--blue)">■</span> FA/Waiver add (never drafted in this league)</div>
       </div>`}
       ${teamRows}`;
   } catch(e) {
@@ -2950,13 +2928,13 @@ async function renderCatKing2026() {
     const data = await load('matchups.json');
     const allWeeks = data.allWeeks || {};
     const LOWER = new Set(['ERA','WHIP','H','Kbat']);
-    // Pitching categories require 7–10 SP starts in a week to qualify for Cat King.
-    // Below 7 or above 10 disqualifies that team's pitching stats for that week.
-    const PITCHING_CATS = new Set(['IP','H','K','QS','ERA','WHIP','SVHD']);
-    const MIN_STARTS = 7, MAX_STARTS = 10;
 
     // Per category, collect all team-week entries
     const catBest = {}; // cat -> [{rb, val, week}]
+
+    // Pitching categories require 7–10 SP starts in a week to qualify for Cat King.
+    const PITCHING_CATS = new Set(['IP','H','K','QS','ERA','WHIP','SVHD']);
+    const MIN_STARTS = 7, MAX_STARTS = 10;
     let disqualifiedCount = 0;
 
     for (const [wkStr, matchupList] of Object.entries(allWeeks)) {
@@ -2973,15 +2951,13 @@ async function renderCatKing2026() {
           for (const [cat, info] of Object.entries(s.categories || {})) {
             const v = parseFloat(info.value);
             if (isNaN(v) || v === 0) continue;
-            // Enforce starts qualification for pitching cats only.
-            // If starts data is missing (older fetcher), fall back to allowing
-            // the stat through rather than silently dropping all historical data.
+            // If starts data exists and this is a pitching cat, enforce 7–10 range
             if (PITCHING_CATS.has(cat) && startsKnown && !startsQualify) {
               disqualifiedCount++;
               continue;
             }
             if (!catBest[cat]) catBest[cat] = [];
-            catBest[cat].push({rb, val: v, week: wk, starts: startsKnown ? starts : null});
+            catBest[cat].push({rb, val: v, week: wk});
           }
         }
       }
@@ -3008,7 +2984,7 @@ async function renderCatKing2026() {
       const byTeam = {};
       for (const e of entries) {
         if (!byTeam[e.rb]) byTeam[e.rb] = [];
-        byTeam[e.rb].push({val: e.val, week: e.week, starts: e.starts});
+        byTeam[e.rb].push({val: e.val, week: e.week});
       }
       for (const rb of Object.keys(byTeam)) {
         byTeam[rb].sort((a, b) => isLow ? a.val - b.val : b.val - a.val);
@@ -3048,7 +3024,6 @@ async function renderCatKing2026() {
         rb,
         val: byTeam[rb][0].val,
         week: byTeam[rb][0].week,
-        starts: byTeam[rb][0].starts,
         // Include their subsequent best weeks for display
         allWeeks: byTeam[rb].slice(0, 3)
       }));
@@ -3122,7 +3097,7 @@ async function renderCatKing2026() {
       }).join('');
 
       const disqualNote = disqualifiedCount > 0
-        ? `<div style="font-family:var(--fm);font-size:9px;color:var(--gold);margin-top:8px">⚠️ ${disqualifiedCount} pitching stat-line(s) excluded this season for not meeting the 7–10 starts requirement.</div>`
+        ? `<div style="font-family:var(--fm);font-size:9px;color:var(--gold);margin-top:8px">${disqualifiedCount} pitching stat-line(s) excluded this season for not meeting the 7–10 starts requirement.</div>`
         : '';
 
       c.innerHTML = `${sh('Category King 2026','Best single-week performance per category · $25 per cat')}
@@ -3369,23 +3344,21 @@ async function renderLuck2026() {
       const myEntry = wkTeams.find(t=>t.rb===selTeam);
       if (!myEntry) return `<div style="font-family:var(--fm);font-size:10px;color:var(--ink3)">No data for ${selTeam} in Week ${selWeek}.</div>`;
 
-      // Fix: use 'Kpitch' to match what matchups.json actually stores for pitching Ks
+      // Fix: use 'Kpitch' to match what matchups.json stores for pitching Ks
       const CATS_ORDER=['R','HR','RBI','SB','Kbat','AVG','OPS','IP','H','Kpitch','QS','ERA','WHIP','SVHD'];
       const DISP={'Kbat':'K(bat)','Kpitch':'K(pit)','SVHD':'SV/HD'};
 
       const opponents = wkTeams.filter(t=>t.rb!==selTeam);
-      // Only show cats where at least my data exists
-      const activeCats = CATS_ORDER.filter(c=>myEntry.cats[c]!=null);
-
       const hdr = `<tr>
         <th>Opponent</th>
         <th class="c">Result</th>
-        ${activeCats.map(c=>`<th class="c" style="font-size:7px">${DISP[c]||c}</th>`).join('')}
+        ${CATS_ORDER.filter(c=>myEntry.cats[c]!=null).map(c=>`<th class="c" style="font-size:7px">${DISP[c]||c}</th>`).join('')}
       </tr>`;
 
       const rowsHTML = opponents.map(opp=>{
         let myCatWins=0,oppCatWins=0,catTies=0,catsMissing=0;
-        const catCells = activeCats.map(c=>{
+        const cats = CATS_ORDER.filter(c=>myEntry.cats[c]!=null);
+        const catCells = cats.map(c=>{
           const mv=myEntry.cats[c], ov=opp.cats[c];
           const fmt=v=>v==null?'—':v<1?v.toFixed(3):v%1===0?v.toFixed(0):v.toFixed(1);
           if (ov==null) {
@@ -3407,10 +3380,10 @@ async function renderLuck2026() {
             <div style="color:${oppCol};font-size:8px">${fmt(ov)}</div>
           </td>`;
         }).join('');
-        const won=myCatWins>oppCatWins, tied2=myCatWins===oppCatWins;
-        const resCol=won?'var(--green)':tied2?'var(--gold)':'var(--red)';
+        const won=myCatWins>oppCatWins, tied=myCatWins===oppCatWins;
+        const resCol=won?'var(--green)':tied?'var(--gold)':'var(--red)';
         const resStr=`${myCatWins}–${oppCatWins}${catTies?`–${catTies}`:''}`;
-        const isActualOpp = wkTeams.some(m2=>m2.rb===opp.rb);
+        const isActual = wkTeams.some(m2=>m2.rb===opp.rb); // always true
         return `<tr>
           <td class="bt" style="color:${isMineExact(opp.rb)?'var(--green)':'var(--ink)'}">${opp.rb}</td>
           <td class="c" style="font-family:var(--fd);font-size:15px;font-weight:900;color:${resCol}">${resStr}</td>
@@ -3418,24 +3391,20 @@ async function renderLuck2026() {
         </tr>`;
       }).join('');
 
-      // Legend row showing your stats + label
-      const legendRow=`<tr style="border-top:2px solid var(--border2);background:var(--bg2)">
+      // Tally row
+      const cats=CATS_ORDER.filter(c=>myEntry.cats[c]!=null);
+      const tallyRow=`<tr style="border-top:2px solid var(--border2)">
         <td colspan="2" style="font-family:var(--fm);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);padding:6px 14px">Your stat / Opp stat</td>
-        ${activeCats.map(c=>{
-          const v=myEntry.cats[c];
-          const fmt=v==null?'—':v<1?v.toFixed(3):v%1===0?v.toFixed(0):v.toFixed(1);
-          return`<td class="c" style="font-family:var(--fm);font-size:9px;color:var(--gold);font-weight:700;padding:4px 6px">${fmt}</td>`;
-        }).join('')}
+        <td></td>
+        ${cats.map(c=>{const v=myEntry.cats[c];const fmt=v<1?v.toFixed(3):v%1===0?v.toFixed(0):v.toFixed(1);return`<td class="c" style="font-family:var(--fm);font-size:10px;color:var(--gold);font-weight:700">${fmt}</td>`;}).join('')}
       </tr>`;
 
       return `<div class="tw"><table>
-        <thead>${hdr}${legendRow}</thead>
+        <thead>${hdr}${tallyRow}</thead>
         <tbody>${rowsHTML}</tbody>
       </table></div>
-      <div style="font-family:var(--fm);font-size:8px;color:var(--ink3);margin-top:6px">
-        Each cell: <b style="color:var(--ink)">your stat</b> (top) / opponent stat (bottom) · 
-        <span style="color:var(--green)">■</span> You won · <span style="color:var(--red)">■</span> You lost · Result = cats won–lost–tied
-      </div>`;
+      <div style="font-family:var(--fm);font-size:8px;color:var(--ink3);margin-top:6px">Each cell: <b style="color:var(--ink)">your stat</b> (top) / opponent stat (bottom) · 
+        <span style="color:var(--green)">■</span> You won · <span style="color:var(--red)">■</span> You lost · Result = cats won–lost–tied</div>`;
     }
 
     const teamOpts = allTeams.map(t=>`<option value="${t}" ${t===defaultTeam?'selected':''}>${t}</option>`).join('');
