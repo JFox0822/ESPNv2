@@ -378,7 +378,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3687,7 +3687,7 @@
         },
         {
           "name": "Zach Neto",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3731,7 +3731,7 @@
         },
         {
           "name": "Kyle Tucker",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3753,7 +3753,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3797,7 +3797,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "1B",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3995,7 +3995,7 @@
         },
         {
           "name": "Marcus Semien",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4017,7 +4017,7 @@
         },
         {
           "name": "Nolan Arenado",
-          "slot": "3B",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4083,7 +4083,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4105,7 +4105,7 @@
         },
         {
           "name": "Spencer Horwitz",
-          "slot": "BE",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -4271,7 +4271,7 @@
         },
         {
           "name": "Anthony Volpe",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4939,6 +4939,7 @@
       "name": "Las Vegas Degenerate",
       "abbrev": "GREN",
       "owners": [
+        "Cdcanes009",
         "greene1012"
       ],
       "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/d147e660-fbe8-11f0-a7b7-0bc3deaecc7e",
@@ -7454,5 +7455,5 @@
       ]
     }
   ],
-  "updated": "2026-06-23T14:41:21Z"
+  "updated": "2026-06-23T17:09:58Z"
 }
