@@ -497,23 +497,59 @@ def main():
                 return str(int(f)) if f == int(f) else str(round(f,1))
             except: return str(v)
 
-        # ── SP Starts per team per matchup period ──────────────────────────────
-        # GS (Games Started) is a per-player stat (statId 33), not exposed in the
-        # team-level cumulativeScore.scoreByStat. We pull it from each team's
-        # roster-for-period via mBoxscore and sum GS across all pitchers.
-        # Cat King eligibility for pitching cats requires 7–10 starts in a week.
-        _starts_cache = {}  # matchupPeriodId -> {teamId: starts_int}
+        # ── SP Starts (GS) per team per matchup period ─────────────────────
+        # GS (Games Started) = ESPN stat ID 33, lives in per-player roster data,
+        # NOT in team-level cumulativeScore.scoreByStat.
+        # Cat King pitching eligibility requires 7–10 starts in a week.
+        BENCH_IL_SLOTS = {16, 17, 18, 19, 20}  # BE, IL, IL10, IL15/60, NA
+
+        def _count_gs_from_side(side_data):
+            """Count total GS from a matchup side's roster entries."""
+            if not side_data:
+                return None
+            roster = (side_data.get('rosterForMatchupPeriod') or
+                      side_data.get('rosterForCurrentScoringPeriod') or
+                      {}).get('entries', [])
+            if not roster:
+                return None
+            gs_total = 0
+            for entry in roster:
+                slot = entry.get('lineupSlotId', 16)
+                if slot in BENCH_IL_SLOTS:
+                    continue
+                ppool = entry.get('playerPoolEntry', {})
+                player = ppool.get('player') or {}
+                # Sum GS across all actual-stats entries for this player,
+                # deduplicated by scoringPeriodId to avoid double-counting
+                seen_periods = set()
+                for stat_entry in player.get('stats', []):
+                    if stat_entry.get('statSplitTypeId') != 5:
+                        continue
+                    sp_id = stat_entry.get('scoringPeriodId', 0)
+                    if sp_id in seen_periods:
+                        continue
+                    seen_periods.add(sp_id)
+                    gs_val = (stat_entry.get('stats') or {}).get('33')
+                    if gs_val:
+                        try:
+                            gs_total += int(round(float(gs_val)))
+                        except:
+                            pass
+            return gs_total
+
+        _starts_cache = {}  # matchupPeriodId -> {teamId: gs_count}
 
         def fetch_starts_for_period(period_id):
+            """Fetch GS per team for a matchup period via mBoxscore API."""
             if period_id in _starts_cache:
                 return _starts_cache[period_id]
             starts_by_team = {}
             try:
-                bdata = api_get(['mBoxscore'], {'scoringPeriodId': period_id})
+                # Use matchupPeriodId (NOT scoringPeriodId which is daily)
+                bdata = api_get(['mBoxscore'], {'matchupPeriodId': period_id})
                 if isinstance(bdata, dict):
                     for sm in bdata.get('schedule', []):
-                        mp = sm.get('matchupPeriodId')
-                        if mp != period_id:
+                        if sm.get('matchupPeriodId') != period_id:
                             continue
                         for side_key in ('home', 'away'):
                             side = sm.get(side_key)
@@ -522,22 +558,9 @@ def main():
                             tid = side.get('teamId')
                             if not tid:
                                 continue
-                            roster = (side.get('rosterForCurrentScoringPeriod') or {}).get('entries', [])
-                            gs_total = 0
-                            for entry in roster:
-                                slot = entry.get('lineupSlotId', 16)
-                                if slot in (16, 17, 18, 19, 20):  # BE/IL/IL10/IL60/NA — not active
-                                    continue
-                                ppool = entry.get('playerPoolEntry', {})
-                                player = ppool.get('player') or {}
-                                for stat_entry in player.get('stats', []):
-                                    if (stat_entry.get('statSplitTypeId') == 5
-                                            and stat_entry.get('scoringPeriodId') == period_id):
-                                        gs_val = (stat_entry.get('stats') or {}).get('33')
-                                        if gs_val:
-                                            try: gs_total += int(round(float(gs_val)))
-                                            except: pass
-                            starts_by_team[tid] = gs_total
+                            gs = _count_gs_from_side(side)
+                            if gs is not None:
+                                starts_by_team[tid] = gs
             except Exception as e:
                 print(f"  ⚠️  fetch_starts_for_period({period_id}) failed: {e}")
             _starts_cache[period_id] = starts_by_team
@@ -677,8 +700,8 @@ def main():
                             outs = int(round(stats['IP']))
                             stats['IP'] = float(f"{outs // 3}.{outs % 3}")
 
-                        starts_map = fetch_starts_for_period(current_sp)
-                        starts = starts_map.get(tid, 0)
+                        # Count SP starts from box_side roster data
+                        starts = _count_gs_from_side(box_side)
 
                         return {
                             'teamId': tid, 'team': tname,
@@ -783,8 +806,9 @@ def main():
                                 except: pass
                     stats.pop('SV', None)
                     stats.pop('HLD', None)
+                    # Fetch GS for this matchup period (cached per period)
                     starts_map = fetch_starts_for_period(wk)
-                    starts = starts_map.get(tid, 0)
+                    starts = starts_map.get(tid) if starts_map else None
                     return {
                         'teamId': tid,
                         'team': all_id_to_name.get(tid, f'Team {tid}'),
