@@ -735,7 +735,7 @@
         },
         {
           "name": "Jarren Duran",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -823,7 +823,7 @@
         },
         {
           "name": "Jose Altuve",
-          "slot": "2B",
+          "slot": "OF",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1021,7 +1021,7 @@
         },
         {
           "name": "Brandon Lowe",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3322,7 +3322,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3566,7 +3566,7 @@
         },
         {
           "name": "Cole Young",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5695,7 +5695,7 @@
         },
         {
           "name": "Josh Naylor",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5739,7 +5739,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "3B",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5915,7 +5915,7 @@
         },
         {
           "name": "Ernie Clement",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5937,7 +5937,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6089,7 +6089,7 @@
         },
         {
           "name": "JJ Bleday",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7441,5 +7441,5 @@
       ]
     }
   ],
-  "updated": "2026-06-24T09:56:03Z"
+  "updated": "2026-06-24T12:14:03Z"
 }
