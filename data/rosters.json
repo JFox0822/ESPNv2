@@ -1444,7 +1444,7 @@
         },
         {
           "name": "Landen Roupp",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1466,7 +1466,7 @@
         },
         {
           "name": "Davis Martin",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1480,7 +1480,7 @@
         },
         {
           "name": "Brayan Rocchio",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1530,7 +1530,7 @@
         },
         {
           "name": "Ildemaro Vargas",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1558,7 +1558,7 @@
         },
         {
           "name": "Ezequiel Duran",
-          "slot": "2B",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1658,7 +1658,7 @@
         },
         {
           "name": "Justin Crawford",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1744,7 +1744,7 @@
         },
         {
           "name": "Colton Cowser",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3294,7 +3294,7 @@
         },
         {
           "name": "Maikel Garcia",
-          "slot": "BE",
+          "slot": "IL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3366,7 +3366,7 @@
         },
         {
           "name": "Braden Montgomery",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3422,7 +3422,7 @@
         },
         {
           "name": "Konnor Griffin",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3574,7 +3574,7 @@
         },
         {
           "name": "Cole Young",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3681,7 +3681,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3769,7 +3769,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3813,7 +3813,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "3B",
+          "slot": "1B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4011,7 +4011,7 @@
         },
         {
           "name": "Marcus Semien",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4033,7 +4033,7 @@
         },
         {
           "name": "Nolan Arenado",
-          "slot": "UTIL",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4121,11 +4121,11 @@
         },
         {
           "name": "Spencer Horwitz",
-          "slot": "1B",
+          "slot": "IL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.28,
             "HR": 10,
@@ -4237,7 +4237,7 @@
         },
         {
           "name": "Max Meyer",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4273,7 +4273,7 @@
         },
         {
           "name": "Anthony Volpe",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4890,7 +4890,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -4904,7 +4904,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "SUSPENSION",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 29.1,
             "H": 22,
@@ -7421,5 +7421,5 @@
       ]
     }
   ],
-  "updated": "2026-06-25T12:35:33Z"
+  "updated": "2026-06-25T15:36:18Z"
 }
