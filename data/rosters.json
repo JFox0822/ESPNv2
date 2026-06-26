@@ -2696,7 +2696,7 @@
         },
         {
           "name": "Taylor Ward",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2860,7 +2860,7 @@
         },
         {
           "name": "Nolan McLean",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2925,7 +2925,7 @@
         },
         {
           "name": "Trevor Rogers",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2991,7 +2991,7 @@
         },
         {
           "name": "Willi Castro",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3739,7 +3739,7 @@
         },
         {
           "name": "Kyle Tucker",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -4069,7 +4069,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4171,7 +4171,7 @@
         },
         {
           "name": "Bubba Chandler",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7443,5 +7443,5 @@
       ]
     }
   ],
-  "updated": "2026-06-26T10:13:33Z"
+  "updated": "2026-06-26T12:28:44Z"
 }
