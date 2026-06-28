@@ -381,9 +381,9 @@
           "injStatus": "ACTIVE",
           "stats": {
             "IP": 3.2,
-            "H": 9,
-            "WHIP": 2.455,
-            "ERA": 9.818,
+            "H": 11,
+            "WHIP": 3.0,
+            "ERA": 12.273,
             "K": 2,
             "SVHD": 0,
             "QS": 0
@@ -2120,8 +2120,8 @@
           "injStatus": "ACTIVE",
           "stats": {
             "IP": 88.1,
-            "H": 85,
-            "WHIP": 1.325,
+            "H": 86,
+            "WHIP": 1.336,
             "ERA": 4.891,
             "K": 69,
             "SVHD": 0,
@@ -2744,7 +2744,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3053,7 +3053,7 @@
         },
         {
           "name": "Nolan Schanuel",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3094,9 +3094,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.268,
+            "AVG": 0.271,
             "HR": 12,
-            "OPS": 0.822,
+            "OPS": 0.826,
             "R": 41,
             "RBI": 38,
             "SB": 10,
@@ -3388,7 +3388,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.275,
             "HR": 12,
@@ -3957,7 +3957,7 @@
         },
         {
           "name": "Josh Hader",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4089,7 +4089,7 @@
         },
         {
           "name": "Jason Adam",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4275,9 +4275,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.273,
+            "AVG": 0.272,
             "HR": 14,
-            "OPS": 0.816,
+            "OPS": 0.813,
             "R": 35,
             "RBI": 50,
             "SB": 2,
@@ -5036,7 +5036,7 @@
         },
         {
           "name": "William Contreras",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5190,16 +5190,16 @@
         },
         {
           "name": "Drew Rasmussen",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 86.0,
+            "IP": 86.1,
             "H": 60,
-            "WHIP": 0.872,
-            "ERA": 2.616,
+            "WHIP": 0.869,
+            "ERA": 2.606,
             "K": 89,
             "SVHD": 0,
             "QS": 9
@@ -5212,7 +5212,7 @@
         },
         {
           "name": "Emmet Sheehan",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5234,7 +5234,7 @@
         },
         {
           "name": "Samuel Basallo",
-          "slot": "UTIL",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5426,7 +5426,7 @@
         },
         {
           "name": "Blaze Jordan",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5462,7 +5462,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5484,7 +5484,7 @@
         },
         {
           "name": "Donovan Walton",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5533,7 +5533,7 @@
         },
         {
           "name": "Nick Kurtz",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5709,7 +5709,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6051,7 +6051,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6109,7 +6109,7 @@
         },
         {
           "name": "Bryce Eldridge",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7110,9 +7110,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.261,
+            "AVG": 0.26,
             "HR": 14,
-            "OPS": 0.777,
+            "OPS": 0.774,
             "R": 43,
             "RBI": 48,
             "SB": 1,
@@ -7154,9 +7154,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.257,
+            "AVG": 0.256,
             "HR": 20,
-            "OPS": 0.886,
+            "OPS": 0.883,
             "R": 70,
             "RBI": 49,
             "SB": 13,
@@ -7416,10 +7416,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 89.0,
+            "IP": 89.2,
             "H": 87,
-            "WHIP": 1.449,
-            "ERA": 3.64,
+            "WHIP": 1.439,
+            "ERA": 3.613,
             "K": 94,
             "SVHD": 0,
             "QS": 7
@@ -7433,5 +7433,5 @@
       ]
     }
   ],
-  "updated": "2026-06-28T16:13:27Z"
+  "updated": "2026-06-28T17:41:26Z"
 }
