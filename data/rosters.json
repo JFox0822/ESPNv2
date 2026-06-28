@@ -21,9 +21,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.265,
+            "AVG": 0.264,
             "HR": 11,
-            "OPS": 0.817,
+            "OPS": 0.815,
             "R": 46,
             "RBI": 49,
             "SB": 10,
@@ -65,9 +65,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.296,
+            "AVG": 0.295,
             "HR": 17,
-            "OPS": 0.953,
+            "OPS": 0.95,
             "R": 59,
             "RBI": 47,
             "SB": 6,
@@ -248,11 +248,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 76.1,
+            "IP": 78.2,
             "H": 71,
-            "WHIP": 1.192,
-            "ERA": 2.948,
-            "K": 66,
+            "WHIP": 1.157,
+            "ERA": 2.86,
+            "K": 69,
             "SVHD": 0,
             "QS": 9
           },
@@ -404,7 +404,7 @@
           "stats": {
             "AVG": 0.269,
             "HR": 10,
-            "OPS": 0.773,
+            "OPS": 0.775,
             "R": 36,
             "RBI": 38,
             "SB": 6,
@@ -857,7 +857,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.231,
             "HR": 14,
@@ -1965,9 +1965,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.284,
+            "AVG": 0.283,
             "HR": 7,
-            "OPS": 0.775,
+            "OPS": 0.773,
             "R": 34,
             "RBI": 35,
             "SB": 10,
@@ -3809,9 +3809,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.268,
+            "AVG": 0.267,
             "HR": 15,
-            "OPS": 0.801,
+            "OPS": 0.799,
             "R": 50,
             "RBI": 58,
             "SB": 8,
@@ -4007,9 +4007,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.222,
+            "AVG": 0.22,
             "HR": 3,
-            "OPS": 0.679,
+            "OPS": 0.67,
             "R": 7,
             "RBI": 8,
             "SB": 4,
@@ -4310,9 +4310,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.284,
+            "AVG": 0.283,
             "HR": 3,
-            "OPS": 0.715,
+            "OPS": 0.713,
             "R": 35,
             "RBI": 30,
             "SB": 19,
@@ -4398,13 +4398,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.225,
+            "AVG": 0.224,
             "HR": 12,
-            "OPS": 0.713,
+            "OPS": 0.71,
             "R": 42,
             "RBI": 33,
             "SB": 24,
-            "Kbat": 89
+            "Kbat": 90
           },
           "savant": {},
           "tier": "",
@@ -4420,9 +4420,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.276,
+            "AVG": 0.275,
             "HR": 22,
-            "OPS": 0.94,
+            "OPS": 0.937,
             "R": 56,
             "RBI": 53,
             "SB": 2,
@@ -4777,7 +4777,7 @@
             "WHIP": 1.084,
             "ERA": 2.602,
             "K": 39,
-            "SVHD": 12,
+            "SVHD": 13,
             "QS": 0
           },
           "savant": {},
@@ -6566,13 +6566,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.226,
+            "AVG": 0.222,
             "HR": 2,
-            "OPS": 0.679,
+            "OPS": 0.669,
             "R": 5,
             "RBI": 7,
             "SB": 1,
-            "Kbat": 29
+            "Kbat": 30
           },
           "savant": {},
           "tier": "",
@@ -6950,11 +6950,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 41.1,
+            "IP": 43.1,
             "H": 31,
-            "WHIP": 1.282,
-            "ERA": 3.702,
-            "K": 46,
+            "WHIP": 1.246,
+            "ERA": 3.531,
+            "K": 48,
             "SVHD": 0,
             "QS": 3
           },
@@ -7054,7 +7054,7 @@
         },
         {
           "name": "Willson Contreras",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7283,7 +7283,7 @@
             "WHIP": 0.699,
             "ERA": 2.097,
             "K": 42,
-            "SVHD": 5,
+            "SVHD": 6,
             "QS": 0
           },
           "savant": {},
@@ -7433,5 +7433,5 @@
       ]
     }
   ],
-  "updated": "2026-06-28T22:53:56Z"
+  "updated": "2026-06-28T23:59:40Z"
 }
