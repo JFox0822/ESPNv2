@@ -1332,7 +1332,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.262,
             "HR": 8,
@@ -3076,7 +3076,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.268,
             "HR": 12,
@@ -3749,7 +3749,7 @@
         },
         {
           "name": "Ozzie Albies",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3771,7 +3771,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "3B",
+          "slot": "1B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3969,7 +3969,7 @@
         },
         {
           "name": "Nolan Arenado",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4035,7 +4035,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4231,7 +4231,7 @@
         },
         {
           "name": "Jake McCarthy",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4267,7 +4267,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "1B",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5082,7 +5082,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.276,
             "HR": 7,
@@ -6156,7 +6156,7 @@
         },
         {
           "name": "Cam Schlittler",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6354,7 +6354,7 @@
         },
         {
           "name": "Shota Imanaga",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6376,7 +6376,7 @@
         },
         {
           "name": "Sandy Alcantara",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6544,7 +6544,7 @@
         },
         {
           "name": "Spencer Jones",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6588,7 +6588,7 @@
         },
         {
           "name": "Nick Martinez",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6602,7 +6602,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6674,7 +6674,7 @@
         },
         {
           "name": "Casey Schmitt",
-          "slot": "OF",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6724,7 +6724,7 @@
         },
         {
           "name": "Andrew Benintendi",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -6737,21 +6737,13 @@
           "keeperEligible": true
         },
         {
-          "name": "Slade Cecconi",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
+          "name": "Tristan Peters",
+          "slot": "OF",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 90.1,
-            "H": 94,
-            "WHIP": 1.362,
-            "ERA": 4.185,
-            "K": 70,
-            "SVHD": 0,
-            "QS": 5
-          },
+          "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -7425,5 +7417,5 @@
       ]
     }
   ],
-  "updated": "2026-06-29T18:58:38Z"
+  "updated": "2026-06-29T20:48:25Z"
 }
