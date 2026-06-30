@@ -1766,7 +1766,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "PATERNITY",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -6148,7 +6148,7 @@
         },
         {
           "name": "Cam Schlittler",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6280,7 +6280,7 @@
         },
         {
           "name": "Mike Trout",
-          "slot": "BE",
+          "slot": "IL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6368,7 +6368,7 @@
         },
         {
           "name": "Sandy Alcantara",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6412,11 +6412,11 @@
         },
         {
           "name": "Emilio Pagan",
-          "slot": "IL",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 14.0,
             "H": 14,
@@ -6630,7 +6630,7 @@
         },
         {
           "name": "Pete Fairbanks",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7409,5 +7409,5 @@
       ]
     }
   ],
-  "updated": "2026-06-30T15:07:49Z"
+  "updated": "2026-06-30T17:21:02Z"
 }
