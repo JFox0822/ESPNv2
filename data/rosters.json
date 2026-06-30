@@ -2612,7 +2612,7 @@
         },
         {
           "name": "MacKenzie Gore",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2706,7 +2706,7 @@
         },
         {
           "name": "Justin Wrobleski",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2820,7 +2820,7 @@
         },
         {
           "name": "Nolan McLean",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2846,20 +2846,6 @@
           "acquisitionType": "TRADE",
           "draftRound": 2,
           "keeperEligible": false
-        },
-        {
-          "name": "Mick Abel",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 18,
-          "keeperEligible": true
         },
         {
           "name": "Bo Bichette",
@@ -2903,28 +2889,6 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 13,
-          "keeperEligible": true
-        },
-        {
-          "name": "Aaron Nola",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 85.0,
-            "H": 98,
-            "WHIP": 1.494,
-            "ERA": 6.035,
-            "K": 87,
-            "SVHD": 0,
-            "QS": 4
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 26,
           "keeperEligible": true
         },
         {
@@ -3037,7 +3001,7 @@
         },
         {
           "name": "Sean Burke",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3048,6 +3012,50 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Garrett Whitlock",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 27.2,
+            "H": 23,
+            "WHIP": 1.048,
+            "ERA": 2.602,
+            "K": 32,
+            "SVHD": 12,
+            "QS": 0
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Sal Frelick",
+          "slot": "BE",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.244,
+            "HR": 3,
+            "OPS": 0.647,
+            "R": 29,
+            "RBI": 30,
+            "SB": 6,
+            "Kbat": 25
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 22,
+          "keeperEligible": true
         }
       ]
     },
@@ -3631,7 +3639,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3719,7 +3727,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3741,7 +3749,7 @@
         },
         {
           "name": "Ozzie Albies",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3829,7 +3837,7 @@
         },
         {
           "name": "Jackson Holliday",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3983,7 +3991,7 @@
         },
         {
           "name": "Jasson Dominguez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5627,7 +5635,7 @@
         },
         {
           "name": "Josh Naylor",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5649,7 +5657,7 @@
         },
         {
           "name": "Yandy Diaz",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6824,7 +6832,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7372,7 +7380,7 @@
         },
         {
           "name": "Esmerlyn Valdez",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7387,5 +7395,5 @@
       ]
     }
   ],
-  "updated": "2026-06-30T10:24:40Z"
+  "updated": "2026-06-30T12:27:11Z"
 }
