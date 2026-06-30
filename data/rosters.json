@@ -154,7 +154,7 @@
         },
         {
           "name": "Alec Burleson",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -176,7 +176,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -418,7 +418,7 @@
         },
         {
           "name": "Andrew Vaughn",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -528,7 +528,7 @@
         },
         {
           "name": "Nick Gonzales",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -542,7 +542,7 @@
         },
         {
           "name": "Sam Antonacci",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -556,7 +556,7 @@
         },
         {
           "name": "Gabriel Moreno",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -592,7 +592,7 @@
         },
         {
           "name": "Bryson Stott",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1766,7 +1766,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "PATERNITY",
+          "injStatus": "BEREAVEMENT",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3412,7 +3412,7 @@
         },
         {
           "name": "Carter Jensen",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -3448,11 +3448,11 @@
         },
         {
           "name": "Jac Caglianone",
-          "slot": "BE",
+          "slot": "1B",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.265,
             "HR": 14,
@@ -3520,7 +3520,7 @@
         },
         {
           "name": "Keibert Ruiz",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -3598,7 +3598,7 @@
         },
         {
           "name": "Gavin Sheets",
-          "slot": "1B",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3771,7 +3771,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "3B",
+          "slot": "1B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3969,7 +3969,7 @@
         },
         {
           "name": "Nolan Arenado",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4267,7 +4267,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "1B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4390,7 +4390,7 @@
         },
         {
           "name": "Jazz Chisholm Jr.",
-          "slot": "3B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4654,7 +4654,7 @@
         },
         {
           "name": "Ryan O'Hearn",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -4676,7 +4676,7 @@
         },
         {
           "name": "Colson Montgomery",
-          "slot": "BE",
+          "slot": "3B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4742,7 +4742,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5609,7 +5609,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.295,
             "HR": 6,
@@ -5675,7 +5675,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.336,
             "HR": 12,
@@ -5693,7 +5693,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5869,7 +5869,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6894,7 +6894,7 @@
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.208,
             "HR": 8,
@@ -7409,5 +7409,5 @@
       ]
     }
   ],
-  "updated": "2026-06-30T19:13:55Z"
+  "updated": "2026-06-30T21:11:16Z"
 }
