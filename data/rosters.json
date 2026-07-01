@@ -1400,7 +1400,7 @@
         },
         {
           "name": "Landen Roupp",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1422,7 +1422,7 @@
         },
         {
           "name": "Davis Martin",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1493,20 +1493,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Ildemaro Vargas",
-          "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Dylan Lee",
           "slot": "RP",
           "position": "RP",
@@ -1536,7 +1522,7 @@
         },
         {
           "name": "J.T. Ginn",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1639,20 +1625,6 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
-        },
-        {
-          "name": "Brady Singer",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 21,
-          "keeperEligible": true
         },
         {
           "name": "Jorbit Vivas",
@@ -1780,6 +1752,34 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Joshua Baez",
+          "slot": "BE",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Ty Johnson",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -2712,7 +2712,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2971,7 +2971,7 @@
         },
         {
           "name": "Nolan Schanuel",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3589,20 +3589,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Gavin Sheets",
-          "slot": "BE",
-          "position": "LF",
-          "eligible": "LF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Brandon Sproat",
           "slot": "SP",
           "position": "SP",
@@ -3615,6 +3601,28 @@
           "acquisitionType": "ADD",
           "draftRound": 19,
           "keeperEligible": true
+        },
+        {
+          "name": "Slade Cecconi",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 90.1,
+            "H": 94,
+            "WHIP": 1.362,
+            "ERA": 4.185,
+            "K": 70,
+            "SVHD": 0,
+            "QS": 5
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -5671,7 +5679,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5825,7 +5833,7 @@
         },
         {
           "name": "Ernie Clement",
-          "slot": "SS",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6049,7 +6057,7 @@
         },
         {
           "name": "Trevor Larnach",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6077,7 +6085,7 @@
         },
         {
           "name": "Dansby Swanson",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7395,5 +7403,5 @@
       ]
     }
   ],
-  "updated": "2026-07-01T08:01:53Z"
+  "updated": "2026-07-01T11:36:18Z"
 }
