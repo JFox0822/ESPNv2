@@ -1137,7 +1137,7 @@
         },
         {
           "name": "Nasim Nunez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1200,20 +1200,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Javier Assad",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Kyle Leahy",
           "slot": "BE",
           "position": "RP",
@@ -1263,6 +1249,35 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Javier Sanoja",
+          "slot": "UTIL",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.277,
+            "HR": 3,
+            "OPS": 0.736,
+            "R": 19,
+            "RBI": 34,
+            "SB": 5,
+            "Kbat": 21,
+            "IP": 2.0,
+            "H": 1,
+            "WHIP": 0.5,
+            "ERA": 0.0,
+            "K": 1,
+            "SVHD": 0,
+            "QS": 0
+          },
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -2023,7 +2038,7 @@
         },
         {
           "name": "Ryan Helsley",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2111,7 +2126,7 @@
         },
         {
           "name": "Chad Patrick",
-          "slot": "BE",
+          "slot": "RP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5078,7 +5093,7 @@
         },
         {
           "name": "Sal Stewart",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5360,7 +5375,7 @@
         },
         {
           "name": "Cole Carrigg",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5410,7 +5425,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "OF",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5446,7 +5461,7 @@
         },
         {
           "name": "Jacob Gonzalez",
-          "slot": "2B",
+          "slot": "1B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7403,5 +7418,5 @@
       ]
     }
   ],
-  "updated": "2026-07-02T12:01:53Z"
+  "updated": "2026-07-02T14:34:44Z"
 }
