@@ -59,7 +59,7 @@
         },
         {
           "name": "Shohei Ohtani",
-          "slot": "SP",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -791,7 +791,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.201,
             "HR": 10,
@@ -1035,9 +1035,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.335,
+            "AVG": 0.336,
             "HR": 7,
-            "OPS": 0.861,
+            "OPS": 0.862,
             "R": 55,
             "RBI": 37,
             "SB": 16,
@@ -1263,17 +1263,17 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.283,
+            "AVG": 0.281,
             "HR": 3,
-            "OPS": 0.745,
+            "OPS": 0.741,
             "R": 19,
             "RBI": 34,
             "SB": 5,
             "Kbat": 21,
-            "IP": 2.0,
-            "H": 1,
-            "WHIP": 0.5,
-            "ERA": 0.0,
+            "IP": 3.0,
+            "H": 3,
+            "WHIP": 1.333,
+            "ERA": 6.0,
             "K": 1,
             "SVHD": 0,
             "QS": 0
@@ -2198,11 +2198,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.29,
+            "AVG": 0.293,
             "HR": 12,
-            "OPS": 0.854,
-            "R": 37,
-            "RBI": 45,
+            "OPS": 0.86,
+            "R": 39,
+            "RBI": 46,
             "SB": 0,
             "Kbat": 49
           },
@@ -2414,13 +2414,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.229,
+            "AVG": 0.231,
             "HR": 8,
-            "OPS": 0.743,
+            "OPS": 0.745,
             "R": 30,
             "RBI": 34,
             "SB": 1,
-            "Kbat": 85
+            "Kbat": 86
           },
           "savant": {},
           "tier": "",
@@ -3195,11 +3195,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.28,
             "HR": 15,
-            "OPS": 0.95,
-            "R": 27,
-            "RBI": 36,
+            "OPS": 0.951,
+            "R": 28,
+            "RBI": 37,
             "SB": 1,
             "Kbat": 48
           },
@@ -4076,7 +4076,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 32.1,
             "H": 30,
@@ -4979,7 +4979,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.244,
             "HR": 11,
@@ -6265,9 +6265,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.302,
+            "AVG": 0.301,
             "HR": 6,
-            "OPS": 0.812,
+            "OPS": 0.809,
             "R": 48,
             "RBI": 32,
             "SB": 13,
@@ -6587,9 +6587,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.284,
+            "AVG": 0.282,
             "HR": 13,
-            "OPS": 0.827,
+            "OPS": 0.824,
             "R": 43,
             "RBI": 54,
             "SB": 1,
@@ -7049,7 +7049,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "SUSPENSION",
           "stats": {
             "AVG": 0.283,
             "HR": 18,
@@ -7085,7 +7085,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "SUSPENSION",
           "stats": {
             "IP": 90.1,
             "H": 91,
@@ -7432,5 +7432,5 @@
       ]
     }
   ],
-  "updated": "2026-07-02T21:03:30Z"
+  "updated": "2026-07-02T22:33:22Z"
 }
