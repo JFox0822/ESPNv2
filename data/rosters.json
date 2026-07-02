@@ -1825,7 +1825,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1979,7 +1979,7 @@
         },
         {
           "name": "Tatsuya Imai",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2199,7 +2199,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2235,7 +2235,7 @@
         },
         {
           "name": "Dustin May",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2249,7 +2249,7 @@
         },
         {
           "name": "Troy Johnston",
-          "slot": "BE",
+          "slot": "1B",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2313,7 +2313,7 @@
         },
         {
           "name": "Ian Happ",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2335,7 +2335,7 @@
         },
         {
           "name": "Spencer Steer",
-          "slot": "BE",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2349,7 +2349,7 @@
         },
         {
           "name": "Vladimir Guerrero Jr.",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3152,7 +3152,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3338,7 +3338,7 @@
         },
         {
           "name": "Dominic Canzone",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3360,7 +3360,7 @@
         },
         {
           "name": "Dylan Crews",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3454,7 +3454,7 @@
         },
         {
           "name": "A.J. Ewing",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3504,7 +3504,7 @@
         },
         {
           "name": "Matthew Boyd",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3582,7 +3582,7 @@
         },
         {
           "name": "Slade Cecconi",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3837,7 +3837,7 @@
         },
         {
           "name": "Zack Wheeler",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3991,7 +3991,7 @@
         },
         {
           "name": "Roki Sasaki",
-          "slot": "SP",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4079,7 +4079,7 @@
         },
         {
           "name": "Taj Bradley",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4159,7 +4159,7 @@
         },
         {
           "name": "Max Meyer",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4181,7 +4181,7 @@
         },
         {
           "name": "Zebby Matthews",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7403,5 +7403,5 @@
       ]
     }
   ],
-  "updated": "2026-07-02T09:40:01Z"
+  "updated": "2026-07-02T12:01:53Z"
 }
