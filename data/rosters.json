@@ -1013,9 +1013,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.24,
+            "AVG": 0.239,
             "HR": 20,
-            "OPS": 0.813,
+            "OPS": 0.811,
             "R": 51,
             "RBI": 57,
             "SB": 0,
@@ -2645,7 +2645,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "PATERNITY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 35.0,
             "H": 31,
@@ -4873,13 +4873,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.28,
+            "AVG": 0.279,
             "HR": 11,
-            "OPS": 0.857,
+            "OPS": 0.854,
             "R": 58,
             "RBI": 53,
             "SB": 5,
-            "Kbat": 84
+            "Kbat": 85
           },
           "savant": {},
           "tier": "",
@@ -4899,6 +4899,20 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 19,
+          "keeperEligible": true
+        },
+        {
+          "name": "Jack Flaherty",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 25,
           "keeperEligible": true
         }
       ]
@@ -5351,7 +5365,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -6135,7 +6149,7 @@
       "players": [
         {
           "name": "Rafael Devers",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6201,7 +6215,7 @@
         },
         {
           "name": "Cal Raleigh",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6833,7 +6847,7 @@
         },
         {
           "name": "Hunter Goodman",
-          "slot": "C",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7199,7 +7213,7 @@
         },
         {
           "name": "Dillon Dingler",
-          "slot": "UTIL",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7418,5 +7432,5 @@
       ]
     }
   ],
-  "updated": "2026-07-02T14:34:44Z"
+  "updated": "2026-07-02T16:43:41Z"
 }
