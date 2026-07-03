@@ -3224,20 +3224,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Troy Melton",
-          "slot": "SP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Braden Montgomery",
           "slot": "BE",
           "position": "CF",
@@ -3387,20 +3373,6 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "A.J. Ewing",
-          "slot": "OF",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -3589,6 +3561,20 @@
             "SVHD": 17,
             "QS": 0
           },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "TRADE",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jake Bennett",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "TRADE",
@@ -5331,7 +5317,7 @@
         },
         {
           "name": "Lars Nootbaar",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5395,7 +5381,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "2B",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5416,11 +5402,11 @@
           "keeperEligible": false
         },
         {
-          "name": "Jake Bennett",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
+          "name": "Jacob Gonzalez",
+          "slot": "2B",
+          "position": "2B",
+          "eligible": "2B",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -5430,16 +5416,30 @@
           "keeperEligible": false
         },
         {
-          "name": "Jacob Gonzalez",
+          "name": "Troy Melton",
           "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "TRADE",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "A.J. Ewing",
+          "slot": "BE",
+          "position": "CF",
+          "eligible": "CF",
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
-          "acquisitionType": "ADD",
+          "acquisitionType": "TRADE",
           "draftRound": 0,
           "keeperEligible": false
         }
@@ -6483,7 +6483,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.232,
             "HR": 8,
@@ -6559,7 +6559,7 @@
         },
         {
           "name": "Nick Martinez",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6854,34 +6854,12 @@
           "keeperEligible": false
         },
         {
-          "name": "Eugenio Suarez",
-          "slot": "3B",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.207,
-            "HR": 8,
-            "OPS": 0.648,
-            "R": 19,
-            "RBI": 29,
-            "SB": 0,
-            "Kbat": 77
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 11,
-          "keeperEligible": false
-        },
-        {
           "name": "Carlos Rodon",
           "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 46.1,
             "H": 32,
@@ -7301,7 +7279,7 @@
         },
         {
           "name": "Framber Valdez",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7370,9 +7348,31 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Luis Castillo",
+          "slot": "P",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 76.2,
+            "H": 78,
+            "WHIP": 1.357,
+            "ERA": 4.93,
+            "K": 73,
+            "SVHD": 1,
+            "QS": 2
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 13,
+          "keeperEligible": true
         }
       ]
     }
   ],
-  "updated": "2026-07-03T17:12:22Z"
+  "updated": "2026-07-03T18:43:56Z"
 }
