@@ -21,11 +21,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.25,
+            "AVG": 0.252,
             "HR": 11,
-            "OPS": 0.775,
+            "OPS": 0.782,
             "R": 46,
-            "RBI": 49,
+            "RBI": 50,
             "SB": 10,
             "Kbat": 52
           },
@@ -3960,9 +3960,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.23,
+            "AVG": 0.228,
             "HR": 4,
-            "OPS": 0.697,
+            "OPS": 0.69,
             "R": 9,
             "RBI": 10,
             "SB": 5,
@@ -4148,7 +4148,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -4359,13 +4359,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.221,
+            "AVG": 0.223,
             "HR": 12,
-            "OPS": 0.697,
+            "OPS": 0.699,
             "R": 43,
             "RBI": 33,
             "SB": 26,
-            "Kbat": 96
+            "Kbat": 97
           },
           "savant": {},
           "tier": "",
@@ -4383,7 +4383,7 @@
           "stats": {
             "AVG": 0.268,
             "HR": 24,
-            "OPS": 0.925,
+            "OPS": 0.927,
             "R": 58,
             "RBI": 56,
             "SB": 2,
@@ -5640,7 +5640,7 @@
         },
         {
           "name": "Yandy Diaz",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -5662,7 +5662,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6493,10 +6493,10 @@
           "stats": {
             "AVG": 0.236,
             "HR": 9,
-            "OPS": 0.76,
-            "R": 42,
+            "OPS": 0.762,
+            "R": 43,
             "RBI": 37,
-            "SB": 6,
+            "SB": 7,
             "Kbat": 44
           },
           "savant": {},
@@ -6823,13 +6823,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.269,
             "HR": 25,
-            "OPS": 0.904,
+            "OPS": 0.901,
             "R": 57,
             "RBI": 44,
             "SB": 7,
-            "Kbat": 82
+            "Kbat": 83
           },
           "savant": {},
           "tier": "",
@@ -7372,5 +7372,5 @@
       ]
     }
   ],
-  "updated": "2026-07-04T18:55:47Z"
+  "updated": "2026-07-04T20:04:46Z"
 }
