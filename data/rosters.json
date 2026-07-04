@@ -991,13 +991,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.242,
             "HR": 20,
-            "OPS": 0.818,
+            "OPS": 0.816,
             "R": 53,
             "RBI": 58,
             "SB": 1,
-            "Kbat": 95
+            "Kbat": 96
           },
           "savant": {},
           "tier": "",
@@ -1335,7 +1335,7 @@
         },
         {
           "name": "Chandler Simpson",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1565,7 +1565,7 @@
         },
         {
           "name": "Henry Bolte",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1741,7 +1741,7 @@
         },
         {
           "name": "Joc Pederson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -3279,12 +3279,12 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.273,
+            "AVG": 0.276,
             "HR": 5,
-            "OPS": 0.737,
-            "R": 33,
+            "OPS": 0.742,
+            "R": 34,
             "RBI": 23,
-            "SB": 17,
+            "SB": 19,
             "Kbat": 62
           },
           "savant": {},
@@ -3602,7 +3602,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3690,7 +3690,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3998,7 +3998,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4200,13 +4200,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.283,
+            "AVG": 0.282,
             "HR": 18,
-            "OPS": 0.874,
+            "OPS": 0.87,
             "R": 41,
             "RBI": 62,
             "SB": 2,
-            "Kbat": 42
+            "Kbat": 43
           },
           "savant": {},
           "tier": "",
@@ -4623,13 +4623,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.28,
+            "AVG": 0.279,
             "HR": 13,
-            "OPS": 0.797,
+            "OPS": 0.794,
             "R": 41,
             "RBI": 51,
             "SB": 1,
-            "Kbat": 69
+            "Kbat": 70
           },
           "savant": {},
           "tier": "",
@@ -4843,12 +4843,12 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.282,
+            "AVG": 0.284,
             "HR": 12,
-            "OPS": 0.866,
+            "OPS": 0.869,
             "R": 60,
             "RBI": 55,
-            "SB": 5,
+            "SB": 6,
             "Kbat": 88
           },
           "savant": {},
@@ -5866,11 +5866,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 102.2,
-            "H": 88,
-            "WHIP": 1.081,
-            "ERA": 3.331,
-            "K": 115,
+            "IP": 103.2,
+            "H": 89,
+            "WHIP": 1.08,
+            "ERA": 3.386,
+            "K": 118,
             "SVHD": 0,
             "QS": 10
           },
@@ -6205,13 +6205,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.273,
+            "AVG": 0.272,
             "HR": 18,
-            "OPS": 0.862,
+            "OPS": 0.859,
             "R": 53,
             "RBI": 60,
             "SB": 14,
-            "Kbat": 79
+            "Kbat": 80
           },
           "savant": {},
           "tier": "",
@@ -6821,7 +6821,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.268,
             "HR": 25,
@@ -6971,7 +6971,7 @@
         },
         {
           "name": "Willson Contreras",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7051,7 +7051,7 @@
         },
         {
           "name": "Carson Benge",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7079,11 +7079,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.267,
-            "HR": 22,
-            "OPS": 0.918,
-            "R": 76,
-            "RBI": 55,
+            "AVG": 0.27,
+            "HR": 23,
+            "OPS": 0.93,
+            "R": 77,
+            "RBI": 56,
             "SB": 13,
             "Kbat": 125
           },
@@ -7329,7 +7329,7 @@
         },
         {
           "name": "Esmerlyn Valdez",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7372,5 +7372,5 @@
       ]
     }
   ],
-  "updated": "2026-07-04T14:06:12Z"
+  "updated": "2026-07-04T15:38:13Z"
 }
