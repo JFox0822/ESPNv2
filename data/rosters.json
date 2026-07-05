@@ -1709,7 +1709,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "PATERNITY",
+          "injStatus": "BEREAVEMENT",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -2501,7 +2501,7 @@
         },
         {
           "name": "Joe Ryan",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2593,7 +2593,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "OUT",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 45.1,
             "H": 28,
@@ -2986,7 +2986,7 @@
         },
         {
           "name": "Sal Frelick",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3036,7 +3036,7 @@
         },
         {
           "name": "Steven Kwan",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3851,28 +3851,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Jackson Holliday",
-          "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.187,
-            "HR": 5,
-            "OPS": 0.652,
-            "R": 17,
-            "RBI": 14,
-            "SB": 4,
-            "Kbat": 34
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 12,
-          "keeperEligible": false
-        },
-        {
           "name": "Zack Wheeler",
           "slot": "P",
           "position": "SP",
@@ -4174,7 +4152,7 @@
         },
         {
           "name": "Max Meyer",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4196,7 +4174,7 @@
         },
         {
           "name": "Zebby Matthews",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4301,6 +4279,20 @@
           "acquisitionType": "TRADE",
           "draftRound": 13,
           "keeperEligible": true
+        },
+        {
+          "name": "JP Sears",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -5439,7 +5431,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "2B",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5461,7 +5453,7 @@
         },
         {
           "name": "Jacob Gonzalez",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6577,7 +6569,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.233,
             "HR": 2,
@@ -7001,7 +6993,7 @@
         },
         {
           "name": "Emerson Hancock",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7359,7 +7351,7 @@
         },
         {
           "name": "Kyle Bradish",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7424,5 +7416,5 @@
       ]
     }
   ],
-  "updated": "2026-07-05T15:42:48Z"
+  "updated": "2026-07-05T16:54:28Z"
 }
