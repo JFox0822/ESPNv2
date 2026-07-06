@@ -1212,13 +1212,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.249,
+            "AVG": 0.251,
             "HR": 7,
-            "OPS": 0.704,
+            "OPS": 0.708,
             "R": 36,
             "RBI": 40,
             "SB": 16,
-            "Kbat": 56
+            "Kbat": 57
           },
           "savant": {},
           "tier": "",
@@ -1789,9 +1789,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.207,
+            "AVG": 0.209,
             "HR": 11,
-            "OPS": 0.588,
+            "OPS": 0.596,
             "R": 30,
             "RBI": 33,
             "SB": 0,
@@ -1868,9 +1868,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.24,
+            "AVG": 0.242,
             "HR": 10,
-            "OPS": 0.651,
+            "OPS": 0.654,
             "R": 61,
             "RBI": 31,
             "SB": 16,
@@ -3397,13 +3397,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.256,
+            "AVG": 0.259,
             "HR": 14,
-            "OPS": 0.78,
+            "OPS": 0.782,
             "R": 40,
-            "RBI": 31,
+            "RBI": 33,
             "SB": 3,
-            "Kbat": 94
+            "Kbat": 96
           },
           "savant": {},
           "tier": "",
@@ -3764,10 +3764,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.29,
+            "AVG": 0.292,
             "HR": 12,
-            "OPS": 0.827,
-            "R": 47,
+            "OPS": 0.831,
+            "R": 48,
             "RBI": 36,
             "SB": 30,
             "Kbat": 62
@@ -4377,7 +4377,7 @@
           "stats": {
             "AVG": 0.27,
             "HR": 20,
-            "OPS": 0.893,
+            "OPS": 0.895,
             "R": 56,
             "RBI": 57,
             "SB": 5,
@@ -5317,13 +5317,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.307,
+            "AVG": 0.305,
             "HR": 15,
-            "OPS": 0.847,
+            "OPS": 0.844,
             "R": 50,
             "RBI": 46,
             "SB": 8,
-            "Kbat": 89
+            "Kbat": 90
           },
           "savant": {},
           "tier": "",
@@ -6035,8 +6035,8 @@
           "injStatus": "ACTIVE",
           "stats": {
             "IP": 120.1,
-            "H": 115,
-            "WHIP": 1.155,
+            "H": 116,
+            "WHIP": 1.163,
             "ERA": 2.618,
             "K": 137,
             "SVHD": 0,
@@ -6603,7 +6603,7 @@
         },
         {
           "name": "Liam Hicks",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6697,7 +6697,7 @@
         },
         {
           "name": "Paul Goldschmidt",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7317,11 +7317,11 @@
           "stats": {
             "AVG": 0.252,
             "HR": 30,
-            "OPS": 0.933,
+            "OPS": 0.93,
             "R": 55,
             "RBI": 55,
             "SB": 2,
-            "Kbat": 133
+            "Kbat": 134
           },
           "savant": {},
           "tier": "",
@@ -7432,5 +7432,5 @@
       ]
     }
   ],
-  "updated": "2026-07-06T19:40:56Z"
+  "updated": "2026-07-06T21:20:33Z"
 }
