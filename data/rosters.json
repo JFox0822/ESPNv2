@@ -6551,9 +6551,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.236,
+            "AVG": 0.235,
             "HR": 9,
-            "OPS": 0.762,
+            "OPS": 0.759,
             "R": 44,
             "RBI": 37,
             "SB": 7,
@@ -7071,7 +7071,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "SUSPENSION",
           "stats": {
             "IP": 92.2,
             "H": 97,
@@ -7432,5 +7432,5 @@
       ]
     }
   ],
-  "updated": "2026-07-06T21:20:33Z"
+  "updated": "2026-07-06T22:42:52Z"
 }
