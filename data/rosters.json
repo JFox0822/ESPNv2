@@ -1085,7 +1085,7 @@
         },
         {
           "name": "Caleb Durbin",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -1228,7 +1228,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "BE",
+          "slot": "3B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5429,7 +5429,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.347,
             "HR": 1,
@@ -6581,7 +6581,7 @@
         },
         {
           "name": "Liam Hicks",
-          "slot": "BE",
+          "slot": "1B",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6703,7 +6703,7 @@
         },
         {
           "name": "Pete Alonso",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7410,5 +7410,5 @@
       ]
     }
   ],
-  "updated": "2026-07-07T21:14:22Z"
+  "updated": "2026-07-07T22:34:58Z"
 }
