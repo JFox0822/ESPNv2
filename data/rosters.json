@@ -37,7 +37,7 @@
         },
         {
           "name": "Freddie Freeman",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -352,7 +352,7 @@
         },
         {
           "name": "Max Muncy",
-          "slot": "3B",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -396,7 +396,7 @@
         },
         {
           "name": "Andrew Vaughn",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -620,7 +620,7 @@
         },
         {
           "name": "Manny Machado",
-          "slot": "UTIL",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2979,28 +2979,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Sal Frelick",
-          "slot": "UTIL",
-          "position": "RF",
-          "eligible": "RF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.242,
-            "HR": 3,
-            "OPS": 0.643,
-            "R": 32,
-            "RBI": 31,
-            "SB": 6,
-            "Kbat": 28
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 22,
-          "keeperEligible": true
-        },
-        {
           "name": "Anthony Santander",
           "slot": "IL",
           "position": "DH",
@@ -3048,6 +3026,20 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 20,
+          "keeperEligible": true
+        },
+        {
+          "name": "Heliot Ramos",
+          "slot": "UTIL",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 13,
           "keeperEligible": true
         }
       ]
@@ -3175,7 +3167,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3197,7 +3189,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3470,20 +3462,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Walker Buehler",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Charlie Condon",
           "slot": "BE",
           "position": "1B",
@@ -3635,6 +3613,20 @@
             "SVHD": 13,
             "QS": 0
           },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Luis Lara",
+          "slot": "BE",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -6929,7 +6921,7 @@
         },
         {
           "name": "Will Warren",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7389,7 +7381,7 @@
         },
         {
           "name": "Ian Seymour",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7418,5 +7410,5 @@
       ]
     }
   ],
-  "updated": "2026-07-07T12:40:56Z"
+  "updated": "2026-07-07T15:39:33Z"
 }
