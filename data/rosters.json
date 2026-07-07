@@ -37,7 +37,7 @@
         },
         {
           "name": "Freddie Freeman",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -396,7 +396,7 @@
         },
         {
           "name": "Andrew Vaughn",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -484,7 +484,7 @@
         },
         {
           "name": "Nick Gonzales",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3189,7 +3189,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3293,7 +3293,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.276,
             "HR": 5,
@@ -3333,7 +3333,7 @@
         },
         {
           "name": "Dylan Crews",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5361,7 +5361,7 @@
         },
         {
           "name": "Lars Nootbaar",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5375,7 +5375,7 @@
         },
         {
           "name": "Cole Carrigg",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6171,7 +6171,7 @@
         },
         {
           "name": "Cam Schlittler",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6193,7 +6193,7 @@
         },
         {
           "name": "Tarik Skubal",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6391,7 +6391,7 @@
         },
         {
           "name": "Sandy Alcantara",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6501,7 +6501,7 @@
         },
         {
           "name": "Zac Gallen",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6896,28 +6896,6 @@
           "acquisitionType": "DRAFT",
           "draftRound": 10,
           "keeperEligible": false
-        },
-        {
-          "name": "Carlos Rodon",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {
-            "IP": 46.1,
-            "H": 32,
-            "WHIP": 1.252,
-            "ERA": 3.302,
-            "K": 52,
-            "SVHD": 0,
-            "QS": 3
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 14,
-          "keeperEligible": true
         },
         {
           "name": "Will Warren",
@@ -7406,9 +7384,31 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Royce Lewis",
+          "slot": "3B",
+          "position": "3B",
+          "eligible": "3B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.217,
+            "HR": 8,
+            "OPS": 0.675,
+            "R": 24,
+            "RBI": 25,
+            "SB": 6,
+            "Kbat": 63
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 24,
+          "keeperEligible": true
         }
       ]
     }
   ],
-  "updated": "2026-07-07T15:39:33Z"
+  "updated": "2026-07-07T17:50:50Z"
 }
