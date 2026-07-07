@@ -735,7 +735,7 @@
         },
         {
           "name": "Christian Walker",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1127,7 +1127,7 @@
         },
         {
           "name": "Javier Sanoja",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1255,20 +1255,6 @@
           "eligible": "RP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Martin Perez",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -1840,7 +1826,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1928,7 +1914,7 @@
         },
         {
           "name": "Adley Rutschman",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1994,7 +1980,7 @@
         },
         {
           "name": "Tatsuya Imai",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2148,7 +2134,7 @@
         },
         {
           "name": "Jake Burger",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2250,7 +2236,7 @@
         },
         {
           "name": "Dustin May",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2430,7 +2416,7 @@
         },
         {
           "name": "Kyle Teel",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -2735,7 +2721,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2771,7 +2757,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "2B",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2799,7 +2785,7 @@
         },
         {
           "name": "Jesus Made",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3044,7 +3030,7 @@
         },
         {
           "name": "Steven Kwan",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3123,7 +3109,7 @@
         },
         {
           "name": "Kerry Carpenter",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3333,7 +3319,7 @@
         },
         {
           "name": "Dominic Canzone",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3463,7 +3449,7 @@
         },
         {
           "name": "Matthew Boyd",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3485,7 +3471,7 @@
         },
         {
           "name": "Walker Buehler",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3736,7 +3722,7 @@
         },
         {
           "name": "Kyle Tucker",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -4044,7 +4030,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6072,7 +6058,7 @@
         },
         {
           "name": "Bryce Eldridge",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6144,7 +6130,7 @@
         },
         {
           "name": "Kyle Karros",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7432,5 +7418,5 @@
       ]
     }
   ],
-  "updated": "2026-07-07T10:18:05Z"
+  "updated": "2026-07-07T12:40:56Z"
 }
