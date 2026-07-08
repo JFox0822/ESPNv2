@@ -1579,7 +1579,7 @@
         },
         {
           "name": "Zack Gelof",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2023,28 +2023,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Ryan Helsley",
-          "slot": "BE",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {
-            "IP": 15.1,
-            "H": 13,
-            "WHIP": 1.435,
-            "ERA": 4.109,
-            "K": 21,
-            "SVHD": 0,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 17,
-          "keeperEligible": true
-        },
-        {
           "name": "Daniel Palencia",
           "slot": "IL",
           "position": "RP",
@@ -2430,6 +2408,20 @@
             "SB": 0,
             "Kbat": 19
           },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Tyler Tolbert",
+          "slot": "BE",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -6559,7 +6551,7 @@
         },
         {
           "name": "Liam Hicks",
-          "slot": "1B",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6653,7 +6645,7 @@
         },
         {
           "name": "Paul Goldschmidt",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -6681,7 +6673,7 @@
         },
         {
           "name": "Pete Alonso",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7388,5 +7380,5 @@
       ]
     }
   ],
-  "updated": "2026-07-08T15:41:24Z"
+  "updated": "2026-07-08T17:18:31Z"
 }
