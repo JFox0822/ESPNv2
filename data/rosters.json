@@ -590,11 +590,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 93.1,
-            "H": 85,
-            "WHIP": 1.168,
-            "ERA": 3.664,
-            "K": 78,
+            "IP": 95.1,
+            "H": 89,
+            "WHIP": 1.196,
+            "ERA": 4.059,
+            "K": 79,
             "SVHD": 0,
             "QS": 10
           },
@@ -2334,9 +2334,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.263,
+            "AVG": 0.262,
             "HR": 4,
-            "OPS": 0.689,
+            "OPS": 0.687,
             "R": 47,
             "RBI": 35,
             "SB": 6,
@@ -3093,7 +3093,7 @@
         },
         {
           "name": "Kerry Carpenter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3239,7 +3239,7 @@
         },
         {
           "name": "Braden Montgomery",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4809,7 +4809,7 @@
           "stats": {
             "AVG": 0.327,
             "HR": 4,
-            "OPS": 0.826,
+            "OPS": 0.823,
             "R": 45,
             "RBI": 34,
             "SB": 7,
@@ -5041,7 +5041,7 @@
         },
         {
           "name": "Tyler Soderstrom",
-          "slot": "IL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5157,11 +5157,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 90.1,
+            "IP": 91.1,
             "H": 66,
-            "WHIP": 1.185,
-            "ERA": 2.79,
-            "K": 137,
+            "WHIP": 1.172,
+            "ERA": 2.759,
+            "K": 138,
             "SVHD": 0,
             "QS": 6
           },
@@ -5245,7 +5245,7 @@
         },
         {
           "name": "Logan Henderson",
-          "slot": "BE",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5830,10 +5830,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.298,
+            "AVG": 0.299,
             "HR": 7,
-            "OPS": 0.753,
-            "R": 39,
+            "OPS": 0.754,
+            "R": 40,
             "RBI": 30,
             "SB": 2,
             "Kbat": 34
@@ -5852,11 +5852,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
-            "HR": 20,
-            "OPS": 0.767,
-            "R": 46,
-            "RBI": 55,
+            "AVG": 0.237,
+            "HR": 21,
+            "OPS": 0.78,
+            "R": 47,
+            "RBI": 59,
             "SB": 0,
             "Kbat": 113
           },
@@ -6551,7 +6551,7 @@
         },
         {
           "name": "Liam Hicks",
-          "slot": "BE",
+          "slot": "1B",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6645,7 +6645,7 @@
         },
         {
           "name": "Paul Goldschmidt",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7380,5 +7380,5 @@
       ]
     }
   ],
-  "updated": "2026-07-08T18:52:15Z"
+  "updated": "2026-07-08T20:15:43Z"
 }
