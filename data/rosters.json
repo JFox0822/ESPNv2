@@ -5045,7 +5045,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.242,
             "HR": 13,
@@ -5846,7 +5846,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6020,7 +6020,7 @@
         },
         {
           "name": "Bryce Eldridge",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7380,5 +7380,5 @@
       ]
     }
   ],
-  "updated": "2026-07-08T17:18:31Z"
+  "updated": "2026-07-08T18:52:15Z"
 }
