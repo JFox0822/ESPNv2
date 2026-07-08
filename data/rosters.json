@@ -176,7 +176,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -498,7 +498,7 @@
         },
         {
           "name": "Sam Antonacci",
-          "slot": "OF",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -590,11 +590,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 95.1,
-            "H": 89,
-            "WHIP": 1.196,
-            "ERA": 4.059,
-            "K": 79,
+            "IP": 100.1,
+            "H": 90,
+            "WHIP": 1.156,
+            "ERA": 3.857,
+            "K": 80,
             "SVHD": 0,
             "QS": 10
           },
@@ -606,7 +606,7 @@
         },
         {
           "name": "Nasim Nunez",
-          "slot": "2B",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -785,13 +785,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.231,
+            "AVG": 0.229,
             "HR": 14,
-            "OPS": 0.704,
+            "OPS": 0.702,
             "R": 44,
             "RBI": 34,
             "SB": 2,
-            "Kbat": 103
+            "Kbat": 104
           },
           "savant": {},
           "tier": "",
@@ -2334,9 +2334,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.262,
+            "AVG": 0.259,
             "HR": 4,
-            "OPS": 0.687,
+            "OPS": 0.681,
             "R": 47,
             "RBI": 35,
             "SB": 6,
@@ -2749,7 +2749,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3000,7 +3000,7 @@
         },
         {
           "name": "Steven Kwan",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4020,9 +4020,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.311,
+            "AVG": 0.308,
             "HR": 5,
-            "OPS": 0.785,
+            "OPS": 0.777,
             "R": 46,
             "RBI": 33,
             "SB": 6,
@@ -4807,9 +4807,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.327,
+            "AVG": 0.325,
             "HR": 4,
-            "OPS": 0.823,
+            "OPS": 0.819,
             "R": 45,
             "RBI": 34,
             "SB": 7,
@@ -5157,11 +5157,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 91.1,
+            "IP": 97.1,
             "H": 66,
-            "WHIP": 1.172,
-            "ERA": 2.759,
-            "K": 138,
+            "WHIP": 1.13,
+            "ERA": 2.589,
+            "K": 146,
             "SVHD": 0,
             "QS": 6
           },
@@ -5830,9 +5830,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.299,
+            "AVG": 0.297,
             "HR": 7,
-            "OPS": 0.754,
+            "OPS": 0.75,
             "R": 40,
             "RBI": 30,
             "SB": 2,
@@ -5852,13 +5852,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.237,
+            "AVG": 0.235,
             "HR": 21,
-            "OPS": 0.78,
+            "OPS": 0.775,
             "R": 47,
             "RBI": 59,
             "SB": 0,
-            "Kbat": 113
+            "Kbat": 114
           },
           "savant": {},
           "tier": "",
@@ -6125,9 +6125,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.246,
+            "AVG": 0.245,
             "HR": 18,
-            "OPS": 0.787,
+            "OPS": 0.785,
             "R": 46,
             "RBI": 47,
             "SB": 0,
@@ -6277,7 +6277,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.234,
             "HR": 17,
@@ -7380,5 +7380,5 @@
       ]
     }
   ],
-  "updated": "2026-07-08T20:15:43Z"
+  "updated": "2026-07-08T21:36:41Z"
 }
