@@ -2068,7 +2068,7 @@
         },
         {
           "name": "Mitch Keller",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2415,10 +2415,10 @@
           "keeperEligible": false
         },
         {
-          "name": "Tyler Tolbert",
+          "name": "Jake Mangum",
           "slot": "UTIL",
-          "position": "CF",
-          "eligible": "CF",
+          "position": "LF",
+          "eligible": "LF",
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -7376,5 +7376,5 @@
       ]
     }
   ],
-  "updated": "2026-07-10T09:17:59Z"
+  "updated": "2026-07-10T12:11:36Z"
 }
