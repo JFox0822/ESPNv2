@@ -1579,7 +1579,7 @@
         },
         {
           "name": "Zack Gelof",
-          "slot": "UTIL",
+          "slot": "IL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1621,7 +1621,7 @@
         },
         {
           "name": "Curtis Mead",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1635,7 +1635,7 @@
         },
         {
           "name": "Victor Caratini",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1663,7 +1663,7 @@
         },
         {
           "name": "Stephen Kolek",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1741,7 +1741,7 @@
         },
         {
           "name": "Salvador Perez",
-          "slot": "UTIL",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1777,7 +1777,7 @@
         },
         {
           "name": "Willi Castro",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2749,7 +2749,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2842,7 +2842,7 @@
         },
         {
           "name": "Bo Bichette",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5097,7 +5097,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "IP": 100.2,
             "H": 80,
@@ -5466,7 +5466,7 @@
         },
         {
           "name": "Nick Kurtz",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5558,7 +5558,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.295,
             "HR": 6,
@@ -5620,7 +5620,7 @@
         },
         {
           "name": "Yandy Diaz",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7340,5 +7340,5 @@
       ]
     }
   ],
-  "updated": "2026-07-10T20:12:40Z"
+  "updated": "2026-07-10T21:31:55Z"
 }
