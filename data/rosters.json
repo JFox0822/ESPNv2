@@ -1592,20 +1592,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Colton Cowser",
-          "slot": "BE",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Shane Drohan",
           "slot": "SP",
           "position": "SP",
@@ -1788,6 +1774,20 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Willi Castro",
+          "slot": "BE",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 24,
+          "keeperEligible": true
         }
       ]
     },
@@ -3115,11 +3115,11 @@
         },
         {
           "name": "Vinnie Pasquantino",
-          "slot": "IL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.224,
             "HR": 6,
@@ -3324,28 +3324,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Dylan Crews",
-          "slot": "BE",
-          "position": "RF",
-          "eligible": "RF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.226,
-            "HR": 6,
-            "OPS": 0.648,
-            "R": 25,
-            "RBI": 18,
-            "SB": 5,
-            "Kbat": 37
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
-          "draftRound": 11,
-          "keeperEligible": false
-        },
-        {
           "name": "Blaze Alexander",
           "slot": "3B",
           "position": "3B",
@@ -3361,7 +3339,7 @@
         },
         {
           "name": "Jac Caglianone",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3569,7 +3547,7 @@
         },
         {
           "name": "Garrett Mitchell",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5910,7 +5888,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -6201,7 +6179,7 @@
         },
         {
           "name": "CJ Abrams",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6223,7 +6201,7 @@
         },
         {
           "name": "Xavier Edwards",
-          "slot": "SS",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6245,11 +6223,11 @@
         },
         {
           "name": "Munetaka Murakami",
-          "slot": "IL",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.24,
             "HR": 20,
@@ -6638,22 +6616,8 @@
           "keeperEligible": true
         },
         {
-          "name": "Paul Goldschmidt",
-          "slot": "BE",
-          "position": "1B",
-          "eligible": "1B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 7,
-          "keeperEligible": false
-        },
-        {
           "name": "Casey Schmitt",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6689,7 +6653,7 @@
         },
         {
           "name": "Brooks Lee",
-          "slot": "3B",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7376,5 +7340,5 @@
       ]
     }
   ],
-  "updated": "2026-07-10T15:08:12Z"
+  "updated": "2026-07-10T17:14:43Z"
 }
