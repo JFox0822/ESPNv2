@@ -2553,7 +2553,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2663,7 +2663,7 @@
         },
         {
           "name": "Taylor Ward",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2749,7 +2749,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2842,7 +2842,7 @@
         },
         {
           "name": "Bo Bichette",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2922,7 +2922,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2994,7 +2994,7 @@
         },
         {
           "name": "Heliot Ramos",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3293,7 +3293,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {
             "AVG": 0.276,
             "HR": 5,
@@ -5035,7 +5035,7 @@
         },
         {
           "name": "Tyler Soderstrom",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5057,7 +5057,7 @@
         },
         {
           "name": "Teoscar Hernandez",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5189,7 +5189,7 @@
         },
         {
           "name": "Samuel Basallo",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5253,7 +5253,7 @@
         },
         {
           "name": "Brandon Marsh",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5325,7 +5325,7 @@
         },
         {
           "name": "Cole Carrigg",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5425,7 +5425,7 @@
         },
         {
           "name": "A.J. Ewing",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7103,7 +7103,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 83.2,
             "H": 70,
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-07-11T12:54:13Z"
+  "updated": "2026-07-11T14:17:40Z"
 }
