@@ -939,13 +939,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.241,
             "HR": 21,
-            "OPS": 0.803,
+            "OPS": 0.799,
             "R": 56,
             "RBI": 64,
             "SB": 1,
-            "Kbat": 102
+            "Kbat": 103
           },
           "savant": {},
           "tier": "",
@@ -1635,7 +1635,7 @@
         },
         {
           "name": "Victor Caratini",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1777,7 +1777,7 @@
         },
         {
           "name": "Willi Castro",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3561,13 +3561,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.273,
+            "AVG": 0.272,
             "HR": 8,
-            "OPS": 0.82,
+            "OPS": 0.817,
             "R": 41,
             "RBI": 43,
             "SB": 6,
-            "Kbat": 100
+            "Kbat": 101
           },
           "savant": {},
           "tier": "",
@@ -3626,7 +3626,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3714,7 +3714,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4471,9 +4471,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.268,
+            "AVG": 0.267,
             "HR": 13,
-            "OPS": 0.821,
+            "OPS": 0.819,
             "R": 65,
             "RBI": 56,
             "SB": 15,
@@ -4647,13 +4647,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.289,
+            "AVG": 0.288,
             "HR": 16,
             "OPS": 0.835,
             "R": 47,
             "RBI": 61,
             "SB": 1,
-            "Kbat": 71
+            "Kbat": 72
           },
           "savant": {},
           "tier": "",
@@ -4867,13 +4867,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.281,
+            "AVG": 0.28,
             "HR": 14,
-            "OPS": 0.873,
-            "R": 65,
+            "OPS": 0.871,
+            "R": 66,
             "RBI": 57,
             "SB": 7,
-            "Kbat": 91
+            "Kbat": 92
           },
           "savant": {},
           "tier": "",
@@ -5019,10 +5019,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.279,
             "HR": 9,
-            "OPS": 0.735,
-            "R": 47,
+            "OPS": 0.739,
+            "R": 48,
             "RBI": 52,
             "SB": 1,
             "Kbat": 50
@@ -5854,11 +5854,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 109.1,
-            "H": 94,
-            "WHIP": 1.088,
-            "ERA": 3.21,
-            "K": 123,
+            "IP": 112.1,
+            "H": 96,
+            "WHIP": 1.077,
+            "ERA": 3.285,
+            "K": 126,
             "SVHD": 0,
             "QS": 10
           },
@@ -6165,7 +6165,7 @@
         },
         {
           "name": "Cal Raleigh",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6303,13 +6303,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.241,
+            "AVG": 0.24,
             "HR": 6,
-            "OPS": 0.704,
+            "OPS": 0.701,
             "R": 41,
             "RBI": 31,
             "SB": 6,
-            "Kbat": 74
+            "Kbat": 75
           },
           "savant": {},
           "tier": "",
@@ -6473,7 +6473,7 @@
         },
         {
           "name": "Trent Grisham",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6531,7 +6531,7 @@
         },
         {
           "name": "Liam Hicks",
-          "slot": "C",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6625,7 +6625,7 @@
         },
         {
           "name": "Casey Schmitt",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-07-11T16:23:56Z"
+  "updated": "2026-07-11T17:27:22Z"
 }
