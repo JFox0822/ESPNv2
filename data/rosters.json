@@ -675,13 +675,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.281,
+            "AVG": 0.28,
             "HR": 13,
-            "OPS": 0.831,
+            "OPS": 0.827,
             "R": 42,
             "RBI": 36,
             "SB": 8,
-            "Kbat": 67
+            "Kbat": 68
           },
           "savant": {},
           "tier": "",
@@ -941,11 +941,11 @@
           "stats": {
             "AVG": 0.246,
             "HR": 21,
-            "OPS": 0.807,
+            "OPS": 0.804,
             "R": 58,
             "RBI": 64,
             "SB": 1,
-            "Kbat": 105
+            "Kbat": 106
           },
           "savant": {},
           "tier": "",
@@ -1832,11 +1832,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 103.0,
+            "IP": 105.0,
             "H": 84,
-            "WHIP": 1.039,
-            "ERA": 3.583,
-            "K": 123,
+            "WHIP": 1.019,
+            "ERA": 3.514,
+            "K": 124,
             "SVHD": 0,
             "QS": 9
           },
@@ -3547,9 +3547,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.274,
+            "AVG": 0.273,
             "HR": 8,
-            "OPS": 0.823,
+            "OPS": 0.82,
             "R": 42,
             "RBI": 43,
             "SB": 6,
@@ -4479,9 +4479,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.266,
+            "AVG": 0.265,
             "HR": 13,
-            "OPS": 0.817,
+            "OPS": 0.815,
             "R": 65,
             "RBI": 58,
             "SB": 15,
@@ -4655,11 +4655,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.283,
+            "AVG": 0.285,
             "HR": 16,
-            "OPS": 0.824,
-            "R": 47,
-            "RBI": 61,
+            "OPS": 0.83,
+            "R": 48,
+            "RBI": 62,
             "SB": 1,
             "Kbat": 74
           },
@@ -4875,13 +4875,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.282,
+            "AVG": 0.281,
             "HR": 14,
-            "OPS": 0.874,
+            "OPS": 0.872,
             "R": 67,
             "RBI": 58,
             "SB": 7,
-            "Kbat": 93
+            "Kbat": 94
           },
           "savant": {},
           "tier": "",
@@ -5570,7 +5570,7 @@
         },
         {
           "name": "Jeremy Pena",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6072,7 +6072,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6311,9 +6311,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.242,
             "HR": 6,
-            "OPS": 0.705,
+            "OPS": 0.702,
             "R": 41,
             "RBI": 31,
             "SB": 6,
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-07-12T15:30:48Z"
+  "updated": "2026-07-12T16:44:54Z"
 }
