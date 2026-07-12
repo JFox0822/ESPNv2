@@ -1606,20 +1606,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Jorbit Vivas",
-          "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Curtis Mead",
           "slot": "UTIL",
           "position": "1B",
@@ -1788,6 +1774,20 @@
           "acquisitionType": "ADD",
           "draftRound": 24,
           "keeperEligible": true
+        },
+        {
+          "name": "Paul Goldschmidt",
+          "slot": "BE",
+          "position": "1B",
+          "eligible": "1B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 7,
+          "keeperEligible": false
         }
       ]
     },
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-07-12T07:38:49Z"
+  "updated": "2026-07-12T09:42:06Z"
 }
