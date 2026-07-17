@@ -380,13 +380,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
+            "AVG": 0.258,
             "HR": 11,
-            "OPS": 0.757,
+            "OPS": 0.755,
             "R": 45,
             "RBI": 43,
             "SB": 6,
-            "Kbat": 83
+            "Kbat": 84
           },
           "savant": {},
           "tier": "",
@@ -711,13 +711,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.194,
+            "AVG": 0.195,
             "HR": 13,
             "OPS": 0.608,
-            "R": 41,
-            "RBI": 46,
+            "R": 42,
+            "RBI": 48,
             "SB": 14,
-            "Kbat": 113
+            "Kbat": 114
           },
           "savant": {},
           "tier": "",
@@ -1319,9 +1319,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.276,
             "HR": 0,
-            "OPS": 0.652,
+            "OPS": 0.648,
             "R": 39,
             "RBI": 17,
             "SB": 22,
@@ -1936,10 +1936,10 @@
           "stats": {
             "AVG": 0.28,
             "HR": 8,
-            "OPS": 0.758,
-            "R": 41,
-            "RBI": 39,
-            "SB": 12,
+            "OPS": 0.761,
+            "R": 42,
+            "RBI": 40,
+            "SB": 13,
             "Kbat": 74
           },
           "savant": {},
@@ -2890,13 +2890,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.297,
+            "AVG": 0.295,
             "HR": 14,
-            "OPS": 0.866,
+            "OPS": 0.861,
             "R": 48,
             "RBI": 64,
             "SB": 0,
-            "Kbat": 88
+            "Kbat": 89
           },
           "savant": {},
           "tier": "",
@@ -4937,7 +4937,7 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.279,
             "HR": 28,
             "OPS": 0.925,
             "R": 61,
@@ -5640,9 +5640,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.321,
+            "AVG": 0.319,
             "HR": 13,
-            "OPS": 0.886,
+            "OPS": 0.881,
             "R": 51,
             "RBI": 55,
             "SB": 1,
@@ -6149,7 +6149,7 @@
         },
         {
           "name": "Tarik Skubal",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6347,7 +6347,7 @@
         },
         {
           "name": "Sandy Alcantara",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6573,7 +6573,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7346,5 +7346,5 @@
       ]
     }
   ],
-  "updated": "2026-07-17T18:05:23Z"
+  "updated": "2026-07-17T19:37:41Z"
 }
