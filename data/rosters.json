@@ -92,7 +92,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {
             "AVG": 0.248,
             "HR": 17,
@@ -683,11 +683,11 @@
         },
         {
           "name": "Juan Soto",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.292,
             "HR": 21,
@@ -705,7 +705,7 @@
         },
         {
           "name": "Jarren Duran",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -727,7 +727,7 @@
         },
         {
           "name": "Christian Walker",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -931,9 +931,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.246,
+            "AVG": 0.249,
             "HR": 21,
-            "OPS": 0.803,
+            "OPS": 0.806,
             "R": 59,
             "RBI": 64,
             "SB": 1,
@@ -1198,7 +1198,7 @@
         },
         {
           "name": "Bryson Stott",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2110,11 +2110,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 35.0,
+            "IP": 36.0,
             "H": 29,
-            "WHIP": 1.143,
-            "ERA": 4.371,
-            "K": 39,
+            "WHIP": 1.111,
+            "ERA": 4.25,
+            "K": 42,
             "SVHD": 0,
             "QS": 1
           },
@@ -3157,13 +3157,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.277,
             "HR": 11,
-            "OPS": 0.794,
+            "OPS": 0.791,
             "R": 33,
             "RBI": 46,
             "SB": 3,
-            "Kbat": 45
+            "Kbat": 46
           },
           "savant": {},
           "tier": "",
@@ -4563,7 +4563,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 111.0,
             "H": 57,
@@ -4653,9 +4653,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.288,
+            "AVG": 0.287,
             "HR": 16,
-            "OPS": 0.838,
+            "OPS": 0.835,
             "R": 49,
             "RBI": 63,
             "SB": 1,
@@ -4873,13 +4873,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.283,
+            "AVG": 0.282,
             "HR": 14,
-            "OPS": 0.878,
+            "OPS": 0.875,
             "R": 68,
             "RBI": 59,
             "SB": 7,
-            "Kbat": 94
+            "Kbat": 95
           },
           "savant": {},
           "tier": "",
@@ -5750,11 +5750,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 113.1,
-            "H": 93,
-            "WHIP": 1.147,
-            "ERA": 3.812,
-            "K": 134,
+            "IP": 114.2,
+            "H": 94,
+            "WHIP": 1.142,
+            "ERA": 3.767,
+            "K": 135,
             "SVHD": 0,
             "QS": 7
           },
@@ -7346,5 +7346,5 @@
       ]
     }
   ],
-  "updated": "2026-07-18T16:25:17Z"
+  "updated": "2026-07-18T17:27:36Z"
 }
