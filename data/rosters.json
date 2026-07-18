@@ -931,13 +931,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.249,
+            "AVG": 0.248,
             "HR": 21,
-            "OPS": 0.806,
+            "OPS": 0.804,
             "R": 59,
             "RBI": 64,
             "SB": 1,
-            "Kbat": 107
+            "Kbat": 108
           },
           "savant": {},
           "tier": "",
@@ -2110,11 +2110,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 36.0,
-            "H": 29,
-            "WHIP": 1.111,
-            "ERA": 4.25,
-            "K": 42,
+            "IP": 40.0,
+            "H": 32,
+            "WHIP": 1.1,
+            "ERA": 4.05,
+            "K": 48,
             "SVHD": 0,
             "QS": 1
           },
@@ -2940,10 +2940,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.225,
+            "AVG": 0.227,
             "HR": 1,
-            "OPS": 0.614,
-            "R": 37,
+            "OPS": 0.62,
+            "R": 38,
             "RBI": 16,
             "SB": 6,
             "Kbat": 36
@@ -3157,9 +3157,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.277,
+            "AVG": 0.279,
             "HR": 11,
-            "OPS": 0.791,
+            "OPS": 0.795,
             "R": 33,
             "RBI": 46,
             "SB": 3,
@@ -3409,10 +3409,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 46.0,
+            "IP": 47.0,
             "H": 46,
-            "WHIP": 1.283,
-            "ERA": 4.5,
+            "WHIP": 1.255,
+            "ERA": 4.404,
             "K": 47,
             "SVHD": 0,
             "QS": 2
@@ -4653,13 +4653,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.287,
+            "AVG": 0.286,
             "HR": 16,
-            "OPS": 0.835,
+            "OPS": 0.833,
             "R": 49,
             "RBI": 63,
             "SB": 1,
-            "Kbat": 74
+            "Kbat": 75
           },
           "savant": {},
           "tier": "",
@@ -4873,13 +4873,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.282,
+            "AVG": 0.281,
             "HR": 14,
-            "OPS": 0.875,
+            "OPS": 0.873,
             "R": 68,
             "RBI": 59,
             "SB": 7,
-            "Kbat": 95
+            "Kbat": 96
           },
           "savant": {},
           "tier": "",
@@ -5750,11 +5750,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 114.2,
-            "H": 94,
-            "WHIP": 1.142,
-            "ERA": 3.767,
-            "K": 135,
+            "IP": 118.1,
+            "H": 97,
+            "WHIP": 1.132,
+            "ERA": 3.803,
+            "K": 142,
             "SVHD": 0,
             "QS": 7
           },
@@ -6761,7 +6761,7 @@
         },
         {
           "name": "Hunter Goodman",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7061,7 +7061,7 @@
         },
         {
           "name": "Dillon Dingler",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7346,5 +7346,5 @@
       ]
     }
   ],
-  "updated": "2026-07-18T17:27:36Z"
+  "updated": "2026-07-18T18:25:52Z"
 }
