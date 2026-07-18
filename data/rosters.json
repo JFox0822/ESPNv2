@@ -3443,7 +3443,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3874,7 +3874,7 @@
         },
         {
           "name": "Andrew Abbott",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4071,20 +4071,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Dalton Rushing",
-          "slot": "C",
-          "position": "C",
-          "eligible": "C",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Bubba Chandler",
           "slot": "BE",
           "position": "SP",
@@ -4238,7 +4224,7 @@
         },
         {
           "name": "Carter Jensen",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -4279,6 +4265,20 @@
           "acquisitionType": "ADD",
           "draftRound": 14,
           "keeperEligible": true
+        },
+        {
+          "name": "Spencer Arrighetti",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -6809,7 +6809,7 @@
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {
             "AVG": 0.264,
             "HR": 14,
@@ -7264,28 +7264,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Royce Lewis",
-          "slot": "3B",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.216,
-            "HR": 10,
-            "OPS": 0.685,
-            "R": 30,
-            "RBI": 29,
-            "SB": 6,
-            "Kbat": 70
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 24,
-          "keeperEligible": true
-        },
-        {
           "name": "George Springer",
           "slot": "OF",
           "position": "DH",
@@ -7342,9 +7320,31 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Eugenio Suarez",
+          "slot": "3B",
+          "position": "3B",
+          "eligible": "3B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.213,
+            "HR": 12,
+            "OPS": 0.694,
+            "R": 24,
+            "RBI": 36,
+            "SB": 0,
+            "Kbat": 97
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 11,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-07-18T15:26:57Z"
+  "updated": "2026-07-18T16:25:17Z"
 }
