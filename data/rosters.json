@@ -2580,28 +2580,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Brandon Woodruff",
-          "slot": "IL",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
-          "stats": {
-            "IP": 45.1,
-            "H": 28,
-            "WHIP": 0.838,
-            "ERA": 2.978,
-            "K": 47,
-            "SVHD": 0,
-            "QS": 3
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 14,
-          "keeperEligible": true
-        },
-        {
           "name": "MacKenzie Gore",
           "slot": "BE",
           "position": "SP",
@@ -2797,7 +2775,7 @@
         },
         {
           "name": "Nolan McLean",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2848,7 +2826,7 @@
         },
         {
           "name": "Trevor Rogers",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3005,28 +2983,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Garrett Cleavinger",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 28.0,
-            "H": 25,
-            "WHIP": 1.357,
-            "ERA": 3.857,
-            "K": 38,
-            "SVHD": 16,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 17,
-          "keeperEligible": true
-        },
-        {
           "name": "Francisco Alvarez",
           "slot": "BE",
           "position": "C",
@@ -3047,6 +3003,34 @@
           "acquisitionType": "ADD",
           "draftRound": 13,
           "keeperEligible": true
+        },
+        {
+          "name": "Jackson Jobe",
+          "slot": "IL",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "SIXTY_DAY_DL",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jakob Junis",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -7382,5 +7366,5 @@
       ]
     }
   ],
-  "updated": "2026-07-19T11:03:32Z"
+  "updated": "2026-07-19T12:10:29Z"
 }
