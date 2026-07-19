@@ -65,13 +65,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.289,
+            "AVG": 0.288,
             "HR": 22,
-            "OPS": 0.942,
+            "OPS": 0.94,
             "R": 65,
             "RBI": 58,
             "SB": 6,
-            "Kbat": 93,
+            "Kbat": 94,
             "IP": 85.2,
             "H": 55,
             "WHIP": 0.946,
@@ -1429,7 +1429,7 @@
         },
         {
           "name": "Davis Martin",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1762,8 +1762,30 @@
           "keeperEligible": false
         },
         {
-          "name": "Hurston Waldrep",
+          "name": "Taylor Ward",
           "slot": "BE",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.253,
+            "HR": 7,
+            "OPS": 0.749,
+            "R": 59,
+            "RBI": 27,
+            "SB": 3,
+            "Kbat": 93
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 8,
+          "keeperEligible": false
+        },
+        {
+          "name": "Robert Gasser",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1776,31 +1798,25 @@
           "keeperEligible": false
         },
         {
-          "name": "Willi Castro",
+          "name": "Cole Ragans",
           "slot": "BE",
-          "position": "RF",
-          "eligible": "RF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "SIXTY_DAY_DL",
+          "stats": {
+            "IP": 35.1,
+            "H": 27,
+            "WHIP": 1.415,
+            "ERA": 4.84,
+            "K": 45,
+            "SVHD": 0,
+            "QS": 3
+          },
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 24,
-          "keeperEligible": true
-        },
-        {
-          "name": "Paul Goldschmidt",
-          "slot": "BE",
-          "position": "1B",
-          "eligible": "1B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 7,
+          "draftRound": 4,
           "keeperEligible": false
         }
       ]
@@ -2254,11 +2270,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 75.0,
+            "IP": 77.0,
             "H": 48,
-            "WHIP": 1.16,
-            "ERA": 3.72,
-            "K": 69,
+            "WHIP": 1.143,
+            "ERA": 3.623,
+            "K": 74,
             "SVHD": 0,
             "QS": 5
           },
@@ -2314,7 +2330,7 @@
           "stats": {
             "AVG": 0.265,
             "HR": 6,
-            "OPS": 0.711,
+            "OPS": 0.709,
             "R": 52,
             "RBI": 41,
             "SB": 7,
@@ -2681,13 +2697,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.245,
+            "AVG": 0.244,
             "HR": 21,
-            "OPS": 0.845,
+            "OPS": 0.843,
             "R": 65,
             "RBI": 59,
             "SB": 11,
-            "Kbat": 69
+            "Kbat": 70
           },
           "savant": {},
           "tier": "",
@@ -3716,7 +3732,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.28,
             "HR": 13,
@@ -4475,7 +4491,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.263,
             "HR": 14,
@@ -4677,11 +4693,11 @@
           "stats": {
             "AVG": 0.221,
             "HR": 23,
-            "OPS": 0.774,
+            "OPS": 0.771,
             "R": 47,
             "RBI": 56,
             "SB": 1,
-            "Kbat": 125
+            "Kbat": 126
           },
           "savant": {},
           "tier": "",
@@ -5816,9 +5832,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.295,
+            "AVG": 0.294,
             "HR": 8,
-            "OPS": 0.747,
+            "OPS": 0.746,
             "R": 43,
             "RBI": 32,
             "SB": 3,
@@ -5838,9 +5854,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.234,
+            "AVG": 0.233,
             "HR": 22,
-            "OPS": 0.777,
+            "OPS": 0.775,
             "R": 50,
             "RBI": 62,
             "SB": 0,
@@ -6133,11 +6149,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 118.2,
+            "IP": 119.0,
             "H": 87,
-            "WHIP": 0.944,
-            "ERA": 2.048,
-            "K": 137,
+            "WHIP": 0.941,
+            "ERA": 2.042,
+            "K": 138,
             "SVHD": 0,
             "QS": 12
           },
@@ -6243,13 +6259,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.234,
+            "AVG": 0.233,
             "HR": 20,
-            "OPS": 0.91,
+            "OPS": 0.906,
             "R": 46,
             "RBI": 42,
             "SB": 1,
-            "Kbat": 89
+            "Kbat": 90
           },
           "savant": {},
           "tier": "",
@@ -7360,5 +7376,5 @@
       ]
     }
   ],
-  "updated": "2026-07-19T15:44:59Z"
+  "updated": "2026-07-19T16:43:31Z"
 }
