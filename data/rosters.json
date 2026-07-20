@@ -154,7 +154,7 @@
         },
         {
           "name": "Alec Burleson",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -176,7 +176,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -330,7 +330,7 @@
         },
         {
           "name": "Nathan Eovaldi",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -352,7 +352,7 @@
         },
         {
           "name": "Max Muncy",
-          "slot": "3B",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -440,7 +440,7 @@
         },
         {
           "name": "Bryce Elder",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -476,7 +476,7 @@
         },
         {
           "name": "Sam Antonacci",
-          "slot": "OF",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -606,7 +606,7 @@
         },
         {
           "name": "Manny Machado",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3604,7 +3604,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3692,7 +3692,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3780,7 +3780,7 @@
         },
         {
           "name": "Randy Arozarena",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3934,7 +3934,7 @@
         },
         {
           "name": "Jasson Dominguez",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4297,7 +4297,7 @@
         },
         {
           "name": "Austin Riley",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4363,7 +4363,7 @@
         },
         {
           "name": "Jazz Chisholm Jr.",
-          "slot": "3B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4495,7 +4495,7 @@
         },
         {
           "name": "Freddy Peralta",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4517,7 +4517,7 @@
         },
         {
           "name": "Michael King",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4561,7 +4561,7 @@
         },
         {
           "name": "Devin Williams",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4583,7 +4583,7 @@
         },
         {
           "name": "Raisel Iglesias",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4949,7 +4949,7 @@
         },
         {
           "name": "Mookie Betts",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4993,7 +4993,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5015,7 +5015,7 @@
         },
         {
           "name": "William Contreras",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5103,7 +5103,7 @@
         },
         {
           "name": "Jacob deGrom",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5125,7 +5125,7 @@
         },
         {
           "name": "Eury Perez",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5147,7 +5147,7 @@
         },
         {
           "name": "Dylan Cease",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5191,7 +5191,7 @@
         },
         {
           "name": "Samuel Basallo",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5313,7 +5313,7 @@
         },
         {
           "name": "Lars Nootbaar",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5427,7 +5427,7 @@
         },
         {
           "name": "A.J. Ewing",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7364,5 +7364,5 @@
       ]
     }
   ],
-  "updated": "2026-07-20T12:59:35Z"
+  "updated": "2026-07-20T15:12:09Z"
 }
