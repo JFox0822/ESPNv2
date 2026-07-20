@@ -2893,22 +2893,8 @@
           "keeperEligible": false
         },
         {
-          "name": "Dean Kremer",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Ronel Blanco",
-          "slot": "IL",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3101,7 +3087,7 @@
         },
         {
           "name": "Vinnie Pasquantino",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3511,7 +3497,7 @@
         },
         {
           "name": "Garrett Mitchell",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7378,5 +7364,5 @@
       ]
     }
   ],
-  "updated": "2026-07-20T10:40:07Z"
+  "updated": "2026-07-20T12:59:35Z"
 }
