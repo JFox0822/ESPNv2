@@ -1601,7 +1601,7 @@
         },
         {
           "name": "Zack Gelof",
-          "slot": "IL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1666,20 +1666,6 @@
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Stephen Kolek",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
           "draftRound": 0,
           "keeperEligible": false
         },
@@ -1771,7 +1757,7 @@
         },
         {
           "name": "Robert Gasser",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1785,7 +1771,7 @@
         },
         {
           "name": "Cole Ragans",
-          "slot": "BE",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1803,6 +1789,20 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 4,
+          "keeperEligible": false
+        },
+        {
+          "name": "Erick Fedde",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -6801,7 +6801,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6991,7 +6991,7 @@
         },
         {
           "name": "Carson Benge",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7364,5 +7364,5 @@
       ]
     }
   ],
-  "updated": "2026-07-20T16:50:46Z"
+  "updated": "2026-07-20T18:47:30Z"
 }
