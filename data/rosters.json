@@ -955,11 +955,11 @@
         },
         {
           "name": "Otto Lopez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.335,
             "HR": 9,
@@ -1206,7 +1206,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2451,7 +2451,7 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2942,7 +2942,7 @@
         },
         {
           "name": "Francisco Alvarez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -3654,7 +3654,7 @@
         },
         {
           "name": "Kyle Tucker",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3676,7 +3676,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5415,7 +5415,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "TEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -5548,7 +5548,7 @@
         },
         {
           "name": "Jeremy Pena",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5592,7 +5592,7 @@
         },
         {
           "name": "Josh Naylor",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5878,7 +5878,7 @@
         },
         {
           "name": "Ryan Jeffers",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5972,7 +5972,7 @@
         },
         {
           "name": "Ivan Herrera",
-          "slot": "BE",
+          "slot": "C",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6291,7 +6291,7 @@
         },
         {
           "name": "Christian Yelich",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6655,7 +6655,7 @@
         },
         {
           "name": "Brooks Lee",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-07-21T20:40:05Z"
+  "updated": "2026-07-21T21:53:57Z"
 }
