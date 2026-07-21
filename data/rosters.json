@@ -132,7 +132,7 @@
         },
         {
           "name": "Drake Baldwin",
-          "slot": "UTIL",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -352,7 +352,7 @@
         },
         {
           "name": "Max Muncy",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -490,7 +490,7 @@
         },
         {
           "name": "Gabriel Moreno",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1834,7 +1834,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1878,7 +1878,7 @@
         },
         {
           "name": "Yoshinobu Yamamoto",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2228,7 +2228,7 @@
         },
         {
           "name": "Gleyber Torres",
-          "slot": "IL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2250,7 +2250,7 @@
         },
         {
           "name": "Trey Yesavage",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2613,7 +2613,7 @@
         },
         {
           "name": "Hunter Greene",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2649,7 +2649,7 @@
         },
         {
           "name": "Justin Wrobleski",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4553,7 +4553,7 @@
         },
         {
           "name": "Devin Williams",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4641,7 +4641,7 @@
         },
         {
           "name": "Colson Montgomery",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4685,7 +4685,7 @@
         },
         {
           "name": "Alex Vesia",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4707,7 +4707,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "BE",
+          "slot": "SS",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -7356,5 +7356,5 @@
       ]
     }
   ],
-  "updated": "2026-07-21T12:05:38Z"
+  "updated": "2026-07-21T14:30:02Z"
 }
