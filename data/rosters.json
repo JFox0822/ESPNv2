@@ -1988,7 +1988,7 @@
         },
         {
           "name": "Tatsuya Imai",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2373,20 +2373,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Jake Mangum",
-          "slot": "BE",
-          "position": "LF",
-          "eligible": "LF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Dansby Swanson",
           "slot": "SS",
           "position": "SS",
@@ -2414,6 +2400,20 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Tyler Stephenson",
+          "slot": "C",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -3596,7 +3596,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3684,7 +3684,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7356,5 +7356,5 @@
       ]
     }
   ],
-  "updated": "2026-07-21T16:02:31Z"
+  "updated": "2026-07-21T17:49:14Z"
 }
