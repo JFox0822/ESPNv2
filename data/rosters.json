@@ -713,7 +713,7 @@
         },
         {
           "name": "Jarren Duran",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -735,7 +735,7 @@
         },
         {
           "name": "Christian Walker",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1063,7 +1063,7 @@
         },
         {
           "name": "Caleb Durbin",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -1206,7 +1206,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "BE",
+          "slot": "3B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1295,7 +1295,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {
             "AVG": 0.249,
             "HR": 6,
@@ -2455,7 +2455,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.25,
             "HR": 14,
@@ -4933,7 +4933,7 @@
         },
         {
           "name": "Mookie Betts",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4977,7 +4977,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5261,7 +5261,7 @@
         },
         {
           "name": "Jake Bauers",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5411,7 +5411,7 @@
         },
         {
           "name": "Joshua Kuroda-Grauer",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6791,9 +6791,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.275,
+            "AVG": 0.274,
             "HR": 25,
-            "OPS": 0.907,
+            "OPS": 0.905,
             "R": 57,
             "RBI": 45,
             "SB": 7,
@@ -7135,10 +7135,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 112.0,
-            "H": 84,
-            "WHIP": 1.071,
-            "ERA": 2.732,
+            "IP": 112.2,
+            "H": 85,
+            "WHIP": 1.074,
+            "ERA": 2.796,
             "K": 110,
             "SVHD": 0,
             "QS": 7
@@ -7348,5 +7348,5 @@
       ]
     }
   ],
-  "updated": "2026-07-21T21:53:57Z"
+  "updated": "2026-07-21T22:44:07Z"
 }
