@@ -1777,6 +1777,20 @@
         },
         {
           "name": "Zac Thornton",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Patrick Sandoval",
           "slot": "SP",
           "position": "SP",
           "eligible": "SP",
@@ -7338,5 +7352,5 @@
       ]
     }
   ],
-  "updated": "2026-07-24T07:43:30Z"
+  "updated": "2026-07-24T10:06:38Z"
 }
