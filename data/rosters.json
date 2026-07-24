@@ -1906,7 +1906,7 @@
         },
         {
           "name": "Julio Rodriguez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2126,7 +2126,7 @@
         },
         {
           "name": "Jared Jones",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2170,7 +2170,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2206,7 +2206,7 @@
         },
         {
           "name": "Dustin May",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2234,7 +2234,7 @@
         },
         {
           "name": "Gleyber Torres",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2256,7 +2256,7 @@
         },
         {
           "name": "Trey Yesavage",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2553,7 +2553,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2870,7 +2870,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2970,7 +2970,7 @@
         },
         {
           "name": "Heriberto Hernandez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2983,7 +2983,7 @@
           "keeperEligible": false
         },
         {
-          "name": "Ryne Stanek",
+          "name": "Hogan Harris",
           "slot": "RP",
           "position": "RP",
           "eligible": "RP",
@@ -7053,7 +7053,7 @@
         },
         {
           "name": "Jeff Hoffman",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7265,7 +7265,7 @@
         },
         {
           "name": "Sean Burke",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7337,7 +7337,7 @@
         },
         {
           "name": "Zack Littell",
-          "slot": "SP",
+          "slot": "RP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7352,5 +7352,5 @@
       ]
     }
   ],
-  "updated": "2026-07-24T10:06:38Z"
+  "updated": "2026-07-24T11:58:30Z"
 }
