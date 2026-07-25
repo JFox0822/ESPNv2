@@ -6863,7 +6863,7 @@
         },
         {
           "name": "Emerson Hancock",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6965,7 +6965,7 @@
         },
         {
           "name": "Carson Benge",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7031,7 +7031,7 @@
         },
         {
           "name": "Jeff Hoffman",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7053,7 +7053,7 @@
         },
         {
           "name": "Dillon Dingler",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7314,8 +7314,8 @@
           "keeperEligible": false
         },
         {
-          "name": "Zack Littell",
-          "slot": "RP",
+          "name": "JP Sears",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7330,5 +7330,5 @@
       ]
     }
   ],
-  "updated": "2026-07-25T14:43:31Z"
+  "updated": "2026-07-25T15:55:54Z"
 }
