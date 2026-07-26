@@ -1520,28 +1520,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Gregory Soto",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 42.2,
-            "H": 27,
-            "WHIP": 1.055,
-            "ERA": 3.797,
-            "K": 47,
-            "SVHD": 7,
-            "QS": 0
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Henry Bolte",
           "slot": "OF",
           "position": "RF",
@@ -1585,7 +1563,7 @@
         },
         {
           "name": "Shane Drohan",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1776,12 +1754,26 @@
           "keeperEligible": false
         },
         {
-          "name": "Patrick Sandoval",
-          "slot": "BE",
+          "name": "Carson Whisenhunt",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Connor Prielipp",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -7292,7 +7284,7 @@
           "keeperEligible": false
         },
         {
-          "name": "JP Sears",
+          "name": "Erick Fedde",
           "slot": "BE",
           "position": "SP",
           "eligible": "SP",
@@ -7308,5 +7300,5 @@
       ]
     }
   ],
-  "updated": "2026-07-26T07:30:21Z"
+  "updated": "2026-07-26T09:49:39Z"
 }
