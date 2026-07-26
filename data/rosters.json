@@ -292,11 +292,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 36.1,
+            "IP": 37.1,
             "H": 29,
-            "WHIP": 1.211,
-            "ERA": 3.963,
-            "K": 55,
+            "WHIP": 1.179,
+            "ERA": 3.857,
+            "K": 58,
             "SVHD": 0,
             "QS": 0
           },
@@ -787,11 +787,11 @@
           "stats": {
             "AVG": 0.226,
             "HR": 18,
-            "OPS": 0.709,
-            "R": 50,
+            "OPS": 0.708,
+            "R": 51,
             "RBI": 45,
             "SB": 2,
-            "Kbat": 121
+            "Kbat": 122
           },
           "savant": {},
           "tier": "",
@@ -1892,8 +1892,8 @@
           "stats": {
             "AVG": 0.254,
             "HR": 15,
-            "OPS": 0.732,
-            "R": 48,
+            "OPS": 0.733,
+            "R": 49,
             "RBI": 44,
             "SB": 12,
             "Kbat": 85
@@ -3291,9 +3291,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.256,
+            "AVG": 0.255,
             "HR": 13,
-            "OPS": 0.717,
+            "OPS": 0.716,
             "R": 50,
             "RBI": 48,
             "SB": 3,
@@ -3578,9 +3578,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.234,
             "HR": 19,
-            "OPS": 0.766,
+            "OPS": 0.764,
             "R": 70,
             "RBI": 46,
             "SB": 13,
@@ -3732,9 +3732,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.282,
+            "AVG": 0.284,
             "HR": 12,
-            "OPS": 0.825,
+            "OPS": 0.828,
             "R": 65,
             "RBI": 46,
             "SB": 19,
@@ -4186,7 +4186,7 @@
         },
         {
           "name": "Will Warren",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4623,11 +4623,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 122.0,
+            "IP": 123.0,
             "H": 97,
-            "WHIP": 1.262,
-            "ERA": 3.393,
-            "K": 126,
+            "WHIP": 1.252,
+            "ERA": 3.366,
+            "K": 127,
             "SVHD": 0,
             "QS": 8
           },
@@ -4733,9 +4733,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.327,
+            "AVG": 0.325,
             "HR": 4,
-            "OPS": 0.813,
+            "OPS": 0.809,
             "R": 50,
             "RBI": 38,
             "SB": 8,
@@ -5580,9 +5580,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.259,
+            "AVG": 0.258,
             "HR": 8,
-            "OPS": 0.678,
+            "OPS": 0.676,
             "R": 40,
             "RBI": 37,
             "SB": 21,
@@ -6067,13 +6067,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.249,
+            "AVG": 0.247,
             "HR": 22,
-            "OPS": 0.807,
+            "OPS": 0.803,
             "R": 55,
             "RBI": 60,
             "SB": 0,
-            "Kbat": 122
+            "Kbat": 123
           },
           "savant": {},
           "tier": "",
@@ -6221,9 +6221,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.244,
+            "AVG": 0.247,
             "HR": 18,
-            "OPS": 0.863,
+            "OPS": 0.866,
             "R": 60,
             "RBI": 40,
             "SB": 8,
@@ -6243,13 +6243,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.244,
+            "AVG": 0.243,
             "HR": 16,
-            "OPS": 0.697,
+            "OPS": 0.694,
             "R": 46,
             "RBI": 59,
             "SB": 3,
-            "Kbat": 96
+            "Kbat": 97
           },
           "savant": {},
           "tier": "",
@@ -6435,7 +6435,7 @@
         },
         {
           "name": "Trent Grisham",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7308,5 +7308,5 @@
       ]
     }
   ],
-  "updated": "2026-07-26T21:23:14Z"
+  "updated": "2026-07-26T22:26:25Z"
 }
