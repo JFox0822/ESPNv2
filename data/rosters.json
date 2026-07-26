@@ -735,7 +735,7 @@
         },
         {
           "name": "Christian Walker",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -823,7 +823,7 @@
         },
         {
           "name": "Spencer Torkelson",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1206,7 +1206,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1341,9 +1341,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.293,
+            "AVG": 0.292,
             "HR": 0,
-            "OPS": 0.683,
+            "OPS": 0.681,
             "R": 44,
             "RBI": 20,
             "SB": 26,
@@ -1773,7 +1773,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -2469,7 +2469,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 114.1,
             "H": 102,
@@ -2854,9 +2854,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.248,
+            "AVG": 0.249,
             "HR": 1,
-            "OPS": 0.658,
+            "OPS": 0.663,
             "R": 42,
             "RBI": 18,
             "SB": 7,
@@ -2993,7 +2993,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.29,
             "HR": 12,
@@ -3083,13 +3083,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.284,
+            "AVG": 0.283,
             "HR": 11,
-            "OPS": 0.801,
+            "OPS": 0.798,
             "R": 35,
             "RBI": 50,
             "SB": 5,
-            "Kbat": 50
+            "Kbat": 51
           },
           "savant": {},
           "tier": "",
@@ -3792,7 +3792,7 @@
         },
         {
           "name": "Andrew Abbott",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4595,11 +4595,11 @@
         },
         {
           "name": "Colson Montgomery",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.218,
             "HR": 24,
@@ -4661,7 +4661,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "BE",
+          "slot": "SS",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4887,7 +4887,7 @@
           "stats": {
             "AVG": 0.285,
             "HR": 29,
-            "OPS": 0.923,
+            "OPS": 0.921,
             "R": 65,
             "RBI": 63,
             "SB": 2,
@@ -5127,11 +5127,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 104.1,
-            "H": 83,
-            "WHIP": 0.968,
-            "ERA": 3.278,
-            "K": 103,
+            "IP": 107.1,
+            "H": 84,
+            "WHIP": 0.95,
+            "ERA": 3.186,
+            "K": 108,
             "SVHD": 0,
             "QS": 10
           },
@@ -5602,13 +5602,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.306,
+            "AVG": 0.305,
             "HR": 14,
-            "OPS": 0.846,
+            "OPS": 0.844,
             "R": 57,
             "RBI": 61,
             "SB": 2,
-            "Kbat": 63
+            "Kbat": 64
           },
           "savant": {},
           "tier": "",
@@ -5860,7 +5860,7 @@
         },
         {
           "name": "Ryan Jeffers",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5954,7 +5954,7 @@
         },
         {
           "name": "Ivan Herrera",
-          "slot": "BE",
+          "slot": "C",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6259,7 +6259,7 @@
         },
         {
           "name": "Christian Yelich",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6601,7 +6601,7 @@
         },
         {
           "name": "Brooks Lee",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6707,13 +6707,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.239,
+            "AVG": 0.238,
             "HR": 10,
-            "OPS": 0.75,
+            "OPS": 0.745,
             "R": 43,
             "RBI": 35,
             "SB": 24,
-            "Kbat": 44
+            "Kbat": 45
           },
           "savant": {},
           "tier": "",
@@ -7095,11 +7095,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 117.2,
+            "IP": 119.2,
             "H": 88,
-            "WHIP": 1.054,
-            "ERA": 2.677,
-            "K": 116,
+            "WHIP": 1.036,
+            "ERA": 2.632,
+            "K": 117,
             "SVHD": 0,
             "QS": 7
           },
@@ -7227,7 +7227,7 @@
         },
         {
           "name": "George Springer",
-          "slot": "OF",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7284,13 +7284,21 @@
           "keeperEligible": false
         },
         {
-          "name": "Erick Fedde",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
+          "name": "Esteury Ruiz",
+          "slot": "OF",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
-          "stats": {},
+          "stats": {
+            "AVG": 0.255,
+            "HR": 5,
+            "OPS": 0.853,
+            "R": 27,
+            "RBI": 10,
+            "SB": 24,
+            "Kbat": 38
+          },
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -7300,5 +7308,5 @@
       ]
     }
   ],
-  "updated": "2026-07-26T15:35:32Z"
+  "updated": "2026-07-26T16:46:17Z"
 }
