@@ -911,7 +911,7 @@
         },
         {
           "name": "Shane Baz",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1170,7 +1170,7 @@
         },
         {
           "name": "Kumar Rocker",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1319,9 +1319,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.268,
+            "AVG": 0.27,
             "HR": 10,
-            "OPS": 0.764,
+            "OPS": 0.77,
             "R": 44,
             "RBI": 39,
             "SB": 4,
@@ -1375,7 +1375,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -1890,9 +1890,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.254,
+            "AVG": 0.253,
             "HR": 15,
-            "OPS": 0.733,
+            "OPS": 0.732,
             "R": 49,
             "RBI": 44,
             "SB": 12,
@@ -2282,7 +2282,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "TEN_DAY_DL",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -2703,11 +2703,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 116.0,
-            "H": 124,
-            "WHIP": 1.284,
-            "ERA": 3.569,
-            "K": 104,
+            "IP": 117.0,
+            "H": 126,
+            "WHIP": 1.291,
+            "ERA": 3.615,
+            "K": 105,
             "SVHD": 0,
             "QS": 12
           },
@@ -3047,13 +3047,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.29,
+            "AVG": 0.288,
             "HR": 12,
-            "OPS": 0.861,
+            "OPS": 0.857,
             "R": 34,
             "RBI": 29,
             "SB": 7,
-            "Kbat": 48
+            "Kbat": 49
           },
           "savant": {},
           "tier": "",
@@ -3345,7 +3345,7 @@
           "stats": {
             "AVG": 0.255,
             "HR": 13,
-            "OPS": 0.716,
+            "OPS": 0.714,
             "R": 50,
             "RBI": 48,
             "SB": 3,
@@ -5684,7 +5684,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5860,7 +5860,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7344,5 +7344,5 @@
       ]
     }
   ],
-  "updated": "2026-07-27T15:19:54Z"
+  "updated": "2026-07-27T18:52:19Z"
 }
