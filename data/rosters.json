@@ -1212,10 +1212,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.201,
+            "AVG": 0.205,
             "HR": 7,
-            "OPS": 0.633,
-            "R": 21,
+            "OPS": 0.637,
+            "R": 22,
             "RBI": 21,
             "SB": 3,
             "Kbat": 63
@@ -1319,13 +1319,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.272,
             "HR": 10,
-            "OPS": 0.77,
+            "OPS": 0.773,
             "R": 44,
             "RBI": 39,
             "SB": 4,
-            "Kbat": 90
+            "Kbat": 91
           },
           "savant": {},
           "tier": "",
@@ -1892,9 +1892,9 @@
           "stats": {
             "AVG": 0.253,
             "HR": 15,
-            "OPS": 0.732,
+            "OPS": 0.729,
             "R": 49,
-            "RBI": 44,
+            "RBI": 45,
             "SB": 12,
             "Kbat": 85
           },
@@ -2088,13 +2088,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.238,
-            "HR": 18,
-            "OPS": 0.725,
-            "R": 44,
-            "RBI": 64,
+            "AVG": 0.239,
+            "HR": 19,
+            "OPS": 0.732,
+            "R": 45,
+            "RBI": 66,
             "SB": 2,
-            "Kbat": 108
+            "Kbat": 109
           },
           "savant": {},
           "tier": "",
@@ -2703,11 +2703,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 117.0,
-            "H": 126,
-            "WHIP": 1.291,
-            "ERA": 3.615,
-            "K": 105,
+            "IP": 120.0,
+            "H": 131,
+            "WHIP": 1.3,
+            "ERA": 3.975,
+            "K": 107,
             "SVHD": 0,
             "QS": 12
           },
@@ -3047,9 +3047,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.288,
+            "AVG": 0.286,
             "HR": 12,
-            "OPS": 0.857,
+            "OPS": 0.85,
             "R": 34,
             "RBI": 29,
             "SB": 7,
@@ -3067,7 +3067,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "OUT",
           "stats": {
             "AVG": 0.208,
             "HR": 13,
@@ -3343,9 +3343,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.255,
+            "AVG": 0.256,
             "HR": 13,
-            "OPS": 0.714,
+            "OPS": 0.715,
             "R": 50,
             "RBI": 48,
             "SB": 3,
@@ -3784,13 +3784,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.284,
-            "HR": 12,
-            "OPS": 0.828,
-            "R": 65,
-            "RBI": 46,
+            "AVG": 0.285,
+            "HR": 13,
+            "OPS": 0.835,
+            "R": 66,
+            "RBI": 47,
             "SB": 19,
-            "Kbat": 88
+            "Kbat": 90
           },
           "savant": {},
           "tier": "",
@@ -4651,7 +4651,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.218,
             "HR": 24,
@@ -5646,13 +5646,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.258,
+            "AVG": 0.257,
             "HR": 8,
-            "OPS": 0.676,
+            "OPS": 0.673,
             "R": 40,
             "RBI": 37,
             "SB": 21,
-            "Kbat": 52
+            "Kbat": 53
           },
           "savant": {},
           "tier": "",
@@ -7344,5 +7344,5 @@
       ]
     }
   ],
-  "updated": "2026-07-27T18:52:19Z"
+  "updated": "2026-07-27T20:13:00Z"
 }
