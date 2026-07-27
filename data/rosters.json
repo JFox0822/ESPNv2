@@ -116,9 +116,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.233,
+            "AVG": 0.232,
             "HR": 8,
-            "OPS": 0.715,
+            "OPS": 0.713,
             "R": 50,
             "RBI": 37,
             "SB": 17,
@@ -498,7 +498,7 @@
           "stats": {
             "AVG": 0.315,
             "HR": 7,
-            "OPS": 0.854,
+            "OPS": 0.855,
             "R": 43,
             "RBI": 41,
             "SB": 4,
@@ -961,9 +961,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.328,
+            "AVG": 0.329,
             "HR": 9,
-            "OPS": 0.853,
+            "OPS": 0.856,
             "R": 62,
             "RBI": 47,
             "SB": 20,
@@ -1846,13 +1846,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.244,
+            "AVG": 0.243,
             "HR": 14,
-            "OPS": 0.686,
+            "OPS": 0.684,
             "R": 72,
             "RBI": 41,
             "SB": 17,
-            "Kbat": 103
+            "Kbat": 104
           },
           "savant": {},
           "tier": "",
@@ -2066,11 +2066,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 108.1,
+            "IP": 109.1,
             "H": 105,
-            "WHIP": 1.311,
-            "ERA": 4.902,
-            "K": 83,
+            "WHIP": 1.308,
+            "ERA": 4.857,
+            "K": 84,
             "SVHD": 0,
             "QS": 9
           },
@@ -2256,7 +2256,7 @@
         },
         {
           "name": "Ian Happ",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2278,7 +2278,7 @@
         },
         {
           "name": "Spencer Steer",
-          "slot": "OF",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2298,9 +2298,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.264,
+            "AVG": 0.263,
             "HR": 6,
-            "OPS": 0.7,
+            "OPS": 0.698,
             "R": 54,
             "RBI": 44,
             "SB": 7,
@@ -2449,9 +2449,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.25,
+            "AVG": 0.249,
             "HR": 15,
-            "OPS": 0.831,
+            "OPS": 0.829,
             "R": 62,
             "RBI": 49,
             "SB": 13,
@@ -3067,7 +3067,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.208,
             "HR": 13,
@@ -3807,8 +3807,8 @@
           "injStatus": "ACTIVE",
           "stats": {
             "IP": 100.0,
-            "H": 66,
-            "WHIP": 0.88,
+            "H": 67,
+            "WHIP": 0.89,
             "ERA": 2.16,
             "K": 117,
             "SVHD": 0,
@@ -4323,11 +4323,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.251,
-            "HR": 21,
-            "OPS": 0.84,
-            "R": 62,
-            "RBI": 61,
+            "AVG": 0.253,
+            "HR": 22,
+            "OPS": 0.851,
+            "R": 63,
+            "RBI": 63,
             "SB": 6,
             "Kbat": 96
           },
@@ -5003,9 +5003,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.221,
+            "AVG": 0.222,
             "HR": 18,
-            "OPS": 0.693,
+            "OPS": 0.696,
             "R": 61,
             "RBI": 45,
             "SB": 8,
@@ -5265,9 +5265,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.287,
+            "AVG": 0.286,
             "HR": 16,
-            "OPS": 0.797,
+            "OPS": 0.795,
             "R": 55,
             "RBI": 47,
             "SB": 9,
@@ -5844,9 +5844,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.297,
+            "AVG": 0.296,
             "HR": 8,
-            "OPS": 0.748,
+            "OPS": 0.746,
             "R": 46,
             "RBI": 33,
             "SB": 4,
@@ -6651,10 +6651,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.249,
+            "AVG": 0.251,
             "HR": 22,
-            "OPS": 0.812,
-            "R": 65,
+            "OPS": 0.818,
+            "R": 66,
             "RBI": 67,
             "SB": 5,
             "Kbat": 114
@@ -6751,9 +6751,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.281,
+            "AVG": 0.282,
             "HR": 9,
-            "OPS": 0.805,
+            "OPS": 0.808,
             "R": 62,
             "RBI": 35,
             "SB": 11,
@@ -6987,11 +6987,11 @@
           "stats": {
             "AVG": 0.254,
             "HR": 19,
-            "OPS": 0.764,
+            "OPS": 0.763,
             "R": 58,
             "RBI": 61,
             "SB": 4,
-            "Kbat": 66
+            "Kbat": 67
           },
           "savant": {},
           "tier": "",
@@ -7185,8 +7185,8 @@
           "stats": {
             "AVG": 0.252,
             "HR": 33,
-            "OPS": 0.914,
-            "R": 62,
+            "OPS": 0.915,
+            "R": 63,
             "RBI": 62,
             "SB": 2,
             "Kbat": 155
@@ -7228,8 +7228,8 @@
           "injStatus": "ACTIVE",
           "stats": {
             "IP": 113.1,
-            "H": 99,
-            "WHIP": 1.324,
+            "H": 100,
+            "WHIP": 1.332,
             "ERA": 3.494,
             "K": 110,
             "SVHD": 0,
@@ -7344,5 +7344,5 @@
       ]
     }
   ],
-  "updated": "2026-07-27T21:34:35Z"
+  "updated": "2026-07-27T22:51:05Z"
 }
