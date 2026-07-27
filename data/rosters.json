@@ -1190,11 +1190,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.246,
-            "HR": 7,
-            "OPS": 0.692,
-            "R": 40,
-            "RBI": 42,
+            "AVG": 0.251,
+            "HR": 8,
+            "OPS": 0.708,
+            "R": 41,
+            "RBI": 44,
             "SB": 17,
             "Kbat": 71
           },
@@ -1846,13 +1846,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.242,
+            "AVG": 0.243,
             "HR": 14,
-            "OPS": 0.679,
-            "R": 70,
+            "OPS": 0.684,
+            "R": 71,
             "RBI": 40,
             "SB": 17,
-            "Kbat": 102
+            "Kbat": 103
           },
           "savant": {},
           "tier": "",
@@ -3886,11 +3886,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.233,
+            "AVG": 0.229,
             "HR": 6,
-            "OPS": 0.674,
+            "OPS": 0.662,
             "R": 17,
-            "RBI": 13,
+            "RBI": 14,
             "SB": 6,
             "Kbat": 35
           },
@@ -4192,11 +4192,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 99.0,
-            "H": 102,
-            "WHIP": 1.374,
-            "ERA": 4.0,
-            "K": 97,
+            "IP": 102.0,
+            "H": 108,
+            "WHIP": 1.412,
+            "ERA": 4.412,
+            "K": 102,
             "SVHD": 1,
             "QS": 5
           },
@@ -4271,13 +4271,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.251,
+            "AVG": 0.253,
             "HR": 21,
-            "OPS": 0.84,
-            "R": 61,
+            "OPS": 0.843,
+            "R": 62,
             "RBI": 61,
             "SB": 5,
-            "Kbat": 94
+            "Kbat": 95
           },
           "savant": {},
           "tier": "",
@@ -4337,13 +4337,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.269,
             "HR": 30,
-            "OPS": 0.934,
-            "R": 66,
+            "OPS": 0.929,
+            "R": 67,
             "RBI": 71,
             "SB": 2,
-            "Kbat": 103
+            "Kbat": 104
           },
           "savant": {},
           "tier": "",
@@ -5213,10 +5213,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.287,
+            "AVG": 0.286,
             "HR": 16,
-            "OPS": 0.795,
-            "R": 54,
+            "OPS": 0.794,
+            "R": 55,
             "RBI": 47,
             "SB": 8,
             "Kbat": 105
@@ -5938,11 +5938,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 133.0,
-            "H": 134,
-            "WHIP": 1.195,
-            "ERA": 2.639,
-            "K": 151,
+            "IP": 137.2,
+            "H": 138,
+            "WHIP": 1.206,
+            "ERA": 2.746,
+            "K": 156,
             "SVHD": 0,
             "QS": 14
           },
@@ -6441,13 +6441,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.219,
+            "AVG": 0.216,
             "HR": 11,
-            "OPS": 0.717,
+            "OPS": 0.71,
             "R": 50,
             "RBI": 41,
             "SB": 7,
-            "Kbat": 54
+            "Kbat": 55
           },
           "savant": {},
           "tier": "",
@@ -7139,11 +7139,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.251,
+            "AVG": 0.25,
             "HR": 33,
-            "OPS": 0.911,
-            "R": 60,
-            "RBI": 61,
+            "OPS": 0.91,
+            "R": 61,
+            "RBI": 62,
             "SB": 2,
             "Kbat": 155
           },
@@ -7308,5 +7308,5 @@
       ]
     }
   ],
-  "updated": "2026-07-26T23:26:33Z"
+  "updated": "2026-07-27T01:05:52Z"
 }
