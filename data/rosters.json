@@ -270,10 +270,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 107.2,
-            "H": 80,
-            "WHIP": 1.105,
-            "ERA": 2.424,
+            "IP": 108.1,
+            "H": 81,
+            "WHIP": 1.117,
+            "ERA": 2.409,
             "K": 124,
             "SVHD": 0,
             "QS": 9
@@ -1972,7 +1972,7 @@
         },
         {
           "name": "Tatsuya Imai",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2038,7 +2038,7 @@
         },
         {
           "name": "Gerrit Cole",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2060,7 +2060,7 @@
         },
         {
           "name": "Mitch Keller",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2148,7 +2148,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2669,7 +2669,7 @@
         },
         {
           "name": "Miguel Vargas",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2828,7 +2828,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2856,9 +2856,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.248,
+            "AVG": 0.247,
             "HR": 1,
-            "OPS": 0.66,
+            "OPS": 0.658,
             "R": 42,
             "RBI": 18,
             "SB": 7,
@@ -3000,7 +3000,7 @@
         },
         {
           "name": "Ty France",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3014,7 +3014,7 @@
         },
         {
           "name": "Luis Rengifo",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3135,9 +3135,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.282,
+            "AVG": 0.281,
             "HR": 11,
-            "OPS": 0.8,
+            "OPS": 0.797,
             "R": 35,
             "RBI": 50,
             "SB": 5,
@@ -5588,7 +5588,7 @@
         },
         {
           "name": "Nico Hoerner",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5632,7 +5632,7 @@
         },
         {
           "name": "Michael Harris II",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5852,7 +5852,7 @@
         },
         {
           "name": "Ernie Clement",
-          "slot": "2B",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6106,7 +6106,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "BE",
+          "slot": "OF",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6795,10 +6795,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.236,
+            "AVG": 0.239,
             "HR": 10,
-            "OPS": 0.74,
-            "R": 43,
+            "OPS": 0.744,
+            "R": 44,
             "RBI": 35,
             "SB": 24,
             "Kbat": 45
@@ -7366,5 +7366,5 @@
       ]
     }
   ],
-  "updated": "2026-07-28T16:28:24Z"
+  "updated": "2026-07-28T17:53:19Z"
 }
