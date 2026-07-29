@@ -1190,9 +1190,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.253,
+            "AVG": 0.252,
             "HR": 8,
-            "OPS": 0.717,
+            "OPS": 0.715,
             "R": 43,
             "RBI": 47,
             "SB": 17,
@@ -1838,9 +1838,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.241,
+            "AVG": 0.243,
             "HR": 14,
-            "OPS": 0.676,
+            "OPS": 0.679,
             "R": 72,
             "RBI": 41,
             "SB": 17,
@@ -3586,7 +3586,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3608,7 +3608,7 @@
         },
         {
           "name": "Zach Neto",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3696,7 +3696,7 @@
         },
         {
           "name": "Ozzie Albies",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3718,7 +3718,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "1B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3916,7 +3916,7 @@
         },
         {
           "name": "Jasson Dominguez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4142,7 +4142,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "2B",
+          "slot": "1B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4307,9 +4307,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.252,
+            "AVG": 0.251,
             "HR": 22,
-            "OPS": 0.846,
+            "OPS": 0.844,
             "R": 64,
             "RBI": 63,
             "SB": 6,
@@ -5558,7 +5558,7 @@
         },
         {
           "name": "Nico Hoerner",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5624,7 +5624,7 @@
         },
         {
           "name": "Josh Naylor",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5646,7 +5646,7 @@
         },
         {
           "name": "Yandy Diaz",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -5668,7 +5668,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "3B",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5778,7 +5778,7 @@
         },
         {
           "name": "Jacob Wilson",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5822,7 +5822,7 @@
         },
         {
           "name": "Ernie Clement",
-          "slot": "2B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5844,7 +5844,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5910,7 +5910,7 @@
         },
         {
           "name": "Ryan Jeffers",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6004,7 +6004,7 @@
         },
         {
           "name": "Ivan Herrera",
-          "slot": "C",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7336,5 +7336,5 @@
       ]
     }
   ],
-  "updated": "2026-07-29T14:40:24Z"
+  "updated": "2026-07-29T16:15:04Z"
 }
