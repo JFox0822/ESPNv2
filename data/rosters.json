@@ -1357,7 +1357,7 @@
         },
         {
           "name": "Max Clark",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1619,7 +1619,7 @@
         },
         {
           "name": "Joc Pederson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -1725,7 +1725,7 @@
         },
         {
           "name": "Willi Castro",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1753,7 +1753,7 @@
         },
         {
           "name": "Jackson Holliday",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2385,20 +2385,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Tyler Stephenson",
-          "slot": "C",
-          "position": "C",
-          "eligible": "C",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Esteury Ruiz",
           "slot": "OF",
           "position": "LF",
@@ -2414,6 +2400,20 @@
             "SB": 25,
             "Kbat": 43
           },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jonah Heim",
+          "slot": "C",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -3364,20 +3364,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Michael Petersen",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Josue De Paula",
           "slot": "BE",
           "position": "LF",
@@ -3562,6 +3548,28 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "MacKenzie Gore",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 122.2,
+            "H": 110,
+            "WHIP": 1.255,
+            "ERA": 4.769,
+            "K": 136,
+            "SVHD": 0,
+            "QS": 7
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 15,
+          "keeperEligible": true
         }
       ]
     },
@@ -4951,7 +4959,7 @@
         },
         {
           "name": "Bryan Woo",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6103,7 +6111,7 @@
       "players": [
         {
           "name": "Rafael Devers",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6301,7 +6309,7 @@
         },
         {
           "name": "Christian Yelich",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6621,7 +6629,7 @@
         },
         {
           "name": "Pete Alonso",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -6643,7 +6651,7 @@
         },
         {
           "name": "Brooks Lee",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6671,7 +6679,7 @@
         },
         {
           "name": "Eugenio Suarez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7342,5 +7350,5 @@
       ]
     }
   ],
-  "updated": "2026-07-30T13:02:34Z"
+  "updated": "2026-07-30T15:28:39Z"
 }
