@@ -154,7 +154,7 @@
         },
         {
           "name": "Alec Burleson",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -176,7 +176,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -374,7 +374,7 @@
         },
         {
           "name": "Wilyer Abreu",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -642,7 +642,7 @@
         },
         {
           "name": "Jacob Young",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3173,7 +3173,7 @@
         },
         {
           "name": "Braden Montgomery",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3467,7 +3467,7 @@
         },
         {
           "name": "Luis Lara",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5422,20 +5422,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Andres Chaparro",
-          "slot": "BE",
-          "position": "1B",
-          "eligible": "1B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Justin Slaten",
           "slot": "BE",
           "position": "RP",
@@ -5461,6 +5447,20 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Dylan Crews",
+          "slot": "BE",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 11,
           "keeperEligible": false
         }
       ]
@@ -7358,5 +7358,5 @@
       ]
     }
   ],
-  "updated": "2026-07-31T13:10:51Z"
+  "updated": "2026-07-31T15:34:01Z"
 }
