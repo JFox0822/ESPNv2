@@ -63,7 +63,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.289,
             "HR": 23,
@@ -939,13 +939,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.253,
+            "AVG": 0.254,
             "HR": 23,
-            "OPS": 0.81,
+            "OPS": 0.811,
             "R": 66,
             "RBI": 70,
             "SB": 1,
-            "Kbat": 122
+            "Kbat": 123
           },
           "savant": {},
           "tier": "",
@@ -1816,11 +1816,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 120.2,
-            "H": 100,
-            "WHIP": 1.061,
-            "ERA": 3.655,
-            "K": 149,
+            "IP": 122.0,
+            "H": 103,
+            "WHIP": 1.09,
+            "ERA": 3.762,
+            "K": 151,
             "SVHD": 0,
             "QS": 10
           },
@@ -2595,11 +2595,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 21.2,
-            "H": 22,
-            "WHIP": 1.338,
-            "ERA": 7.062,
-            "K": 29,
+            "IP": 23.2,
+            "H": 26,
+            "WHIP": 1.437,
+            "ERA": 7.606,
+            "K": 31,
             "SVHD": 0,
             "QS": 2
           },
@@ -3035,7 +3035,7 @@
           "stats": {
             "AVG": 0.279,
             "HR": 18,
-            "OPS": 0.859,
+            "OPS": 0.861,
             "R": 61,
             "RBI": 48,
             "SB": 20,
@@ -3770,7 +3770,7 @@
         },
         {
           "name": "Randy Arozarena",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3968,7 +3968,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4623,9 +4623,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.272,
             "HR": 17,
-            "OPS": 0.79,
+            "OPS": 0.793,
             "R": 54,
             "RBI": 69,
             "SB": 1,
@@ -4843,10 +4843,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.267,
+            "AVG": 0.266,
             "HR": 15,
-            "OPS": 0.835,
-            "R": 74,
+            "OPS": 0.833,
+            "R": 75,
             "RBI": 61,
             "SB": 7,
             "Kbat": 115
@@ -5083,9 +5083,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.254,
+            "AVG": 0.253,
             "HR": 22,
-            "OPS": 0.804,
+            "OPS": 0.802,
             "R": 56,
             "RBI": 79,
             "SB": 12,
@@ -5309,7 +5309,7 @@
         },
         {
           "name": "Cole Carrigg",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5451,7 +5451,7 @@
         },
         {
           "name": "Dylan Crews",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6693,13 +6693,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.202,
+            "AVG": 0.201,
             "HR": 14,
-            "OPS": 0.666,
+            "OPS": 0.663,
             "R": 27,
             "RBI": 39,
             "SB": 0,
-            "Kbat": 113
+            "Kbat": 114
           },
           "savant": {},
           "tier": "",
@@ -7358,5 +7358,5 @@
       ]
     }
   ],
-  "updated": "2026-07-31T21:34:26Z"
+  "updated": "2026-07-31T22:50:39Z"
 }
