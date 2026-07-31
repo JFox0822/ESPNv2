@@ -154,7 +154,7 @@
         },
         {
           "name": "Alec Burleson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -462,7 +462,7 @@
         },
         {
           "name": "Nick Gonzales",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -578,7 +578,7 @@
         },
         {
           "name": "Nasim Nunez",
-          "slot": "2B",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2288,7 +2288,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.265,
             "HR": 6,
@@ -2358,11 +2358,11 @@
           "stats": {
             "AVG": 0.214,
             "HR": 16,
-            "OPS": 0.695,
+            "OPS": 0.693,
             "R": 68,
             "RBI": 61,
             "SB": 15,
-            "Kbat": 95
+            "Kbat": 96
           },
           "savant": {},
           "tier": "",
@@ -2531,7 +2531,7 @@
           "stats": {
             "AVG": 0.283,
             "HR": 24,
-            "OPS": 0.917,
+            "OPS": 0.915,
             "R": 71,
             "RBI": 63,
             "SB": 26,
@@ -2551,9 +2551,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.241,
+            "AVG": 0.24,
             "HR": 13,
-            "OPS": 0.746,
+            "OPS": 0.744,
             "R": 48,
             "RBI": 58,
             "SB": 2,
@@ -2573,10 +2573,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 46.0,
-            "H": 35,
-            "WHIP": 1.065,
-            "ERA": 2.739,
+            "IP": 47.0,
+            "H": 36,
+            "WHIP": 1.064,
+            "ERA": 2.681,
             "K": 53,
             "SVHD": 0,
             "QS": 0
@@ -3521,7 +3521,7 @@
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
@@ -3932,7 +3932,7 @@
           "stats": {
             "AVG": 0.229,
             "HR": 6,
-            "OPS": 0.651,
+            "OPS": 0.654,
             "R": 21,
             "RBI": 14,
             "SB": 7,
@@ -4242,7 +4242,7 @@
             "ERA": 4.141,
             "K": 109,
             "SVHD": 1,
-            "QS": 5
+            "QS": 6
           },
           "savant": {},
           "tier": "",
@@ -4381,13 +4381,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.269,
             "HR": 31,
-            "OPS": 0.929,
+            "OPS": 0.927,
             "R": 70,
             "RBI": 73,
             "SB": 2,
-            "Kbat": 110
+            "Kbat": 111
           },
           "savant": {},
           "tier": "",
@@ -5684,7 +5684,7 @@
           "stats": {
             "AVG": 0.248,
             "HR": 11,
-            "OPS": 0.721,
+            "OPS": 0.72,
             "R": 57,
             "RBI": 47,
             "SB": 2,
@@ -6351,7 +6351,7 @@
             "ERA": 3.666,
             "K": 119,
             "SVHD": 0,
-            "QS": 9
+            "QS": 10
           },
           "savant": {},
           "tier": "",
@@ -6501,7 +6501,7 @@
           "stats": {
             "AVG": 0.214,
             "HR": 11,
-            "OPS": 0.696,
+            "OPS": 0.693,
             "R": 52,
             "RBI": 42,
             "SB": 7,
@@ -7358,5 +7358,5 @@
       ]
     }
   ],
-  "updated": "2026-07-31T20:13:45Z"
+  "updated": "2026-07-31T21:34:26Z"
 }
