@@ -911,7 +911,7 @@
         },
         {
           "name": "Shane Baz",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1077,7 +1077,7 @@
         },
         {
           "name": "Kyle Leahy",
-          "slot": "P",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2443,7 +2443,7 @@
       "players": [
         {
           "name": "Yordan Alvarez",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -2828,7 +2828,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2900,7 +2900,7 @@
         },
         {
           "name": "Heriberto Hernandez",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -7366,5 +7366,5 @@
       ]
     }
   ],
-  "updated": "2026-08-01T17:51:49Z"
+  "updated": "2026-08-01T18:53:09Z"
 }
