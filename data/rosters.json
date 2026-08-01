@@ -4361,7 +4361,7 @@
         },
         {
           "name": "Jazz Chisholm Jr.",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4603,7 +4603,7 @@
         },
         {
           "name": "Ranger Suarez",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4888,17 +4888,17 @@
           "keeperEligible": true
         },
         {
-          "name": "Paul Goldschmidt",
-          "slot": "UTIL",
-          "position": "1B",
-          "eligible": "1B",
-          "isPitcher": false,
+          "name": "Luinder Avila",
+          "slot": "P",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 7,
+          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -7366,5 +7366,5 @@
       ]
     }
   ],
-  "updated": "2026-08-01T14:22:00Z"
+  "updated": "2026-08-01T15:33:32Z"
 }
