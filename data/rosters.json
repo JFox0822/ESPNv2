@@ -1543,7 +1543,7 @@
         },
         {
           "name": "Brandon Young",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1691,7 +1691,7 @@
         },
         {
           "name": "Robert Gasser",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2553,7 +2553,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2850,7 +2850,7 @@
         },
         {
           "name": "Steven Kwan",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -7380,5 +7380,5 @@
       ]
     }
   ],
-  "updated": "2026-08-01T11:09:59Z"
+  "updated": "2026-08-01T12:32:05Z"
 }
