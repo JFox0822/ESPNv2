@@ -1892,7 +1892,7 @@
         },
         {
           "name": "Julio Rodriguez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -1958,7 +1958,7 @@
         },
         {
           "name": "JJ Wetherholt",
-          "slot": "BE",
+          "slot": "2B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2156,7 +2156,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2220,7 +2220,7 @@
         },
         {
           "name": "Gleyber Torres",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2264,7 +2264,7 @@
         },
         {
           "name": "Ian Happ",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2344,7 +2344,7 @@
         },
         {
           "name": "Kyle Stowers",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2366,7 +2366,7 @@
         },
         {
           "name": "Dansby Swanson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7402,5 +7402,5 @@
       ]
     }
   ],
-  "updated": "2026-08-03T20:19:38Z"
+  "updated": "2026-08-03T21:36:02Z"
 }
