@@ -3702,7 +3702,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.279,
             "HR": 13,
@@ -5520,7 +5520,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.256,
             "HR": 21,
@@ -7402,5 +7402,5 @@
       ]
     }
   ],
-  "updated": "2026-08-04T17:28:11Z"
+  "updated": "2026-08-04T19:06:02Z"
 }
