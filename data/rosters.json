@@ -2844,7 +2844,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2966,7 +2966,7 @@
         },
         {
           "name": "Luis Rengifo",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3482,28 +3482,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Reynaldo Lopez",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {
-            "IP": 71.2,
-            "H": 67,
-            "WHIP": 1.34,
-            "ERA": 3.642,
-            "K": 66,
-            "SVHD": 1,
-            "QS": 1
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Hao-Yu Lee",
           "slot": "BE",
           "position": "3B",
@@ -3597,6 +3575,20 @@
             "SVHD": 8,
             "QS": 0
           },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Christian Scott",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -7410,5 +7402,5 @@
       ]
     }
   ],
-  "updated": "2026-08-04T08:18:52Z"
+  "updated": "2026-08-04T11:00:15Z"
 }
