@@ -3490,20 +3490,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Hao-Yu Lee",
-          "slot": "BE",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Kyle Karros",
           "slot": "3B",
           "position": "3B",
@@ -3537,7 +3523,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "PATERNITY",
           "stats": {
             "IP": 128.2,
             "H": 113,
@@ -3602,6 +3588,28 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Royce Lewis",
+          "slot": "BE",
+          "position": "3B",
+          "eligible": "3B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.232,
+            "HR": 12,
+            "OPS": 0.726,
+            "R": 38,
+            "RBI": 37,
+            "SB": 10,
+            "Kbat": 80
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 24,
+          "keeperEligible": true
         }
       ]
     },
@@ -4080,7 +4088,7 @@
         },
         {
           "name": "Ryan Weathers",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5087,7 +5095,7 @@
         },
         {
           "name": "Teoscar Hernandez",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6104,6 +6112,28 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 18,
+          "keeperEligible": true
+        },
+        {
+          "name": "Matthew Liberatore",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 108.2,
+            "H": 121,
+            "WHIP": 1.491,
+            "ERA": 4.969,
+            "K": 107,
+            "SVHD": 0,
+            "QS": 5
+          },
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 26,
           "keeperEligible": true
         }
       ]
@@ -7412,5 +7442,5 @@
       ]
     }
   ],
-  "updated": "2026-08-05T13:41:46Z"
+  "updated": "2026-08-05T15:53:40Z"
 }
