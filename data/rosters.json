@@ -2443,7 +2443,7 @@
       "players": [
         {
           "name": "Yordan Alvarez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -2677,7 +2677,7 @@
         },
         {
           "name": "Miguel Vargas",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2836,7 +2836,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2858,7 +2858,7 @@
         },
         {
           "name": "Steven Kwan",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -2930,7 +2930,7 @@
         },
         {
           "name": "Luis Rengifo",
-          "slot": "UTIL",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2966,7 +2966,7 @@
         },
         {
           "name": "Ryan Jeffers",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -3002,7 +3002,7 @@
         },
         {
           "name": "Justin Crawford",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7434,5 +7434,5 @@
       ]
     }
   ],
-  "updated": "2026-08-07T10:24:52Z"
+  "updated": "2026-08-07T11:13:19Z"
 }
