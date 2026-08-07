@@ -41,7 +41,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.31,
             "HR": 15,
@@ -947,9 +947,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.255,
+            "AVG": 0.254,
             "HR": 24,
-            "OPS": 0.807,
+            "OPS": 0.805,
             "R": 70,
             "RBI": 72,
             "SB": 2,
@@ -2784,9 +2784,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.257,
+            "AVG": 0.259,
             "HR": 11,
-            "OPS": 0.672,
+            "OPS": 0.674,
             "R": 54,
             "RBI": 56,
             "SB": 1,
@@ -3622,13 +3622,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.23,
+            "AVG": 0.229,
             "HR": 10,
-            "OPS": 0.733,
+            "OPS": 0.73,
             "R": 30,
             "RBI": 28,
             "SB": 2,
-            "Kbat": 51
+            "Kbat": 52
           },
           "savant": {},
           "tier": "",
@@ -4851,9 +4851,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.266,
+            "AVG": 0.265,
             "HR": 15,
-            "OPS": 0.818,
+            "OPS": 0.816,
             "R": 78,
             "RBI": 63,
             "SB": 7,
@@ -7037,12 +7037,12 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.267,
+            "AVG": 0.268,
             "HR": 13,
-            "OPS": 0.736,
+            "OPS": 0.739,
             "R": 60,
-            "RBI": 44,
-            "SB": 17,
+            "RBI": 45,
+            "SB": 18,
             "Kbat": 101
           },
           "savant": {},
@@ -7418,5 +7418,5 @@
       ]
     }
   ],
-  "updated": "2026-08-07T22:02:36Z"
+  "updated": "2026-08-07T23:01:31Z"
 }
