@@ -352,7 +352,7 @@
         },
         {
           "name": "Max Muncy",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -374,11 +374,11 @@
         },
         {
           "name": "Wilyer Abreu",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.256,
             "HR": 20,
@@ -476,7 +476,7 @@
         },
         {
           "name": "Sam Antonacci",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7418,5 +7418,5 @@
       ]
     }
   ],
-  "updated": "2026-08-08T16:59:00Z"
+  "updated": "2026-08-08T17:29:39Z"
 }
