@@ -4559,7 +4559,7 @@
         },
         {
           "name": "Devin Williams",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4691,7 +4691,7 @@
         },
         {
           "name": "Alex Vesia",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4731,28 +4731,6 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Matt Chapman",
-          "slot": "IL",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
-          "stats": {
-            "AVG": 0.235,
-            "HR": 7,
-            "OPS": 0.692,
-            "R": 35,
-            "RBI": 42,
-            "SB": 0,
-            "Kbat": 81
-          },
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 8,
           "keeperEligible": false
         },
         {
@@ -6951,7 +6929,7 @@
         },
         {
           "name": "Willson Contreras",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7403,7 +7381,7 @@
         },
         {
           "name": "Kaelen Culpepper",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7418,5 +7396,5 @@
       ]
     }
   ],
-  "updated": "2026-08-08T17:29:39Z"
+  "updated": "2026-08-08T17:58:06Z"
 }
