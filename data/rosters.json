@@ -140,7 +140,7 @@
           "stats": {
             "AVG": 0.273,
             "HR": 20,
-            "OPS": 0.821,
+            "OPS": 0.819,
             "R": 62,
             "RBI": 59,
             "SB": 2,
@@ -721,7 +721,7 @@
         },
         {
           "name": "Jarren Duran",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -941,7 +941,7 @@
         },
         {
           "name": "Brandon Lowe",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2038,11 +2038,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 73.2,
+            "IP": 74.2,
             "H": 64,
-            "WHIP": 1.1,
-            "ERA": 3.421,
-            "K": 78,
+            "WHIP": 1.085,
+            "ERA": 3.375,
+            "K": 79,
             "SVHD": 0,
             "QS": 7
           },
@@ -4477,10 +4477,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 117.0,
-            "H": 93,
-            "WHIP": 1.017,
-            "ERA": 2.077,
+            "IP": 117.1,
+            "H": 94,
+            "WHIP": 1.023,
+            "ERA": 2.071,
             "K": 143,
             "SVHD": 0,
             "QS": 13
@@ -6759,9 +6759,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.247,
+            "AVG": 0.246,
             "HR": 11,
-            "OPS": 0.794,
+            "OPS": 0.791,
             "R": 39,
             "RBI": 27,
             "SB": 15,
@@ -7169,13 +7169,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.269,
+            "AVG": 0.268,
             "HR": 33,
-            "OPS": 0.9,
+            "OPS": 0.898,
             "R": 82,
             "RBI": 71,
             "SB": 2,
-            "Kbat": 124
+            "Kbat": 125
           },
           "savant": {},
           "tier": "",
@@ -7396,5 +7396,5 @@
       ]
     }
   ],
-  "updated": "2026-08-08T18:33:26Z"
+  "updated": "2026-08-08T19:20:50Z"
 }
