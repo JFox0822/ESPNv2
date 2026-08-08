@@ -138,13 +138,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.275,
+            "AVG": 0.274,
             "HR": 20,
-            "OPS": 0.822,
+            "OPS": 0.82,
             "R": 62,
             "RBI": 59,
             "SB": 2,
-            "Kbat": 87
+            "Kbat": 88
           },
           "savant": {},
           "tier": "",
@@ -1928,9 +1928,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.289,
+            "AVG": 0.288,
             "HR": 15,
-            "OPS": 0.8,
+            "OPS": 0.798,
             "R": 60,
             "RBI": 60,
             "SB": 16,
@@ -2038,11 +2038,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 76.2,
-            "H": 66,
-            "WHIP": 1.083,
-            "ERA": 3.287,
-            "K": 83,
+            "IP": 78.1,
+            "H": 70,
+            "WHIP": 1.111,
+            "ERA": 3.447,
+            "K": 84,
             "SVHD": 0,
             "QS": 7
           },
@@ -3065,7 +3065,7 @@
         },
         {
           "name": "Wyatt Langford",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3109,7 +3109,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3167,7 +3167,7 @@
         },
         {
           "name": "Braden Montgomery",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3453,7 +3453,7 @@
         },
         {
           "name": "Kyle Karros",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3539,7 +3539,7 @@
         },
         {
           "name": "Hector Rodriguez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3718,9 +3718,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.261,
+            "AVG": 0.26,
             "HR": 19,
-            "OPS": 0.749,
+            "OPS": 0.748,
             "R": 71,
             "RBI": 63,
             "SB": 2,
@@ -4301,9 +4301,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.221,
+            "AVG": 0.223,
             "HR": 14,
-            "OPS": 0.665,
+            "OPS": 0.668,
             "R": 47,
             "RBI": 57,
             "SB": 7,
@@ -4389,13 +4389,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.259,
+            "AVG": 0.258,
             "HR": 31,
-            "OPS": 0.898,
+            "OPS": 0.896,
             "R": 71,
             "RBI": 74,
             "SB": 2,
-            "Kbat": 119
+            "Kbat": 120
           },
           "savant": {},
           "tier": "",
@@ -4477,11 +4477,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 119.0,
+            "IP": 121.0,
             "H": 96,
-            "WHIP": 1.025,
-            "ERA": 2.118,
-            "K": 145,
+            "WHIP": 1.008,
+            "ERA": 2.083,
+            "K": 149,
             "SVHD": 0,
             "QS": 13
           },
@@ -4719,10 +4719,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.266,
+            "AVG": 0.268,
             "HR": 10,
-            "OPS": 0.715,
-            "R": 53,
+            "OPS": 0.721,
+            "R": 54,
             "RBI": 58,
             "SB": 6,
             "Kbat": 60
@@ -4983,7 +4983,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5423,7 +5423,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5602,9 +5602,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.291,
+            "AVG": 0.29,
             "HR": 20,
-            "OPS": 0.816,
+            "OPS": 0.814,
             "R": 58,
             "RBI": 66,
             "SB": 6,
@@ -5778,9 +5778,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.268,
+            "AVG": 0.267,
             "HR": 7,
-            "OPS": 0.687,
+            "OPS": 0.685,
             "R": 33,
             "RBI": 36,
             "SB": 4,
@@ -6265,13 +6265,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.24,
+            "AVG": 0.239,
             "HR": 19,
-            "OPS": 0.833,
+            "OPS": 0.831,
             "R": 66,
             "RBI": 41,
             "SB": 8,
-            "Kbat": 111
+            "Kbat": 112
           },
           "savant": {},
           "tier": "",
@@ -6353,11 +6353,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 156.2,
+            "IP": 157.2,
             "H": 147,
-            "WHIP": 1.2,
-            "ERA": 3.677,
-            "K": 120,
+            "WHIP": 1.192,
+            "ERA": 3.653,
+            "K": 122,
             "SVHD": 0,
             "QS": 17
           },
@@ -6487,11 +6487,11 @@
           "stats": {
             "AVG": 0.211,
             "HR": 12,
-            "OPS": 0.69,
+            "OPS": 0.688,
             "R": 55,
             "RBI": 43,
             "SB": 7,
-            "Kbat": 63
+            "Kbat": 64
           },
           "savant": {},
           "tier": "",
@@ -6759,9 +6759,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.245,
+            "AVG": 0.244,
             "HR": 11,
-            "OPS": 0.788,
+            "OPS": 0.785,
             "R": 39,
             "RBI": 27,
             "SB": 15,
@@ -7171,7 +7171,7 @@
           "stats": {
             "AVG": 0.268,
             "HR": 33,
-            "OPS": 0.898,
+            "OPS": 0.896,
             "R": 82,
             "RBI": 71,
             "SB": 2,
@@ -7396,5 +7396,5 @@
       ]
     }
   ],
-  "updated": "2026-08-08T19:49:52Z"
+  "updated": "2026-08-08T20:16:29Z"
 }
