@@ -721,7 +721,7 @@
         },
         {
           "name": "Jarren Duran",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1099,7 +1099,7 @@
         },
         {
           "name": "Javier Sanoja",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1444,20 +1444,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Brayan Rocchio",
-          "slot": "SS",
-          "position": "SS",
-          "eligible": "SS",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Jacob Latz",
           "slot": "RP",
           "position": "RP",
@@ -1607,7 +1593,7 @@
         },
         {
           "name": "Victor Caratini",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1635,7 +1621,7 @@
         },
         {
           "name": "Joc Pederson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -1727,7 +1713,7 @@
         },
         {
           "name": "Willi Castro",
-          "slot": "BE",
+          "slot": "SS",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1773,6 +1759,20 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 12,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jacob Webb",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -4295,7 +4295,7 @@
         },
         {
           "name": "Austin Riley",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4361,7 +4361,7 @@
         },
         {
           "name": "Jazz Chisholm Jr.",
-          "slot": "3B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7418,5 +7418,5 @@
       ]
     }
   ],
-  "updated": "2026-08-08T16:19:22Z"
+  "updated": "2026-08-08T16:59:00Z"
 }
