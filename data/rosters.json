@@ -2539,7 +2539,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2641,7 +2641,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2902,7 +2902,7 @@
         },
         {
           "name": "Ty France",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2916,7 +2916,7 @@
         },
         {
           "name": "Luis Rengifo",
-          "slot": "2B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -2966,7 +2966,7 @@
         },
         {
           "name": "Justin Crawford",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2984,20 +2984,6 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 11,
-          "keeperEligible": false
-        },
-        {
-          "name": "David Peterson",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
           "keeperEligible": false
         },
         {
@@ -3020,6 +3006,20 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Angel Martinez",
+          "slot": "BE",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "savant": {},
@@ -5416,20 +5416,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Dylan Crews",
-          "slot": "BE",
-          "position": "RF",
-          "eligible": "RF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 11,
-          "keeperEligible": false
-        },
-        {
           "name": "Erik Miller",
           "slot": "RP",
           "position": "RP",
@@ -5448,6 +5434,20 @@
           "slot": "BE",
           "position": "SS",
           "eligible": "SS",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jake Mangum",
+          "slot": "BE",
+          "position": "LF",
+          "eligible": "LF",
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -6937,7 +6937,7 @@
         },
         {
           "name": "Willson Contreras",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7389,7 +7389,7 @@
         },
         {
           "name": "Kaelen Culpepper",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7404,5 +7404,5 @@
       ]
     }
   ],
-  "updated": "2026-08-08T12:24:41Z"
+  "updated": "2026-08-08T13:24:29Z"
 }
