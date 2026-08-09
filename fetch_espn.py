@@ -1124,6 +1124,27 @@ def main():
     save("rosters.json", {"season": SEASON, "week": scoring_week,
                           "teams": rosters_out, "updated": updated})
 
+    # ── 6th Keeper: one-time pre-playoff roster snapshot ────────────────────────
+    # Captures each team's roster exactly once — the first time this script runs
+    # with the snapshot file absent. Never overwritten afterward, since the whole
+    # point is a fixed "before playoffs" baseline to check roster continuity
+    # against (6th keeper criterion #3). Trigger the Action manually before
+    # playoff rosters lock if you need to (re)capture it for a given season.
+    snapshot_path = "data/pre_playoff_snapshot.json"
+    if not os.path.exists(snapshot_path):
+        snapshot_teams = [
+            {"name": t["name"], "players": [p["name"] for p in t["players"] if p.get("name")]}
+            for t in rosters_out
+        ]
+        save("pre_playoff_snapshot.json", {
+            "season": SEASON,
+            "capturedWeek": scoring_week,
+            "capturedAt": updated,
+            "teams": snapshot_teams,
+        })
+    else:
+        print(f"  ℹ️  pre_playoff_snapshot.json already exists — leaving it untouched")
+
     # ── Power Rankings ────────────────────────────────────────────────────────
     ts_map = {t["id"]: t.get("stats",{}) for t in team_stats}
     power  = []
