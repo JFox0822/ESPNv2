@@ -189,13 +189,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.244,
+            "AVG": 0.243,
             "HR": 15,
-            "OPS": 0.713,
+            "OPS": 0.712,
             "R": 60,
             "RBI": 60,
             "SB": 11,
-            "Kbat": 92
+            "Kbat": 93
           },
           "appeared": true,
           "savant": {},
@@ -610,9 +610,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.229,
+            "AVG": 0.228,
             "HR": 1,
-            "OPS": 0.585,
+            "OPS": 0.583,
             "R": 46,
             "RBI": 33,
             "SB": 40,
@@ -3204,7 +3204,7 @@
           "stats": {
             "AVG": 0.273,
             "HR": 20,
-            "OPS": 0.858,
+            "OPS": 0.856,
             "R": 66,
             "RBI": 54,
             "SB": 21,
@@ -4580,7 +4580,7 @@
         },
         {
           "name": "Jazz Chisholm Jr.",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4626,7 +4626,7 @@
         },
         {
           "name": "Corey Seager",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4948,7 +4948,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "SS",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5328,9 +5328,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.254,
+            "AVG": 0.256,
             "HR": 25,
-            "OPS": 0.808,
+            "OPS": 0.811,
             "R": 64,
             "RBI": 86,
             "SB": 12,
@@ -5698,7 +5698,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -6485,7 +6485,7 @@
           "stats": {
             "AVG": 0.287,
             "HR": 28,
-            "OPS": 0.907,
+            "OPS": 0.905,
             "R": 73,
             "RBI": 89,
             "SB": 21,
@@ -6995,7 +6995,7 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.204,
+            "AVG": 0.203,
             "HR": 16,
             "OPS": 0.688,
             "R": 29,
@@ -7738,5 +7738,5 @@
       ]
     }
   ],
-  "updated": "2026-08-09T16:31:23Z"
+  "updated": "2026-08-09T17:20:47Z"
 }
