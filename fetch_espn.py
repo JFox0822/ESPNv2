@@ -1080,7 +1080,39 @@ def main():
         n = _re.sub(r"\b(jr|sr|ii|iii|iv)\.?\b", "", n, flags=_re.IGNORECASE)
         return _re.sub(r"\s+", " ", n).strip().lower()
 
+    def _has_appeared(p, pname_str, primary_stats):
+        """
+        Whether a player has recorded any real MLB stat this season — used for the
+        6th-keeper 'appeared in a game' criterion. The primary source (proj_data,
+        parsed into player_season_stats) occasionally comes back empty for a player
+        who has clearly played (seasonId mismatch, a stat-split gap, a roster pull
+        timing issue, etc.) — see the Dustin May case from August 2026. Rather than
+        silently trusting an empty dict, fall back to two more sources before
+        concluding a player genuinely hasn't appeared.
+        """
+        if primary_stats:
+            return True, "primary"
+        # Fallback 1: espn_api's own Player.stats — keyed by scoring period (plus a
+        # 'total' or 0 entry on most versions), each holding a raw stat 'breakdown'.
+        raw_stats = getattr(p, "stats", None) or {}
+        try:
+            for period_key, period_val in raw_stats.items():
+                if not isinstance(period_val, dict):
+                    continue
+                breakdown = period_val.get("breakdown") or {}
+                if any((v or 0) != 0 for v in breakdown.values()):
+                    return True, f"fallback:Player.stats[{period_key}]"
+        except Exception:
+            pass
+        # Fallback 2: total fantasy points accrued this season is a coarser but
+        # still valid signal that the player has actually played.
+        total_pts = getattr(p, "total_points", None)
+        if total_pts:
+            return True, "fallback:total_points"
+        return False, "none"
+
     rosters_out = []
+    _appeared_fallback_log = []
     for t in league.teams:
         tm = team_map[t.team_id]
         players = []
@@ -1106,6 +1138,10 @@ def main():
                            any(x in acq_type for x in ["FREE","WAIVER","FA"]))
             _sv_key = _norm_name(pname_str)
             _sv = savant_data.get(_sv_key, {})
+            _primary_stats = player_season_stats.get((pname_str or "").strip(), {})
+            _appeared, _appeared_source = _has_appeared(p, pname_str, _primary_stats)
+            if _appeared_source.startswith("fallback"):
+                _appeared_fallback_log.append(f"{pname_str} ({tm.get('name','?')}): {_appeared_source}")
             players.append({
                 "name":            pname_str,
                 "slot":            slot_label,
@@ -1113,13 +1149,18 @@ def main():
                 "eligible":        eligible_str,
                 "isPitcher":       is_pitcher,
                 "injStatus":       inj_status,
-                "stats":           player_season_stats.get((pname_str or "").strip(), {}),
+                "stats":           _primary_stats,
+                "appeared":        _appeared,
                 "savant":          {k: v for k, v in _sv.items() if k not in ("type","fullName")},
                 "tier":            "",
                 "acquisitionType": acq_type,
                 "draftRound":      draft_round,
                 "keeperEligible":  is_keeper,
             })
+    if _appeared_fallback_log:
+        print(f"  ⚠️  {len(_appeared_fallback_log)} player(s) needed the games-appeared fallback (empty primary stats):")
+        for line in _appeared_fallback_log:
+            print(f"      - {line}")
         rosters_out.append({**tm, "teamId": t.team_id, "players": players})
     save("rosters.json", {"season": SEASON, "week": scoring_week,
                           "teams": rosters_out, "updated": updated})
