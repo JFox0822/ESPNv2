@@ -367,7 +367,7 @@
         },
         {
           "name": "Max Muncy",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -390,7 +390,7 @@
         },
         {
           "name": "Wilyer Abreu",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -984,7 +984,7 @@
         },
         {
           "name": "Brandon Lowe",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1121,7 +1121,7 @@
         },
         {
           "name": "Caleb Durbin",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -1257,7 +1257,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "UTIL",
+          "slot": "3B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7738,5 +7738,5 @@
       ]
     }
   ],
-  "updated": "2026-08-09T14:23:47Z"
+  "updated": "2026-08-09T14:58:33Z"
 }
