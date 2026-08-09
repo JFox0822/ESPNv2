@@ -8,6 +8,7 @@ Fixes: week detection, KOH (no box_scores), standings cat W/L/streak/allplay,
 import json
 import os
 import sys
+import time
 from collections import defaultdict
 from datetime import datetime, timezone
 
@@ -1080,20 +1081,82 @@ def main():
         n = _re.sub(r"\b(jr|sr|ii|iii|iv)\.?\b", "", n, flags=_re.IGNORECASE)
         return _re.sub(r"\s+", " ", n).strip().lower()
 
-    def _has_appeared(p, pname_str, primary_stats):
+    def _fetch_mlb_debut_status(player_names):
         """
-        Whether a player has recorded any real MLB stat this season — used for the
-        6th-keeper 'appeared in a game' criterion. The primary source (proj_data,
-        parsed into player_season_stats) occasionally comes back empty for a player
-        who has clearly played (seasonId mismatch, a stat-split gap, a roster pull
-        timing issue, etc.) — see the Dustin May case from August 2026. Rather than
-        silently trusting an empty dict, fall back to two more sources before
-        concluding a player genuinely hasn't appeared.
+        The 6th-keeper 'appeared in an MLB game' criterion is a CAREER check, not
+        a current-season one — a rostered veteran who's hurt all of 2026 (e.g.
+        Corbin Burnes on the IL) is still eligible; only a player who has never
+        actually debuted in the majors is not. ESPN's fantasy API doesn't expose
+        career debut info, so this queries the public MLB Stats API (no auth
+        needed) for each player's mlbDebutDate, caches results in
+        data/mlb_debut_cache.json (debut status never changes for a player once
+        set), and only re-queries names not already cached.
+        Returns: dict {player_name: True/False}. A name is omitted from the
+        result if the lookup itself failed, so callers can fall back to
+        season-stat evidence instead of wrongly marking someone ineligible.
         """
+        import urllib.request, urllib.parse
+
+        cache_path = "data/mlb_debut_cache.json"
+        cache = {}
+        if os.path.exists(cache_path):
+            try:
+                with open(cache_path) as f:
+                    cache = json.load(f)
+            except Exception:
+                cache = {}
+
+        result = {}
+        to_lookup = [n for n in player_names if n and n not in cache]
+        for name in to_lookup:
+            try:
+                url = "https://statsapi.mlb.com/api/v1/people/search?names=" + urllib.parse.quote(name)
+                req = urllib.request.Request(url, headers={"User-Agent": "fantasy-league-dashboard/1.0"})
+                with urllib.request.urlopen(req, timeout=6) as resp:
+                    data = json.loads(resp.read().decode())
+                people = data.get("people", []) or []
+                debuted = any(
+                    (person.get("fullName", "").strip().lower() == name.strip().lower())
+                    and person.get("mlbDebutDate")
+                    for person in people
+                )
+                cache[name] = debuted
+            except Exception as e:
+                print(f"  ⚠️  MLB debut lookup failed for {name}: {e}")
+                # Leave out of cache/result entirely — caller falls back to
+                # season-stat evidence rather than assuming ineligibility.
+                continue
+            time.sleep(0.05)  # be polite to the public API
+
+        for name in player_names:
+            if name in cache:
+                result[name] = cache[name]
+
+        try:
+            with open(cache_path, "w") as f:
+                json.dump(cache, f, indent=2)
+        except Exception as e:
+            print(f"  ⚠️  Could not write mlb_debut_cache.json: {e}")
+
+        return result
+
+    def _has_appeared(p, pname_str, primary_stats, mlb_debuted):
+        """
+        Whether a player has ever appeared in an MLB game — career, not season.
+        Primary source: mlb_debuted, from the MLB Stats API career lookup.
+        Fallback (only used when mlb_debuted is None, i.e. the lookup failed or
+        the name wasn't found): current-season stat evidence. Season stats being
+        present is still sufficient proof of having played even without a
+        confirmed career debut match; season stats being absent is NOT proof of
+        the opposite, so it never overrides a definitive mlb_debuted=True/False.
+        """
+        if mlb_debuted is True:
+            return True, "mlb_debut"
+        if mlb_debuted is False:
+            return False, "mlb_debut"
+        # mlb_debuted is None (lookup unavailable) — fall back to season stats.
         if primary_stats:
-            return True, "primary"
-        # Fallback 1: espn_api's own Player.stats — keyed by scoring period (plus a
-        # 'total' or 0 entry on most versions), each holding a raw stat 'breakdown'.
+            return True, "fallback:primary_stats"
         raw_stats = getattr(p, "stats", None) or {}
         try:
             for period_key, period_val in raw_stats.items():
@@ -1104,12 +1167,22 @@ def main():
                     return True, f"fallback:Player.stats[{period_key}]"
         except Exception:
             pass
-        # Fallback 2: total fantasy points accrued this season is a coarser but
-        # still valid signal that the player has actually played.
         total_pts = getattr(p, "total_points", None)
         if total_pts:
             return True, "fallback:total_points"
         return False, "none"
+
+    # Pre-fetch career debut status for every rostered player before building
+    # rosters_out, so the per-player loop below just does a dict lookup.
+    _all_player_names = set()
+    for _t in league.teams:
+        for _p in (_t.roster or []):
+            _n = getattr(_p, "name", None)
+            if _n: _all_player_names.add(_n)
+    print(f"  ℹ️  Checking career MLB debut status for {len(_all_player_names)} rostered players...")
+    mlb_debut_map = _fetch_mlb_debut_status(_all_player_names)
+    print(f"  ✅  Resolved debut status for {len(mlb_debut_map)}/{len(_all_player_names)} players "
+          f"({len(_all_player_names) - len(mlb_debut_map)} will use season-stat fallback)")
 
     rosters_out = []
     _appeared_fallback_log = []
@@ -1139,7 +1212,8 @@ def main():
             _sv_key = _norm_name(pname_str)
             _sv = savant_data.get(_sv_key, {})
             _primary_stats = player_season_stats.get((pname_str or "").strip(), {})
-            _appeared, _appeared_source = _has_appeared(p, pname_str, _primary_stats)
+            _mlb_debuted = mlb_debut_map.get(pname_str)
+            _appeared, _appeared_source = _has_appeared(p, pname_str, _primary_stats, _mlb_debuted)
             if _appeared_source.startswith("fallback"):
                 _appeared_fallback_log.append(f"{pname_str} ({tm.get('name','?')}): {_appeared_source}")
             players.append({
