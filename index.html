@@ -2762,7 +2762,14 @@ async function renderKeepers() {
       preSnapshot.forEach(t => { snapshotByTeam[t.name] = new Set((t.players||[]).map(n => draftKey(n))); });
     }
     function sixthKeeperStatus(teamName, playerName, p) {
-      const appeared = !!(p.stats && Object.keys(p.stats).length > 0);
+      // Prefer the explicit "appeared" flag (fetch_espn.py computes it with a
+      // multi-source fallback so a single missing stat entry doesn't wrongly
+      // flag someone as never having played). Fall back to the old
+      // stats-non-empty check only if reading against an older rosters.json
+      // that predates this field.
+      const appeared = typeof p.appeared === 'boolean'
+        ? p.appeared
+        : !!(p.stats && Object.keys(p.stats).length > 0);
       if (!appeared) return { label: 'Not eligible — no MLB game yet', tone: 'bad' };
       if (!preSnapshot) return { label: 'Pending — pre-playoff snapshot not yet captured', tone: 'pending' };
       const onTeamPreSnap = snapshotByTeam[teamName]?.has(draftKey(playerName)) || false;
