@@ -2745,6 +2745,31 @@ async function renderKeepers() {
       }
     } catch(_) {}
 
+    // 6th Keeper (NEW 2027) needs, on top of standard Rd13+/undrafted eligibility:
+    //   (2) appeared in an MLB game this season, and
+    //   (3) was on the team's roster before playoffs and has remained there since.
+    // (2) is read from rosters.json — ESPN only populates player.stats once a player
+    // has recorded a real stat line, so a non-empty stats object means they've played.
+    // (3) is checked against a one-time pre-playoff roster snapshot (see fetch_espn.py).
+    // If that snapshot hasn't been captured yet, criterion (3) shows as pending rather
+    // than failed.
+    let preSnapshot = null;
+    try {
+      preSnapshot = (await load('pre_playoff_snapshot.json')).teams || null;
+    } catch(_) {}
+    const snapshotByTeam = {};
+    if (preSnapshot) {
+      preSnapshot.forEach(t => { snapshotByTeam[t.name] = new Set((t.players||[]).map(n => draftKey(n))); });
+    }
+    function sixthKeeperStatus(teamName, playerName, p) {
+      const appeared = !!(p.stats && Object.keys(p.stats).length > 0);
+      if (!appeared) return { label: 'Not eligible — no MLB game yet', tone: 'bad' };
+      if (!preSnapshot) return { label: 'Pending — pre-playoff snapshot not yet captured', tone: 'pending' };
+      const onTeamPreSnap = snapshotByTeam[teamName]?.has(draftKey(playerName)) || false;
+      if (!onTeamPreSnap) return { label: 'Not eligible — not on this roster before playoffs', tone: 'bad' };
+      return { label: '6th keeper eligible', tone: 'good' };
+    }
+
     if (hasDraftData) {
       teams.forEach(t => {
         const players = (t.players || []).filter(p => p.name && p.slot !== 'NA');
@@ -2752,12 +2777,13 @@ async function renderKeepers() {
         players.forEach(p => {
           const key = draftKey(p.name);
           const entry = leaguePicks[key];
+          const sixth = sixthKeeperStatus(t.name, p.name, p);
           if (!entry) {
-            elig.push({ name: p.name, source: 'FA/Waiver add' });
+            elig.push({ name: p.name, source: 'FA/Waiver add', sixth });
           } else if (entry.isPreKeeper) {
             // Was kept this season = cannot be kept again
           } else if (typeof entry.round === 'number' && entry.round >= 13) {
-            elig.push({ name: p.name, source: `Rd ${entry.round} pick` });
+            elig.push({ name: p.name, source: `Rd ${entry.round} pick`, sixth });
           }
         });
         if (elig.length) keeperMap[t.name] = elig;
@@ -2767,7 +2793,7 @@ async function renderKeepers() {
     if (!Object.keys(keeperMap).length) {
       teams.forEach(t => {
         const players = (t.players||[]).filter(p => p.name && p.slot !== 'NA');
-        if (players.length) keeperMap[t.name] = players.map(p => ({name: p.name, source: 'TBD'}));
+        if (players.length) keeperMap[t.name] = players.map(p => ({name: p.name, source: 'TBD', sixth: sixthKeeperStatus(t.name, p.name, p)}));
       });
     }
 
@@ -2787,9 +2813,13 @@ async function renderKeepers() {
           .map(p => {
             const srcCol = p.source.startsWith('Rd') ? 'var(--green)' :
                            p.source.startsWith('FA') ? 'var(--blue)' : 'var(--ink3)';
+            const sixthCol = p.sixth?.tone === 'good' ? 'var(--gold)' :
+                              p.sixth?.tone === 'pending' ? 'var(--ink3)' : 'var(--red, #c0392b)';
+            const sixthIcon = p.sixth?.tone === 'good' ? '⭐' : p.sixth?.tone === 'pending' ? '⏳' : '—';
             return `<tr class="${mine?'mine':''}">
               <td class="bt">${p.name}</td>
               <td class="c dt" style="font-family:var(--fm);font-size:9px;color:${srcCol}">${p.source}</td>
+              <td class="c dt" style="font-family:var(--fm);font-size:9px;color:${sixthCol}" title="${p.sixth?.label||''}">${sixthIcon}</td>
             </tr>`;
           }).join('');
         return `<div style="margin-bottom:20px">
@@ -2797,7 +2827,7 @@ async function renderKeepers() {
             ${team} <span style="font-family:var(--fm);font-size:10px;font-weight:400;color:var(--ink3)">(${players.length})</span>
           </div>
           <div class="tw"><table>
-            <thead><tr><th>Player</th><th class="c">Source</th></tr></thead>
+            <thead><tr><th>Player</th><th class="c">Source</th><th class="c">6th Keeper</th></tr></thead>
             <tbody>${pRows}</tbody>
           </table></div>
         </div>`;
@@ -2809,7 +2839,12 @@ async function renderKeepers() {
       </div>` : `<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:var(--fm);font-size:9px;color:var(--ink3);margin-bottom:16px">
         <div><span style="color:var(--green)">■</span> Rd 13+ pick (permanent — follows player through trades and drops)</div>
         <div><span style="color:var(--blue)">■</span> FA/Waiver add (never drafted in this league)</div>
+        <div>⭐ <span style="color:var(--gold)">6th keeper eligible</span> (appeared in an MLB game + on roster before playoffs)</div>
+        <div>⏳ <span style="color:var(--ink3)">pre-playoff snapshot not yet captured</span></div>
       </div>`}
+      ${preSnapshot === null ? `<div class="info-box" style="background:rgba(240,180,41,.08);border-color:rgba(240,180,41,.2);color:var(--gold);margin-bottom:16px">
+        ⚠️ 6th-keeper roster-continuity check (criterion 3) is pending — the Action needs to capture <code>pre_playoff_snapshot.json</code> before playoffs lock rosters.
+      </div>` : ''}
       ${teamRows}`;
   } catch(e) {
     el.innerHTML = `<div class="state err">⚠ ${e.message}</div>`;
