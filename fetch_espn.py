@@ -1157,11 +1157,11 @@ def main():
                 "draftRound":      draft_round,
                 "keeperEligible":  is_keeper,
             })
+        rosters_out.append({**tm, "teamId": t.team_id, "players": players})
     if _appeared_fallback_log:
         print(f"  ⚠️  {len(_appeared_fallback_log)} player(s) needed the games-appeared fallback (empty primary stats):")
         for line in _appeared_fallback_log:
             print(f"      - {line}")
-        rosters_out.append({**tm, "teamId": t.team_id, "players": players})
     save("rosters.json", {"season": SEASON, "week": scoring_week,
                           "teams": rosters_out, "updated": updated})
 
