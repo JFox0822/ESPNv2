@@ -183,7 +183,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -252,7 +252,7 @@
         },
         {
           "name": "Sonny Gray",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -344,7 +344,7 @@
         },
         {
           "name": "Nathan Eovaldi",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -367,7 +367,7 @@
         },
         {
           "name": "Max Muncy",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -390,7 +390,7 @@
         },
         {
           "name": "Wilyer Abreu",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -459,7 +459,7 @@
         },
         {
           "name": "Bryce Elder",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -543,7 +543,7 @@
         },
         {
           "name": "Robbie Ray",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -815,7 +815,7 @@
         },
         {
           "name": "Willy Adames",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -999,7 +999,7 @@
         },
         {
           "name": "Otto Lopez",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1060,7 +1060,7 @@
         },
         {
           "name": "Keider Montero",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1113,7 +1113,7 @@
         },
         {
           "name": "Caleb Durbin",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -1249,7 +1249,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "3B",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1272,7 +1272,7 @@
         },
         {
           "name": "Noah Cameron",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1862,7 +1862,7 @@
     },
     {
       "id": 4,
-      "name": "\ud83c\udfc6 Virginia Beach VelociRaptors",
+      "name": "Virginia Beach VelociRaptors",
       "abbrev": "CHRS",
       "owners": [
         "C.Eriole824"
@@ -3978,7 +3978,7 @@
         },
         {
           "name": "Randy Arozarena",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4185,7 +4185,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6266,7 +6266,7 @@
         },
         {
           "name": "Eduardo Rodriguez",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7118,7 +7118,7 @@
         },
         {
           "name": "Kevin McGonigle",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7363,7 +7363,7 @@
         },
         {
           "name": "Carson Benge",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7753,7 +7753,7 @@
         },
         {
           "name": "Kaelen Culpepper",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7769,5 +7769,5 @@
       ]
     }
   ],
-  "updated": "2026-08-10T11:42:42Z"
+  "updated": "2026-08-10T12:43:03Z"
 }
