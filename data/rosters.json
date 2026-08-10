@@ -6148,7 +6148,7 @@
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.225,
             "HR": 24,
@@ -6830,7 +6830,7 @@
         },
         {
           "name": "Spencer Jones",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7004,29 +7004,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Eugenio Suarez",
-          "slot": "BE",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.203,
-            "HR": 16,
-            "OPS": 0.686,
-            "R": 29,
-            "RBI": 43,
-            "SB": 0,
-            "Kbat": 125
-          },
-          "appeared": false,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 11,
-          "keeperEligible": false
-        },
-        {
           "name": "Walker Buehler",
           "slot": "SP",
           "position": "SP",
@@ -7063,6 +7040,21 @@
           "acquisitionType": "ADD",
           "draftRound": 13,
           "keeperEligible": true
+        },
+        {
+          "name": "Nathan Lukes",
+          "slot": "OF",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -7754,5 +7746,5 @@
       ]
     }
   ],
-  "updated": "2026-08-10T20:07:10Z"
+  "updated": "2026-08-10T21:08:47Z"
 }
