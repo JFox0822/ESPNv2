@@ -3386,9 +3386,11 @@ async function renderLuck2026() {
       const myEntry = wkTeams.find(t=>t.rb===selTeam);
       if (!myEntry) return `<div style="font-family:var(--fm);font-size:10px;color:var(--ink3)">No data for ${selTeam} in Week ${selWeek}.</div>`;
 
-      // Fix: use 'Kpitch' to match what matchups.json stores for pitching Ks
-      const CATS_ORDER=['R','HR','RBI','SB','Kbat','AVG','OPS','IP','H','Kpitch','QS','ERA','WHIP','SVHD'];
-      const DISP={'Kbat':'K(bat)','Kpitch':'K(pit)','SVHD':'SV/HD'};
+      // matchups.json stores pitching Ks under the plain key 'K' (batting Ks are 'Kbat').
+      // A prior "fix" here used 'Kpitch', which doesn't exist in this data source and
+      // silently dropped the column — confirmed against live matchups.json 2026-08-10.
+      const CATS_ORDER=['R','HR','RBI','SB','Kbat','AVG','OPS','IP','H','K','QS','ERA','WHIP','SVHD'];
+      const DISP={'Kbat':'K(bat)','K':'K(pit)','SVHD':'SV/HD'};
 
       const opponents = wkTeams.filter(t=>t.rb!==selTeam);
       const hdr = `<tr>
