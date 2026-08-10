@@ -3096,7 +3096,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 75.0,
             "H": 90,
@@ -3572,7 +3572,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 125.0,
             "H": 138,
@@ -7738,5 +7738,5 @@
       ]
     }
   ],
-  "updated": "2026-08-10T03:07:50Z"
+  "updated": "2026-08-10T05:01:41Z"
 }
