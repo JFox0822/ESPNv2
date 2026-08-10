@@ -1623,7 +1623,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -4342,7 +4342,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 82.0,
             "H": 72,
@@ -7746,5 +7746,5 @@
       ]
     }
   ],
-  "updated": "2026-08-10T21:08:47Z"
+  "updated": "2026-08-10T22:04:10Z"
 }
