@@ -2543,7 +2543,7 @@
       "players": [
         {
           "name": "Yordan Alvarez",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -2635,7 +2635,7 @@
         },
         {
           "name": "Pete Crow-Armstrong",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2826,7 +2826,7 @@
         },
         {
           "name": "Jesus Made",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2894,7 +2894,7 @@
         },
         {
           "name": "Bo Bichette",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2978,7 +2978,7 @@
         },
         {
           "name": "Steven Kwan",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3115,7 +3115,7 @@
         },
         {
           "name": "Justin Crawford",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6508,7 +6508,7 @@
         },
         {
           "name": "CJ Abrams",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6623,7 +6623,7 @@
         },
         {
           "name": "Christian Yelich",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6982,7 +6982,7 @@
         },
         {
           "name": "Brooks Lee",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6997,7 +6997,7 @@
         },
         {
           "name": "George Lombard Jr.",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7769,5 +7769,5 @@
       ]
     }
   ],
-  "updated": "2026-08-10T10:57:05Z"
+  "updated": "2026-08-10T11:42:42Z"
 }
