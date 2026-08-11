@@ -2405,7 +2405,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.242,
             "HR": 16,
@@ -7746,5 +7746,5 @@
       ]
     }
   ],
-  "updated": "2026-08-11T17:48:04Z"
+  "updated": "2026-08-11T18:45:47Z"
 }
