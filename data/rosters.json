@@ -769,7 +769,7 @@
         },
         {
           "name": "Christian Walker",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -959,10 +959,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 136.1,
-            "H": 134,
-            "WHIP": 1.32,
-            "ERA": 3.763,
+            "IP": 137.1,
+            "H": 136,
+            "WHIP": 1.333,
+            "ERA": 3.801,
             "K": 120,
             "SVHD": 0,
             "QS": 10
@@ -1249,7 +1249,7 @@
         },
         {
           "name": "Colt Emerson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1828,11 +1828,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.246,
+            "AVG": 0.245,
             "HR": 6,
-            "OPS": 0.737,
+            "OPS": 0.733,
             "R": 28,
-            "RBI": 21,
+            "RBI": 22,
             "SB": 6,
             "Kbat": 55
           },
@@ -3641,7 +3641,7 @@
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "SEVEN_DAY_DL",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -3734,9 +3734,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.242,
+            "AVG": 0.241,
             "HR": 13,
-            "OPS": 0.742,
+            "OPS": 0.74,
             "R": 43,
             "RBI": 42,
             "SB": 11,
@@ -4669,7 +4669,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.269,
             "HR": 16,
@@ -5239,8 +5239,8 @@
           "stats": {
             "AVG": 0.216,
             "HR": 19,
-            "OPS": 0.688,
-            "R": 70,
+            "OPS": 0.69,
+            "R": 71,
             "RBI": 49,
             "SB": 9,
             "Kbat": 123
@@ -6356,9 +6356,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.265,
+            "AVG": 0.264,
             "HR": 6,
-            "OPS": 0.722,
+            "OPS": 0.721,
             "R": 56,
             "RBI": 34,
             "SB": 14,
@@ -6394,11 +6394,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.253,
+            "AVG": 0.255,
             "HR": 16,
-            "OPS": 0.742,
+            "OPS": 0.745,
             "R": 59,
-            "RBI": 72,
+            "RBI": 73,
             "SB": 1,
             "Kbat": 99
           },
@@ -6493,7 +6493,7 @@
         },
         {
           "name": "Cal Raleigh",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6631,7 +6631,7 @@
         },
         {
           "name": "Christian Yelich",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6973,9 +6973,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.256,
+            "AVG": 0.258,
             "HR": 26,
-            "OPS": 0.829,
+            "OPS": 0.831,
             "R": 73,
             "RBI": 77,
             "SB": 5,
@@ -7028,7 +7028,7 @@
         },
         {
           "name": "Walker Buehler",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7043,7 +7043,7 @@
         },
         {
           "name": "Luis Castillo",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7754,5 +7754,5 @@
       ]
     }
   ],
-  "updated": "2026-08-12T17:24:56Z"
+  "updated": "2026-08-12T18:13:17Z"
 }
