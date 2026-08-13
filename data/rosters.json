@@ -984,11 +984,11 @@
           "stats": {
             "AVG": 0.251,
             "HR": 25,
-            "OPS": 0.798,
+            "OPS": 0.796,
             "R": 72,
             "RBI": 74,
             "SB": 2,
-            "Kbat": 143
+            "Kbat": 144
           },
           "appeared": true,
           "savant": {},
@@ -1489,11 +1489,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 123.0,
-            "H": 125,
-            "WHIP": 1.325,
-            "ERA": 4.171,
-            "K": 108,
+            "IP": 124.0,
+            "H": 127,
+            "WHIP": 1.339,
+            "ERA": 4.355,
+            "K": 109,
             "SVHD": 0,
             "QS": 10
           },
@@ -2292,9 +2292,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
+            "AVG": 0.258,
             "HR": 8,
-            "OPS": 0.767,
+            "OPS": 0.764,
             "R": 40,
             "RBI": 31,
             "SB": 0,
@@ -2986,7 +2986,7 @@
           "stats": {
             "AVG": 0.268,
             "HR": 2,
-            "OPS": 0.7,
+            "OPS": 0.698,
             "R": 51,
             "RBI": 22,
             "SB": 8,
@@ -3204,11 +3204,11 @@
           "stats": {
             "AVG": 0.268,
             "HR": 20,
-            "OPS": 0.839,
+            "OPS": 0.837,
             "R": 67,
             "RBI": 56,
             "SB": 21,
-            "Kbat": 119
+            "Kbat": 120
           },
           "appeared": true,
           "savant": {},
@@ -3248,12 +3248,12 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.283,
+            "AVG": 0.285,
             "HR": 13,
-            "OPS": 0.802,
+            "OPS": 0.805,
             "R": 48,
             "RBI": 57,
-            "SB": 7,
+            "SB": 8,
             "Kbat": 63
           },
           "appeared": true,
@@ -4046,9 +4046,9 @@
           "injStatus": "ACTIVE",
           "stats": {
             "IP": 128.2,
-            "H": 118,
-            "WHIP": 1.391,
-            "ERA": 3.917,
+            "H": 120,
+            "WHIP": 1.407,
+            "ERA": 3.987,
             "K": 99,
             "SVHD": 0,
             "QS": 10
@@ -4206,9 +4206,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.261,
+            "AVG": 0.264,
             "HR": 10,
-            "OPS": 0.788,
+            "OPS": 0.792,
             "R": 37,
             "RBI": 37,
             "SB": 1,
@@ -5031,9 +5031,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.264,
+            "AVG": 0.263,
             "HR": 15,
-            "OPS": 0.812,
+            "OPS": 0.81,
             "R": 80,
             "RBI": 63,
             "SB": 7,
@@ -5298,11 +5298,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.256,
-            "HR": 25,
-            "OPS": 0.804,
-            "R": 64,
-            "RBI": 86,
+            "AVG": 0.258,
+            "HR": 26,
+            "OPS": 0.814,
+            "R": 65,
+            "RBI": 87,
             "SB": 12,
             "Kbat": 114
           },
@@ -7064,7 +7064,7 @@
       "players": [
         {
           "name": "Ronald Acuna Jr.",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7093,13 +7093,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.286,
+            "AVG": 0.285,
             "HR": 12,
-            "OPS": 0.819,
+            "OPS": 0.817,
             "R": 78,
             "RBI": 48,
             "SB": 11,
-            "Kbat": 71
+            "Kbat": 72
           },
           "appeared": true,
           "savant": {},
@@ -7116,9 +7116,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.233,
+            "AVG": 0.232,
             "HR": 10,
-            "OPS": 0.719,
+            "OPS": 0.717,
             "R": 53,
             "RBI": 37,
             "SB": 29,
@@ -7133,7 +7133,7 @@
         },
         {
           "name": "Hunter Goodman",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7202,7 +7202,7 @@
         },
         {
           "name": "Adrian Morejon",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7407,9 +7407,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.267,
+            "AVG": 0.266,
             "HR": 26,
-            "OPS": 0.845,
+            "OPS": 0.843,
             "R": 65,
             "RBI": 80,
             "SB": 0,
@@ -7476,11 +7476,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 136.2,
+            "IP": 137.2,
             "H": 104,
-            "WHIP": 1.039,
-            "ERA": 2.568,
-            "K": 136,
+            "WHIP": 1.031,
+            "ERA": 2.55,
+            "K": 137,
             "SVHD": 0,
             "QS": 9
           },
@@ -7637,52 +7637,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Jeff Hoffman",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 52.0,
-            "H": 50,
-            "WHIP": 1.385,
-            "ERA": 3.808,
-            "K": 81,
-            "SVHD": 14,
-            "QS": 0
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 15,
-          "keeperEligible": true
-        },
-        {
-          "name": "Grayson Rodriguez",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 55.0,
-            "H": 63,
-            "WHIP": 1.618,
-            "ERA": 7.2,
-            "K": 50,
-            "SVHD": 0,
-            "QS": 1
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 26,
-          "keeperEligible": true
-        },
-        {
           "name": "Edward Cabrera",
           "slot": "IL",
           "position": "SP",
@@ -7734,9 +7688,39 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Griffin Conine",
+          "slot": "OF",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Abimelec Ortiz",
+          "slot": "UTIL",
+          "position": "1B",
+          "eligible": "1B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-08-13T16:23:36Z"
+  "updated": "2026-08-13T17:25:04Z"
 }
