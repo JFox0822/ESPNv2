@@ -2841,7 +2841,7 @@
         },
         {
           "name": "George Kirby",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3092,7 +3092,7 @@
         },
         {
           "name": "Andrew Painter",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3265,7 +3265,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3447,7 +3447,7 @@
         },
         {
           "name": "Andre Pallante",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3568,7 +3568,7 @@
         },
         {
           "name": "Aaron Nola",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3614,7 +3614,7 @@
         },
         {
           "name": "Luis Lara",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7723,5 +7723,5 @@
       ]
     }
   ],
-  "updated": "2026-08-13T11:38:24Z"
+  "updated": "2026-08-13T12:43:49Z"
 }
