@@ -166,9 +166,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.287,
+            "AVG": 0.286,
             "HR": 19,
-            "OPS": 0.837,
+            "OPS": 0.833,
             "R": 65,
             "RBI": 84,
             "SB": 3,
@@ -1527,11 +1527,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 56.2,
+            "IP": 61.2,
             "H": 46,
-            "WHIP": 1.165,
-            "ERA": 2.859,
-            "K": 46,
+            "WHIP": 1.07,
+            "ERA": 2.627,
+            "K": 48,
             "SVHD": 0,
             "QS": 4
           },
@@ -2040,9 +2040,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.245,
+            "AVG": 0.244,
             "HR": 16,
-            "OPS": 0.731,
+            "OPS": 0.728,
             "R": 77,
             "RBI": 45,
             "SB": 13,
@@ -2340,11 +2340,11 @@
           "stats": {
             "AVG": 0.216,
             "HR": 20,
-            "OPS": 0.742,
+            "OPS": 0.74,
             "R": 71,
             "RBI": 51,
             "SB": 4,
-            "Kbat": 155
+            "Kbat": 156
           },
           "appeared": true,
           "savant": {},
@@ -2430,13 +2430,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.215,
+            "AVG": 0.214,
             "HR": 18,
-            "OPS": 0.705,
+            "OPS": 0.703,
             "R": 77,
             "RBI": 66,
             "SB": 16,
-            "Kbat": 105
+            "Kbat": 106
           },
           "appeared": true,
           "savant": {},
@@ -2641,9 +2641,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.281,
+            "AVG": 0.28,
             "HR": 27,
-            "OPS": 0.92,
+            "OPS": 0.916,
             "R": 86,
             "RBI": 73,
             "SB": 30,
@@ -2666,7 +2666,7 @@
           "stats": {
             "AVG": 0.245,
             "HR": 14,
-            "OPS": 0.741,
+            "OPS": 0.74,
             "R": 52,
             "RBI": 63,
             "SB": 2,
@@ -4617,9 +4617,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.271,
+            "AVG": 0.27,
             "HR": 20,
-            "OPS": 0.838,
+            "OPS": 0.834,
             "R": 66,
             "RBI": 70,
             "SB": 2,
@@ -5835,9 +5835,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.262,
+            "AVG": 0.261,
             "HR": 7,
-            "OPS": 0.687,
+            "OPS": 0.686,
             "R": 51,
             "RBI": 56,
             "SB": 19,
@@ -5950,9 +5950,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.254,
+            "AVG": 0.253,
             "HR": 16,
-            "OPS": 0.754,
+            "OPS": 0.751,
             "R": 69,
             "RBI": 61,
             "SB": 3,
@@ -6203,9 +6203,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.284,
+            "AVG": 0.283,
             "HR": 23,
-            "OPS": 0.832,
+            "OPS": 0.828,
             "R": 72,
             "RBI": 84,
             "SB": 16,
@@ -6287,9 +6287,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.249,
+            "AVG": 0.248,
             "HR": 13,
-            "OPS": 0.75,
+            "OPS": 0.747,
             "R": 75,
             "RBI": 51,
             "SB": 7,
@@ -6711,7 +6711,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 26.1,
             "H": 21,
@@ -7722,5 +7722,5 @@
       ]
     }
   ],
-  "updated": "2026-08-14T18:12:08Z"
+  "updated": "2026-08-14T19:24:52Z"
 }
