@@ -1232,11 +1232,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.266,
+            "AVG": 0.268,
             "HR": 8,
-            "OPS": 0.758,
+            "OPS": 0.761,
             "R": 51,
-            "RBI": 53,
+            "RBI": 54,
             "SB": 23,
             "Kbat": 79
           },
@@ -1925,7 +1925,7 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.247,
+            "AVG": 0.246,
             "HR": 17,
             "OPS": 0.693,
             "R": 80,
@@ -3075,9 +3075,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.281,
+            "AVG": 0.284,
             "HR": 10,
-            "OPS": 0.878,
+            "OPS": 0.883,
             "R": 37,
             "RBI": 40,
             "SB": 1,
@@ -3574,11 +3574,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 125.0,
-            "H": 138,
-            "WHIP": 1.448,
-            "ERA": 5.472,
-            "K": 129,
+            "IP": 126.0,
+            "H": 140,
+            "WHIP": 1.452,
+            "ERA": 5.429,
+            "K": 130,
             "SVHD": 0,
             "QS": 7
           },
@@ -3703,9 +3703,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.245,
+            "AVG": 0.244,
             "HR": 13,
-            "OPS": 0.749,
+            "OPS": 0.747,
             "R": 44,
             "RBI": 43,
             "SB": 11,
@@ -4229,11 +4229,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 131.2,
-            "H": 109,
-            "WHIP": 1.246,
-            "ERA": 3.759,
-            "K": 148,
+            "IP": 133.1,
+            "H": 112,
+            "WHIP": 1.275,
+            "ERA": 3.848,
+            "K": 149,
             "SVHD": 0,
             "QS": 11
           },
@@ -4504,8 +4504,8 @@
           "stats": {
             "AVG": 0.254,
             "HR": 25,
-            "OPS": 0.87,
-            "R": 73,
+            "OPS": 0.871,
+            "R": 74,
             "RBI": 71,
             "SB": 7,
             "Kbat": 109
@@ -4962,9 +4962,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.313,
+            "AVG": 0.315,
             "HR": 5,
-            "OPS": 0.781,
+            "OPS": 0.783,
             "R": 56,
             "RBI": 49,
             "SB": 10,
@@ -5483,7 +5483,7 @@
           "stats": {
             "AVG": 0.273,
             "HR": 16,
-            "OPS": 0.748,
+            "OPS": 0.75,
             "R": 62,
             "RBI": 52,
             "SB": 10,
@@ -6363,13 +6363,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.257,
+            "AVG": 0.256,
             "HR": 16,
-            "OPS": 0.747,
+            "OPS": 0.745,
             "R": 60,
             "RBI": 73,
             "SB": 1,
-            "Kbat": 100
+            "Kbat": 101
           },
           "appeared": true,
           "savant": {},
@@ -7162,9 +7162,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.263,
+            "AVG": 0.262,
             "HR": 25,
-            "OPS": 0.864,
+            "OPS": 0.862,
             "R": 57,
             "RBI": 45,
             "SB": 7,
@@ -7522,11 +7522,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.248,
-            "HR": 35,
-            "OPS": 0.902,
-            "R": 69,
-            "RBI": 69,
+            "AVG": 0.249,
+            "HR": 36,
+            "OPS": 0.91,
+            "R": 70,
+            "RBI": 70,
             "SB": 3,
             "Kbat": 176
           },
@@ -7722,5 +7722,5 @@
       ]
     }
   ],
-  "updated": "2026-08-13T23:09:25Z"
+  "updated": "2026-08-14T00:04:33Z"
 }
