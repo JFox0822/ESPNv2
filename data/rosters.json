@@ -769,7 +769,7 @@
         },
         {
           "name": "Christian Walker",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -953,7 +953,7 @@
         },
         {
           "name": "Shane Baz",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -976,7 +976,7 @@
         },
         {
           "name": "Brandon Lowe",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1022,7 +1022,7 @@
         },
         {
           "name": "Seth Lugo",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1128,7 +1128,7 @@
         },
         {
           "name": "Kyle Leahy",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -1188,7 +1188,7 @@
         },
         {
           "name": "Shane Bieber",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1226,7 +1226,7 @@
         },
         {
           "name": "Bryson Stott",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1942,7 +1942,7 @@
         },
         {
           "name": "Yoshinobu Yamamoto",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2126,7 +2126,7 @@
         },
         {
           "name": "Gerrit Cole",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2256,7 +2256,7 @@
         },
         {
           "name": "Dustin May",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2271,7 +2271,7 @@
         },
         {
           "name": "Gage Jump",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7171,7 +7171,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "IL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7722,5 +7722,5 @@
       ]
     }
   ],
-  "updated": "2026-08-14T10:48:00Z"
+  "updated": "2026-08-14T11:36:07Z"
 }
