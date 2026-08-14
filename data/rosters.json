@@ -1533,7 +1533,7 @@
             "ERA": 2.558,
             "K": 49,
             "SVHD": 0,
-            "QS": 4
+            "QS": 5
           },
           "appeared": true,
           "savant": {},
@@ -3466,7 +3466,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.262,
             "HR": 14,
@@ -3786,7 +3786,7 @@
       "players": [
         {
           "name": "Francisco Lindor",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3855,7 +3855,7 @@
         },
         {
           "name": "Kyle Tucker",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3878,7 +3878,7 @@
         },
         {
           "name": "Bobby Witt Jr.",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3924,7 +3924,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4039,7 +4039,7 @@
         },
         {
           "name": "Andrew Abbott",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4108,7 +4108,7 @@
         },
         {
           "name": "Nolan Arenado",
-          "slot": "3B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4154,7 +4154,7 @@
         },
         {
           "name": "Roki Sasaki",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4223,7 +4223,7 @@
         },
         {
           "name": "Taj Bradley",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4246,7 +4246,7 @@
         },
         {
           "name": "Bubba Chandler",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4315,7 +4315,7 @@
         },
         {
           "name": "Jake McCarthy",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -6203,13 +6203,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.283,
+            "AVG": 0.282,
             "HR": 23,
-            "OPS": 0.829,
+            "OPS": 0.828,
             "R": 72,
             "RBI": 84,
             "SB": 16,
-            "Kbat": 122
+            "Kbat": 123
           },
           "appeared": true,
           "savant": {},
@@ -7148,7 +7148,7 @@
         },
         {
           "name": "Hunter Goodman",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7416,7 +7416,7 @@
         },
         {
           "name": "Dillon Dingler",
-          "slot": "UTIL",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7630,7 +7630,7 @@
         },
         {
           "name": "George Springer",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -7722,5 +7722,5 @@
       ]
     }
   ],
-  "updated": "2026-08-14T20:52:12Z"
+  "updated": "2026-08-14T21:15:18Z"
 }
