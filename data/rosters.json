@@ -191,11 +191,11 @@
           "stats": {
             "AVG": 0.248,
             "HR": 15,
-            "OPS": 0.712,
+            "OPS": 0.711,
             "R": 61,
             "RBI": 65,
             "SB": 12,
-            "Kbat": 94
+            "Kbat": 95
           },
           "appeared": true,
           "savant": {},
@@ -413,7 +413,7 @@
         },
         {
           "name": "Bryce Miller",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -566,7 +566,7 @@
         },
         {
           "name": "Joey Cantillo",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -587,10 +587,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 137.0,
+            "IP": 138.0,
             "H": 116,
-            "WHIP": 1.08,
-            "ERA": 3.547,
+            "WHIP": 1.072,
+            "ERA": 3.522,
             "K": 110,
             "SVHD": 0,
             "QS": 14
@@ -936,11 +936,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 56.1,
-            "H": 45,
-            "WHIP": 1.154,
-            "ERA": 1.598,
-            "K": 28,
+            "IP": 57.1,
+            "H": 46,
+            "WHIP": 1.151,
+            "ERA": 1.57,
+            "K": 29,
             "SVHD": 25,
             "QS": 0
           },
@@ -2765,7 +2765,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2900,9 +2900,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.261,
+            "AVG": 0.26,
             "HR": 12,
-            "OPS": 0.685,
+            "OPS": 0.684,
             "R": 60,
             "RBI": 62,
             "SB": 1,
@@ -3130,7 +3130,7 @@
         },
         {
           "name": "Angel Martinez",
-          "slot": "2B",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3792,9 +3792,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.239,
+            "AVG": 0.238,
             "HR": 12,
-            "OPS": 0.768,
+            "OPS": 0.765,
             "R": 38,
             "RBI": 31,
             "SB": 3,
@@ -4183,10 +4183,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.292,
+            "AVG": 0.294,
             "HR": 9,
-            "OPS": 0.763,
-            "R": 57,
+            "OPS": 0.766,
+            "R": 58,
             "RBI": 46,
             "SB": 8,
             "Kbat": 46
@@ -6103,9 +6103,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.282,
+            "AVG": 0.283,
             "HR": 9,
-            "OPS": 0.712,
+            "OPS": 0.714,
             "R": 51,
             "RBI": 42,
             "SB": 5,
@@ -6126,9 +6126,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.228,
+            "AVG": 0.227,
             "HR": 24,
-            "OPS": 0.729,
+            "OPS": 0.728,
             "R": 63,
             "RBI": 71,
             "SB": 1,
@@ -6429,11 +6429,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.245,
             "HR": 24,
-            "OPS": 0.784,
-            "R": 62,
-            "RBI": 65,
+            "OPS": 0.789,
+            "R": 63,
+            "RBI": 66,
             "SB": 0,
             "Kbat": 137
           },
@@ -6521,9 +6521,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.282,
+            "AVG": 0.281,
             "HR": 29,
-            "OPS": 0.897,
+            "OPS": 0.895,
             "R": 77,
             "RBI": 91,
             "SB": 24,
@@ -6820,9 +6820,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.224,
+            "AVG": 0.223,
             "HR": 16,
-            "OPS": 0.738,
+            "OPS": 0.736,
             "R": 60,
             "RBI": 51,
             "SB": 7,
@@ -7010,9 +7010,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.273,
+            "AVG": 0.265,
             "HR": 2,
-            "OPS": 0.806,
+            "OPS": 0.783,
             "R": 6,
             "RBI": 3,
             "SB": 0,
@@ -7737,5 +7737,5 @@
       ]
     }
   ],
-  "updated": "2026-08-15T21:11:21Z"
+  "updated": "2026-08-15T21:41:13Z"
 }
