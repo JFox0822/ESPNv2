@@ -503,9 +503,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.28,
             "HR": 8,
-            "OPS": 0.774,
+            "OPS": 0.781,
             "R": 62,
             "RBI": 35,
             "SB": 15,
@@ -2359,7 +2359,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "SEVEN_DAY_DL",
           "stats": {
             "AVG": 0.263,
             "HR": 7,
@@ -7737,5 +7737,5 @@
       ]
     }
   ],
-  "updated": "2026-08-15T16:46:41Z"
+  "updated": "2026-08-15T17:11:25Z"
 }
