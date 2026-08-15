@@ -503,13 +503,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.28,
+            "AVG": 0.279,
             "HR": 8,
-            "OPS": 0.781,
+            "OPS": 0.778,
             "R": 63,
             "RBI": 35,
             "SB": 15,
-            "Kbat": 63
+            "Kbat": 64
           },
           "appeared": true,
           "savant": {},
@@ -2292,9 +2292,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.259,
+            "AVG": 0.262,
             "HR": 8,
-            "OPS": 0.763,
+            "OPS": 0.768,
             "R": 40,
             "RBI": 32,
             "SB": 0,
@@ -2543,7 +2543,7 @@
       "players": [
         {
           "name": "Yordan Alvarez",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -2635,7 +2635,7 @@
         },
         {
           "name": "Pete Crow-Armstrong",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -2796,7 +2796,7 @@
           "stats": {
             "AVG": 0.238,
             "HR": 27,
-            "OPS": 0.828,
+            "OPS": 0.826,
             "R": 82,
             "RBI": 71,
             "SB": 12,
@@ -4847,11 +4847,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.209,
+            "AVG": 0.211,
             "HR": 26,
-            "OPS": 0.718,
+            "OPS": 0.723,
             "R": 56,
-            "RBI": 68,
+            "RBI": 70,
             "SB": 1,
             "Kbat": 161
           },
@@ -5936,7 +5936,7 @@
         },
         {
           "name": "Yandy Diaz",
-          "slot": "1B",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6296,7 +6296,7 @@
         },
         {
           "name": "Bryce Eldridge",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6567,9 +6567,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.238,
             "HR": 27,
-            "OPS": 0.911,
+            "OPS": 0.917,
             "R": 63,
             "RBI": 55,
             "SB": 1,
@@ -7439,11 +7439,11 @@
           "stats": {
             "AVG": 0.26,
             "HR": 26,
-            "OPS": 0.826,
+            "OPS": 0.824,
             "R": 65,
             "RBI": 81,
             "SB": 0,
-            "Kbat": 105
+            "Kbat": 106
           },
           "appeared": true,
           "savant": {},
@@ -7737,5 +7737,5 @@
       ]
     }
   ],
-  "updated": "2026-08-15T17:41:25Z"
+  "updated": "2026-08-15T18:13:38Z"
 }
