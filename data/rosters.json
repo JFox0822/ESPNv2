@@ -486,7 +486,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -1405,9 +1405,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.308,
+            "AVG": 0.307,
             "HR": 0,
-            "OPS": 0.699,
+            "OPS": 0.698,
             "R": 49,
             "RBI": 25,
             "SB": 35,
@@ -1783,9 +1783,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.24,
+            "AVG": 0.239,
             "HR": 6,
-            "OPS": 0.716,
+            "OPS": 0.713,
             "R": 28,
             "RBI": 22,
             "SB": 6,
@@ -2923,11 +2923,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 119.2,
-            "H": 115,
-            "WHIP": 1.245,
-            "ERA": 4.212,
-            "K": 102,
+            "IP": 121.2,
+            "H": 117,
+            "WHIP": 1.249,
+            "ERA": 4.142,
+            "K": 103,
             "SVHD": 0,
             "QS": 10
           },
@@ -2963,11 +2963,11 @@
           "stats": {
             "AVG": 0.287,
             "HR": 15,
-            "OPS": 0.803,
+            "OPS": 0.802,
             "R": 58,
             "RBI": 75,
             "SB": 0,
-            "Kbat": 118
+            "Kbat": 119
           },
           "appeared": true,
           "savant": {},
@@ -4701,11 +4701,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 123.1,
+            "IP": 125.2,
             "H": 135,
-            "WHIP": 1.5,
-            "ERA": 5.327,
-            "K": 121,
+            "WHIP": 1.472,
+            "ERA": 5.228,
+            "K": 123,
             "SVHD": 0,
             "QS": 5
           },
@@ -5192,7 +5192,7 @@
           "stats": {
             "AVG": 0.275,
             "HR": 35,
-            "OPS": 0.91,
+            "OPS": 0.909,
             "R": 77,
             "RBI": 79,
             "SB": 3,
@@ -5261,7 +5261,7 @@
           "stats": {
             "AVG": 0.221,
             "HR": 20,
-            "OPS": 0.705,
+            "OPS": 0.704,
             "R": 74,
             "RBI": 51,
             "SB": 9,
@@ -5303,7 +5303,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.245,
             "HR": 19,
@@ -5965,9 +5965,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.303,
+            "AVG": 0.305,
             "HR": 17,
-            "OPS": 0.834,
+            "OPS": 0.837,
             "R": 68,
             "RBI": 69,
             "SB": 3,
@@ -5982,7 +5982,7 @@
         },
         {
           "name": "Alex Bregman",
-          "slot": "UTIL",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6410,7 +6410,7 @@
         },
         {
           "name": "Eugenio Suarez",
-          "slot": "3B",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6997,7 +6997,7 @@
           "stats": {
             "AVG": 0.264,
             "HR": 27,
-            "OPS": 0.843,
+            "OPS": 0.844,
             "R": 75,
             "RBI": 78,
             "SB": 5,
@@ -7760,5 +7760,5 @@
       ]
     }
   ],
-  "updated": "2026-08-16T16:12:07Z"
+  "updated": "2026-08-16T16:46:42Z"
 }
