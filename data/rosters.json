@@ -1812,89 +1812,6 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
-        },
-        {
-          "name": "Rafael Flores Jr.",
-          "slot": "1B",
-          "position": "1B",
-          "eligible": "1B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Jeff McNeil",
-          "slot": "2B",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 19,
-          "keeperEligible": true
-        },
-        {
-          "name": "Andruw Monasterio",
-          "slot": "SS",
-          "position": "SS",
-          "eligible": "SS",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Cole Ragans",
-          "slot": "IL",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
-          "stats": {
-            "IP": 35.1,
-            "H": 27,
-            "WHIP": 1.415,
-            "ERA": 4.84,
-            "K": 45,
-            "SVHD": 0,
-            "QS": 3
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 4,
-          "keeperEligible": false
-        },
-        {
-          "name": "Hunter Dobbins",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
         }
       ]
     },
@@ -7783,5 +7700,5 @@
       ]
     }
   ],
-  "updated": "2026-08-16T11:41:16Z"
+  "updated": "2026-08-16T12:17:37Z"
 }
