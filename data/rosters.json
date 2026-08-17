@@ -304,11 +304,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 44.2,
+            "IP": 45.1,
             "H": 38,
-            "WHIP": 1.254,
-            "ERA": 4.433,
-            "K": 70,
+            "WHIP": 1.235,
+            "ERA": 4.368,
+            "K": 72,
             "SVHD": 0,
             "QS": 0
           },
@@ -5234,7 +5234,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "IP": 138.1,
             "H": 121,
@@ -5242,7 +5242,7 @@
             "ERA": 4.099,
             "K": 137,
             "SVHD": 0,
-            "QS": 12
+            "QS": 13
           },
           "appeared": true,
           "savant": {},
@@ -7760,5 +7760,5 @@
       ]
     }
   ],
-  "updated": "2026-08-17T02:13:01Z"
+  "updated": "2026-08-17T03:24:48Z"
 }
