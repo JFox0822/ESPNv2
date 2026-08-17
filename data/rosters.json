@@ -2673,7 +2673,7 @@
         },
         {
           "name": "David Bednar",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -2692,29 +2692,6 @@
           "tier": "",
           "acquisitionType": "DRAFT",
           "draftRound": 16,
-          "keeperEligible": true
-        },
-        {
-          "name": "Hunter Greene",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
-          "stats": {
-            "IP": 27.2,
-            "H": 29,
-            "WHIP": 1.373,
-            "ERA": 6.831,
-            "K": 33,
-            "SVHD": 0,
-            "QS": 2
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 23,
           "keeperEligible": true
         },
         {
@@ -3163,6 +3140,21 @@
           "slot": "BE",
           "position": "SP",
           "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Ryne Stanek",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -7722,5 +7714,5 @@
       ]
     }
   ],
-  "updated": "2026-08-17T10:53:25Z"
+  "updated": "2026-08-17T11:15:28Z"
 }
