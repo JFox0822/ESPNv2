@@ -182,29 +182,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Daylen Lile",
-          "slot": "BE",
-          "position": "RF",
-          "eligible": "RF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.245,
-            "HR": 15,
-            "OPS": 0.705,
-            "R": 62,
-            "RBI": 65,
-            "SB": 12,
-            "Kbat": 96
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 11,
-          "keeperEligible": false
-        },
-        {
           "name": "Nick Pivetta",
           "slot": "IL",
           "position": "SP",
@@ -482,7 +459,7 @@
         },
         {
           "name": "Nick Gonzales",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -497,7 +474,7 @@
         },
         {
           "name": "Sam Antonacci",
-          "slot": "OF",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -684,6 +661,29 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Lawrence Butler",
+          "slot": "OF",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.208,
+            "HR": 11,
+            "OPS": 0.652,
+            "R": 47,
+            "RBI": 36,
+            "SB": 9,
+            "Kbat": 95
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 21,
+          "keeperEligible": true
         }
       ]
     },
@@ -7706,5 +7706,5 @@
       ]
     }
   ],
-  "updated": "2026-08-17T13:12:52Z"
+  "updated": "2026-08-17T13:58:03Z"
 }
