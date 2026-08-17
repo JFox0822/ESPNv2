@@ -2107,7 +2107,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {
             "IP": 16.2,
             "H": 17,
@@ -7633,7 +7633,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 76.0,
             "H": 78,
@@ -7706,5 +7706,5 @@
       ]
     }
   ],
-  "updated": "2026-08-17T21:16:02Z"
+  "updated": "2026-08-17T21:46:38Z"
 }
