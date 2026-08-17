@@ -1376,7 +1376,7 @@
         },
         {
           "name": "Brandon Nimmo",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1559,7 +1559,7 @@
         },
         {
           "name": "Ezequiel Duran",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1619,7 +1619,7 @@
         },
         {
           "name": "Zack Gelof",
-          "slot": "UTIL",
+          "slot": "3B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -1747,7 +1747,7 @@
         },
         {
           "name": "Willi Castro",
-          "slot": "3B",
+          "slot": "SS",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1830,7 +1830,7 @@
         },
         {
           "name": "Kody Clemens",
-          "slot": "BE",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -1845,7 +1845,7 @@
         },
         {
           "name": "Victor Caratini",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7706,5 +7706,5 @@
       ]
     }
   ],
-  "updated": "2026-08-17T14:24:00Z"
+  "updated": "2026-08-17T14:50:40Z"
 }
