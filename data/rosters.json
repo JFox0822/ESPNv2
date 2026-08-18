@@ -7025,18 +7025,26 @@
           "keeperEligible": false
         },
         {
-          "name": "Rafael Flores Jr.",
+          "name": "Cal Raleigh",
           "slot": "BE",
-          "position": "1B",
-          "eligible": "1B",
+          "position": "C",
+          "eligible": "C",
           "isPitcher": false,
           "injStatus": "ACTIVE",
-          "stats": {},
+          "stats": {
+            "AVG": 0.158,
+            "HR": 13,
+            "OPS": 0.568,
+            "R": 27,
+            "RBI": 44,
+            "SB": 2,
+            "Kbat": 123
+          },
           "appeared": true,
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 0,
+          "draftRound": 5,
           "keeperEligible": false
         }
       ]
@@ -7706,5 +7714,5 @@
       ]
     }
   ],
-  "updated": "2026-08-18T10:17:03Z"
+  "updated": "2026-08-18T10:52:12Z"
 }
