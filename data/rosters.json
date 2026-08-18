@@ -7424,7 +7424,7 @@
         },
         {
           "name": "Dillon Dingler",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7734,9 +7734,24 @@
           "acquisitionType": "ADD",
           "draftRound": 7,
           "keeperEligible": false
+        },
+        {
+          "name": "Tyler Stephenson",
+          "slot": "C",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-08-18T21:44:00Z"
+  "updated": "2026-08-18T22:11:17Z"
 }
