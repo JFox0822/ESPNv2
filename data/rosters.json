@@ -182,29 +182,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Nick Pivetta",
-          "slot": "IL",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
-          "stats": {
-            "IP": 16.0,
-            "H": 12,
-            "WHIP": 1.125,
-            "ERA": 4.5,
-            "K": 24,
-            "SVHD": 0,
-            "QS": 0
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 12,
-          "keeperEligible": false
-        },
-        {
           "name": "Blake Snell",
           "slot": "SP",
           "position": "SP",
@@ -298,11 +275,11 @@
         },
         {
           "name": "Edwin Diaz",
-          "slot": "RP",
+          "slot": "IL",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 13.2,
             "H": 25,
@@ -683,6 +660,29 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 21,
+          "keeperEligible": true
+        },
+        {
+          "name": "Kenley Jansen",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 33.2,
+            "H": 20,
+            "WHIP": 1.188,
+            "ERA": 3.743,
+            "K": 39,
+            "SVHD": 1,
+            "QS": 0
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 18,
           "keeperEligible": true
         }
       ]
@@ -7179,7 +7179,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7424,7 +7424,7 @@
         },
         {
           "name": "Dillon Dingler",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7699,7 +7699,7 @@
         },
         {
           "name": "Abimelec Ortiz",
-          "slot": "BE",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7738,5 +7738,5 @@
       ]
     }
   ],
-  "updated": "2026-08-18T21:13:19Z"
+  "updated": "2026-08-18T21:44:00Z"
 }
