@@ -5276,7 +5276,7 @@
         },
         {
           "name": "Teoscar Hernandez",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5482,7 +5482,7 @@
         },
         {
           "name": "Brandon Marsh",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5505,7 +5505,7 @@
         },
         {
           "name": "Jake Bauers",
-          "slot": "BE",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5520,7 +5520,7 @@
         },
         {
           "name": "Hunter Gaddis",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5626,7 +5626,7 @@
         },
         {
           "name": "A.J. Ewing",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5656,7 +5656,7 @@
         },
         {
           "name": "Erik Miller",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5686,7 +5686,7 @@
         },
         {
           "name": "Jake Mangum",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5713,6 +5713,29 @@
           "acquisitionType": "ADD",
           "draftRound": 20,
           "keeperEligible": true
+        },
+        {
+          "name": "Alec Bohm",
+          "slot": "UTIL",
+          "position": "3B",
+          "eligible": "3B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.242,
+            "HR": 14,
+            "OPS": 0.683,
+            "R": 45,
+            "RBI": 69,
+            "SB": 2,
+            "Kbat": 69
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 8,
+          "keeperEligible": false
         }
       ]
     },
@@ -7707,5 +7730,5 @@
       ]
     }
   ],
-  "updated": "2026-08-18T14:02:24Z"
+  "updated": "2026-08-18T14:58:40Z"
 }
