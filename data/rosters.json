@@ -2985,7 +2985,7 @@
         },
         {
           "name": "Jordan Lawlar",
-          "slot": "IL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3060,21 +3060,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Tyler Wells",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Angel Martinez",
           "slot": "BE",
           "position": "CF",
@@ -3128,21 +3113,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Ryne Stanek",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Esmerlyn Valdez",
           "slot": "BE",
           "position": "RF",
@@ -3156,6 +3126,29 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Kodai Senga",
+          "slot": "RP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 49.2,
+            "H": 48,
+            "WHIP": 1.651,
+            "ERA": 7.792,
+            "K": 60,
+            "SVHD": 0,
+            "QS": 1
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 21,
+          "keeperEligible": true
         }
       ]
     },
@@ -3218,7 +3211,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3279,7 +3272,7 @@
         },
         {
           "name": "Maikel Garcia",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7714,5 +7707,5 @@
       ]
     }
   ],
-  "updated": "2026-08-18T11:47:15Z"
+  "updated": "2026-08-18T12:22:32Z"
 }
