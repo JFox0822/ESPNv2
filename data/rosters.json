@@ -556,13 +556,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.217,
+            "AVG": 0.216,
             "HR": 24,
-            "OPS": 0.718,
+            "OPS": 0.717,
             "R": 63,
             "RBI": 71,
             "SB": 2,
-            "Kbat": 114
+            "Kbat": 115
           },
           "appeared": true,
           "savant": {},
@@ -861,7 +861,7 @@
           "stats": {
             "AVG": 0.226,
             "HR": 20,
-            "OPS": 0.731,
+            "OPS": 0.729,
             "R": 53,
             "RBI": 63,
             "SB": 0,
@@ -977,7 +977,7 @@
             "AVG": 0.252,
             "HR": 26,
             "OPS": 0.791,
-            "R": 74,
+            "R": 75,
             "RBI": 79,
             "SB": 2,
             "Kbat": 152
@@ -1420,9 +1420,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.258,
+            "AVG": 0.254,
             "HR": 1,
-            "OPS": 0.704,
+            "OPS": 0.694,
             "R": 7,
             "RBI": 9,
             "SB": 0,
@@ -1894,10 +1894,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 135.2,
-            "H": 114,
-            "WHIP": 1.128,
-            "ERA": 3.848,
+            "IP": 136.2,
+            "H": 115,
+            "WHIP": 1.134,
+            "ERA": 3.82,
             "K": 167,
             "SVHD": 0,
             "QS": 10
@@ -3962,7 +3962,7 @@
         },
         {
           "name": "Zack Wheeler",
-          "slot": "SP",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4008,7 +4008,7 @@
         },
         {
           "name": "Andrew Abbott",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4175,9 +4175,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
+            "AVG": 0.259,
             "HR": 10,
-            "OPS": 0.778,
+            "OPS": 0.776,
             "R": 37,
             "RBI": 38,
             "SB": 1,
@@ -4192,7 +4192,7 @@
         },
         {
           "name": "Taj Bradley",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4238,7 +4238,7 @@
         },
         {
           "name": "Ryan Weathers",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4383,7 +4383,7 @@
         },
         {
           "name": "Carlos Rodon",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4427,7 +4427,7 @@
           "stats": {
             "AVG": 0.28,
             "HR": 15,
-            "OPS": 0.785,
+            "OPS": 0.786,
             "R": 71,
             "RBI": 60,
             "SB": 28,
@@ -5000,9 +5000,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.261,
+            "AVG": 0.263,
             "HR": 15,
-            "OPS": 0.799,
+            "OPS": 0.802,
             "R": 85,
             "RBI": 66,
             "SB": 9,
@@ -7192,11 +7192,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.265,
+            "AVG": 0.268,
             "HR": 15,
-            "OPS": 0.832,
+            "OPS": 0.836,
             "R": 46,
-            "RBI": 46,
+            "RBI": 47,
             "SB": 21,
             "Kbat": 100
           },
@@ -7737,5 +7737,5 @@
       ]
     }
   ],
-  "updated": "2026-08-19T16:52:44Z"
+  "updated": "2026-08-19T17:17:17Z"
 }
