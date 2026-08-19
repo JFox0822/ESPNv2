@@ -588,7 +588,7 @@
         },
         {
           "name": "Jacob Young",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -618,7 +618,7 @@
         },
         {
           "name": "Lawrence Butler",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3537,7 +3537,7 @@
         },
         {
           "name": "Aaron Nola",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3560,7 +3560,7 @@
         },
         {
           "name": "Luis Lara",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3689,7 +3689,7 @@
         },
         {
           "name": "Martin Perez",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3704,7 +3704,7 @@
         },
         {
           "name": "Zac Veen",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5078,7 +5078,7 @@
         },
         {
           "name": "Jeff Hoffman",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5100,27 +5100,19 @@
           "keeperEligible": true
         },
         {
-          "name": "Brayan Bello",
-          "slot": "RP",
-          "position": "SP",
-          "eligible": "SP",
+          "name": "Aaron Ashby",
+          "slot": "BE",
+          "position": "RP",
+          "eligible": "RP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 88.1,
-            "H": 96,
-            "WHIP": 1.404,
-            "ERA": 4.687,
-            "K": 67,
-            "SVHD": 0,
-            "QS": 1
-          },
+          "stats": {},
           "appeared": true,
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 22,
-          "keeperEligible": true
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -7745,5 +7737,5 @@
       ]
     }
   ],
-  "updated": "2026-08-19T12:22:37Z"
+  "updated": "2026-08-19T13:22:25Z"
 }
