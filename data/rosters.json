@@ -122,7 +122,7 @@
           "stats": {
             "AVG": 0.245,
             "HR": 9,
-            "OPS": 0.729,
+            "OPS": 0.727,
             "R": 59,
             "RBI": 43,
             "SB": 17,
@@ -457,11 +457,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.306,
+            "AVG": 0.308,
             "HR": 10,
-            "OPS": 0.85,
+            "OPS": 0.856,
             "R": 54,
-            "RBI": 60,
+            "RBI": 62,
             "SB": 4,
             "Kbat": 63
           },
@@ -744,9 +744,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.205,
+            "AVG": 0.207,
             "HR": 17,
-            "OPS": 0.622,
+            "OPS": 0.624,
             "R": 58,
             "RBI": 62,
             "SB": 18,
@@ -1551,7 +1551,7 @@
         },
         {
           "name": "Ezequiel Duran",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1656,7 +1656,7 @@
         },
         {
           "name": "Joshua Baez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -2558,8 +2558,8 @@
           "stats": {
             "AVG": 0.247,
             "HR": 18,
-            "OPS": 0.832,
-            "R": 77,
+            "OPS": 0.833,
+            "R": 78,
             "RBI": 57,
             "SB": 17,
             "Kbat": 116
@@ -2983,9 +2983,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.255,
+            "AVG": 0.25,
             "HR": 1,
-            "OPS": 0.701,
+            "OPS": 0.688,
             "R": 6,
             "RBI": 4,
             "SB": 4,
@@ -4083,9 +4083,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.24,
+            "AVG": 0.242,
             "HR": 20,
-            "OPS": 0.761,
+            "OPS": 0.764,
             "R": 58,
             "RBI": 62,
             "SB": 4,
@@ -7737,5 +7737,5 @@
       ]
     }
   ],
-  "updated": "2026-08-19T21:15:42Z"
+  "updated": "2026-08-19T21:46:41Z"
 }
