@@ -6438,7 +6438,7 @@
         },
         {
           "name": "Cam Schlittler",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6507,7 +6507,7 @@
         },
         {
           "name": "Xavier Edwards",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6882,7 +6882,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "BE",
+          "slot": "SP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7033,27 +7033,19 @@
           "keeperEligible": false
         },
         {
-          "name": "Cal Raleigh",
-          "slot": "BE",
-          "position": "C",
-          "eligible": "C",
+          "name": "Jeff McNeil",
+          "slot": "2B",
+          "position": "2B",
+          "eligible": "2B",
           "isPitcher": false,
           "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.156,
-            "HR": 13,
-            "OPS": 0.568,
-            "R": 27,
-            "RBI": 44,
-            "SB": 2,
-            "Kbat": 125
-          },
+          "stats": {},
           "appeared": true,
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 5,
-          "keeperEligible": false
+          "draftRound": 19,
+          "keeperEligible": true
         }
       ]
     },
@@ -7737,5 +7729,5 @@
       ]
     }
   ],
-  "updated": "2026-08-20T11:16:54Z"
+  "updated": "2026-08-20T11:49:22Z"
 }
