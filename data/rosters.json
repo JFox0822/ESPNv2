@@ -166,9 +166,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.289,
+            "AVG": 0.288,
             "HR": 21,
-            "OPS": 0.845,
+            "OPS": 0.843,
             "R": 72,
             "RBI": 92,
             "SB": 3,
@@ -2034,8 +2034,8 @@
           "stats": {
             "AVG": 0.243,
             "HR": 16,
-            "OPS": 0.722,
-            "R": 82,
+            "OPS": 0.723,
+            "R": 83,
             "RBI": 46,
             "SB": 13,
             "Kbat": 87
@@ -2216,10 +2216,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 132.0,
-            "H": 127,
-            "WHIP": 1.22,
-            "ERA": 3.477,
+            "IP": 132.2,
+            "H": 128,
+            "WHIP": 1.221,
+            "ERA": 3.46,
             "K": 91,
             "SVHD": 0,
             "QS": 14
@@ -3171,9 +3171,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.259,
+            "AVG": 0.261,
             "HR": 20,
-            "OPS": 0.808,
+            "OPS": 0.811,
             "R": 70,
             "RBI": 57,
             "SB": 21,
@@ -5312,9 +5312,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.259,
+            "AVG": 0.258,
             "HR": 27,
-            "OPS": 0.81,
+            "OPS": 0.809,
             "R": 69,
             "RBI": 93,
             "SB": 12,
@@ -6070,7 +6070,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "OUT",
           "stats": {
             "AVG": 0.266,
             "HR": 7,
@@ -6189,9 +6189,9 @@
           "stats": {
             "AVG": 0.288,
             "HR": 25,
-            "OPS": 0.849,
+            "OPS": 0.848,
             "R": 77,
-            "RBI": 90,
+            "RBI": 91,
             "SB": 17,
             "Kbat": 128
           },
@@ -6271,9 +6271,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.244,
+            "AVG": 0.245,
             "HR": 14,
-            "OPS": 0.744,
+            "OPS": 0.746,
             "R": 78,
             "RBI": 53,
             "SB": 7,
@@ -7086,7 +7086,7 @@
         },
         {
           "name": "Kevin McGonigle",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7178,7 +7178,7 @@
         },
         {
           "name": "Oneil Cruz",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7420,29 +7420,6 @@
           "acquisitionType": "TRADE",
           "draftRound": 0,
           "keeperEligible": false
-        },
-        {
-          "name": "Tanner Scott",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 51.1,
-            "H": 36,
-            "WHIP": 0.916,
-            "ERA": 2.279,
-            "K": 63,
-            "SVHD": 12,
-            "QS": 0
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
-          "draftRound": 16,
-          "keeperEligible": true
         },
         {
           "name": "Parker Messick",
@@ -7702,9 +7679,39 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "David Hamilton",
+          "slot": "SS",
+          "position": "2B",
+          "eligible": "2B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Tyler Tolbert",
+          "slot": "UTIL",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     }
   ],
-  "updated": "2026-08-20T16:22:21Z"
+  "updated": "2026-08-20T16:58:23Z"
 }
