@@ -1888,7 +1888,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2118,7 +2118,7 @@
         },
         {
           "name": "Gerrit Cole",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2210,7 +2210,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2248,7 +2248,7 @@
         },
         {
           "name": "Dustin May",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2498,8 +2498,8 @@
           "keeperEligible": true
         },
         {
-          "name": "Eric Lauer",
-          "slot": "BE",
+          "name": "Anthony Kay",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3272,7 +3272,7 @@
         },
         {
           "name": "Maikel Garcia",
-          "slot": "UTIL",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3422,29 +3422,6 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Cole Young",
-          "slot": "2B",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.256,
-            "HR": 15,
-            "OPS": 0.712,
-            "R": 59,
-            "RBI": 56,
-            "SB": 3,
-            "Kbat": 86
-          },
           "appeared": true,
           "savant": {},
           "tier": "",
@@ -3666,7 +3643,7 @@
         },
         {
           "name": "Royce Lewis",
-          "slot": "3B",
+          "slot": "2B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3739,6 +3716,29 @@
           "acquisitionType": "ADD",
           "draftRound": 18,
           "keeperEligible": true
+        },
+        {
+          "name": "Vinnie Pasquantino",
+          "slot": "UTIL",
+          "position": "1B",
+          "eligible": "1B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.243,
+            "HR": 7,
+            "OPS": 0.694,
+            "R": 37,
+            "RBI": 37,
+            "SB": 4,
+            "Kbat": 60
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 11,
+          "keeperEligible": false
         }
       ]
     },
@@ -4894,7 +4894,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "BE",
+          "slot": "2B",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4940,7 +4940,7 @@
         },
         {
           "name": "Luis Arraez",
-          "slot": "2B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -6093,7 +6093,7 @@
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.285,
             "HR": 9,
@@ -7706,5 +7706,5 @@
       ]
     }
   ],
-  "updated": "2026-08-20T14:06:14Z"
+  "updated": "2026-08-20T15:01:05Z"
 }
