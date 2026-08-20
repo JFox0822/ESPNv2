@@ -1775,13 +1775,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.234,
             "HR": 6,
-            "OPS": 0.7,
+            "OPS": 0.697,
             "R": 32,
             "RBI": 25,
             "SB": 7,
-            "Kbat": 61
+            "Kbat": 62
           },
           "appeared": true,
           "savant": {},
@@ -2124,11 +2124,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 86.2,
-            "H": 75,
-            "WHIP": 1.085,
-            "ERA": 3.219,
-            "K": 92,
+            "IP": 87.0,
+            "H": 76,
+            "WHIP": 1.092,
+            "ERA": 3.207,
+            "K": 93,
             "SVHD": 0,
             "QS": 9
           },
@@ -4555,9 +4555,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.251,
+            "AVG": 0.25,
             "HR": 34,
-            "OPS": 0.878,
+            "OPS": 0.876,
             "R": 77,
             "RBI": 79,
             "SB": 3,
@@ -6791,7 +6791,7 @@
           "stats": {
             "AVG": 0.224,
             "HR": 17,
-            "OPS": 0.739,
+            "OPS": 0.74,
             "R": 61,
             "RBI": 54,
             "SB": 7,
@@ -6941,9 +6941,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.267,
+            "AVG": 0.268,
             "HR": 29,
-            "OPS": 0.857,
+            "OPS": 0.859,
             "R": 78,
             "RBI": 82,
             "SB": 5,
@@ -7521,10 +7521,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 133.0,
+            "IP": 134.0,
             "H": 123,
-            "WHIP": 1.361,
-            "ERA": 3.654,
+            "WHIP": 1.358,
+            "ERA": 3.627,
             "K": 124,
             "SVHD": 0,
             "QS": 12
@@ -7713,5 +7713,5 @@
       ]
     }
   ],
-  "updated": "2026-08-20T22:51:09Z"
+  "updated": "2026-08-20T23:15:37Z"
 }
