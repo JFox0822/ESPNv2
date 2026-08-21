@@ -143,13 +143,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.271,
+            "AVG": 0.27,
             "HR": 21,
-            "OPS": 0.799,
+            "OPS": 0.798,
             "R": 68,
             "RBI": 63,
             "SB": 3,
-            "Kbat": 96
+            "Kbat": 97
           },
           "appeared": true,
           "savant": {},
@@ -698,13 +698,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.281,
+            "AVG": 0.28,
             "HR": 17,
-            "OPS": 0.812,
+            "OPS": 0.81,
             "R": 64,
             "RBI": 50,
             "SB": 13,
-            "Kbat": 103
+            "Kbat": 104
           },
           "appeared": true,
           "savant": {},
@@ -2634,7 +2634,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2718,7 +2718,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2908,7 +2908,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3203,7 +3203,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3673,7 +3673,7 @@
         },
         {
           "name": "Zac Veen",
-          "slot": "OF",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -3868,9 +3868,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.25,
+            "AVG": 0.249,
             "HR": 20,
-            "OPS": 0.723,
+            "OPS": 0.722,
             "R": 72,
             "RBI": 65,
             "SB": 2,
@@ -3885,7 +3885,7 @@
         },
         {
           "name": "Isaac Paredes",
-          "slot": "3B",
+          "slot": "1B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4069,7 +4069,7 @@
         },
         {
           "name": "Nolan Arenado",
-          "slot": "BE",
+          "slot": "3B",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -4161,7 +4161,7 @@
         },
         {
           "name": "Spencer Horwitz",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -4455,13 +4455,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.223,
+            "AVG": 0.222,
             "HR": 15,
-            "OPS": 0.664,
+            "OPS": 0.662,
             "R": 54,
             "RBI": 60,
             "SB": 7,
-            "Kbat": 162
+            "Kbat": 163
           },
           "appeared": true,
           "savant": {},
@@ -4616,9 +4616,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.263,
+            "AVG": 0.265,
             "HR": 16,
-            "OPS": 0.797,
+            "OPS": 0.799,
             "R": 77,
             "RBI": 76,
             "SB": 18,
@@ -4639,11 +4639,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 133.0,
-            "H": 108,
-            "WHIP": 1.023,
-            "ERA": 2.233,
-            "K": 164,
+            "IP": 134.1,
+            "H": 111,
+            "WHIP": 1.035,
+            "ERA": 2.211,
+            "K": 165,
             "SVHD": 0,
             "QS": 15
           },
@@ -4708,11 +4708,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 143.0,
-            "H": 75,
-            "WHIP": 0.748,
-            "ERA": 1.699,
-            "K": 214,
+            "IP": 145.0,
+            "H": 77,
+            "WHIP": 0.759,
+            "ERA": 1.676,
+            "K": 216,
             "SVHD": 0,
             "QS": 15
           },
@@ -4892,9 +4892,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.264,
+            "AVG": 0.263,
             "HR": 10,
-            "OPS": 0.7,
+            "OPS": 0.699,
             "R": 55,
             "RBI": 61,
             "SB": 6,
@@ -5227,9 +5227,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.258,
+            "AVG": 0.26,
             "HR": 12,
-            "OPS": 0.713,
+            "OPS": 0.715,
             "R": 62,
             "RBI": 64,
             "SB": 1,
@@ -5864,9 +5864,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.29,
+            "AVG": 0.291,
             "HR": 20,
-            "OPS": 0.8,
+            "OPS": 0.804,
             "R": 61,
             "RBI": 68,
             "SB": 7,
@@ -7068,9 +7068,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.236,
+            "AVG": 0.235,
             "HR": 13,
-            "OPS": 0.759,
+            "OPS": 0.757,
             "R": 43,
             "RBI": 35,
             "SB": 16,
@@ -7451,9 +7451,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
+            "AVG": 0.259,
             "HR": 36,
-            "OPS": 0.876,
+            "OPS": 0.874,
             "R": 89,
             "RBI": 77,
             "SB": 4,
@@ -7712,5 +7712,5 @@
       ]
     }
   ],
-  "updated": "2026-08-21T21:13:24Z"
+  "updated": "2026-08-21T21:45:03Z"
 }
