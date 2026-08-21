@@ -145,7 +145,7 @@
           "stats": {
             "AVG": 0.271,
             "HR": 21,
-            "OPS": 0.801,
+            "OPS": 0.799,
             "R": 68,
             "RBI": 63,
             "SB": 3,
@@ -698,10 +698,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.279,
+            "AVG": 0.281,
             "HR": 17,
-            "OPS": 0.809,
-            "R": 63,
+            "OPS": 0.812,
+            "R": 64,
             "RBI": 50,
             "SB": 13,
             "Kbat": 103
@@ -3412,7 +3412,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -3868,9 +3868,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.251,
+            "AVG": 0.25,
             "HR": 20,
-            "OPS": 0.725,
+            "OPS": 0.723,
             "R": 72,
             "RBI": 65,
             "SB": 2,
@@ -4161,7 +4161,7 @@
         },
         {
           "name": "Spencer Horwitz",
-          "slot": "BE",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -4314,7 +4314,7 @@
         },
         {
           "name": "Luis Garcia Jr.",
-          "slot": "1B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4618,11 +4618,11 @@
           "stats": {
             "AVG": 0.263,
             "HR": 16,
-            "OPS": 0.798,
+            "OPS": 0.797,
             "R": 77,
             "RBI": 76,
             "SB": 18,
-            "Kbat": 133
+            "Kbat": 134
           },
           "appeared": true,
           "savant": {},
@@ -4639,11 +4639,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 131.0,
-            "H": 105,
-            "WHIP": 1.015,
-            "ERA": 2.13,
-            "K": 161,
+            "IP": 133.0,
+            "H": 108,
+            "WHIP": 1.023,
+            "ERA": 2.233,
+            "K": 164,
             "SVHD": 0,
             "QS": 15
           },
@@ -4708,11 +4708,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 141.2,
+            "IP": 143.0,
             "H": 75,
-            "WHIP": 0.755,
-            "ERA": 1.715,
-            "K": 213,
+            "WHIP": 0.748,
+            "ERA": 1.699,
+            "K": 214,
             "SVHD": 0,
             "QS": 15
           },
@@ -5227,11 +5227,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.257,
+            "AVG": 0.258,
             "HR": 12,
-            "OPS": 0.71,
+            "OPS": 0.713,
             "R": 62,
-            "RBI": 63,
+            "RBI": 64,
             "SB": 1,
             "Kbat": 71
           },
@@ -5812,7 +5812,7 @@
         },
         {
           "name": "Nico Hoerner",
-          "slot": "BE",
+          "slot": "SS",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5835,7 +5835,7 @@
         },
         {
           "name": "Jeremy Pena",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5866,7 +5866,7 @@
           "stats": {
             "AVG": 0.29,
             "HR": 20,
-            "OPS": 0.801,
+            "OPS": 0.8,
             "R": 61,
             "RBI": 68,
             "SB": 7,
@@ -6437,7 +6437,7 @@
         },
         {
           "name": "Cam Schlittler",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6881,7 +6881,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "SP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7453,11 +7453,11 @@
           "stats": {
             "AVG": 0.26,
             "HR": 36,
-            "OPS": 0.877,
+            "OPS": 0.876,
             "R": 89,
             "RBI": 77,
             "SB": 4,
-            "Kbat": 142
+            "Kbat": 143
           },
           "appeared": true,
           "savant": {},
@@ -7712,5 +7712,5 @@
       ]
     }
   ],
-  "updated": "2026-08-21T20:45:33Z"
+  "updated": "2026-08-21T21:13:24Z"
 }
