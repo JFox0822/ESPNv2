@@ -516,7 +516,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 139.0,
             "H": 116,
@@ -5412,29 +5412,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Samuel Basallo",
-          "slot": "BE",
-          "position": "C",
-          "eligible": "C",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.239,
-            "HR": 16,
-            "OPS": 0.747,
-            "R": 34,
-            "RBI": 46,
-            "SB": 0,
-            "Kbat": 85
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 26,
-          "keeperEligible": true
-        },
-        {
           "name": "Louis Varland",
           "slot": "RP",
           "position": "RP",
@@ -5481,7 +5458,7 @@
         },
         {
           "name": "Brandon Marsh",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5504,7 +5481,7 @@
         },
         {
           "name": "Jake Bauers",
-          "slot": "OF",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5542,7 +5519,7 @@
         },
         {
           "name": "Cole Carrigg",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5587,7 +5564,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5635,21 +5612,6 @@
           "savant": {},
           "tier": "",
           "acquisitionType": "TRADE",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Cooper Pratt",
-          "slot": "UTIL",
-          "position": "SS",
-          "eligible": "SS",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
         },
@@ -5719,6 +5681,36 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 8,
+          "keeperEligible": false
+        },
+        {
+          "name": "Kaelen Culpepper",
+          "slot": "BE",
+          "position": "SS",
+          "eligible": "SS",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Griffin Conine",
+          "slot": "OF",
+          "position": "LF",
+          "eligible": "LF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
           "keeperEligible": false
         }
       ]
@@ -7728,5 +7720,5 @@
       ]
     }
   ],
-  "updated": "2026-08-21T13:23:51Z"
+  "updated": "2026-08-21T14:04:07Z"
 }
