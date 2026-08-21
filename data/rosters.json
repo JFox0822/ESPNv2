@@ -3211,7 +3211,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3234,7 +3234,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3416,7 +3416,7 @@
         },
         {
           "name": "Andre Pallante",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3537,7 +3537,7 @@
         },
         {
           "name": "Luis Lara",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3582,7 +3582,7 @@
         },
         {
           "name": "MacKenzie Gore",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3681,7 +3681,7 @@
         },
         {
           "name": "Zac Veen",
-          "slot": "BE",
+          "slot": "OF",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -7728,5 +7728,5 @@
       ]
     }
   ],
-  "updated": "2026-08-21T11:48:54Z"
+  "updated": "2026-08-21T12:24:44Z"
 }
