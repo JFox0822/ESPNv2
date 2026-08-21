@@ -3287,7 +3287,7 @@
         },
         {
           "name": "Braden Montgomery",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3529,7 +3529,7 @@
         },
         {
           "name": "Luis Lara",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4710,7 +4710,7 @@
           "stats": {
             "IP": 139.0,
             "H": 73,
-            "WHIP": 0.748,
+            "WHIP": 0.755,
             "ERA": 1.748,
             "K": 210,
             "SVHD": 0,
@@ -5267,7 +5267,7 @@
         },
         {
           "name": "Teoscar Hernandez",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5556,7 +5556,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5677,7 +5677,7 @@
         },
         {
           "name": "Kaelen Culpepper",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -7070,7 +7070,7 @@
           "stats": {
             "AVG": 0.237,
             "HR": 13,
-            "OPS": 0.76,
+            "OPS": 0.762,
             "R": 43,
             "RBI": 35,
             "SB": 16,
@@ -7712,5 +7712,5 @@
       ]
     }
   ],
-  "updated": "2026-08-21T19:44:12Z"
+  "updated": "2026-08-21T20:13:36Z"
 }
