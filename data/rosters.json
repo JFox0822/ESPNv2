@@ -2026,11 +2026,11 @@
           "stats": {
             "AVG": 0.243,
             "HR": 16,
-            "OPS": 0.721,
+            "OPS": 0.72,
             "R": 85,
             "RBI": 46,
             "SB": 13,
-            "Kbat": 87
+            "Kbat": 88
           },
           "appeared": true,
           "savant": {},
@@ -3870,7 +3870,7 @@
           "stats": {
             "AVG": 0.249,
             "HR": 20,
-            "OPS": 0.722,
+            "OPS": 0.723,
             "R": 72,
             "RBI": 65,
             "SB": 2,
@@ -4455,9 +4455,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.222,
+            "AVG": 0.221,
             "HR": 15,
-            "OPS": 0.661,
+            "OPS": 0.66,
             "R": 54,
             "RBI": 60,
             "SB": 7,
@@ -4645,7 +4645,7 @@
             "ERA": 2.2,
             "K": 166,
             "SVHD": 0,
-            "QS": 15
+            "QS": 16
           },
           "appeared": true,
           "savant": {},
@@ -4714,7 +4714,7 @@
             "ERA": 1.676,
             "K": 216,
             "SVHD": 0,
-            "QS": 15
+            "QS": 16
           },
           "appeared": true,
           "savant": {},
@@ -4892,9 +4892,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.265,
+            "AVG": 0.264,
             "HR": 10,
-            "OPS": 0.701,
+            "OPS": 0.7,
             "R": 55,
             "RBI": 61,
             "SB": 6,
@@ -4915,11 +4915,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 150.1,
-            "H": 127,
-            "WHIP": 1.151,
-            "ERA": 3.233,
-            "K": 185,
+            "IP": 151.1,
+            "H": 129,
+            "WHIP": 1.156,
+            "ERA": 3.33,
+            "K": 186,
             "SVHD": 0,
             "QS": 14
           },
@@ -5227,9 +5227,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
+            "AVG": 0.262,
             "HR": 12,
-            "OPS": 0.715,
+            "OPS": 0.718,
             "R": 62,
             "RBI": 64,
             "SB": 1,
@@ -6163,10 +6163,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.288,
+            "AVG": 0.29,
             "HR": 26,
-            "OPS": 0.854,
-            "R": 79,
+            "OPS": 0.856,
+            "R": 80,
             "RBI": 94,
             "SB": 17,
             "Kbat": 129
@@ -6249,7 +6249,7 @@
           "stats": {
             "AVG": 0.244,
             "HR": 14,
-            "OPS": 0.745,
+            "OPS": 0.744,
             "R": 80,
             "RBI": 53,
             "SB": 7,
@@ -7070,11 +7070,11 @@
           "stats": {
             "AVG": 0.234,
             "HR": 13,
-            "OPS": 0.755,
+            "OPS": 0.752,
             "R": 44,
             "RBI": 35,
             "SB": 16,
-            "Kbat": 78
+            "Kbat": 79
           },
           "appeared": false,
           "savant": {},
@@ -7712,5 +7712,5 @@
       ]
     }
   ],
-  "updated": "2026-08-21T22:12:16Z"
+  "updated": "2026-08-21T22:47:05Z"
 }
