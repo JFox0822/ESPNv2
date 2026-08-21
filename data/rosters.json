@@ -143,13 +143,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.269,
             "HR": 21,
-            "OPS": 0.798,
+            "OPS": 0.796,
             "R": 68,
             "RBI": 63,
             "SB": 3,
-            "Kbat": 97
+            "Kbat": 98
           },
           "appeared": true,
           "savant": {},
@@ -700,7 +700,7 @@
           "stats": {
             "AVG": 0.28,
             "HR": 17,
-            "OPS": 0.81,
+            "OPS": 0.811,
             "R": 64,
             "RBI": 50,
             "SB": 13,
@@ -2718,7 +2718,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -3007,7 +3007,7 @@
         },
         {
           "name": "Luis Rengifo",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -3045,7 +3045,7 @@
         },
         {
           "name": "Angel Martinez",
-          "slot": "2B",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3207,7 +3207,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.285,
             "HR": 13,
@@ -4457,7 +4457,7 @@
           "stats": {
             "AVG": 0.222,
             "HR": 15,
-            "OPS": 0.662,
+            "OPS": 0.661,
             "R": 54,
             "RBI": 60,
             "SB": 7,
@@ -4616,9 +4616,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.265,
+            "AVG": 0.264,
             "HR": 16,
-            "OPS": 0.799,
+            "OPS": 0.797,
             "R": 77,
             "RBI": 76,
             "SB": 18,
@@ -4639,11 +4639,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 134.1,
+            "IP": 135.0,
             "H": 111,
-            "WHIP": 1.035,
-            "ERA": 2.211,
-            "K": 165,
+            "WHIP": 1.03,
+            "ERA": 2.2,
+            "K": 166,
             "SVHD": 0,
             "QS": 15
           },
@@ -4892,9 +4892,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.263,
+            "AVG": 0.265,
             "HR": 10,
-            "OPS": 0.699,
+            "OPS": 0.701,
             "R": 55,
             "RBI": 61,
             "SB": 6,
@@ -5864,11 +5864,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.291,
+            "AVG": 0.293,
             "HR": 20,
-            "OPS": 0.804,
+            "OPS": 0.807,
             "R": 61,
-            "RBI": 68,
+            "RBI": 69,
             "SB": 7,
             "Kbat": 96
           },
@@ -6088,7 +6088,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6378,7 +6378,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6575,7 +6575,7 @@
         },
         {
           "name": "Jo Adell",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7018,7 +7018,7 @@
         },
         {
           "name": "Nathaniel Lowe",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7068,10 +7068,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.234,
             "HR": 13,
-            "OPS": 0.757,
-            "R": 43,
+            "OPS": 0.755,
+            "R": 44,
             "RBI": 35,
             "SB": 16,
             "Kbat": 78
@@ -7451,9 +7451,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.259,
+            "AVG": 0.261,
             "HR": 36,
-            "OPS": 0.874,
+            "OPS": 0.876,
             "R": 89,
             "RBI": 77,
             "SB": 4,
@@ -7712,5 +7712,5 @@
       ]
     }
   ],
-  "updated": "2026-08-21T21:45:03Z"
+  "updated": "2026-08-21T22:12:16Z"
 }
