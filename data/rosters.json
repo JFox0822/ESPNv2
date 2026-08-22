@@ -5160,7 +5160,7 @@
         },
         {
           "name": "Mookie Betts",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5206,7 +5206,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5458,7 +5458,7 @@
         },
         {
           "name": "Brandon Marsh",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5481,7 +5481,7 @@
         },
         {
           "name": "Jake Bauers",
-          "slot": "BE",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5519,7 +5519,7 @@
         },
         {
           "name": "Cole Carrigg",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7720,5 +7720,5 @@
       ]
     }
   ],
-  "updated": "2026-08-22T14:11:18Z"
+  "updated": "2026-08-22T14:44:04Z"
 }
