@@ -15,7 +15,7 @@
       "players": [
         {
           "name": "Cody Bellinger",
-          "slot": "IL",
+          "slot": "BE",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -494,21 +494,6 @@
           "acquisitionType": "TRADE",
           "draftRound": 14,
           "keeperEligible": true
-        },
-        {
-          "name": "Joey Cantillo",
-          "slot": "BE",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
-          "draftRound": 0,
-          "keeperEligible": false
         },
         {
           "name": "Logan Webb",
@@ -7720,5 +7705,5 @@
       ]
     }
   ],
-  "updated": "2026-08-22T15:41:57Z"
+  "updated": "2026-08-22T16:11:23Z"
 }
