@@ -1543,7 +1543,7 @@
         },
         {
           "name": "Ezequiel Duran",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -1588,7 +1588,7 @@
         },
         {
           "name": "Brandon Young",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1633,7 +1633,7 @@
         },
         {
           "name": "Joc Pederson",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -1799,7 +1799,7 @@
         },
         {
           "name": "Shane Drohan",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7720,5 +7720,5 @@
       ]
     }
   ],
-  "updated": "2026-08-22T09:47:49Z"
+  "updated": "2026-08-22T10:12:39Z"
 }
