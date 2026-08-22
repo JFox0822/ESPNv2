@@ -2336,7 +2336,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "SEVEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.263,
             "HR": 7,
@@ -5981,7 +5981,7 @@
         },
         {
           "name": "Jhoan Duran",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6226,7 +6226,7 @@
         },
         {
           "name": "Cristopher Sanchez",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6287,7 +6287,7 @@
         },
         {
           "name": "Kevin Kelly",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6325,7 +6325,7 @@
         },
         {
           "name": "Pete Fairbanks",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7720,5 +7720,5 @@
       ]
     }
   ],
-  "updated": "2026-08-22T16:45:49Z"
+  "updated": "2026-08-22T17:11:21Z"
 }
