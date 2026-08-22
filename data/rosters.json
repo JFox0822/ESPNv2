@@ -143,9 +143,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.269,
+            "AVG": 0.268,
             "HR": 21,
-            "OPS": 0.797,
+            "OPS": 0.795,
             "R": 69,
             "RBI": 63,
             "SB": 3,
@@ -206,7 +206,7 @@
         },
         {
           "name": "Sonny Gray",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -619,7 +619,7 @@
         },
         {
           "name": "Jacob Lopez",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -921,11 +921,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 58.1,
-            "H": 47,
-            "WHIP": 1.149,
-            "ERA": 1.543,
-            "K": 29,
+            "IP": 59.1,
+            "H": 48,
+            "WHIP": 1.146,
+            "ERA": 1.82,
+            "K": 31,
             "SVHD": 26,
             "QS": 0
           },
@@ -990,11 +990,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.307,
+            "AVG": 0.309,
             "HR": 9,
-            "OPS": 0.79,
+            "OPS": 0.793,
             "R": 75,
-            "RBI": 55,
+            "RBI": 57,
             "SB": 25,
             "Kbat": 69
           },
@@ -2338,9 +2338,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.263,
+            "AVG": 0.264,
             "HR": 7,
-            "OPS": 0.692,
+            "OPS": 0.694,
             "R": 62,
             "RBI": 46,
             "SB": 7,
@@ -3664,11 +3664,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 52.1,
-            "H": 39,
-            "WHIP": 1.338,
-            "ERA": 2.924,
-            "K": 65,
+            "IP": 53.2,
+            "H": 40,
+            "WHIP": 1.323,
+            "ERA": 2.851,
+            "K": 67,
             "SVHD": 19,
             "QS": 0
           },
@@ -3861,9 +3861,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.25,
+            "AVG": 0.252,
             "HR": 20,
-            "OPS": 0.723,
+            "OPS": 0.725,
             "R": 72,
             "RBI": 65,
             "SB": 2,
@@ -4131,7 +4131,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4313,11 +4313,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.277,
-            "HR": 25,
-            "OPS": 0.846,
-            "R": 53,
-            "RBI": 80,
+            "AVG": 0.279,
+            "HR": 26,
+            "OPS": 0.856,
+            "R": 54,
+            "RBI": 82,
             "SB": 4,
             "Kbat": 74
           },
@@ -4406,7 +4406,7 @@
         },
         {
           "name": "Michael Massey",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4465,7 +4465,7 @@
           "stats": {
             "AVG": 0.22,
             "HR": 15,
-            "OPS": 0.657,
+            "OPS": 0.658,
             "R": 54,
             "RBI": 60,
             "SB": 7,
@@ -4557,8 +4557,8 @@
           "stats": {
             "AVG": 0.248,
             "HR": 34,
-            "OPS": 0.869,
-            "R": 78,
+            "OPS": 0.871,
+            "R": 79,
             "RBI": 80,
             "SB": 3,
             "Kbat": 133
@@ -5237,7 +5237,7 @@
           "stats": {
             "AVG": 0.264,
             "HR": 12,
-            "OPS": 0.724,
+            "OPS": 0.722,
             "R": 63,
             "RBI": 65,
             "SB": 1,
@@ -5350,11 +5350,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 122.2,
+            "IP": 124.2,
             "H": 87,
-            "WHIP": 1.109,
-            "ERA": 3.228,
-            "K": 133,
+            "WHIP": 1.107,
+            "ERA": 3.176,
+            "K": 134,
             "SVHD": 0,
             "QS": 11
           },
@@ -5820,7 +5820,7 @@
         },
         {
           "name": "Nico Hoerner",
-          "slot": "SS",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5843,11 +5843,11 @@
         },
         {
           "name": "Jeremy Pena",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.283,
             "HR": 14,
@@ -5872,13 +5872,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.295,
+            "AVG": 0.294,
             "HR": 20,
-            "OPS": 0.812,
+            "OPS": 0.811,
             "R": 61,
             "RBI": 70,
             "SB": 7,
-            "Kbat": 96
+            "Kbat": 97
           },
           "appeared": true,
           "savant": {},
@@ -6079,9 +6079,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.285,
+            "AVG": 0.286,
             "HR": 9,
-            "OPS": 0.712,
+            "OPS": 0.717,
             "R": 54,
             "RBI": 43,
             "SB": 5,
@@ -6104,11 +6104,11 @@
           "stats": {
             "AVG": 0.23,
             "HR": 26,
-            "OPS": 0.74,
+            "OPS": 0.738,
             "R": 68,
             "RBI": 74,
             "SB": 1,
-            "Kbat": 156
+            "Kbat": 157
           },
           "appeared": true,
           "savant": {},
@@ -6394,7 +6394,7 @@
           "stats": {
             "AVG": 0.244,
             "HR": 15,
-            "OPS": 0.696,
+            "OPS": 0.694,
             "R": 62,
             "RBI": 66,
             "SB": 12,
@@ -6520,9 +6520,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.286,
+            "AVG": 0.285,
             "HR": 6,
-            "OPS": 0.75,
+            "OPS": 0.748,
             "R": 59,
             "RBI": 47,
             "SB": 19,
@@ -6614,7 +6614,7 @@
           "stats": {
             "AVG": 0.228,
             "HR": 9,
-            "OPS": 0.679,
+            "OPS": 0.678,
             "R": 53,
             "RBI": 44,
             "SB": 10,
@@ -6834,9 +6834,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.226,
+            "AVG": 0.224,
             "HR": 7,
-            "OPS": 0.726,
+            "OPS": 0.721,
             "R": 18,
             "RBI": 21,
             "SB": 8,
@@ -6986,13 +6986,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.273,
             "HR": 2,
-            "OPS": 0.752,
+            "OPS": 0.739,
             "R": 10,
             "RBI": 5,
             "SB": 1,
-            "Kbat": 16
+            "Kbat": 17
           },
           "appeared": true,
           "savant": {},
@@ -7078,11 +7078,11 @@
           "stats": {
             "AVG": 0.231,
             "HR": 13,
-            "OPS": 0.745,
+            "OPS": 0.743,
             "R": 44,
             "RBI": 35,
             "SB": 16,
-            "Kbat": 81
+            "Kbat": 82
           },
           "appeared": false,
           "savant": {},
@@ -7459,9 +7459,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.261,
+            "AVG": 0.26,
             "HR": 36,
-            "OPS": 0.875,
+            "OPS": 0.873,
             "R": 89,
             "RBI": 77,
             "SB": 4,
@@ -7583,7 +7583,7 @@
           "stats": {
             "AVG": 0.24,
             "HR": 12,
-            "OPS": 0.709,
+            "OPS": 0.708,
             "R": 45,
             "RBI": 41,
             "SB": 10,
@@ -7720,5 +7720,5 @@
       ]
     }
   ],
-  "updated": "2026-08-22T20:11:09Z"
+  "updated": "2026-08-22T20:45:02Z"
 }
