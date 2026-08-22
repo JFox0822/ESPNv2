@@ -145,7 +145,7 @@
           "stats": {
             "AVG": 0.269,
             "HR": 21,
-            "OPS": 0.796,
+            "OPS": 0.797,
             "R": 68,
             "RBI": 63,
             "SB": 3,
@@ -2338,10 +2338,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.263,
+            "AVG": 0.262,
             "HR": 7,
-            "OPS": 0.693,
-            "R": 61,
+            "OPS": 0.692,
+            "R": 62,
             "RBI": 46,
             "SB": 7,
             "Kbat": 65
@@ -4229,11 +4229,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 134.0,
-            "H": 123,
-            "WHIP": 1.201,
-            "ERA": 3.56,
-            "K": 140,
+            "IP": 136.0,
+            "H": 125,
+            "WHIP": 1.199,
+            "ERA": 3.574,
+            "K": 142,
             "SVHD": 0,
             "QS": 9
           },
@@ -4315,11 +4315,11 @@
           "stats": {
             "AVG": 0.278,
             "HR": 25,
-            "OPS": 0.849,
+            "OPS": 0.847,
             "R": 53,
             "RBI": 80,
             "SB": 4,
-            "Kbat": 73
+            "Kbat": 74
           },
           "appeared": false,
           "savant": {},
@@ -4557,7 +4557,7 @@
           "stats": {
             "AVG": 0.249,
             "HR": 34,
-            "OPS": 0.875,
+            "OPS": 0.873,
             "R": 78,
             "RBI": 80,
             "SB": 3,
@@ -5373,11 +5373,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 137.2,
+            "IP": 138.2,
             "H": 87,
-            "WHIP": 1.061,
-            "ERA": 2.419,
-            "K": 201,
+            "WHIP": 1.067,
+            "ERA": 2.401,
+            "K": 203,
             "SVHD": 0,
             "QS": 12
           },
@@ -5797,7 +5797,7 @@
         },
         {
           "name": "Jackson Merrill",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6079,9 +6079,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.285,
+            "AVG": 0.284,
             "HR": 9,
-            "OPS": 0.714,
+            "OPS": 0.712,
             "R": 54,
             "RBI": 43,
             "SB": 5,
@@ -6102,13 +6102,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.23,
+            "AVG": 0.229,
             "HR": 26,
-            "OPS": 0.74,
+            "OPS": 0.738,
             "R": 67,
             "RBI": 74,
             "SB": 1,
-            "Kbat": 155
+            "Kbat": 156
           },
           "appeared": true,
           "savant": {},
@@ -6386,7 +6386,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -6798,10 +6798,10 @@
           "stats": {
             "AVG": 0.223,
             "HR": 17,
-            "OPS": 0.737,
+            "OPS": 0.739,
             "R": 62,
             "RBI": 54,
-            "SB": 8,
+            "SB": 9,
             "Kbat": 76
           },
           "appeared": true,
@@ -6836,10 +6836,10 @@
           "stats": {
             "AVG": 0.229,
             "HR": 7,
-            "OPS": 0.731,
+            "OPS": 0.735,
             "R": 18,
             "RBI": 21,
-            "SB": 7,
+            "SB": 8,
             "Kbat": 62
           },
           "appeared": true,
@@ -7292,7 +7292,7 @@
         },
         {
           "name": "Cade Cavalli",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7581,11 +7581,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.237,
             "HR": 12,
-            "OPS": 0.701,
+            "OPS": 0.705,
             "R": 45,
-            "RBI": 40,
+            "RBI": 41,
             "SB": 10,
             "Kbat": 77
           },
@@ -7704,7 +7704,7 @@
         },
         {
           "name": "Tyler Tolbert",
-          "slot": "P",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7720,5 +7720,5 @@
       ]
     }
   ],
-  "updated": "2026-08-22T17:42:12Z"
+  "updated": "2026-08-22T18:14:06Z"
 }
