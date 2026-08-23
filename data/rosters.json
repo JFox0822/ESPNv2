@@ -944,10 +944,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 145.2,
+            "IP": 146.0,
             "H": 147,
-            "WHIP": 1.346,
-            "ERA": 4.016,
+            "WHIP": 1.342,
+            "ERA": 4.007,
             "K": 132,
             "SVHD": 0,
             "QS": 11
@@ -2017,12 +2017,12 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.244,
             "HR": 17,
-            "OPS": 0.723,
+            "OPS": 0.725,
             "R": 86,
             "RBI": 47,
-            "SB": 13,
+            "SB": 14,
             "Kbat": 91
           },
           "appeared": true,
@@ -3916,7 +3916,7 @@
         },
         {
           "name": "Randy Arozarena",
-          "slot": "OF",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -4076,29 +4076,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Jasson Dominguez",
-          "slot": "BE",
-          "position": "LF",
-          "eligible": "LF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.23,
-            "HR": 6,
-            "OPS": 0.65,
-            "R": 21,
-            "RBI": 14,
-            "SB": 7,
-            "Kbat": 46
-          },
-          "appeared": false,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "DRAFT",
-          "draftRound": 23,
-          "keeperEligible": true
-        },
-        {
           "name": "Roki Sasaki",
           "slot": "BE",
           "position": "SP",
@@ -4123,7 +4100,7 @@
         },
         {
           "name": "Jung Hoo Lee",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -4299,7 +4276,7 @@
         },
         {
           "name": "Bryan Baker",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4343,11 +4320,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 50.1,
+            "IP": 50.2,
             "H": 34,
-            "WHIP": 1.232,
-            "ERA": 3.219,
-            "K": 56,
+            "WHIP": 1.224,
+            "ERA": 3.197,
+            "K": 57,
             "SVHD": 0,
             "QS": 3
           },
@@ -4401,6 +4378,21 @@
           "slot": "SP",
           "position": "SP",
           "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Carmen Mlodzinski",
+          "slot": "SP",
+          "position": "RP",
+          "eligible": "RP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -5902,9 +5894,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.306,
+            "AVG": 0.305,
             "HR": 19,
-            "OPS": 0.843,
+            "OPS": 0.842,
             "R": 74,
             "RBI": 72,
             "SB": 3,
@@ -6193,11 +6185,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 161.2,
-            "H": 159,
-            "WHIP": 1.219,
-            "ERA": 2.505,
-            "K": 187,
+            "IP": 162.0,
+            "H": 160,
+            "WHIP": 1.222,
+            "ERA": 2.5,
+            "K": 188,
             "SVHD": 0,
             "QS": 18
           },
@@ -6216,13 +6208,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.242,
+            "AVG": 0.241,
             "HR": 14,
-            "OPS": 0.736,
+            "OPS": 0.735,
             "R": 81,
             "RBI": 53,
             "SB": 7,
-            "Kbat": 105
+            "Kbat": 106
           },
           "appeared": false,
           "savant": {},
@@ -7689,5 +7681,5 @@
       ]
     }
   ],
-  "updated": "2026-08-23T17:11:52Z"
+  "updated": "2026-08-23T17:41:24Z"
 }
