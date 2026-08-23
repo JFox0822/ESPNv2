@@ -5578,21 +5578,6 @@
           "keeperEligible": false
         },
         {
-          "name": "A.J. Ewing",
-          "slot": "BE",
-          "position": "CF",
-          "eligible": "CF",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Chase Meidroth",
           "slot": "BE",
           "position": "SS",
@@ -5696,6 +5681,21 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Brett Bateman",
+          "slot": "BE",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
@@ -7697,5 +7697,5 @@
       ]
     }
   ],
-  "updated": "2026-08-23T13:08:07Z"
+  "updated": "2026-08-23T13:50:35Z"
 }
