@@ -3302,7 +3302,7 @@
         },
         {
           "name": "Kade Anderson",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3461,7 +3461,7 @@
         },
         {
           "name": "Jake Bennett",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3544,7 +3544,7 @@
         },
         {
           "name": "MacKenzie Gore",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3703,27 +3703,19 @@
           "keeperEligible": false
         },
         {
-          "name": "Nick Lodolo",
-          "slot": "BE",
+          "name": "Walker Buehler",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 75.0,
-            "H": 83,
-            "WHIP": 1.52,
-            "ERA": 5.04,
-            "K": 59,
-            "SVHD": 0,
-            "QS": 3
-          },
+          "stats": {},
           "appeared": true,
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 15,
-          "keeperEligible": true
+          "draftRound": 0,
+          "keeperEligible": false
         }
       ]
     },
@@ -3993,7 +3985,7 @@
         },
         {
           "name": "Andrew Abbott",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4284,7 +4276,7 @@
         },
         {
           "name": "Michael Soroka",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4405,19 +4397,27 @@
           "keeperEligible": false
         },
         {
-          "name": "Michael Massey",
-          "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
+          "name": "Bryce Miller",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
-          "stats": {},
+          "stats": {
+            "IP": 89.2,
+            "H": 75,
+            "WHIP": 1.037,
+            "ERA": 3.714,
+            "K": 87,
+            "SVHD": 0,
+            "QS": 3
+          },
           "appeared": true,
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
+          "draftRound": 27,
+          "keeperEligible": true
         }
       ]
     },
@@ -5206,7 +5206,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5275,7 +5275,7 @@
         },
         {
           "name": "Teoscar Hernandez",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5344,7 +5344,7 @@
         },
         {
           "name": "Eury Perez",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5367,7 +5367,7 @@
         },
         {
           "name": "Dylan Cease",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5413,7 +5413,7 @@
         },
         {
           "name": "Louis Varland",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5443,7 +5443,7 @@
         },
         {
           "name": "Logan Henderson",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5495,31 +5495,8 @@
           "keeperEligible": false
         },
         {
-          "name": "Hunter Gaddis",
-          "slot": "BE",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 43.2,
-            "H": 41,
-            "WHIP": 1.351,
-            "ERA": 3.298,
-            "K": 43,
-            "SVHD": 26,
-            "QS": 0
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 17,
-          "keeperEligible": true
-        },
-        {
           "name": "Cole Carrigg",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5617,7 +5594,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "2B",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5647,7 +5624,7 @@
         },
         {
           "name": "Tyler Mahle",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5699,11 +5676,26 @@
           "keeperEligible": false
         },
         {
-          "name": "Griffin Conine",
-          "slot": "OF",
-          "position": "LF",
-          "eligible": "LF",
+          "name": "Tim Tawa",
+          "slot": "2B",
+          "position": "CF",
+          "eligible": "CF",
           "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jonathan Bowlan",
+          "slot": "BE",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
@@ -7705,5 +7697,5 @@
       ]
     }
   ],
-  "updated": "2026-08-23T12:18:09Z"
+  "updated": "2026-08-23T13:08:07Z"
 }
