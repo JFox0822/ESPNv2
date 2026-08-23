@@ -19,7 +19,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.259,
             "HR": 11,
@@ -4219,7 +4219,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 137.1,
             "H": 130,
@@ -7697,5 +7697,5 @@
       ]
     }
   ],
-  "updated": "2026-08-23T14:45:38Z"
+  "updated": "2026-08-23T15:11:57Z"
 }
