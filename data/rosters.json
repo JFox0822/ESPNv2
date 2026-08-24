@@ -1626,7 +1626,7 @@
         },
         {
           "name": "Joc Pederson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -1641,7 +1641,7 @@
         },
         {
           "name": "Joshua Baez",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -1671,7 +1671,7 @@
         },
         {
           "name": "Salvador Perez",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -1822,7 +1822,7 @@
         },
         {
           "name": "Victor Caratini",
-          "slot": "BE",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7650,5 +7650,5 @@
       ]
     }
   ],
-  "updated": "2026-08-24T14:09:34Z"
+  "updated": "2026-08-24T15:06:43Z"
 }
