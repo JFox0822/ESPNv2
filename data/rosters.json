@@ -2359,7 +2359,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.242,
             "HR": 16,
@@ -6827,7 +6827,7 @@
         },
         {
           "name": "Peter Lambert",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7642,5 +7642,5 @@
       ]
     }
   ],
-  "updated": "2026-08-24T19:50:49Z"
+  "updated": "2026-08-24T20:17:41Z"
 }
