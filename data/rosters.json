@@ -777,7 +777,7 @@
         },
         {
           "name": "Jose Altuve",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -800,7 +800,7 @@
         },
         {
           "name": "Willy Adames",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -984,7 +984,7 @@
         },
         {
           "name": "Otto Lopez",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6285,21 +6285,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Pete Fairbanks",
-          "slot": "BE",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 18,
-          "keeperEligible": true
-        },
-        {
           "name": "Josh Bell",
           "slot": "BE",
           "position": "DH",
@@ -7672,5 +7657,5 @@
       ]
     }
   ],
-  "updated": "2026-08-25T20:16:33Z"
+  "updated": "2026-08-25T20:52:14Z"
 }
