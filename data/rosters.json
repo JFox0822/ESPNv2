@@ -2922,29 +2922,6 @@
           "keeperEligible": true
         },
         {
-          "name": "Jordan Lawlar",
-          "slot": "UTIL",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "AVG": 0.281,
-            "HR": 2,
-            "OPS": 0.77,
-            "R": 9,
-            "RBI": 7,
-            "SB": 4,
-            "Kbat": 17
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 27,
-          "keeperEligible": true
-        },
-        {
           "name": "Ty France",
           "slot": "1B",
           "position": "1B",
@@ -3132,6 +3109,29 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Cal Raleigh",
+          "slot": "UTIL",
+          "position": "C",
+          "eligible": "C",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.167,
+            "HR": 17,
+            "OPS": 0.618,
+            "R": 31,
+            "RBI": 51,
+            "SB": 2,
+            "Kbat": 126
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 5,
           "keeperEligible": false
         }
       ]
@@ -7649,5 +7649,5 @@
       ]
     }
   ],
-  "updated": "2026-08-25T10:58:31Z"
+  "updated": "2026-08-25T11:25:22Z"
 }
