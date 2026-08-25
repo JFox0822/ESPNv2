@@ -4518,7 +4518,7 @@
         },
         {
           "name": "Jazz Chisholm Jr.",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -4817,7 +4817,7 @@
         },
         {
           "name": "Colson Montgomery",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -4886,7 +4886,7 @@
         },
         {
           "name": "Mauricio Dubon",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -5047,7 +5047,7 @@
         },
         {
           "name": "Ildemaro Vargas",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5179,7 +5179,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 138.1,
             "H": 121,
@@ -7672,5 +7672,5 @@
       ]
     }
   ],
-  "updated": "2026-08-25T15:11:13Z"
+  "updated": "2026-08-25T16:05:46Z"
 }
