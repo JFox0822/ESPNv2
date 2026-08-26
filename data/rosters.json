@@ -1873,7 +1873,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2195,7 +2195,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2233,7 +2233,7 @@
         },
         {
           "name": "Dustin May",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2248,7 +2248,7 @@
         },
         {
           "name": "Gage Jump",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2332,7 +2332,7 @@
         },
         {
           "name": "Vladimir Guerrero Jr.",
-          "slot": "IL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2458,21 +2458,6 @@
           "acquisitionType": "ADD",
           "draftRound": 25,
           "keeperEligible": true
-        },
-        {
-          "name": "Anthony Kay",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
         },
         {
           "name": "Cody Bradford",
@@ -7634,5 +7619,5 @@
       ]
     }
   ],
-  "updated": "2026-08-26T12:28:39Z"
+  "updated": "2026-08-26T13:33:11Z"
 }
