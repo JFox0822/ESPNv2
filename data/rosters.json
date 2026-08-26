@@ -7084,7 +7084,7 @@
         },
         {
           "name": "Hunter Goodman",
-          "slot": "IL",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7107,7 +7107,7 @@
         },
         {
           "name": "Byron Buxton",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7130,7 +7130,7 @@
         },
         {
           "name": "Oneil Cruz",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7352,7 +7352,7 @@
         },
         {
           "name": "Kyle Harrison",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7443,31 +7443,8 @@
           "keeperEligible": false
         },
         {
-          "name": "Framber Valdez",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 144.2,
-            "H": 148,
-            "WHIP": 1.41,
-            "ERA": 4.355,
-            "K": 111,
-            "SVHD": 0,
-            "QS": 13
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "TRADE",
-          "draftRound": 4,
-          "keeperEligible": false
-        },
-        {
           "name": "Kyle Bradish",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7490,7 +7467,7 @@
         },
         {
           "name": "Ian Seymour",
-          "slot": "P",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7505,7 +7482,7 @@
         },
         {
           "name": "Sean Burke",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7657,5 +7634,5 @@
       ]
     }
   ],
-  "updated": "2026-08-26T11:26:42Z"
+  "updated": "2026-08-26T11:54:03Z"
 }
