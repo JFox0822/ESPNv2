@@ -2244,7 +2244,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -3018,7 +3018,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -3786,7 +3786,7 @@
         },
         {
           "name": "Max Fried",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3947,7 +3947,7 @@
         },
         {
           "name": "Zack Wheeler",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3970,7 +3970,7 @@
         },
         {
           "name": "Tyler Glasnow",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3993,7 +3993,7 @@
         },
         {
           "name": "Andrew Abbott",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4322,7 +4322,7 @@
         },
         {
           "name": "Carlos Rodon",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4341,29 +4341,6 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 14,
-          "keeperEligible": true
-        },
-        {
-          "name": "Bryce Miller",
-          "slot": "BE",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {
-            "IP": 94.0,
-            "H": 77,
-            "WHIP": 1.085,
-            "ERA": 4.117,
-            "K": 92,
-            "SVHD": 0,
-            "QS": 3
-          },
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 27,
           "keeperEligible": true
         },
         {
@@ -7612,5 +7589,5 @@
       ]
     }
   ],
-  "updated": "2026-08-30T08:25:24Z"
+  "updated": "2026-08-30T13:52:29Z"
 }
