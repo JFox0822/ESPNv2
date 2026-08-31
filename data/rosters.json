@@ -235,11 +235,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 143.0,
-            "H": 117,
-            "WHIP": 1.168,
-            "ERA": 2.832,
-            "K": 169,
+            "IP": 145.1,
+            "H": 118,
+            "WHIP": 1.156,
+            "ERA": 2.787,
+            "K": 171,
             "SVHD": 0,
             "QS": 11
           },
@@ -2322,9 +2322,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.22,
+            "AVG": 0.221,
             "HR": 23,
-            "OPS": 0.749,
+            "OPS": 0.75,
             "R": 80,
             "RBI": 61,
             "SB": 4,
@@ -2594,13 +2594,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.282,
-            "HR": 37,
-            "OPS": 0.95,
-            "R": 98,
-            "RBI": 90,
+            "AVG": 0.283,
+            "HR": 38,
+            "OPS": 0.954,
+            "R": 99,
+            "RBI": 91,
             "SB": 32,
-            "Kbat": 159
+            "Kbat": 160
           },
           "appeared": true,
           "savant": {},
@@ -2617,13 +2617,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.24,
+            "AVG": 0.239,
             "HR": 17,
-            "OPS": 0.743,
+            "OPS": 0.74,
             "R": 61,
             "RBI": 68,
             "SB": 2,
-            "Kbat": 138
+            "Kbat": 140
           },
           "appeared": true,
           "savant": {},
@@ -3130,15 +3130,15 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.271,
             "HR": 21,
             "OPS": 0.828,
-            "R": 80,
+            "R": 81,
             "RBI": 60,
             "SB": 24,
-            "Kbat": 143
+            "Kbat": 144
           },
           "appeared": true,
           "savant": {},
@@ -4540,9 +4540,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.276,
+            "AVG": 0.274,
             "HR": 23,
-            "OPS": 0.858,
+            "OPS": 0.853,
             "R": 81,
             "RBI": 79,
             "SB": 3,
@@ -5243,13 +5243,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.264,
-            "HR": 30,
-            "OPS": 0.818,
-            "R": 78,
-            "RBI": 103,
+            "AVG": 0.266,
+            "HR": 31,
+            "OPS": 0.826,
+            "R": 79,
+            "RBI": 104,
             "SB": 12,
-            "Kbat": 129
+            "Kbat": 130
           },
           "appeared": true,
           "savant": {},
@@ -5767,11 +5767,11 @@
           "stats": {
             "AVG": 0.263,
             "HR": 7,
-            "OPS": 0.676,
+            "OPS": 0.675,
             "R": 54,
-            "RBI": 60,
+            "RBI": 61,
             "SB": 22,
-            "Kbat": 51
+            "Kbat": 52
           },
           "appeared": true,
           "savant": {},
@@ -5880,10 +5880,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.254,
+            "AVG": 0.255,
             "HR": 20,
-            "OPS": 0.763,
-            "R": 76,
+            "OPS": 0.766,
+            "R": 77,
             "RBI": 73,
             "SB": 3,
             "Kbat": 96
@@ -6543,11 +6543,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 149.1,
-            "H": 134,
-            "WHIP": 1.132,
-            "ERA": 3.857,
-            "K": 147,
+            "IP": 150.1,
+            "H": 137,
+            "WHIP": 1.144,
+            "ERA": 4.011,
+            "K": 148,
             "SVHD": 0,
             "QS": 11
           },
@@ -6612,10 +6612,10 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 32.1,
-            "H": 25,
-            "WHIP": 1.052,
-            "ERA": 3.897,
+            "IP": 33.1,
+            "H": 26,
+            "WHIP": 1.05,
+            "ERA": 4.05,
             "K": 34,
             "SVHD": 0,
             "QS": 0
@@ -7597,5 +7597,5 @@
       ]
     }
   ],
-  "updated": "2026-08-31T00:59:14Z"
+  "updated": "2026-08-31T06:44:05Z"
 }
