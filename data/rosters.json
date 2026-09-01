@@ -708,7 +708,7 @@
         },
         {
           "name": "Juan Soto",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -823,7 +823,7 @@
         },
         {
           "name": "Spencer Torkelson",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3172,7 +3172,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3195,7 +3195,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3264,7 +3264,7 @@
         },
         {
           "name": "Braden Montgomery",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3347,7 +3347,7 @@
         },
         {
           "name": "Jac Caglianone",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3370,7 +3370,7 @@
         },
         {
           "name": "Keibert Ruiz",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -3385,7 +3385,7 @@
         },
         {
           "name": "Matthew Boyd",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3438,7 +3438,7 @@
         },
         {
           "name": "Aaron Nola",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3491,7 +3491,7 @@
         },
         {
           "name": "MacKenzie Gore",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3575,7 +3575,7 @@
         },
         {
           "name": "Vinnie Pasquantino",
-          "slot": "BE",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3613,7 +3613,7 @@
         },
         {
           "name": "Zebby Matthews",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3628,7 +3628,7 @@
         },
         {
           "name": "Samuel Basallo",
-          "slot": "1B",
+          "slot": "C",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -7123,7 +7123,7 @@
         },
         {
           "name": "Oneil Cruz",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7253,7 +7253,7 @@
         },
         {
           "name": "Ketel Marte",
-          "slot": "BE",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -7460,7 +7460,7 @@
         },
         {
           "name": "Ian Seymour",
-          "slot": "P",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7475,7 +7475,7 @@
         },
         {
           "name": "Sean Burke",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7573,7 +7573,7 @@
         },
         {
           "name": "Pedro Ramirez",
-          "slot": "2B",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -7588,7 +7588,7 @@
         },
         {
           "name": "Luis Robert Jr.",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7611,7 +7611,7 @@
         },
         {
           "name": "Lazaro Montes",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7627,5 +7627,5 @@
       ]
     }
   ],
-  "updated": "2026-09-01T08:59:29Z"
+  "updated": "2026-09-01T13:58:45Z"
 }
