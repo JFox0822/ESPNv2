@@ -65,7 +65,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.279,
             "HR": 30,
@@ -770,7 +770,7 @@
           "stats": {
             "AVG": 0.228,
             "HR": 24,
-            "OPS": 0.73,
+            "OPS": 0.728,
             "R": 64,
             "RBI": 77,
             "SB": 0,
@@ -911,7 +911,7 @@
             "WHIP": 1.181,
             "ERA": 1.867,
             "K": 35,
-            "SVHD": 29,
+            "SVHD": 30,
             "QS": 0
           },
           "appeared": true,
@@ -2795,7 +2795,7 @@
         },
         {
           "name": "Nolan McLean",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2886,7 +2886,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2932,7 +2932,7 @@
         },
         {
           "name": "Ty France",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -3038,7 +3038,7 @@
         },
         {
           "name": "Kevin Gausman",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3210,9 +3210,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.294,
+            "AVG": 0.293,
             "HR": 13,
-            "OPS": 0.819,
+            "OPS": 0.818,
             "R": 55,
             "RBI": 60,
             "SB": 9,
@@ -4819,7 +4819,7 @@
           "stats": {
             "AVG": 0.213,
             "HR": 29,
-            "OPS": 0.727,
+            "OPS": 0.726,
             "R": 64,
             "RBI": 79,
             "SB": 1,
@@ -4984,7 +4984,7 @@
             "ERA": 3.31,
             "K": 93,
             "SVHD": 0,
-            "QS": 6
+            "QS": 7
           },
           "appeared": true,
           "savant": {},
@@ -6004,11 +6004,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.273,
+            "AVG": 0.274,
             "HR": 9,
-            "OPS": 0.684,
+            "OPS": 0.687,
             "R": 56,
-            "RBI": 43,
+            "RBI": 44,
             "SB": 6,
             "Kbat": 54
           },
@@ -6508,11 +6508,11 @@
           "stats": {
             "AVG": 0.241,
             "HR": 20,
-            "OPS": 0.703,
+            "OPS": 0.701,
             "R": 58,
             "RBI": 83,
             "SB": 4,
-            "Kbat": 134
+            "Kbat": 135
           },
           "appeared": true,
           "savant": {},
@@ -7062,9 +7062,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.239,
+            "AVG": 0.241,
             "HR": 11,
-            "OPS": 0.717,
+            "OPS": 0.72,
             "R": 61,
             "RBI": 48,
             "SB": 31,
@@ -7579,7 +7579,7 @@
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "appeared": false,
           "savant": {},
@@ -7629,5 +7629,5 @@
       ]
     }
   ],
-  "updated": "2026-09-03T20:21:11Z"
+  "updated": "2026-09-03T22:40:23Z"
 }
