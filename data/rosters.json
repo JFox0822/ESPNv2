@@ -837,13 +837,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.222,
-            "HR": 21,
-            "OPS": 0.726,
-            "R": 55,
-            "RBI": 65,
+            "AVG": 0.223,
+            "HR": 22,
+            "OPS": 0.732,
+            "R": 56,
+            "RBI": 66,
             "SB": 0,
-            "Kbat": 166
+            "Kbat": 168
           },
           "appeared": true,
           "savant": {},
@@ -1120,11 +1120,11 @@
         },
         {
           "name": "Bryson Stott",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.255,
             "HR": 10,
@@ -1264,7 +1264,7 @@
         },
         {
           "name": "Connor Norby",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -1405,12 +1405,12 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.264,
+            "AVG": 0.275,
             "HR": 2,
-            "OPS": 0.777,
+            "OPS": 0.791,
             "R": 14,
             "RBI": 16,
-            "SB": 1,
+            "SB": 2,
             "Kbat": 25
           },
           "appeared": true,
@@ -2117,11 +2117,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 61.0,
-            "H": 45,
-            "WHIP": 1.082,
-            "ERA": 2.361,
-            "K": 86,
+            "IP": 62.0,
+            "H": 46,
+            "WHIP": 1.081,
+            "ERA": 2.323,
+            "K": 88,
             "SVHD": 0,
             "QS": 0
           },
@@ -2302,11 +2302,11 @@
           "stats": {
             "AVG": 0.265,
             "HR": 8,
-            "OPS": 0.753,
-            "R": 47,
+            "OPS": 0.75,
+            "R": 48,
             "RBI": 36,
             "SB": 0,
-            "Kbat": 66
+            "Kbat": 68
           },
           "appeared": true,
           "savant": {},
@@ -2915,13 +2915,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.274,
+            "AVG": 0.272,
             "HR": 2,
-            "OPS": 0.706,
+            "OPS": 0.702,
             "R": 68,
             "RBI": 27,
             "SB": 9,
-            "Kbat": 53
+            "Kbat": 55
           },
           "appeared": true,
           "savant": {},
@@ -3067,11 +3067,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 39.1,
+            "IP": 41.1,
             "H": 25,
-            "WHIP": 1.297,
-            "ERA": 2.975,
-            "K": 65,
+            "WHIP": 1.234,
+            "ERA": 2.831,
+            "K": 66,
             "SVHD": 23,
             "QS": 0
           },
@@ -3210,12 +3210,12 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.295,
+            "AVG": 0.296,
             "HR": 13,
-            "OPS": 0.822,
+            "OPS": 0.827,
             "R": 56,
             "RBI": 60,
-            "SB": 9,
+            "SB": 10,
             "Kbat": 73
           },
           "appeared": true,
@@ -4360,9 +4360,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.258,
+            "AVG": 0.261,
             "HR": 9,
-            "OPS": 0.721,
+            "OPS": 0.725,
             "R": 46,
             "RBI": 32,
             "SB": 5,
@@ -4480,9 +4480,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.269,
+            "AVG": 0.267,
             "HR": 16,
-            "OPS": 0.806,
+            "OPS": 0.801,
             "R": 66,
             "RBI": 56,
             "SB": 3,
@@ -5444,7 +5444,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "2B",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5482,7 +5482,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "BE",
+          "slot": "2B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6482,7 +6482,7 @@
             "R": 58,
             "RBI": 84,
             "SB": 4,
-            "Kbat": 135
+            "Kbat": 136
           },
           "appeared": true,
           "savant": {},
@@ -6539,7 +6539,7 @@
         },
         {
           "name": "Sandy Alcantara",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6635,7 +6635,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 118.0,
             "H": 93,
@@ -6761,7 +6761,7 @@
         },
         {
           "name": "Nick Martinez",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7011,11 +7011,11 @@
           "stats": {
             "AVG": 0.271,
             "HR": 14,
-            "OPS": 0.782,
+            "OPS": 0.78,
             "R": 87,
             "RBI": 58,
             "SB": 12,
-            "Kbat": 83
+            "Kbat": 84
           },
           "appeared": true,
           "savant": {},
@@ -7032,9 +7032,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.241,
             "HR": 11,
-            "OPS": 0.723,
+            "OPS": 0.718,
             "R": 61,
             "RBI": 48,
             "SB": 31,
@@ -7599,5 +7599,5 @@
       ]
     }
   ],
-  "updated": "2026-09-04T19:43:16Z"
+  "updated": "2026-09-04T21:56:14Z"
 }
