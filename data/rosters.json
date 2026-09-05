@@ -61,7 +61,7 @@
         },
         {
           "name": "Shohei Ohtani",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -114,15 +114,15 @@
         },
         {
           "name": "Geraldo Perdomo",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.254,
+            "AVG": 0.252,
             "HR": 9,
-            "OPS": 0.73,
+            "OPS": 0.726,
             "R": 64,
             "RBI": 47,
             "SB": 20,
@@ -183,7 +183,7 @@
         },
         {
           "name": "Blake Snell",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -206,7 +206,7 @@
         },
         {
           "name": "Sonny Gray",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -367,7 +367,7 @@
         },
         {
           "name": "Michael Wacha",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -657,7 +657,7 @@
         },
         {
           "name": "Matthew Liberatore",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3857,7 +3857,7 @@
           "stats": {
             "AVG": 0.254,
             "HR": 21,
-            "OPS": 0.724,
+            "OPS": 0.726,
             "R": 76,
             "RBI": 68,
             "SB": 3,
@@ -4125,7 +4125,7 @@
         },
         {
           "name": "Taj Bradley",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4316,7 +4316,7 @@
         },
         {
           "name": "Carlos Rodon",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4383,6 +4383,29 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Bailey Ober",
+          "slot": "BE",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 113.1,
+            "H": 109,
+            "WHIP": 1.235,
+            "ERA": 4.368,
+            "K": 79,
+            "SVHD": 0,
+            "QS": 6
+          },
           "appeared": true,
           "savant": {},
           "tier": "",
@@ -5262,7 +5285,7 @@
         },
         {
           "name": "Jacob deGrom",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5331,7 +5354,7 @@
         },
         {
           "name": "Drew Rasmussen",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5595,7 +5618,7 @@
         },
         {
           "name": "Framber Valdez",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5692,7 +5715,7 @@
         },
         {
           "name": "Logan Gilbert",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5738,7 +5761,7 @@
         },
         {
           "name": "Nico Hoerner",
-          "slot": "UTIL",
+          "slot": "2B",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5784,7 +5807,7 @@
         },
         {
           "name": "Michael Harris II",
-          "slot": "BE",
+          "slot": "OF",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5807,7 +5830,7 @@
         },
         {
           "name": "Josh Naylor",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5968,7 +5991,7 @@
         },
         {
           "name": "Ernie Clement",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5991,7 +6014,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6014,7 +6037,7 @@
         },
         {
           "name": "Braxton Ashcraft",
-          "slot": "BE",
+          "slot": "P",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -6083,7 +6106,7 @@
         },
         {
           "name": "Foster Griffin",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6121,7 +6144,7 @@
         },
         {
           "name": "Cristopher Sanchez",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6197,7 +6220,7 @@
         },
         {
           "name": "Luke Keaschall",
-          "slot": "2B",
+          "slot": "UTIL",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -6220,7 +6243,7 @@
         },
         {
           "name": "Josh Bell",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6266,7 +6289,7 @@
         },
         {
           "name": "Tristan Peters",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -7599,5 +7622,5 @@
       ]
     }
   ],
-  "updated": "2026-09-05T06:36:28Z"
+  "updated": "2026-09-05T11:01:49Z"
 }
