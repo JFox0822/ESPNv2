@@ -923,7 +923,7 @@
         },
         {
           "name": "Shane Baz",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -992,7 +992,7 @@
         },
         {
           "name": "Seth Lugo",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -1203,21 +1203,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Sean Manaea",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Rafael Flores Jr.",
           "slot": "C",
           "position": "1B",
@@ -1241,21 +1226,6 @@
           "injStatus": "ACTIVE",
           "stats": {},
           "appeared": false,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
-          "name": "Cal Quantrill",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
@@ -1308,6 +1278,44 @@
             "SVHD": 0,
             "QS": 6
           },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Max Scherzer",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 57.0,
+            "H": 53,
+            "WHIP": 1.386,
+            "ERA": 6.158,
+            "K": 46,
+            "SVHD": 0,
+            "QS": 4
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Ryan Gusto",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {},
           "appeared": true,
           "savant": {},
           "tier": "",
@@ -2528,7 +2536,7 @@
       "players": [
         {
           "name": "Yordan Alvarez",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -2886,7 +2894,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2947,7 +2955,7 @@
         },
         {
           "name": "Angel Martinez",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -3204,7 +3212,7 @@
         },
         {
           "name": "Chase DeLauter",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3227,7 +3235,7 @@
         },
         {
           "name": "Mickey Moniak",
-          "slot": "BE",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -3493,7 +3501,7 @@
         },
         {
           "name": "Brandon Pfaadt",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -3630,7 +3638,7 @@
         },
         {
           "name": "Zebby Matthews",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -6303,7 +6311,7 @@
           "keeperEligible": false
         },
         {
-          "name": "Ben Joyce",
+          "name": "Brent Headrick",
           "slot": "RP",
           "position": "RP",
           "eligible": "RP",
@@ -7363,7 +7371,7 @@
         },
         {
           "name": "Parker Messick",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7470,7 +7478,7 @@
         },
         {
           "name": "Sean Burke",
-          "slot": "P",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7622,5 +7630,5 @@
       ]
     }
   ],
-  "updated": "2026-09-05T11:01:49Z"
+  "updated": "2026-09-05T13:55:17Z"
 }
