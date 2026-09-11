@@ -4762,7 +4762,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.27,
             "HR": 17,
@@ -5124,7 +5124,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5459,7 +5459,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -6249,21 +6249,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Michael Arroyo",
-          "slot": "BE",
-          "position": "2B",
-          "eligible": "2B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Cristian Javier",
           "slot": "BE",
           "position": "SP",
@@ -6276,6 +6261,29 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 27,
+          "keeperEligible": true
+        },
+        {
+          "name": "Merrill Kelly",
+          "slot": "P",
+          "position": "SP",
+          "eligible": "SP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 147.2,
+            "H": 153,
+            "WHIP": 1.47,
+            "ERA": 5.059,
+            "K": 99,
+            "SVHD": 0,
+            "QS": 9
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 21,
           "keeperEligible": true
         }
       ]
@@ -7575,5 +7583,5 @@
       ]
     }
   ],
-  "updated": "2026-09-11T11:36:03Z"
+  "updated": "2026-09-11T15:29:43Z"
 }
