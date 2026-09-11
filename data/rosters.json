@@ -38,7 +38,7 @@
         },
         {
           "name": "Freddie Freeman",
-          "slot": "1B",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -160,7 +160,7 @@
         },
         {
           "name": "Alec Burleson",
-          "slot": "BE",
+          "slot": "1B",
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
@@ -1011,7 +1011,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -2000,7 +2000,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.237,
             "HR": 12,
@@ -2323,10 +2323,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.219,
+            "AVG": 0.22,
             "HR": 23,
-            "OPS": 0.737,
-            "R": 82,
+            "OPS": 0.739,
+            "R": 83,
             "RBI": 65,
             "SB": 4,
             "Kbat": 180
@@ -2509,7 +2509,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.31,
             "HR": 38,
@@ -2528,11 +2528,11 @@
         },
         {
           "name": "Corbin Carroll",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.24,
             "HR": 19,
@@ -2603,11 +2603,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.28,
+            "AVG": 0.281,
             "HR": 41,
             "OPS": 0.946,
-            "R": 110,
-            "RBI": 97,
+            "R": 111,
+            "RBI": 98,
             "SB": 36,
             "Kbat": 173
           },
@@ -2626,11 +2626,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.235,
+            "AVG": 0.237,
             "HR": 18,
-            "OPS": 0.731,
-            "R": 66,
-            "RBI": 72,
+            "OPS": 0.736,
+            "R": 68,
+            "RBI": 75,
             "SB": 2,
             "Kbat": 149
           },
@@ -2689,7 +2689,7 @@
         },
         {
           "name": "Travis Bazzana",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -2802,7 +2802,7 @@
         },
         {
           "name": "Bo Bichette",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2913,7 +2913,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "OUT",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -2939,7 +2939,7 @@
         },
         {
           "name": "Trevor Story",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3317,13 +3317,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.265,
+            "AVG": 0.266,
             "HR": 5,
-            "OPS": 0.716,
+            "OPS": 0.715,
             "R": 38,
             "RBI": 27,
             "SB": 22,
-            "Kbat": 72
+            "Kbat": 73
           },
           "appeared": true,
           "savant": {},
@@ -4557,11 +4557,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.266,
+            "AVG": 0.27,
             "HR": 24,
-            "OPS": 0.839,
-            "R": 88,
-            "RBI": 80,
+            "OPS": 0.848,
+            "R": 91,
+            "RBI": 81,
             "SB": 3,
             "Kbat": 138
           },
@@ -4764,9 +4764,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.27,
+            "AVG": 0.269,
             "HR": 17,
-            "OPS": 0.788,
+            "OPS": 0.784,
             "R": 54,
             "RBI": 69,
             "SB": 1,
@@ -4963,11 +4963,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.264,
-            "HR": 16,
-            "OPS": 0.793,
-            "R": 98,
-            "RBI": 69,
+            "AVG": 0.265,
+            "HR": 17,
+            "OPS": 0.8,
+            "R": 99,
+            "RBI": 70,
             "SB": 9,
             "Kbat": 148
           },
@@ -5128,7 +5128,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.219,
             "HR": 22,
@@ -5380,7 +5380,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -5721,11 +5721,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.266,
+            "AVG": 0.267,
             "HR": 8,
-            "OPS": 0.677,
+            "OPS": 0.68,
             "R": 58,
-            "RBI": 65,
+            "RBI": 66,
             "SB": 22,
             "Kbat": 56
           },
@@ -5836,11 +5836,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.26,
-            "HR": 24,
-            "OPS": 0.789,
-            "R": 84,
-            "RBI": 82,
+            "AVG": 0.263,
+            "HR": 25,
+            "OPS": 0.8,
+            "R": 86,
+            "RBI": 84,
             "SB": 3,
             "Kbat": 99
           },
@@ -6174,7 +6174,7 @@
         },
         {
           "name": "Josh Bell",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6220,7 +6220,7 @@
         },
         {
           "name": "Tristan Peters",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -6514,13 +6514,13 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 157.1,
-            "H": 143,
-            "WHIP": 1.131,
-            "ERA": 3.947,
-            "K": 153,
+            "IP": 162.1,
+            "H": 145,
+            "WHIP": 1.121,
+            "ERA": 3.881,
+            "K": 156,
             "SVHD": 0,
-            "QS": 12
+            "QS": 13
           },
           "appeared": true,
           "savant": {},
@@ -7093,9 +7093,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.278,
+            "AVG": 0.277,
             "HR": 18,
-            "OPS": 0.852,
+            "OPS": 0.851,
             "R": 56,
             "RBI": 63,
             "SB": 27,
@@ -7324,7 +7324,7 @@
         },
         {
           "name": "Parker Messick",
-          "slot": "BE",
+          "slot": "P",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7416,7 +7416,7 @@
         },
         {
           "name": "Ian Seymour",
-          "slot": "P",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -7583,5 +7583,5 @@
       ]
     }
   ],
-  "updated": "2026-09-11T18:42:12Z"
+  "updated": "2026-09-11T21:25:42Z"
 }
