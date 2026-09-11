@@ -61,7 +61,7 @@
         },
         {
           "name": "Shohei Ohtani",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -114,7 +114,7 @@
         },
         {
           "name": "Geraldo Perdomo",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2603,13 +2603,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.281,
+            "AVG": 0.28,
             "HR": 41,
-            "OPS": 0.948,
+            "OPS": 0.946,
             "R": 110,
             "RBI": 97,
             "SB": 36,
-            "Kbat": 172
+            "Kbat": 173
           },
           "appeared": true,
           "savant": {},
@@ -2628,7 +2628,7 @@
           "stats": {
             "AVG": 0.235,
             "HR": 18,
-            "OPS": 0.733,
+            "OPS": 0.731,
             "R": 66,
             "RBI": 72,
             "SB": 2,
@@ -3317,10 +3317,10 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.262,
+            "AVG": 0.265,
             "HR": 5,
-            "OPS": 0.703,
-            "R": 37,
+            "OPS": 0.716,
+            "R": 38,
             "RBI": 27,
             "SB": 22,
             "Kbat": 72
@@ -4557,9 +4557,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.267,
+            "AVG": 0.266,
             "HR": 24,
-            "OPS": 0.841,
+            "OPS": 0.839,
             "R": 88,
             "RBI": 80,
             "SB": 3,
@@ -4965,7 +4965,7 @@
           "stats": {
             "AVG": 0.264,
             "HR": 16,
-            "OPS": 0.794,
+            "OPS": 0.793,
             "R": 98,
             "RBI": 69,
             "SB": 9,
@@ -6514,11 +6514,11 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 156.1,
-            "H": 140,
-            "WHIP": 1.119,
-            "ERA": 3.915,
-            "K": 152,
+            "IP": 157.1,
+            "H": 143,
+            "WHIP": 1.131,
+            "ERA": 3.947,
+            "K": 153,
             "SVHD": 0,
             "QS": 12
           },
@@ -7093,11 +7093,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.276,
+            "AVG": 0.278,
             "HR": 18,
-            "OPS": 0.848,
+            "OPS": 0.852,
             "R": 56,
-            "RBI": 62,
+            "RBI": 63,
             "SB": 27,
             "Kbat": 125
           },
@@ -7583,5 +7583,5 @@
       ]
     }
   ],
-  "updated": "2026-09-11T15:29:43Z"
+  "updated": "2026-09-11T18:42:12Z"
 }
