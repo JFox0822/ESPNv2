@@ -1615,7 +1615,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -2209,9 +2209,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.298,
+            "AVG": 0.297,
             "HR": 15,
-            "OPS": 0.846,
+            "OPS": 0.844,
             "R": 62,
             "RBI": 67,
             "SB": 0,
@@ -2283,7 +2283,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -2528,11 +2528,11 @@
       "players": [
         {
           "name": "Yordan Alvarez",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.31,
             "HR": 38,
@@ -2962,7 +2962,7 @@
         },
         {
           "name": "Trevor Story",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -3376,7 +3376,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.282,
             "HR": 23,
@@ -4473,11 +4473,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.281,
-            "HR": 19,
-            "OPS": 0.847,
-            "R": 72,
-            "RBI": 68,
+            "AVG": 0.282,
+            "HR": 20,
+            "OPS": 0.855,
+            "R": 73,
+            "RBI": 70,
             "SB": 3,
             "Kbat": 144
           },
@@ -5155,7 +5155,7 @@
         },
         {
           "name": "William Contreras",
-          "slot": "C",
+          "slot": "BE",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5201,7 +5201,7 @@
         },
         {
           "name": "Teoscar Hernandez",
-          "slot": "OF",
+          "slot": "BE",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5354,7 +5354,7 @@
         },
         {
           "name": "Josh Jung",
-          "slot": "IL",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5384,7 +5384,7 @@
         },
         {
           "name": "Jake Bauers",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5429,7 +5429,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "2B",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5467,7 +5467,7 @@
         },
         {
           "name": "Chase Meidroth",
-          "slot": "BE",
+          "slot": "2B",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5497,7 +5497,7 @@
         },
         {
           "name": "Alec Bohm",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5516,21 +5516,6 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 8,
-          "keeperEligible": false
-        },
-        {
-          "name": "Kaelen Culpepper",
-          "slot": "BE",
-          "position": "SS",
-          "eligible": "SS",
-          "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
           "keeperEligible": false
         },
         {
@@ -5587,11 +5572,11 @@
           "keeperEligible": false
         },
         {
-          "name": "Jackson Jobe",
-          "slot": "SP",
-          "position": "SP",
-          "eligible": "SP",
-          "isPitcher": true,
+          "name": "Nathan Lukes",
+          "slot": "BE",
+          "position": "RF",
+          "eligible": "RF",
+          "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
@@ -5602,10 +5587,10 @@
           "keeperEligible": false
         },
         {
-          "name": "Nathan Lukes",
-          "slot": "UTIL",
-          "position": "RF",
-          "eligible": "RF",
+          "name": "Leo Bernal",
+          "slot": "C",
+          "position": "C",
+          "eligible": "C",
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {},
@@ -6026,7 +6011,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.282,
             "HR": 28,
@@ -6993,9 +6978,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.272,
+            "AVG": 0.271,
             "HR": 17,
-            "OPS": 0.794,
+            "OPS": 0.793,
             "R": 91,
             "RBI": 63,
             "SB": 12,
@@ -7276,9 +7261,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.246,
+            "AVG": 0.245,
             "HR": 27,
-            "OPS": 0.766,
+            "OPS": 0.765,
             "R": 67,
             "RBI": 87,
             "SB": 0,
@@ -7366,7 +7351,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "FIFTEEN_DAY_DL",
           "stats": {
             "IP": 155.0,
             "H": 156,
@@ -7567,5 +7552,5 @@
       ]
     }
   ],
-  "updated": "2026-09-13T12:09:21Z"
+  "updated": "2026-09-13T16:30:43Z"
 }
