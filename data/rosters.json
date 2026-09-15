@@ -2643,7 +2643,7 @@
         },
         {
           "name": "Michael Busch",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2825,7 +2825,7 @@
         },
         {
           "name": "Bo Bichette",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -2886,7 +2886,7 @@
         },
         {
           "name": "Jonathan Aranda",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -2947,7 +2947,7 @@
         },
         {
           "name": "Trevor Story",
-          "slot": "BE",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5094,7 +5094,7 @@
         },
         {
           "name": "Mookie Betts",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5140,7 +5140,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "SS",
+          "slot": "BE",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5163,7 +5163,7 @@
         },
         {
           "name": "William Contreras",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -5209,7 +5209,7 @@
         },
         {
           "name": "Teoscar Hernandez",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -5392,7 +5392,7 @@
         },
         {
           "name": "Jake Bauers",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5407,7 +5407,7 @@
         },
         {
           "name": "Cole Carrigg",
-          "slot": "OF",
+          "slot": "BE",
           "position": "CF",
           "eligible": "CF",
           "isPitcher": false,
@@ -5437,7 +5437,7 @@
         },
         {
           "name": "Tommy Edman",
-          "slot": "OF",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5490,7 +5490,7 @@
         },
         {
           "name": "Alec Bohm",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -5566,7 +5566,7 @@
         },
         {
           "name": "Nathan Lukes",
-          "slot": "UTIL",
+          "slot": "OF",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7118,7 +7118,7 @@
         },
         {
           "name": "Willson Contreras",
-          "slot": "IL",
+          "slot": "BE",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -7309,7 +7309,7 @@
         },
         {
           "name": "Kyle Bradish",
-          "slot": "BE",
+          "slot": "IL",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -7444,21 +7444,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Pedro Ramirez",
-          "slot": "BE",
-          "position": "3B",
-          "eligible": "3B",
-          "isPitcher": false,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": false,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Lazaro Montes",
           "slot": "UTIL",
           "position": "RF",
@@ -7510,9 +7495,32 @@
           "acquisitionType": "ADD",
           "draftRound": 0,
           "keeperEligible": false
+        },
+        {
+          "name": "Jordan Lawlar",
+          "slot": "BE",
+          "position": "3B",
+          "eligible": "3B",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.267,
+            "HR": 5,
+            "OPS": 0.795,
+            "R": 15,
+            "RBI": 13,
+            "SB": 5,
+            "Kbat": 31
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 27,
+          "keeperEligible": true
         }
       ]
     }
   ],
-  "updated": "2026-09-15T10:39:47Z"
+  "updated": "2026-09-15T15:20:18Z"
 }
