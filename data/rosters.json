@@ -2211,7 +2211,7 @@
           "stats": {
             "AVG": 0.301,
             "HR": 15,
-            "OPS": 0.848,
+            "OPS": 0.849,
             "R": 62,
             "RBI": 69,
             "SB": 0,
@@ -3203,9 +3203,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.243,
+            "AVG": 0.245,
             "HR": 22,
-            "OPS": 0.77,
+            "OPS": 0.773,
             "R": 48,
             "RBI": 64,
             "SB": 1,
@@ -4080,7 +4080,7 @@
         },
         {
           "name": "Taj Bradley",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -4414,7 +4414,7 @@
           "stats": {
             "AVG": 0.286,
             "HR": 23,
-            "OPS": 0.818,
+            "OPS": 0.817,
             "R": 91,
             "RBI": 78,
             "SB": 35,
@@ -4665,13 +4665,13 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {
-            "IP": 179.0,
-            "H": 139,
-            "WHIP": 1.145,
-            "ERA": 3.017,
-            "K": 152,
+            "IP": 181.0,
+            "H": 142,
+            "WHIP": 1.16,
+            "ERA": 3.033,
+            "K": 154,
             "SVHD": 0,
-            "QS": 17
+            "QS": 18
           },
           "appeared": true,
           "savant": {},
@@ -5709,7 +5709,7 @@
           "stats": {
             "AVG": 0.256,
             "HR": 25,
-            "OPS": 0.75,
+            "OPS": 0.748,
             "R": 80,
             "RBI": 85,
             "SB": 26,
@@ -6866,13 +6866,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.227,
+            "AVG": 0.226,
             "HR": 12,
-            "OPS": 0.664,
+            "OPS": 0.661,
             "R": 61,
             "RBI": 56,
             "SB": 21,
-            "Kbat": 103
+            "Kbat": 105
           },
           "appeared": true,
           "savant": {},
@@ -7561,5 +7561,5 @@
       ]
     }
   ],
-  "updated": "2026-09-17T20:43:52Z"
+  "updated": "2026-09-17T23:14:40Z"
 }
