@@ -5347,7 +5347,7 @@
         },
         {
           "name": "Louis Varland",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5580,11 +5580,11 @@
           "keeperEligible": false
         },
         {
-          "name": "Leo Bernal",
-          "slot": "BE",
-          "position": "C",
-          "eligible": "C",
-          "isPitcher": false,
+          "name": "Bennett Sousa",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
@@ -5592,6 +5592,29 @@
           "tier": "",
           "acquisitionType": "ADD",
           "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Jakob Marsee",
+          "slot": "BE",
+          "position": "CF",
+          "eligible": "CF",
+          "isPitcher": false,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "AVG": 0.227,
+            "HR": 11,
+            "OPS": 0.702,
+            "R": 78,
+            "RBI": 39,
+            "SB": 23,
+            "Kbat": 120
+          },
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 9,
           "keeperEligible": false
         }
       ]
@@ -7538,5 +7561,5 @@
       ]
     }
   ],
-  "updated": "2026-09-17T08:47:06Z"
+  "updated": "2026-09-17T13:55:19Z"
 }
