@@ -1927,7 +1927,7 @@
         },
         {
           "name": "Paul Skenes",
-          "slot": "BE",
+          "slot": "SP",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -2226,7 +2226,7 @@
         },
         {
           "name": "Michael McGreevy",
-          "slot": "SP",
+          "slot": "BE",
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
@@ -5132,7 +5132,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5339,7 +5339,7 @@
         },
         {
           "name": "Louis Varland",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5543,7 +5543,7 @@
         },
         {
           "name": "Mason Montgomery",
-          "slot": "RP",
+          "slot": "BE",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -5558,7 +5558,7 @@
         },
         {
           "name": "Nathan Lukes",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7553,5 +7553,5 @@
       ]
     }
   ],
-  "updated": "2026-09-18T11:31:53Z"
+  "updated": "2026-09-18T15:25:05Z"
 }
