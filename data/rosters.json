@@ -95,7 +95,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "TEN_DAY_DL",
           "stats": {
             "AVG": 0.241,
             "HR": 18,
@@ -5541,21 +5541,6 @@
           "keeperEligible": false
         },
         {
-          "name": "Bennett Sousa",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
-          "isPitcher": true,
-          "injStatus": "ACTIVE",
-          "stats": {},
-          "appeared": true,
-          "savant": {},
-          "tier": "",
-          "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
-        },
-        {
           "name": "Jakob Marsee",
           "slot": "UTIL",
           "position": "CF",
@@ -5586,6 +5571,29 @@
           "isPitcher": true,
           "injStatus": "ACTIVE",
           "stats": {},
+          "appeared": true,
+          "savant": {},
+          "tier": "",
+          "acquisitionType": "ADD",
+          "draftRound": 0,
+          "keeperEligible": false
+        },
+        {
+          "name": "Juan Morillo",
+          "slot": "RP",
+          "position": "RP",
+          "eligible": "RP",
+          "isPitcher": true,
+          "injStatus": "ACTIVE",
+          "stats": {
+            "IP": 60.1,
+            "H": 41,
+            "WHIP": 1.044,
+            "ERA": 2.238,
+            "K": 70,
+            "SVHD": 18,
+            "QS": 0
+          },
           "appeared": true,
           "savant": {},
           "tier": "",
@@ -5700,7 +5708,7 @@
         },
         {
           "name": "Nico Hoerner",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
@@ -5769,7 +5777,7 @@
         },
         {
           "name": "Josh Naylor",
-          "slot": "UTIL",
+          "slot": "1B",
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
@@ -5792,11 +5800,11 @@
         },
         {
           "name": "Yandy Diaz",
-          "slot": "1B",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "DAY_TO_DAY",
           "stats": {
             "AVG": 0.293,
             "HR": 22,
@@ -5930,7 +5938,7 @@
         },
         {
           "name": "Kazuma Okamoto",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "3B",
           "eligible": "3B",
           "isPitcher": false,
@@ -6167,7 +6175,7 @@
         },
         {
           "name": "Daylen Lile",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
@@ -7537,5 +7545,5 @@
       ]
     }
   ],
-  "updated": "2026-09-19T14:33:41Z"
+  "updated": "2026-09-19T17:34:59Z"
 }
