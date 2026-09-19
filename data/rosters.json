@@ -411,11 +411,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.269,
+            "AVG": 0.268,
             "HR": 8,
-            "OPS": 0.756,
+            "OPS": 0.752,
             "R": 75,
-            "RBI": 45,
+            "RBI": 46,
             "SB": 18,
             "Kbat": 81
           },
@@ -1405,9 +1405,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.277,
+            "AVG": 0.274,
             "HR": 3,
-            "OPS": 0.795,
+            "OPS": 0.785,
             "R": 26,
             "RBI": 22,
             "SB": 5,
@@ -3353,7 +3353,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.277,
             "HR": 23,
@@ -4465,9 +4465,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.283,
+            "AVG": 0.286,
             "HR": 21,
-            "OPS": 0.853,
+            "OPS": 0.855,
             "R": 76,
             "RBI": 75,
             "SB": 3,
@@ -4787,13 +4787,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.206,
+            "AVG": 0.205,
             "HR": 31,
-            "OPS": 0.713,
+            "OPS": 0.711,
             "R": 69,
             "RBI": 87,
             "SB": 1,
-            "Kbat": 213
+            "Kbat": 215
           },
           "appeared": true,
           "savant": {},
@@ -5078,7 +5078,7 @@
         },
         {
           "name": "Mookie Betts",
-          "slot": "SS",
+          "slot": "UTIL",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5124,7 +5124,7 @@
         },
         {
           "name": "Gunnar Henderson",
-          "slot": "UTIL",
+          "slot": "SS",
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
@@ -5804,7 +5804,7 @@
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.293,
             "HR": 22,
@@ -6400,13 +6400,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.203,
+            "AVG": 0.204,
             "HR": 32,
-            "OPS": 0.811,
+            "OPS": 0.812,
             "R": 77,
-            "RBI": 68,
+            "RBI": 69,
             "SB": 1,
-            "Kbat": 185
+            "Kbat": 186
           },
           "appeared": true,
           "savant": {},
@@ -6463,7 +6463,7 @@
         },
         {
           "name": "Christian Yelich",
-          "slot": "UTIL",
+          "slot": "BE",
           "position": "DH",
           "eligible": "DH",
           "isPitcher": false,
@@ -6685,7 +6685,7 @@
         },
         {
           "name": "Liam Hicks",
-          "slot": "BE",
+          "slot": "UTIL",
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
@@ -6963,11 +6963,11 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.277,
+            "AVG": 0.276,
             "HR": 17,
-            "OPS": 0.806,
+            "OPS": 0.803,
             "R": 95,
-            "RBI": 69,
+            "RBI": 70,
             "SB": 12,
             "Kbat": 91
           },
@@ -7545,5 +7545,5 @@
       ]
     }
   ],
-  "updated": "2026-09-19T17:34:59Z"
+  "updated": "2026-09-19T19:44:49Z"
 }
