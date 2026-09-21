@@ -2321,7 +2321,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 93.2,
             "H": 61,
@@ -3482,7 +3482,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 165.2,
             "H": 155,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-09-21T15:12:27Z"
+  "updated": "2026-09-21T20:02:52Z"
 }
