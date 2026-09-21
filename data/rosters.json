@@ -4361,19 +4361,19 @@
           "keeperEligible": false
         },
         {
-          "name": "Brock Burke",
-          "slot": "RP",
-          "position": "RP",
-          "eligible": "RP",
+          "name": "Justin Steele",
+          "slot": "SP",
+          "position": "SP",
+          "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "ACTIVE",
+          "injStatus": "SIXTY_DAY_DL",
           "stats": {},
           "appeared": true,
           "savant": {},
           "tier": "",
           "acquisitionType": "ADD",
-          "draftRound": 0,
-          "keeperEligible": false
+          "draftRound": 23,
+          "keeperEligible": true
         }
       ]
     },
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-09-21T02:17:50Z"
+  "updated": "2026-09-21T08:04:37Z"
 }
