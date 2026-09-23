@@ -2367,7 +2367,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.263,
             "HR": 9,
@@ -3604,7 +3604,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "SEVEN_DAY_DL",
           "stats": {
             "AVG": 0.222,
             "HR": 18,
@@ -4465,9 +4465,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.284,
+            "AVG": 0.283,
             "HR": 21,
-            "OPS": 0.852,
+            "OPS": 0.85,
             "R": 78,
             "RBI": 75,
             "SB": 3,
@@ -5873,7 +5873,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 32.0,
             "H": 21,
@@ -6940,9 +6940,9 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.276,
+            "AVG": 0.275,
             "HR": 17,
-            "OPS": 0.801,
+            "OPS": 0.8,
             "R": 95,
             "RBI": 70,
             "SB": 12,
@@ -7200,13 +7200,13 @@
           "isPitcher": false,
           "injStatus": "ACTIVE",
           "stats": {
-            "AVG": 0.265,
+            "AVG": 0.264,
             "HR": 30,
-            "OPS": 0.897,
+            "OPS": 0.895,
             "R": 104,
             "RBI": 76,
             "SB": 21,
-            "Kbat": 174
+            "Kbat": 175
           },
           "appeared": true,
           "savant": {},
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-09-23T12:29:33Z"
+  "updated": "2026-09-23T17:22:18Z"
 }
