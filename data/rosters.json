@@ -432,7 +432,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.311,
             "HR": 16,
@@ -720,7 +720,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.278,
             "HR": 27,
@@ -1781,7 +1781,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "TEN_DAY_DL",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -2689,7 +2689,7 @@
         },
         {
           "name": "Riley O'Brien",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -3008,7 +3008,7 @@
         },
         {
           "name": "Erik Sabrowski",
-          "slot": "BE",
+          "slot": "RP",
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
@@ -4877,7 +4877,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 178.2,
             "H": 141,
@@ -4900,7 +4900,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "OUT",
+          "injStatus": "DAY_TO_DAY",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -7099,7 +7099,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.276,
             "HR": 27,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-09-27T13:09:32Z"
+  "updated": "2026-09-27T17:51:17Z"
 }
