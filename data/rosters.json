@@ -1426,7 +1426,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "OUT",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 155.0,
             "H": 126,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-09-29T02:06:22Z"
+  "updated": "2026-09-29T08:46:39Z"
 }
