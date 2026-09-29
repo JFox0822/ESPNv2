@@ -2390,7 +2390,7 @@
           "position": "LF",
           "eligible": "LF",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.239,
             "HR": 21,
@@ -4532,7 +4532,7 @@
           "position": "SS",
           "eligible": "SS",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "OUT",
           "stats": {
             "AVG": 0.227,
             "HR": 20,
@@ -6352,7 +6352,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.28,
             "HR": 6,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-09-28T22:10:57Z"
+  "updated": "2026-09-29T02:06:22Z"
 }
