@@ -1781,7 +1781,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "OUT",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -6582,7 +6582,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "OUT",
           "stats": {
             "IP": 118.0,
             "H": 93,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-10-02T20:00:06Z"
+  "updated": "2026-10-02T23:37:03Z"
 }
