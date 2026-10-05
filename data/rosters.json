@@ -3035,7 +3035,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "OUT",
           "stats": {
             "AVG": 0.182,
             "HR": 23,
@@ -5758,7 +5758,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "OUT",
           "stats": {
             "AVG": 0.261,
             "HR": 10,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-10-05T09:17:40Z"
+  "updated": "2026-10-05T18:37:44Z"
 }
