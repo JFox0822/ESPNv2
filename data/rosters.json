@@ -432,7 +432,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.311,
             "HR": 16,
@@ -4900,7 +4900,7 @@
           "position": "1B",
           "eligible": "1B",
           "isPitcher": false,
-          "injStatus": "DAY_TO_DAY",
+          "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-10-06T00:28:02Z"
+  "updated": "2026-10-06T06:40:28Z"
 }
