@@ -1713,7 +1713,7 @@
           "position": "2B",
           "eligible": "2B",
           "isPitcher": false,
-          "injStatus": "TEN_DAY_DL",
+          "injStatus": "OUT",
           "stats": {
             "AVG": 0.229,
             "HR": 7,
@@ -2283,7 +2283,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -3277,7 +3277,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 10.1,
             "H": 12,
@@ -3604,7 +3604,7 @@
           "position": "C",
           "eligible": "C",
           "isPitcher": false,
-          "injStatus": "SEVEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "AVG": 0.222,
             "HR": 18,
@@ -5289,7 +5289,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "FIFTEEN_DAY_DL",
+          "injStatus": "ACTIVE",
           "stats": {
             "IP": 169.0,
             "H": 108,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-10-23T17:39:17Z"
+  "updated": "2026-10-23T20:47:02Z"
 }
