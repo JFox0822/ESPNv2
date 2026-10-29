@@ -661,7 +661,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
+          "injStatus": "OUT",
           "stats": {
             "IP": 27.2,
             "H": 29,
@@ -881,7 +881,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
+          "injStatus": "OUT",
           "stats": {
             "IP": 39.0,
             "H": 33,
@@ -1019,7 +1019,7 @@
           "position": "SP",
           "eligible": "SP",
           "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
+          "injStatus": "OUT",
           "stats": {},
           "appeared": true,
           "savant": {},
@@ -6559,7 +6559,7 @@
           "position": "RP",
           "eligible": "RP",
           "isPitcher": true,
-          "injStatus": "SIXTY_DAY_DL",
+          "injStatus": "OUT",
           "stats": {
             "IP": 0.1,
             "H": 4,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-10-29T19:19:56Z"
+  "updated": "2026-10-29T23:26:22Z"
 }
