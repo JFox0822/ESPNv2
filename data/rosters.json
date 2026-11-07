@@ -2555,7 +2555,7 @@
           "position": "RF",
           "eligible": "RF",
           "isPitcher": false,
-          "injStatus": "ACTIVE",
+          "injStatus": "OUT",
           "stats": {
             "AVG": 0.239,
             "HR": 22,
@@ -7522,5 +7522,5 @@
       ]
     }
   ],
-  "updated": "2026-11-06T22:30:31Z"
+  "updated": "2026-11-07T02:26:42Z"
 }
